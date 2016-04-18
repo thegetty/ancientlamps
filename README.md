@@ -59,11 +59,11 @@ Since there are so many objects in this catalogue, the user should have the abil
 to sort/filter the collection by various criteria. Right now the following attributes
 look they could be used in this way:
 
-- Proveniance: Filter by named region
-- Type: Filter by named type
-- Date: Sort by date, filter by chronological period (should still be represented 
+- **Proveniance**: Filter by named region
+- **Type**: Filter by named type
+- **Date**: Sort by date, filter by chronological period (should still be represented 
   numerically)
-- Material? This is not explicitly broken out as an object attribute, but seems to 
+- **Material?** This is not explicitly broken out as an object attribute, but seems to 
   typically appear at the beginning of the `description` section. Most of the lamps
   are clay (does it make sense to filter by type of clay?); but there are also some 
   metallic lamps at the end of the catalogue.
