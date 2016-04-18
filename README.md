@@ -51,3 +51,20 @@ date: Seventh century B.C. to Hellenistic
    from a predetermined list of types so that objects could be sorted/filtered
    by this attribute? For this to work this field should be converted into an array.
 5. Do any objects have attributes not present in the example above?
+
+
+### Sort / Filter Functionality
+
+Since there are so many objects in this catalogue, the user should have the ability
+to sort/filter the collection by various criteria. Right now the following attributes
+look they could be used in this way:
+
+- Proveniance: Filter by named region
+- Type: Filter by named type
+- Date: Sort by date, filter by chronological period (should still be represented 
+  numerically)
+- Material? This is not explicitly broken out as an object attribute, but seems to 
+  typically appear at the beginning of the `description` section. Most of the lamps
+  are clay (does it make sense to filter by type of clay?); but there are also some 
+  metallic lamps at the end of the catalogue.
+  
