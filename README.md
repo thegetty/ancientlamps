@@ -41,36 +41,71 @@ date: Seventh century B.C. to Hellenistic
 
 #### Questions
 
-1. Can the `date` field be converted to a numeric value for all objects to facilitate
-   sorting/filtering/comparison?
-2. Will the `description` and `parallels` fields always work as plain text
-   (do these fields require special characters or formatting beyond basic markdown?)
+1. Can the `date` field be converted to a numeric value for all objects to
+   facilitate sorting/filtering/comparison?
+2. Will the `description` and `parallels` fields always work as plain text (do
+   these fields require special characters or formatting beyond basic markdown?)
    In particular, will these areas ever need to contain figures or charts?
 3. Are `dimensions` always given in centimeters?
 4. Can the `type` field always be represented as a list of specific "keys" taken
    from a predetermined list of types so that objects could be sorted/filtered
-   by this attribute? For this to work this field should be converted into an array.
+   by this attribute? For this to work this field should be converted into an
+   array.
 5. Do any objects have attributes not present in the example above?
 
 
 ### Sort / Filter Functionality
 
-Since there are so many objects in this catalogue, the user should have the ability
-to sort/filter the collection by various criteria. Right now the following attributes
-look they could be used in this way:
+Since there are so many objects in this catalogue, the user should have the
+ability to sort/filter the collection by various criteria. Right now the
+following attributes look they could be used in this way:
 
 - **Proveniance**: Filter by named region
 - **Type**: Filter by named type
-- **Date**: Sort by date, filter by chronological period (should still be represented 
-  numerically)
-- **Material?** This is not explicitly broken out as an object attribute, but seems to 
-  typically appear at the beginning of the `description` section. Most of the lamps
-  are clay (does it make sense to filter by type of clay?); but there are also some 
-  metallic lamps at the end of the catalogue.
+- **Date**: Sort by date, filter by chronological period (should still be
+  represented numerically)
+- **Material?** This is not explicitly broken out as an object attribute, but
+  seems to typically appear at the beginning of the `description` section. Most
+  of the lamps are clay (does it make sense to filter by type of clay?); but
+  there are also some metallic lamps at the end of the catalogue.
   
 ### Concordance
 
-In addition to the ability to sort/filter by some or all of the above categories, the
-book has space allocated for a **Concordance** section. A digital equivalent of this
-would allow users to easily translate accession numbers into cat numbers and vice versa;
-perhaps this could be incorporated into the search functionality of the site?
+In addition to the ability to sort/filter by some or all of the above
+categories, the book has space allocated for a **Concordance** section. A
+digital equivalent of this would allow users to easily translate accession
+numbers into cat numbers and vice versa; perhaps this could be incorporated into
+the search functionality of the site?
+
+## UI Considerations
+
+Many entries in this catalogue book will discuss multiple (sometimes dozens) of
+objects simultaneously. At the same time some entries will be limited to a
+single object. One potential way to design a page layout that accomodates this
+variation would be to take a cue from the
+[multi-entry page in Roman Mosaics](http://www.getty.edu/publications/romanmosaics/catalogue/9-19/).
+
+The page could begin with the standard deep-zoom component, and then the text
+would appear below. Somewhere in the Leaflet UI, a control would allow the user
+to switch between various Cat numbers.
+
+This approach would likely work well when between 1 and ~12-15 objects appear
+on a single page. Most groupings fall within this range.
+
+However, there are several larger groups:
+- One grouping of 41 objects (cats 166-207)
+- One grouping of 30 objects (cats 87-117)
+- One grouping of 23 objects (cats 586-609)
+- several groupings of 15-20 objects
+
+Larger groups may work best with some kind of visual way to pick out individual
+items, because a large list of numbers could start to become meaningless to
+the user. Grid views would be superfluous in smaller sets however, so this may
+be a case of an alternate layout being required for some entries.
+
+Another solution (potentially more complex to code) would be to somehow enable
+the whole leaflet instance to be "toggled" to some kind of grid view. This could
+easily end up being more trouble than it is worth however.
+
+
+
