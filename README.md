@@ -33,6 +33,10 @@ parallels: >
   Sezer 1995, no. 14; Bussière 2000, p. 239, no. P1, pl. 1; Sussmann 2007, nos.
   1240, 1462.
 date: Seventh century B.C. to Hellenistic
+
+# Some objects also seem to have a discussion field as well, which looks to be
+# a short annotated bibliography or notes section rather than an extended essay. 
+# Is this true in all cases?
 ```
 
 #### Questions
