@@ -9,7 +9,7 @@ project.
 
 ### Object Data Structure
 
-How should the Lamp objects be represented as data?
+Most objects seem to be described in the following format:
 
 ```yaml
 # Example Object
@@ -25,7 +25,8 @@ description: >
   Broad slightly concave basin; flat rim, folded upward and pinched at
   front to form an narrow open spout. Broad slightly convex base.
 proveniance: Anatolia
-type: Vessberg 1
+type: 
+ - Vessberg 1
 parallels: >
   Vessberg 1953, nos. 115, 117, pl I.1; Deneauve 1969, p. 23, no. 1, pl. 17;
   Bailey BM I, Q 489, pl. 96; Oziol 1977, nos. 7-10, pl. 1; Kassab Tezgör and
@@ -33,3 +34,16 @@ parallels: >
   1240, 1462.
 date: Seventh century B.C. to Hellenistic
 ```
+
+#### Questions
+
+1. Can the `date` field be converted to a numeric value for all objects to facilitate
+   sorting/filtering/comparison?
+2. Will the `description` and `parallels` fields always work as plain text
+   (do these fields require special characters or formatting beyond basic markdown?)
+   In particular, will these areas ever need to contain figures or charts?
+3. Are `dimensions` always given in centimeters?
+4. Can the `type` field always be represented as a list of specific "keys" taken
+   from a predetermined list of types so that objects could be sorted/filtered
+   by this attribute? For this to work this field should be converted into an array.
+5. Do any objects have attributes not present in the example above?
