@@ -68,3 +68,9 @@ look they could be used in this way:
   are clay (does it make sense to filter by type of clay?); but there are also some 
   metallic lamps at the end of the catalogue.
   
+### Concordance
+
+In addition to the ability to sort/filter by some or all of the above categories, the
+book has space allocated for a **Concordance** section. A digital equivalent of this
+would allow users to easily translate accession numbers into cat numbers and vice versa;
+perhaps this could be incorporated into the search functionality of the site?
