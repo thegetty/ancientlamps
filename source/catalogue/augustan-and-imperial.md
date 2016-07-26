@@ -24,5 +24,3 @@ Loeschcke type I, first developed in Italy, became extremely popular and was dif
 Information about the place of manufacture or origin of the lamps is sometimes missing, but out of seventy-one lamps in the Getty collection of Loeschcke type I, thirty-seven most probably have an eastern place of manufacture or origin, thirty-four an Italic or African one. The places of manufacture or origin indicated in the catalogue entries are those given by the collectors, chiefly Schüller (see also [Index of Donors and Vendors](Index-of-Donors-and-Vendors)).
 
 Because the Getty lamps lack archaeological context information, the dates given follow those of other publications, mainly Bailey BM II.
-
----
