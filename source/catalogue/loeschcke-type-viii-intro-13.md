@@ -1,7 +1,7 @@
 ---
 layout: intro
 file: loeschcke-type-viii-intro-13.md
-sort_order:
+sort_order: 73
 hierarchy:
  - III: Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire

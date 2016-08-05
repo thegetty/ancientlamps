@@ -1,7 +1,7 @@
 ---
 layout: intro
 file: augustan-and-imperial.md
-sort_order:
+sort_order: 33
 hierarchy:
  - III: Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire

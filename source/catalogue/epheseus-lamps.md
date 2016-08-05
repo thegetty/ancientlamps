@@ -1,7 +1,7 @@
 ---
 layout: intro
 file: epheseus-lamps.md
-sort_order:
+sort_order: 24
 hierarchy:
  - II: Greek and Hellenistic Clay Lamps
  - B: Moldmade Lamps

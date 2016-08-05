@@ -1,7 +1,7 @@
 ---
 layout: intro
 file: metal-lamps.md
-sort_order:
+sort_order: 164
 hierarchy:
  - IV: Metal Lamps
 cat: 612-31
