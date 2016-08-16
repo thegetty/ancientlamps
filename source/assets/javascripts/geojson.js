@@ -4,21 +4,97 @@ var geojsonFeature = {
   {
 	"type": "Feature",
 	"properties": {
-		"basename": "Aegaeum Mare",
-		"custom_name": "Aegean Islands",
-		"feature_type": "region",
-		"pid": "560221",
-		"tgn": "7234911",
+		"basename": "Felsina/Bononia",
+		"custom_name": "Bologna",
+		"feature_type": "site",
+		"pid": "393421",
+		"tgn": "7003127",
 		"catalogue": "",
 		"description": ""
 	},
 	"geometry": {
 		"type": "Point",
 		"coordinates": [
-			25,
-			39
+			11.3455467,
+			44.4945737
 		]
 	}
+},
+{
+"type": "Feature",
+"properties": {
+  "basename": "Saint-Germain-en-Laye",
+  "custom_name": "Saint-Germain-en-Laye",
+  "feature_type": "site",
+  "pid": "",
+  "tgn": "7018796",
+  "catalogue": "",
+  "description": ""
+},
+"geometry": {
+  "type": "Point",
+  "coordinates": [
+    2.0867,
+    48.9042
+    ]
+  }
+},
+{
+"type": "Feature",
+"properties": {
+  "basename": "Mainz",
+  "custom_name": "Mainz",
+  "feature_type": "site",
+  "pid": "109169",
+  "tgn": "7004449",
+  "catalogue": "",
+  "description": ""
+},
+"geometry": {
+  "type": "Point",
+  "coordinates": [
+    8.26812294,
+    49.99389806
+    ]
+  }
+},
+{
+"type": "Feature",
+"properties": {
+  "basename": "Lugdunum",
+  "custom_name": "Lugdunum",
+  "feature_type": "site",
+  "pid": "167717",
+  "tgn": "7008772",
+  "catalogue": "",
+  "description": ""
+},
+"geometry": {
+  "type": "Point",
+  "coordinates": [
+    4.822438025,
+    45.762095775
+    ]
+  }
+},
+{
+"type": "Feature",
+"properties": {
+  "basename": "Aegaeum Mare",
+  "custom_name": "Aegean Islands",
+  "feature_type": "region",
+  "pid": "560221",
+  "tgn": "7234911",
+  "catalogue": "",
+  "description": ""
+},
+"geometry": {
+  "type": "Point",
+  "coordinates": [
+    25,
+    39
+  ]
+}
 },
 {
 	"type": "Feature",
