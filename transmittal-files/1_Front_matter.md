@@ -12,8 +12,8 @@
 
 The free online edition of this catalogue, available at
 http://www.getty.edu/publications/ancientlamps, includes zoomable
-high-resolution photography \[add mention of other features as
-appropriate\]. Also available are free PDF, EPUB, and MOBI downloads of
+high-resolution photography **\[add mention of other features as
+appropriate\]**. Also available are free PDF, EPUB, and MOBI downloads of
 the book, CSV and JSON downloads of the object data from the catalogue,
 and JPG and PPT downloads of the main catalogue images.
 
