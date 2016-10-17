@@ -4,7 +4,7 @@ layout: page
 sort_order: 206
 ---
 
-**About the Authors**
+# About the Authors
 
 Jean Bussière was educated at the Universities of Lyon, Dijon, and
 Grenoble, receiving his MA (*licence de lettres*) and DES (*diplôme

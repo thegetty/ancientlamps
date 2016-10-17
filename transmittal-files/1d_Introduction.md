@@ -4,7 +4,7 @@ layout: page
 sort_order: 5
 ---
 
-Introduction
+# Introduction
 
 The Getty collection of well over six hundred ancient lamps began late
 in the history of the comparatively young museum. The lamps did not form

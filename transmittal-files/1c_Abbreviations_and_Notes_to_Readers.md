@@ -4,7 +4,7 @@ layout: page
 sort_order: 4
 ---
 
-**Abbreviations and Notes to Readers**
+# Abbreviations and Notes to Readers
 
 All measurements are in centimeters.
 

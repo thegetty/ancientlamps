@@ -4,7 +4,7 @@ layout: page
 sort_order: 2
 ---
 
-**Director’s Foreword**
+# Director’s Foreword
 
 TK
 

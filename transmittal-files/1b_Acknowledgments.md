@@ -4,7 +4,7 @@ layout: page
 sort_order: 3
 ---
 
-**Acknowledgments**
+# Acknowledgments
 
 A project of the scope of the present work necessarily accumulates many
 debts of gratitude. It is a pleasure to record these debts at this final
