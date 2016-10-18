@@ -22,82 +22,82 @@ specific to some workshops.
 **\[Add an explanation of what “place of manufacture or origin”
 means\]**
 
-acc. no. accession number
+| acc. no. | accession number |
 
-Afr. African
+| Afr. | African |
 
-BM The British Museum
+| BM | The British Museum |
 
-Bus. Bussière, with reference to nozzle forms (e.g., Bus. 2a)
+| Bus. | Bussière, with reference to nozzle forms (e.g., Bus. 2a) |
 
-ca. circa
+| ca. | circa |
 
-cat. catalogue number, Getty collection
+| cat. | catalogue number, Getty collection |
 
-cat. no. catalogue number, other collections
+| cat. no. | catalogue number, other collections |
 
-col./cols. column/-s
+| col./cols. | column/-s |
 
-D depth
+| D | depth |
 
-Diam diameter
+| Diam | diameter |
 
-dim. dimension
+| dim. | dimension |
 
-east. eastern
+| east. | eastern |
 
-ed. editor/edited by
+| ed. | editor/edited by |
 
-edn. edition
+| edn. | edition |
 
-e.g. for instance
+| e.g. | for instance |
 
-esp. especially
+| esp. | especially |
 
-ex. example/-s
+| ex. | example/-s |
 
-fasc. fascicule/-s
+| fasc. | fascicule/-s |
 
-fig./figs. figure/-s
+| fig./figs. | figure/-s |
 
-fr./frr. fragment/-s
+| fr./frr. | fragment/-s |
 
-H height
+| H | height |
 
-i.e. for instance
+| i.e. | for instance |
 
-ILA International Lychnological Association
+| ILA | International Lychnological Association |
 
-inv. no. inventory number
+| inv. no. | inventory number |
 
-It. Italian
+| It. | Italian |
 
-L length
+| L | length |
 
-MAN Musée d’Archéologie Nationale de Saint-Germain-en-Laye
+| MAN | Musée d’Archéologie Nationale de Saint-Germain-en-Laye |
 
-max. maximum
+| max. | maximum |
 
-MNR Museo Nazionale Romano/ Barbera and Petriaggi 1993
+| MNR | Museo Nazionale Romano/ Barbera and Petriaggi 1993 |
 
-n./nn. note/-s
+| n./nn. | note/-s |
 
-no./nos. number/-s
+| no./nos. | number/-s |
 
-p./pp. page/-s
+| p./pp. | page/-s |
 
-pl./pls. plate/-s
+| pl./pls. | plate/-s |
 
-pres. preserved
+| pres. | preserved |
 
-ref./refs. reference/-s
+| ref./refs. | reference/-s |
 
-suppl. supplement
+| suppl. | supplement |
 
-TSA Terra Sigillata Africana
+| TSA | Terra Sigillata Africana |
 
-var./vars. variant/-s
+| var./vars. | variant/-s |
 
-vol./vols. volume/-s
+| vol./vols. | volume/-s |
 
-W width
+| W | width |

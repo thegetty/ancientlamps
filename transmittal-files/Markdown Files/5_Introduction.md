@@ -58,22 +58,26 @@ parallels found in the now-abundant specialized literature and to a
 variety of criteria, the Getty lamps have been divided into three major
 sections:
 
-    I. Phoenico-Punic lamps
-
-    II. Greek and Hellenistic lamps
-
-    III. Roman-period lamps
+<ol type="I">
+  <li>Phoenico-Punic lamps</li>
+  <br />
+  <li>Greek and Hellenistic lamps</li>
+  <br />
+  <li>Roman-period lamps</li>
+</ol>
 
 Because of our recurrent ignorance of the exact place of manufacture or
 origin of the lamps—the place where they have been excavated and not
-just purchased—it has proved useful to subdivide section iii, by far the
+just purchased—it has proved useful to subdivide section III, by far the
 largest one, into three further categories:
 
-    A. Lamps from both the western and eastern provinces of the Roman Empire
-
-    B. Lamps from North African provinces only
-
-    C. Lamps from eastern provinces only
+<ol type="A">
+    <li>Lamps from both the western and eastern provinces of the Roman Empire</li>
+    <br />
+    <li>Lamps from North African provinces only</li>
+    <br />
+    <li>Lamps from eastern provinces only</li>
+</ol>
 
 B and C then concern lamps produced exclusively in one of the two
 geographical areas distinguished. They exhibit particular forms and
@@ -82,7 +86,7 @@ workshop marks specific to those areas. In category A, on the other
 hand, it is not always easy to confirm whether a lamp—whose findspot is
 not known with certainty—derives from the western or the eastern part of
 the Mediterranean. Take, for instance, a given Getty lamp of type
-Loeschcke i or iv: was it fabricated in Italy and exported to Asia
+Loeschcke I or IV: was it fabricated in Italy and exported to Asia
 Minor, or was it made in Asia Minor from Italic models? Italic-type
 lamps from the end of the Roman Republic and the first century of the
 empire certainly were exported to the provinces. But the provincial
@@ -101,7 +105,7 @@ African (group A). The following criteria apply to group C:
 
 3. Pronounced depth of the basin
 
-4. Bases of 2nd- to 6th-century lamps have a plain *planta pedis,* often large and deeply impressed
+4. Bases of 2nd- to 6th-century lamps have a plain *planta pedis*, often large and deeply impressed
 
 5. Clay, glaze, or slip is often a vivid red orange or dark brown. Frequent presence of gold or silver mica particles in the clay
 
@@ -159,7 +163,7 @@ original firing or through later accidents.
 
 Drawings of the discus decors have been considered unnecessary here, due
 to the excellent quality of the photographs, which in the digital format
-can be enlarged at will. Following the examples of Bailey’s BM ii and
+can be enlarged at will. Following the examples of Bailey’s BM II and
 Bussière’s 2000 catalogues, we have limited ourselves to providing an
 alphanumeric repertory of the discus decors. The Getty Museum lamps
 present a particularly rich store of discus decors: forty-nine are
@@ -172,7 +176,7 @@ five hundred publications yielding comparanda.
 The index of inscriptions gives an alphabetical list of the texts and
 workshop signatures or marks. For closer study of the presumed
 geographic locations of the workshops and their activity periods, we
-refer readers to BM ii (chapter 3, pp. 89–121), and to bm iii (chapter
+refer readers to BM II (chapter 3, pp. 89–121), and to BM III (chapter
 3, pp. 95–147); for the repertory of North African workshop marks,
 readers should consult Bussière 2000 (pp. 215–37).
 
@@ -201,8 +205,8 @@ Kelly Ramage, without which this transatlantic enterprise would not have
 been possible. She is responsible for the measurements of all the lamps
 as well as their color identifications with the Munsell Color Charts;
 the introductions, entries, and comparanda to the lamps of Broneer type
-xxvii and xxviii; the Late Palestinian circular lamps, section 47; the
-metal lamps, section iv, with their bibliography; and the index of Greek
+XXVII and XXVIII; the Late Palestinian circular lamps, section 47; the
+metal lamps, section IV, with their bibliography; and the index of Greek
 inscriptions. She has also undertaken the definitive fashioning of the
 text in English.
 

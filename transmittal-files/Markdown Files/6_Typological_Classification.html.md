@@ -1,18 +1,15 @@
-<!DOCTYPE html PUBLIC "&ndash;//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1&ndash;transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-</head>
-<body>
-<p><strong>&lt;CT&gt;</strong>Typological Classification</p>
+---
+title: Typological Classification
+layout: page
+sort_order: 6
+---
+
+# Typological Classification
+
 <ol type="I">
   <li><p>Phoenico-Punic Clay Saucer Lamps</p></li>
     <ol type="1">
-      <li>Vessberg type 1 <div style='text-align:right'><a href="cats. 1-2" class="uri" class="uri">cats. 1&ndash;2</a></div></li>
+      <li>Vessberg type 1 <div style='text-align:right'><a href="cats. 1-2" class="uri">cats. 1&ndash;2</a></div></li>
       <li>Deneauve type X <div style='text-align:right'><a href="cats. 3-4" class="uri" class="uri">cats. 3&ndash;4</a></div></li>
     </ol>
   <li><p>Greek and Hellenistic Clay Lamps</p></li>
@@ -232,5 +229,3 @@
   <li id="fn2"><p>This type, represented in the Getty collection by two examples only, begins in the Byzantine period and extends beyond it. But it has nevertheless been kept within section iii, Roman-period lamps.<a href="#fnref2">&#8617;</a></p></li>
 </ol>
 </div>
-</body>
-</html>

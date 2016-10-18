@@ -1,14 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-</head>
-<body>
-<p><strong>&lt;CT&gt;</strong>Index of Decors</p>
+---
+title: Index of Discus Decors
+layout: page
+sort_order: 201
+---
+# Index of Decors
 <ol style="list-style-type:none">
   <li><p><span class='type-code-roman'>I.</span> Religion and Myth</p></li>
     <ol style="list-style-type:none">
@@ -433,5 +428,3 @@
       <li><p><span class='type-code-roman-alpha'>VI.d.</span> Star Design, <a href="498-99" class="uri">498–99</a>, <a href="534" class="uri">534</a></p></li>
     </ol>
 </ol>
-</body>
-</html>

@@ -8,8 +8,8 @@ sort_order: 2
 
 TK
 
-Timothy Potts
+<p style="text-align: right;">Timothy Potts</p>
 
-*Director*
+<p style="text-align: right;">*Director*</p>
 
-*The J. Paul Getty Museum*
+<p style="text-align: right;">*The J. Paul Getty Museum*</p>

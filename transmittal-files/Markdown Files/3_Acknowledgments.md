@@ -95,6 +95,5 @@ stage. His constant readiness and generosity in sharing his considerable
 expertise, also in electronic communications, was a welcome support,
 which we greatly appreciate.
 
-J. B.
-
-B. L. W.
+<p style="text-align: right;">J. B.</p>
+<p style="text-align: right;">B. L. W.</p>

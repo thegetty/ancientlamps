@@ -79,7 +79,7 @@ Gallerie Günter Puhze, Freiburg (Germany)
 sold to the Getty Museum a lamp collection gathered by H.-K. Schüller. In
 earlier years this German pharmacist had gathered another collection, which he
 sold to the Bochum Museum in 1974. Schüller provided a handwritten catalogue for
- each lamp collection, which can be useful but requires some remarks.
+each lamp collection, which can be useful but requires some remarks.
 
 > First, Schüller does not attribute a place of manufacture or origin (i.e.,
 place created or found) to all the lamps. When he does, the indication is

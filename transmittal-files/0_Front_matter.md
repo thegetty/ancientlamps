@@ -1,12 +1,16 @@
 <p style="text-align: center;"> Ancient Lamps in the J. Paul Getty Museum</p>
 
+<br />
+
 <p style="text-align: center;">Jean Bussière</p>
 
-<p style="text-align: center;">Birgitta Lindros Wohl</span>
+<p style="text-align: center;">Birgitta Lindros Wohl</p>
 
-<p style="text-align: center;">The J. Paul Getty Museum</span>
+<br />
 
-<p style="text-align: center;">Los Angeles</span>
+<p style="text-align: center;">The J. Paul Getty Museum</p>
+
+<p style="text-align: center;">Los Angeles</p>
 
 **\[Copyright Page\]**
 
