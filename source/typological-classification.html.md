@@ -1,6 +1,6 @@
 ---
 title: Typological Classification
-layout: application
+layout: page
 sort_order: 6
 ---
 

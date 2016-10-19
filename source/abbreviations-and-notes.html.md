@@ -1,6 +1,6 @@
 ---
 title: Abbreviations and Notes to Readers
-layout: application
+layout: page
 sort_order: 4
 ---
 
