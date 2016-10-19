@@ -1,0 +1,16 @@
+---
+title: About the Authors
+layout: application
+sort_order: 206
+---
+
+<ul class="contributors">
+<% data.book.creators.each do |creator| %>
+  <li><%= creator.bio %></li>
+<% end %>
+<% if data.book.contributors == true %>
+<% data.book.contributors.each do |contributor| %>
+  <li><%= ccontributor.bio %></li>
+<% end %>
+<% end %>
+</ul>
