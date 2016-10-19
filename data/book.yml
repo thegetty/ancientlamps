@@ -1,15 +1,15 @@
 # Book Data (ISBN, etc) should live here
 
 title:
-  main: Ancient Lamps in the J. Paul Getty Museum
-  subtitle:
+  main: "Ancient Lamps in the J. Paul Getty Museum"
+  subtitle: "In the J. Paul Getty Museum"
   edition:
   short: Ancient Lamps
   extended:
   file_as:
 pub_date: 2017-08-01
 creators:
-  - first_name: Jean Bussière
+  - first_name: Jean
     last_name: Bussière
     role: aut
     bio: "Jean Bussière was educated at the Universities of Lyon, Dijon, and Grenoble, receiving his MA (<em>licence de lettres</em>) and DES (<em>diplôme d'études supérieures</em>). He won a Canada Council scholarship in 1960 and studied for a year at Victoria College, University of Toronto. For several years he taught in Algeria, where he developed a passion for archaelogy and lychnology. From 1989 to 2001 he was an associate researcher with UPR 217 CNRS, Antiquités africaines. Since 2003 he has been associated with UMR 140-390 CNRS Lattes, University of Montpellier. In 1993 he was awarded le Prix de l'Académie d'Hippone in Aix-en-Provence. He is the author of <em>Lampes antiques d'Algérie</em> 1–3 (2000–2007), <em>Lampes antiques de Méditerranée: La collection Rivel</em>, in collaboration with J.-Cl. Rivel (BAR International Series 2428 [2012]). He has written several articles and participated in the congresses of the ILA (International Lychnological Association)."
@@ -22,7 +22,8 @@ contributors:
     last_name:
     role:
     bio:
-author_as_it_appears: Jean Bussière and Birgitta Lindros Wohl
+author_as_it_appears:
+  - "Jean Bussière and Birgitta Lindros Wohl"
 project_team:
   - name: Benedicte Gilman
     role: Project Editor

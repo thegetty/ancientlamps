@@ -1,0 +1,17 @@
+- current_cat = lookup_entry(current_page.data.cat)
+= wrap_layout :application do
+  - if environment? :pdf
+    - if current_page.data.force_break == true
+      .bleed.force-break{ :data => { :catalogue => current_page.data.cat }}
+    - else
+      .bleed{ :data => { :catalogue => current_page.data.cat }}
+  .cat-entry
+    %header.cat-entry-header#page-title
+      = partial "partials/cat_image"
+      .cat-entry-header-titlebar
+        .cat-entry-header-titlebar-inner
+          %h1.cat-entry-title= "#{current_cat.cat}. #{current_cat.title}"
+    %article.cat-entry-content
+      .cat-entry-content-inner
+        = partial "partials/cat_details", :locals => { :current_cat => current_cat }
+        = yield
