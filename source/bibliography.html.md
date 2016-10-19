@@ -1,13 +1,10 @@
 ---
-title: Index of Donors and Vendors
+title: Bibliography
 layout: page
 sort_order: 205
 ---
-<div class="references">
 
-# Bibliography
-
-## Abbreviations
+### Abbreviations
 
 | **Alaoui I** | Du Coudray La Blanchère, R., and P. Gauckler. *Catalogue du Musée Alaoui.* Paris, 1897. |
 
@@ -59,7 +56,7 @@ sort_order: 205
 
 | ***Répertoire*** | Bussière, J., and J.-C. Rivel. *Répertoire de fleurons sur bandeaux de lampes africaines type Hayes II.* Oxford, 2015. |
 
-<br />
+<div class="references">
 
 - **Abadie-Reynal 2003** <br />
 Abadie-Reynal, C., ed. 2003. *Les Céramiques en Anatolie aux époques hellénistique et romaine. Actes de la table ronde d’Istanbul 22–24 mai 1996. Varia Anatolia* 15.
@@ -1546,3 +1543,5 @@ Zimmer, G., and A. Furtwängler. 2003. *Lampenproduktion und Importe im hellenis
 
 - **Zouhdi 1974** <br />
 Zouhdi, B. 1974. “Aspect des lampes antiques au Musée de Damas.” *Annales Archéologiques Arabes-Syriennes* 24: 171–87.
+
+</div>
