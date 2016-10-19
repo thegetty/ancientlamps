@@ -85,6 +85,14 @@
 
 }
 
+table + .references {
+  margin-top: $base-spacing * 3;
+}
+
+.page-content table td:first-child {
+  width: 30%;
+}
+
 .license p:first-child {
   margin-bottom: 0;
 }
