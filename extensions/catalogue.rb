@@ -65,7 +65,7 @@ class Catalogue < Middleman::Extension
   helpers do
     def author_name
       author = data.book.creators.first
-      "#{author.first_name} #{author.last_name}"
+      "#{data.book.creators[0].first_name} #{data.book.creators[0].last_name} and #{data.book.creators[1].first_name} #{data.book.creators[1].last_name}"
     end
 
     def page_title
