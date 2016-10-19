@@ -1,19 +1,216 @@
-body {
-  background-color: $light-gray;
-  color: $medium-gray;
+// scss-lint:disable SingleLinePerSelector
+
+html { min-height: 100vh; }
+
+.body-copy {
+  p {
+    margin-bottom: 0;
+    + p { text-indent: $base-spacing; }
+    + h3 { margin-top: $base-spacing; }
+  }
+
+  p, ol, ul { font-size: 1.25rem; }
+  ol { @extend %default-ol; }
+
+  @include media($medium-screen-up) {
+    p, ol, ul { font-size: 1.35rem; }
+  }
+
+  @include media($large-screen-up) {
+    p, ol, ul { font-size: 1.45rem; }
+  }
+
+  h2, h3, h4 { margin-top: $small-spacing; }
+
+  blockquote {
+    background-color: $light-gray;
+    border-radius: $base-border-radius;
+    margin: $base-spacing 0;
+    padding: $small-spacing;
+
+    h2, h3, h4 { margin-top: 0; }
+  }
+
+  // superscript map links get weird spacing without this override
+  .location-link { text-indent: 0; }
 }
 
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+.container {
+  @include outer-container;
+  padding: 0 $small-spacing;
 
-  .container {
+  @include media($large-screen-up) { padding: 0; }
+}
+
+.smaller-text {
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1em; }
+
+  blockquote, li, p {
+    font-size: 1rem;
+    text-indent: 0;
+  }
+
+  p { margin-bottom: 1rem; }
+  p + p { text-indent: 0; }
+  ul { margin-bottom: 1rem; }
+
+}
+
+.section-nav {
+  margin: 0 0 $base-spacing;
+
+  @include media($large-screen-up) {
+    margin: 0 0 $base-spacing;
     text-align: center;
 
-    h1 {
-      font-weight: 200;
+    li {
+      display: inline;
+
+      &::after { content: " | "; }
+      &:last-of-type {
+        &::after { content: ""; }
+      }
+    }
+  }
+}
+
+.footnotes {
+  border-top: $base-border;
+  margin-top: $base-spacing;
+  padding-top: $small-spacing;
+  text-align: center;
+
+  &::before {
+    content: "Notes";
+    font-family: "Freight Text Pro SC";
+    font-size: 1.35em;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  ol { margin-top: $small-spacing; }
+
+  p, ol, ul {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+// scss-lint:enable SingleLinePerSelector
+
+.hide-on-mobile {
+  @include media($small-screen) { display: none; }
+}
+
+.entry-author {
+  margin-top: $small-spacing;
+  margin-right: $small-spacing;
+  display: block;
+  text-align: right;
+  text-indent: 0;
+}
+
+.centered { text-align: center; }
+
+.smcaps {
+  @include font-feature-settings("c2sc", "smcp", "kern");
+  font-variant: all-small-caps;
+}
+
+.map-fullscreen {
+  height: 100%;
+
+  .leaflet-control-container {
+    display: none;
+
+    @include media($medium-screen-up) {
+      bottom: 4rem;
+      display: block;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+    }
+
+    @include media($large-screen-up) {
+      bottom: 5.45rem;
+    }
+  }
+}
+
+.force-wrap {
+  // @include prefixer(hyphens, auto, webkit moz ms spec);
+  overflow-wrap: break-word;
+  // word-break: break-all;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.map-intro {
+  .cat-entry-content {
+    padding-top: $base-spacing;
+  }
+}
+
+.expander {
+  @include transition($base-transition);
+  .expander-trigger { display: block; }
+  .expander-content { margin-bottom: $base-spacing; }
+  .expander--hidden { display: none;}
+}
+
+
+// Inline Figure Styles
+figcaption { margin-top: $small-spacing * 0.5; }
+
+.figure-group {
+  + p {
+    clear: both;
+    text-indent: $base-spacing;
+  }
+
+  @include media($large-screen-up) { clear: both; }
+}
+
+.inline-figure {
+  @include margin(($base-spacing * 1.5) $small-spacing);
+  @include padding(null $small-spacing);
+  cursor: pointer;
+
+  + p { text-indent: $base-spacing; }
+}
+
+.figure-left,
+.figure-group-left {
+  @include media($large-screen-up) {
+    float: left;
+    margin-left: 0;
+    width: 48%;
+  }
+}
+
+.figure-right,
+.figure-group-right {
+  @include media($large-screen-up) {
+    float: right;
+    margin-right: 0;
+    width: 48%;
+  }
+}
+
+.figure-group-right,
+.figure-group-left {
+  @include media($large-screen-up) {
+    .inline-figure {
+      @include margin(($base-spacing * 0.75) $small-spacing);
+    }
+
+    .inline-figure:first-child {
+      @include margin(($base-spacing * 1.5) $small-spacing ($base-spacing * 0.75));
+    }
+
+    .inline-figure:last-child {
+      @include margin(($base-spacing * 0.75) $small-spacing ($base-spacing * 1.5));
     }
   }
 }
