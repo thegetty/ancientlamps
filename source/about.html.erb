@@ -19,11 +19,11 @@ sort_order: 207
   <h2>Citation Information</h2>
     <blockquote>
       <h4>Chicago</h4>
-      <p>TK</p>
+      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.publisher_location %>: <%= data.book.publisher %>, <%= data.book.pub_date.year %>. <span class="force-wrap"><%= permalink %></span>.</p>
     </blockquote>
     <blockquote>
       <h4>MLA</h4>
-      <p>TK</p>
+      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.publisher_location %>: <%= data.book.publisher_short %>, <%= data.book.pub_date.year %>. <span class="cite-current-date">DD Mon. YYYY</span> <span class="force-wrap">&#60;<span class="force-wrap"><%= permalink %></span>&#62;</span></p>
     </blockquote>
   <h4>Permanent URL</h4>
   <span class="force-wrap"><%= permalink %></span>
