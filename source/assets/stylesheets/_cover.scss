@@ -17,8 +17,8 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   @include flex-wrap(nowrap);
   @include justify-content(flex-end);
   background-color: $dark-gray;
-  background-image: url(image_path("cover_option1.jpg"));
-  background-position: center 45%;
+  background-image: url(image_path("cover-background.jpg"));
+  background-position: center 30%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -69,6 +69,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   font-size: 1.4em;
   font-weight: 400;
   letter-spacing: 1px;
+  text-transform: uppercase;
 
   @include media($medium-screen-up) {
     font-size: 2em;
