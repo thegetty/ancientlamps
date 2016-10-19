@@ -94,7 +94,7 @@ class Catalogue < Middleman::Extension
       path = current_path.gsub("index.html", "")
       %(
         In <em>#{book.title.main}</em>,
-        by #{book.creators.first.first_name} #{book.creators.first.last_name}.
+        by #{author_name}.
         #{book.publisher_location}:
         #{book.publisher},
         #{book.pub_date.year}.
@@ -133,7 +133,12 @@ class Catalogue < Middleman::Extension
     # Return default author name in citation format (last, first)
     def default_author
       book = data.book
-      "#{book.creators.first.last_name}, #{book.creators.first.first_name}"
+      if book.creators.size > 1
+        %(#{book.creators[0].last_name}, #{book.creators[0].first_name},
+          and #{book.creators[1].first_name} #{book.creators[1].last_name})
+      else
+        "#{book.creators.first.last_name}, #{book.creators.first.first_name}"
+      end
     end
 
     def permalink
