@@ -97,12 +97,13 @@ $sliding-panel-fade-screen-bg: #000;
 }
 
 .nav-sidebar-toc {
-  margin: $base-spacing 0;
+  margin: 0 0 $base-spacing;
 
   li { margin-bottom: 0.5rem; }
 }
 
 .nav-sidebar-toc-section {
+  margin-bottom: $base-spacing;
   border-bottom: solid 1px transparentize($sliding-panel-color, 0.75);
 }
 
