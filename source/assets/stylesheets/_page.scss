@@ -133,3 +133,20 @@ table + .references {
     }
   }
 }
+
+
+
+.indented-list {
+  padding-left: $base-spacing;
+  text-indent: -$base-spacing;
+  li {
+    margin-bottom: 0;
+    p {
+      text-indent: 0;
+      margin-bottom: $base-spacing * 0.5;
+    }
+    p:first-child {
+      text-indent: inherit;
+    }
+  }
+}

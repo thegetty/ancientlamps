@@ -1,8 +1,11 @@
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
+
+
+
 
   &%default-ul {
     list-style-type: disc;
@@ -27,5 +30,16 @@ dl {
 
   dd {
     margin: 0;
+  }
+}
+
+ul {
+  li {
+    margin-bottom: $base-spacing * 0.5;
+  }
+  ul {
+    li {
+      margin-bottom: 0;
+    }
   }
 }
