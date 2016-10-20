@@ -66,9 +66,9 @@ The remaining marks consist of figurative motifs such as an ovolo, a palmette, v
 | <span class="inscription">NNAELVCI</span> | [305](305), [345](345) | | Italic | end of Flavian to Hadrianic |
 | <span class="inscription">NAT</span> | [101](101) | above a plain *planta pedis* in big letters | ? | ? |
 | <span class="inscription">OCTAVI</span> | [449](449) | | Italic | 2nd century A.D. |
-| <span class="inscription">{{PHOETASPI</span> | [144](144) | | Italic based in Egypt | late 1st century A.D.–early 2nd century A.D. |
-| {{insc:PORCI} | [465](465) | |  African | end of 3rd century A.D.
-| {{insc:POSSESSO/RVM | [463](463) | | African | A.D. 175–230 |
+| <span class="inscription">PHOETASPI</span> | [144](144) | | Italic based in Egypt | late 1st century A.D.–early 2nd century A.D. |
+| <span class="inscription">PORCI</span> | [465](465) | |  African | end of 3rd century A.D.
+| <span class="inscription">POSSESSO/RVM</span> | [463](463) | | African | A.D. 175–230 |
 | <span class="inscription">PVF PVF</span> | [213](213) | in *planta pedis* | Italic | A.D. 60–90 |
 | <span class="inscription">PVLCRHI</span> | [447](447) | | Italic | Flavian |
 | <span class="inscription">PVLL/AENI</span> | [379](379), [466](466) | |  African | end of Antonine–Severan
