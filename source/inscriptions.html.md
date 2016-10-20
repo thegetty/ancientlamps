@@ -6,7 +6,7 @@ sort_order: 202
 
 ### Latin Inscriptions
 
-Forty-five percent of the Getty lamps bear an inscription or a mark. Only one metal lamp has an inscription, <span class="inscription">roi</span> (cat. 616). Of the 286 marks on clay lamps, 132 are lampmakers’ names, indicated either in *nomina*, *tria nomina*, or initials. All the legible signatures are known from other lamps, except <span class="inscription">sote</span> and <span class="inscription">q.m.q.</span> and seven signatures of uncertain reading: <span class="inscription">ansasivs, exof[-]/cv[-]/ov[-]rs/i[-], exoficina ro[-]yti, iar, mmpaxi/m[—], nat, rv.vsi</span>; all except the last two are most probably African.
+Forty-five percent of the Getty lamps bear an inscription or a mark. Only one metal lamp has an inscription, <span class="inscription">ROI</span> (cat. 616). Of the 286 marks on clay lamps, 132 are lampmakers’ names, indicated either in *nomina*, *tria nomina*, or initials. All the legible signatures are known from other lamps, except <span class="inscription">SOTE</span> and <span class="inscription">Q.M.Q.</span> and seven signatures of uncertain reading: <span class="inscription">ANSASIVS, EXOF[-]/CV[-]/OV[-]RS/I[-], EXOFICINA RO[-]YTI, IAR, MMPAXI/M[—], NAT, RV.VSI</span>; all except the last two are most probably African.
 
 The remaining marks consist of figurative motifs such as an ovolo, a palmette, vertical lines, a plain *planta pedis*, a rosette, a swastika, a trident, etc. These marks appear alone or associated with a lampmaker’s signature. Their meaning is not clear; some may help to identify a workshop, others may be purely decorative motifs (see Bailey BM ii, pp. 104–8; Bussière 2000, pp. 233–36).
 
@@ -35,7 +35,7 @@ The remaining marks consist of figurative motifs such as an ovolo, a palmette, v
 | <span class="inscription">EXOFICI/NA C.V.S.</span>, <span class="inscription">EX OFICINA.C.V.S.</span> | [315–17](315-317) | 317 is inscribed on discus | African | A.D. 175–225 |
 | <span class="inscription">EXOF[-]/CV[-]/OV[-]RS/I[-]</span> | [486](486) | | African | 2nd half of 3rd century A.D.? |
 | <span class="inscription">EX OFI/CINA/KAPTIO/NIS</span> | [381](381) | | African | 1st half of 3rd century A.D. |
-| <span class="inscription"></span>EXOF/ICINI/LVCI}} | [313](313) | |  African | some time in 2nd century A.D.? |
+| <span class="inscription">EXOF/ICINI/LVCI</span> | [313](313) | |  African | some time in 2nd century A.D.? |
 | <span class="inscription">EXOFICINA RO[-]YTI</span>? | [380](380) | | African | 1st half of 3rd century A.D. |
 | <span class="inscription">EXOFLO/CCEIORV</span> | [302](302) | | African | A.D. 175–225 |
 | <span class="inscription">FABRICMASC</span> | [286](286) | | Italic | A.D. 80/90–140
