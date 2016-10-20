@@ -94,6 +94,22 @@ table + .references {
   width: 33%;
 }
 
+#stamps-table {
+  text-align: center;
+  th:first-child,
+  td:first-child {
+    width: 16.66%;
+  }
+  .catalogue-numbers td {
+    border-bottom: none;
+  }
+  .stamps img {
+    height: 4rem;
+  }
+}
+
+
+
 .license p:first-child {
   margin-bottom: 0;
 }

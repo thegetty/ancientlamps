@@ -14,7 +14,7 @@ The remaining marks consist of figurative motifs such as an ovolo, a palmette, v
 
 | Workshop name | Cat. no. | Remark | Place of manufacture | Period of activity |
 |---------------|----------|--------|----------------------|--------------------|
-| <span class="inscription">ANSASIUS</span> | [400](400) | | African? | |                       
+| <span class="inscription">ANSASIUS</span> | [400](400) | | African? | |
 | <span class="inscription">ATIMETI</span> | [445](445) | | Italic | Flavian |
 | <span class="inscription">AVFIFRON</span> | [359](359) | | African | A.D. 130–170 |
 | <span class="inscription">AVGENDI</span> | [378](378), [384](384) | | African | A.D. 175–225 |
@@ -78,66 +78,49 @@ The remaining marks consist of figurative motifs such as an ovolo, a palmette, v
 | <span class="inscription">QVINTVSIVSPICTORETCENES</span> | [401](401) | | African | end of 3rd century A.D.? |
 | <span class="inscription">ROMANE/SIS</span> | [440](440) | | Italic based at Cnidus | A.D. 70–130 |
 | <span class="inscription">ROI</span> | [616](616) | on a bronze lamp  | ? | ? |
-| <span class="inscription">RV.VSI</span>? | [276](276) | | Italic? | ? |  
+| <span class="inscription">RV.VSI</span>? | [276](276) | | Italic? | ? |
 | <span class="inscription">SERGPRIM</span> | [347](347) | Italic | 1st half of 1st century A.D.
 | <span class="inscription">SLMRMEVO</span> | [301](301) | fake lamp | Italian forger | modern |
 | <span class="inscription">SOTE</span> | [201](201) | | African | Tiberian–early Trajanic |
 | <span class="inscription">STROBILI</span> | [444](444) | | Italic based in Egypt | Flavian |
 | <span class="inscription">VICT/ORINI</span> | [468](468) | | African | 1st quarter of 4th century A.D. |
 
-##### Illegible *Tria Nomina* Signatures
-
-- [85](85), [94](94) (<span class="inscription">C[–] I F</span>?), [217](217), [263](263), [278](278), [288](288), [312](312)
-
-##### Initials
-
-- <span class="inscription">A</span>, [91](91); <span class="inscription">C</span>, [199](199); <span class="inscription">C.L</span>, [324](324); <span class="inscription">D</span>, [192](192), [214](214)?; <span class="inscription">I</span>? [188](188); <span class="inscription">N</span>, [72](72); <span class="inscription">P.A.</span>, [134](134); <span class="inscription">S</span>, [222](222), [283](283); <span class="inscription">T</span>, [219](219), [289](289); <span class="inscription">V</span>, [191](191); <span class="inscription">X</span>, [254](254); <span class="inscription">Y</span>, [37](37)
-
-#### Illegible *Planta Pedis*
-
-- [109–10](109,%20110), [124](124), [141](141), [154](154), [212](212), [250](250)
-
-#### Various Other Inscriptions
-
-- New year wishes: <span class="inscription"> . . . FAVSTUMFELICEMMIHIC</span> (the well-known inscription <span class="inscription">ANNVMNOVM FASTVMFELICEMMIHIC</span>) inscribed on Victory 's shield, [248](248)
-- Victorious horse: <span class="inscription">REGNATOR</span> inscribed on discus, [305](305)
-- Victorious charioteer: <span class="inscription">TERES</span> inscribed *in tabula ansata* on discus, [222](222)
-- Victorious gladiators: <span class="inscription">SABINVS</span> and <span class="inscription">POPILLIVS</span> inscribed *in tabula ansata* on discus, [107](107)
-- Victorious gladiator: <span class="inscription">VALERIVS</span> inscribed *in tabula ansata* on discus, [199](199)
-- Propaganda: <span class="inscription">OB CIIVIS[VATOS]</span> inscribed on the shield of a Victory, [98](98)
+- #### Lampmakers’ Signatures (*continued*)
+  - ##### Illegible *Tria Nomina* Signatures
+    - [85](85), [94](94) (<span class="inscription">C[–] I F</span>?), [217](217), [263](263), [278](278), [288](288), [312](312)
+  - ##### Initials
+    - <span class="inscription">A</span>, [91](91); <span class="inscription">C</span>, [199](199); <span class="inscription">C.L</span>, [324](324); <span class="inscription">D</span>, [192](192), [214](214)?; <span class="inscription">I</span>? [188](188); <span class="inscription">N</span>, [72](72); <span class="inscription">P.A.</span>, [134](134); <span class="inscription">S</span>, [222](222), [283](283); <span class="inscription">T</span>, [219](219), [289](289); <span class="inscription">V</span>, [191](191); <span class="inscription">X</span>, [254](254); <span class="inscription">Y</span>, [37](37)
+- #### Illegible *Planta Pedis*
+  - [109–10](109,%20110), [124](124), [141](141), [154](154), [212](212), [250](250)
+- #### Various Other Inscriptions
+  - New year wishes: <span class="inscription"> . . . FAVSTUMFELICEMMIHIC</span> (the well-known inscription <span class="inscription">ANNVMNOVM FASTVMFELICEMMIHIC</span>) inscribed on Victory 's shield, [248](248)
+  - Victorious horse: <span class="inscription">REGNATOR</span> inscribed on discus, [305](305)
+  - Victorious charioteer: <span class="inscription">TERES</span> inscribed *in tabula ansata* on discus, [222](222)
+  - Victorious gladiators: <span class="inscription">SABINVS</span> and <span class="inscription">POPILLIVS</span> inscribed *in tabula ansata* on discus, [107](107)
+  - Victorious gladiator: <span class="inscription">VALERIVS</span> inscribed *in tabula ansata* on discus, [199](199)
+  - Propaganda: <span class="inscription">OB CIIVIS[VATOS]</span> inscribed on the shield of a Victory, [98](98)
 
 ### Greek Inscriptions
 
-Of the eleven Greek inscriptions, no name is previously known from other lamps.
+*Of the eleven Greek inscriptions, no name is previously known from other lamps.*
 
-#### Name of the Lampmaker or of the Owner of the Lamp
-
-- <span class="inscription">C Y E</span>? [42](42) **[Editorial note: letter C is retrograde]**
-- <span class="inscription">CΩCIBIOY</span>, [47](47)
-- <span class="inscription">E I C // I Ω / N // O C</span>, [155](155)
-- <span class="inscription">ΕΥΚΤΗΡΟΝΟΥ</span>, [582](582)
-
-#### Name of the Lampmaker
-
-- <span class="inscription">ΠΥ</span>, [83](83)
-- <span class="inscription">ΕΠΑΦΡΑC ΤΥΧACΙΟΥ</span>, [42](42)
-
-#### Religious Meaning
-
-- <span class="inscription">EΥΛΟΓΙΑΤΗCΘΕΟΤΟΚYΜΗ[ . . . . ]ΙΓΡΑΜΑ</span>, [548](548)
-- <span class="inscription">ΦENIΠACINΦΩCXPICTO</span>, [557](557)
-
-#### Commercial Meaning
-
-- <span class="inscription">ΦΩC/ΑΓΑ/ΘΟΝ</span>, [36](36)
-
-#### Three First Letters of the Greek Alphabet on a Scroll
-
-- <span class="inscription">ABΓ</span>, [587](587)
-
-#### Uncertain Reading
-
-- <span class="inscription">ΕΡΩ/TΡΑ/O(?)ΥΡΥΟC</span>, [50](50)
+- #### Name of the Lampmaker or of the Owner of the Lamp
+  - <span class="inscription">C Y E</span>? [42](42)
+  - <span class="inscription">CΩCIBIOY</span>, [47](47)
+  - <span class="inscription">E I C // I Ω / N // O C</span>, [155](155)
+  - <span class="inscription">ΕΥΚΤΗΡΟΝΟΥ</span>, [582](582)
+- #### Name of the Lampmaker
+  - <span class="inscription">ΠΥ</span>, [83](83)
+  - <span class="inscription">ΕΠΑΦΡΑC ΤΥΧACΙΟΥ</span>, [42](42)
+- #### Religious Meaning
+  - <span class="inscription">EΥΛΟΓΙΑΤΗCΘΕΟΤΟΚYΜΗ[ . . . . ]ΙΓΡΑΜΑ</span>, [548](548)
+  - <span class="inscription">ΦENIΠACINΦΩCXPICTO</span>, [557](557)
+- #### Commercial Meaning
+  - <span class="inscription">ΦΩC/ΑΓΑ/ΘΟΝ</span>, [36](36)
+- #### Three First Letters of the Greek Alphabet on a Scroll
+  - <span class="inscription">ABΓ</span>, [587](587)
+- #### Uncertain Reading
+  - <span class="inscription">ΕΡΩ/TΡΑ/O(?)ΥΡΥΟC</span>, [50](50)
 
 ### Makers’ Figurative Marks
 
@@ -145,10 +128,35 @@ Of the eleven Greek inscriptions, no name is previously known from other lamps.
 
 ### Other Figurative Marks
 
-**Editorial note: These drawings are all given in a separate document
-(Drwgs. of stamps). They should appear here, arranged as they are in
-that drawing.**
-
-**NOTE : All the drawings need to be checked against the photos of the
-bottoms of the lamps. Cat. Nos. 370 and 398 should be deleted, as should
-perhaps cats. 342 and 364.**
+<table id="stamps-table">
+  <tbody>
+    <tr class="catalogue-numbers"><td><a href="188">188</a></td><td><a href="104">104</a></td><td><a href="137">137</a></td><td><a href="231">231</a></td><td><a href="243">243</a></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_188.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_104.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_137.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_231.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_243.jpg" alt="" /></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="70">70</a></td><td><a href="291">291</a></td><td><a href="398">398</a></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_70.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_291.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_398.jpg" alt="" /></td><td></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="94">94</a></td><td><a href="175">175</a></td><td><a href="176">176</a></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_94.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_175.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_176.jpg" alt="" /></td><td></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="39">39</a></td><td><a href="191">191</a></td><td><a href="192">192</a></td><td><a href="219">219</a></td><td><a href="222">222</a></td><td><a href="584">584</a></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_39.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_191.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_192.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_219.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_222.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_584.jpg" alt="" /></td></tr>
+    <tr class="catalogue-numbers"><td><a href="200">200</a></td><td><a href="228">228</a></td><td><a href="236">236</a></td><td><a href="253">253</a></td><td><a href="254">254</a></td><td><a href="258">258</a></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_200.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_228.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_236.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_253.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_254.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_258.jpg" alt="" /></td></tr>
+    <tr class="catalogue-numbers"><td><a href="286">286</a></td><td><a href="289">289</a></td><td><a href="294">294</a></td><td><a href="297">297</a></td><td><a href="283">283</a></td><td><a href="342">342</a></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_286.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_289.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_294.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_297.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_283.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_342.jpg" alt="" /></td></tr>
+    <tr class="catalogue-numbers"><td><a href="315">315</a></td><td><a href="378">378</a></td><td><a href="440">440</a></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_315.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_378.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_440.jpg" alt="" /></td><td></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="364">364</a>, <a href="365">365</a>, <a href="370">370</a>, <a href="373">373</a>, <a href="377">377</a>, <a href="387">387</a>, <a href="389">389</a>, <a href="391">391</a>, <a href="392">392</a>,  <a href="394">394</a>, <a href="395">395</a></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_364-365-370-373-377-387-389-391-392-394-395.jpg" alt="" /></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="369">369</a></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_369.jpg" alt="" /></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="367">367</a></td><td><a href="374">374</a></td><td></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_367.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_374.jpg" alt="" /></td><td></td><td></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="439">439</a></td><td><a href="501">501</a></td><td><a href="502">502</a></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_439.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_501.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_502.jpg" alt="" /></td><td></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="517">517</a></td><td><a href="535">535</a></td><td><a href="543">543</a></td><td><a href="545">545</a></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_517.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_535.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_543.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_545.jpg" alt="" /></td><td></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="372">372</a></td><td><a href="549">549</a></td><td><a href="551">551</a></td><td><a href="500">500</a></td><td><a href="572">572</a></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_372.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_549.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_551.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_500.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_572.jpg" alt="" /></td><td></td></tr>
+    <tr class="catalogue-numbers"><td><a href="166">166</a></td><td><a href="421">421</a></td><td><a href="600">600</a></td><td></td><td></td><td></td></tr>
+    <tr class="stamps"><td><img src="../assets/images/stamps/stamp_166.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_421.jpg" alt="" /></td><td><img src="../assets/images/stamps/stamp_600.jpg" alt="" /></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
