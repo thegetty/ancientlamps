@@ -4,6 +4,7 @@ layout: page
 sort_order: 201
 ---
 
+<div id="index-of-decors">
 <ol type="I" markdown="0">
   <li><span class="list-number">I.</span> Religion and Myth
     <ol>
@@ -12,13 +13,13 @@ sort_order: 201
           <li><span class="list-number">I.a.1.</span> Apollo <a href="212">212</a>, <a href="363">363</a>, <a href="368">368</a>, <a href="389">389</a>, <a href="411">411</a></li>
           <li><span class="list-number">I.a.2.</span> Bacchus and his followers
             <ol>
-              <li><span class="list-number">I.a.2(1).</span> Bacchus, <a href="92">92</a>, <a href="112">112</a>, <a href="121">121</a>, <a href="126">126</a>(?), <a href="149">149</a>, <a href="239">239</a>, <a href="370">370</a>, <a href="392">392</a>(?), <a href="428">428</a>, <a href="444">444</a>(?), <a href="490">490</a>(?), <a href="600">600</a>–<a href="601">601</a>(?)</li><li>
+              <li><span class="list-number">I.a.2(1).</span> Bacchus, <a href="92">92</a>, <a href="112">112</a>, <a href="121">121</a>, <a href="126">126</a>(?), <a href="149">149</a>, <a href="239">239</a>, <a href="370">370</a>, <a href="392">392</a>(?), <a href="428">428</a>, <a href="444">444</a>(?), <a href="490">490</a>(?), <a href="600">600</a>–<a href="601">601</a>(?)</li>
               <li><span class="list-number">I.a.2(2).</span> Silenus, <a href="84">84</a>–<a href="85">85</a>, <a href="333">333</a>, <a href="626">626</a>(?)</li>
               <li><span class="list-number">I.a.2(3).</span> Pan, <a href="414">414</a></li>
               <li><span class="list-number">I.a.2(4).</span> Maenads, <a href="106">106</a>, <a href="175">175</a>(?), <a href="428">428</a>, <a href="490">490</a>, <a href="600">600</a></li>
               <li><span class="list-number">I.a.2(5).</span> Satyrs, <a href="111">111</a>, <a href="235">235</a>, <a href="283">283</a>(?), <a href="381">381</a>, <a href="490">490</a>(?), <a href="600">600</a>(?)</li>
               <li><span class="list-number">I.a.2(6).</span> Nymph, <a href="414">414</a></li>
-              <li><span class="list-number">I.a.2(7).</span> Faun, <a href="320">320</a></li><li>
+              <li><span class="list-number">I.a.2(7).</span> Faun, <a href="320">320</a></li>
             </ol>
           </li>
           <li><span class="list-number">I.a.3.</span> Diana, <a href="296">296</a>, <a href="373">373</a>, <a href="385">385</a></li>
@@ -63,7 +64,7 @@ sort_order: 201
             </ol>
           </li>
         </ol>
-      <li>
+      </li>
       <li><span class="list-number">I.d.</span> African Cult
         <ol>
           <li><span class="list-number">I.d.1.</span> Africa, <a href="286">286</a></li>
@@ -184,7 +185,7 @@ sort_order: 201
           <li><span class="list-number">III.a.4.</span> Things
             <ol>
               <li><span class="list-number">III.a.4(1).</span> Alabastron, <a href="280-81">280–81</a></li>
-              <li><span class="list-number">III.a.4(2).</span> Altar, <a href="162">162</a>, <a href="166">166</a>, 196, 231, 251, 287(?), 300, 310, 382, 422, 484(?)
+              <li><span class="list-number">III.a.4(2).</span> Altar, <a href="162">162</a>, <a href="166">166</a>, 196, 231, 251, 287(?), 300, 310, 382, 422, 484(?)</li>
               <li><span class="list-number">III.a.4(3).</span> Amphora, <a href="101">101</a>, <a href="303">303</a>, <a href="339">339</a></li>
               <li><span class="list-number">III.a.4(4).</span> Arch, <a href="464">464</a>, <a href="466">466</a></li>
               <li><span class="list-number">III.a.4(5).</span> Aulos, <a href="196">196</a>, <a href="235">235</a>, <a href="287">287</a></li>
@@ -250,7 +251,7 @@ sort_order: 201
               <li><span class="list-number">III.a.4(65).</span> Tunic, <a href="86">86</a>, <a href="105">105</a>, <a href="107">107</a>, <a href="139">139</a>, <a href="180">180</a>, <a href="204">204</a>, <a href="213">213</a>, <a href="238">238</a>, <a href="252">252</a>, <a href="290">290</a>, <a href="300">300</a>, <a href="310">310</a>, <a href="344">344</a>, <a href="365">365</a>, <a href="389">389</a>, <a href="393">393</a>, <a href="493">493</a></li>
               <li><span class="list-number">III.a.4(66).</span> Tympanon, <a href="126">126</a>, <a href="175">175</a>, <a href="250">250</a></li>
               <li><span class="list-number">III.a.4(67).</span> Vase, <a href="109">109</a>, <a href="124">124</a>, <a href="142">142</a></li>
-              <li><span class="list-number">III.a.4(68).</span> Victory crown: <em>see</em> v.d.5 Wreath
+              <li><span class="list-number">III.a.4(68).</span> Victory crown: <em>see</em> v.d.5 Wreath</li>
               <li><span class="list-number">III.a.4(69).</span> Water basin, <a href="185">185</a></li>
               <li><span class="list-number">III.a.4(70).</span> Whip, <a href="178">178</a>, <a href="387">387</a>, <a href="389">389</a>, <a href="411">411</a>, <a href="464">464</a>, <a href="468">468</a></li>
             </ol>
@@ -334,7 +335,7 @@ sort_order: 201
           <li><span class="list-number">III.g.2.</span> Homosexual, <a href="317-18">317–18</a></li>
           <li><span class="list-number">III.g.3.</span> With animals, <a href="354">354</a>, <a href="355">355</a></li>
         </ol>
-      <li>
+      </li>
       <li><span class="list-number">III.h.</span> Anonymous Portraits or Busts
         <ol>
           <li><span class="list-number">III.h.1.</span> Bust of young man, <a href="338">338</a></li>
@@ -344,7 +345,7 @@ sort_order: 201
           <li><span class="list-number">III.h.5.</span> Male or female bust(?), <a href="533">533</a></li>
           <li><span class="list-number">III.h.6.</span> Male and female heads facing each other, <a href="539">539</a></li>
         </ol>
-      <li>
+      </li>
     </ol>
   </li>
   <li><span class="list-number">IV.</span> Animals
@@ -361,29 +362,29 @@ sort_order: 201
           <li><span class="list-number">IV.a.8.</span> Dolphin, <a href="88">88</a>, <a href="103">103</a>, <a href="210">210</a>, <a href="360">360</a>, <a href="420">420</a>, <a href="423">423</a></li>
           <li><span class="list-number">IV.a.9.</span> Donkey, <a href="91">91</a>, <a href="95">95</a>, <a href="188">188</a>, <a href="215">251</a>(?), <a href="354-55">354–55</a>(?), <a href="464">464</a>(?)</li>
           <li><span class="list-number">IV.a.10.</span> Dromedary, <a href="497">497</a></li>
-          <li><span class="list-number">IV.a.11.</span> Elephant, <a href="286">286</a>, <a href="625">625</a> (on lamp sides only)
+          <li><span class="list-number">IV.a.11.</span> Elephant, <a href="286">286</a>, <a href="625">625</a> (on lamp sides only)</li>
           <li><span class="list-number">IV.a.12.</span> Goat, <a href="129">129</a>, <a href="136">136</a>, <a href="234">234</a>, <a href="242">242</a></li>
           <li><span class="list-number">IV.a.13.</span> Horse, <a href="95">95</a>, <a href="104-5">104–5</a>, <a href="178">178</a>, <a href="226">226</a>, <a href="252%20bis">252 bis</a>, <a href="255">255</a>, <a href="305">305</a>, <a href="311">311</a>, <a href="354-55">354–55</a>(?), <a href="400">400</a>, <a href="411">411</a></li>
           <li><span class="list-number">IV.a.14.</span> Lion, lioness, <a href="91">91</a>, <a href="127">127</a>, <a href="141">141</a>, <a href="187-89">187–89</a>, <a href="191">191</a>, <a href="279">279</a>, <a href="294">294</a>, <a href="304">304</a>, <a href="324">324</a>, <a href="332">332</a>, <a href="337">337</a>, <a href="365-66">365–66</a>, <a href="375">375</a>, <a href="390">390</a>, <a href="408">408</a>(?), <a href="473">473</a>, <a href="492">492</a>, <a href="536">536</a>; lionskin, <a href="110">110</a>, <a href="121-22">121–22</a>, <a href="126">126</a>, <a href="308">308</a></li>
-          <li><span class="list-number">IV.a.15.</span> Monkey, <a href="177">177</a>, <a href="238">238</a>, <a href="589">589</a> (plastic lamp in the shape of a monkey)
-          <li><span class="list-number">IV.a.16.</span> Mouse, <a href="629">629</a> (on nozzle only)
+          <li><span class="list-number">IV.a.15.</span> Monkey, <a href="177">177</a>, <a href="238">238</a>, <a href="589">589</a> (plastic lamp in the shape of a monkey)</li>
+          <li><span class="list-number">IV.a.16.</span> Mouse, <a href="629">629</a> (on nozzle only)</li>
           <li><span class="list-number">IV.a.17.</span> Mule, <a href="85">85</a>, <a href="91">91</a></li>
           <li><span class="list-number">IV.a.18.</span> Panther, <a href="92">92</a>, <a href="112">112</a>, <a href="239">239</a>, <a href="257">257</a>, <a href="408">408</a>(?), <a href="521">521</a></li>
           <li><span class="list-number">IV.a.19.</span> Rabbit, hare, <a href="119-20">119–20</a>, <a href="124">124</a>, <a href="401">401</a>, <a href="412">412</a>, <a href="520">520</a></li>
           <li><span class="list-number">IV.a.20.</span> Ram, <a href="167">167</a>, <a href="209">209</a>, <a href="335">335</a>, <a href="369">369</a></li>
-          <li><span class="list-number">IV.a.21.</span> Sheep, <a href="425">425</a>, <a href="502">502</a>, <a href="534">534</a> (lamb)
+          <li><span class="list-number">IV.a.21.</span> Sheep, <a href="425">425</a>, <a href="502">502</a>, <a href="534">534</a> (lamb)</li>
         </ol>
       </li>
       <li><span class="list-number">IV.b.</span> Birds
         <ol>
           <li><span class="list-number">IV.b.1.</span> Cock, <a href="198">198</a>, <a href="388">388</a>, <a href="422">422</a>, <a href="484">484</a></li>
-          <li><span class="list-number">IV.b.2.</span> Dove, pigeon, <a href="205-6">205–6</a>, <a href="282">282</a>, <a href="493">493</a>, <a href="607">607</a> (plastic lamp in the shape of a dove)
+          <li><span class="list-number">IV.b.2.</span> Dove, pigeon, <a href="205-6">205–6</a>, <a href="282">282</a>, <a href="493">493</a>, <a href="607">607</a> (plastic lamp in the shape of a dove)</li>
           <li><span class="list-number">IV.b.3.</span> Duck, <a href="425">425</a>(?), <a href="464">464</a></li>
-          <li><span class="list-number">IV.b.4.</span> Eagle, <a href="120">120</a>, <a href="128">128</a>, <a href="159">159</a>, <a href="166">166</a>, <a href="280">280</a>, <a href="322">322</a>, <a href="325">325</a>, <a href="329">329</a>, <a href="402">402</a>, <a href="417">417</a>, <a href="477">477</a>, <a href="479">479</a>, <a href="582">582</a>, <a href="585">585</a> (on lampstand)
+          <li><span class="list-number">IV.b.4.</span> Eagle, <a href="120">120</a>, <a href="128">128</a>, <a href="159">159</a>, <a href="166">166</a>, <a href="280">280</a>, <a href="322">322</a>, <a href="325">325</a>, <a href="329">329</a>, <a href="402">402</a>, <a href="417">417</a>, <a href="477">477</a>, <a href="479">479</a>, <a href="582">582</a>, <a href="585">585</a> (on lampstand)</li>
           <li><span class="list-number">IV.b.5.</span> Parrot, <a href="128">128</a>(?), <a href="329">329</a>(?)</li>
-          <li><span class="list-number">IV.b.6.</span> Peacock, <a href="166">166</a>, <a href="258">258</a>, <a href="630">630</a> (bronze lamp in the shape of a peacock)
+          <li><span class="list-number">IV.b.6.</span> Peacock, <a href="166">166</a>, <a href="258">258</a>, <a href="630">630</a> (bronze lamp in the shape of a peacock)</li>
           <li><span class="list-number">IV.b.7.</span> Stork, <a href="416">416</a>(?)</li>
-          <li><span class="list-number">IV.b.8.</span> Swan, <a href="358">358</a> (Jupiter)
+          <li><span class="list-number">IV.b.8.</span> Swan, <a href="358">358</a> (Jupiter)</li>
           <li><span class="list-number">IV.b.9.</span> Wading bird, <a href="81">81</a>, <a href="265">265</a>, <a href="416">416</a></li>
           <li><span class="list-number">IV.b.10.</span> Unidentified bird, <a href="79">79</a>, <a href="166">166</a>(?), <a href="177">177</a>, <a href="195">195</a>, <a href="219">219</a>, <a href="308">308</a></li>
         </ol>
@@ -472,3 +473,4 @@ sort_order: 201
     </ol>
   </li>
 </ol>
+</div>
