@@ -18,6 +18,6 @@ The nozzle shapes vary but most lamps have nozzle form Bus. 10b. The nozzle unde
 
 The discus decors of cats. 396 and 398–99 are related to mythology, cat. 400 shows a quadriga, cat. 401 hares, cat. 433 a rosette, cat. 434 a centaur, and cat. 397 is plain.
 
-Five lamps have a base-ring marked off by two circular grooves, two have a plain base-ring, one is a base marked off by one circular groove. There are three workshop marks: cat. 397 a plain *planta pedis,* cat. 400 possibly {{insc:MISASIVS}} or {{insc:ANSASIVS}}(?), cat. 401 {{insc:Q V I N T V S I V S P I C T O R E T C E N E N S}}.
+Five lamps have a base-ring marked off by two circular grooves, two have a plain base-ring, one is a base marked off by one circular groove. There are three workshop marks: cat. 397 a plain *planta pedis,* cat. 400 possibly <span class="inscription">MISASIVS</span> or <span class="inscription">ANSASIVS</span>(?), cat. 401 <span class="inscription">Q V I N T V S I V S P I C T O R E T C E N E N S</span>.
 
 The lamps grouped under D X 10 may have various shapes and do not form a coherent series. Therefore, they can be dated only individually, and due to that lack of dated comparanda, the chronology below is very approximate. Cat. 433 may be assigned to the end of Flavian to the Antonine period, cat. 397 to the second century A.D., cats. 396 and 398 to a period from the end of the second to the beginning of the third century, cat. 401 to the end of the third century A.D.
