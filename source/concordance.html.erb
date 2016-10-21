@@ -1,5 +1,14 @@
 ---
-title: Concordance of Accession Numbers and Catalogue Numbers
+title: Concordance of Identification Numbers
 layout: page
 sort_order: 204
 ---
+
+<table>
+  <tbody>
+    <tr><th>Accession Number</th><th>Catalogue Number</th><th>Getty Collection Link</th></tr>
+    <% data.catalogue.each do |entry| %>
+      <tr><td><%= entry.inv_no %></td><td><a href="<%= entry.cat_no %>"><%= entry.cat_no %></a></td><td><a href="http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>" target="_blank" title="Getty Collection Pages"><%= entry.dor_id %> <i class="ion-link"></i></a></td></tr>
+    <% end %>
+  </tbody>
+<table>
