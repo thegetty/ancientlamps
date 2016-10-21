@@ -1,6 +1,6 @@
 ---
 title: Index of Signatures and Inscriptions
-layout: page
+layout: index
 sort_order: 202
 ---
 
@@ -11,6 +11,7 @@ Forty-five percent of the Getty lamps bear an inscription or a mark. Only one me
 The remaining marks consist of figurative motifs such as an ovolo, a palmette, vertical lines, a plain *planta pedis*, a rosette, a swastika, a trident, etc. These marks appear alone or associated with a lampmaker’s signature. Their meaning is not clear; some may help to identify a workshop, others may be purely decorative motifs (see Bailey BM ii, pp. 104–8; Bussière 2000, pp. 233–36).
 
 #### Lampmakers’ Signatures
+{: .index-indent }
 
 | Workshop name | Cat. no. | Remark | Place of manufacture | Period of activity |
 |---------------|----------|--------|----------------------|--------------------|
@@ -84,6 +85,7 @@ The remaining marks consist of figurative motifs such as an ovolo, a palmette, v
 | <span class="inscription">SOTE</span> | [201](201) | | African | Tiberian–early Trajanic |
 | <span class="inscription">STROBILI</span> | [444](444) | | Italic based in Egypt | Flavian |
 | <span class="inscription">VICT/ORINI</span> | [468](468) | | African | 1st quarter of 4th century A.D. |
+{: .index-indent }
 
 - #### Lampmakers’ Signatures (*continued*)
   - ##### Illegible *Tria Nomina* Signatures
@@ -99,6 +101,7 @@ The remaining marks consist of figurative motifs such as an ovolo, a palmette, v
   - Victorious gladiators: <span class="inscription">SABINVS</span> and <span class="inscription">POPILLIVS</span> inscribed *in tabula ansata* on discus, [107](107)
   - Victorious gladiator: <span class="inscription">VALERIVS</span> inscribed *in tabula ansata* on discus, [199](199)
   - Propaganda: <span class="inscription">OB CIIVIS[VATOS]</span> inscribed on the shield of a Victory, [98](98)
+{: .index-indent }
 
 ### Greek Inscriptions
 
@@ -121,6 +124,7 @@ The remaining marks consist of figurative motifs such as an ovolo, a palmette, v
   - <span class="inscription">ABΓ</span>, [587](587)
 - #### Uncertain Reading
   - <span class="inscription">ΕΡΩ/TΡΑ/O(?)ΥΡΥΟC</span>, [50](50)
+{: .index-indent }
 
 ### Makers’ Figurative Marks
 

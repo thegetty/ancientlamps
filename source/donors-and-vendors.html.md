@@ -1,6 +1,6 @@
 ---
 title: Index of Donors and Vendors
-layout: page
+layout: index
 sort_order: 203
 ---
 
@@ -25,7 +25,6 @@ Catalogue records for the Getty’s collection of lamps often, but not always, g
 - Wier, M.: No place of manufacture or origin given: [159](159) (from the former collection of J. R. Werner).
 - Zeitlin, St.: No place of manufacture or origin given: [622](622).
 - Zimmerman, M. C.: Italy: [71](71), [301](301).
-{: .indented-list }
 
 ### Galleries or Vendors of Lamps Purchased by the Getty Museum
 
@@ -41,7 +40,6 @@ Catalogue records for the Getty’s collection of lamps often, but not always, g
   Second, if in a very few cases Schüller is precise about place of manufacture or origin (Mainz, Cologne, Neuss, Paestum, Rome, London), in most cases he is vague, sometimes wavering. For cat [264](264), his catalogue first says Italy, but then adds in parenthesis (Greece?). Moreover, in several cases his stated place of manufacture or origin in Asia Minor contradicts the indication given by the signature or by the obviously African type of lamp concerned (see cats. [302](302), [315](315), [483](483), [501](501))—unless the lamps had been traded in ancient or modern times.
 
   We nevertheless have decided to quote Schüller's places of manufacture or origin exactly as he formulates them in his catalogue. When necessary we discuss them in our catalogue entries.
-{: .indented-list }
 
 ### Lamps without a Given Place of Manufacture or Origin in Schüller’s Catalogue
 
@@ -74,3 +72,4 @@ Catalogue records for the Getty’s collection of lamps often, but not always, g
   - Mainz: [359](359).
   - Neuss: [177](177), [312](312).
   - England: [519](519) (London).
+{: .index-spaced }

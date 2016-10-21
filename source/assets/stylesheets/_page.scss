@@ -150,32 +150,6 @@ table + .references {
   }
 }
 
-
-
-.indented-list {
-  padding-left: $base-spacing;
-  text-indent: -$base-spacing;
-  li {
-    margin-bottom: 0;
-    p {
-      text-indent: 0;
-      margin-bottom: $base-spacing * 0.5;
-    }
-    p:first-child {
-      text-indent: inherit;
-    }
-  }
-}
-
-#index-of-decors ol {
-  list-style-type: none;
-  padding-left: $base-spacing;
-  text-indent: -$base-spacing;
-  li > ol {
-    margin-top: $base-spacing * 0.5;
-  }
-}
-
 .inscription {
   font-family: $heading-font-family, sans-serif;
   font-size: 90%;

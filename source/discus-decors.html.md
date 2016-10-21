@@ -1,10 +1,9 @@
 ---
 title: Index of Discus Decors
-layout: page
+layout: index
 sort_order: 201
 ---
 
-<div id="index-of-decors">
 <ol type="I" markdown="0">
   <li><span class="list-number">I.</span> Religion and Myth
     <ol>
@@ -473,4 +472,3 @@ sort_order: 201
     </ol>
   </li>
 </ol>
-</div>
