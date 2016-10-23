@@ -4,7 +4,7 @@ layout: page
 sort_order: 6
 ---
 
-<ol type="I" markdown="0">
+<ol type="I" class="classification" markdown="0">
   <li>Phoenico-Punic Clay Saucer Lamps
     <ol type="1">
       <li>Vessberg type 1 <a href="1-2">cats. 1–2</a></li>

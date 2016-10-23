@@ -53,12 +53,20 @@ html { min-height: 100vh; }
 
   p { margin-bottom: 1rem; }
   p + p { text-indent: 0; }
-  ul { margin-bottom: 1rem; }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem; }
 
 }
 
 .section-nav {
   margin: 0 0 $base-spacing;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
   @include media($large-screen-up) {
     margin: 0 0 $base-spacing;

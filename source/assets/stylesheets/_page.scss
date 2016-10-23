@@ -56,8 +56,12 @@
   @extend .body-copy;
 }
 
-.contributor-bios li, .glossary li {
-  margin-bottom: $small-spacing;
+.contributor-bios, .glossary {
+  list-style-type: none;
+  padding: 0;
+  li {
+    margin-bottom: $small-spacing;
+  }
 }
 
 .glossary .term {
@@ -71,6 +75,11 @@
   p {
     font-size: 0.75em;
     + p { text-indent: 0; }
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 0;
   }
 
   li {
