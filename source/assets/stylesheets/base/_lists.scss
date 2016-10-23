@@ -64,8 +64,12 @@ dl {
   }
 }
 
-// .classification {
-//   ul {
-//     list-style-type: inline;
-//   }
-// }
+.sub-decimal {
+  list-style-type: none;
+  padding-left: $base-spacing;
+  text-indent: -$base-spacing;
+  ol {
+    list-style-type: lower-alpha;
+    text-indent: 0;
+  }
+}
