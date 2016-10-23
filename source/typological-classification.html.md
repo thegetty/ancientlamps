@@ -251,6 +251,6 @@ sort_order: 6
 <div class="footnotes" markdown="0">
   <ol type="1">
     <li id="fn:1">cat. 458 is a mold for the upper part of a <em>Firmalampe</em>.<a href="#fnref:1" class="reversefootnote">&#8617;</a></li>
-    <li id="fn:2"><p>This type, represented in the Getty collection by two examples only, begins in the Byzantine period and extends beyond it. But it has nevertheless been kept within section iii, Roman-period lamps.<a href="#fnref:2" class="reversefootnote">&#8617;</a></li>
+    <li id="fn:2">This type, represented in the Getty collection by two examples only, begins in the Byzantine period and extends beyond it. But it has nevertheless been kept within section iii, Roman-period lamps.<a href="#fnref:2" class="reversefootnote">&#8617;</a></li>
   </ol>
 </div>
