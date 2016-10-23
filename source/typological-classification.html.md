@@ -1,7 +1,7 @@
 ---
 title: Typological Classification
 layout: page
-sort_order: 6
+sort_order: 7
 ---
 
 <ol type="I" class="classification" markdown="0">
