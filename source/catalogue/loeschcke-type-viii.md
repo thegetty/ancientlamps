@@ -25,6 +25,6 @@ Of the clay lamps in the Getty collection, sixty-four show mica. Hellenistic lam
 
 Nozzle forms encountered in Loeschcke type VIII lamps:
 
-{{fig\_3}}
+{{fig_3}}
 
 Note: Each introduction is given a number in ascending order (from 1 to 19), to facilitate cross-references.

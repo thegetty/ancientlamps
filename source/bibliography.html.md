@@ -171,7 +171,7 @@ Barnish, S. J. B. 1992. *Cassiodorus, The Variae*. Liverpool.
 Barr-Sharrar, B. 1994. “The Bronze Lamps.” In *Das Wrack: Die antike Schiffsfunde von Mahdia*, ed. G. Hellenkemper Salies, H.-H. von Prittwitz und Gaffron, and G. Bauchhenz, vol. 1, pp. 639–55. Cologne.
 
 - **Bartoli Santi and Bellori 1702** <br />
-Bartoli Santi, P., and J. P. Bellori. 1702. *Lucernae veterum sepulchrales iconicae*. Coloniae Marchicae \[Berlin\].
+Bartoli Santi, P., and J. P. Bellori. 1702. *Lucernae veterum sepulchrales iconicae*. Coloniae Marchicae [Berlin].
 
 - **Bass and Van Doorninck 1982** <br />
 Bass, G. F., and F. H. Van Doorninck. 1982. “The Lamps.” In *A Seventh-Century Byzantine Shipwreck*. Vol. 1 of *Yassi Ada,* pp. 189–201. College Station, TX.
@@ -350,7 +350,7 @@ Bussière, J. and J.-C. Rivel. 1989. *Lampes antiques de Méditerranée: La
 collection Rivel*. BAR international series 2428. Oxford.
 
 - **Buzov 2006** <br />
-Buzov, M. 2006. “Lucerne iz Siscije” \[Lamps from Siscia\]. *Histria Antiqua* 14: 167–90.
+Buzov, M. 2006. “Lucerne iz Siscije” [Lamps from Siscia]. *Histria Antiqua* 14: 167–90.
 
 - **Cahn-Klaiber 1977** <br />
 Cahn-Klaiber, E.-M. 1977. *Die antiken Tonlampen des archäologischen Instituts der Universität Tübingen*. *Tübinger Studien zur Archäologie und Kunstgeschichte* 2. Tübingen.
@@ -419,7 +419,7 @@ Chrzanovski, L. 2006. *Lumière! L’éclairage dans* *l’antiquité.* Exh. cat
 Chrzanovski, L., and D. Zhuravlev. 1998. *Lamps from Chersonesos in the State Historical Museum, Moscow*. Rome.
 
 - **Chrzanovski et al. 2006** <br />
-Chrzanovski, L., et al. 2000. *Lampes et monnaies romaines de Carthage: Catalogue de la collection Dr. A. Devant, Musée de Viuz-Faverges*. \[Faverges.\]
+Chrzanovski, L., et al. 2000. *Lampes et monnaies romaines de Carthage: Catalogue de la collection Dr. A. Devant, Musée de Viuz-Faverges*. [Faverges.]
 
 - **Cicikowa 1999** <br />
 Cicikowa, M. 1999. “Lampes paléobyzantines de Novae.” In *Der Limes an der unteren Donau von Diokletian bis Heraklios*, ed. G. von Bülow and A. Dimitrova-Milcheva, pp. 105–10. Sofia.
@@ -517,7 +517,7 @@ Domergue, C. 1966. “Un Envoi de lampes du potier caivs clodivs.” *Mélanges 
 Dressel, H., 1899. “Lucernae formae.” *CIL* 15.2.1, pp. 782–870. Berlin.
 
 - **Drougou 1992** <br />
-Drougou, S. 1992. *Anaskaph Pellas 1957–1964: hoi plinoi lychnoi.* \[Excavations in Pella 1957–1964: The Clay Lamps.\] Athens.
+Drougou, S. 1992. *Anaskaph Pellas 1957–1964: hoi plinoi lychnoi.* [Excavations in Pella 1957–1964: The Clay Lamps.] Athens.
 
 - **Du Mesnil du Buisson 1966** <br />
 Du Mesnil du Buisson, R. 1966. “Les Lampes funéraires des époques romaines et chrétiennes de la région de Homs.” *Bulletin de la Société nationale des Antiquaires de France*, pp. 151–57.
@@ -679,10 +679,10 @@ Goldman, H., et al. 1950. “The Lamps.” In *Excavations at* *Gözlü Kule*, e
 
 - **Gorny and Mosch 2006** <br />
 Gorny and Mosch. 2006. *Auction catalogue* no. 150, 11 July 2006.
-\[Munich?\]
+[Munich?]
 
 - **Gorny and Mosch 2007a** <br />
-Gorny and Mosch. 2007a. *Auction catalogue* no. 158, 22 June 2007. \[Munich?\]
+Gorny and Mosch. 2007a. *Auction catalogue* no. 158, 22 June 2007. [Munich?]
 
 - **Gorny and Mosch 2007b** <br />
 Gorny and Mosch. 2007b. *Auction catalogue* no. 163, 14 December 2007. Munich.
@@ -883,7 +883,7 @@ Kiss, Z. 1984. “Une Lampe d’Alexandrie avec scène pastorale.” In *Alessan
 Knowles, K. 2006. ”The Pottery Lamps.” In *Ceramic Vessels and Related Objects*. Vol. 3 of *Survey and Excavation: Mons Claudianus* *1987–1993*, ed. V. A. Maxfield and D. P. S. Peacock, pp. 307–421. Cairo.
 
 - **Koutoussaki 2008** <br />
-Koutoussaki, L. 2008. *Lampes d’Argos: Les lampes en terre cuite découvertes dans l’Agora et les Thermes. Campagnes de fouilles 1972–1991.* \[Fribourg, Switzerland.\]
+Koutoussaki, L. 2008. *Lampes d’Argos: Les lampes en terre cuite découvertes dans l’Agora et les Thermes. Campagnes de fouilles 1972–1991.* [Fribourg, Switzerland.]
 
 - **Kricheldorf, 1962** <br />
 Kricheldorf, H. H. 1962. Tonlampen der Antike aus Kleinasien, Griechenland, Italien, Nordafrika, griechisch und römischer Zeit, 5./4. Jahrhundert v. Chr. bis 3./4. Jahrhundert n. Chr. Auktion, 11 October 1962. Stuttgart.
@@ -999,7 +999,7 @@ Marcadé, J. 1984. “La Lampe au nègre de Bordeneuve-de Bory.” In *Alessandr
 Marcattili, F. 2006. “Ara Cons in Circo Maximo.” *Mélanges de l’École française de Rome* 118.2, pp. 621–51.
 
 - **Mardei 1994** <br />
-Mardei, J. 1994. “Glinene svjetiljke \[Clay Lamps\].” In *Salona Christiana*, ed. E. Marin and Z. Buljevi, pp. 271–78. Split.
+Mardei, J. 1994. “Glinene svjetiljke [Clay Lamps].” In *Salona Christiana*, ed. E. Marin and Z. Buljevi, pp. 271–78. Split.
 
 - **Masiello 1992** <br />
 Masiello, L. 1992. “Lucerne di età ellenistica in Italia meridionale.” *Taras: Rivista di Archeologia* 12.1: 57–114.
@@ -1137,7 +1137,7 @@ Paleani, M. T. 1993. *Le lucerne paleocristiane*. Rome.
 Palol, P. de. 1950. “La colección de lucernas romanas de cerámica procedente de Ampurias en el Museo Arqueológico de Gerona.” *Memorias de los Museos Arqueólogicos Provinciales* 9–10 (1948–49): 233–65. Madrid.
 
 - **Panazza 2006** <br />
-Panazza, P. 1984. *Le lucerne romane della Valcamonica*. \[Nadro, Ceto.\]
+Panazza, P. 1984. *Le lucerne romane della Valcamonica*. [Nadro, Ceto.]
 
 - **Papadopoulou 2005** <br />
 Papadopoulou, B. 2005. “Bronze Lamps and Polycandela: The Averof Collection in the Baron Tositsas Foundation Museum.” *Lychnological Acts* 1. *Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique (Nyon–Geneva, 29 September–4 October 2003)*, ed. L. Chrzanovski, pp. 257–62.
@@ -1170,7 +1170,7 @@ Peacock, D. P. S., F. Bejaoui, and N. Ben Lazreg. 1990. “Roman Pottery Product
 Perlzweig, J. 1961. *Lamps of the Roman Period.* Vol. 7 of *The Athenian Agora*. Princeton.
 
 - **Petrie 1905** <br />
-Petrie, W. M. F. 1905. *Naukratis*. Part 1. London \[1886\].
+Petrie, W. M. F. 1905. *Naukratis*. Part 1. London [1886].
 
 - **Pettinau 1990** <br />
 Pettinau, B. 1990. “L’illuminazione della domus.” In *Il* *bronzo dei romani: Arredo e suppellettile*, ed. L. P. B. Stefanelli, pp. 81–101. Rome.
@@ -1244,7 +1244,7 @@ Righini, V. 1966. “Le lucerne ellenistiche e romane di Faenza e del territorio
 Rivet, L. 2003. *Lampes antiques du Golfe de Fos*. Aix-en Provence.
 
 - **Robin Petitot 2000** <br />
-Robin Petitot, B. 2000. *Catalogue des lampes grecques et romaines*. Musée de l’Arles antique. \[Arles.\]
+Robin Petitot, B. 2000. *Catalogue des lampes grecques et romaines*. Musée de l’Arles antique. [Arles.]
 
 - **Rodríguez González 1989** <br />
 Rodríguez González, X. 1989. ”Lucernas romanas de Santomé (Ourense).” *Boletín Auriense* 18–19 (1988–89): 31–43.
@@ -1262,7 +1262,7 @@ Rodríguez Neila, J. F. 1977. “Serie de lucernas de Osuna.” *Habis* 8: 285�
 Rohde, E. 1990. *Corpus Vasorum Antiquorum*. Deutsche Demokratische Republik, vol. 3. Staatliche Museen zu Berlin, Antikensammlung.
 
 - **Rosenthal and Sivan 1978** <br />
-Rosenthal, R., and R. Sivan. 1978. *Ancient Lamps in the Schloessinger Collection*. \[Jerusalem.\]
+Rosenthal, R., and R. Sivan. 1978. *Ancient Lamps in the Schloessinger Collection*. [Jerusalem.]
 
 - **Ross 1960** <br />
 Ross, M. C. 1960. “Byzantine Bronze Peacock Lamps.” *Archaeology* 13: 134–36.
@@ -1425,7 +1425,7 @@ Vegas, M. 1994. ”La Céramique du ‘camp’ à Simitthus.” In *Simitthus* 2
 Vermaseren, M. J., and C. C. van Essen. 1965. *The Excavations in the Mithraeum of the Church of Santa Prisca in Rome*. Leiden.
 
 - **Vernou-Magister 2006** <br />
-Vernou-Magister, C. 1991. “Recherches sur les lampes antiques en Poitou-Charentes.” *Actes du Congrès de Cognac*, 8–11 May 1991, ed. L. Rivet, pp. 113–18. \[Marseille.\]
+Vernou-Magister, C. 1991. “Recherches sur les lampes antiques en Poitou-Charentes.” *Actes du Congrès de Cognac*, 8–11 May 1991, ed. L. Rivet, pp. 113–18. [Marseille.]
 
 - **Vertet 2006** <br />
 Vertet, H. 1983. *Les Techniques de fabrication des lampes en terre-cuite du centre de la Gaule*. Avignon.
@@ -1437,7 +1437,7 @@ Vessberg, O. 1953. “Hellenistic and Roman Lamps in Cyprus.” *Opuscula Atheni
 Vessberg, O., and A. Westholm. 1956. ”The Lamps.” In *The Hellenistic and Roman Periods in Cyprus*, pp. 121–27, 184–93. Vol. 4.3 of *The Swedish Cyprus Expedition*. Lund.
 
 - **Viki-Belani 1976** <br />
-Viki-Belani, B. 1976. *Anticke svjetiljke: U Archeolokom muzeju u Zagrebu*. \[Ancient lamps in the collection of the archaeological museum in Zagreb.\] Zagreb.
+Viki-Belani, B. 1976. *Anticke svjetiljke: U Archeolokom muzeju u Zagrebu*. [Ancient lamps in the collection of the archaeological museum in Zagreb.] Zagreb.
 
 - **von Saldern et al. 1974** <br />
 von Saldern, A., et al. 1974. *Gläser der Antike: Sammlung Erwin Oppenländer*. Hamburg.
