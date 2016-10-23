@@ -59,16 +59,16 @@ sort_order: 7
             <ol type="1">
               <li>Loeschcke type I
                 <ol class="sub-decimal">
-                  <li>Loeschcke type I A = Bailey type A group i <a href="76-84">cats. 76–84</a></li>
-                  <li>Loeschcke type I B = Bailey type A gr ii, iii, iv
+                  <li><span class="list-number">1.1.</span> Loeschcke type I A = Bailey type A group i <a href="76-84">cats. 76–84</a></li>
+                  <li><span class="list-number">1.2.</span> Loeschcke type I B = Bailey type A gr ii, iii, iv
                     <ol type="a">
                       <li>Bailey type A group ii <a href="85-86">cats. 85–86</a></li>
                       <li>Bailey type A group iii <a href="87-117">cats. 87–117</a></li>
                       <li>Bailey type A group iv <a href="118">cat. 118</a></li>
                     </ol>
                   </li>
-                  <li>Loeschcke type I B/C cats. <a href="119-29">cats. 119–29</a></li>
-                  <li>Loeschcke type I C <a href="130-42">cats. 130–42</a></li>
+                  <li><span class="list-number">1.3.</span> Loeschcke type I B/C cats. <a href="119-29">cats. 119–29</a></li>
+                  <li><span class="list-number">1.4.</span> Loeschcke type I C <a href="130-42">cats. 130–42</a></li>
                 </ol>
               </li>
               <li>Loeschcke type I vars. <a href="143-46bis">cats. 143–46 bis</a></li>
