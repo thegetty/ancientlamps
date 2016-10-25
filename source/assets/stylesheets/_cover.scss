@@ -25,7 +25,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   z-index: $base-z-index;
 }
 
-.cover-inner {
+.cover__inner {
   @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
   background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop1 100%);
   color: $white;
@@ -46,7 +46,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 // scss-lint:enable VendorPrefix
 // scss-lint:enable NameFormat
 
-.cover-title {
+.cover__title {
   font-family: $base-font-family;
   font-size: 2.25em;
   font-weight: 400;
@@ -64,7 +64,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-subtitle {
+.cover__subtitle {
   font-family: "Freight Text Pro SC";
   font-size: 1.4em;
   font-weight: 400;
@@ -80,7 +80,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-author, .cover-contributors  {
+.cover__author, .cover__contributors  {
   font-size: 1em;
   font-weight: 400;
   margin: 0 auto;
@@ -92,18 +92,18 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-contributors {
+.cover__contributors {
   text-align: center;
 }
 
-.cover-map .map {
+.cover__map .map {
   background-color: $light-gray;
   height: 500px;
 }
 
-.cover-copy,
-.cover-highlights,
-.cover-map-inner {
+.cover__copy,
+.cover__highlights,
+.cover__map__inner {
   @extend .body-copy;
   @extend .container;
   margin-bottom: 1em;
@@ -117,8 +117,8 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-copy-inner,
-.cover-highlights-inner {
+.cover__copy__inner,
+.cover__highlights__inner {
   @include media($medium-screen-up) {
     @include span-columns(10);
     @include shift(1);
@@ -127,7 +127,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-highlights-section {
+.cover__highlights__section {
   margin-bottom: $base-spacing;
   margin-top: $base-spacing;
 
@@ -146,7 +146,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-colophon {
+.cover__colophon {
   background-color: $light-gray;
   font-family: $heading-font-family;
   font-weight: 400;
@@ -154,11 +154,11 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   padding-top: 1.5em;
 }
 
-.cover-colophon-inner {
+.cover__colophon__inner {
   @extend .container;
 }
 
-.colophon-text {
+.colophon__text {
   @include media($large-screen-up) {
     float: left;
     margin-left: $base-spacing;
@@ -167,7 +167,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   p { margin-bottom: 0; }
 }
 
-.colophon-logo {
+.colophon__logo {
   padding-top: $base-spacing;
   width: 70px;
 
