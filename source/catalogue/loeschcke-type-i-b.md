@@ -6,8 +6,8 @@ hierarchy:
  - III: Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire
  - b: Augustan and Imperial Lamps
- - 1: Loeschcke type I
- - 1.2: Loeschcke type I B = Bailey type A groups ii, iii, iv
+ - "1": Loeschcke type I
+ - "1.2": Loeschcke type I B = Bailey type A groups ii, iii, iv
 cat: 85-118
 ---
 

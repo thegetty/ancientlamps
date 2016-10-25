@@ -6,7 +6,7 @@ hierarchy:
  - III: Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire
  - b: Augustan and Imperial Lamps
- - 14: Loeschcke type VIII
+ - "14": Loeschcke type VIII
  - b: Introductions to subtypes (1–19)
  - Introduction 8: Bussière form D III
 cat: 305-11, 344-46, 305-6, 344-45, 307-11, 346
