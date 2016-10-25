@@ -11,7 +11,7 @@
       %h6 MLA
       %p= "#{citation_author}. “Cats. #{cat_range}: #{current_page.data.title}.”" + |
           "#{book_info_mla}"                                                        |
-    - elsif current_page.data.cat
+    - elsif current_page.data.cat.is_a? Integer
       / Catalogue page with single entry
       - entry = lookup_entry(current_page.data.cat)
       %h6 Chicago
