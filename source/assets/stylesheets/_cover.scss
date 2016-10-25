@@ -1,0 +1,179 @@
+$gr-start: hsla(0, 0%, 0%, 0);
+$gr-stop1: hsla(0, 0%, 0%, 0.9);
+$gr-stop2: hsla(0, 0%, 0%, 0.9);
+
+$rgb-gr-stop1: rgba(0, 0, 0, 0.75);
+$rgb-gr-stop2: rgba(0, 0, 0, 0.85);
+
+// For some reason Bourbon's background-image mixin does not seem to output a
+// linear gradient compatible with Firefox, so this has to be done manually.
+// In addition, the image_path function follows a ruby naming convention since
+// it comes from Sprockets; ignore the name rule for this case.
+// scss-lint:disable VendorPrefix
+// scss-lint:disable NameFormat
+.cover {
+  @include display(flex);
+  @include flex-direction(column);
+  @include flex-wrap(nowrap);
+  @include justify-content(flex-end);
+  background-color: $dark-gray;
+  background-image: url(image_path("cover-background.jpg"));
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: $base-z-index;
+}
+
+.cover-inner {
+  @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
+  background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop1 100%);
+  color: $white;
+  padding: 2em 0.5em;
+  text-align: center;
+  text-shadow: 3px 3px 5px $rgb-gr-stop1;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    padding: 4em 2em;
+    @include background-image(linear-gradient($gr-start 0%, $gr-stop2 100%));
+    background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop2 100%);
+  }
+
+  @include media($large-screen-up) {
+  }
+}
+// scss-lint:enable VendorPrefix
+// scss-lint:enable NameFormat
+
+.cover-title {
+  font-family: $base-font-family;
+  font-size: 2.25em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 6rem;
+  text-transform: uppercase;
+
+  @include media($medium-screen-up) {
+    font-size: 4em;
+  }
+
+  @include media($large-screen-up) {
+    font-size: 5em;
+  }
+}
+
+.cover-subtitle {
+  font-family: "Freight Text Pro SC";
+  font-size: 1.4em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @include media($medium-screen-up) {
+    font-size: 2em;
+  }
+
+  @include media($large-screen-up) {
+    font-size: 3em;
+  }
+}
+
+.cover-author, .cover-contributors  {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 30em;
+
+  @include media($medium-screen-up) {
+    font-size: 1.5em;
+    margin: 1em auto;
+  }
+}
+
+.cover-contributors {
+  text-align: center;
+}
+
+.cover-map .map {
+  background-color: $light-gray;
+  height: 500px;
+}
+
+.cover-copy,
+.cover-highlights,
+.cover-map-inner {
+  @extend .body-copy;
+  @extend .container;
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  .button {
+    clear: both;
+    display: table;
+    font-family: $heading-font-family;
+    margin: 2em auto;
+  }
+}
+
+.cover-copy-inner,
+.cover-highlights-inner {
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+    @include shift(1);
+
+    p + p { text-indent: 0; }
+  }
+}
+
+.cover-highlights-section {
+  margin-bottom: $base-spacing;
+  margin-top: $base-spacing;
+
+  h3,
+  p {
+    font-size: 1.25em;
+    + p { text-indent: 0; }
+  }
+
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+
+    &:last-of-type {
+      @include omega;
+    }
+  }
+}
+
+.cover-colophon {
+  background-color: $light-gray;
+  font-family: $heading-font-family;
+  font-weight: 400;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+
+.cover-colophon-inner {
+  @extend .container;
+}
+
+.colophon-text {
+  @include media($large-screen-up) {
+    float: left;
+    margin-left: $base-spacing;
+  }
+
+  p { margin-bottom: 0; }
+}
+
+.colophon-logo {
+  padding-top: $base-spacing;
+  width: 70px;
+
+  @include media($large-screen-up) {
+    float: right;
+    margin-right: $base-spacing;
+    padding-top: 0;
+  }
+}

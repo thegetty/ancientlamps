@@ -1,7 +1,10 @@
 body {
+  @include font-feature-settings("kern", "liga", "pnum");
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   line-height: $base-line-height;
 }
 
@@ -45,4 +48,17 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+// Type scale
+h1 { font-size: 1.65rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.125rem; }
+
+@include media($medium-screen-up) {
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
 }
