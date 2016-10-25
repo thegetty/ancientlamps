@@ -11,6 +11,22 @@ gem "middleman", "~> 4.0"
 gem "middleman-autoprefixer", "~> 2.6"
 gem "middleman-deploy", "= 2.0.0.pre.alpha"
 gem "middleman-livereload", "~> 3.4"
-gem "middleman-sprockets", "= 4.0.0.rc.1"
+
+# gem "middleman-sprockets", "= 4.0.0.rc.1"
+# gem "middleman-sprockets", "= 4.0.0.rc.2"
+gem "middleman-sprockets", github: "middleman/middleman-sprockets"
+
 gem "neat", "~> 1.7"
 gem "sassc", "~> 1.8"
+gem "sanitize"
+gem "slugify"
+gem "rubyzip"
+gem "middleman-minify-html"
+
+# Testing
+group :test do
+  gem "rspec"
+  gem "capybara"
+  gem "capybara-webkit"
+  gem "selenium-webdriver"
+end

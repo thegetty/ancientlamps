@@ -1,8 +1,22 @@
 ul,
 ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  // list-style-type: none;
+  // margin: 0;
+  // padding: 0;
+  //
+
+
+
+  &%default-ul {
+    list-style-type: disc;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+
+  &%default-ol {
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing * 1.5;
+  }
 }
 
 dl {
@@ -15,5 +29,47 @@ dl {
 
   dd {
     margin: 0;
+  }
+}
+
+.index {
+  ol,
+  ul {
+    list-style-type: none;
+    padding-left: $base-spacing;
+    text-indent: -$base-spacing;
+    li > ol,
+    li > ul {
+      margin-top: $base-spacing * 0.5;
+      margin-bottom: $base-spacing * 0.5;
+    }
+  }
+  p + ul,
+  p + ol {
+    margin-top: $base-spacing * 0.5;
+  }
+  // to push lists to correct indentation levels under mixed headings and tables
+  .index-indent {
+    margin-left: $base-line-height * 1rem;
+    // equivalent to $base-spacing but in rem units
+  }
+  .index-spaced {
+    li + li {
+      margin-top: $base-spacing * 0.5;
+    }
+    li > ol li,
+    li > ul li {
+      margin-top: 0;
+    }
+  }
+}
+
+.sub-decimal {
+  list-style-type: none;
+  padding-left: $base-spacing;
+  text-indent: -$base-spacing;
+  ol {
+    list-style-type: lower-alpha;
+    text-indent: 0;
   }
 }

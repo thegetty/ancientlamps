@@ -1,0 +1,23 @@
+%h4 Complete Catalogue
+%ul
+  - data.book.editions.each do |edition|
+    - if edition.name != "Online"
+      - if edition.file_size_mb != nil
+        %li= link_to "#{edition.name} (#{edition.file_size_mb} MB)", edition.link, :target => "blank", :class => "no-smoothState"
+      - else
+        %li= link_to "#{edition.name}", edition.link, :target => "blank", :class => "no-smoothState"
+:markdown
+  Each of these alternative formats includes the complete catalogue text, the top view image for each object, all the indices, and the map.
+%hr
+%h4 Object Data
+%ul
+  - data.book.other_resources.each do |resource|
+    - if resource.type == "data"
+      - if resource.file_size_mb != nil
+        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link, :target => "blank", :class => "no-smoothState"
+      - else
+        %li= link_to "#{resource.name}", resource.link, :target => "blank", :class => "no-smoothState"
+:markdown
+  The object data, available in two formats, includes key information from each
+  of the catalogue objects.
+%hr
