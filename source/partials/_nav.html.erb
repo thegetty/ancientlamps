@@ -6,6 +6,11 @@
       </a>
     </div>
     <div class="navbar-center">
+      <% if prev_chapter_path %>
+        <% link_to prev_chapter_path, { :id => "prev-link" } do %>
+          <i class="navbar-prev-link"></i>
+        <% end %>
+      <% end %>
       <div class="navbar-center-info">
         <%= link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"} %>
         <% unless current_page.data.sort_order == 0 %>
@@ -25,6 +30,11 @@
           <% end %>
         <% end %>
       </div>
+      <% if next_chapter_path %>
+        <% link_to next_chapter_path, { :id => "next-link" } do %>
+          <i class="navbar-next-link"></i>
+        <% end %>
+      <% end %>
     </div>
     <div class="navbar-right">
       <a href="javascript:void(0);" id="navbar-menu">
