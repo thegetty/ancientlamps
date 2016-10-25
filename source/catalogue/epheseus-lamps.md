@@ -5,7 +5,7 @@ sort_order: 24
 hierarchy:
  - II: Greek and Hellenistic Clay Lamps
  - B: Moldmade Lamps
- - 1: “Ephesus lamps”
+ - "1": “Ephesus lamps”
 cat: 28-43
 ---
 
