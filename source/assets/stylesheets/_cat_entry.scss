@@ -1,7 +1,8 @@
-.cat-entry-header {
+.cat-entry__header {
   @include position(relative);
   background-color: $dark-gray;
   height: 90vh;
+  margin-bottom: $base-spacing;
   width: 100%;
 
   @include media($large-screen-up) {
@@ -9,7 +10,7 @@
   }
 }
 
-.cat-entry-image {
+.cat-entry__image {
   background-color: $dark-gray;
   height: 100%;
 
@@ -21,9 +22,9 @@
   }
 }
 
-.cat-entry-header-titlebar {
+.cat-entry__header__titlebar {
   @include position(absolute, null null 0 null);
-  background-color: $base-background-color;
+  background-color: transparent;
   width: 100%;
   z-index: 1000;
 
@@ -31,7 +32,7 @@
   }
 }
 
-.cat-entry-header-titlebar-inner {
+.cat-entry__header__titlebar__inner {
   @extend .body-copy;
   @extend .container;
   padding: $base-spacing $small-spacing 0;
@@ -41,8 +42,23 @@
   }
 }
 
-.cat-entry-title {
+.cat-entry__breadcrumbs-bar {
+  background-color: $light-gray;
+  padding: $base-spacing;
+  // margin-bottom: $base-spacing * 1.5;
+  text-align: center;
+
+  &__text {
+    // font-size: $base-font-size;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+}
+
+.cat-entry__title {
+  color: #fff;
   margin-bottom: 0;
+  text-align: center;
 
   @include media($medium-screen-up) {
     @include span-columns(10);
@@ -65,7 +81,7 @@
   }
 }
 
-.cat-details-columns {
+.cat-details__columns {
   @include columns(2 $base-spacing);
 
   .cat-details {
@@ -77,13 +93,13 @@
   }
 }
 
-.cat-entry-content {
+.cat-entry__content {
   @extend .body-copy;
   @extend .container;
   margin-bottom: $base-spacing * 2;
 }
 
-.cat-entry-content-inner {
+.cat-entry__content__inner {
   @include media($medium-screen-up) {
     @include span-columns(10);
     @include shift(1);
@@ -95,7 +111,7 @@
   }
 }
 
-.cat-entry-scale {
+.cat-entry__scale {
   fill: $light-gray;
   margin-top: $small-spacing;
   vertical-align: middle;
