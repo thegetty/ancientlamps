@@ -1,5 +1,12 @@
 // scss-lint:disable SingleLinePerSelector
 
+// https://github.com/joshfry/omega-reset-for-bourbon-neat
+// Pass in the previous media query's omega() argument to reset it
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter($grid-columns, $gutter); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
 html { min-height: 100vh; }
 
 .body-copy {

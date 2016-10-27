@@ -2,7 +2,7 @@ $navbar-bg-color: #fff;
 $navbar-border: $base-border;
 $navbar-height: 60px;
 $navbar-icon-size: 24px;
-$navbar-z-index: 9999;
+$navbar-z-index: $z-index-2;
 
 .navbar {
   @include display(flex);

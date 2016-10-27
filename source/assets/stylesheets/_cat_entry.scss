@@ -1,60 +1,61 @@
+// scss-lint:disable NameFormat
+// scss-lint:disable SelectorFormat
+
+$gr-start: hsla(0, 0%, 0%, 0);
+$gr-stop1: hsla(0, 0%, 0%, 0.3);
+$gr-stop2: hsla(0, 0%, 0%, 0.3);
+$rgb-gr-stop1: rgba(0, 0, 0, 0.3);
+$rgb-gr-stop2: rgba(0, 0, 0, 0.3);
+$cat-image-background: #adacaa;
+
+// The full-width block containing the cover image and title bar. The title bar
+// is absolutely positioned to sit at the bottom of its parent element. The
+// entire header unit is given a height in vh units, in a greater proportion as
+// the size of the viewport increases.
 .cat-entry__header {
   @include position(relative);
-  background-color: $dark-gray;
-  height: 90vh;
-  margin-bottom: $base-spacing;
+  background-color: $cat-image-background;
+  height: 55vh;
   width: 100%;
+  @include media($medium-screen-up) { height: 60vh; }
+  @include media($large-screen-up) { height: 75vh; }
 
-  @include media($large-screen-up) {
-    height: 100vh;
+  &__titlebar {
+    @include position(absolute, null null 0 null);
+    @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
+    width: 100%;
+
+    &__inner {
+      @extend .body-copy;
+      @extend .container;
+      padding: $base-spacing $small-spacing;
+      @include media($large-screen-up) { padding: $base-spacing 0; }
+    }
   }
 }
 
+// The full-width cover image, which lives inside the header unit above. A
+// data-attribute on this element (data-cat: integer) determines which
+// background image is used; these background images live in assets/images/main.
 .cat-entry__image {
-  background-color: $dark-gray;
+  background-color: $cat-image-background;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 
-  .leaflet-control-container {
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    // z-index: 400;
+  @include media($large-screen-up) { background-position: center center; }
+  @include media($x-large-screen-up) { background-size: contain; }
+
+  @for $i from 1 through 700 {
+    &[data-cat="#{$i}"] {
+      background-image: url(image_path("main/#{$i}.jpg"));
+    }
   }
 }
 
-.cat-entry__header__titlebar {
-  @include position(absolute, null null 0 null);
-  background-color: transparent;
-  width: 100%;
-  z-index: 1000;
-
-  @include media($large-screen-up) {
-  }
-}
-
-.cat-entry__header__titlebar__inner {
-  @extend .body-copy;
-  @extend .container;
-  padding: $base-spacing $small-spacing 0;
-
-  @include media($large-screen-up) {
-    padding: $base-spacing 0;
-  }
-}
-
-.cat-entry__breadcrumbs-bar {
-  background-color: $light-gray;
-  padding: $base-spacing;
-  // margin-bottom: $base-spacing * 1.5;
-  text-align: center;
-
-  &__text {
-    // font-size: $base-font-size;
-    font-weight: 300;
-    margin-bottom: 0;
-  }
-}
-
+// Title text. This element expects to be inside an @outer-container element and
+// its width is defined in terms of span-column widths.
 .cat-entry__title {
   color: #fff;
   margin-bottom: 0;
@@ -72,48 +73,153 @@
   }
 }
 
-.cat-details {
-  line-height: 1.5;
-  margin-bottom: $base-spacing;
+// Full-width block that immediately follows the header unit, with a colored
+// background.
+.cat-entry__breadcrumbs-bar {
+  background-color: $light-gray;
+  margin-bottom: $small-spacing;
+  padding: $small-spacing * 1.5;
+  text-align: center;
 
-  li {
-    font-size: 0.875em;
+  &__inner { @include outer-container; }
+
+  &__text {
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 auto;
+
+    @include media($medium-screen-up) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(8);
+      @include shift(2);
+      padding: 0;
+    }
   }
 }
 
-.cat-details__columns {
-  @include columns(2 $base-spacing);
-
-  .cat-details {
-    break-inside: avoid-column;
-    -webkit-column-break-inside: avoid;
-    font-size: 1.125rem;
-    margin-bottom: 0;
-    padding-bottom: $base-spacing;
-  }
-}
 
 .cat-entry__content {
   @extend .body-copy;
   @extend .container;
   margin-bottom: $base-spacing * 2;
+
+  &__inner {
+    @include media($medium-screen-up) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
 }
 
-.cat-entry__content__inner {
-  @include media($medium-screen-up) {
-    @include span-columns(10);
-    @include shift(1);
-  }
+// A grid unit that contains its own outer-container element (it is intended
+// to be nested inside another outer-container). Grid items are divs with a
+// fixed height and a width that is specified in span-columns (exact size
+// depends on the current media query that is in effect). Images are applied
+// as background images from the assets/images/thumbs folder. A small number
+// is also included in one corner. The omega-reset mixin needs to be used in
+// order to allow cascading rules for column-width to work properly; pass the
+// previous media query's omega value into this mixin in each successive query
+// before declaring a new omega value.
+.cat-entry__grid {
+  @include outer-container;
+  margin-bottom: $base-spacing;
+  margin-top: $base-spacing;
 
-  @include media($large-screen-up) {
-    @include span-columns(8);
-    @include shift(2);
+  &__item {
+    @include span-columns(6 of 12);
+    @include omega(2n);
+    background-color: $light-gray;
+    cursor: pointer;
+    height: 200px;
+    margin-bottom: $small-spacing;
+
+    @include media($medium-screen-up) {
+      @include span-columns(3 of 12);
+      @include omega-reset(2n);
+      @include omega(4n);
+      height: 200px;
+    }
+
+    &__number {
+      color: #fff;
+      margin-left: $small-spacing;
+      margin-top: $small-spacing / 2;
+    }
+
+    @for $i from 1 through 700 {
+      &[data-cat="#{$i}"] {
+        background-image: url(image_path("thumbs/#{$i}.jpg"));
+        background-position: center center;
+        background-size: cover;
+      }
+    }
   }
 }
 
-.cat-entry__scale {
-  fill: $light-gray;
-  margin-top: $small-spacing;
-  vertical-align: middle;
-  width: 50%;
+// Catalogue Entry details
+// Modal overlay which appears when a grid item is clicked. This view contains
+// detailed information (tombstone, alternate views) for the object in question.
+
+.cat-entry__details {
+
+  &__image {
+    @include size(100% 50%);
+    @include transform(translateY(-100%));
+    @include transition(all 0.2s ease);
+    background-color: $medium-gray;
+    position: fixed;
+    top: 0;
+    z-index: $z-index-6;
+
+    @include media($large-screen-up) {
+      @include size(50% 100%);
+      @include transform(translateX(-100%));
+      left: 0;
+      &.is-visible { @include transform(translateX(0)); }
+    }
+
+    &.is-visible { @include transform(translateY(0)); }
+  }
+
+  &__data {
+    @include size(100% 50%);
+    @include transform(translateY(200%));
+    @include transition(all 0.2s ease);
+    background-color: $dark-gray;
+    bottom: 0;
+    position: fixed;
+    z-index: $z-index-6;
+
+    @include media($large-screen-up) {
+      @include size(50% 100%);
+      @include transform(translateX(200%));
+      right: 0;
+      &.is-visible { @include transform(translateX(0)); }
+    }
+
+    &.is-visible { @include transform(translateY(0)); }
+  }
+
+  &__close {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 28px;
+    position: fixed;
+    right: 22px;
+    top: 12px;
+    z-index: $z-index-7;
+
+    &.is-visible { display: block; }
+    .close-button { @extend .ion-close-circled; }
+  }
 }

@@ -12,17 +12,20 @@
       .bleed{ :data => { :catalogue => current_page.data.cat }}
   .cat-entry
     %header.cat-entry__header#page-title
-      = partial "partials/cat_image"
+      .cat-entry__image{ :data => { :cat => current_page.data.cover }}
       .cat-entry__header__titlebar
         .cat-entry__header__titlebar__inner
           %h1.cat-entry__title= "#{code} #{title}"
-        .cat-entry__breadcrumbs-bar
-          %h4.cat-entry__breadcrumbs-bar__text= typology
+    .cat-entry__breadcrumbs-bar
+      .cat-entry__breadcrumbs-bar__inner
+        %h4.cat-entry__breadcrumbs-bar__text= typology
     %article.cat-entry__content
       .cat-entry__content__inner
-        %ul
+        %h4 Catalogue Entries
+        .cat-entry__grid
           - entries.each do |entry|
-            %li= entry
-        / = partial "partials/cat_details", :locals => { :current_cat => current_cat }
+            .cat-entry__grid__item{ :data => { :cat => entry }}
+              %h6.cat-entry__grid__item__number= entry
         = yield
+    = partial "partials/cat_details", :locals => { :entries => entries }
 
