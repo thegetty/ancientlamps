@@ -289,6 +289,33 @@ function cleanSelection() {
   });
 }
 
+function detailsToggle() {
+  var $detailImage = $(".cat-entry__details__image");
+  var $detailData = $(".cat-entry__details__data");
+  var $detailCloseButton = $(".cat-entry__details__close");
+
+  $(".cat-entry__grid__item").click(function(){
+    $detailImage.toggleClass("is-visible");
+    $detailData.toggleClass("is-visible");
+    $detailCloseButton.toggleClass("is-visible");
+    console.log($(this).data("cat"));
+  });
+
+  $detailCloseButton.click(function(){
+    $detailImage.removeClass("is-visible");
+    $detailData.removeClass("is-visible");
+    $detailCloseButton.removeClass("is-visible");
+  });
+
+  $(document).keydown(function(event) {
+    if (event.which === 27 && $detailImage.hasClass("is-visible")) {
+      $detailImage.removeClass("is-visible");
+      $detailData.removeClass("is-visible");
+      $detailCloseButton.removeClass("is-visible");
+    }
+  });
+}
+
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
@@ -304,4 +331,5 @@ function uiSetup() {
   anchorScroll(window.location.hash);
   citationDate();
   cleanSelection();
+  detailsToggle();
 }

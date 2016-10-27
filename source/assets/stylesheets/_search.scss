@@ -58,7 +58,7 @@ $search-text-color: $base-font-color;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   padding-top: $navbar-height;
-  z-index: ($navbar-z-index - 1);
+  z-index: $z-index-1;
 
   &.search-active {
     @include transform(translateY(0));

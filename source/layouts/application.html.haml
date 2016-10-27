@@ -18,7 +18,7 @@
     = partial "partials/metadata"
     %title= page_title
     = stylesheet_link_tag "application"
-  %body{class: page_classes}
+  %body
     %main#main
       - unless environment? :pdf
         = partial "partials/nav"
