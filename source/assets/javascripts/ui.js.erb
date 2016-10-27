@@ -1,3 +1,6 @@
+//= require vendor/leaflet
+//= require vendor/leaflet-deepzoom
+
 
 // Use this to wrap selectors that contain : characters
 function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
@@ -293,25 +296,45 @@ function detailsToggle() {
   var $detailImage = $(".cat-entry__details__image");
   var $detailData = $(".cat-entry__details__data");
   var $detailCloseButton = $(".cat-entry__details__close");
+  var map;
 
+  // Set up the modal view
   $(".cat-entry__grid__item").click(function(){
     $detailImage.toggleClass("is-visible");
     $detailData.toggleClass("is-visible");
     $detailCloseButton.toggleClass("is-visible");
-    console.log($(this).data("cat"));
+    // console.log($(this).data("cat"));
+    // $(this) gives us the element that triggered the event
+    var cat = $(this).data("cat");
+    var path = "http://localhost:8000/tiles/" + cat + "/top/";
+    // var path = "http://5a28ed66.ngrok.io/tiles/" + cat + "/top/";
+    map = L.map("js-deepzoom", {
+      maxZoom: 13,
+      minZoom: 9
+    }).setView([0, 0], 13);
+
+    L.tileLayer.deepzoom(path, {
+      width: 4662,
+      height: 5000,
+      tolerance: 0.8
+    }).addTo(map);
   });
 
+  // Tear down the modal view
   $detailCloseButton.click(function(){
     $detailImage.removeClass("is-visible");
     $detailData.removeClass("is-visible");
     $detailCloseButton.removeClass("is-visible");
+    map.remove();
   });
 
+  // Tear down the modal view on esc key
   $(document).keydown(function(event) {
     if (event.which === 27 && $detailImage.hasClass("is-visible")) {
       $detailImage.removeClass("is-visible");
       $detailData.removeClass("is-visible");
       $detailCloseButton.removeClass("is-visible");
+      map.remove();
     }
   });
 }
