@@ -3,6 +3,7 @@ var sass = require('gulp-sass')
 var cssnano = require('gulp-cssnano')
 var autoprefixer = require('gulp-autoprefixer')
 var rename = require('gulp-rename')
+var webpack = require('webpack-stream')
 
 const PATH = {
   CSS: {
@@ -10,11 +11,7 @@ const PATH = {
     dest: '.tmp/assets/stylesheets'
   },
   JS: {
-    src: [
-      'source/assets/javascripts/vendor/*',
-      'source/assets/javascripts/!(main)*.js',
-      'source/assets/javascripts/main.js'
-    ],
+    src: 'source/assets/javascripts/application.js',
     dest: '.tmp/assets/javascripts'
   },
   FONTS: {
@@ -33,12 +30,23 @@ gulp.task('css', function () {
     .pipe(gulp.dest(PATH.CSS.dest))
 })
 
+gulp.task('js', function () {
+  return gulp.src(PATH.JS.src)
+    .pipe(webpack({
+      output: {
+        filename: "application.js"
+      }
+    }))
+    .pipe(gulp.dest(PATH.JS.dest))
+})
+
 gulp.task('fonts', function () {
   gulp.src(PATH.FONTS.src)
     .pipe(gulp.dest(PATH.FONTS.dest))
 })
 
-gulp.task('default', ['css', 'fonts'], function () {
+gulp.task('default', ['css', 'js', 'fonts'], function () {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['css'])
+  gulp.watch('source/assets/javascripts/**/*.js', ['js'])
   gulp.watch('source/assets/fonts/*', ['fonts'])
 })
