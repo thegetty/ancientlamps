@@ -4,10 +4,18 @@ require "extensions/catalogue"
 activate :search
 activate :catalogue
 activate :directory_indexes
-activate :autoprefixer
-activate :sprockets do |c|
-  c.expose_middleman_helpers = true
-end
+# activate :autoprefixer
+# activate :sprockets do |c|
+#   c.expose_middleman_helpers = true
+# end
+
+ignore "assets/stylesheets"
+ignore "assets/javascripts"
+
+activate :external_pipeline,
+         name: :gulp,
+         command: './node_modules/gulp/bin/gulp.js',
+         source: '.tmp'
 
 set :relative_links, true
 set :css_dir, "assets/stylesheets"
@@ -22,7 +30,7 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 
 configure :development do
-  # activate :livereload
+  activate :livereload
 end
 
 configure :build do

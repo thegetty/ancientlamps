@@ -4,3 +4,5 @@
 /.sass-cache
 /build
 Gemfile.lock
+node_modules
+.tmp
