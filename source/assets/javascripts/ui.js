@@ -341,18 +341,19 @@ function detailsToggle() {
 
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
-function uiSetup() {
-  keyboardNav();
-  offCanvasNav();
-  searchSetup();
-  mapSetup();
-  plateSetup();
-  popupSetup();
-  expanderSetup();
-  lightBoxSetup();
-  footnoteScroll();
-  anchorScroll(window.location.hash);
-  citationDate();
-  cleanSelection();
-  detailsToggle();
+module.exports = function () {
+  console.log("working!")
+  // keyboardNav()
+  // offCanvasNav()
+  // searchSetup()
+  // mapSetup()
+  // plateSetup()
+  // popupSetup()
+  // expanderSetup()
+  // lightBoxSetup()
+  // footnoteScroll()
+  // anchorScroll(window.location.hash)
+  // citationDate()
+  // cleanSelection()
+  // detailsToggle()
 }
