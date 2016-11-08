@@ -1,16 +1,23 @@
-//= require_tree .
-// L.Icon.Default.imagePath = '<%= baseurl %>/assets/stylesheets/vendor/leaflet/images';
+// =============================================================================
+// application.js
+// -----------------------------------------------------------------------------
+// This is the main module which serves as the entry point for all JS code in
+// the application. Webpack will point to this file and use it to compile a
+// dependency graph for all other JS assets during build.
+//
+// jQuery is presumed to be available globally, but all other dependencies for
+// this file should be explicitly required here.
 
+// Dependencies
+// -----------------------------------------------------------------------------
 var ui = require('./ui.js')
 
-// Make this available globally
-// var RegionMap;
-
-$(document).ready(function() {
-  // set up UI
-  ui()
-
-  // smoothState init
+// PrepareTransitions
+// -----------------------------------------------------------------------------
+// This function choreographs the SmoothState and Velocity animations between
+// page transitions. Make sure to re-initialize things like event-handlers after
+// new content has been loaded.
+function prepareTransitions() {
   $('#main').smoothState({
     onStart: {
       duration: 400,
@@ -29,14 +36,12 @@ $(document).ready(function() {
       ui()
     }
   })
+}
+
+// Document Ready
+// -----------------------------------------------------------------------------
+// Only call other functions inside of this.
+$(document).ready(function() {
+  ui()
+  prepareTransitions()
 })
-
-// function ready(fn) {
-//   if (document.readyState !== 'loading') {
-//     fn()
-//   } else {
-//     document.addEventListener('DOMContentLoaded', fn)
-//   }
-// }
-
-// ready(ui)
