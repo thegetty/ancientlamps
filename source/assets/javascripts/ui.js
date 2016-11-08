@@ -1,23 +1,23 @@
 //= require vendor/leaflet
 //= require vendor/leaflet-deepzoom
 
+var moment = require('./vendor/moment.js')
 
 // Use this to wrap selectors that contain : characters
-function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
-
+function jq(myid) { return myid.replace(/(:|\.|\[|]|,)/g, '\\$1') }
 
 function anchorScroll(href) {
-  href = typeof(href) == "string" ? href : $(this).attr("href");
-  var fromTop = 60;
+  href = typeof (href) === 'string' ? href : $(this).attr('href')
+  var fromTop = 60
 
-  if(href.indexOf("#") == 0) {
-    var $target = $(href);
+  if (href.indexOf('#') === 0) {
+    var $target = $(href)
 
-    if($target.length) {
-      $("html, body").animate({ scrollTop: $target.offset().top - fromTop });
-      if (history && "pushState" in history) {
-        history.pushState({}, document.title, window.location.pathname + href);
-        return false;
+    if ($target.length) {
+      $('html, body').animate({ scrollTop: $target.offset().top - fromTop })
+      if (window.history && 'pushState' in window.history) {
+        window.history.pushState({}, document.title, window.location.pathname + href)
+        return false
       }
     }
   }
@@ -25,9 +25,9 @@ function anchorScroll(href) {
 
 // Get today's current date, using Moment JS
 function citationDate() {
-  var today = moment().format("D MMM. YYYY");
-  $(".cite-current-date").empty();
-  $(".cite-current-date").text(today);
+  var today = moment().format('D MMM. YYYY')
+  $('.cite-current-date').empty()
+  $('.cite-current-date').text(today)
 }
 
 function footnoteScroll() {
@@ -341,19 +341,18 @@ function detailsToggle() {
 
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
-module.exports = function () {
-  console.log("working!")
-  // keyboardNav()
-  // offCanvasNav()
-  // searchSetup()
-  // mapSetup()
-  // plateSetup()
-  // popupSetup()
-  // expanderSetup()
-  // lightBoxSetup()
-  // footnoteScroll()
-  // anchorScroll(window.location.hash)
-  // citationDate()
-  // cleanSelection()
-  // detailsToggle()
+module.exports = function() {
+  keyboardNav()
+  offCanvasNav()
+  searchSetup()
+  mapSetup()
+  plateSetup()
+  popupSetup()
+  expanderSetup()
+  lightBoxSetup()
+  footnoteScroll()
+  anchorScroll(window.location.hash)
+  citationDate()
+  cleanSelection()
+  detailsToggle()
 }
