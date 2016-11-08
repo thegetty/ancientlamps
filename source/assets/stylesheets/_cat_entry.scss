@@ -1,12 +1,7 @@
-// scss-lint:disable NameFormat
-// scss-lint:disable SelectorFormat
-
-$gr-start: hsla(0, 0%, 0%, 0);
-$gr-stop1: hsla(0, 0%, 0%, 0.3);
-$gr-stop2: hsla(0, 0%, 0%, 0.3);
-$rgb-gr-stop1: rgba(0, 0, 0, 0.3);
-$rgb-gr-stop2: rgba(0, 0, 0, 0.3);
-$cat-image-background: #adacaa;
+$cat-entry-gr-start: hsla(0, 0%, 0%, 0);
+$cat-entry-gr-stop: hsla(0, 0%, 0%, 0.2);
+$cat-image-background: #d5d5d5;
+$breadcrumbs-bar-color: tint($action-color, 50%);
 
 // The full-width block containing the cover image and title bar. The title bar
 // is absolutely positioned to sit at the bottom of its parent element. The
@@ -22,7 +17,7 @@ $cat-image-background: #adacaa;
 
   &__titlebar {
     @include position(absolute, null null 0 null);
-    @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
+    @include background-image(linear-gradient(to bottom, $cat-entry-gr-start, $cat-entry-gr-stop));
     width: 100%;
 
     &__inner {
@@ -49,7 +44,7 @@ $cat-image-background: #adacaa;
 
   @for $i from 1 through 700 {
     &[data-cat="#{$i}"] {
-      background-image: url(image_path("main/#{$i}.jpg"));
+      background-image: url("../images/main/#{$i}.jpg");
     }
   }
 }
@@ -76,7 +71,7 @@ $cat-image-background: #adacaa;
 // Full-width block that immediately follows the header unit, with a colored
 // background.
 .cat-entry__breadcrumbs-bar {
-  background-color: $light-gray;
+  background-color: $breadcrumbs-bar-color;
   margin-bottom: $small-spacing;
   padding: $small-spacing * 1.5;
   text-align: center;
@@ -100,7 +95,6 @@ $cat-image-background: #adacaa;
     }
   }
 }
-
 
 .cat-entry__content {
   @extend .body-copy;
@@ -157,7 +151,7 @@ $cat-image-background: #adacaa;
 
     @for $i from 1 through 700 {
       &[data-cat="#{$i}"] {
-        background-image: url(image_path("thumbs/#{$i}.jpg"));
+        background-image: url("../images/thumbs/#{$i}.jpg");
         background-position: center center;
         background-size: cover;
       }
