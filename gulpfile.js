@@ -20,7 +20,7 @@ const PATH = {
   }
 }
 
-gulp.task('css', function () {
+gulp.task('css', function() {
   return gulp.src(PATH.CSS.src)
     .pipe(sass({errLogToConsole: true}))
     .pipe(autoprefixer('last 4 version'))
@@ -30,22 +30,22 @@ gulp.task('css', function () {
     .pipe(gulp.dest(PATH.CSS.dest))
 })
 
-gulp.task('js', function () {
+gulp.task('js', function() {
   return gulp.src(PATH.JS.src)
     .pipe(webpack({
       output: {
-        filename: "application.js"
+        filename: 'application.js'
       }
     }))
     .pipe(gulp.dest(PATH.JS.dest))
 })
 
-gulp.task('fonts', function () {
+gulp.task('fonts', function() {
   gulp.src(PATH.FONTS.src)
     .pipe(gulp.dest(PATH.FONTS.dest))
 })
 
-gulp.task('default', ['css', 'js', 'fonts'], function () {
+gulp.task('default', ['css', 'js', 'fonts'], function() {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['css'])
   gulp.watch('source/assets/javascripts/**/*.js', ['js'])
   gulp.watch('source/assets/fonts/*', ['fonts'])
