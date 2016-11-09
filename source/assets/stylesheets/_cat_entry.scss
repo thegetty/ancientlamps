@@ -1,7 +1,7 @@
 $cat-entry-gr-start: hsla(0, 0%, 0%, 0);
 $cat-entry-gr-stop: hsla(0, 0%, 0%, 0.2);
 $cat-image-background: #d5d5d5;
-$breadcrumbs-bar-color: tint($action-color, 50%);
+$breadcrumbs-bar-color: tint($dark-gray, 75%);
 
 // The full-width block containing the cover image and title bar. The title bar
 // is absolutely positioned to sit at the bottom of its parent element. The
@@ -72,6 +72,8 @@ $breadcrumbs-bar-color: tint($action-color, 50%);
 // background.
 .cat-entry__breadcrumbs-bar {
   background-color: $breadcrumbs-bar-color;
+  border-bottom: solid 1px $medium-gray;
+  border-top: solid 1px $medium-gray;
   margin-bottom: $small-spacing;
   padding: $small-spacing * 1.5;
   text-align: center;

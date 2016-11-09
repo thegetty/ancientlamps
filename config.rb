@@ -33,9 +33,9 @@ page "/*.txt", layout: false
 
 # Development Environment
 # ------------------------------------------------
-configure :development do
-  activate :livereload
-end
+# configure :development do
+#   activate :livereload
+# end
 
 # Production Environment
 # ------------------------------------------------
