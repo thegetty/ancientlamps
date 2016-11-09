@@ -33,5 +33,9 @@
     "gulp-uglify": "^2.0.0",
     "run-sequence": "^1.2.2",
     "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "leaflet": "^0.7.7",
+    "moment": "^2.15.2"
   }
 }
