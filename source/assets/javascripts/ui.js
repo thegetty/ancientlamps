@@ -14,8 +14,9 @@
 
 // Dependencies
 // -----------------------------------------------------------------------------
-var moment = require('./vendor/moment.js')
-var L = require('./vendor/leaflet.js')
+var moment = require('moment')
+var L = require('leaflet')
+L.tileLayer.deepzoom = require('./leaflet-deepzoom')
 
 // jq Helper function
 // -----------------------------------------------------------------------------
@@ -64,6 +65,24 @@ function footnoteScroll() {
     }, 250)
   })
 }
+
+// ExpanderSetup
+// -----------------------------------------------------------------------------
+// Toggles expanding drop-down elements in places like sidebar navigation.
+function expanderSetup() {
+  var $expanderContent = $('.expander-content')
+  var $expanderTriggers = $('.expander-trigger')
+
+  $($expanderContent).addClass('expander--hidden')
+
+  $expanderTriggers.on('click', function() {
+    var $target = $(this).parent().find('.expander-content')
+    $target.slideToggle('fast', function() {
+      $target.toggleClass('expander--hidden')
+    })
+  })
+}
+
 
 // KeyboardNav
 // -----------------------------------------------------------------------------
@@ -254,20 +273,6 @@ function detailsToggle() {
 //   }
 // }
 
-// function expanderSetup() {
-//   var $expanderContent  = $(".expander-content");
-//   var $expanderTriggers = $(".expander-trigger");
-
-//   $($expanderContent).addClass("expander--hidden");
-
-//   $expanderTriggers.on("click", function() {
-//     var $target = $(this).parent().find(".expander-content");
-//     $target.slideToggle("fast", function() {
-//       $target.toggleClass("expander--hidden");
-//     });
-//   });
-// }
-
 // function lightBoxSetup() {
 //   if ($('.inline-figure')) {
 //     var $figures = $('.inline-figure img')
@@ -312,6 +317,7 @@ function detailsToggle() {
 module.exports = function() {
   keyboardNav()
   offCanvasNav()
+  expanderSetup()
   searchSetup()
   footnoteScroll()
   anchorScroll(window.location.hash)
