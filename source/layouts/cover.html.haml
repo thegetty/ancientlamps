@@ -9,34 +9,6 @@
     .cover__copy__inner
       %p= data.book.description_main
       = link_to 'Contents', '/contents.html', :class => "button"
-  .cover__map
-    #map.map{:data => {:center => current_page.data.map_center }}
-  .cover__highlights
-    .cover__highlights__inner
-      .cover__highlights__section
-        = tag :img, :src => image_path("fig17_detail.jpg"), :alt => "Antioch Excavation"
-        %h3 Excavating the Past
-        %p
-          :markdown
-            Several mosaics in the Getty’s collection came from known sites
-            in the Roman Empire and survived from antiquity in their original
-            architectural contexts, having once decorated villas, baths,
-            and churches. Presented here is rich archaeological evidence
-            and new material documenting the mosaics’ modern discoveries,
-            particularly from excavations in [Villelaure](catalogue/excavations-villelaure/)
-            and [Antioch](catalogue/excavations-antioch/).
-      .cover__highlights__section
-        = tag :img, :src => image_path("gallery_install.jpg")
-        %h3 Mosaics on Display
-        %p
-          :markdown
-            This catalogue includes mosaics featured in [*Roman Mosaics across the
-            Empire*](http://www.getty.edu/art/exhibitions/roman_mosaics/){:target="_blank"},
-            on view at the Getty Villa in 2016. The exhibition showcases ten
-            mosaics from the Getty alongside treasures on loan from other collections,
-            including LACMA’s  mosaic of Diana and Callisto, which was discovered
-            in the same villa in Villelaure as the Getty’s mosaic of Dares and Entellus.
-      = link_to 'View the Catalogue', '/catalogue.html', :class => "button"
   .cover__colophon
     .cover__colophon__inner
       .colophon__text

@@ -45,8 +45,10 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest(PATH.FONTS.dest))
 })
 
-gulp.task('default', ['css', 'js', 'fonts'], function() {
+gulp.task('default', ['css', 'js'], function() {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['css'])
   gulp.watch('source/assets/javascripts/**/*.js', ['js'])
-  gulp.watch('source/assets/fonts/*', ['fonts'])
+  // gulp.watch('source/assets/fonts/*', ['fonts'])
 })
+
+gulp.task('build', ['css', 'js'])
