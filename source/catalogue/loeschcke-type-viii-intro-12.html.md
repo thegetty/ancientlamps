@@ -9,9 +9,8 @@ hierarchy:
  - "14": Loeschcke type VIII
  - b: Introductions to subtypes (1–19)
  - Introduction 12: Bussière form D X 1
-cat: 315–16, 348, 418–27, 360–64, 427, 365–74
+cat: [315, 316, 348, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427]
 ---
-
 The group of form D X 1 lamps is characterized by ovolo decor on the shoulders. The shoulder forms seldom fall neatly into Loeschcke’s classification; the dominant form is a mixture of Loeschcke VII a and VIII b. The later examples of form D X 1 are bigger than the standard form D II 1. The African and Italic Getty lamps have nozzle form Bus. 4a and 4f, or, in the case of cat. 374, form Bus. 11. The eastern examples have form Bus. 10b, although, as already said in introduction 11, the difference between variants Bus. 10a and 10b is not always clear.
 
 The nozzle underside of some lamps is decorated with a typical motif consisting of a band of tongues between two twisted lines: see [cats. 366–67](366-67), [369](369), and [373](373). Discus decors: mythology (16 ex.); amphitheater (4 ex.); circus (1 ex.); animals (4 ex.); person (1 ex.); daily life (1 ex., two fishermen in a boat). One lamp has a plain discus. Eleven lamps have a base marked off by one circular groove, one with two circular grooves. Fourteen have a base-ring. This ring is often accompanied by an additional inner ring or circle, for instance, cats. 369 and 373. Two examples have two and three rings.

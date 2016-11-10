@@ -6,7 +6,7 @@ hierarchy:
  - II: Greek and Hellenistic Clay Lamps
  - B: Moldmade Lamps
  - "1": “Ephesus lamps”
-cat: 28-43
+cat: !ruby/range 28..43
 ---
 
 The first moldmade lamps appeared at the beginning of the third century B.C., when they started to compete with wheelmade lamps, which had been in use since the seventh century B.C. (Howland 1958, p. 129). Wheelmade lamps were generally not decorated. When they were, the decor was molded separately and applied to the lamp before firing (see, e.g., the so-called Cnidian lamp [cat. 17](17)). The molding technique enabled easier and faster decoration, for the decoration was made only once, for the patrix from which many molds were produced. Molding also enabled rapid mass production with less work.

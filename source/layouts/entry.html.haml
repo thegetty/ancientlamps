@@ -3,16 +3,17 @@
 - title = current_page.data.hierarchy.last.values.join
 - cat = current_page.data.cat
 - entries = cat.respond_to?(:each) ? cat : Array(cat)
+- first = entries.first
 
 = wrap_layout :application do
   - if environment? :pdf
     - if current_page.data.force_break == true
-      .bleed.force-break{ :data => { :catalogue => current_page.data.cat }}
+      .bleed.force-break{ :data => { :catalogue => current_page.data.cover || first }}
     - else
-      .bleed{ :data => { :catalogue => current_page.data.cat }}
+      .bleed{ :data => { :catalogue => current_page.data.cover || first }}
   .cat-entry
     %header.cat-entry__header#page-title
-      .cat-entry__image{ :data => { :cat => current_page.data.cover }}
+      .cat-entry__image{ :data => { :cat => current_page.data.cover || first }}
       .cat-entry__header__titlebar
         .cat-entry__header__titlebar__inner
           %h1.cat-entry__title= "#{code} #{title}"
