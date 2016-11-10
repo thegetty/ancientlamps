@@ -9,7 +9,7 @@ hierarchy:
  - "14": Loeschcke type VIII
  - b: Introductions to subtypes (1–19)
  - Introduction 11: Bussière form D IX
-cat: 357-59, 402-17
+cat: [357, 358, 359, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417]
 ---
 
 This form groups together lamps with a plain shoulder and a heart-shaped nozzle. In an early variant, D IX 1, the upper curves of the “heart” are nearly on a horizontal level: nozzle form Bus. 10a. This is the case for all the African and Italic examples in the Getty collection. In another variant, D IX 2, the curves are much more rounded: nozzle Bus. 10b. This is the case of practically all the Getty lamps of this type of eastern place of manufacture or origin, although we must admit that differences between variants 1 and 2 are less obvious on the eastern lamps than on the African or Italic ones.

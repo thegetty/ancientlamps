@@ -7,7 +7,7 @@ hierarchy:
  - A: Types from both Western and Eastern Provinces of the Roman Empire
  - b: Augustan and Imperial Lamps
  - "4": Loeschcke type IV = Bailey type B
-cat: 161-242
+cat: !ruby/range 161..242
 ---
 
 Lamps of this type are quite similar to those of Loeschcke type I, the major difference being their rounded rather than angular-tipped volute-nozzle. Substantial volute-spines often decorate the nozzle, which is smaller in earlier examples and tends to be larger in later ones. In that case the broader volutes seem to be compressed between the nozzle and the discus. Practically absent in the Augustan fort at {{loc_109029:Haltern}} (probably abandoned in A.D. 9), the main production of the type began rather later than that of Loeschcke type I A. Only a few lamps can be regarded as Augustan, primarily ones whose shoulders are decorated with rills. Some of the latest examples bear *tria nomina* signatures; production of the type ceased in the first third of the second century A.D.

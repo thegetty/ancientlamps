@@ -1,8 +1,4 @@
 = wrap_layout :application do
-  - if current_page.data.title == "Introduction" and environment? :pdf
-    .bleed{ :data => { :catalogue => "introduction" }}
-  - if current_page.data.title == "References Cited" and environment? :pdf
-    .bleed{ :data => { :catalogue => "backmatter" }}
   - if current_page.data.cover
     - image_url = image_path(current_page.data.cover)
     %header.page-cover{:style => "background-image: url('#{image_url}')"}

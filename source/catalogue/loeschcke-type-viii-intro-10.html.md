@@ -9,7 +9,7 @@ hierarchy:
  - "14": Loeschcke type VIII
  - b: Introductions to subtypes (1–19)
  - Introduction 10: Bussière form D VII
-cat: 312-14
+cat: !ruby/range 312..14
 ---
 
 This type has a wide basin, much larger than the average size of the standard form Bussière D II 1: 9.4 cm instead of 7 cm. The shoulder form can be Loeschcke VI b, VII b, or VIII b. The nozzle form varies.

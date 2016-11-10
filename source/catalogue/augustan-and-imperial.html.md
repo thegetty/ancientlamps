@@ -6,7 +6,7 @@ hierarchy:
  - III: Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire
  - b: Augustan and Imperial Lamps
-cat: 76-462
+cat: !ruby/range 76..462
 ---
 
 The lamps of Loeschcke type I, mostly without handle, are characterized by a circular body and fairly wide nozzle with obtuse-angle tip, flanked by two volutes. This latter major feature was already anticipated in the Republican Ricci-Dressel type 3 A lamps. Cat. 73, dated 50 B.C. to A.D. 10, clearly shows the evolution of Hellenistic types into the voluted Italian type Loeschcke I. Created in Early Augustan time, the type lasted until the end of the Flavian period. It is already scarce in the eruption layer in Pompeii. Within the type one can trace several signs of an early date: smaller size nozzle, deep body, thin wall, narrow shoulder, closely spaced rills encircling the discus, a tapering channel between the discus and the nozzle, and a slightly raised base-ring instead of a flat base marked off by one circular groove; this is a common feature on later samples, as is the occasional presence of a handle.

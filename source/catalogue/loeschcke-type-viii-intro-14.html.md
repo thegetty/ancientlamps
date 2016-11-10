@@ -9,7 +9,7 @@ hierarchy:
  - "14": Loeschcke type VIII
  - b: Introductions to subtypes (1–19)
  - Introduction 14: Bussière form D X 4
-cat: 376-88, 428
+cat: [376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 386, 388, 428]
 ---
 
 This form groups lamps characterized by their shoulder decor—a laurel wreath. This decor may be treated realistically (Bussière 2000, *groupe a style 1 figuratif*) or be stylized (Bussière 2000, *groupe b style 2 schématisé*). Both groups appear on lamps found in Italy (e.g., Bailey BM II, Q 1392–Q 1393 and Q 1409–Q 1413). The hypothesis that they might only be African imports is contradicted by the signature of <span class="inscription">L.CAESAE</span>, a prolific Italic lampmaker (Late Antonine and Early Severan); his products are scarce in North Africa.
