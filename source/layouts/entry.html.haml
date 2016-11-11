@@ -12,14 +12,14 @@
     - else
       .bleed{ :data => { :catalogue => current_page.data.cover || first }}
   .cat-entry
+    .cat-entry__breadcrumbs-bar
+      .cat-entry__breadcrumbs-bar__inner
+        %h4.cat-entry__breadcrumbs-bar__text= typology
     %header.cat-entry__header#page-title
       .cat-entry__image{ :data => { :cat => current_page.data.cover || first }}
       .cat-entry__header__titlebar
         .cat-entry__header__titlebar__inner
           %h1.cat-entry__title= "#{code} #{title}"
-    .cat-entry__breadcrumbs-bar
-      .cat-entry__breadcrumbs-bar__inner
-        %h4.cat-entry__breadcrumbs-bar__text= typology
     %article.cat-entry__content
       .cat-entry__content__inner
         %h4 Catalogue Entries
