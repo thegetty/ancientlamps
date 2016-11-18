@@ -25,7 +25,8 @@
         %h4 Catalogue Entries
         .cat-entry__grid
           - entries.each do |entry|
-            .cat-entry__grid__item{ :data => { :cat => entry }}
+            - entry_data = manifest_lookup(entry)
+            .cat-entry__grid__item{ :data => entry_data }
               %h6.cat-entry__grid__item__number= entry
         = yield
     = partial "partials/cat_details", :locals => { :entries => entries }

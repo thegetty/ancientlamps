@@ -179,8 +179,9 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     @include size(100% 50%);
     @include transform(translateY(200%));
     @include transition(all 0.2s ease);
-    background-color: $dark-gray;
+    background-color: $base-background-color;
     bottom: 0;
+    padding: $base-spacing;
     position: fixed;
     z-index: $z-index-6;
 
@@ -205,6 +206,9 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     z-index: $z-index-7;
 
     &.is-visible { display: block; }
-    .close-button { @extend .ion-close-circled; }
+    .close-button {
+      @extend .ion-close-circled;
+      color: $light-gray;
+    }
   }
 }
