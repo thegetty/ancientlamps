@@ -200,7 +200,7 @@ function detailsToggle() {
     // Instantiate a new deepzoom viewer
     // $(this) gives us the element that triggered the event
     var cat = $(this).data('cat')
-    var path = 'http://localhost:8000/tiles/' + cat + '/top/'
+    var path = 'https://s3-us-west-1.amazonaws.com/gettypubs-lamps/' + cat + '/top/'
     map = L.map('js-deepzoom', {
       maxZoom: 13,
       minZoom: 9
