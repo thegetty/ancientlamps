@@ -466,7 +466,7 @@ sort_order: 201
   <li><span class="list-number">VI.</span> Geometric Patterns
     <ol>
       <li><span class="list-number">VI.a.</span> Band of Rays, <a href="150">150</a>, <a href="152">152</a>, <a href="159">159</a>, <a href="163-64">163–64</a>, <a href="241">241</a>, <a href="243">243</a>, <a href="275">275</a>, <a href="379">379</a>, <a href="436">436</a></li>
-      <li><span class="list-number">VI.b.</span> Band of Tongues, <a href="378-74">368–74</a></li>
+      <li><span class="list-number">VI.b.</span> Band of Tongues, <a href="368-74">368–74</a></li>
       <li><span class="list-number">VI.c.</span> Row of Ovolos, <a href="33">33</a>, <a href="39">39</a>, <a href="44">44</a>, <a href="83-84">83–84</a>, <a href="155-56">155–56</a>, <a href="165">165</a>, <a href="245">245</a>, <a href="279-80">279–80</a>, <a href="314-16">314–16</a>, <a href="336">336</a>, <a href="347-48">347–48</a>, <a href="353-54">353–54</a>, <a href="361-67">361–67</a>, <a href="418-19">418–19</a>, <a href="421-27">421–27</a>, <a href="460">460</a>, <a href="468">468</a>, <a href="485">485</a>, <a href="518">518</a>, <a href="584">584</a>, <a href="624">624</a></li>
       <li><span class="list-number">VI.d.</span> Star Design, <a href="498-99">498–99</a>, <a href="534">534</a></li>
     </ol>
