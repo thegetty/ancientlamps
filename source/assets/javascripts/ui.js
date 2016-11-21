@@ -196,6 +196,7 @@ function detailsToggle() {
     $detailImage.toggleClass('is-visible')
     $detailData.toggleClass('is-visible')
     $detailCloseButton.toggleClass('is-visible')
+    $('body').addClass('noscroll')
 
     // Instantiate a new deepzoom viewer
     // $(this) gives us the element that triggered the event
@@ -238,6 +239,7 @@ function detailsToggle() {
     $detailImage.removeClass('is-visible')
     $detailData.removeClass('is-visible')
     $detailCloseButton.removeClass('is-visible')
+    $('body').removeClass('noscroll')
     map.remove()
   })
 
@@ -247,6 +249,7 @@ function detailsToggle() {
       $detailImage.removeClass('is-visible')
       $detailData.removeClass('is-visible')
       $detailCloseButton.removeClass('is-visible')
+      $('body').removeClass('noscroll')
       map.remove()
     }
   })
