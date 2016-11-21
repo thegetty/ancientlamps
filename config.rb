@@ -1,8 +1,8 @@
 # require "extensions/search"
-# require "extensions/catalogue"
+require "extensions/catalogue/catalogue"
 
 # activate :search
-# activate :catalogue
+activate :catalogue
 
 # Gulp Pipeline
 # ------------------------------------------------
