@@ -9,120 +9,120 @@ sort_order: 201
     <ol>
       <li><span class="list-number">I.a.</span> Roman Versions of the Olympian Gods, Their Cults, and Followers
         <ol>
-          <li><span class="list-number">I.a.1.</span> Apollo <a href="212">212</a>, <a href="363">363</a>, <a href="368">368</a>, <a href="389">389</a>, <a href="411">411</a></li>
+          <li><span class="list-number">I.a.1.</span> Apollo <%= link_to "212", "catalogue/208-23.html" %>, <%= link_to "363", "catalogue/360-74.html" %>, <%= link_to "368", "catalogue/360-74.html" %>, <%= link_to "389", "catalogue/396-401.html" %>, <%= link_to "411", "catalogue/402-17.html" %></li>
           <li><span class="list-number">I.a.2.</span> Bacchus and his followers
             <ol>
-              <li><span class="list-number">I.a.2(1).</span> Bacchus, <a href="92">92</a>, <a href="112">112</a>, <a href="121">121</a>, <a href="126">126</a>(?), <a href="149">149</a>, <a href="239">239</a>, <a href="370">370</a>, <a href="392">392</a>(?), <a href="428">428</a>, <a href="444">444</a>(?), <a href="490">490</a>(?), <a href="600">600</a>–<a href="601">601</a>(?)</li>
-              <li><span class="list-number">I.a.2(2).</span> Silenus, <a href="84">84</a>–<a href="85">85</a>, <a href="333">333</a>, <a href="626">626</a>(?)</li>
-              <li><span class="list-number">I.a.2(3).</span> Pan, <a href="414">414</a></li>
-              <li><span class="list-number">I.a.2(4).</span> Maenads, <a href="106">106</a>, <a href="175">175</a>(?), <a href="428">428</a>, <a href="490">490</a>, <a href="600">600</a></li>
-              <li><span class="list-number">I.a.2(5).</span> Satyrs, <a href="111">111</a>, <a href="235">235</a>, <a href="283">283</a>(?), <a href="381">381</a>, <a href="490">490</a>(?), <a href="600">600</a>(?)</li>
-              <li><span class="list-number">I.a.2(6).</span> Nymph, <a href="414">414</a></li>
-              <li><span class="list-number">I.a.2(7).</span> Faun, <a href="320">320</a></li>
+              <li><span class="list-number">I.a.2(1).</span> Bacchus, <%= link_to "92", "catalogue/87-117.html" %>, <%= link_to "112", "catalogue/87-117.html" %>, <%= link_to "121", "catalogue/119-29.html" %>, <%= link_to "126", "catalogue/119-29.html" %>(?), <%= link_to "149", "catalogue/147-60.html" %>, <%= link_to "239", "catalogue/239-42.html" %>, <%= link_to "370", "catalogue/360-74.html" %>, <%= link_to "392", "catalogue/389-93.html" %>(?), <%= link_to "428", "catalogue/428.html" %>, <%= link_to "444", "catalogue/442-48.html" %>(?), <%= link_to "490", "catalogue/490-91.html" %>(?), <%= link_to "600–1", "catalogue/586-609.html" %>(?)</li>
+              <li><span class="list-number">I.a.2(2).</span> Silenus, <a href="84-85">84–85</a>, <%= link_to "333", "catalogue/327-37.html" %>, <%= link_to "626", "catalogue/614-30.html" %>(?)</li>
+              <li><span class="list-number">I.a.2(3).</span> Pan, <%= link_to "414", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">I.a.2(4).</span> Maenads, <%= link_to "106", "catalogue/87-117.html" %>, <%= link_to "175", "catalogue/166-207.html" %>(?), <%= link_to "428", "catalogue/428.html" %>, <%= link_to "490", "catalogue/490-91.html" %>, <%= link_to "600", "catalogue/586-609.html" %></li>
+              <li><span class="list-number">I.a.2(5).</span> Satyrs, <%= link_to "111", "catalogue/87-117.html" %>, <%= link_to "235", "catalogue/248-65.html" %>, <%= link_to "283", "catalogue/283-302.html" %>(?), <%= link_to "381", "catalogue/376-88.html" %>, <%= link_to "490", "catalogue/490-91.html" %>(?), <%= link_to "600", "catalogue/586-609.html" %>(?)</li>
+              <li><span class="list-number">I.a.2(6).</span> Nymph, <%= link_to "414", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">I.a.2(7).</span> Faun, <%= link_to "320", "catalogue/317-22.html" %></li>
             </ol>
           </li>
-          <li><span class="list-number">I.a.3.</span> Diana, <a href="296">296</a>, <a href="373">373</a>, <a href="385">385</a></li>
-          <li><span class="list-number">I.a.4.</span> Juno, <a href="166">166</a>, <a href="409">409</a></li>
-          <li><span class="list-number">I.a.5.</span> Jupiter, <a href="154">154</a>, <a href="166">166</a>, <a href="260">260</a>, <a href="325">325</a>, <a href="364">364</a>, <a href="402">402</a>, <a href="409">409</a>, <a href="439">439</a>, <a href="582">582</a></li>
-          <li><span class="list-number">I.a.6.</span> Mars, <a href="131">131</a>, <a href="170">170</a>, <a href="201">201</a>, <a href="253-54">253–54</a>, <a href="394-95">394–95</a></li>
-          <li><span class="list-number">I.a.7.</span> Mercury, <a href="99">99</a>, <a href="115">115</a>, <a href="137">137</a>, <a href="166">166</a>, <a href="369">369</a>, <a href="484">484</a>, <a href="582-83">582–83</a></li>
-          <li><span class="list-number">I.a.8.</span> Minerva, <a href="166">166</a>(?), <a href="193">193</a>, <a href="582">582</a></li>
-          <li><span class="list-number">I.a.9.</span> Neptune, <a href="221">221</a></li>
-          <li><span class="list-number">I.a.10.</span> Thetis, <a href="437">437</a></li>
-          <li><span class="list-number">I.a.11.</span> Venus, <a href="263">263</a>, <a href="306">306</a>, <a href="584">584</a>(?)</li>
+          <li><span class="list-number">I.a.3.</span> Diana, <%= link_to "296", "catalogue/283-302.html" %>, <%= link_to "373", "catalogue/360-74.html" %>, <%= link_to "385", "catalogue/376-88.html" %></li>
+          <li><span class="list-number">I.a.4.</span> Juno, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "409", "catalogue/402-17.html" %></li>
+          <li><span class="list-number">I.a.5.</span> Jupiter, <%= link_to "154", "catalogue/147-60.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "260", "catalogue/248-65.html" %>, <%= link_to "325", "catalogue/324-25.html" %>, <%= link_to "364", "catalogue/360-74.html" %>, <%= link_to "402", "catalogue/402-17.html" %>, <%= link_to "409", "catalogue/402-17.html" %>, <%= link_to "439", "catalogue/435-40.html" %>, <%= link_to "582", "catalogue/582-85.html" %></li>
+          <li><span class="list-number">I.a.6.</span> Mars, <%= link_to "131", "catalogue/130-42.html" %>, <%= link_to "170", "catalogue/166-207.html" %>, <%= link_to "201", "catalogue/166-207.html" %>, <%= link_to "253–54", "catalogue/248-65.html" %>, <%= link_to "394–95", "catalogue/294-95.html" %></li>
+          <li><span class="list-number">I.a.7.</span> Mercury, <%= link_to "99", "catalogue/87-117.html" %>, <%= link_to "115", "catalogue/87-117.html" %>, <%= link_to "137", "catalogue/130-42.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "369", "catalogue/360-74.html" %>, <%= link_to "484", "catalogue/482-84.html" %>, <%= link_to "582–83", "catalogue/582-85.html" %></li>
+          <li><span class="list-number">I.a.8.</span> Minerva, <%= link_to "166", "catalogue/166-207.html" %>(?), <%= link_to "193", "catalogue/166-207.html" %>, <%= link_to "582", "catalogue/582-85.html" %></li>
+          <li><span class="list-number">I.a.9.</span> Neptune, <%= link_to "221", "catalogue/208-23.html" %></li>
+          <li><span class="list-number">I.a.10.</span> Thetis, <%= link_to "437", "catalogue/435-40.html" %></li>
+          <li><span class="list-number">I.a.11.</span> Venus, <%= link_to "263", "catalogue/248-65.html" %>, <%= link_to "306", "catalogue/305-6.html" %>, <%= link_to "584", "catalogue/582-85.html" %>(?)</li>
         </ol>
       </li>
       <li><span class="list-number">I.b.</span> Minor Deities
         <ol>
-          <li><span class="list-number">I.b.1.</span> Cupid, <a href="88">88</a>, <a href="100">100</a>, <a href="110">110</a>, <a href="119">119</a>, <a href="124">124</a>, <a href="138">138</a>, <a href="142">142</a>, <a href="171">171</a>, <a href="174">174</a>, <a href="190-91">190–91</a>, <a href="200">200</a>, <a href="215">215</a>, <a href="251">251</a>, <a href="273">273</a>, <a href="280-81">280–81</a>, <a href="332">332</a>, <a href="335">335</a>, <a href="358">358</a>, <a href="384">384</a>, <a href="386">386</a>, <a href="392">392</a>, <a href="398">398</a>, <a href="408">408</a>, <a href="427">427</a></li>
-          <li><span class="list-number">I.b.2.</span> Dioscuri, <a href="298">298</a>, <a href="311">311</a></li>
-          <li><span class="list-number">I.b.3.</span> Hecate, <a href="563">563</a></li>
-          <li><span class="list-number">I.b.4.</span> Lares, <a href="300">300</a>, <a href="310">310</a></li>
-          <li><span class="list-number">I.b.5.</span> Morpheus, <a href="166">166</a></li>
-          <li><span class="list-number">I.b.6.</span> Sol/Luna, <a href="153">153</a>, <a href="166">166</a>, <a href="249">249</a>, <a href="299">299</a>, <a href="563">563</a></li>
-          <li><span class="list-number">I.b.7.</span> Triton, <a href="197">197</a></li>
-          <li><span class="list-number">I.b.8.</span> Victory, <a href="98">98</a>, <a href="116">116</a>, <a href="214">214</a>, <a href="222-24">222–24</a>, <a href="248">248</a>, <a href="261">261</a></li>
+          <li><span class="list-number">I.b.1.</span> Cupid, <%= link_to "88", "catalogue/87-117.html" %>, <%= link_to "100", "catalogue/87-117.html" %>, <%= link_to "110", "catalogue/87-117.html" %>, <%= link_to "119", "catalogue/119-29.html" %>, <%= link_to "124", "catalogue/119-29.html" %>, <%= link_to "138", "catalogue/130-42.html" %>, <%= link_to "142", "catalogue/130-42.html" %>, <%= link_to "171", "catalogue/166-207.html" %>, <%= link_to "174", "catalogue/166-207.html" %>, <%= link_to "190–91", "catalogue/166-207.html" %>, <%= link_to "200", "catalogue/166-207.html" %>, <%= link_to "215", "catalogue/208-23.html" %>, <%= link_to "251", "catalogue/248-65.html" %>, <%= link_to "273", "catalogue/273-74.html" %>, <%= link_to "280–81", "catalogue/278-82.html" %>, <%= link_to "332", "catalogue/327-37.html" %>, <%= link_to "335", "catalogue/327-37.html" %>, <%= link_to "358", "catalogue/357-59.html" %>, <%= link_to "384", "catalogue/376-88.html" %>, <%= link_to "386", "catalogue/376-88.html" %>, <%= link_to "392", "catalogue/389-93.html" %>, <%= link_to "398", "catalogue/396-401.html" %>, <%= link_to "408", "catalogue/402-17.html" %>, <%= link_to "427", "catalogue/418-27.html" %></li>
+          <li><span class="list-number">I.b.2.</span> Dioscuri, <%= link_to "298", "catalogue/283-302.html" %>, <%= link_to "311", "catalogue/307-11.html" %></li>
+          <li><span class="list-number">I.b.3.</span> Hecate, <%= link_to "563", "catalogue/558-68.html" %></li>
+          <li><span class="list-number">I.b.4.</span> Lares, <%= link_to "300", "catalogue/283-302.html" %>, <%= link_to "310", "catalogue/307-11.html" %></li>
+          <li><span class="list-number">I.b.5.</span> Morpheus, <%= link_to "166", "catalogue/166-207.html" %></li>
+          <li><span class="list-number">I.b.6.</span> Sol/Luna, <%= link_to "153", "catalogue/147-60.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "249", "catalogue/248-65.html" %>, <%= link_to "299", "catalogue/283-302.html" %>, <%= link_to "563", "catalogue/558-68.html" %></li>
+          <li><span class="list-number">I.b.7.</span> Triton, <%= link_to "197", "catalogue/166-207.html" %></li>
+          <li><span class="list-number">I.b.8.</span> Victory, <%= link_to "98", "catalogue/87-117.html" %>, <%= link_to "116", "catalogue/87-117.html" %>, <%= link_to "214", "catalogue/208-23.html" %>, <a href="222-24">222–24</a>, <%= link_to "248", "catalogue/248-65.html" %>, <%= link_to "261", "catalogue/248-65.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">I.c.</span> Oriental Cults
         <ol>
           <li><span class="list-number">I.c.1.</span> Egyptian cults
             <ol>
-              <li><span class="list-number">I.c.1(1).</span> Anubis, <a href="361">361</a></li>
-              <li><span class="list-number">I.c.1(2).</span> Isis, <a href="166">166</a>, <a href="361">361</a>, <a href="488">488</a></li>
-              <li><span class="list-number">I.c.1(3).</span> Serapis, <a href="155">155</a>, <a href="315-16">315–16</a>, <a href="348">348</a>, <a href="374">374</a>, <a href="439">439</a></li>
-              <li><span class="list-number">I.c.1(4).</span> Basileion, <a href="361">361</a>, <a href="488">488</a></li>
-              <li><span class="list-number">I.c.1(5).</span> Calathus, <a href="155">155</a>, <a href="374">374</a>, <a href="439">439</a></li>
-              <li><span class="list-number">I.c.1(6).</span> Modius, <a href="315-16">315–16</a>, <a href="348">348</a></li>
+              <li><span class="list-number">I.c.1(1).</span> Anubis, <%= link_to "361", "catalogue/360-74.html" %></li>
+              <li><span class="list-number">I.c.1(2).</span> Isis, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "361", "catalogue/360-74.html" %>, <%= link_to "488", "catalogue/487-89.html" %></li>
+              <li><span class="list-number">I.c.1(3).</span> Serapis, <%= link_to "155", "catalogue/147-60.html" %>, <%= link_to "315–16", "catalogue/315-16.html" %>, <%= link_to "348", "catalogue/348.html" %>, <%= link_to "374", "catalogue/360-74.html" %>, <%= link_to "439", "catalogue/435-40.html" %></li>
+              <li><span class="list-number">I.c.1(4).</span> Basileion, <%= link_to "361", "catalogue/360-74.html" %>, <%= link_to "488", "catalogue/487-89.html" %></li>
+              <li><span class="list-number">I.c.1(5).</span> Calathus, <%= link_to "155", "catalogue/147-60.html" %>, <%= link_to "374", "catalogue/360-74.html" %>, <%= link_to "439", "catalogue/435-40.html" %></li>
+              <li><span class="list-number">I.c.1(6).</span> Modius, <%= link_to "315–16", "catalogue/315-16.html" %>, <%= link_to "348", "catalogue/348.html" %></li>
             </ol>
           </li>
           <li><span class="list-number">I.c.2.</span> Asian cults
             <ol>
-              <li><span class="list-number">I.c.2(1).</span> Attis, <a href="421">421</a></li>
-              <li><span class="list-number">I.c.2(2).</span> Cybele, <a href="390">390</a></li>
+              <li><span class="list-number">I.c.2(1).</span> Attis, <%= link_to "421", "catalogue/418-27.html" %></li>
+              <li><span class="list-number">I.c.2(2).</span> Cybele, <%= link_to "390", "catalogue/389-93.html" %></li>
             </ol>
           </li>
         </ol>
       </li>
       <li><span class="list-number">I.d.</span> African Cult
         <ol>
-          <li><span class="list-number">I.d.1.</span> Africa, <a href="286">286</a></li>
+          <li><span class="list-number">I.d.1.</span> Africa, <%= link_to "286", "catalogue/283-302.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">I.e.</span> Christian Cult
         <ol>
-          <li><span class="list-number">I.e.1.</span> Angels, <a href="492">492</a></li>
-          <li><span class="list-number">I.e.2.</span> Apostle, <a href="493">493</a>(?), <a href="494">494</a></li>
-          <li><span class="list-number">I.e.3.</span> Chi Rho, <a href="492">492</a>, <a href="495">495</a></li>
-          <li><span class="list-number">I.e.4.</span> Christ, <a href="492">492</a>, <a href="493">493</a>(?)</li>
-          <li><span class="list-number">I.e.5.</span> Christian worshiper, <a href="504">504</a></li>
-          <li><span class="list-number">I.e.6.</span> Christogram, <a href="504">504</a></li>
-          <li><span class="list-number">I.e.7.</span> Cross-monogram, <a href="496">496</a>, Greek cross, <a href="534">534</a>, <a href="539">539</a>, <a href="576">576</a></li>
+          <li><span class="list-number">I.e.1.</span> Angels, <%= link_to "492", "catalogue/492-500.html" %></li>
+          <li><span class="list-number">I.e.2.</span> Apostle, <%= link_to "493", "catalogue/492-500.html" %>(?), <%= link_to "494", "catalogue/492-500.html" %></li>
+          <li><span class="list-number">I.e.3.</span> Chi Rho, <%= link_to "492", "catalogue/492-500.html" %>, <%= link_to "495", "catalogue/492-500.html" %></li>
+          <li><span class="list-number">I.e.4.</span> Christ, <%= link_to "492", "catalogue/492-500.html" %>, <%= link_to "493", "catalogue/492-500.html" %>(?)</li>
+          <li><span class="list-number">I.e.5.</span> Christian worshiper, <%= link_to "504", "catalogue/503-4.html" %></li>
+          <li><span class="list-number">I.e.6.</span> Christogram, <%= link_to "504", "catalogue/503-4.html" %></li>
+          <li><span class="list-number">I.e.7.</span> Cross-monogram, <%= link_to "496", "catalogue/492-500.html" %>, Greek cross, <%= link_to "534", "catalogue/524-41.html" %>, <%= link_to "539", "catalogue/524-41.html" %>, <%= link_to "576", "catalogue/573-76.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">I.f.</span> Jewish Cult
         <ol>
-          <li><span class="list-number">I.f.1. Menorah</span> <a href="524">524</a></li>
+          <li><span class="list-number">I.f.1. Menorah</span> <%= link_to "524", "catalogue/524-41.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">I.g.</span> Myth and Legend
         <ol>
           <li><span class="list-number">I.g.1.</span> Mythological figures
             <ol>
-              <li><span class="list-number">I.g.1(1).</span> Acheloüs, <a href="319">319</a>(?), <a href="463">463</a></li>
-              <li><span class="list-number">I.g.1(2).</span> Achilles, <a href="437">437</a></li>
-              <li><span class="list-number">I.g.1(3).</span> Actaeon, <a href="169">169</a></li>
-              <li><span class="list-number">I.g.1(4).</span> Amazon, <a href="225">225</a></li>
-              <li><span class="list-number">I.g.1(5).</span> Centaur, <a href="101">101</a>, <a href="434">434</a></li>
-              <li><span class="list-number">I.g.1(6).</span> Chiron, <a href="434">434</a></li>
-              <li><span class="list-number">I.g.1(7).</span> Curtius, <a href="105">105</a></li>
-              <li><span class="list-number">I.g.1(8).</span> Europa <a href="260">260</a>, <a href="364">364</a>, <a href="439">439</a></li>
-              <li><span class="list-number">I.g.1(9).</span> Eurystheus <a href="308">308</a>, <a href="396">396</a></li>
-              <li><span class="list-number">I.g.1(10).</span> Hercules, <a href="122">122</a>, <a href="192">192</a>, <a href="308">308</a>, <a href="396">396</a>, <a href="427">427</a>; Hercules’ club, <a href="110">110</a>, <a href="200">200</a>, <a href="215">215</a>, <a href="427">427</a></li>
-              <li><span class="list-number">I.g.1(11).</span> Leda, <a href="358">358</a></li>
-              <li><span class="list-number">I.g.1(12).</span> Medusa <a href="145">145</a>, <a href="158">158</a>, <a href="161">161</a>, <a href="173">173</a>, <a href="391">391</a></li>
-              <li><span class="list-number">I.g.1(13).</span> Meleager <a href="371-72">371–72</a></li>
-              <li><span class="list-number">I.g.1(14).</span> Muse, <a href="186">186</a></li>
-              <li><span class="list-number">I.g.1(15).</span> Neoptolemus, <a href="219">219</a></li>
-              <li><span class="list-number">I.g.1(16).</span> Omphale, <a href="427">427</a></li>
-              <li><span class="list-number">I.g.1(17).</span> Orpheus, <a href="425">425</a></li>
-              <li><span class="list-number">I.g.1(18).</span> Philoctetes, <a href="219">219</a></li>
-              <li><span class="list-number">I.g.1(19).</span> Polyphemus, <a href="86">86</a></li>
-              <li><span class="list-number">I.g.1(20).</span> Psyche, <a href="171">171</a></li>
-              <li><span class="list-number">I.g.1(21).</span> Rhea Silvia, <a href="170">170</a></li>
-              <li><span class="list-number">I.g.1(22).</span> Ulysses, <a href="86">86</a>, <a href="209">209</a>, <a href="213">213</a>, <a href="219">219</a>, <a href="309">309</a></li>
+              <li><span class="list-number">I.g.1(1).</span> Acheloüs, <%= link_to "319", "catalogue/317-22.html" %>(?), <%= link_to "463", "catalogue/436-71.html" %></li>
+              <li><span class="list-number">I.g.1(2).</span> Achilles, <%= link_to "437", "catalogue/435-40.html" %></li>
+              <li><span class="list-number">I.g.1(3).</span> Actaeon, <%= link_to "169", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">I.g.1(4).</span> Amazon, <%= link_to "225", "catalogue/224-38.html" %></li>
+              <li><span class="list-number">I.g.1(5).</span> Centaur, <%= link_to "101", "catalogue/87-117.html" %>, <%= link_to "434", "catalogue/433-34.html" %></li>
+              <li><span class="list-number">I.g.1(6).</span> Chiron, <%= link_to "434", "catalogue/433-34.html" %></li>
+              <li><span class="list-number">I.g.1(7).</span> Curtius, <%= link_to "105", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">I.g.1(8).</span> Europa <%= link_to "260", "catalogue/248-65.html" %>, <%= link_to "364", "catalogue/360-74.html" %>, <%= link_to "439", "catalogue/435-40.html" %></li>
+              <li><span class="list-number">I.g.1(9).</span> Eurystheus <%= link_to "308", "catalogue/307-11.html" %>, <%= link_to "396", "catalogue/396-401.html" %></li>
+              <li><span class="list-number">I.g.1(10).</span> Hercules, <%= link_to "122", "catalogue/119-29.html" %>, <%= link_to "192", "catalogue/166-207.html" %>, <%= link_to "308", "catalogue/307-11.html" %>, <%= link_to "396", "catalogue/396-401.html" %>, <%= link_to "427", "catalogue/418-27.html" %>; Hercules’ club, <%= link_to "110", "catalogue/87-117.html" %>, <%= link_to "200", "catalogue/166-207.html" %>, <%= link_to "215", "catalogue/208-23.html" %>, <%= link_to "427", "catalogue/418-27.html" %></li>
+              <li><span class="list-number">I.g.1(11).</span> Leda, <%= link_to "358", "catalogue/357-59.html" %></li>
+              <li><span class="list-number">I.g.1(12).</span> Medusa <%= link_to "145", "catalogue/143-146-bis.html" %>, <%= link_to "158", "catalogue/147-160.html" %>, <%= link_to "161", "catalogue/147-160.html" %>, <%= link_to "173", "catalogue/166-207.html" %>, <%= link_to "391", "catalogue/389-93.html" %></li>
+              <li><span class="list-number">I.g.1(13).</span> Meleager <%= link_to "371–72", "catalogue/360-74.html" %></li>
+              <li><span class="list-number">I.g.1(14).</span> Muse, <%= link_to "186", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">I.g.1(15).</span> Neoptolemus, <%= link_to "219", "catalogue/208-23.html" %></li>
+              <li><span class="list-number">I.g.1(16).</span> Omphale, <%= link_to "427", "catalogue/418-27.html" %></li>
+              <li><span class="list-number">I.g.1(17).</span> Orpheus, <%= link_to "425", "catalogue/418-27.html" %></li>
+              <li><span class="list-number">I.g.1(18).</span> Philoctetes, <%= link_to "219", "catalogue/208-23.html" %></li>
+              <li><span class="list-number">I.g.1(19).</span> Polyphemus, <%= link_to "86", "catalogue/85-86.html" %></li>
+              <li><span class="list-number">I.g.1(20).</span> Psyche, <%= link_to "171", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">I.g.1(21).</span> Rhea Silvia, <%= link_to "170", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">I.g.1(22).</span> Ulysses, <%= link_to "86", "catalogue/85-86.html" %>, <%= link_to "209", "catalogue/208-23.html" %>, <%= link_to "213", "catalogue/208-23.html" %>, <%= link_to "219", "catalogue/208-23.html" %>, <%= link_to "309", "catalogue/307-11.html" %></li>
             </ol>
           </li>
           <li><span class="list-number">I.g.2.</span> Mythological animals
             <ol>
-              <li><span class="list-number">I.g.2(1).</span> Basilisk, <a href="492">492</a></li>
-              <li><span class="list-number">I.g.2(2).</span> Dragon, <a href="492">492</a></li>
-              <li><span class="list-number">I.g.2(3).</span> Griffin, <a href="326">326</a>, <a href="340">340</a>, <a href="368">368</a></li>
-              <li><span class="list-number">I.g.2(4).</span> Hydra of Lerna, <a href="396">396</a></li>
-              <li><span class="list-number">I.g.2(5).</span> Pegasus, <a href="176">176</a>, <a href="279">279</a>, <a href="321">321</a></li>
-              <li><span class="list-number">I.g.2(6).</span> Sea horse, <a href="221">221</a></li>
-              <li><span class="list-number">I.g.2(7).</span> Sea monster, <a href="90">90</a>, <a href="376-77">376–77</a>, <a href="399">399</a>, <a href="472">472</a></li>
-              <li><span class="list-number">I.g.2(8).</span> Stymphalian Birds, <a href="308">308</a></li>
+              <li><span class="list-number">I.g.2(1).</span> Basilisk, <%= link_to "492", "catalogue/492-500.html" %></li>
+              <li><span class="list-number">I.g.2(2).</span> Dragon, <%= link_to "492", "catalogue/492-500.html" %></li>
+              <li><span class="list-number">I.g.2(3).</span> Griffin, <%= link_to "326", "catalogue/326.html" %>, <%= link_to "340", "catalogue/339-43.html" %>, <%= link_to "368", "catalogue/360-74.html" %></li>
+              <li><span class="list-number">I.g.2(4).</span> Hydra of Lerna, <%= link_to "396", "catalogue/396-401.html" %></li>
+              <li><span class="list-number">I.g.2(5).</span> Pegasus, <%= link_to "176", "catalogue/166-207.html" %>, <%= link_to "279", "catalogue/278-82.html" %>, <%= link_to "321", "catalogue/317-22.html" %></li>
+              <li><span class="list-number">I.g.2(6).</span> Sea horse, <%= link_to "221", "catalogue/208-23.html" %></li>
+              <li><span class="list-number">I.g.2(7).</span> Sea monster, <%= link_to "90", "catalogue/87-117.html" %>, <%= link_to "376–77", "catalogue/376-88.html" %>, <%= link_to "399", "catalogue/396-401.html" %>, <%= link_to "472", "catalogue/472-73.html" %></li>
+              <li><span class="list-number">I.g.2(8).</span> Stymphalian Birds, <%= link_to "308", "catalogue/307-11.html" %></li>
             </ol>
           </li>
         </ol>
@@ -133,14 +133,14 @@ sort_order: 201
     <ol>
       <li><span class="list-number">II.a.</span> Emperors
         <ol>
-          <li><span class="list-number">II.a.1.</span> Augustus, <a href="80">80</a></li>
-          <li><span class="list-number">II.a.2.</span> Domitian, <a href="301">301</a></li>
-          <li><span class="list-number">II.a.3.</span> Hadrian, <a href="211">211</a>, <a href="289">289</a>(?)</li>
+          <li><span class="list-number">II.a.1.</span> Augustus, <%= link_to "80", "catalogue/76-84.html" %></li>
+          <li><span class="list-number">II.a.2.</span> Domitian, <%= link_to "301", "catalogue/283-302.html" %></li>
+          <li><span class="list-number">II.a.3.</span> Hadrian, <%= link_to "211", "catalogue/208-23.html" %>, <%= link_to "289", "catalogue/283-302.html" %>(?)</li>
         </ol>
       </li>
       <li><span class="list-number">II.b.</span> Other
         <ol>
-          <li><span class="list-number">II.b.1.</span> Antinous, <a href="344">344</a>, <a href="424">424</a></li>
+          <li><span class="list-number">II.b.1.</span> Antinous, <%= link_to "344", "catalogue/344-45.html" %>, <%= link_to "424", "catalogue/418-27.html" %></li>
         </ol>
       </li>
     </ol>
@@ -151,198 +151,198 @@ sort_order: 201
         <ol>
           <li><span class="list-number">III.a.1.</span> Bucolic and rural
             <ol>
-              <li><span class="list-number">III.a.1(1).</span> Flock of goats, <a href="129">129</a>, <a href="242">242</a></li>
-              <li><span class="list-number">III.a.1(2).</span> Goatherd, <a href="242">242</a></li>
-              <li><span class="list-number">III.a.1(3).</span> Temple in Alexandrian landscape, <a href="486">486</a></li>
+              <li><span class="list-number">III.a.1(1).</span> Flock of goats, <%= link_to "129", "catalogue/119-29.html" %>, <%= link_to "242", "catalogue/243-47.html" %></li>
+              <li><span class="list-number">III.a.1(2).</span> Goatherd, <%= link_to "242", "catalogue/243-47.html" %></li>
+              <li><span class="list-number">III.a.1(3).</span> Temple in Alexandrian landscape, <%= link_to "486", "catalogue/485-86.html" %></li>
             </ol>
           </li>
           <li><span class="list-number">III.a.2.</span> Maritime scenes
             <ol>
-              <li><span class="list-number">III.a.2(1).</span> Boats and ships, <a href="179">179</a>, <a href="259">259</a>, <a href="309">309</a>, <a href="383-84">383–84</a>, <a href="420">420</a>, <a href="465-67">465–67</a>, <a href="625">625</a></li>
-              <li><span class="list-number">III.a.2(2).</span> Harbor, <a href="464-67">464–67</a></li>
+              <li><span class="list-number">III.a.2(1).</span> Boats and ships, <%= link_to "179", "catalogue/166-207.html" %>, <%= link_to "259", "catalogue/248-65.html" %>, <%= link_to "309", "catalogue/307-11.html" %>, <%= link_to "383–84", "catalogue/376-88.html" %>, <%= link_to "420", "catalogue/418-27.html" %>, <%= link_to "465–67", "catalogue/463-71.html" %>, <%= link_to "625", "catalogue/614-30.html" %></li>
+              <li><span class="list-number">III.a.2(2).</span> Harbor, <%= link_to "464–67", "catalogue/463-71.html" %></li>
             </ol>
           </li>
           <li><span class="list-number">III.a.3.</span> Domestic scenes
             <ol>
-              <li><span class="list-number">III.a.3(1).</span> Fishermen, <a href="123">123</a>, <a href="180">180</a>, <a href="259">259</a>, <a href="290">290</a>, <a href="466-67">466–67</a>, <a href="486">486</a></li>
-              <li><span class="list-number">III.a.3(2).</span> Hunting, <a href="96">96</a></li>
-              <li><span class="list-number">III.a.3(3).</span> Military rider, <a href="95">95</a></li>
-              <li><span class="list-number">III.a.3(4).</span> Man carrying a pole and a bag, <a href="139">139</a></li>
-              <li><span class="list-number">III.a.3(5).</span> Man carrying a pole with basket and rabbit tied to it, <a href="204">204</a></li>
-              <li><span class="list-number">III.a.3(6).</span> Man playing aulos near altar, <a href="196">196</a>, <a href="287">287</a>(?)</li>
-              <li><span class="list-number">III.a.3(7).</span> Man near altar, <a href="382">382</a></li>
-              <li><span class="list-number">III.a.3(8).</span> Man walking with donkey, <a href="252">252</a></li>
-              <li><span class="list-number">III.a.3(9).</span> Man attacked by bear, <a href="393">393</a></li>
-              <li><span class="list-number">III.a.3(10).</span> Man and woman killing fowl to cook, <a href="410">410</a></li>
-              <li><span class="list-number">III.a.3(11).</span> Man on horseback, <a href="252%20bis">252 bis</a></li>
-              <li><span class="list-number">III.a.3(12).</span> Man standing, <a href="537">537</a></li>
-              <li><span class="list-number">III.a.3(13).</span> Man walking, <a href="480">480</a></li>
-              <li><span class="list-number">III.a.3(14).</span> Nude women at water basin, <a href="256">256</a></li>
-              <li><span class="list-number">III.a.3(15).</span> Sacrifice, <a href="116">116</a>, <a href="136">136</a></li>
+              <li><span class="list-number">III.a.3(1).</span> Fishermen, <%= link_to "123", "catalogue/119-29.html" %>, <%= link_to "180", "catalogue/166-207.html" %>, <%= link_to "259", "catalogue/248-65.html" %>, <%= link_to "290", "catalogue/283-302.html" %>, <%= link_to "466–67", "catalogue/463-71.html" %>, <%= link_to "486", "catalogue/485-86.html" %></li>
+              <li><span class="list-number">III.a.3(2).</span> Hunting, <%= link_to "96", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">III.a.3(3).</span> Military rider, <%= link_to "95", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">III.a.3(4).</span> Man carrying a pole and a bag, <%= link_to "139", "catalogue/130-42.html" %></li>
+              <li><span class="list-number">III.a.3(5).</span> Man carrying a pole with basket and rabbit tied to it, <%= link_to "204", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.3(6).</span> Man playing aulos near altar, <%= link_to "196", "catalogue/166-207.html" %>, <%= link_to "287", "catalogue/283-302.html" %>(?)</li>
+              <li><span class="list-number">III.a.3(7).</span> Man near altar, <%= link_to "382", "catalogue/376-88.html" %></li>
+              <li><span class="list-number">III.a.3(8).</span> Man walking with donkey, <%= link_to "252", "catalogue/248-65.html" %></li>
+              <li><span class="list-number">III.a.3(9).</span> Man attacked by bear, <%= link_to "393", "catalogue/389-93.html" %></li>
+              <li><span class="list-number">III.a.3(10).</span> Man and woman killing fowl to cook, <%= link_to "410", "catalogue/402-417.html" %></li>
+              <li><span class="list-number">III.a.3(11).</span> Man on horseback, <%= link_to "252 bis", "catalogue/248-65.html" %></li>
+              <li><span class="list-number">III.a.3(12).</span> Man standing, <%= link_to "537", "catalogue/524-41.html" %></li>
+              <li><span class="list-number">III.a.3(13).</span> Man walking, <%= link_to "480", "catalogue/477-81.html" %></li>
+              <li><span class="list-number">III.a.3(14).</span> Nude women at water basin, <%= link_to "256", "catalogue/248-65.html" %></li>
+              <li><span class="list-number">III.a.3(15).</span> Sacrifice, <%= link_to "116", "catalogue/87-117.html" %>, <%= link_to "136", "catalogue/130-42.html" %></li>
             </ol>
           </li>
           <li><span class="list-number">III.a.4.</span> Things
             <ol>
-              <li><span class="list-number">III.a.4(1).</span> Alabastron, <a href="280-81">280–81</a></li>
-              <li><span class="list-number">III.a.4(2).</span> Altar, <a href="162">162</a>, <a href="166">166</a>, 196, 231, 251, 287(?), 300, 310, 382, 422, 484(?)</li>
-              <li><span class="list-number">III.a.4(3).</span> Amphora, <a href="101">101</a>, <a href="303">303</a>, <a href="339">339</a></li>
-              <li><span class="list-number">III.a.4(4).</span> Arch, <a href="464">464</a>, <a href="466">466</a></li>
-              <li><span class="list-number">III.a.4(5).</span> Aulos, <a href="196">196</a>, <a href="235">235</a>, <a href="287">287</a></li>
-              <li><span class="list-number">III.a.4(6).</span> Basket, <a href="95">95</a>, <a href="195">195</a>, <a href="204">204</a>, <a href="290">290</a>, <a href="537">537</a>(?)</li>
-              <li><span class="list-number">III.a.4(7).</span> Bed, <a href="170">170</a>, <a href="181-83">181–83</a>, <a href="203">203</a>, <a href="220">220</a>, <a href="262">262</a>, <a href="334">334</a>, <a href="345">345</a>, <a href="353">353</a>, <a href="355-56">355–56</a>, <a href="491">491</a></li>
-              <li><span class="list-number">III.a.4(8).</span> Book scroll, <a href="318">318</a></li>
-              <li><span class="list-number">III.a.4(9).</span> Caduceus, <a href="115">115</a>, <a href="137">137</a>, <a href="166">166</a>, <a href="329">329</a>, <a href="361">361</a>, <a href="369">369</a>, <a href="484">484</a>, <a href="582">582</a></li>
-              <li><span class="list-number">III.a.4(10).</span> <em>Cantharus</em>, <a href="92">92</a>, <a href="112">112</a>, <a href="121">121</a>, <a href="239">239</a>, <a href="250">250</a>, <a href="257">257</a>, <a href="332">332</a></li>
-              <li><span class="list-number">III.a.4(11).</span> Causeway, <a href="464">464</a></li>
-              <li><span class="list-number">III.a.4(12).</span> Chair, <a href="264">264</a>, <a href="470">470</a></li>
-              <li><span class="list-number">III.a.4(13).</span> Chiton, <a href="193">193</a></li>
-              <li><span class="list-number">III.a.4(14).</span> Cloak, <a href="105">105</a>, <a href="300">300</a>, <a href="310">310</a></li>
-              <li><span class="list-number">III.a.4(15).</span> Club, <a href="169">169</a></li>
-              <li><span class="list-number">III.a.4(16).</span> Column, <a href="239">239</a>, <a href="263">263</a>, <a href="466-67">466-67</a>, <a href="486">486</a></li>
-              <li><span class="list-number">III.a.4(17).</span> Conch, <a href="197">197</a></li>
-              <li><span class="list-number">III.a.4(18).</span> Cornucopia, <a href="130">130</a>, <a href="166">166</a></li>
-              <li><span class="list-number">III.a.4(19).</span> Crater, <a href="162">162</a></li>
-              <li><span class="list-number">III.a.4(20).</span> Cymbals, <a href="196">196</a></li>
-              <li><span class="list-number">III.a.4(21).</span> Diadem, <a href="289">289</a>, <a href="437">437</a></li>
-              <li><span class="list-number">III.a.4(22).</span> Dome, <a href="464">464</a></li>
-              <li><span class="list-number">III.a.4(23).</span> Earring, <a href="539">539</a></li>
-              <li><span class="list-number">III.a.4(24).</span> Fishing rod, <a href="123">123</a>, <a href="467">467</a>, <a href="486">486</a></li>
-              <li><span class="list-number">III.a.4(25).</span> Fishing net, <a href="179">179</a>, <a href="466-67">466–67</a></li>
-              <li><span class="list-number">III.a.4(26).</span> Flute, <a href="381">381</a></li>
-              <li><span class="list-number">III.a.4(27).</span> Garland, <a href="398">398</a></li>
-              <li><span class="list-number">III.a.4(28).</span> Hat, <a href="179">179</a>, <a href="204">204</a>, <a href="259">259</a>, <a href="290">290</a>, <a href="298">298</a>, <a href="486">486</a>; pointed cap, <a href="86">86</a>, <a href="213">213</a>, <a href="311">311</a>, <a href="372">372</a>, <a href="393">393</a>; bonnet, <a href="295">295</a>, <a href="410">410</a>; Phrygian cap, <a href="421">421</a>, <a href="539">539</a></li>
-              <li><span class="list-number">III.a.4(29).</span> Herm, <a href="109">109</a></li>
-              <li><span class="list-number">III.a.4(30).</span> Himation, <a href="192">192</a>, <a href="382">382</a></li>
-              <li><span class="list-number">III.a.4(31).</span> Hoop, <a href="109">109</a>, <a href="174">174</a></li>
-              <li><span class="list-number">III.a.4(32).</span> Horseshoe (motif), <a href="503">503</a></li>
-              <li><span class="list-number">III.a.4(33).</span> Hunting bow, <a href="296">296</a>, <a href="385">385</a></li>
-              <li><span class="list-number">III.a.4(34).</span> Hunting spear, <a href="96">96</a>, <a href="365">365</a>, <a href="371-72">371–72</a>, <a href="536">536</a></li>
-              <li><span class="list-number">III.a.4(35).</span> Jar, <a href="396">396</a></li>
-              <li><span class="list-number">III.a.4(36).</span> Jug, <a href="185">185</a>, <a href="263-64">263–64</a></li>
-              <li><span class="list-number">III.a.4(37).</span> Juggling ring, <a href="238">238</a></li>
-              <li><span class="list-number">III.a.4(38).</span> <em>Kithara</em>, <a href="166">166</a>, <a href="186">186</a>, <a href="212">212</a>, <a href="363">363</a>, <a href="434">434</a></li>
-              <li><span class="list-number">III.a.4(39).</span> Lamp, <a href="77-78">77–78</a>, <a href="146%20bis">146 bis</a></li>
-              <li><span class="list-number">III.a.4(40).</span> Lyre, <a href="425">425</a></li>
-              <li><span class="list-number">III.a.4(41).</span> Mortar, <a href="111">111</a></li>
-              <li><span class="list-number">III.a.4(42).</span> Oar, <a href="179">179</a>, <a href="383-84">383–84</a></li>
-              <li><span class="list-number">III.a.4(43).</span> Obelisk, <a href="222">222</a></li>
-              <li><span class="list-number">III.a.4(44).</span> Oenochoë, <a href="266">266</a>, <a href="353">353</a></li>
-              <li><span class="list-number">III.a.4(45).</span> <em>Pedum</em>, <a href="119">119</a>, <a href="428">428</a>, <a href="490">490</a>, <a href="600">600</a></li>
-              <li><span class="list-number">III.a.4(46).</span> Pincers, <a href="166">166</a></li>
-              <li><span class="list-number">III.a.4(47).</span> Pole, <a href="139">139</a>, <a href="204">204</a>, <a href="366">366</a></li>
-              <li><span class="list-number">III.a.4(48).</span> Portico, <a href="464-67">464–67</a></li>
-              <li><span class="list-number">III.a.4(49).</span> Post, <a href="95">95</a></li>
-              <li><span class="list-number">III.a.4(50).</span> Purse, <a href="99">99</a>, <a href="115">115</a>, <a href="369">369</a>, <a href="393">393</a>(?), <a href="484">484</a></li>
-              <li><span class="list-number">III.a.4(51).</span> Quadriga, <a href="222-23">222–23</a>, <a href="389">389</a>, <a href="400">400</a>, <a href="411">411</a></li>
-              <li><span class="list-number">III.a.4(52).</span> Ram’s horn (<em>shofar</em>), <a href="524">524</a></li>
-              <li><span class="list-number">III.a.4(53).</span> Rhyton, <a href="300">300</a>, <a href="310">310</a></li>
-              <li><span class="list-number">III.a.4(54).</span> Rudder, <a href="197">197</a>, <a href="221">221</a>, <a href="383">383</a></li>
-              <li><span class="list-number">III.a.4(55).</span> Saddlebag, <a href="497">497</a></li>
-              <li><span class="list-number">III.a.4(56).</span> Scepter, <a href="154">154</a>, <a href="211">211</a>, <a href="315-16">315–16</a>, <a href="348">348</a>, <a href="374">374</a>, <a href="409">409</a></li>
-              <li><span class="list-number">III.a.4(57).</span> <em>Sistrum</em>, <a href="166">166</a>, <a href="361">361</a></li>
-              <li><span class="list-number">III.a.4(58).</span> Situla, <a href="300">300</a>, <a href="310">310</a></li>
-              <li><span class="list-number">III.a.4(59).</span> Stave, <a href="426">426</a></li>
-              <li><span class="list-number">III.a.4(60).</span> Tambourine, <a href="106">106</a></li>
-              <li><span class="list-number">III.a.4(61).</span> Thyrsus, <a href="92">92</a>, <a href="112">112</a>, <a href="130">130</a>, <a href="166">166</a>, <a href="239">239</a>, <a href="250">250</a>(?), <a href="370">370</a>, <a href="381">381</a>, <a href="408">408</a>(?)</li>
-              <li><span class="list-number">III.a.4(62).</span> Torch, <a href="563">563</a></li>
-              <li><span class="list-number">III.a.4(63).</span> Toy wheel, <a href="174">174</a></li>
-              <li><span class="list-number">III.a.4(64).</span> Trident, <a href="88">88</a>, <a href="210">210</a>, <a href="360">360</a>, <a href="407">407</a></li>
-              <li><span class="list-number">III.a.4(65).</span> Tunic, <a href="86">86</a>, <a href="105">105</a>, <a href="107">107</a>, <a href="139">139</a>, <a href="180">180</a>, <a href="204">204</a>, <a href="213">213</a>, <a href="238">238</a>, <a href="252">252</a>, <a href="290">290</a>, <a href="300">300</a>, <a href="310">310</a>, <a href="344">344</a>, <a href="365">365</a>, <a href="389">389</a>, <a href="393">393</a>, <a href="493">493</a></li>
-              <li><span class="list-number">III.a.4(66).</span> Tympanon, <a href="126">126</a>, <a href="175">175</a>, <a href="250">250</a></li>
-              <li><span class="list-number">III.a.4(67).</span> Vase, <a href="109">109</a>, <a href="124">124</a>, <a href="142">142</a></li>
+              <li><span class="list-number">III.a.4(1).</span> Alabastron, <%= link_to "280–81", "catalogue/278-82.html" %></li>
+              <li><span class="list-number">III.a.4(2).</span> Altar, <%= link_to "162", "catalogue/161-65.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "196", "catalogue/166-207.html" %>, <%= link_to "231", "catalogue/224-38.html" %>, <%= link_to "251", "catalogue/248-65.html" %>, <%= link_to "287", "catalogue/283-302.html" %>(?), <%= link_to "300", "catalogue/283-302.html" %>, <%= link_to "310", "catalogue/307-11.html" %>, <%= link_to "382", "catalogue/376-88.html" %>, <%= link_to "422", "catalogue/418-27.html" %>, <%= link_to "484", "catalogue/482-84.html" %>(?)</li>
+              <li><span class="list-number">III.a.4(3).</span> Amphora, <%= link_to "101", "catalogue/87-117.html" %>, <%= link_to "303", "catalogue/303-4.html" %>, <%= link_to "339", "catalogue/389-93.html" %></li>
+              <li><span class="list-number">III.a.4(4).</span> Arch, <%= link_to "464", "catalogue/463-71.html" %>, <%= link_to "466", "catalogue/463-71.html" %></li>
+              <li><span class="list-number">III.a.4(5).</span> Aulos, <%= link_to "196", "catalogue/166-207.html" %>, <%= link_to "235", "catalogue/224-38.html" %>, <%= link_to "287", "catalogue/283-302.html" %></li>
+              <li><span class="list-number">III.a.4(6).</span> Basket, <%= link_to "95", "catalogue/87-117.html" %>, <%= link_to "195", "catalogue/166-207.html" %>, <%= link_to "204", "catalogue/166-207.html" %>, <%= link_to "290", "catalogue/283-302.html" %>, <%= link_to "537", "catalogue/524-41.html" %>(?)</li>
+              <li><span class="list-number">III.a.4(7).</span> Bed, <%= link_to "170", "catalogue/166-207.html" %>, <%= link_to "181–83", "catalogue/166-207.html" %>, <%= link_to "203", "catalogue/166-207.html" %>, <%= link_to "220", "catalogue/208-23.html" %>, <%= link_to "262", "catalogue/248-65.html" %>, <%= link_to "334", "catalogue/327-37.html" %>, <%= link_to "345", "catalogue/344-45.html" %>, <%= link_to "353", "catalogue/349-54.html" %>, <%= link_to "355–56", "catalogue/355-56.html" %>, <%= link_to "491", "catalogue/490-91.html" %></li>
+              <li><span class="list-number">III.a.4(8).</span> Book scroll, <%= link_to "318", "catalogue/317-22.html" %></li>
+              <li><span class="list-number">III.a.4(9).</span> Caduceus, <%= link_to "115", "catalogue/87-117.html" %>, <%= link_to "137", "catalogue/130-42.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "329", "catalogue/327-37.html" %>, <%= link_to "361", "catalogue/360-74.html" %>, <%= link_to "369", "catalogue/360-74.html" %>, <%= link_to "484", "catalogue/482-84.html" %>, <%= link_to "582", "catalogue/582-85.html" %></li>
+              <li><span class="list-number">III.a.4(10).</span> <em>Cantharus</em>, <%= link_to "92", "catalogue/87-117.html" %>, <%= link_to "112", "catalogue/87-117.html" %>, <%= link_to "121", "catalogue/119-29.html" %>, <%= link_to "239", "catalogue/339-42.html" %>, <%= link_to "250", "catalogue/248-65.html" %>, <%= link_to "257", "catalogue/248-65.html" %>, <%= link_to "332", "catalogue/327-37.html" %></li>
+              <li><span class="list-number">III.a.4(11).</span> Causeway, <%= link_to "464", "catalogue/463-71.html" %></li>
+              <li><span class="list-number">III.a.4(12).</span> Chair, <%= link_to "264", "catalogue/248-65.html" %>, <%= link_to "470", "catalogue/463-71.html" %></li>
+              <li><span class="list-number">III.a.4(13).</span> Chiton, <%= link_to "193", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(14).</span> Cloak, <%= link_to "105", "catalogue/87-117.html" %>, <%= link_to "300", "catalogue/283-302.html" %>, <%= link_to "310", "catalogue/307-11.html" %></li>
+              <li><span class="list-number">III.a.4(15).</span> Club, <%= link_to "169", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(16).</span> Column, <%= link_to "239", "catalogue/339-42.html" %>, <%= link_to "263", "catalogue/248-65.html" %>, <%= link_to "466-67", "catalogue/463-71.html" %>, <%= link_to "486", "catalogue/485-86.html" %></li>
+              <li><span class="list-number">III.a.4(17).</span> Conch, <%= link_to "197", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(18).</span> Cornucopia, <%= link_to "130", "catalogue/130-42.html" %>, <%= link_to "166", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(19).</span> Crater, <%= link_to "162", "catalogue/161-65.html" %></li>
+              <li><span class="list-number">III.a.4(20).</span> Cymbals, <%= link_to "196", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(21).</span> Diadem, <%= link_to "289", "catalogue/283-302.html" %>, <%= link_to "437", "catalogue/435-40.html" %></li>
+              <li><span class="list-number">III.a.4(22).</span> Dome, <%= link_to "464", "catalogue/463-71.html" %></li>
+              <li><span class="list-number">III.a.4(23).</span> Earring, <%= link_to "539", "catalogue/524-41.html" %></li>
+              <li><span class="list-number">III.a.4(24).</span> Fishing rod, <%= link_to "123", "catalogue/119-29.html" %>, <%= link_to "467", "catalogue/463-71.html" %>, <%= link_to "486", "catalogue/485-86.html" %></li>
+              <li><span class="list-number">III.a.4(25).</span> Fishing net, <%= link_to "179", "catalogue/166-207.html" %>, <%= link_to "466–67", "catalogue/463-71.html" %></li>
+              <li><span class="list-number">III.a.4(26).</span> Flute, <%= link_to "381", "catalogue/376-88.html" %></li>
+              <li><span class="list-number">III.a.4(27).</span> Garland, <%= link_to "398", "catalogue/396-401.html" %></li>
+              <li><span class="list-number">III.a.4(28).</span> Hat, <%= link_to "179", "catalogue/166-207.html" %>, <%= link_to "204", "catalogue/166-207.html" %>, <%= link_to "259", "catalogue/248-65.html" %>, <%= link_to "290", "catalogue/283-302.html" %>, <%= link_to "298", "catalogue/283-302.html" %>, <%= link_to "486", "catalogue/485-86.html" %>; pointed cap, <%= link_to "86", "catalogue/85-86.html" %>, <%= link_to "213", "catalogue/208-23.html" %>, <%= link_to "311", "catalogue/307-11.html" %>, <%= link_to "372", "catalogue/360-74.html" %>, <%= link_to "393", "catalogue/389-93.html" %>; bonnet, <%= link_to "295", "catalogue/283-302.html" %>, <%= link_to "410", "catalogue/402-417.html" %>; Phrygian cap, <%= link_to "421", "catalogue/418-27.html" %>, <%= link_to "539", "catalogue/524-41.html" %></li>
+              <li><span class="list-number">III.a.4(29).</span> Herm, <%= link_to "109", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">III.a.4(30).</span> Himation, <%= link_to "192", "catalogue/166-207.html" %>, <%= link_to "382", "catalogue/376-88.html" %></li>
+              <li><span class="list-number">III.a.4(31).</span> Hoop, <%= link_to "109", "catalogue/87-117.html" %>, <%= link_to "174", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(32).</span> Horseshoe (motif), <%= link_to "503", "catalogue/503-4.html" %></li>
+              <li><span class="list-number">III.a.4(33).</span> Hunting bow, <%= link_to "296", "catalogue/283-302.html" %>, <%= link_to "385", "catalogue/376-88.html" %></li>
+              <li><span class="list-number">III.a.4(34).</span> Hunting spear, <%= link_to "96", "catalogue/87-117.html" %>, <%= link_to "365", "catalogue/360-74.html" %>, <%= link_to "371–72", "catalogue/360-74.html" %>, <%= link_to "536", "catalogue/524-41.html" %></li>
+              <li><span class="list-number">III.a.4(35).</span> Jar, <%= link_to "396", "catalogue/396-401.html" %></li>
+              <li><span class="list-number">III.a.4(36).</span> Jug, <%= link_to "185", "catalogue/166-207.html" %>, <%= link_to "263–64", "catalogue/248-65.html" %></li>
+              <li><span class="list-number">III.a.4(37).</span> Juggling ring, <%= link_to "238", "catalogue/224-38.html" %></li>
+              <li><span class="list-number">III.a.4(38).</span> <em>Kithara</em>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "186", "catalogue/166-207.html" %>, <%= link_to "212", "catalogue/208-23.html" %>, <%= link_to "363", "catalogue/360-74.html" %>, <%= link_to "434", "catalogue/433-34.html" %></li>
+              <li><span class="list-number">III.a.4(39).</span> Lamp, <%= link_to "77–78", "catalogue/76-84.html" %>, <%= link_to "146 bis", "catalogue/143-146-bis.html" %></li>
+              <li><span class="list-number">III.a.4(40).</span> Lyre, <%= link_to "425", "catalogue/418-27.html" %></li>
+              <li><span class="list-number">III.a.4(41).</span> Mortar, <%= link_to "111", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">III.a.4(42).</span> Oar, <%= link_to "179", "catalogue/166-207.html" %>, <%= link_to "383–84", "catalogue/376-88.html" %></li>
+              <li><span class="list-number">III.a.4(43).</span> Obelisk, <%= link_to "222", "catalogue/208-23.html" %></li>
+              <li><span class="list-number">III.a.4(44).</span> Oenochoë, <%= link_to "266", "catalogue/266.html" %>, <%= link_to "353", "catalogue/349-54.html" %></li>
+              <li><span class="list-number">III.a.4(45).</span> <em>Pedum</em>, <%= link_to "119", "catalogue/119-29.html" %>, <%= link_to "428", "catalogue/428.html" %>, <%= link_to "490", "catalogue/490-91.html" %>, <%= link_to "600", "catalogue/586-609.html" %></li>
+              <li><span class="list-number">III.a.4(46).</span> Pincers, <%= link_to "166", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(47).</span> Pole, <%= link_to "139", "catalogue/130-42.html" %>, <%= link_to "204", "catalogue/166-207.html" %>, <%= link_to "336", "catalogue/360-74.html" %></li>
+              <li><span class="list-number">III.a.4(48).</span> Portico, <%= link_to "464–67", "catalogue/463-71.html" %></li>
+              <li><span class="list-number">III.a.4(49).</span> Post, <%= link_to "95", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">III.a.4(50).</span> Purse, <%= link_to "99", "catalogue/87-117.html" %>, <%= link_to "115", "catalogue/87-117.html" %>, <%= link_to "369", "catalogue/360-74.html" %>, <%= link_to "393", "catalogue/389-93.html" %>(?), <%= link_to "484", "catalogue/482-84.html" %></li>
+              <li><span class="list-number">III.a.4(51).</span> Quadriga, <%= link_to "222–23", "catalogue/208-23.html" %>, <%= link_to "389", "catalogue/389-93.html" %>, <%= link_to "400", "catalogue/396-401.html" %>, <%= link_to "411", "catalogue/402-417.html" %></li>
+              <li><span class="list-number">III.a.4(52).</span> Ram’s horn (<em>shofar</em>), <%= link_to "524", "catalogue/524-41.html" %></li>
+              <li><span class="list-number">III.a.4(53).</span> Rhyton, <%= link_to "300", "catalogue/283-302.html" %>, <%= link_to "310", "catalogue/307-11.html" %></li>
+              <li><span class="list-number">III.a.4(54).</span> Rudder, <%= link_to "197", "catalogue/166-207.html" %>, <%= link_to "221", "catalogue/208-23.html" %>, <%= link_to "383", "catalogue/376-88.html" %></li>
+              <li><span class="list-number">III.a.4(55).</span> Saddlebag, <%= link_to "497", "catalogue/492-500.html" %></li>
+              <li><span class="list-number">III.a.4(56).</span> Scepter, <%= link_to "154", "catalogue/147-60.html" %>, <%= link_to "211", "catalogue/208-23.html" %>, <%= link_to "315–16", "catalogue/315-16.html" %>, <%= link_to "348", "catalogue/348.html" %>, <%= link_to "374", "catalogue/360-74.html" %>, <%= link_to "409", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">III.a.4(57).</span> <em>Sistrum</em>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "361", "catalogue/360-74.html" %></li>
+              <li><span class="list-number">III.a.4(58).</span> Situla, <%= link_to "300", "catalogue/283-302.html" %>, <%= link_to "310", "catalogue/307-11.html" %></li>
+              <li><span class="list-number">III.a.4(59).</span> Stave, <%= link_to "426", "catalogue/418-27.html" %></li>
+              <li><span class="list-number">III.a.4(60).</span> Tambourine, <%= link_to "106", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">III.a.4(61).</span> Thyrsus, <%= link_to "92", "catalogue/87-117.html" %>, <%= link_to "112", "catalogue/87-117.html" %>, <%= link_to "130", "catalogue/130-42.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "239", "catalogue/339-42.html" %>, <%= link_to "250", "catalogue/248-65.html" %>(?), <%= link_to "370", "catalogue/360-74.html" %>, <%= link_to "381", "catalogue/376-88.html" %>, <%= link_to "408", "catalogue/402-17.html" %>(?)</li>
+              <li><span class="list-number">III.a.4(62).</span> Torch, <%= link_to "563", "catalogue/558-68.html" %></li>
+              <li><span class="list-number">III.a.4(63).</span> Toy wheel, <%= link_to "174", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(64).</span> Trident, <%= link_to "88", "catalogue/87-117.html" %>, <%= link_to "210", "catalogue/208-23.html" %>, <%= link_to "360", "catalogue/360-74.html" %>, <%= link_to "407", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">III.a.4(65).</span> Tunic, <%= link_to "86", "catalogue/85-86.html" %>, <%= link_to "105", "catalogue/87-117.html" %>, <%= link_to "107", "catalogue/87-117.html" %>, <%= link_to "139", "catalogue/130-42.html" %>, <%= link_to "180", "catalogue/166-207.html" %>, <%= link_to "204", "catalogue/166-207.html" %>, <%= link_to "213", "catalogue/208-23.html" %>, <%= link_to "238", "catalogue/224-38.html" %>, <%= link_to "252", "catalogue/248-65.html" %>, <%= link_to "290", "catalogue/283-302.html" %>, <%= link_to "300", "catalogue/283-302.html" %>, <%= link_to "310", "catalogue/307-11.html" %>, <%= link_to "344", "catalogue/344-45.html" %>, <%= link_to "365", "catalogue/360-74.html" %>, <%= link_to "389", "catalogue/389-93.html" %>, <%= link_to "393", "catalogue/389-93.html" %>, <%= link_to "493", "catalogue/492-500.html" %></li>
+              <li><span class="list-number">III.a.4(66).</span> Tympanon, <%= link_to "126", "catalogue/119-29.html" %>, <%= link_to "175", "catalogue/166-207.html" %>, <%= link_to "250", "catalogue/248-65.html" %></li>
+              <li><span class="list-number">III.a.4(67).</span> Vase, <%= link_to "109", "catalogue/87-117.html" %>, <%= link_to "124", "catalogue/119-29.html" %>, <%= link_to "142", "catalogue/130-42.html" %></li>
               <li><span class="list-number">III.a.4(68).</span> Victory crown: <em>see</em> v.d.5 Wreath</li>
-              <li><span class="list-number">III.a.4(69).</span> Water basin, <a href="185">185</a></li>
-              <li><span class="list-number">III.a.4(70).</span> Whip, <a href="178">178</a>, <a href="387">387</a>, <a href="389">389</a>, <a href="411">411</a>, <a href="464">464</a>, <a href="468">468</a></li>
+              <li><span class="list-number">III.a.4(69).</span> Water basin, <%= link_to "185", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.a.4(70).</span> Whip, <%= link_to "178", "catalogue/166-207.html" %>, <%= link_to "387", "catalogue/389-93.html" %>, <%= link_to "389", "catalogue/389-93.html" %>, <%= link_to "411", "catalogue/402-417.html" %>, <%= link_to "464", "catalogue/463-71.html" %>, <%= link_to "468", "catalogue/463-71.html" %></li>
             </ol>
           </li>
         </ol>
       </li>
       <li><span class="list-number">III.b.</span> War
         <ol>
-          <li><span class="list-number">III.b.1.</span> Arrow, <a href="200">200</a>, <a href="215">215</a>, <a href="372-73">372–73</a>, <a href="385">385</a>, <a href="394">394</a></li>
-          <li><span class="list-number">III.b.2.</span> Axe, <a href="225">225</a></li>
-          <li><span class="list-number">III.b.3.</span> Bow, <a href="219">219</a></li>
-          <li><span class="list-number">III.b.4.</span> Cuirass, <a href="105">105</a>, <a href="394-95">394–95</a>, <a href="474">474</a></li>
-          <li><span class="list-number">III.b.5.</span> Display of military equipment, <a href="102">102</a></li>
-          <li><span class="list-number">III.b.6.</span> Helmet, <a href="131">131</a>, <a href="170">170</a>, <a href="192-93">192–93</a>, <a href="201">201</a>, <a href="253">253</a>, <a href="394-95">394–95</a>, <a href="437">437</a></li>
-          <li><span class="list-number">III.b.7.</span> Quiver, <a href="372-73">372–73</a></li>
-          <li><span class="list-number">III.b.8.</span> Shield, <a href="98">98</a>, <a href="105">105</a>, <a href="170">170</a>, <a href="192-93">192–93</a>, <a href="201">201</a>, <a href="225">225</a> (<em>pelta</em>), <a href="248">248</a>, <a href="253-54">253–54</a>, <a href="261">261</a>, <a href="437">437</a></li>
-          <li><span class="list-number">III.b.9.</span> Spear, <a href="131">131</a>, <a href="169-70">169–70</a>, <a href="192-93">192–93</a>, <a href="201">201</a>, <a href="253-54">253–54</a>, <a href="311">311</a>, <a href="403">403</a>, <a href="582">582</a></li>
-          <li><span class="list-number">III.b.10.</span> Trophy, <a href="131">131</a></li>
+          <li><span class="list-number">III.b.1.</span> Arrow, <%= link_to "200", "catalogue/166-207.html" %>, <%= link_to "215", "catalogue/208-23.html" %>, <%= link_to "372–73", "catalogue/360-74.html" %>, <%= link_to "385", "catalogue/376-88.html" %>, <%= link_to "394", "catalogue/394-95.html" %></li>
+          <li><span class="list-number">III.b.2.</span> Axe, <%= link_to "225", "catalogue/224-38.html" %></li>
+          <li><span class="list-number">III.b.3.</span> Bow, <%= link_to "219", "catalogue/208-23.html" %></li>
+          <li><span class="list-number">III.b.4.</span> Cuirass, <%= link_to "105", "catalogue/87-117.html" %>, <%= link_to "394–95", "catalogue/394-95.html" %>, <%= link_to "474", "catalogue/442-48.html" %></li>
+          <li><span class="list-number">III.b.5.</span> Display of military equipment, <%= link_to "102", "catalogue/87-117.html" %></li>
+          <li><span class="list-number">III.b.6.</span> Helmet, <%= link_to "131", "catalogue/130-42.html" %>, <%= link_to "170", "catalogue/166-207.html" %>, <%= link_to "192–93", "catalogue/166-207.html" %>, <%= link_to "201", "catalogue/166-207.html" %>, <%= link_to "253", "catalogue/248-65.html" %>, <%= link_to "394–95", "catalogue/394-95.html" %>, <%= link_to "437", "catalogue/435-40.html" %></li>
+          <li><span class="list-number">III.b.7.</span> Quiver, <%= link_to "372–73", "catalogue/360-74.html" %></li>
+          <li><span class="list-number">III.b.8.</span> Shield, <%= link_to "98", "catalogue/87-117.html" %>, <%= link_to "105", "catalogue/87-117.html" %>, <%= link_to "170", "catalogue/166-207.html" %>, <%= link_to "192–93", "catalogue/166-207.html" %>, <%= link_to "201", "catalogue/166-207.html" %>, <%= link_to "225", "catalogue/224-38.html" %> (<em>pelta</em>), <%= link_to "248", "catalogue/248-65.html" %>, <%= link_to "253–54", "catalogue/248-65.html" %>, <%= link_to "261", "catalogue/248-65.html" %>, <%= link_to "437", "catalogue/435-40.html" %></li>
+          <li><span class="list-number">III.b.9.</span> Spear, <%= link_to "131", "catalogue/130-42.html" %>, <%= link_to "169–70", "catalogue/166-207.html" %>, <%= link_to "192–93", "catalogue/166-207.html" %>, <%= link_to "201", "catalogue/166-207.html" %>, <%= link_to "253–54", "catalogue/248-65.html" %>, <%= link_to "311", "catalogue/307-11.html" %>, <%= link_to "403", "catalogue/402-17.html" %>, <%= link_to "582", "catalogue/582-85.html" %></li>
+          <li><span class="list-number">III.b.10.</span> Trophy, <%= link_to "131", "catalogue/130-42.html" %></li>
         </ol>
       </li>
-      <li><span class="list-number">III.c.</span> The Amphiteater
+      <li><span class="list-number">III.c.</span> The Amphitheater
         <ol>
           <li><span class="list-number">III.c.1.</span> Gladiators
             <ol>
-              <li><span class="list-number">III.c.1(1).</span> <em>Essedarius</em>, <a href="132">132</a>, <a href="199">199</a></li>
-              <li><span class="list-number">III.c.1(2).</span> <em>Hoplomachus</em>, <a href="108">108</a>, <a href="132">132</a>, <a href="346">346</a>, <a href="403">403</a>, <a href="440">440</a></li>
-              <li><span class="list-number">III.c.1(3).</span> <em>Lanista</em>, <a href="107">107</a></li>
-              <li><span class="list-number">III.c.1(4).</span> <em>Myrmillo</em>, <a href="107">107</a>, <a href="227">227</a></li>
-              <li><span class="list-number">III.c.1(5).</span> <em>Retiarus</em>, <a href="407">407</a></li>
-              <li><span class="list-number">III.c.1(6).</span> <em>Samnite</em>, <a href="346">346</a>, <a href="440">440</a></li>
-              <li><span class="list-number">III.c.1(7).</span> <em>Secutor</em>, <a href="407">407</a></li>
-              <li><span class="list-number">III.c.1(8).</span> <em>Thrax</em>, <a href="107">107</a>, <a href="168">168</a>, <a href="403">403</a>, <a href="418">418</a>(?)</li>
-              <li><span class="list-number">III.c.1(9).</span> <em>Venator</em>, <a href="485">485</a></li>
-              <li><span class="list-number">III.c.1(10).</span> Unidentified, <a href="89">89</a>, <a href="217">217</a>, <a href="419">419</a></li>
+              <li><span class="list-number">III.c.1(1).</span> <em>Essedarius</em>, <%= link_to "132", "catalogue/130-42.html" %>, <%= link_to "199", "catalogue/166-207.html" %></li>
+              <li><span class="list-number">III.c.1(2).</span> <em>Hoplomachus</em>, <%= link_to "108", "catalogue/87-117.html" %>, <%= link_to "132", "catalogue/130-42.html" %>, <%= link_to "346", "catalogue/346.html" %>, <%= link_to "403", "catalogue/402-17.html" %>, <%= link_to "440", "catalogue/435-440.html" %></li>
+              <li><span class="list-number">III.c.1(3).</span> <em>Lanista</em>, <%= link_to "107", "catalogue/87-117.html" %></li>
+              <li><span class="list-number">III.c.1(4).</span> <em>Myrmillo</em>, <%= link_to "107", "catalogue/87-117.html" %>, <%= link_to "227", "catalogue/224-38.html" %></li>
+              <li><span class="list-number">III.c.1(5).</span> <em>Retiarus</em>, <%= link_to "407", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">III.c.1(6).</span> <em>Samnite</em>, <%= link_to "346", "catalogue/346.html" %>, <%= link_to "440", "catalogue/435-440.html" %></li>
+              <li><span class="list-number">III.c.1(7).</span> <em>Secutor</em>, <%= link_to "407", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">III.c.1(8).</span> <em>Thrax</em>, <%= link_to "107", "catalogue/87-117.html" %>, <%= link_to "168", "catalogue/166-207.html" %>, <%= link_to "403", "catalogue/402-17.html" %>, <%= link_to "418", "catalogue/418-27.html" %>(?)</li>
+              <li><span class="list-number">III.c.1(9).</span> <em>Venator</em>, <%= link_to "485", "catalogue/485-86.html" %></li>
+              <li><span class="list-number">III.c.1(10).</span> Unidentified, <%= link_to "89", "catalogue/87-117.html" %>, <%= link_to "217", "catalogue/208-23.html" %>, <%= link_to "419", "catalogue/418-27.html" %></li>
             </ol>
           </li>
           <li><span class="list-number">III.c.2.</span> Gladiatorial equipment
             <ol>
-              <li><span class="list-number">III.c.2(1).</span> Display of equipment, <a href="93">93</a>, <a href="134">134</a>, <a href="157">157</a></li>
-              <li><span class="list-number">III.c.2(2).</span> Greaves, <a href="89">89</a>, <a href="93">93</a>, <a href="107-8">107–8</a>, <a href="227">227</a>, <a href="346">346</a>, <a href="403">403</a>, <a href="419">419</a>, <a href="440">440</a></li>
-              <li><span class="list-number">III.c.2(3).</span> Helmet, <a href="89">89</a>, <a href="107-8">107–8</a>, <a href="134">134</a>, <a href="217">217</a>, <a href="227">227</a>, <a href="346">346</a>, <a href="403">403</a>, <a href="407">407</a>, <a href="419">419</a>, <a href="440">440</a></li>
-              <li><span class="list-number">III.c.2(4).</span> <em>Manica</em>, <a href="227">227</a>, <a href="346">346</a>, <a href="403">403</a>, <a href="419">419</a>, <a href="440">440</a></li>
-              <li><span class="list-number">III.c.2(5).</span> Shield, <a href="89">89</a>, <a href="107-8">107–8</a>, <a href="132">132</a>, <a href="199">199</a>, <a href="217">217</a>, <a href="346">346</a>, <a href="403">403</a>, <a href="419">419</a>, <a href="440">440</a></li>
-              <li><span class="list-number">III.c.2(6).</span> Sword, <a href="93">93</a>, <a href="168">168</a>, <a href="199">199</a>, <a href="217">217</a>, <a href="407">407</a></li>
-              <li><span class="list-number">III.c.2(7).</span> Trident, <a href="407">407</a></li>
+              <li><span class="list-number">III.c.2(1).</span> Display of equipment, <%= link_to "93", "catalogue/87-117.html" %>, <%= link_to "134", "catalogue/130-42.html" %>, <%= link_to "157", "catalogue/147-60.html" %></li>
+              <li><span class="list-number">III.c.2(2).</span> Greaves, <%= link_to "89", "catalogue/87-117.html" %>, <%= link_to "93", "catalogue/87-117.html" %>, <%= link_to "107–8", "catalogue/87-117.html" %>, <%= link_to "227", "catalogue/224-38.html" %>, <%= link_to "346", "catalogue/346.html" %>, <%= link_to "403", "catalogue/402-17.html" %>, <%= link_to "419", "catalogue/418-27.html" %>, <%= link_to "440", "catalogue/435-440.html" %></li>
+              <li><span class="list-number">III.c.2(3).</span> Helmet, <%= link_to "89", "catalogue/87-117.html" %>, <%= link_to "107–8", "catalogue/87-117.html" %>, <%= link_to "134", "catalogue/130-42.html" %>, <%= link_to "217", "catalogue/208-23.html" %>, <%= link_to "227", "catalogue/224-38.html" %>, <%= link_to "346", "catalogue/346.html" %>, <%= link_to "403", "catalogue/402-17.html" %>, <%= link_to "407", "catalogue/402-17.html" %>, <%= link_to "419", "catalogue/418-27.html" %>, <%= link_to "440", "catalogue/435-440.html" %></li>
+              <li><span class="list-number">III.c.2(4).</span> <em>Manica</em>, <%= link_to "227", "catalogue/224-38.html" %>, <%= link_to "346", "catalogue/346.html" %>, <%= link_to "403", "catalogue/402-17.html" %>, <%= link_to "419", "catalogue/418-27.html" %>, <%= link_to "440", "catalogue/435-440.html" %></li>
+              <li><span class="list-number">III.c.2(5).</span> Shield, <%= link_to "89", "catalogue/87-117.html" %>, <%= link_to "107–8", "catalogue/87-117.html" %>, <%= link_to "132", "catalogue/130-42.html" %>, <%= link_to "199", "catalogue/166-207.html" %>, <%= link_to "217", "catalogue/208-23.html" %>, <%= link_to "346", "catalogue/346.html" %>, <%= link_to "403", "catalogue/402-17.html" %>, <%= link_to "419", "catalogue/418-27.html" %>, <%= link_to "440", "catalogue/435-440.html" %></li>
+              <li><span class="list-number">III.c.2(6).</span> Sword, <%= link_to "93", "catalogue/87-117.html" %>, <%= link_to "168", "catalogue/166-207.html" %>, <%= link_to "199", "catalogue/166-207.html" %>, <%= link_to "217", "catalogue/208-23.html" %>, <%= link_to "407", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">III.c.2(7).</span> Trident, <%= link_to "407", "catalogue/402-17.html" %></li>
             </ol>
           </li>
-          <li><span class="list-number">III.c.3.</span> Fights with beasts, <a href="141">141</a>, <a href="167">167</a>, <a href="365-66">365–66</a>, <a href="387">387</a>, <a href="468">468</a>, <a href="485">485</a>, <a href="536">536</a></li>
+          <li><span class="list-number">III.c.3.</span> Fights with beasts, <%= link_to "141", "catalogue/130-42.html" %>, <%= link_to "167", "catalogue/166-207.html" %>, <%= link_to "365–66", "catalogue/360-74.html" %>, <%= link_to "387", "catalogue/389-93.html" %>, <%= link_to "468", "catalogue/463-71.html" %>, <%= link_to "485", "catalogue/485-86.html" %>, <%= link_to "536", "catalogue/524-41.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">III.d.</span> The Circus
         <ol>
-          <li><span class="list-number">III.d.1.</span> <em>Biga</em>, <a href="226">226</a>, <a href="255">255</a>, <a href="368">368</a></li>
-          <li><span class="list-number">III.d.2.</span> Chariot racing, <a href="222">222</a>, <a href="226">226</a>, <a href="255">255</a>, <a href="400">400</a></li>
-          <li><span class="list-number">III.d.3.</span> <em>Desultor</em>, <a href="104">104</a></li>
-          <li><span class="list-number">III.d.4.</span> Game with swiveling post, <a href="190-91">190–91</a></li>
-          <li><span class="list-number">III.d.5.</span> <em>Jubilator</em>, <a href="178">178</a></li>
-          <li><span class="list-number">III.d.6.</span> Lap-counting dolphins, <a href="103">103</a>, <a href="222-23">222–23</a></li>
-          <li><span class="list-number">III.d.7.</span> Quadriga, <a href="222-23">222–23</a>, <a href="389">389</a>, <a href="400">400</a></li>
-          <li><span class="list-number">III.d.8.</span> <em>Spina</em>, <a href="223">223</a></li>
-          <li><span class="list-number">III.d.9.</span> Victorious charioteer, <a href="222-23">222–23</a></li>
-          <li><span class="list-number">III.d.10.</span> Victorious racehorse, <a href="305">305</a></li>
+          <li><span class="list-number">III.d.1.</span> <em>Biga</em>, <%= link_to "226", "catalogue/224-38.html" %>, <%= link_to "255", "catalogue/248-65.html" %>, <%= link_to "368", "catalogue/360-74.html" %></li>
+          <li><span class="list-number">III.d.2.</span> Chariot racing, <%= link_to "222", "catalogue/208-23.html" %>, <%= link_to "226", "catalogue/224-38.html" %>, <%= link_to "255", "catalogue/248-65.html" %>, <%= link_to "400", "catalogue/396-401.html" %></li>
+          <li><span class="list-number">III.d.3.</span> <em>Desultor</em>, <%= link_to "104", "catalogue/87-117.html" %></li>
+          <li><span class="list-number">III.d.4.</span> Game with swiveling post, <%= link_to "190–91", "catalogue/166-207.html" %></li>
+          <li><span class="list-number">III.d.5.</span> <em>Jubilator</em>, <%= link_to "178", "catalogue/166-207.html" %></li>
+          <li><span class="list-number">III.d.6.</span> Lap-counting dolphins, <%= link_to "103", "catalogue/87-117.html" %>, <%= link_to "222–23", "catalogue/208-23.html" %></li>
+          <li><span class="list-number">III.d.7.</span> Quadriga, <%= link_to "222–23", "catalogue/208-23.html" %>, <%= link_to "389", "catalogue/389-93.html" %>, <%= link_to "400", "catalogue/396-401.html" %></li>
+          <li><span class="list-number">III.d.8.</span> <em>Spina</em>, <%= link_to "223", "catalogue/208-23.html" %></li>
+          <li><span class="list-number">III.d.9.</span> Victorious charioteer, <%= link_to "222–23", "catalogue/208-23.html" %></li>
+          <li><span class="list-number">III.d.10.</span> Victorious racehorse, <%= link_to "305", "catalogue/305-6.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">III.e.</span> Entertainers
         <ol>
-          <li><span class="list-number">III.e.1.</span> Boxers, pugilists, <a href="87">87</a>, <a href="133">133</a>, <a href="202">202</a>, <a href="228-30">228–30</a>, <a href="307">307</a></li>
-          <li><span class="list-number">III.e.2.</span> Stave-dancers, <a href="336">336</a>, <a href="426">426</a></li>
-          <li><span class="list-number">III.e.3.</span> Various other entertainers, <a href="172">172</a>, <a href="238">238</a>, <a href="295">295</a>, <a href="485">485</a></li>
+          <li><span class="list-number">III.e.1.</span> Boxers, pugilists, <%= link_to "87", "catalogue/87-117.html" %>, <%= link_to "133", "catalogue/130-42.html" %>, <%= link_to "202", "catalogue/166-207.html" %>, <%= link_to "228–30", "catalogue/224-38.html" %>, <%= link_to "307", "catalogue/307-11.html" %></li>
+          <li><span class="list-number">III.e.2.</span> Stave-dancers, <%= link_to "336", "catalogue/337-37.html" %>, <%= link_to "426", "catalogue/418-27.html" %></li>
+          <li><span class="list-number">III.e.3.</span> Various other entertainers, <%= link_to "172", "catalogue/166-207.html" %>, <%= link_to "238", "catalogue/224-38.html" %>, <%= link_to "295", "catalogue/283-302.html" %>, <%= link_to "485", "catalogue/485-86.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">III.f.</span> The Theater
         <ol>
-          <li><span class="list-number">III.f.1.</span> Actor, <a href="208">208</a>(?), <a href="297">297</a></li>
-          <li><span class="list-number">III.f.2.</span> Mask, <a href="67">67</a>, <a href="130">130</a>, <a href="208">208</a>(?), <a href="349-52">349–52</a>, <a href="405">405</a>, <a href="447-49">447–49</a>, <a href="455">455</a>, <a href="457">457</a>, <a href="626a">626a</a>, <a href="626b">626b</a></li>
+          <li><span class="list-number">III.f.1.</span> Actor, <%= link_to "208", "catalogue/208-23.html" %>(?), <%= link_to "297", "catalogue/283-302.html" %></li>
+          <li><span class="list-number">III.f.2.</span> Mask, <%= link_to "67", "catalogue/52-69.html" %>, <%= link_to "130", "catalogue/130-42.html" %>, <%= link_to "208", "catalogue/208-23.html" %>(?), <%= link_to "349–52", "catalogue/349-54.html" %>, <%= link_to "405", "catalogue/402-17.html" %>, <a href="447-49">447–49</a>, <%= link_to "455", "catalogue/455-58.html" %>, <%= link_to "457", "catalogue/455-58.html" %>, <%= link_to "626a", "catalogue/614-30.html" %>, <%= link_to "626b", "catalogue/614-30.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">III.g.</span> Erotic Scenes
         <ol>
-          <li><span class="list-number">III.g.1.</span> Heterosexual, <a href="82">82</a>, <a href="97">97</a>, <a href="118">118</a>, <a href="181-83">181–83</a>, <a href="203">203</a>, <a href="220">220</a>, <a href="262">262</a>, <a href="264">264</a>, <a href="334">334</a>, <a href="353">353</a>, <a href="356">356</a>, <a href="491">491</a></li>
-          <li><span class="list-number">III.g.2.</span> Homosexual, <a href="317-18">317–18</a></li>
-          <li><span class="list-number">III.g.3.</span> With animals, <a href="354">354</a>, <a href="355">355</a></li>
+          <li><span class="list-number">III.g.1.</span> Heterosexual, <%= link_to "82", "catalogue/76-84.html" %>, <%= link_to "97", "catalogue/87-117.html" %>, <%= link_to "118", "catalogue/118.html" %>, <%= link_to "181–83", "catalogue/166-207.html" %>, <%= link_to "203", "catalogue/166-207.html" %>, <%= link_to "220", "catalogue/208-23.html" %>, <%= link_to "262", "catalogue/248-65.html" %>, <%= link_to "264", "catalogue/248-65.html" %>, <%= link_to "334", "catalogue/327-37.html" %>, <%= link_to "353", "catalogue/349-54.html" %>, <%= link_to "356", "catalogue/355-56.html" %>, <%= link_to "491", "catalogue/490-91.html" %></li>
+          <li><span class="list-number">III.g.2.</span> Homosexual, <%= link_to "317–18", "catalogue/317-22.html" %></li>
+          <li><span class="list-number">III.g.3.</span> With animals, <%= link_to "354", "catalogue/349-54.html" %>, <%= link_to "355", "catalogue/355-56.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">III.h.</span> Anonymous Portraits or Busts
         <ol>
-          <li><span class="list-number">III.h.1.</span> Bust of young man, <a href="338">338</a></li>
-          <li><span class="list-number">III.h.2.</span> Bust of old man, <a href="291">291</a></li>
-          <li><span class="list-number">III.h.3.</span> Bust of young woman, <a href="292-93">292–93</a></li>
-          <li><span class="list-number">III.h.4.</span> Bust of military man, <a href="474">474</a></li>
-          <li><span class="list-number">III.h.5.</span> Male or female bust(?), <a href="533">533</a></li>
-          <li><span class="list-number">III.h.6.</span> Male and female heads facing each other, <a href="539">539</a></li>
+          <li><span class="list-number">III.h.1.</span> Bust of young man, <%= link_to "338", "catalogue/338.html" %></li>
+          <li><span class="list-number">III.h.2.</span> Bust of old man, <%= link_to "291", "catalogue/283-302.html" %></li>
+          <li><span class="list-number">III.h.3.</span> Bust of young woman, <%= link_to "292–93", "catalogue/283-302.html" %></li>
+          <li><span class="list-number">III.h.4.</span> Bust of military man, <%= link_to "474", "catalogue/442-48.html" %></li>
+          <li><span class="list-number">III.h.5.</span> Male or female bust(?), <%= link_to "533", "catalogue/524-41.html" %></li>
+          <li><span class="list-number">III.h.6.</span> Male and female heads facing each other, <%= link_to "539", "catalogue/524-41.html" %></li>
         </ol>
       </li>
     </ol>
@@ -351,62 +351,62 @@ sort_order: 201
     <ol>
       <li><span class="list-number">IV.a.</span> Mammals
         <ol>
-          <li><span class="list-number">IV.a.1.</span> Bear, <a href="125">125</a>, <a href="387">387</a>, <a href="393">393</a>, <a href="468">468</a></li>
-          <li><span class="list-number">IV.a.2.</span> Boar, pig, <a href="216">216</a>, <a href="343">343</a>, <a href="371-72">371–72</a></li>
-          <li><span class="list-number">IV.a.3.</span> Bull, <a href="260">260</a>, <a href="364">364</a> (Jupiter), <a href="367">367</a>, <a href="439">439</a> (Jupiter), <a href="485">485</a></li>
-          <li><span class="list-number">IV.a.4.</span> Cat, <a href="238">238</a></li>
-          <li><span class="list-number">IV.a.5.</span> Crocodile, <a href="189">189</a>, <a href="294">294</a></li>
-          <li><span class="list-number">IV.a.6.</span> Deer, stag, antilope, <a href="106">106</a> (fawn), <a href="135">135</a>, <a href="187">187</a>, <a href="207">207</a>, <a href="232-33">232–33</a>, <a href="326">326</a>(?), <a href="340">340</a>(?), <a href="373">373</a>, <a href="425">425</a>, <a href="431">431</a></li>
-          <li><span class="list-number">IV.a.7.</span> Dog, hound, <a href="96">96</a>, <a href="129">129</a>, <a href="163">163</a>, <a href="169">169</a>, <a href="190-91">190–91</a>(?), <a href="207">207</a>, <a href="412">412</a>, <a href="425">425</a>, <a href="500">500</a>, <a href="520">520</a>(?), <a href="563">563</a></li>
-          <li><span class="list-number">IV.a.8.</span> Dolphin, <a href="88">88</a>, <a href="103">103</a>, <a href="210">210</a>, <a href="360">360</a>, <a href="420">420</a>, <a href="423">423</a></li>
-          <li><span class="list-number">IV.a.9.</span> Donkey, <a href="91">91</a>, <a href="95">95</a>, <a href="188">188</a>, <a href="215">251</a>(?), <a href="354-55">354–55</a>(?), <a href="464">464</a>(?)</li>
-          <li><span class="list-number">IV.a.10.</span> Dromedary, <a href="497">497</a></li>
-          <li><span class="list-number">IV.a.11.</span> Elephant, <a href="286">286</a>, <a href="625">625</a> (on lamp sides only)</li>
-          <li><span class="list-number">IV.a.12.</span> Goat, <a href="129">129</a>, <a href="136">136</a>, <a href="234">234</a>, <a href="242">242</a></li>
-          <li><span class="list-number">IV.a.13.</span> Horse, <a href="95">95</a>, <a href="104-5">104–5</a>, <a href="178">178</a>, <a href="226">226</a>, <a href="252%20bis">252 bis</a>, <a href="255">255</a>, <a href="305">305</a>, <a href="311">311</a>, <a href="354-55">354–55</a>(?), <a href="400">400</a>, <a href="411">411</a></li>
-          <li><span class="list-number">IV.a.14.</span> Lion, lioness, <a href="91">91</a>, <a href="127">127</a>, <a href="141">141</a>, <a href="187-89">187–89</a>, <a href="191">191</a>, <a href="279">279</a>, <a href="294">294</a>, <a href="304">304</a>, <a href="324">324</a>, <a href="332">332</a>, <a href="337">337</a>, <a href="365-66">365–66</a>, <a href="375">375</a>, <a href="390">390</a>, <a href="408">408</a>(?), <a href="473">473</a>, <a href="492">492</a>, <a href="536">536</a>; lionskin, <a href="110">110</a>, <a href="121-22">121–22</a>, <a href="126">126</a>, <a href="308">308</a></li>
-          <li><span class="list-number">IV.a.15.</span> Monkey, <a href="177">177</a>, <a href="238">238</a>, <a href="589">589</a> (plastic lamp in the shape of a monkey)</li>
-          <li><span class="list-number">IV.a.16.</span> Mouse, <a href="629">629</a> (on nozzle only)</li>
-          <li><span class="list-number">IV.a.17.</span> Mule, <a href="85">85</a>, <a href="91">91</a></li>
-          <li><span class="list-number">IV.a.18.</span> Panther, <a href="92">92</a>, <a href="112">112</a>, <a href="239">239</a>, <a href="257">257</a>, <a href="408">408</a>(?), <a href="521">521</a></li>
-          <li><span class="list-number">IV.a.19.</span> Rabbit, hare, <a href="119-20">119–20</a>, <a href="124">124</a>, <a href="401">401</a>, <a href="412">412</a>, <a href="520">520</a></li>
-          <li><span class="list-number">IV.a.20.</span> Ram, <a href="167">167</a>, <a href="209">209</a>, <a href="335">335</a>, <a href="369">369</a></li>
-          <li><span class="list-number">IV.a.21.</span> Sheep, <a href="425">425</a>, <a href="502">502</a>, <a href="534">534</a> (lamb)</li>
+          <li><span class="list-number">IV.a.1.</span> Bear, <%= link_to "125", "catalogue/119-29.html" %>, <%= link_to "387", "catalogue/389-93.html" %>, <%= link_to "393", "catalogue/389-93.html" %>, <%= link_to "468", "catalogue/463-71.html" %></li>
+          <li><span class="list-number">IV.a.2.</span> Boar, pig, <%= link_to "216", "catalogue/208-23.html" %>, <%= link_to "343", "catalogue/339-43.html" %>, <%= link_to "371–72", "catalogue/360-74.html" %></li>
+          <li><span class="list-number">IV.a.3.</span> Bull, <%= link_to "260", "catalogue/248-65.html" %>, <%= link_to "364", "catalogue/360-74.html" %> (Jupiter), <%= link_to "367", "catalogue/360-74.html" %>, <%= link_to "439", "catalogue/435-40.html" %> (Jupiter), <%= link_to "485", "catalogue/485-86.html" %></li>
+          <li><span class="list-number">IV.a.4.</span> Cat, <%= link_to "238", "catalogue/224-38.html" %></li>
+          <li><span class="list-number">IV.a.5.</span> Crocodile, <%= link_to "189", "catalogue/166-207.html" %>, <%= link_to "294", "catalogue/293-302.html" %></li>
+          <li><span class="list-number">IV.a.6.</span> Deer, stag, antilope, <%= link_to "106", "catalogue/87-117.html" %> (fawn), <%= link_to "135", "catalogue/130-42.html" %>, <%= link_to "187", "catalogue/166-207.html" %>, <%= link_to "207", "catalogue/166-207.html" %>, <%= link_to "232–33", "catalogue/224-38.html" %>, <%= link_to "326", "catalogue/326.html" %>(?), <%= link_to "340", "catalogue/339-43.html" %>(?), <%= link_to "373", "catalogue/360-74.html" %>, <%= link_to "425", "catalogue/418-27.html" %>, <%= link_to "431", "catalogue/430-32.html" %></li>
+          <li><span class="list-number">IV.a.7.</span> Dog, hound, <%= link_to "96", "catalogue/87-117.html" %>, <%= link_to "129", "catalogue/119-29.html" %>, <%= link_to "163", "catalogue/161-65.html" %>, <%= link_to "169", "catalogue/166-207.html" %>, <%= link_to "190–91", "catalogue/166-207.html" %>(?), <%= link_to "207", "catalogue/166-207.html" %>, <%= link_to "412", "catalogue/402-17.html" %>, <%= link_to "425", "catalogue/418-27.html" %>, <%= link_to "500", "catalogue/492-500.html" %>, <%= link_to "520", "catalogue/520.html" %>(?), <%= link_to "563", "catalogue/558-68.html" %></li>
+          <li><span class="list-number">IV.a.8.</span> Dolphin, <%= link_to "88", "catalogue/87-117.html" %>, <%= link_to "103", "catalogue/87-117.html" %>, <%= link_to "210", "catalogue/208-23.html" %>, <%= link_to "360", "catalogue/360-74.html" %>, <%= link_to "420", "catalogue/418-27.html" %>, <%= link_to "423", "catalogue/418-27.html" %></li>
+          <li><span class="list-number">IV.a.9.</span> Donkey, <%= link_to "91", "catalogue/87-117.html" %>, <%= link_to "95", "catalogue/87-117.html" %>, <%= link_to "188", "catalogue/166-207.html" %>, <%= link_to "215", "catalogue/208-23.html" %>(?), <a href="354-55">354–55</a>(?), <%= link_to "464", "catalogue/463-71.html" %>(?)</li>
+          <li><span class="list-number">IV.a.10.</span> Dromedary, <%= link_to "497", "catalogue/492-500.html" %></li>
+          <li><span class="list-number">IV.a.11.</span> Elephant, <%= link_to "286", "catalogue/283-302.html" %>, <%= link_to "625", "catalogue/614-30.html" %> (on lamp sides only)</li>
+          <li><span class="list-number">IV.a.12.</span> Goat, <%= link_to "129", "catalogue/119-29.html" %>, <%= link_to "136", "catalogue/130-42.html" %>, <%= link_to "234", "catalogue/224-38.html" %>, <%= link_to "242", "catalogue/243-47.html" %></li>
+          <li><span class="list-number">IV.a.13.</span> Horse, <%= link_to "95", "catalogue/87-117.html" %>, <%= link_to "104–5", "catalogue/87-117.html" %>, <%= link_to "178", "catalogue/166-207.html" %>, <%= link_to "226", "catalogue/224-38.html" %>, <%= link_to "252 bis", "catalogue/248-65.html" %>, <%= link_to "255", "catalogue/248-65.html" %>, <%= link_to "305", "catalogue/305-6.html" %>, <%= link_to "311", "catalogue/307-11.html" %>, <a href="354-55">354–55</a>(?), <%= link_to "400", "catalogue/396-401.html" %>, <%= link_to "411", "catalogue/402-417.html" %></li>
+          <li><span class="list-number">IV.a.14.</span> Lion, lioness, <%= link_to "91", "catalogue/87-117.html" %>, <%= link_to "127", "catalogue/119-29.html" %>, <%= link_to "141", "catalogue/130-42.html" %>, <%= link_to "187–89", "catalogue/166-207.html" %>, <%= link_to "191", "catalogue/166-207.html" %>, <%= link_to "279", "catalogue/278-82.html" %>, <%= link_to "294", "catalogue/293-302.html" %>, <%= link_to "304", "catalogue/303-4.html" %>, <%= link_to "324", "catalogue/324-5.html" %>, <%= link_to "332", "catalogue/327-37.html" %>, <%= link_to "337", "catalogue/327-37.html" %>, <%= link_to "365–66", "catalogue/360-74.html" %>, <%= link_to "375", "catalogue/375.html" %>, <%= link_to "390", "catalogue/389-93.html" %>, <%= link_to "408", "catalogue/402-17.html" %>(?), <%= link_to "473", "catalogue/472-473.html" %>, <%= link_to "492", "catalogue/492-500.html" %>, <%= link_to "536", "catalogue/524-41.html" %>; lionskin, <%= link_to "110", "catalogue/87-117.html" %>, <%= link_to "121–22", "catalogue/119-29.html" %>, <%= link_to "126", "catalogue/119-29.html" %>, <%= link_to "308", "catalogue/307-11.html" %></li>
+          <li><span class="list-number">IV.a.15.</span> Monkey, <%= link_to "177", "catalogue/166-207.html" %>, <%= link_to "238", "catalogue/224-38.html" %>, <%= link_to "589", "catalogue/586-609.html" %> (plastic lamp in the shape of a monkey)</li>
+          <li><span class="list-number">IV.a.16.</span> Mouse, <%= link_to "629", "catalogue/614-630.html" %> (on nozzle only)</li>
+          <li><span class="list-number">IV.a.17.</span> Mule, <%= link_to "85", "catalogue/85-86.html" %>, <%= link_to "91", "catalogue/87-117.html" %></li>
+          <li><span class="list-number">IV.a.18.</span> Panther, <%= link_to "92", "catalogue/87-117.html" %>, <%= link_to "112", "catalogue/87-117.html" %>, <%= link_to "239", "catalogue/339-42.html" %>, <%= link_to "257", "catalogue/248-65.html" %>, <%= link_to "408", "catalogue/402-17.html" %>(?), <%= link_to "521", "catalogue/521.html" %></li>
+          <li><span class="list-number">IV.a.19.</span> Rabbit, hare, <%= link_to "119–20", "catalogue/119-29.html" %>, <%= link_to "124", "catalogue/119-29.html" %>, <%= link_to "401", "catalogue/396-401.html" %>, <%= link_to "412", "catalogue/402-17.html" %>, <%= link_to "520", "catalogue/520.html" %></li>
+          <li><span class="list-number">IV.a.20.</span> Ram, <%= link_to "167", "catalogue/166-207.html" %>, <%= link_to "209", "catalogue/208-23.html" %>, <%= link_to "335", "catalogue/327-37.html" %>, <%= link_to "369", "catalogue/360-74.html" %></li>
+          <li><span class="list-number">IV.a.21.</span> Sheep, <%= link_to "425", "catalogue/418-27.html" %>, <%= link_to "502", "catalogue/501-2.html" %>, <%= link_to "534", "catalogue/524-41.html" %> (lamb)</li>
         </ol>
       </li>
       <li><span class="list-number">IV.b.</span> Birds
         <ol>
-          <li><span class="list-number">IV.b.1.</span> Cock, <a href="198">198</a>, <a href="388">388</a>, <a href="422">422</a>, <a href="484">484</a></li>
-          <li><span class="list-number">IV.b.2.</span> Dove, pigeon, <a href="205-6">205–6</a>, <a href="282">282</a>, <a href="493">493</a>, <a href="607">607</a> (plastic lamp in the shape of a dove)</li>
-          <li><span class="list-number">IV.b.3.</span> Duck, <a href="425">425</a>(?), <a href="464">464</a></li>
-          <li><span class="list-number">IV.b.4.</span> Eagle, <a href="120">120</a>, <a href="128">128</a>, <a href="159">159</a>, <a href="166">166</a>, <a href="280">280</a>, <a href="322">322</a>, <a href="325">325</a>, <a href="329">329</a>, <a href="402">402</a>, <a href="417">417</a>, <a href="477">477</a>, <a href="479">479</a>, <a href="582">582</a>, <a href="585">585</a> (on lampstand)</li>
-          <li><span class="list-number">IV.b.5.</span> Parrot, <a href="128">128</a>(?), <a href="329">329</a>(?)</li>
-          <li><span class="list-number">IV.b.6.</span> Peacock, <a href="166">166</a>, <a href="258">258</a>, <a href="630">630</a> (bronze lamp in the shape of a peacock)</li>
-          <li><span class="list-number">IV.b.7.</span> Stork, <a href="416">416</a>(?)</li>
-          <li><span class="list-number">IV.b.8.</span> Swan, <a href="358">358</a> (Jupiter)</li>
-          <li><span class="list-number">IV.b.9.</span> Wading bird, <a href="81">81</a>, <a href="265">265</a>, <a href="416">416</a></li>
-          <li><span class="list-number">IV.b.10.</span> Unidentified bird, <a href="79">79</a>, <a href="166">166</a>(?), <a href="177">177</a>, <a href="195">195</a>, <a href="219">219</a>, <a href="308">308</a></li>
+          <li><span class="list-number">IV.b.1.</span> Cock, <%= link_to "198", "catalogue/166-207.html" %>, <%= link_to "388", "catalogue/376-88.html" %>, <%= link_to "422", "catalogue/418-27.html" %>, <%= link_to "484", "catalogue/482-84.html" %></li>
+          <li><span class="list-number">IV.b.2.</span> Dove, pigeon, <%= link_to "205–6", "catalogue/166-207.html" %>, <%= link_to "282", "catalogue/278-82.html" %>, <%= link_to "493", "catalogue/492-500.html" %>, <%= link_to "607", "catalogue/586-609.html" %> (plastic lamp in the shape of a dove)</li>
+          <li><span class="list-number">IV.b.3.</span> Duck, <%= link_to "425", "catalogue/418-27.html" %>(?), <%= link_to "464", "catalogue/463-71.html" %></li>
+          <li><span class="list-number">IV.b.4.</span> Eagle, <%= link_to "120", "catalogue/119-29.html" %>, <%= link_to "128", "catalogue/119-29.html" %>, <%= link_to "159", "catalogue/147-60.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "280", "catalogue/278-82.html" %>, <%= link_to "322", "catalogue/317-22.html" %>, <%= link_to "325", "catalogue/324-25.html" %>, <%= link_to "329", "catalogue/327-37.html" %>, <%= link_to "402", "catalogue/402-17.html" %>, <%= link_to "417", "catalogue/402-17.html" %>, <%= link_to "477", "catalogue/477-81.html" %>, <%= link_to "479", "catalogue/477-81.html" %>, <%= link_to "582", "catalogue/582-85.html" %>, <%= link_to "585", "catalogue/582-85.html" %> (on lampstand)</li>
+          <li><span class="list-number">IV.b.5.</span> Parrot, <%= link_to "128", "catalogue/119-29.html" %>(?), <%= link_to "329", "catalogue/327-37.html" %>(?)</li>
+          <li><span class="list-number">IV.b.6.</span> Peacock, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "258", "catalogue/248-65.html" %>, <%= link_to "630", "catalogue/614-30.html" %> (bronze lamp in the shape of a peacock)</li>
+          <li><span class="list-number">IV.b.7.</span> Stork, <%= link_to "416", "catalogue/402-17.html" %>(?)</li>
+          <li><span class="list-number">IV.b.8.</span> Swan, <%= link_to "358", "catalogue/357-59.html" %> (Jupiter)</li>
+          <li><span class="list-number">IV.b.9.</span> Wading bird, <%= link_to "81", "catalogue/76-84.html" %>, <%= link_to "265", "catalogue/248-65.html" %>, <%= link_to "416", "catalogue/402-17.html" %></li>
+          <li><span class="list-number">IV.b.10.</span> Unidentified bird, <%= link_to "79", "catalogue/76-84.html" %>, <%= link_to "166", "catalogue/166-207.html" %>(?), <%= link_to "177", "catalogue/166-207.html" %>, <%= link_to "195", "catalogue/166-207.html" %>, <%= link_to "219", "catalogue/208-23.html" %>, <%= link_to "308", "catalogue/307-11.html" %></li>
         </ol>
       </li>
-      <li><span class="list-number">IV.c.</span> Snakes, <a href="158">158</a>, <a href="161">161</a>, <a href="166">166</a>, <a href="192">192</a>, <a href="231">231</a>, <a href="391">391</a>, <a href="416">416</a>, <a href="470">470</a>, <a href="492">492</a></li>
+      <li><span class="list-number">IV.c.</span> Snakes, <%= link_to "158", "catalogue/147-160.html" %>, <%= link_to "161", "catalogue/147-160.html" %>, <%= link_to "166", "catalogue/166-207.html" %>, <%= link_to "192", "catalogue/166-207.html" %>, <%= link_to "231", "catalogue/224-38.html" %>, <%= link_to "391", "catalogue/389-93.html" %>, <%= link_to "416", "catalogue/402-17.html" %>, <%= link_to "470", "catalogue/463-71.html" %>, <%= link_to "492", "catalogue/492-500.html" %></li>
       <li><span class="list-number">IV.d.</span> Crustacea, Fish, Insects, Frog, Turtle
         <ol>
           <li><span class="list-number">IV.d.1.</span> Crustacea
             <ol>
-              <li><span class="list-number">IV.d.1(1).</span> Scallop, <a href="114">114</a>, <a href="117">117</a>, <a href="237">237</a>, <a href="247">247</a>, <a href="274">274</a>, <a href="405">405</a>, <a href="410">410</a>, <a href="415">415</a>, <a href="425">425</a></li>
-              <li><span class="list-number">IV.d.1(2).</span> Shell, <a href="90">90</a>, <a href="197">197</a>, <a href="221">221</a>, <a href="263">263</a>, <a href="274">274</a>, <a href="280-81">280–81</a>, <a href="405">405</a></li>
-              <li><span class="list-number">IV.d.1(3).</span> Crab, <a href="236">236</a></li>
+              <li><span class="list-number">IV.d.1(1).</span> Scallop, <%= link_to "114", "catalogue/87-117.html" %>, <%= link_to "117", "catalogue/87-117.html" %>, <%= link_to "237", "catalogue/224-38.html" %>, <%= link_to "247", "catalogue/243-47.html" %>, <%= link_to "274", "catalogue/273-74.html" %>, <%= link_to "405", "catalogue/402-17.html" %>, <%= link_to "410", "catalogue/402-417.html" %>, <%= link_to "415", "catalogue/402-17.html" %>, <%= link_to "425", "catalogue/418-27.html" %></li>
+              <li><span class="list-number">IV.d.1(2).</span> Shell, <%= link_to "90", "catalogue/87-117.html" %>, <%= link_to "197", "catalogue/166-207.html" %>, <%= link_to "221", "catalogue/208-23.html" %>, <%= link_to "263", "catalogue/248-65.html" %>, <%= link_to "274", "catalogue/273-74.html" %>, <%= link_to "280–81", "catalogue/278-82.html" %>, <%= link_to "405", "catalogue/402-17.html" %></li>
+              <li><span class="list-number">IV.d.1(3).</span> Crab, <%= link_to "236", "catalogue/224-38.html" %></li>
             </ol>
           </li>
-          <li><span class="list-number">IV.d.2.</span> Fish, <a href="123">123</a>, <a href="195">195</a>, <a href="290">290</a>, <a href="420">420</a>, <a href="486">486</a></li>
+          <li><span class="list-number">IV.d.2.</span> Fish, <%= link_to "123", "catalogue/119-29.html" %>, <%= link_to "195", "catalogue/166-207.html" %>, <%= link_to "290", "catalogue/283-302.html" %>, <%= link_to "420", "catalogue/418-27.html" %>, <%= link_to "486", "catalogue/485-86.html" %></li>
           <li><span class="list-number">IV.d.3.</span> Insects
             <ol>
-              <li><span class="list-number">IV.d.3(1).</span> Grasshopper or locust, <a href="140">140</a></li>
-              <li><span class="list-number">IV.d.3(2).</span> Scorpion, <a href="288">288</a>, <a href="484">484</a></li>
+              <li><span class="list-number">IV.d.3(1).</span> Grasshopper or locust, <%= link_to "140", "catalogue/130-42.html" %></li>
+              <li><span class="list-number">IV.d.3(2).</span> Scorpion, <%= link_to "288", "catalogue/283-302.html" %>, <%= link_to "484", "catalogue/482-84.html" %></li>
             </ol>
           </li>
-          <li><span class="list-number">IV.d.4.</span> Frog, <a href="83">83</a></li>
-          <li><span class="list-number">IV.d.5.</span> Turtle, <a href="484">484</a></li>
+          <li><span class="list-number">IV.d.4.</span> Frog, <%= link_to "83", "catalogue/76-84.html" %></li>
+          <li><span class="list-number">IV.d.5.</span> Turtle, <%= link_to "484", "catalogue/482-84.html" %></li>
         </ol>
       </li>
     </ol>
@@ -415,48 +415,48 @@ sort_order: 201
     <ol>
       <li><span class="list-number">V.a.</span> Vegetables
         <ol>
-          <li><span class="list-number">V.a.1.</span> Artichoke, <a href="469">469</a></li>
-          <li><span class="list-number">V.a.2.</span> Radish, <a href="469">469</a>, <a href="470">470</a></li>
+          <li><span class="list-number">V.a.1.</span> Artichoke, <%= link_to "469", "catalogue/463-71.html" %></li>
+          <li><span class="list-number">V.a.2.</span> Radish, <%= link_to "469", "catalogue/463-71.html" %>, <%= link_to "470", "catalogue/463-71.html" %></li>
         </ol>
       </li>
       <li><span class="list-number">V.b.</span> Fruit
         <ol>
-          <li><span class="list-number">V.b.1.</span> Acorn, <a href="184">184</a></li>
-          <li><span class="list-number">V.b.2.</span> Citrus (<em>etrog</em>), <a href="524">524</a></li>
-          <li><span class="list-number">V.b.3.</span> Fig, <a href="469">469</a></li>
-          <li><span class="list-number">V.b.4.</span> Grapes, <a href="370">370</a>, <a href="392">392</a>, <a href="537">537</a>(?), <a href="568">568</a></li>
-          <li><span class="list-number">V.b.5.</span> Pinecone, <a href="266">266</a>, <a href="609">609</a></li>
-          <li><span class="list-number">V.b.6.</span> Pomegranate, <a href="79">79</a>, <a href="266">266</a></li>
-          <li><span class="list-number">V.b.7.</span> Unidentified fruit, <a href="205-6">205–6</a> (olive?), <a href="266">266</a></li>
+          <li><span class="list-number">V.b.1.</span> Acorn, <%= link_to "184", "catalogue/166-207.html" %></li>
+          <li><span class="list-number">V.b.2.</span> Citrus (<em>etrog</em>), <%= link_to "524", "catalogue/524-41.html" %></li>
+          <li><span class="list-number">V.b.3.</span> Fig, <%= link_to "469", "catalogue/463-71.html" %></li>
+          <li><span class="list-number">V.b.4.</span> Grapes, <%= link_to "370", "catalogue/360-74.html" %>, <%= link_to "392", "catalogue/389-93.html" %>, <%= link_to "537", "catalogue/524-41.html" %>(?), <%= link_to "568", "catalogue/558-68.html" %></li>
+          <li><span class="list-number">V.b.5.</span> Pinecone, <%= link_to "266", "catalogue/266.html" %>, <%= link_to "609", "catalogue/586-609.html" %></li>
+          <li><span class="list-number">V.b.6.</span> Pomegranate, <%= link_to "79", "catalogue/76-84.html" %>, <%= link_to "266", "catalogue/266.html" %></li>
+          <li><span class="list-number">V.b.7.</span> Unidentified fruit, <%= link_to "205–6", "catalogue/166-207.html" %> (olive?), <%= link_to "266", "catalogue/266.html" %></li>
         </ol>
       </li>
-      <li><span class="list-number">V.c.</span> Trees, <a href="123">123</a>(?), <a href="129">129</a>, <a href="177">177</a>, <a href="196">196</a>, <a href="231">231</a>, <a href="305">305</a>, <a href="310">310</a></li>
+      <li><span class="list-number">V.c.</span> Trees, <%= link_to "123", "catalogue/119-29.html" %>(?), <%= link_to "129", "catalogue/119-29.html" %>, <%= link_to "177", "catalogue/166-207.html" %>, <%= link_to "196", "catalogue/166-207.html" %>, <%= link_to "231", "catalogue/224-38.html" %>, <%= link_to "305", "catalogue/305-6.html" %>, <%= link_to "310", "catalogue/307-11.html" %></li>
       <li><span class="list-number">V.d.</span> Vegetal Decors
         <ol>
-          <li><span class="list-number">V.d.1.</span> Leaves, <a href="79">79</a>, <a href="94">94</a>, <a href="140">140</a>, <a href="359">359</a></li>
-          <li><span class="list-number">V.d.2.</span> Palms, <a href="109">109</a>, <a href="162">162</a>, <a href="214">214</a>, <a href="221">221</a>, <a href="224">224</a>, <a href="248">248</a>, <a href="307">307</a>, <a href="388">388</a>, <a href="419">419</a>, <a href="524">524</a> (<em>lulav</em>), <a href="600">600</a></li>
-          <li><span class="list-number">V.d.3.</span> Palmette <a href="495">495</a></li>
+          <li><span class="list-number">V.d.1.</span> Leaves, <%= link_to "79", "catalogue/76-84.html" %>, <%= link_to "94", "catalogue/87-117.html" %>, <%= link_to "140", "catalogue/130-42.html" %>, <%= link_to "359", "catalogue/357-59.html" %></li>
+          <li><span class="list-number">V.d.2.</span> Palms, <%= link_to "109", "catalogue/87-117.html" %>, <%= link_to "162", "catalogue/161-65.html" %>, <%= link_to "214", "catalogue/208-23.html" %>, <%= link_to "221", "catalogue/208-23.html" %>, <%= link_to "224", "catalogue/224-38.html" %>, <%= link_to "248", "catalogue/248-65.html" %>, <%= link_to "307", "catalogue/307-11.html" %>, <%= link_to "388", "catalogue/376-88.html" %>, <%= link_to "419", "catalogue/418-27.html" %>, <%= link_to "524", "catalogue/524-41.html" %> (<em>lulav</em>), <%= link_to "600", "catalogue/586-609.html" %></li>
+          <li><span class="list-number">V.d.3.</span> Palmette <%= link_to "495", "catalogue/492-500.html" %></li>
           <li><span class="list-number">V.d.4.</span> Rosettes
             <ol>
-              <li><span class="list-number">V.d.4(1).</span> Four petals, <a href="165">165</a></li>
-              <li><span class="list-number">V.d.4(2).</span> Six petals, <a href="515">515</a>, <a href="532">532</a></li>
-              <li><span class="list-number">V.d.4(3).</span> Eight petals, <a href="66">66</a>, <a href="501">501</a>, <a href="549">549</a>, <a href="584">584</a>, <a href="600">600</a></li>
-              <li><span class="list-number">V.d.4(4).</span> Ten petals, <a href="478">478</a></li>
-              <li><span class="list-number">V.d.4(5).</span> Twelve petals, <a href="194">194</a>, <a href="435">435</a></li>
-              <li><span class="list-number">V.d.4(6).</span> Fourteen petals, <a href="433">433</a>, <a href="526">526</a>(?)</li>
-              <li><span class="list-number">V.d.4(7).</span> Sixteen petals, <a href="64">64</a>, <a href="341">341</a>, <a href="556">556</a></li>
-              <li><span class="list-number">V.d.4(8).</span> Eighteen petals, <a href="218">218</a></li>
-              <li><span class="list-number">V.d.4(9).</span> Twenty-two petals, <a href="151">151</a>, <a href="328">328</a></li>
-              <li><span class="list-number">V.d.4(10).</span> Twenty-three petals, <a href="562">562</a></li>
-              <li><span class="list-number">V.d.4(11).</span> Twenty-four petals, <a href="144-45">144–45</a></li>
+              <li><span class="list-number">V.d.4(1).</span> Four petals, <%= link_to "165", "catalogue/161-65.html" %></li>
+              <li><span class="list-number">V.d.4(2).</span> Six petals, <%= link_to "515", "catalogue/515-17.html" %>, <%= link_to "532", "catalogue/524-41.html" %></li>
+              <li><span class="list-number">V.d.4(3).</span> Eight petals, <%= link_to "66", "catalogue/52-69.html" %>, <%= link_to "501", "catalogue/501-2.html" %>, <%= link_to "549", "catalogue/548-49.html" %>, <%= link_to "584", "catalogue/582-85.html" %>, <%= link_to "600", "catalogue/586-609.html" %></li>
+              <li><span class="list-number">V.d.4(4).</span> Ten petals, <%= link_to "478", "catalogue/477-81.html" %></li>
+              <li><span class="list-number">V.d.4(5).</span> Twelve petals, <%= link_to "194", "catalogue/166-207.html" %>, <%= link_to "435", "catalogue/435-440.html" %></li>
+              <li><span class="list-number">V.d.4(6).</span> Fourteen petals, <%= link_to "433", "catalogue/433-34.html" %>, <%= link_to "526", "catalogue/524-41.html" %>(?)</li>
+              <li><span class="list-number">V.d.4(7).</span> Sixteen petals, <%= link_to "64", "catalogue/52-69.html" %>, <%= link_to "341", "catalogue/339-43.html" %>, <%= link_to "556", "catalogue/552-57.html" %></li>
+              <li><span class="list-number">V.d.4(8).</span> Eighteen petals, <%= link_to "218", "catalogue/208-23.html" %></li>
+              <li><span class="list-number">V.d.4(9).</span> Twenty-two petals, <%= link_to "151", "catalogue/147-60.html" %>, <%= link_to "328", "catalogue/327-37.html" %></li>
+              <li><span class="list-number">V.d.4(10).</span> Twenty-three petals, <%= link_to "562", "catalogue/558-68.html" %></li>
+              <li><span class="list-number">V.d.4(11).</span> Twenty-four petals, <%= link_to "144–45", "catalogue/143-46-bis.html" %></li>
             </ol>
           </li>
           <li><span class="list-number">V.d.5.</span> Wreaths
             <ol>
-              <li><span class="list-number">V.d.5(1).</span> Myrtle wreath, <a href="312">312</a>, <a href="327">327</a>, <a href="342">342</a></li>
-              <li><span class="list-number">V.d.5(2).</span> Oak wreath, <a href="184">184</a>, <a href="281">281</a></li>
-              <li><span class="list-number">V.d.5(3).</span> Olive or laurel wreath, <a href="65-66">65–66</a>, <a href="72">72</a>(?), <a href="80">80</a>, <a href="112">112</a>, <a href="173">173</a>, <a href="211">211</a>, <a href="214">214</a>, <a href="223-24">223–24</a>, <a href="388">388</a>, <a href="438">438</a>, <a href="442-43">442–43</a>, <a href="493">493</a></li>
-              <li><span class="list-number">V.d.5(4).</span> Palm wreath, <a href="73">73</a></li>
+              <li><span class="list-number">V.d.5(1).</span> Myrtle wreath, <%= link_to "312", "catalogue/312-14.html" %>, <%= link_to "327", "catalogue/327-37.html" %>, <%= link_to "342", "catalogue/339-43.html" %></li>
+              <li><span class="list-number">V.d.5(2).</span> Oak wreath, <%= link_to "184", "catalogue/166-207.html" %>, <%= link_to "281", "catalogue/278-82.html" %></li>
+              <li><span class="list-number">V.d.5(3).</span> Olive or laurel wreath, <%= link_to "65–66", "catalogue/52-69.html" %>, <%= link_to "72", "catalogue/72-73.html" %>(?), <%= link_to "80", "catalogue/76-84.html" %>, <%= link_to "112", "catalogue/87-117.html" %>, <%= link_to "173", "catalogue/166-207.html" %>, <%= link_to "211", "catalogue/208-23.html" %>, <%= link_to "214", "catalogue/208-23.html" %>, <a href="223-24">223–24</a>, <%= link_to "388", "catalogue/376-88.html" %>, <%= link_to "438", "catalogue/435-40.html" %>, <%= link_to "442–43", "catalogue/442-48.html" %>, <%= link_to "493", "catalogue/492-500.html" %></li>
+              <li><span class="list-number">V.d.5(4).</span> Palm wreath, <%= link_to "73", "catalogue/72-73.html" %></li>
             </ol>
           </li>
         </ol>
@@ -465,10 +465,10 @@ sort_order: 201
   </li>
   <li><span class="list-number">VI.</span> Geometric Patterns
     <ol>
-      <li><span class="list-number">VI.a.</span> Band of Rays, <a href="150">150</a>, <a href="152">152</a>, <a href="159">159</a>, <a href="163-64">163–64</a>, <a href="241">241</a>, <a href="243">243</a>, <a href="275">275</a>, <a href="379">379</a>, <a href="436">436</a></li>
-      <li><span class="list-number">VI.b.</span> Band of Tongues, <a href="368-74">368–74</a></li>
-      <li><span class="list-number">VI.c.</span> Row of Ovolos, <a href="33">33</a>, <a href="39">39</a>, <a href="44">44</a>, <a href="83-84">83–84</a>, <a href="155-56">155–56</a>, <a href="165">165</a>, <a href="245">245</a>, <a href="279-80">279–80</a>, <a href="314-16">314–16</a>, <a href="336">336</a>, <a href="347-48">347–48</a>, <a href="353-54">353–54</a>, <a href="361-67">361–67</a>, <a href="418-19">418–19</a>, <a href="421-27">421–27</a>, <a href="460">460</a>, <a href="468">468</a>, <a href="485">485</a>, <a href="518">518</a>, <a href="584">584</a>, <a href="624">624</a></li>
-      <li><span class="list-number">VI.d.</span> Star Design, <a href="498-99">498–99</a>, <a href="534">534</a></li>
+      <li><span class="list-number">VI.a.</span> Band of Rays, <%= link_to "150", "catalogue/147-60.html" %>, <%= link_to "152", "catalogue/147-60.html" %>, <%= link_to "159", "catalogue/147-60.html" %>, <%= link_to "163–64", "catalogue/161-65.html" %>, <%= link_to "241", "catalogue/239-42.html" %>, <%= link_to "243", "catalogue/243-47.html" %>, <%= link_to "275", "catalogue/275.html" %>, <%= link_to "379", "catalogue/376-88.html" %>, <%= link_to "436", "catalogue/435-40.html" %></li>
+      <li><span class="list-number">VI.b.</span> Band of Tongues, <%= link_to "368–74", "catalogue/360-74.html" %></li>
+      <li><span class="list-number">VI.c.</span> Row of Ovolos, <%= link_to "33", "catalogue/28-37.html" %>, <%= link_to "39", "catalogue/38-43.html" %>, <%= link_to "44", "catalogue/44-51.html" %>, <%= link_to "83–84", "catalogue/76-84.html" %>, <%= link_to "155–56", "catalogue/147-60.html" %>, <%= link_to "165", "catalogue/161-65.html" %>, <%= link_to "245", "catalogue/243-47.html" %>, <%= link_to "279–80", "catalogue/278-82.html" %>, <a href="314-16">314–16</a>, <%= link_to "336", "catalogue/337-37.html" %>, <a href="347-48">347–48</a>, <%= link_to "353–54", "catalogue/349-54.html" %>, <%= link_to "361–67", "catalogue/360-74.html" %>, <%= link_to "418–19", "catalogue/418-27.html" %>, <%= link_to "421–27", "catalogue/418-27.html" %>, <%= link_to "460", "catalogue/459-60.html" %>, <%= link_to "468", "catalogue/463-71.html" %>, <%= link_to "485", "catalogue/485-86.html" %>, <%= link_to "518", "catalogue/518.html" %>, <%= link_to "584", "catalogue/582-85.html" %>, <%= link_to "624", "catalogue/614-30.html" %></li>
+      <li><span class="list-number">VI.d.</span> Star Design, <%= link_to "498–99", "catalogue/492-500.html" %>, <%= link_to "534", "catalogue/524-41.html" %></li>
     </ol>
   </li>
 </ol>
