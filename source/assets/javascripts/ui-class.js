@@ -14,7 +14,8 @@ class UI {
     // Objects of interest
     let menuButton = document.querySelector('#navbar-menu')
     let expanderContent = document.querySelectorAll('.expander-content')
-    let expanderTriggers = document.querySelectorAll('.expander-trigger')
+    let triggers = document.querySelectorAll('.expander-trigger')
+    let curtain = document.querySelector('.sliding-panel-fade-screen')
 
     // Setup
     this.citationDate()
@@ -23,10 +24,11 @@ class UI {
     })
 
     // Listeners
-    window.addEventListener('keydown', e => this.keyboardControls(e))
-    menuButton.addEventListener('click', () => this.menuToggle())
-    expanderTriggers.forEach(trigger => {
-      trigger.addEventListener('click', e => this.expandToggle(e))
+    curtain.onclick = () => this.menuToggle()
+    document.onkeydown = (e) => this.keyboardControls(e)
+    menuButton.onclick = () => this.menuToggle()
+    triggers.forEach(trigger => {
+      trigger.onclick = (e) => this.expandToggle(e)
     })
   }
 
@@ -42,18 +44,19 @@ class UI {
   keyboardControls(e) {
     let prev = document.querySelector('#prev-link')
     let next = document.querySelector('#next-link')
-    if (this.menuVisible) { this.menuToggle() }
-    switch (e.which) {
-      case 27: // escape key
+    switch (e.key) {
+      case 'Escape':
         if (this.menuVisible) { this.menuToggle() }
         e.preventDefault()
         break
-      case 37: // left arrow
+      case 'ArrowLeft':
         if (prev) { prev.click() }
+        if (this.menuVisible) { this.menuToggle() }
         e.preventDefault()
         break
-      case 39: // right arrow
+      case 'ArrowRight':
         if (next) { next.click() }
+        if (this.menuVisible) { this.menuToggle() }
         e.preventDefault()
         break
     }
@@ -75,11 +78,6 @@ class UI {
   menuToggle() {
     let sidebar = document.querySelector('.nav-sidebar')
     let curtain = document.querySelector('.sliding-panel-fade-screen')
-
-    curtain.addEventListener('click', function() {
-      sidebar.classList.remove('is-visible')
-      curtain.classList.remove('is-visible')
-    })
 
     if (this.menuVisible) {
       sidebar.classList.remove('is-visible')
