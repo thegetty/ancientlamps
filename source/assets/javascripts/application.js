@@ -24,6 +24,7 @@ function prepareTransitions() {
     onStart: {
       duration: 400,
       render: function($container) {
+        if (pageUI.menuVisible) { pageUI.menuToggle() }
         $container.velocity('fadeOut', { duration: 200 })
       }
     },
