@@ -10,7 +10,9 @@
 
 // Dependencies
 // -----------------------------------------------------------------------------
-var ui = require('./ui.js')
+// var ui = require('./ui.js')
+import UI from './ui-class.js'
+var pageUI
 
 // PrepareTransitions
 // -----------------------------------------------------------------------------
@@ -22,6 +24,7 @@ function prepareTransitions() {
     onStart: {
       duration: 400,
       render: function($container) {
+        if (pageUI.menuVisible) { pageUI.menuToggle() }
         $container.velocity('fadeOut', { duration: 200 })
       }
     },
@@ -33,7 +36,8 @@ function prepareTransitions() {
       }
     },
     onAfter: function($container, $newContent) {
-      ui()
+      // ui()
+      pageUI = new UI()
     }
   })
 }
@@ -42,6 +46,7 @@ function prepareTransitions() {
 // -----------------------------------------------------------------------------
 // Only call other functions inside of this.
 $(document).ready(function() {
-  ui()
+  // ui()
+  pageUI = new UI()
   prepareTransitions()
 })
