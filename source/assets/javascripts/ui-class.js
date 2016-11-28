@@ -35,17 +35,25 @@ class UI {
       expander.classList.add('expander--hidden')
     })
 
-    // Event Listeners
+    // Event Listeners: All pages
     curtain.onclick = () => this.menuToggle()
     document.onkeydown = (e) => this.keyboardControls(e)
     menuButton.onclick = () => this.menuToggle()
-    detailCloseButton.onclick = () => this.hideDetails()
-    triggers.forEach(trigger => {
-      trigger.onclick = (e) => this.expandToggle(e)
-    })
-    thumbnails.forEach(thumbnail => {
-      thumbnail.onclick = (e) => this.showDetails(e)
-    })
+
+    // Only on catalogue pages
+    if (detailCloseButton) {
+      detailCloseButton.onclick = () => this.hideDetails()
+    }
+    if (triggers.length > 0) {
+      triggers.forEach(trigger => {
+        trigger.onclick = (e) => this.expandToggle(e)
+      })
+    }
+    if (thumbnails.length > 0) {
+      thumbnails.forEach(thumbnail => {
+        thumbnail.onclick = (e) => this.showDetails(e)
+      })
+    }
   }
 
   citationDate() {
