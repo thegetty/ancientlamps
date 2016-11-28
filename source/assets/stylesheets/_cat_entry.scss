@@ -1,6 +1,6 @@
 $cat-entry-gr-start: hsla(0, 0%, 0%, 0);
 $cat-entry-gr-stop: hsla(0, 0%, 0%, 0.2);
-$cat-image-background: #d5d5d5;
+$cat-image-background: #c7c7c7;
 $breadcrumbs-bar-color: tint($dark-gray, 75%);
 
 // The full-width block containing the cover image and title bar. The title bar
@@ -53,7 +53,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
 // Title text. This element expects to be inside an @outer-container element and
 // its width is defined in terms of span-column widths.
 .cat-entry__title {
-  color: #fff;
+  color: $white;
   margin-bottom: 0;
   text-align: center;
 
@@ -136,7 +136,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     }
 
     &__number {
-      color: #fff;
+      color: $white;
       margin-left: $small-spacing;
       margin-top: $small-spacing / 2;
     }
@@ -160,13 +160,13 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     @include size(100% 50%);
     @include transform(translateY(-100%));
     @include transition(all 0.2s ease);
-    background-color: $medium-gray;
+    background-color: $cat-image-background;
     position: fixed;
     top: 0;
     z-index: $z-index-6;
 
     @include media($large-screen-up) {
-      @include size(50% 100%);
+      @include size(65% 100%);
       @include transform(translateX(-100%));
       left: 0;
       &.is-visible { @include transform(translateX(0)); }
@@ -179,23 +179,28 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     @include size(100% 50%);
     @include transform(translateY(200%));
     @include transition(all 0.2s ease);
-    background-color: $dark-gray;
+    background-color: $base-background-color;
     bottom: 0;
+    padding: $base-spacing;
     position: fixed;
     z-index: $z-index-6;
 
     @include media($large-screen-up) {
-      @include size(50% 100%);
+      @include size(35% 100%);
       @include transform(translateX(200%));
       right: 0;
       &.is-visible { @include transform(translateX(0)); }
     }
 
-    &.is-visible { @include transform(translateY(0)); }
+    &.is-visible {
+      @include transform(translateY(0));
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+    }
   }
 
   &__close {
-    color: #fff;
+    color: $white;
     cursor: pointer;
     display: none;
     font-size: 28px;
@@ -205,6 +210,9 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     z-index: $z-index-7;
 
     &.is-visible { display: block; }
-    .close-button { @extend .ion-close-circled; }
+    .close-button {
+      @extend .ion-close-circled;
+      color: $light-gray;
+    }
   }
 }

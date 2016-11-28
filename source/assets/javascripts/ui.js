@@ -14,6 +14,7 @@
 
 // Dependencies
 // -----------------------------------------------------------------------------
+var _ = require('underscore')
 var moment = require('moment')
 var L = require('leaflet')
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
@@ -82,7 +83,6 @@ function expanderSetup() {
     })
   })
 }
-
 
 // KeyboardNav
 // -----------------------------------------------------------------------------
@@ -196,21 +196,42 @@ function detailsToggle() {
     $detailImage.toggleClass('is-visible')
     $detailData.toggleClass('is-visible')
     $detailCloseButton.toggleClass('is-visible')
+    $('body').addClass('noscroll')
 
     // Instantiate a new deepzoom viewer
     // $(this) gives us the element that triggered the event
     var cat = $(this).data('cat')
-    var path = 'http://localhost:8000/tiles/' + cat + '/top/'
-    map = L.map('js-deepzoom', {
-      maxZoom: 13,
-      minZoom: 9
-    }).setView([0, 0], 13)
+    var path = 'https://s3-us-west-1.amazonaws.com/gettypubs-lamps/' + cat
 
-    L.tileLayer.deepzoom(path, {
-      width: 4662,
-      height: 5000,
-      tolerance: 0.8
-    }).addTo(map)
+    // Grab plates data and instantiate map
+    $.get('https://gettypubs.github.io/ancient-lamps/plates.json', function(data) {
+      var imageData = _.findWhere(data, {cat: cat})
+      var faces = imageData.images
+      var layers = {}
+
+      if (imageData) {
+        map = L.map('js-deepzoom', {
+          maxZoom: 13,
+          minZoom: 10
+        }).setView([0, 0], 13)
+
+        // Create a layer to the map for each face
+        faces.forEach(function(face) {
+          var faceName = face.face
+          var facePath = path + '/' + faceName + '/'
+          layers[faceName + ' view'] = L.tileLayer.deepzoom(facePath, {
+            width: face.width,
+            height: face.height,
+            tolerance: 0.8
+          })
+        })
+
+        // Add layer controls to the map
+        L.control.layers(layers).addTo(map).setPosition('topright')
+        // Set a default view for the map
+        map.addLayer(layers['top view'])
+      }
+    })
   })
 
   // Tear down the modal view
@@ -218,6 +239,7 @@ function detailsToggle() {
     $detailImage.removeClass('is-visible')
     $detailData.removeClass('is-visible')
     $detailCloseButton.removeClass('is-visible')
+    $('body').removeClass('noscroll')
     map.remove()
   })
 
@@ -227,6 +249,7 @@ function detailsToggle() {
       $detailImage.removeClass('is-visible')
       $detailData.removeClass('is-visible')
       $detailCloseButton.removeClass('is-visible')
+      $('body').removeClass('noscroll')
       map.remove()
     }
   })
