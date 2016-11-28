@@ -1,5 +1,40 @@
 .cat-entry__details
   .cat-entry__details__image#js-deepzoom
   .cat-entry__details__data
+    - entry_data = entries.map { |e| catalogue_lookup(e) }
+    - entry_data.each do |entry|
+      - unless entry.nil?
+        .cat-entry__details__data__item
+          %table.cat-entry__tombstone
+            %tbody
+              %tr
+                %td
+                  %strong Catalogue Number
+                %td
+                  %strong= entry.cat_no
+              %tr
+                %td Inventory Number
+                %td= entry.inv_no
+              %tr
+                %td Dimensions
+                %td= entry.dimensions
+              %tr
+                %td Condition and Fabric
+                %td= entry.condition_and_fabric
+              %tr
+                %td Type
+                %td= entry.type
+              %tr
+                %td Place
+                %td= entry.place
+          .cat-entry__details__text
+            %h3 Description
+            %p= entry.description
+            %h3 Provenance
+            %p= entry.description
+            %h3 Parallels
+            %p= entry.description
+            %h3 Discussion
+            %p= entry.discussion
   .cat-entry__details__close
     %i.close-button

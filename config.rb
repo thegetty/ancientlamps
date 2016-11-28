@@ -1,20 +1,21 @@
 # require "extensions/search"
-# require "extensions/catalogue"
+require "extensions/catalogue/catalogue"
+require './lib/gulp'
 
 # activate :search
-# activate :catalogue
+activate :catalogue
 
 # Gulp Pipeline
 # ------------------------------------------------
 # All files except JS and CSS are still handled by
 # Middleman. Make sure to ignore anything else
 # that will be handled by Gulp instead.
-ignore "assets/stylesheets"
-ignore "assets/javascripts"
-activate :external_pipeline,
-         name: :gulp,
-         command: build? ? 'npm run build' : 'npm run dev',
-         source: '.tmp'
+# ignore "assets/stylesheets"
+# ignore "assets/javascripts"
+# activate :external_pipeline,
+#          name: :gulp,
+#          command: build? ? 'npm run build' : 'npm run dev',
+#          source: '.tmp'
 
 # General settings
 # ------------------------------------------------
@@ -41,10 +42,10 @@ page "/*.txt", layout: false
 # ------------------------------------------------
 configure :build do
   activate :relative_assets
-  activate :minify_html
-  activate :minify_css
-  activate :minify_javascript
-  activate :gzip
+  # activate :minify_html
+  # activate :minify_css
+  # activate :minify_javascript
+  # activate :gzip
 end
 
 # Deploy settings

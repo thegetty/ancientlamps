@@ -62,6 +62,21 @@ def og_image_path
   "http://www.getty.edu#{baseurl}/assets/images/og_cover.jpg"
 end
 
+def manifest_lookup(cat_num)
+  manifest = data.manifest
+  entry = manifest.find { |i| i[:cat] == cat_num }
+  return false if entry.nil?
+
+  {
+    :cat => entry[:cat],
+    :images => entry[:images].map(&:to_json)
+  }
+end
+
+def catalogue_lookup(cat_num)
+  data.catalogue.find { |c| c[:cat_no] == cat_num }
+end
+
 def page_title
   title   = data.book.title
   authors = data.book.creators

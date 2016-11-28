@@ -16,6 +16,10 @@ $breadcrumbs-bar-color: tint($medium-gray, 75%);
   @include media($medium-screen-up) {
     height: 300px;
   }
+
+  &__inner {
+    width: 100%;
+  }
 }
 
 // Title text. This element expects to be inside an @outer-container element and
