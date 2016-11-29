@@ -179,9 +179,9 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     @include size(100% 50%);
     @include transform(translateY(200%));
     @include transition(all 0.2s ease);
-    background-color: $base-background-color;
+    background-color: tint($light-gray, 75%);
     bottom: 0;
-    padding: $base-spacing;
+    padding: $base-spacing * 1.5;
     position: fixed;
     z-index: $z-index-6;
 
@@ -200,13 +200,25 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
   }
 
   &__text {
+    margin-bottom: $base-spacing * 2;
+
     h2 {
-      font-size: modular-scale(1);
+      @extend .smcaps;
+      color: lighten($base-font-color, 35%);
+      font-family: $base-font-family;
+      font-size: modular-scale(0);
+      font-weight: 400;
+    }
+
+    .cat-number {
+      color: $base-font-color;
+      font-size: modular-scale(3);
+      font-family: $heading-font-family;
     }
 
     .section {
       font-size: modular-scale(1);
-      margin-bottom: $base-spacing;
+      margin-bottom: $small-spacing;
       h2 { margin-bottom: 0; }
     }
   }
