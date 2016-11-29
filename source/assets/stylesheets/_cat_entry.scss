@@ -80,7 +80,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
   text-align: center;
 
   &__text {
-    font-size: $base-font-size;
+    font-size: modular-scale(0);
     font-weight: 400;
     line-height: 1.6;
     margin: 0 auto;
@@ -196,6 +196,18 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       @include transform(translateY(0));
       -webkit-overflow-scrolling: touch;
       overflow-y: scroll;
+    }
+  }
+
+  &__text {
+    h2 {
+      font-size: modular-scale(1);
+    }
+
+    .section {
+      font-size: modular-scale(1);
+      margin-bottom: $base-spacing;
+      h2 { margin-bottom: 0; }
     }
   }
 

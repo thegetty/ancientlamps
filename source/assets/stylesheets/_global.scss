@@ -16,7 +16,7 @@ html { min-height: 100vh; }
     + h3 { margin-top: $base-spacing; }
   }
 
-  p, ol, ul { font-size: 1.25rem; }
+  p, ol, ul { font-size: modular-scale(1); }
   ol { @extend %default-ol; }
 
   @include media($medium-screen-up) {
@@ -50,25 +50,25 @@ html { min-height: 100vh; }
 }
 
 .smaller-text {
-  h2 { font-size: 1.5em; }
-  h3 { font-size: 1em; }
+  h2 { font-size: modular-scale(2); }
+  h3 { font-size: modular-scale(1); }
+  h4 { font-size: modular-scale(1); }
+  p { font-size: modular-scale(0); margin-bottom: 1rem; }
+  ul li { font-size: modular-scale(-1); }
+  blockquote {font-size: modular-scale(0); text-indent: 0;}
 
-  blockquote, li, p {
-    font-size: 1rem;
-    text-indent: 0;
-  }
-
-  p { margin-bottom: 1rem; }
   p + p { text-indent: 0; }
+
   ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 1rem; }
-
+    margin-bottom: 1rem;
+  }
 }
 
 .section-nav {
   margin: 0 0 $base-spacing;
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -99,7 +99,7 @@ html { min-height: 100vh; }
   &::before {
     content: "Notes";
     font-family: "Freight Text Pro SC";
-    font-size: 1.35em;
+    font-size: modular-scale(2);
     letter-spacing: 2px;
     text-transform: lowercase;
   }
