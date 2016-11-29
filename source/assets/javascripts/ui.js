@@ -185,6 +185,7 @@ class UI {
       clone.getElementById('entry-cat-number').textContent = catData.cat_no
       clone.getElementById('entry-inv-number').textContent = catData.inv_no
       clone.getElementById('entry-dimensions').textContent = catData.dimensions
+      clone.getElementById('entry-date').textContent = catData.date
       clone.getElementById('entry-condition').textContent = catData.condition_and_fabric
       clone.getElementById('entry-type').textContent = catData.type
       clone.getElementById('entry-place').textContent = catData.place
