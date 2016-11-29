@@ -4,47 +4,42 @@
   .cat-entry__details__close
     %i.close-button
   %template#entry-template.cat-entry__details__data__item
-    %table.cat-entry__tombstone
-      %tbody
-        %tr
-          %td
-            %strong Catalogue Number
-          %td
-            %strong#entry-cat-number
-        %tr
-          %td Inventory Number
-          %td#entry-inv-number
-        %tr
-          %td Date
-          %td#entry-date
-        %tr
-          %td Dimensions
-          %td#entry-dimensions
-        %tr
-          %td Condition and Fabric
-          %td#entry-condition
-        %tr
-          %td Type
-          %td#entry-type
-        %tr
-          %td Place
-          %td#entry-place
     .cat-entry__details__text
+      .section.cat-number
+        %h2#entry-cat-number
+      .section.inv-number
+        %h2 Inventory Number
+        %p#entry-inv-number
+      .section.dimensions
+        %h2 Dimensions
+        %p#entry-dimensions
+      .section.date
+        %h2 Date
+        %p#entry-date
+      .section.condition
+        %h2 Condition and Fabric
+        %p#entry-condition
+      .section.type
+        %h2 Type
+        %p#entry-type
+      .section.place
+        %h2 Place
+        %p#entry-place
       .section.description
-        %h3 Description
+        %h2 Description
         %p#entry-description
       .section.iconography.is-hidden
-        %h3 Discus Iconography
+        %h2 Discus Iconography
         %p#entry-iconography
       .section.provenance.is-hidden
-        %h3 Provenance
+        %h2 Provenance
         %p#entry-provenance
       .section.parallels
-        %h3 Parallels
+        %h2 Parallels
         %p#entry-parallels
       .section.discussion.is-hidden
-        %h3 Discussion
+        %h2 Discussion
         %p#entry-discussion
       .section.bibliography.is-hidden
-        %h3 Bibliography
+        %h2 Bibliography
         %p#entry-bibliography

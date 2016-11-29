@@ -51,14 +51,9 @@ picture {
 }
 
 // Type scale
-h1 { font-size: 1.65rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
-h4 { font-size: 1.125rem; }
-
-@include media($medium-screen-up) {
-  h1 { font-size: 2.25rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.25rem; }
-}
+h6 { font-size: modular-scale(-1); }
+h5 { font-size: modular-scale(0); }
+h4 { font-size: modular-scale(1); }
+h3 { font-size: modular-scale(2); }
+h2 { font-size: modular-scale(3); }
+h1 { font-size: modular-scale(4); }
