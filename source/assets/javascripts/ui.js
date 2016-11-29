@@ -189,9 +189,28 @@ class UI {
       clone.getElementById('entry-type').textContent = catData.type
       clone.getElementById('entry-place').textContent = catData.place
       clone.getElementById('entry-description').textContent = catData.description
-      clone.getElementById('entry-provenance').textContent = catData.provenance
       clone.getElementById('entry-parallels').textContent = catData.parallels
-      clone.getElementById('entry-discussion').textContent = catData.discussion
+
+      // Some sections do not appear for all entries
+      if (catData.provenance) {
+        clone.querySelector('.section.provenance').classList.remove('is-hidden')
+        clone.getElementById('entry-provenance').textContent = catData.provenance
+      }
+
+      if (catData.iconography) {
+        clone.querySelector('.section.iconography').classList.remove('is-hidden')
+        clone.getElementById('entry-iconography').textContent = catData.iconography
+      }
+
+      if (catData.discussion) {
+        clone.querySelector('.section.discussion').classList.remove('is-hidden')
+        clone.getElementById('entry-discussion').textContent = catData.discussion
+      }
+
+      if (catData.bibliography) {
+        clone.querySelector('.section.bibliography').classList.remove('is-hidden')
+        clone.getElementById('entry-bibliography').textContent = catData.bibliography
+      }
 
       // Append the new template
       container.appendChild(clone)
