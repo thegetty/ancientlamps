@@ -15,6 +15,9 @@
           %td Inventory Number
           %td#entry-inv-number
         %tr
+          %td Date
+          %td#entry-date
+        %tr
           %td Dimensions
           %td#entry-dimensions
         %tr
@@ -27,11 +30,21 @@
           %td Place
           %td#entry-place
     .cat-entry__details__text
-      %h3 Description
-      %p#entry-description
-      %h3 Provenance
-      %p#entry-provenance
-      %h3 Parallels
-      %p#entry-parallels
-      %h3 Discussion
-      %p#entry-discussion
+      .section.description
+        %h3 Description
+        %p#entry-description
+      .section.iconography.is-hidden
+        %h3 Discus Iconography
+        %p#entry-iconography
+      .section.provenance.is-hidden
+        %h3 Provenance
+        %p#entry-provenance
+      .section.parallels
+        %h3 Parallels
+        %p#entry-parallels
+      .section.discussion.is-hidden
+        %h3 Discussion
+        %p#entry-discussion
+      .section.bibliography.is-hidden
+        %h3 Bibliography
+        %p#entry-bibliography
