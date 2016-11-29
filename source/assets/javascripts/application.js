@@ -10,8 +10,7 @@
 
 // Dependencies
 // -----------------------------------------------------------------------------
-// var ui = require('./ui.js')
-import UI from './ui-class.js'
+import UI from './ui.js'
 var pageUI
 
 // PrepareTransitions
