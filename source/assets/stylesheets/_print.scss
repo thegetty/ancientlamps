@@ -413,7 +413,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   }
   // scss-lint:enable NameFormat
 
-  .cat-entry-header-titlebar {
+  .cat-entry__header__titlebar {
     position: static;
   }
 
@@ -426,7 +426,7 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
   }
 
-  .cat-entry-header {
+  .cat-entry__header {
     margin-bottom: 0.5in;
     position: static;
   }
@@ -485,7 +485,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   .contributors .page-content,
   .glossary .page-content,
   .book-index,
-  .cat-entry-content {
+  .cat-entry__content {
     color: $print-text-color;
     column-count: 2;
     column-gap: ($print-base-spacing * 2);

@@ -81,7 +81,7 @@ class Catalogue < Middleman::Extension
     end
 
     # Add print frontmatter page manually
-    f.puts baseurl + 'print-frontmatter/index.html'
+    # f.puts baseurl + 'print-frontmatter/index.html'
 
     # Write the pages to the filelist for use by Prince
     [frontmatter, catalogue, backmatter].each do |array|
