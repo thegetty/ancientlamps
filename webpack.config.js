@@ -1,5 +1,5 @@
-var webpack = require('webpack');
-var Clean = require('clean-webpack-plugin');
+var webpack = require('webpack')
+var Clean = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -7,12 +7,12 @@ module.exports = {
   },
 
   resolve: {
-    root: __dirname + '/source/assets/javascripts',
+    root: __dirname + '/source/assets/javascripts'
   },
 
   output: {
     path: __dirname + '/.tmp/dist',
-    filename: 'assets/javascripts/[name].js',
+    filename: 'assets/javascripts/[name].js'
   },
 
   module: {
@@ -22,17 +22,22 @@ module.exports = {
         exclude: /node_modules|\.tmp|vendor/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'stage-0'],
-        },
-      },
-    ],
+          presets: ['es2015', 'stage-0']
+        }
+      }
+    ]
   },
 
   node: {
-    console: true,
+    console: true
   },
 
   plugins: [
     new Clean(['.tmp']),
-  ],
-};
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
+  ]
+}
