@@ -29,8 +29,8 @@ end
 # ------------------------------------------------
 configure :build do
   activate :relative_assets
-  ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'application' }
-  activate :minify_javascript
+  # ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'application' }
+  # activate :minify_javascript
 
   # activate :minify_html
   # activate :minify_css
