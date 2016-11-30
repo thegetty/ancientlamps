@@ -1,8 +1,10 @@
 .DS_Store
-/.bundle
-/.cache
-/.sass-cache
-/build
+.bundle
+.cache
+.sass-cache
+build
+dist/*
+!dist/.gitkeep
 Gemfile.lock
 node_modules
 .tmp
