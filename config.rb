@@ -29,7 +29,7 @@ end
 # ------------------------------------------------
 configure :build do
   activate :relative_assets
-  # ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'application' }
+  ignore { |path| path =~ /assets\/javascripts\/(.*)\.js$/ && $1 != 'application' }
   # activate :minify_javascript
 
   # activate :minify_html
@@ -47,7 +47,9 @@ end
 
 activate :external_pipeline,
   name: :webpack,
-  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  command: build? ?
+    './node_modules/webpack/bin/webpack.js --bail -p' :
+    './node_modules/webpack/bin/webpack.js --watch -d --progress --color',
   source: ".tmp/dist",
   latency: 1
 

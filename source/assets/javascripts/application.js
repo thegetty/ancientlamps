@@ -10,7 +10,12 @@
 
 // Dependencies
 // -----------------------------------------------------------------------------
+import $ from 'jquery'
 import UI from './ui.js'
+import './vendor/velocity.min.js'
+import './vendor/velocity.ui.min.js'
+import './vendor/jquery.smoothState.min.js'
+
 var pageUI
 
 // PrepareTransitions
