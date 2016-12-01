@@ -1,14 +1,15 @@
-var _ = require('lodash')
-var moment = require('moment')
-var L = require('leaflet')
+import _ from 'lodash'
+import moment from 'moment'
+import L from 'leaflet'
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
+import Map from './map.js'
 
 class UI {
   constructor() {
     this.menuVisible = false
     this.searchVisible = false
     this.deepZoomVisible = false
-    this.map = {}
+    this.zoomInstance = {}
     this.setup()
   }
 
@@ -28,6 +29,7 @@ class UI {
     let curtain = document.querySelector('.sliding-panel-fade-screen')
     let thumbnails = document.querySelectorAll('.cat-entry__grid__item')
     let detailCloseButton = document.querySelector('.cat-entry__details__close')
+    let mapEl = document.getElementById('map')
 
     // Run these functions once on setup
     this.citationDate()
@@ -53,6 +55,11 @@ class UI {
       thumbnails.forEach(thumbnail => {
         thumbnail.onclick = (e) => this.showDetails(e)
       })
+    }
+
+    // only on map page
+    if (mapEl) {
+      new Map()
     }
   }
 
@@ -151,7 +158,7 @@ class UI {
       var layers = {}
 
       if (imageData) {
-        this.map = L.map('js-deepzoom', {
+        this.zoomInstance = L.map('js-deepzoom', {
           maxZoom: 13,
           minZoom: 10
         }).setView([0, 0], 13)
@@ -166,8 +173,8 @@ class UI {
           })
         })
 
-        L.control.layers(layers).addTo(this.map).setPosition('topright')
-        this.map.addLayer(layers['top view'])
+        L.control.layers(layers).addTo(this.zoomInstance).setPosition('topright')
+        this.zoomInstance.addLayer(layers['top view'])
       }
     })
 
@@ -235,7 +242,7 @@ class UI {
     container.innerHTML = ''
 
     // Remove the old map instance
-    this.map.remove()
+    this.zoomInstance.remove()
   }
 }
 
