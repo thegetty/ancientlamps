@@ -1,16 +1,16 @@
 = wrap_layout :application do
   - if current_page.data.cover
     - image_url = image_path(current_page.data.cover)
-    %header.page-cover{:style => "background-image: url('#{image_url}')"}
+    %header.page__cover{:style => "background-image: url('#{image_url}')"}
   %article.page
-    %header.page-header
-      %h1#page-title.page-title= current_page.data.title
+    %header.page__header
+      %h1#page-title.page__header__title= current_page.data.title
       - if current_page.data.subtitle
-        %h3.page-subtitle= current_page.data.subtitle
+        %h3.page__header__subtitle= current_page.data.subtitle
       - if current_page.data.author and current_page.data.author_byline == "top"
         - current_page.data.author.each do |author|
-          %h3.page-author= "#{author.first_name} #{author.last_name}"
-    %main.page-content
+          %h3.page__header__author= "#{author.first_name} #{author.last_name}"
+    %main.page__content
       = yield
       - if current_page.data.author and current_page.data.author_byline == "bottom"
         %p

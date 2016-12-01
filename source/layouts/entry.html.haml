@@ -6,11 +6,6 @@
 - first = entries.first
 
 = wrap_layout :application do
-  - if environment? :pdf
-    - if current_page.data.force_break == true
-      .bleed.force-break{ :data => { :catalogue => current_page.data.cover || first }}
-    - else
-      .bleed{ :data => { :catalogue => current_page.data.cover || first }}
   .cat-entry
     .cat-entry__breadcrumbs-bar
       .cat-entry__breadcrumbs-bar__inner
@@ -22,11 +17,13 @@
           %h1.cat-entry__title= "#{code} #{title}"
     %article.cat-entry__content
       .cat-entry__content__inner
-        %h4 Catalogue Entries
         .cat-entry__grid
           - entries.each do |entry|
             .cat-entry__grid__item{ :data => { :cat => entry }}
               %h6.cat-entry__grid__item__number= entry
         = yield
-    = partial "partials/cat_details", :locals => { :entries => entries }
+      - if environment? :pdf
+        = partial "partials/cat_details_print", :locals => { :entries => entries }
+    - unless environment? :pdf
+      = partial "partials/cat_details"
 
