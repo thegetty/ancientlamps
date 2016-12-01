@@ -1,3 +1,5 @@
+// scss-lint:disable PropertySpelling, QualifyingElement, SingleLinePerSelector, EmptyRule
+
 // Variables
 // -----------------------------------------------------------------------------
 $page-width: 8.5in;
@@ -15,9 +17,9 @@ $outer-margin: 0.75in;
 $inner-width: $page-width - ($inner-margin + $outer-margin);
 $inner-height: $page-height - ($top-margin + $bottom-margin);
 
-$print-base-font-size: 9.5pt;
+$print-base-font-size: 8pt;
 $print-base-spacing: 0.125in;
-$print-base-line-height: 1.3;
+$print-base-line-height: 1.25;
 $print-paragraph-indent: 0.25in;
 
 $print-background-color: #fff;
@@ -26,12 +28,12 @@ $print-text-color: #000;
 $page-number-size: 7.5pt;
 $footnote-size: 7.5pt;
 
-$medium-gray: transparentize($print-text-color, 0.5);
-$light-gray: transparentize($print-text-color, 0.5);
+// $medium-gray: transparentize($print-text-color, 0.5);
+// $light-gray: transparentize($print-text-color, 0.5);
+
 
 // Default page setup
 // -----------------------------------------------------------------------------
-// scss-lint:disable PropertySpelling
 // @prince-pdf { prince-pdf-page-layout: two-column-right; }
 
 @page {
@@ -108,11 +110,56 @@ $light-gray: transparentize($print-text-color, 0.5);
   @bottom-right { content: none; }
 }
 
-// scss-lint:enable PropertySpelling
 
 // Print Styles
 // -----------------------------------------------------------------------------
 @media print {
+  // Base page style for print
+  %print-page-content {
+    color: $print-text-color;
+    column-count: 2;
+    column-gap: ($print-base-spacing * 2);
+    font-size: $print-base-font-size;
+
+    a[href] {
+      color: $print-text-color;
+      prince-link: none;
+      text-decoration: none;
+    }
+
+    h3 {
+      font-size: $print-base-font-size;
+      font-weight: bold;
+      margin-top: 0.125in;
+    }
+
+    h4 {
+      font-size: $print-base-font-size * 0.875;
+      font-weight: bold;
+    }
+
+    .inline-figure figcaption { font-size: $footnote-size; }
+
+    .footnotes {
+      font-size: $footnote-size;
+      ol, ul { padding-left: ($print-base-spacing * 2); }
+    }
+
+    p {
+      line-height: $print-base-line-height;
+      margin: 0;
+      + p { text-indent: $print-paragraph-indent; }
+    }
+
+    ul,
+    ol {
+      line-height: $print-base-line-height;
+      margin-left: 0;
+      padding-left: 0;
+      text-indent: 0;
+    }
+  }
+
   // Full page image placeholder
   %full-page-image {
     background-repeat: no-repeat;
@@ -145,390 +192,86 @@ $light-gray: transparentize($print-text-color, 0.5);
   .popup-content { display: none; }
   .reversefootnote { display: none; }
 
-  // Global
-  // ---------------------------------------------------------------------------
-  .smcaps {
-    font-family: "Freight Text Pro SC";
-    text-transform: lowercase;
-  }
-
-  .inline-figure {
-    margin: ($base-spacing * 2) 5%;
-    padding: 0;
-    width: 90%;
-  }
-
-  figcaption {
-    line-height: 1.3;
-  }
-
-  .figure-print-multicolumn {
-    column-span: all;
-    margin: ($base-spacing * 2) 0;
-    width: 100%;
-  }
-
-  .figure-print-reduce {
-    margin: ($base-spacing * 2) 17%;
-    width: 66%;
-  }
-
-  .figure-left,
-  .figure-group-left,
-  .figure-right,
-  .figure-group-right {
-    float: none;
-  }
-
-  .figure-group-right,
-  .figure-group-left {
-    .inline-figure {
-      margin-bottom: ($base-spacing * 0.75);
-      margin-top: ($base-spacing * 0.75);
+  // General content styles
+  .page {
+    &__header {
+      &__title { font-size: 18pt; }
     }
 
-    .inline-figure:first-child {
-      margin-bottom: ($base-spacing * 0.75);
-      margin-top: ($base-spacing * 1.5);
-    }
-
-    .inline-figure:last-child {
-      margin-bottom: ($base-spacing * 1.5);
-      margin-top: ($base-spacing * 0.75);
-    }
-  }
-
-  .force-break {
-    page-break-before: left;
-  }
-
-  .print-page-break {
-    page-break-after: always;
-  }
-
-  .print-column-break {
-    column-break-after: always;
-  }
-
-  // Section-specific
-  // ---------------------------------------------------------------------------
-
-  // Frontmatter
-  .print-cover {
-    @extend %full-page-image;
-    background-image: url(image_path("print/cover.jpg"));
-  }
-
-  .print-halftitle {
-    counter-reset: page 1;
-    margin-right: 0;
-    margin-top: 4in;
-    page: no-footer;
-    page-break-before: right;
-    text-transform: lowercase;
-  }
-
-  .print-halftitle-title {
-    font-family: "Freight Text Pro SC";
-    font-size: 28pt;
-    font-weight: normal;
-    letter-spacing: 0;
-    line-height: 1;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: right;
-  }
-
-  .print-halftitle-subtitle {
-    color: $medium-gray;
-    font-family: "Freight Text Pro SC";
-    font-size: 15pt;
-    font-weight: normal;
-    letter-spacing: 0;
-    line-height: 1;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: right;
-  }
-
-  // scss-lint:disable NameFormat
-  .print-title-left {
-    @extend %full-page-image;
-    background-image: url(image_path("print/title-a.jpg"));
-  }
-
-  .print-title-right {
-    @extend %full-page-image;
-    background-image: url(image_path("print/title-b.jpg"));
-  }
-  // scss-lint:enable NameFormat
-
-  .print-copyright {
-    font-family: $heading-font-family;
-    font-size: 8pt;
-    margin-right: 1in;
-    page: no-footer;
-    page-break-after: always;
-  }
-
-  .publisher { margin-bottom: $print-base-spacing; }
-  .distribution { margin-bottom: $print-base-spacing;}
-  .team { margin-top: $print-base-spacing;}
-
-  .loc-cip {
-    margin-bottom: $print-base-spacing;
-
-    p { margin-bottom: 0; }
-
-    li {
-      padding-left: $print-base-spacing;
-      text-indent: -$print-base-spacing;
-    }
-  }
-
-  body.contents {
-    page: no-footer;
-  }
-
-  body.foreword,
-  body.acknowledgments {
-    page: frontmatter
-  }
-
-  body.introduction {
-    counter-reset: page 0;
-  }
-
-  .contents-page {
-    a::after {
-      content: leader(dotted) " " target-counter(attr(href, url), page);
-    }
-
-    .frontmatter a::after {
-      content: leader(dotted) " " target-counter(attr(href, url), page, lower-roman);
-    }
-
-    li {
-      font-size: 11pt;
-      margin-bottom: 0.1125in;
-      padding-left: 0.125in;
-    }
-
-    .toc-section,
-    .frontmatter {
-      padding-left: 0;
-    }
-  }
-
-  .page-header {
-    margin-bottom: 0.5in;
-    margin-top: 0;
-  }
-
-  .cat-entry-header-titlebar-inner {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .page-author {
-    color: $light-gray;
-  }
-
-  .page-title {
-    margin-bottom: 0;
-  }
-
-  .print-catalogue-intro {
-    @extend %full-page-image;
-    background-color: $light-gray;
-  }
-
-  // Regional sections
-  .region-intro {
-    margin-top: 4in;
-    page: no-footer;
-  }
-
-  .region-intro-title {
-    @extend .print-halftitle-title;
-    font-size: 28pt;
-    text-align: center;
-  }
-
-  // scss-lint:disable NameFormat
-  .region-map {
-    background-image: url(image_path("print/base-map.jpg"));
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 4.5in;
-    margin-bottom: $print-base-spacing;
-    width: 100%;
-
-    &[data-map="italy"] {
-      background-image: url(image_path("print/italy.jpg"));
-    }
-
-    &[data-map="gaul"] {
-      background-image: url(image_path("print/gaul.jpg"));
-    }
-
-    &[data-map="north-africa"] {
-      background-image: url(image_path("print/northafrica.jpg"));
-    }
-
-    &[data-map="syria"] {
-      background-image: url(image_path("print/syria.jpg"));
-    }
-  }
-
-  // Cat entries
-  .bleed {
-    @extend %full-page-image;
-    // page-break-before: left;
-
-    &[data-catalogue="introduction"] {
-      background-image: url(image_path("print/introduction.jpg"));
-    }
-
-    &[data-catalogue="backmatter"] {
-      background-image: url(image_path("print/backmatter.jpg"));
-    }
-
-    @for $i from 1 through 21 {
-      &[data-catalogue="#{$i}"] {
-        background-image: url(image_path("print/cat#{$i}.jpg"));
+    &__content {
+      @extend %print-page-content;
+      .classification {
+        font-size: $print-base-font-size;
+        ul, ol, li { font-size: $print-base-font-size; }
       }
     }
   }
 
-  .group-bleed-left {
-    @extend %full-page-image;
-    background-image: url(image_path("print/cat9-19a.jpg"));
-    page-break-before: left;
-  }
+  .cat-entry,
+  .cat-intro {
+    &__content { @extend %print-page-content; }
+    &__image { display: none; }
+    &__grid { display: none; }
 
-  .group-bleed-right {
-    @extend %full-page-image;
-    background-image: url(image_path("print/cat9-19b.jpg"));
-  }
-  // scss-lint:enable NameFormat
-
-  .cat-entry__header__titlebar {
-    position: static;
-  }
-
-  .cat-details-columns {
-    @include columns(1);
-
-    .cat-details {
-      margin-bottom: $base-spacing;
-      padding-bottom: 0;
-    }
-  }
-
-  .cat-entry__header {
-    margin-bottom: 0.5in;
-    position: static;
-  }
-
-  // Backmatter
-  .references.references {
-    column-count: 1;
-    font-size: 8pt;
-    padding: 0;
-
-    p {
-      font-size: 8pt;
-      line-height: $print-base-line-height;
-    }
-
-    li {
-      margin-bottom: ($print-base-spacing) / 2;
-      page-break-inside: avoid;
-    }
-  }
-
-  ul.glossary {
-    font-size: 8pt;
-    line-height: $print-base-line-height;
-  }
-
-  .book-index {
-    font-size: 8pt;
-    line-height: $print-base-line-height;
-
-    ul { font-size: 8pt; }
-  }
-
-  .index-note {
-    font-size: 8pt;
-  }
-
-  .book-index .page-numbers,
-  .book-index .index-note {
-    display: inline;
-  }
-
-  .book-index strong {
-    font-weight: bold;
-  }
-
-  // General content styles
-  .introduction .page-content,
-  .foreword .page-content,
-  .acknowledgments .page-content,
-  .readernote .page-content,
-  .preface .page-content,
-  .catalogue .page-content,
-  .referencescited .page-content,
-  .about .page-content,
-  .contributors .page-content,
-  .glossary .page-content,
-  .book-index,
-  .cat-entry__content {
-    color: $print-text-color;
-    column-count: 2;
-    column-gap: ($print-base-spacing * 2);
-    font-size: $print-base-font-size;
-    // scss-lint:disable PropertySpelling
-    a[href] {
-      color: $print-text-color;
-      prince-link: none;
-      text-decoration: none;
-    }
-    // scss-lint:enable PropertySpelling
-
-    h3 {
+    &__breadcrumbs-bar {
+      background-color: $print-background-color;
+      box-shadow: none;
       font-size: $print-base-font-size;
-      font-weight: bold;
-      margin-top: 0.125in;
-    }
-
-    h4 {
-      font-size: $print-base-font-size * 0.875;
-      font-weight: bold;
-    }
-
-    .inline-figure figcaption { font-size: $footnote-size; }
-
-    .footnotes {
-      font-size: $footnote-size;
-      ol, ul { padding-left: ($print-base-spacing * 2); }
-    }
-
-    p {
       line-height: $print-base-line-height;
-      margin: 0;
-      + p { text-indent: $print-paragraph-indent; }
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 0;
     }
 
-    ul,
-    ol {
-      line-height: $print-base-line-height;
-      margin-left: 0;
-      padding-left: 0;
-      text-indent: 0;
-      /* padding-left: ($print-base-spacing * 2); */
+    &__title {
+      color: $print-text-color;
+      font-size: 18pt;
+    }
+
+    &__header {
+      background-color: $print-background-color;
+      border: 0;
+      height: initial;
+      margin-bottom: $print-base-spacing * 4;
+      margin-top: $print-base-spacing * 2;
+      position: static;
+
+      &__titlebar {
+        background-color: $print-background-color;
+        background-image: none;
+        position: static;
+      }
+
+      &__titlebar__inner {padding: 0;}
+    }
+
+    &__details__print {
+      font-size: 8pt;
+
+      &__item {}
+
+      &__text {
+        .section {
+          font-size: 8pt;
+          margin-bottom: $print-base-spacing / 2;
+        }
+
+        .section.cat-number {
+          border-top: solid 0.25pt $print-text-color;
+          margin-top: $print-base-spacing;
+
+          h2.cat-number {
+            font-size: 12pt;
+            margin-top: 3pt;
+          }
+        }
+      }
+
+      &__image {
+        margin-top: $print-base-spacing;
+        position: static;
+        width: 100%;
+      }
     }
   }
 }
