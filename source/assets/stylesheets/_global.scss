@@ -237,3 +237,56 @@ figcaption { margin-top: $small-spacing * 0.5; }
 .is-hidden {
   display: none;
 }
+
+.map {
+  &__container {height: 100vh;}
+  &__popup {z-index: $z-index-9;}
+
+  &__label {
+    &__region {
+      cursor: pointer;
+      z-index: 200 !important;
+
+      p {
+        color: #000;
+        font-family: $heading-font-family;
+        font-size: 0.9rem;
+        font-weight: normal;
+        line-height: 1;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    }
+
+    &__country { cursor: pointer; }
+
+    &__country p {
+      @extend .smcaps;
+      color: #000;
+      font-family: $base-font-family;
+      font-size: 1.7rem;
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+      text-shadow: 1px 1px transparentize($base-background-color, 0.5);
+      text-transform: capitalize;
+    }
+
+    &__site p {
+      font-family: $heading-font-family;
+      font-weight: normal;
+      line-height: 1;
+    }
+  }
+}
+
+.map-label-catalogue {
+  background-color: $base-background-color;
+  border-radius: $base-border-radius;
+  font-family: $heading-font-family;
+  line-height: 1;
+  text-align: center;
+
+  p { margin: 0.25rem; }
+}
+

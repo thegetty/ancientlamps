@@ -1,7 +1,5 @@
 ---
 title: Map
-layout: page
+layout: map
 sort_order: 6
 ---
-
-Map of Greco-Roman Mediterranean goes here.

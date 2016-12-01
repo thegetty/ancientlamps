@@ -1,7 +1,7 @@
 $sliding-panel-position: "left";        // "left" or "right"
 $sliding-panel-bg-color: $medium-gray;
 $sliding-panel-width: 20rem;
-$sliding-panel-z-index: $z-index-5;
+$sliding-panel-z-index: $z-index-max;
 $sliding-panel-border-color: $dark-gray;
 $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
 $sliding-panel-color: darken(#FFF, 25%);
