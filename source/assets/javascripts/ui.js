@@ -193,31 +193,41 @@ class UI {
       clone.getElementById('entry-inv-number').textContent = catData.inv_no
       clone.getElementById('entry-dimensions').textContent = catData.dimensions
       clone.getElementById('entry-date').textContent = catData.date
-      clone.getElementById('entry-condition').textContent = catData.condition_and_fabric
+      clone.getElementById('entry-condition').innerHTML = catData.condition_and_fabric
       clone.getElementById('entry-type').textContent = catData.type
       clone.getElementById('entry-place').textContent = catData.place
-      clone.getElementById('entry-description').textContent = catData.description
-      clone.getElementById('entry-parallels').textContent = catData.parallels
+      clone.getElementById('entry-description').innerHTML = catData.description
+      clone.getElementById('entry-parallels').innerHTML = catData.parallels
 
       // Some sections do not appear for all entries
       if (catData.provenance) {
         clone.querySelector('.section.provenance').classList.remove('is-hidden')
-        clone.getElementById('entry-provenance').textContent = catData.provenance
+        clone.getElementById('entry-provenance').innerHTML = catData.provenance
       }
 
       if (catData.iconography) {
         clone.querySelector('.section.iconography').classList.remove('is-hidden')
-        clone.getElementById('entry-iconography').textContent = catData.iconography
+        clone.getElementById('entry-iconography').innerHTML = catData.iconography
       }
 
       if (catData.discussion) {
         clone.querySelector('.section.discussion').classList.remove('is-hidden')
-        clone.getElementById('entry-discussion').textContent = catData.discussion
+        clone.getElementById('entry-discussion').innerHTML = catData.discussion
       }
 
       if (catData.bibliography) {
         clone.querySelector('.section.bibliography').classList.remove('is-hidden')
-        clone.getElementById('entry-bibliography').textContent = catData.bibliography
+        clone.getElementById('entry-bibliography').innerHTML = catData.bibliography
+      }
+
+      if (catData.stamp) {
+        clone.querySelector('.section.stamp').classList.remove('is-hidden')
+        clone.getElementById('entry-stamp').src = `../../assets/images/stamps/${catData.stamp}`
+      }
+
+      if (catData.condition) {
+        clone.querySelector('.section.condition h2').textContent = 'Condition'
+        clone.getElementById('entry-condition').textContent = catData.condition
       }
 
       // Append the new template

@@ -16,49 +16,59 @@
             %p
               %strong Dimensions:
               %span= entry.dimensions
-          .section.date
-            %p
-              %strong Date:
-              %span= entry.date
           .section.condition
-            %p
-              %strong Condition and Fabric:
-              %span= entry.condition_and_fabric
-          .section.type
-            %p
-              %strong Type:
-              %span= entry.type
-          .section.place
-            %p
-              %strong Place:
-              %span= entry.place
+            - if entry.condition
+              %p
+                %strong Condition
+                %span= entry.condition
+            - else
+              %p
+                %strong Condition and Fabric:
+                %span= entry.condition_and_fabric
           - unless entry.description.nil?
             .section.description
               %p
                 %strong Description:
                 = entry.description
+          - unless entry.stamp.nil?
+            .section.stamp
+              %p
+                %strong Stamp:
+                = image_tag("stamps/#{entry.stamp}")
           - unless entry.discus_iconography.nil?
             .section.iconography
               %p
                 %strong Discus Iconography:
                 = entry.discus_iconography
-          - unless entry.provenance.nil?
-            .section.provenance
-              %p
-                %strong Provenance:
-                = entry.provenance
+          .section.type
+            %p
+              %strong Type:
+              %span= entry.type
+          .section.date
+            %p
+              %strong Date:
+              %span= entry.date
+          .section.place
+            %p
+              %strong Place of Manufacture or Origin:
+              %span= entry.place
           - unless entry.parallels.nil?
             .section.parallels
               %p
                 %strong Parallels:
                 = entry.parallels
-          - unless entry.discussion.nil?
-            .section.discussion
+          - unless entry.provenance.nil?
+            .section.provenance
               %p
-                %strong Discussion:
-                = entry.discussion
+                %strong Provenance:
+                = entry.provenance
           - unless entry.bibliography.nil?
             .section.bibliography
               %p
                 %strong Bibliography:
                 = entry.bibliography
+          - unless entry.discussion.nil?
+            .section.discussion
+              %p
+                %strong Discussion:
+                = entry.discussion
