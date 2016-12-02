@@ -189,13 +189,13 @@ class UI {
       console.log(catData)
 
       // populate template
-      clone.getElementById('entry-cat-number').textContent = catData.cat_no
-      clone.getElementById('entry-inv-number').textContent = catData.inv_no
-      clone.getElementById('entry-dimensions').textContent = catData.dimensions
-      clone.getElementById('entry-date').textContent = catData.date
+      clone.getElementById('entry-cat-number').innerHTML = catData.cat_no
+      clone.getElementById('entry-inv-number').innerHTML = catData.inv_no
+      clone.getElementById('entry-dimensions').innerHTML = catData.dimensions
+      clone.getElementById('entry-date').innerHTML = catData.date
       clone.getElementById('entry-condition').innerHTML = catData.condition_and_fabric
-      clone.getElementById('entry-type').textContent = catData.type
-      clone.getElementById('entry-place').textContent = catData.place
+      clone.getElementById('entry-type').innerHTML = catData.type
+      clone.getElementById('entry-place').innerHTML = catData.place
       clone.getElementById('entry-description').innerHTML = catData.description
       clone.getElementById('entry-parallels').innerHTML = catData.parallels
 
@@ -227,7 +227,7 @@ class UI {
 
       if (catData.condition) {
         clone.querySelector('.section.condition h2').textContent = 'Condition'
-        clone.getElementById('entry-condition').textContent = catData.condition
+        clone.getElementById('entry-condition').innerHTML = catData.condition
       }
 
       // Append the new template
