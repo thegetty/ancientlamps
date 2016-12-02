@@ -3,6 +3,7 @@ import moment from 'moment'
 import L from 'leaflet'
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
 import Map from './map.js'
+import ImageViewer from './imageviewer.js'
 
 class UI {
   constructor() {
@@ -127,21 +128,16 @@ class UI {
   // DetailsToggle
   // -----------------------------------------------------------------------------
   // Adds/removes classes for the display of the detail view of selected image.
-  // Relies on tiles being available at an external URL which is hard-coded below
-  // in the "path" variable: in the future this should be moved out into some kind
-  // of config file.
   //
-  // This function also handles the setup and teardown of Leaflet deep-zoom
-  // instances, though in the future this functionality should probably be moved
-  // elsewhere.
   showDetails(e) {
     let cat = this.catNumCheck(e.target.dataset.cat)
-    let path = 'https://s3-us-west-1.amazonaws.com/gettypubs-lamps/' + cat
-    let platesURL = 'https://gettypubs.github.io/ancient-lamps/plates.json'
     let dataURL = 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
     let detailImage = document.querySelector('.cat-entry__details__image')
     let detailData = document.querySelector('.cat-entry__details__data')
     let detailCloseButton = document.querySelector('.cat-entry__details__close')
+
+    this.zoomInstance = new ImageViewer(cat)
+    this.zoomInstance.fetchData()
 
     // toggle classes for display
     detailImage.classList.add('is-visible')
@@ -150,34 +146,7 @@ class UI {
     document.querySelector('body').classList.add('noscroll')
     this.deepZoomVisible = true
 
-    // Fetch plates data
-    $.get(platesURL).done((data) => {
-      let query = {cat: cat}
-      var imageData = _.find(data, query)
-      var faces = imageData.images
-      var layers = {}
-
-      if (imageData) {
-        this.zoomInstance = L.map('js-deepzoom', {
-          maxZoom: 13,
-          minZoom: 10
-        }).setView([0, 0], 13)
-
-        faces.forEach(function(face) {
-          var faceName = face.face
-          var facePath = path + '/' + faceName + '/'
-          layers[faceName + ' view'] = L.tileLayer.deepzoom(facePath, {
-            width: face.width,
-            height: face.height,
-            tolerance: 0.8
-          })
-        })
-
-        L.control.layers(layers).addTo(this.zoomInstance).setPosition('topright')
-        this.zoomInstance.addLayer(layers['top view'])
-      }
-    })
-
+    // TODO: move this code into an ObjectDetails class
     // Fetch tombstone data and template
     let template = document.getElementById('entry-template')
     let container = document.getElementById('entry-template-container')
@@ -252,7 +221,7 @@ class UI {
     container.innerHTML = ''
 
     // Remove the old map instance
-    this.zoomInstance.remove()
+    this.zoomInstance.removeMap()
   }
 }
 
