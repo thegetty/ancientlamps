@@ -36,36 +36,50 @@ class Map {
   }
 
   addData() {
+    let catalogueLabels = L.geoJson(this.geojsonData, {
+      filter: function(feature, layer) {
+        return feature.properties.catalogue.length > 0
+      },
+      pointToLayer: this.addLabels,
+      onEachFeature: this.addPopups
+    })
+
     let regionLabels = L.geoJson(this.geojsonData, {
       filter: function(feature, layer) {
         return feature.properties.feature_type === 'region' ||
-          feature.properties.feature_type === 'sea'
+          feature.properties.feature_type === 'sea' &&
+          feature.properties.catalogue.length < 1
       },
       pointToLayer: this.addLabels,
       onEachFeature: this.addPopups
     })
 
-    let countryLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) {
-        return feature.properties.feature_type === 'country'
-      },
-      pointToLayer: this.addLabels,
-      onEachFeature: this.addPopups
-    })
+    // let countryLabels = L.geoJson(this.geojsonData, {
+    //   filter: function(feature, layer) {
+    //     return feature.properties.feature_type === 'country' &&
+    //       feature.properties.catalogue.length < 1
+    //   },
+    //   pointToLayer: this.addLabels,
+    //   onEachFeature: this.addPopups
+    // })
 
     let siteLabels = L.geoJson(this.geojsonData, {
       filter: function(feature, layer) {
-        return feature.properties.feature_type === 'site'
+        return feature.properties.feature_type === 'site' &&
+          feature.properties.catalogue.length < 1
       },
       pointToLayer: this.addLabels
     })
 
     let overlays = {
+      'Catalogue Locations': catalogueLabels,
+      // 'Countries': countryLabels,
+      'Regions': regionLabels,
       'Points of Interest': siteLabels
     }
 
-    this.map.addLayer(regionLabels)
-    this.map.addLayer(countryLabels)
+    // this.map.addLayer(regionLabels)
+    this.map.addLayer(catalogueLabels)
 
     L.control.layers(null, overlays, {
       collapsed: false,
@@ -74,35 +88,51 @@ class Map {
   }
 
   addLabels(feature, latlng) {
+    let catClass = ''
     switch (feature.properties.feature_type) {
       case 'country':
+        if (feature.properties.catalogue.length > 0) { catClass = 'has-catalogue' }
         return L.marker(latlng, {
           icon: L.divIcon({
             html: `<p>${feature.properties.custom_name}</p>`,
-            className: 'map__label__country',
+            className: `map__label__country ${catClass}`,
             iconSize: 150
           })
         })
       case 'region':
       case 'sea':
+        if (feature.properties.catalogue.length > 0) { catClass = 'has-catalogue' }
         return L.marker(latlng, {
           icon: L.divIcon({
             html: `<p>${feature.properties.custom_name}</p>`,
-            className: 'map__label__region',
+            className: `map__label__region ${catClass}`,
             iconSize: 80
           })
         })
       default:
-        return L.circleMarker(latlng, {
-          radius: 5,
-          fillColor: '#333',
-          color: '#000',
-          weight: 0,
-          opacity: 1,
-          fillOpacity: 0.75
-        }).bindLabel(feature.properties.custom_name, {
-          className: 'map__label__site'
-        })
+        if (feature.properties.catalogue.length > 0) {
+          return L.circleMarker(latlng, {
+            radius: 5,
+            fillColor: '#328474',
+            color: '#fff',
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 1
+          }).bindLabel(feature.properties.custom_name, {
+            className: 'map__label__site has-catalogue'
+          })
+        } else {
+          return L.circleMarker(latlng, {
+            radius: 5,
+            fillColor: '#333',
+            color: '#000',
+            weight: 0,
+            opacity: 1,
+            fillOpacity: 0.75
+          }).bindLabel(feature.properties.custom_name, {
+            className: 'map__label__site'
+          })
+        }
     }
   }
 
