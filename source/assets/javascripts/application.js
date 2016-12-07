@@ -53,8 +53,6 @@ function prepareTransitions() {
 // -----------------------------------------------------------------------------
 // Only call other functions inside of this.
 $(document).ready(function() {
-  // ui()
   pageUI = new UI()
   prepareTransitions()
-  console.log(search)
 })

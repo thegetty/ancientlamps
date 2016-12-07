@@ -12,7 +12,7 @@ class UI {
     this.searchVisible = false
     this.deepZoomVisible = false
     this.zoomInstance = {}
-    this.searchInstance = null
+    this.searchInstance = new Search()
     this.setup()
   }
 
@@ -50,7 +50,10 @@ class UI {
     searchButton.onclick = () => this.showSearch()
     searchCloseButton.onclick = () => this.hideSearch()
 
-    searchInput.onkeyup = () => this.searchQuery()
+    // This is crazy but trying a more conventional setup fails with debounce
+    let debouncedSearch = _.debounce(this.searchQuery, 50)
+    let boundDebounce = debouncedSearch.bind(this)
+    searchInput.onkeydown = () => boundDebounce()
 
     // Only on catalogue pages
     if (detailCloseButton) {
@@ -242,7 +245,6 @@ class UI {
       let searchResults = document.querySelector('.search-results')
       navbar.classList.add('search-active')
       searchResults.classList.add('search-active')
-      if (!this.searchInstance) { this.searchInstance = new Search() }
       this.searchVisible = true
     }
   }
@@ -268,7 +270,9 @@ class UI {
     let results = this.searchInstance.search(query)
     results.forEach((result) => {
       let clone = document.importNode(template.content, true)
-      clone.querySelector('.search-results-list-item').innerHTML = result.ref
+      let resultData = this.searchInstance.contentList[result.ref]
+      clone.querySelector('.search-results-list-item-link').textContent = resultData.title
+      clone.querySelector('.search-results-list-item-link').href = resultData.url
       container.appendChild(clone)
     })
   }
