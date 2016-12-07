@@ -57,7 +57,7 @@ $search-text-color: $base-font-color;
   line-height: 2.5;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  padding-top: $navbar-height;
+  top: $navbar-height;
   z-index: $z-index-1;
 
   &.search-active {
@@ -66,11 +66,17 @@ $search-text-color: $base-font-color;
 }
 
 .search-results-inner {
-  padding: $small-spacing $base-spacing;
+  // padding: $small-spacing $base-spacing;
+}
+
+.search-results-list {
+  list-style-type: none;
+  margin: 0;
 }
 
 .search-results-list-item {
   @include padding(null $base-spacing);
   border-bottom: $base-border;
   font-size: 1.25em;
+  line-height: 3;
 }

@@ -29,7 +29,7 @@ module Middleman
             id: id,
             title: resource.data.title || resource.data.hierarchy.last.values.join,
             url: @app.config.baseurl + resource.url,
-            cat: resource.data.cat.to_s || nil,
+            cat: resource.data.cat || nil,
             content: Sanitize.fragment(resource.render(layout: false))
           }
 

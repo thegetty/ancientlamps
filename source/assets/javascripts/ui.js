@@ -262,17 +262,32 @@ class UI {
   searchQuery() {
     let searchInput = document.querySelector('.search-field')
     let query = searchInput.value
-    let container = document.querySelector('.search-results-inner')
+    let container = document.querySelector('.search-results-list')
     let template = document.getElementById('search-results-template')
 
     container.innerHTML = ''
-
     let results = this.searchInstance.search(query)
+
     results.forEach((result) => {
       let clone = document.importNode(template.content, true)
       let resultData = this.searchInstance.contentList[result.ref]
-      clone.querySelector('.search-results-list-item-link').textContent = resultData.title
-      clone.querySelector('.search-results-list-item-link').href = resultData.url
+      let resultTitle = clone.querySelector('.search-results-list-item-link')
+
+      if (Array.isArray(resultData.cat) && resultData.cat.length > 1) {
+        // Group of cat entries
+        let catNumbers = [resultData.cat[0], _.last(resultData.cat)].join('–')
+        resultTitle.textContent = `${catNumbers}: ${resultData.title}`
+        resultTitle.href = resultData.url
+      } else if (typeof resultData.cat === 'number') {
+        // Single cat entry
+        let catNumber = resultData.cat
+        resultTitle.textContent = `${catNumber}: ${resultData.title}`
+        resultTitle.href = resultData.url
+      } else {
+        // No cat entries
+        resultTitle.textContent = resultData.title
+        resultTitle.href = resultData.url
+      }
       container.appendChild(clone)
     })
   }
