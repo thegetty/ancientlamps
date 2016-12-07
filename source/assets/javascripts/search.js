@@ -3,8 +3,8 @@ import lunr from 'lunr'
 class Search {
   constructor() {
     this.index = this.buildIndex()
-    // this.dataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
-    this.dataURL = '/search.json'
+    this.dataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
+    // this.dataURL = '/search.json'
     this.getData()
     this.contentList = []
   }
