@@ -23,11 +23,13 @@ page "/*.txt", layout: false
 # ------------------------------------------------
 configure :development do
   activate :livereload
+  set :baseurl, ""
 end
 
 # Production Environment
 # ------------------------------------------------
 configure :build do
+  set :baseurl, "/ancient-lamps"
   activate :relative_assets
   ignore { |path| path =~ /assets\/javascripts\/(.*)\.js$/ && $1 != 'application' }
   # activate :minify_javascript
