@@ -22,37 +22,29 @@ module Middleman
 
       def build_page_index
         index = []
-        pages = @app.sitemap.resources.find_all { |p| p.data.sort_order }
-        pages.each_with_index do |resource, id|
-          next if resource.data["index"] == false
+        @app.data.catalogue.each_with_index do |resource, id|
           item = {
-            :id       => id,
-            :title    => resource.data.title.to_s,
-            :url      => resource.url,
-            :cat      => resource.data.cat.to_s,
-            :inv      => "",
-            :material => "",
-            :location => "",
-            :culture  => "",
-            :contents => Sanitize.fragment(resource.render(:layout => false))
+            id: id,
+            cat: resource.cat_no.to_s,
+            inv: resource.inv_no,
+            dor_id: resource.dor_id,
+            place: resource.place,
+            provenance: resource.provenance,
+            description: resource.description,
+            parallels: resource.parallels,
+            discussion: resource.discussion,
+            discus: resource.discus_iconography
           }
-          if resource.data.cat.is_a? Integer
-            entry = lookup_entry(resource.data.cat)
-            item[:title]    = entry.title
-            item[:inv]      = entry.inv
-            item[:material] = entry.material
-            item[:location] = entry.location
-            item[:culture]  = entry.culture
-          end
-
           index.push(item)
         end
+
         index
       end
 
-      def lookup_entry(cat)
-        @app.data.catalogue.find { |entry| entry.cat == cat }
-      end
+      # TODO: lookup table method here
+      # def lookup_entry(cat)
+        # @app.data.catalogue.find { |entry| entry.cat == cat }
+      # end
     end
   end
 end
