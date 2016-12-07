@@ -28,7 +28,7 @@ module Middleman
           item = {
             id: id,
             title: resource.data.title || resource.data.hierarchy.last.values.join,
-            url: resource.url,
+            url: @app.config.baseurl + resource.url,
             cat: resource.data.cat.to_s || nil,
             content: Sanitize.fragment(resource.render(layout: false))
           }
