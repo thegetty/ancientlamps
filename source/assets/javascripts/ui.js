@@ -27,6 +27,7 @@ class UI {
   setup() {
     // Objects of interest
     let menuButton = document.querySelector('#navbar-menu')
+    let menuCloseButton = document.querySelector('#nav-menu-close')
     let searchButton = document.querySelector('#navbar-search')
     let searchCloseButton = document.querySelector('#search-close')
     let searchInput = document.querySelector('.search-field')
@@ -39,28 +40,37 @@ class UI {
 
     // Run these functions once on setup
     this.citationDate()
-    expanderContent.forEach(function(expander) {
-      expander.classList.add('expander--hidden')
+    // This insanity is necessary because MobileSafari doesn't
+    // currently have a native implementation of NodeList.forEach
+    let arr = []
+    arr.forEach.call(expanderContent, expander => {
+      expander.classList.add('.expander--hidden')
     })
 
     // Event Listeners: All pages
     curtain.onclick = () => this.menuToggle()
     document.onkeyup = (e) => this.keyboardControls(e)
     menuButton.onclick = () => this.menuToggle()
+    menuCloseButton.onclick = () => this.menuToggle()
     searchButton.onclick = () => this.showSearch()
     searchCloseButton.onclick = () => this.hideSearch()
 
     // This is crazy but trying a more conventional setup fails with debounce
     let debouncedSearch = _.debounce(this.searchQuery, 50)
     let boundDebounce = debouncedSearch.bind(this)
-    searchInput.onkeydown = () => boundDebounce()
+
+    searchInput.onkeydown = () => {
+      boundDebounce()
+      // force repaint to fix webkit bugs
+      $('<style></style>').appendTo($(document.body)).remove()
+    }
 
     // Only on catalogue pages
     if (detailCloseButton) {
       detailCloseButton.onclick = () => this.hideDetails()
     }
     if (triggers.length > 0) {
-      triggers.forEach(trigger => {
+      arr.forEach.call(triggers, trigger => {
         trigger.onclick = (e) => this.expandToggle(e)
       })
     }
@@ -79,7 +89,9 @@ class UI {
   citationDate() {
     let today = moment().format('D MMM. YYYY')
     let currentDate = document.querySelectorAll('.cite-current-date')
-    currentDate.forEach(function(el) {
+
+    let arr = []
+    arr.forEach.call(currentDate, el => {
       el.innerHTML = ''
       el.textContent = today
     })
@@ -245,7 +257,10 @@ class UI {
       let searchResults = document.querySelector('.search-results')
       navbar.classList.add('search-active')
       searchResults.classList.add('search-active')
+      document.querySelector('body').classList.add('noscroll')
+      document.querySelector('html').classList.add('noscroll')
       this.searchVisible = true
+
     }
   }
 
@@ -255,6 +270,8 @@ class UI {
       let searchResults = document.querySelector('.search-results')
       navbar.classList.remove('search-active')
       searchResults.classList.remove('search-active')
+      document.querySelector('body').classList.remove('noscroll')
+      document.querySelector('html').classList.remove('noscroll')
       this.searchVisible = false
     }
   }
