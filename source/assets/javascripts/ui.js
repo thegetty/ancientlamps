@@ -4,6 +4,7 @@ import L from 'leaflet'
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
 import Map from './map.js'
 import ImageViewer from './imageviewer.js'
+import Search from './search.js'
 
 class UI {
   constructor() {
@@ -11,6 +12,7 @@ class UI {
     this.searchVisible = false
     this.deepZoomVisible = false
     this.zoomInstance = {}
+    this.searchInstance = null
     this.setup()
   }
 
@@ -25,6 +27,9 @@ class UI {
   setup() {
     // Objects of interest
     let menuButton = document.querySelector('#navbar-menu')
+    let searchButton = document.querySelector('#navbar-search')
+    let searchCloseButton = document.querySelector('#search-close')
+    let searchInput = document.querySelector('.search-field')
     let expanderContent = document.querySelectorAll('.expander-content')
     let triggers = document.querySelectorAll('.expander-trigger')
     let curtain = document.querySelector('.sliding-panel-fade-screen')
@@ -40,8 +45,12 @@ class UI {
 
     // Event Listeners: All pages
     curtain.onclick = () => this.menuToggle()
-    document.onkeydown = (e) => this.keyboardControls(e)
+    document.onkeyup = (e) => this.keyboardControls(e)
     menuButton.onclick = () => this.menuToggle()
+    searchButton.onclick = () => this.showSearch()
+    searchCloseButton.onclick = () => this.hideSearch()
+
+    searchInput.onkeyup = () => this.searchQuery()
 
     // Only on catalogue pages
     if (detailCloseButton) {
@@ -79,17 +88,20 @@ class UI {
     switch (e.key) {
       case 'Escape':
         if (this.menuVisible) { this.menuToggle() }
+        if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
         e.preventDefault()
         break
       case 'ArrowLeft':
         if (this.menuVisible) { this.menuToggle() }
+        if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
         if (prev) { prev.click() }
         e.preventDefault()
         break
       case 'ArrowRight':
         if (this.menuVisible) { this.menuToggle() }
+        if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
         if (next) { next.click() }
         e.preventDefault()
@@ -222,6 +234,43 @@ class UI {
 
     // Remove the old map instance
     this.zoomInstance.removeMap()
+  }
+
+  showSearch() {
+    if (!this.searchVisible) {
+      let navbar = document.querySelector('.navbar')
+      let searchResults = document.querySelector('.search-results')
+      navbar.classList.add('search-active')
+      searchResults.classList.add('search-active')
+      if (!this.searchInstance) { this.searchInstance = new Search() }
+      this.searchVisible = true
+    }
+  }
+
+  hideSearch() {
+    if (this.searchVisible) {
+      let navbar = document.querySelector('.navbar')
+      let searchResults = document.querySelector('.search-results')
+      navbar.classList.remove('search-active')
+      searchResults.classList.remove('search-active')
+      this.searchVisible = false
+    }
+  }
+
+  searchQuery() {
+    let searchInput = document.querySelector('.search-field')
+    let query = searchInput.value
+    let container = document.querySelector('.search-results-inner')
+    let template = document.getElementById('search-results-template')
+
+    container.innerHTML = ''
+
+    let results = this.searchInstance.search(query)
+    results.forEach((result) => {
+      let clone = document.importNode(template.content, true)
+      clone.querySelector('.search-results-list-item').innerHTML = result.ref
+      container.appendChild(clone)
+    })
   }
 }
 

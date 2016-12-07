@@ -1,7 +1,7 @@
-# require "extensions/search"
-require "extensions/catalogue/catalogue"
+require 'extensions/search'
+require 'extensions/catalogue/catalogue'
 
-# activate :search
+activate :search
 activate :catalogue
 
 # General settings
