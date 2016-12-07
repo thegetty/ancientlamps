@@ -3,27 +3,25 @@ import lunr from 'lunr'
 class Search {
   constructor() {
     this.index = this.buildIndex()
-    this.dataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
+    // this.dataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
+    this.dataURL = '/search.json'
     this.getData()
+    this.contentList = []
   }
 
   buildIndex() {
     return lunr(function() {
       this.field('cat', { boost: 1000 })
-      this.field('inv', { boost: 10 })
-      this.field('dor_id', { boost: 10 })
-      this.field('description')
-      this.field('place')
-      this.field('provenance')
-      this.field('discussion')
-      this.field('parallels')
-      this.field('discus_iconography')
+      this.field('url')
+      this.field('title', { boost: 100 })
+      this.field('content')
       this.ref('id')
     })
   }
 
   getData() {
     $.get(this.dataURL).done((data) => {
+      this.contentList = data
       data.forEach((item) => {
         this.index.add(item)
       })
