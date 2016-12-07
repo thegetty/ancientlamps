@@ -44,7 +44,7 @@ class UI {
     // currently have a native implementation of NodeList.forEach
     let arr = []
     arr.forEach.call(expanderContent, expander => {
-      expander.classList.add('.expander--hidden')
+      expander.classList.add('expander--hidden')
     })
 
     // Event Listeners: All pages
@@ -257,10 +257,7 @@ class UI {
       let searchResults = document.querySelector('.search-results')
       navbar.classList.add('search-active')
       searchResults.classList.add('search-active')
-      document.querySelector('body').classList.add('noscroll')
-      document.querySelector('html').classList.add('noscroll')
       this.searchVisible = true
-
     }
   }
 
@@ -270,8 +267,6 @@ class UI {
       let searchResults = document.querySelector('.search-results')
       navbar.classList.remove('search-active')
       searchResults.classList.remove('search-active')
-      document.querySelector('body').classList.remove('noscroll')
-      document.querySelector('html').classList.remove('noscroll')
       this.searchVisible = false
     }
   }
