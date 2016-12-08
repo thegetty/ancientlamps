@@ -38,8 +38,9 @@ class UI {
     let detailCloseButton = document.querySelector('.cat-entry__details__close')
     let mapEl = document.getElementById('map')
 
-    // Run these functions once on setup
+    // Run once on startup
     this.citationDate()
+    // Cross browser hacks -------------------------------------------------
     // This insanity is necessary because MobileSafari doesn't
     // currently have a native implementation of NodeList.forEach
     let arr = []
@@ -61,19 +62,20 @@ class UI {
 
     searchInput.onkeydown = () => {
       boundDebounce()
-      // force repaint to fix webkit bugs
-      $('<style></style>').appendTo($(document.body)).remove()
+      $('<style></style>').appendTo($(document.body)).remove() // force repaint for mobile safari
     }
 
-    // Only on catalogue pages
-    if (detailCloseButton) {
-      detailCloseButton.onclick = () => this.hideDetails()
-    }
     if (triggers.length > 0) {
       arr.forEach.call(triggers, trigger => {
         trigger.onclick = (e) => this.expandToggle(e)
       })
     }
+
+    // Event listeners: Catalogue Pages
+    if (detailCloseButton) {
+      detailCloseButton.onclick = () => this.hideDetails()
+    }
+
     if (thumbnails.length > 0) {
       thumbnails.forEach(thumbnail => {
         thumbnail.onclick = (e) => this.showDetails(e)
