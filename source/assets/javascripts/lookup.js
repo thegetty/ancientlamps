@@ -1,3 +1,4 @@
+export default
 [{
 	"cat_no": [1, 2, 3, 4],
 	"path": "1-4"

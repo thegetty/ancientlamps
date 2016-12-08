@@ -1,6 +1,10 @@
+/* eslint-disable no-multi-spaces  */
+
 import L from 'leaflet'
 import geojsonData from './geojson.js'
 import './vendor/leaflet.label-src.js'
+import lookupData from './lookup.js'
+import _ from 'lodash'
 
 class Map {
   constructor() {
@@ -36,14 +40,14 @@ class Map {
   }
 
   addData() {
+    // Labels with catalogue entries, regardless of type
     let catalogueLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) {
-        return feature.properties.catalogue.length > 0
-      },
+      filter: function(feature, layer) { return feature.properties.catalogue.length > 0 },
       pointToLayer: this.addLabels,
-      onEachFeature: this.addPopups
+      onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
 
+    // Region labels
     let regionLabels = L.geoJson(this.geojsonData, {
       filter: function(feature, layer) {
         return feature.properties.feature_type === 'region' ||
@@ -51,18 +55,10 @@ class Map {
           feature.properties.catalogue.length < 1
       },
       pointToLayer: this.addLabels,
-      onEachFeature: this.addPopups
+      onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
 
-    // let countryLabels = L.geoJson(this.geojsonData, {
-    //   filter: function(feature, layer) {
-    //     return feature.properties.feature_type === 'country' &&
-    //       feature.properties.catalogue.length < 1
-    //   },
-    //   pointToLayer: this.addLabels,
-    //   onEachFeature: this.addPopups
-    // })
-
+    // Sites / points of interest
     let siteLabels = L.geoJson(this.geojsonData, {
       filter: function(feature, layer) {
         return feature.properties.feature_type === 'site' &&
@@ -73,18 +69,17 @@ class Map {
 
     let overlays = {
       'Catalogue Locations': catalogueLabels,
-      // 'Countries': countryLabels,
       'Regions': regionLabels,
       'Points of Interest': siteLabels
     }
 
-    // this.map.addLayer(regionLabels)
-    this.map.addLayer(catalogueLabels)
-
-    L.control.layers(null, overlays, {
+    let options = {
       collapsed: false,
       position: 'topright'
-    }).addTo(this.map)
+    }
+
+    this.map.addLayer(catalogueLabels)
+    L.control.layers(null, overlays, options).addTo(this.map)
   }
 
   addLabels(feature, latlng) {
@@ -137,18 +132,14 @@ class Map {
   }
 
   addPopups(feature, layer) {
-    let props = feature.properties
-    let popupOptions = {
-      minWidth: 100,
-      maxHeight: 250,
-      className: 'map__popup'
-    }
-
-    let popupMsg = `<h4 class="feature-name">${props.custom_name}</h4>`
-    let pleiadesUrl = `http://pleiades.stoa.org/places/${props.pid}`
-    let tgnUrl = `http://vocab.getty.edu/page/tgn/${props.tgn}`
+    let props         = feature.properties
+    let popupOptions  = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
+    let popupMsg      = `<h4 class="feature-name">${props.custom_name}</h4>`
+    let pleiadesUrl   = `http://pleiades.stoa.org/places/${props.pid}`
+    let tgnUrl        = `http://vocab.getty.edu/page/tgn/${props.tgn}`
     let linkedEntries = props.catalogue
 
+    // Build the message string based on the values above.
     if (props.tgn.length > 0) {
       popupMsg += `<a target='blank' href=${tgnUrl}>Getty TGN ID: ${props.tgn}</a><br />`
     }
@@ -157,11 +148,28 @@ class Map {
     }
     if (linkedEntries.length > 0) {
       popupMsg += '<strong>Catalogue Entries:</strong><ul>'
-      linkedEntries.forEach(function(entry) { popupMsg += `<li>Cat. ${entry}</li>` })
+      linkedEntries.forEach((entry) => {
+        let link = this.linkLookup(entry)
+        if (link && link.hasOwnProperty('path')) {
+          popupMsg += `<li><a href="../catalogue/${link.path}">Cat. ${entry}</a></li>`
+        } else {
+          popupMsg += `<li>Cat. ${entry}</li>`
+        }
+      })
       popupMsg += '</ul>'
     }
 
     layer.bindPopup(popupMsg, popupOptions)
+  }
+
+  linkLookup(catNumber) {
+    return _.find(lookupData, function(i) {
+      if (typeof i.cat_no === 'number' || typeof i.cat_no === 'string') {
+        return i.cat_no === catNumber
+      } else {
+        return _.includes(i.cat_no, catNumber)
+      }
+    })
   }
 }
 
