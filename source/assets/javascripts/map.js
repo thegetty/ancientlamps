@@ -12,6 +12,7 @@ class Map {
     this.el = 'map'
     this.defaultZoom = 6
     this.maxZoom = 12
+    this.minZoom = 5
     this.ctr = [40.51379915504413, 17.193603515625]
     this.tiles = 'https://api.mapbox.com/v4/isawnyu.map-knmctlkh/{z}/{x}/{y}.png?access_token='
     this.token = 'pk.eyJ1IjoiZWdhcmRuZXIiLCJhIjoiN2IyMmRlMTc0YTAwMzRjYWVhMzI5ZGY1YmViMGVkZTEifQ._576KIFjJ0S_dRHcdM2BmQ'
@@ -28,7 +29,8 @@ class Map {
   setup() {
     this.map = L.map(this.el, {
       // options
-      maxzoom: this.maxZoom
+      maxZoom: this.maxZoom,
+      minZoom: this.minZoom
     }).setView(this.ctr, this.defaultZoom)
   }
 
