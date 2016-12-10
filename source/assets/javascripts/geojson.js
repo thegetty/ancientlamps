@@ -22,7 +22,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Saint-Germain-en-Laye",
-      "custom_name": "Saint-Germain-en-Laye",
+      "custom_name": "Saint Germain-en-Laye",
       "feature_type": "site",
       "pid": "",
       "tgn": "7018796",
