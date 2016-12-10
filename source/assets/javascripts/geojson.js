@@ -156,7 +156,7 @@ const geojsonData = {
       "custom_name": "North Italy",
       "feature_type": "region",
       "pid": "",
-      "tgn": "",
+      "tgn": "4005363",
       "catalogue": [584, 590, 442, 444, 450],
       "description": ""
     },
@@ -190,7 +190,7 @@ const geojsonData = {
       "custom_name": "South Italy",
       "feature_type": "region",
       "pid": "",
-      "tgn": "",
+      "tgn": "4005365",
       "catalogue": [12, 15, 24, 35, 44, 47, 55, 68, 80, 92, 96, 105, 148, 151, 152,
                     164, 168, 171, 186, 193, 199, 209, 210, 213, 219, 221, 223, 245, 247, 251,
                     267, 331, 346, 406, 408, 409, 424, 429, 431, 437, 457, 518, 520, 521, 522,
@@ -767,7 +767,7 @@ const geojsonData = {
       "basename": "Lipari, Isola",
       "custom_name": "Lipari",
       "feature_type": "region",
-      "pid": "",
+      "pid": "462283",
       "tgn": "1007865",
       "catalogue": "",
       "description": ""
@@ -3289,7 +3289,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Ulpia Traiana Sarmizegetusa",
-      "custom_name": "Sarmigetusa",
+      "custom_name": "Sarmizegetusa",
       "feature_type": "site",
       "pid": "207527",
       "tgn": "7005780",
@@ -3630,7 +3630,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Tossal de Manises",
-      "custom_name": "",
+      "custom_name": "Tossal de Manises",
       "feature_type": "site",
       "pid": "265954",
       "tgn": "8697607",
@@ -3659,6 +3659,24 @@ const geojsonData = {
       "coordinates": [
         6.64376,
         49.756227
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Tripolitania",
+      "custom_name": "Tripolitania",
+      "feature_type": "region",
+      "pid": "",
+      "tgn": "7030342",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0000,
+        15.0000
       ]
     }
   }, {
