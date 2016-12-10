@@ -26,101 +26,74 @@ class UI {
 
   setup() {
     // Objects of interest
-    let menuButton = document.querySelector('#navbar-menu')
-    let menuCloseButton = document.querySelector('#nav-menu-close')
-    let searchButton = document.querySelector('#navbar-search')
-    let searchCloseButton = document.querySelector('#search-close')
-    let searchInput = document.querySelector('.search-field')
-    let expanderContent = document.querySelectorAll('.expander-content')
-    let triggers = document.querySelectorAll('.expander-trigger')
-    let curtain = document.querySelector('.sliding-panel-fade-screen')
-    let thumbnails = document.querySelectorAll('.cat-entry__grid__item')
-    let detailCloseButton = document.querySelector('.cat-entry__details__close')
-    let mapEl = document.getElementById('map')
+    let $menuButton = $('#navbar-menu')
+    let $menuCloseButton = $('#nav-menu-close')
+    let $searchButton = $('#navbar-search')
+    let $searchCloseButton = $('#search-close')
+    let $searchInput = $('.search-field')
+    let $expanderContent = $('.expander-content')
+    let $triggers = $('.expander-trigger')
+    let $curtain = $('.sliding-panel-fade-screen')
+    let $thumbnails = $('.cat-entry__grid__item')
+    let $detailCloseButton = $('.cat-entry__details__close')
+    let $mapEl = $('#map')
 
     // Run once on startup
     this.citationDate()
-    // Cross browser hacks -------------------------------------------------
-    // This insanity is necessary because MobileSafari doesn't
-    // currently have a native implementation of NodeList.forEach
-    let arr = []
-    arr.forEach.call(expanderContent, expander => {
-      expander.classList.add('expander--hidden')
-    })
+    $expanderContent.addClass("expander--hidden")
 
     // Event Listeners: All pages
-    curtain.onclick = () => this.menuToggle()
-    document.onkeyup = (e) => this.keyboardControls(e)
-    menuButton.onclick = () => this.menuToggle()
-    menuCloseButton.onclick = () => this.menuToggle()
-    searchButton.onclick = () => this.showSearch()
-    searchCloseButton.onclick = () => this.hideSearch()
+    $curtain.click(() => { this.menuToggle() })
+    $menuButton.click(() => { this.menuToggle() })
+    $menuCloseButton.click(() => { this.menuToggle() })
+    $searchButton.click(() => { this.showSearch() })
+    $searchCloseButton.click(() => { this.hideSearch() })
+    $triggers.click( e => this.expandToggle(e))
+    $(document).keydown((e) => { this.keyboardControls(e) })
 
     // This is crazy but trying a more conventional setup fails with debounce
     let debouncedSearch = _.debounce(this.searchQuery, 50)
     let boundDebounce = debouncedSearch.bind(this)
 
-    searchInput.onkeydown = () => {
+    $searchInput.keydown(() => {
       boundDebounce()
-      $('<style></style>').appendTo($(document.body)).remove() // force repaint for mobile safari
-    }
+    })
 
-    if (triggers.length > 0) {
-      arr.forEach.call(triggers, trigger => {
-        trigger.onclick = (e) => this.expandToggle(e)
-      })
-    }
-
-    // Event listeners: Catalogue Pages
-    if (detailCloseButton) {
-      detailCloseButton.onclick = () => this.hideDetails()
-    }
-
-    if (thumbnails.length > 0) {
-      thumbnails.forEach(thumbnail => {
-        thumbnail.onclick = (e) => this.showDetails(e)
-      })
-    }
-
-    // only on map page
-    if (mapEl) {
-      new Map()
-    }
+    // Page-specific elements
+    if ($detailCloseButton.length) { $detailCloseButton.click(() => { this.hideDetails() }) }
+    if ($thumbnails.length) { $thumbnails.click( e => this.showDetails(e)) }
+    if ($mapEl.length) { new Map() }
   }
 
   citationDate() {
     let today = moment().format('D MMM. YYYY')
-    let currentDate = document.querySelectorAll('.cite-current-date')
-
-    let arr = []
-    arr.forEach.call(currentDate, el => {
-      el.innerHTML = ''
-      el.textContent = today
-    })
+    let $currentDate = $('.cite-current-date')
+    $currentDate.empty();
+    $currentDate.text(today);
   }
 
   keyboardControls(e) {
-    let prev = document.querySelector('#prev-link')
-    let next = document.querySelector('#next-link')
-    switch (e.key) {
-      case 'Escape':
+    let $prev = $('#prev-link')
+    let $next = $('#next-link')
+    switch (e.keyCode) {
+      case 27: // Escape key
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
         e.preventDefault()
         break
-      case 'ArrowLeft':
+      case 37: // Left Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
-        if (prev) { prev.click() }
+        if ($prev.length) { $prev.click() }
         e.preventDefault()
         break
-      case 'ArrowRight':
+      case 39: // Right Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
-        if (next) { next.click() }
+        if ($next.length) { $next.click() }
         e.preventDefault()
         break
     }
@@ -227,7 +200,6 @@ class UI {
         clone.querySelector('.section.condition h2').textContent = 'Condition'
         clone.getElementById('entry-condition').innerHTML = catData.condition
       }
-
       // Append the new template
       container.appendChild(clone)
     })
@@ -237,7 +209,7 @@ class UI {
     let detailImage = document.querySelector('.cat-entry__details__image')
     let detailData = document.querySelector('.cat-entry__details__data')
     let detailCloseButton = document.querySelector('.cat-entry__details__close')
-    let container = document.getElementById('entry-template-container')
+    let $container = $('#entry-template-container')
 
     // toggle classes for display
     detailImage.classList.remove('is-visible')
@@ -247,7 +219,7 @@ class UI {
     this.deepZoomVisible = false
 
     // Remove the old template
-    container.innerHTML = ''
+    $container.empty()
 
     // Remove the old map instance
     this.zoomInstance.removeMap()
