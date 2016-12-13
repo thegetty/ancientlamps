@@ -37,7 +37,7 @@ module Book
 
     def build_epub_dir
       clean_directory(working_dir)
-      oebps_subdirs = %w(assets assets/images assets/stylesheets assets/fonts)
+      oebps_subdirs = %w(assets assets/images assets/images/thumbs assets/stylesheets assets/fonts)
       Dir.chdir(working_dir) do
         FileUtils.rm_rf('.')
         ['META-INF', 'OEBPS'].each { |dir| clean_directory(dir) }
@@ -48,10 +48,11 @@ module Book
     end
 
     def copy_images(sitemap)
-      images = sitemap.resources.select { |r| r.path.match('assets/images/*') }
+      # TODO: Make this work for all types of images
+      images = sitemap.resources.select { |r| r.path.match('assets/images/thumbs/*') }
       images.reject! { |r| r.path.to_s == 'assets/images/.keep' }
 
-      Dir.chdir(working_dir + '/OEBPS/assets/images') do
+      Dir.chdir(working_dir + '/OEBPS/assets/images/thumbs/') do
         images.each_with_index do |image, index|
           add_image_to_manifest(image, index)
           filename = image.file_descriptor.relative_path.basename

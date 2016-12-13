@@ -17,11 +17,7 @@ module Book
     end
 
     def catalogue_entry_title
-      if data.cat.respond_to? :each
-        "Cats. #{data.cat.first}-#{data.cat.last} | #{data.book.title.short}"
-      else
-        "Cat. #{data.cat} | #{data.book.title.short}"
-      end
+      data.hierarchy.last.values.join
     end
 
     def author
@@ -60,7 +56,11 @@ module Book
     end
 
     def format_for_epub
-      doc = Nokogiri::XML((render :layout => 'epub_chapter'))
+      if data.cat
+        doc = Nokogiri::XML((render :layout => 'epub_cat_entry'))
+      else
+        doc = Nokogiri::XML((render :layout => 'epub_chapter'))
+      end
 
       # change absolute image src locations to relative
       images = doc.css('img')

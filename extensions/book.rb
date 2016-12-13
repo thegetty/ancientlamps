@@ -4,8 +4,8 @@ require_relative 'book/helpers.rb'
 require_relative 'book/book_chapter.rb'
 require_relative 'book/epub.rb'
 
-require_relative 'catalogue/catalogue_resource'
-require_relative 'catalogue/plates_resource'
+require_relative 'catalogue_resource'
+require_relative 'plates_resource'
 
 module Book
   class BookExtension < Middleman::Extension
