@@ -46,6 +46,9 @@ module Book
     end
 
     def manipulate_resource_list(resources)
+      resources.push Middleman::Sitemap::CatalogueResource.new(@app.sitemap, @options[:catalogue_path])
+      resources.push Middleman::Sitemap::PlatesResource.new(@app.sitemap, @options[:plates_path])
+
       generate_chapters!(resources)
       resources
     end
