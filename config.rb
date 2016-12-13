@@ -1,8 +1,10 @@
 require 'extensions/search'
-require 'extensions/catalogue/catalogue'
+# require 'extensions/catalogue/catalogue'
+require 'extensions/book'
 
 activate :search
-activate :catalogue
+activate :book
+activate :pry
 
 # General settings
 # ------------------------------------------------

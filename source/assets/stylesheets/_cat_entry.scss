@@ -195,7 +195,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     &.is-visible {
       @include transform(translateY(0));
       -webkit-overflow-scrolling: touch;
-      overflow-y: scroll;
+      overflow-y: auto;
     }
   }
 
