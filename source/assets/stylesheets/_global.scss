@@ -176,7 +176,7 @@ html { min-height: 100vh; }
 
 .noscroll {
   overflow: hidden;
-  position: fixed;
+  // position: fixed;
 }
 
 
@@ -290,4 +290,3 @@ figcaption { margin-top: $small-spacing * 0.5; }
 
   p { margin: 0.25rem; }
 }
-
