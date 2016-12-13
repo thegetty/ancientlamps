@@ -1,53 +1,46 @@
 # frozen_string_literal: true
+
 module CatalogueHelpers
-  def baseurl
-    if environment? :development
-      ''
-    elsif environment? :production
-      '/publications/romanmosaics'
+  def byline
+    authors = data.book.creators
+    authors.map { |a| "#{a.first_name} #{a.last_name}" }.join(' and ')
+  end
+
+  def page_title_default
+  end
+
+  def page_title_section
+    "#{title.main} | #{byline}"
+  end
+
+  def page_title_catalogue
+    page = current_page.data
+    if page.cat.respond_to? :each
+      "Cats. #{page.cat.first}-#{page.cat.last} | #{title.short}"
+    else
+      "Cat. #{page.cat} | #{title.short}"
+    end
+  end
+
+  def page_title
+    title = data.book.title
+    page = current_page.data
+
+    if page.cat
+      catalogue_page_title
+    elsif page.sort_order == 0
+      "#{title.main} | #{byline}"
+    else
+      "#{page.title} | #{title.short}"
     end
   end
 
   def og_image_path
-    "http://www.getty.edu#{baseurl}/assets/images/og_cover.jpg"
-  end
-
-  def plates_lookup(cat_num)
-    plates = data.plates
-    entry = plates.find { |i| i[:cat] == cat_num }
-    return false if entry.nil?
-
-    {
-      :cat => entry[:cat],
-      :images => entry[:images].map(&:to_json)
-    }
+    "http://www.getty.edu#{config.baseurl}/assets/images/og_cover.jpg"
   end
 
   def catalogue_lookup(cat_num)
     data.catalogue.find { |c| c[:cat_no] == cat_num }
-  end
-
-  def author_name
-    author = data.book.creators.first
-    "#{data.book.creators[0].first_name} #{data.book.creators[0].last_name} and #{data.book.creators[1].first_name} #{data.book.creators[1].last_name}"
-  end
-
-  def page_title
-    title   = data.book.title
-    authors = data.book.creators
-    page    = current_page.data
-
-    if page.cat
-      if page.cat.is_a? Array
-        "Cats. #{page.cat.first}-#{page.cat.last} | #{title.short}"
-      else
-        "Cat. #{page.cat} | #{title.short}"
-      end
-    elsif page.sort_order == 0
-      "#{title.main} | #{authors.first.first_name} #{authors.first.last_name}"
-    else
-      "#{page.title} | #{title.short}"
-    end
   end
 
   # --------------------------------------------------------------------------
@@ -58,7 +51,7 @@ module CatalogueHelpers
     path = current_path.gsub('index.html', '')
     %(
       In <em>#{book.title.main}</em>,
-      by #{author_name}.
+      by #{byline}.
       #{book.publisher_location}:
       #{book.publisher},
       #{book.pub_date.year}.
@@ -70,7 +63,7 @@ module CatalogueHelpers
     book = data.book
     path = current_path.gsub('index.html', '')
     %(
-      <em>#{book.title.main}</em>. By #{author_name}.
+      <em>#{book.title.main}</em>. By #{byline}.
       #{book.publisher_location}:
       #{book.publisher_short}, #{book.pub_date.year}.
       <span class="cite-current-date">DD Mon. YYYY</span>
@@ -107,48 +100,6 @@ module CatalogueHelpers
 
   def permalink
     data.book.editions.find { |edition| edition.name == 'Online' }.link
-  end
-
-  # --------------------------------------------------------------------------
-  # Data attribute methods
-  # The following helper methods provide data which can be stashed in data-
-  # attributes of elements in templates. Use them to store information from
-  # YAML data files for future consumption by front-end JS.
-
-  # Define Term helper method
-  # Expects a word (string)
-  # looks for term in the definitions.yml file
-  # Returns definition_short if that exists, or else returns full definition
-  # Also returns plural form if that exists
-  def define_term(word)
-    term = data.definitions.find { |entry| entry.id == word }
-    if term
-      # term is singular
-      definition = term.definition_short || term.definition
-    else
-      term = data.definitions.find { |entry| entry.plural == word }
-      unless term.nil?
-        definition = "Plural of the word <em>#{term.id}</em>: "
-        definition += term.definition_short || term.definition
-      end
-    end
-
-    definition unless definition.nil?
-  end
-
-  # Location helper method
-  # Expects a location ID (string)
-  # Looks up the location in locations.yml and returns its id
-  # In the future this method could do more if more data exists in this file
-  def location(loc_id)
-    data.locations.find { |loc| loc.id == loc_id }.id
-  end
-
-  # Pic helper method
-  # Expects a pic id (string)
-  # Returns a serialized json object
-  def pic(pic_id)
-    data.pics.find { |pic| pic.id == pic_id }.to_json
   end
 
   # --------------------------------------------------------------------------
