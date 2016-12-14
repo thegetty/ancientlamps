@@ -1,5 +1,4 @@
 require 'extensions/search'
-# require 'extensions/catalogue/catalogue'
 require 'extensions/book'
 
 activate :search
