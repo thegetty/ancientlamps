@@ -1,6 +1,6 @@
 import L from 'leaflet'
 import $ from 'jquery'
-import _ from 'lodash'
+import _ from 'lodash/core'
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
 
 class ImageViewer {

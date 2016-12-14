@@ -4,7 +4,8 @@ import L from 'leaflet'
 import geojsonData from './geojson.js'
 import './vendor/leaflet.label-src.js'
 import lookupData from './lookup.js'
-import _ from 'lodash'
+import _ from 'lodash/core'
+import includes from 'lodash.includes'
 
 class Map {
   constructor() {
@@ -169,7 +170,7 @@ class Map {
       if (typeof i.cat_no === 'number' || typeof i.cat_no === 'string') {
         return i.cat_no === catNumber
       } else {
-        return _.includes(i.cat_no, catNumber)
+        return includes(i.cat_no, catNumber)
       }
     })
   }

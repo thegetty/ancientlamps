@@ -1,4 +1,5 @@
-import _ from 'lodash'
+import _ from 'lodash/core'
+import debounce from 'lodash.debounce'
 import moment from 'moment'
 import L from 'leaflet'
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
@@ -40,7 +41,7 @@ class UI {
 
     // Run once on startup
     this.citationDate()
-    $expanderContent.addClass("expander--hidden")
+    $expanderContent.addClass('expander--hidden')
 
     // Event Listeners: All pages
     $curtain.click(() => { this.menuToggle() })
@@ -48,11 +49,11 @@ class UI {
     $menuCloseButton.click(() => { this.menuToggle() })
     $searchButton.click(() => { this.showSearch() })
     $searchCloseButton.click(() => { this.hideSearch() })
-    $triggers.click( e => this.expandToggle(e))
+    $triggers.click(e => this.expandToggle(e))
     $(document).keydown((e) => { this.keyboardControls(e) })
 
     // This is crazy but trying a more conventional setup fails with debounce
-    let debouncedSearch = _.debounce(this.searchQuery, 50)
+    let debouncedSearch = debounce(this.searchQuery, 50)
     let boundDebounce = debouncedSearch.bind(this)
 
     $searchInput.keydown(() => {
