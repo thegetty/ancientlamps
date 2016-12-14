@@ -12,7 +12,7 @@ class UI {
     this.searchVisible = false
     this.deepZoomVisible = false
     this.zoomInstance = {}
-    this.searchInstance = new Search()
+    this.searchInstance = window.search || new Search()
     this.setup()
   }
 
