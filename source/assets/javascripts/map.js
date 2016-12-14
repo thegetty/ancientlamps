@@ -21,10 +21,12 @@ class Map {
                  | Tiles and Data © 2013 <a href="http://www.awmc.unc.edu" target="_blank">AWMC</a>
                  <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US" target="_blank">CC-BY-NC 3.0</a>`
     this.geojsonData = geojsonData
-
     this.setup()
     this.addTiles()
     this.addData()
+
+    // Handle location hash, if any
+    if (window.location.hash.slice(1, 4) === 'loc') { this.zoomToHash() }
   }
 
   setup() {
@@ -135,34 +137,48 @@ class Map {
   }
 
   addPopups(feature, layer) {
-    let props         = feature.properties
-    let popupOptions  = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
-    let popupMsg      = `<h4 class="feature-name">${props.custom_name}</h4>`
-    let pleiadesUrl   = `http://pleiades.stoa.org/places/${props.pid}`
-    let tgnUrl        = `http://vocab.getty.edu/page/tgn/${props.tgn}`
+    let options = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
+    let message = this.buildPopupMessage(feature)
+
+    layer.bindPopup(message, options)
+  }
+
+  addOpenPopup(feature, layer) {
+    let latlng = layer.getLatLng()
+    let options = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
+    let message = this.buildPopupMessage(feature)
+
+    L.popup().setLatLng(latlng).setContent(message).openOn(this.map)
+    layer.bindPopup(message, options)
+  }
+
+  buildPopupMessage(feature) {
+    let props = feature.properties
+    let message = `<h4 class="feature-name">${props.custom_name}</h4>`
+    let pleiadesUrl = `http://pleiades.stoa.org/places/${props.pid}`
+    let tgnUrl = `http://vocab.getty.edu/page/tgn/${props.tgn}`
     let linkedEntries = props.catalogue
 
-    // Build the message string based on the values above.
-    if (props.tgn.length > 0) {
-      popupMsg += `<a target='blank' href=${tgnUrl}>Getty TGN ID: ${props.tgn}</a><br />`
-    }
-    if (props.pid.length > 0) {
-      popupMsg += `<a target='blank' href=${pleiadesUrl}>Pleiades ID: ${props.pid}</a><br />`
-    }
+    // Build out the message HTML string
+
+    if (props.tgn.length > 0) { message += `<a target='blank' href=${tgnUrl}>Getty TGN ID: ${props.tgn}</a><br />` }
+    if (props.pid.length > 0) { message += `<a target='blank' href=${pleiadesUrl}>Pleiades ID: ${props.pid}</a><br />` }
+
     if (linkedEntries.length > 0) {
-      popupMsg += '<strong>Catalogue Entries:</strong><ul>'
+      message += '<strong>Catalogue Entries:</strong><ul>'
       linkedEntries.forEach((entry) => {
         let link = this.linkLookup(entry)
+
         if (link && link.hasOwnProperty('path')) {
-          popupMsg += `<li><a href="../catalogue/${link.path}">Cat. ${entry}</a></li>`
+          message += `<li><a href="../catalogue/${link.path}">Cat. ${entry}</a></li>`
         } else {
-          popupMsg += `<li>Cat. ${entry}</li>`
+          message += `<li>Cat. ${entry}</li>`
         }
       })
-      popupMsg += '</ul>'
+      message += '</ul>'
     }
 
-    layer.bindPopup(popupMsg, popupOptions)
+    return message
   }
 
   linkLookup(catNumber) {
@@ -173,6 +189,24 @@ class Map {
         return includes(i.cat_no, catNumber)
       }
     })
+  }
+
+  zoomToHash() {
+    if (!window.location.hash) {
+      return false
+    } else {
+      let loc = _.find(this.geojsonData.features, function(feature) {
+        return feature.properties.pid === window.location.hash.slice(5)
+      })
+      let coords = [loc.geometry.coordinates[1], loc.geometry.coordinates[0]]
+      L.geoJson(loc, {
+        pointToLayer: this.addLabels,
+        onEachFeature: (feature, layer) => { this.addOpenPopup(feature, layer) }
+      }).addTo(this.map)
+
+      $('html, body').animate({ scrollTop: 0 })
+      this.map.setView(coords)
+    }
   }
 }
 
