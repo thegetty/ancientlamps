@@ -133,8 +133,8 @@ class UI {
   //
   showDetails(e) {
     let cat = this.catNumCheck(e.target.dataset.cat)
-    // let dataURL = 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
-    let dataURL = '/catalogue.json'
+    let dataURL = 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
+    // let dataURL = '/catalogue.json'
     let detailImage = document.querySelector('.cat-entry__details__image')
     let detailData = document.querySelector('.cat-entry__details__data')
     let detailCloseButton = document.querySelector('.cat-entry__details__close')
