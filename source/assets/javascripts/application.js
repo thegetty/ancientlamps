@@ -15,8 +15,10 @@ import UI from './ui.js'
 import './vendor/velocity.min.js'
 import './vendor/velocity.ui.min.js'
 import './vendor/jquery.smoothState.min.js'
+import Search from './search.js'
 
-var pageUI
+let pageUI = {}
+window.search = {}
 
 // PrepareTransitions
 // -----------------------------------------------------------------------------
@@ -50,6 +52,7 @@ function prepareTransitions() {
 // -----------------------------------------------------------------------------
 // Only call other functions inside of this.
 $(document).ready(function() {
+  window.search = new Search()
   pageUI = new UI()
   prepareTransitions()
 })
