@@ -20,7 +20,7 @@ class Search {
   }
 
   getData() {
-    $.get(this.dataURL).done((data) => {
+    $.get(this.dataURL, {cache: true}).done((data) => {
       this.contentList = data
       data.forEach((item) => {
         this.index.add(item)
