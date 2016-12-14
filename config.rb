@@ -34,10 +34,9 @@ configure :build do
   set :baseurl, "/ancient-lamps"
   activate :relative_assets
   ignore { |path| path =~ /assets\/javascripts\/(.*)\.js$/ && $1 != 'application' }
-  # activate :minify_javascript
 
-  # activate :minify_html
-  # activate :minify_css
+  activate :minify_html
+  activate :minify_css
   # activate :minify_javascript
   # activate :gzip
 end
