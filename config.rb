@@ -40,6 +40,10 @@ configure :build do
   # activate :gzip
 end
 
+configure :pdf do
+  page "*", directory_index: false
+end
+
 # Deploy settings
 # ------------------------------------------------
 activate :deploy do |deploy|

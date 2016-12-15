@@ -112,6 +112,15 @@ module Book
       data.book.editions.find { |edition| edition.name == 'Online' }.link
     end
 
+    # def catalogue_link(text, url)
+    #   if environment? :print
+    #     "<a href='../../build/#{url}'>#{text}</a>"
+    #   elsif environment? :epub
+    #   else
+    #     link_to text, url
+    #   end
+    # end
+
     # --------------------------------------------------------------------------
     # Collection link method
     # Expects a cat number (int)
