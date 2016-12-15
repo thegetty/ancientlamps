@@ -1,0 +1,198 @@
+@import 'vendor/normalize';
+
+@import 'vendor/bourbon/bourbon';
+@import 'base/grid-settings';
+@import 'vendor/neat/neat';
+@import 'fonts';
+@import 'vendor/ionicons/ionicons';
+@import 'base/base';
+
+// scss-lint:disable PropertySpelling, QualifyingElement, SingleLinePerSelector, EmptyRule
+
+// Variables
+// -----------------------------------------------------------------------------
+$page-width: 8.5in;
+$page-height: 11in;
+
+$bleed: 0.125in;
+$bleed-height: 11.25in;
+$bleed-width: 8.75in;
+
+$bottom-margin: 1in;
+$top-margin: 0.875in;
+$inner-margin: 1in;
+$outer-margin: 0.75in;
+
+$inner-width: $page-width - ($inner-margin + $outer-margin);
+$inner-height: $page-height - ($top-margin + $bottom-margin);
+
+$print-base-font-size: 8pt;
+$print-base-spacing: 0.125in;
+$print-base-line-height: 1.25;
+$print-paragraph-indent: 0.25in;
+
+$print-background-color: #fff;
+$print-text-color: #000;
+
+$page-number-size: 7.5pt;
+$footnote-size: 7.5pt;
+
+// Overrides
+$base-font-size: $print-base-font-size;
+$modular-scale-ratio: $minor-second;
+
+// $medium-gray: transparentize($print-text-color, 0.5);
+// $light-gray: transparentize($print-text-color, 0.5);
+
+
+// Default page setup
+// -----------------------------------------------------------------------------
+// @prince-pdf { prince-pdf-page-layout: two-column-right; }
+
+@page {
+  size: $page-width $page-height;
+  bleed: $bleed;
+  prince-trim: 0.25in;
+  marks: crop;
+}
+
+@page:left {
+  margin-bottom: $bottom-margin;
+  margin-left: $outer-margin;
+  margin-right: $inner-margin;
+  margin-top: $top-margin;
+
+  @bottom-left {
+    //content: counter(page) "\2003" string(doctitle);
+    content: counter(page);
+    font-family: $base-font-family;
+    font-size: $page-number-size;
+  }
+}
+
+@page:right {
+  margin-bottom: $bottom-margin;
+  margin-left: $inner-margin;
+  margin-right: $outer-margin;
+  margin-top: $top-margin;
+
+  @bottom-right {
+    content: counter(page);
+    font-family: $base-font-family;
+    font-size: $page-number-size;
+  }
+}
+
+@page bleed {
+  margin: 0;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page frontmatter:left {
+  margin-bottom: $bottom-margin;
+  margin-left: $outer-margin;
+  margin-right: $inner-margin;
+  margin-top: $top-margin;
+  @bottom-left { content: counter(page, lower-roman); }
+}
+
+@page frontmatter:right {
+  margin-bottom: $bottom-margin;
+  margin-left: $inner-margin;
+  margin-right: $outer-margin;
+  margin-top: $top-margin;
+  @bottom-right { content: counter(page, lower-roman); }
+}
+
+@page no-footer:left {
+  margin-bottom: $bottom-margin;
+  margin-left: $outer-margin;
+  margin-right: $inner-margin;
+  margin-top: $top-margin;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page no-footer:right {
+  margin-bottom: $bottom-margin;
+  margin-left: $inner-margin;
+  margin-right: $outer-margin;
+  margin-top: $top-margin;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+// Print Styles
+// -----------------------------------------------------------------------------
+%print-page-content {
+  color: $print-text-color;
+  column-count: 2;
+  column-gap: ($print-base-spacing * 2);
+  font-size: $print-base-font-size;
+
+  a[href] {
+    color: $print-text-color;
+    prince-link: none;
+    text-decoration: none;
+  }
+}
+
+// General content styles
+.page,
+.cat-entry,
+.cat-intro {
+  &__header {
+    &__title {
+      font-size: 18pt;
+      margin-bottom: $print-base-spacing * 2;
+    }
+  }
+
+  &__breadcrumbs-bar {
+    color: $medium-gray;
+    font-size: $print-base-font-size;
+    margin-bottom: $print-base-spacing;
+  }
+
+  &__content { @extend %print-page-content; }
+  &__grid { display: none; }
+  &__image { display: none; }
+  &__title { font-size: 18pt; }
+
+  &__details__print {
+    &__text {
+      .section {
+        font-size: 8pt;
+        margin-bottom: $print-base-spacing / 2;
+      }
+
+      .section.cat-number {
+        border-top: solid 0.25pt $print-text-color;
+        margin-top: $print-base-spacing;
+
+        h2.cat-number {
+          font-size: 12pt;
+          margin-top: 3pt;
+        }
+      }
+    }
+
+    &__image {
+      margin-top: $print-base-spacing;
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+// Section-specific styles
+.classification,
+.contents-page {
+  column-span: all;
+}
+
+.classification {
+  * { padding: 0; }
+}
+
