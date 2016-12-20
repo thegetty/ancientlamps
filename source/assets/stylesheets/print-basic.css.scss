@@ -251,10 +251,23 @@ h4.index-indent {
   ol ol {
     padding-left: $print-base-spacing;
   }
+}
 
+.page__content .classification,
+.page__content .contents-page {
   a::after {
     content: leader(dotted) " " target-counter(attr(href, url), page);
   }
+}
+
+
+.page__content .contents-page {
+  ul {
+    line-height: 2;
+    list-style-type: none;
+  }
+
+  li { font-size: $print-base-font-size * 1.25; }
 }
 
 .page__content .references {
