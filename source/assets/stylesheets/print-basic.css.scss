@@ -210,16 +210,29 @@ $modular-scale-ratio: $minor-second;
 
 // Section-specific styles
 .classification,
+.concordance,
+.discus-index,
+.index-indent,
 .contents-page {
   column-span: all;
 }
 
-.page__content ol.classification {
+h4.index-indent {
+  margin-top: $print-base-spacing;
+}
+
+.index-indent {
+  ul { margin-left: 0; }
+}
+
+.page__content ol.classification,
+.page__content ol.discus-index {
   margin-left: $print-base-spacing;
   padding-left: $print-base-spacing;
 }
 
 .page__content .classification,
+.page__content .discus-index,
 .page__content .contents-page {
   ul, ol, li {
     font-size: 8pt;
@@ -242,5 +255,21 @@ $modular-scale-ratio: $minor-second;
   a::after {
     content: leader(dotted) " " target-counter(attr(href, url), page);
   }
+}
+
+.page__content .references {
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  li { margin-bottom: $print-base-spacing; }
+}
+
+ul.contributor-bios {
+  list-style-type: none;
+  margin: 0;
+
+  li { margin-bottom: $print-base-spacing; }
 }
 
