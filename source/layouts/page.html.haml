@@ -10,7 +10,7 @@
       - if current_page.data.author and current_page.data.author_byline == "top"
         - current_page.data.author.each do |author|
           %h3.page__header__author= "#{author.first_name} #{author.last_name}"
-    %main.page__content
+    %div.page__content
       = yield
       - if current_page.data.author and current_page.data.author_byline == "bottom"
         %p
