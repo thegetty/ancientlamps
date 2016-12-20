@@ -44,6 +44,7 @@ function prepareTransitions() {
     onAfter: function($container, $newContent) {
       // ui()
       pageUI = new UI()
+      document.querySelector('body').classList.remove('noscroll')
     }
   })
 }

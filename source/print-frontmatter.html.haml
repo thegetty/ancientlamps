@@ -1,0 +1,41 @@
+---
+title: Ancient Lamps in the J. Paul Getty Museum
+layout: false
+---
+!!!
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %title= current_page.data.title
+    = stylesheet_link_tag "print-basic"
+  %body{ class: "print-frontmatter" }
+    / Print Frontmatter
+    .print__cover
+    .print__halftitle
+      %h1.print__halftitle__title= data.book.title.short
+      %h2.print__halftitle__subtitle= data.book.title.subtitle
+    .print__title__left
+    .print__title__right
+    .print__copyright
+      .description
+        :markdown
+          Description goes here.
+      = partial "partials/copyright_license_print"
+      .revision-history
+        - if data.book.revision_history.size > 1
+          %p
+            First edition, #{data.book.pub_date.year}<br />Last updated, #{data.book.revision_history.last.date}<br />
+            %a= data.book.repository_url
+        - else
+          %p
+            First edition, #{data.book.pub_date.year}<br />
+            %a= data.book.repository_url
+      = partial "partials/publisher_team"
+      .distribution
+        %p
+          Distribution info goes here.
+        %p
+          Printed in the United States of America
+      = partial "partials/library_of_congress_data"
+      %ul.illustration-credits
+        %li Credits go Here

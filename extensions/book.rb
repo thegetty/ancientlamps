@@ -81,7 +81,7 @@ module Book
 
     def frontmatter_chapters
       max = options.max_frontmatter_sort_value
-      chapters.find_all { |c| c.data.sort_order <= max }
+      chapters.find_all { |c| c.data.sort_order <= max && c.data.sort_order > 0 }
     end
 
     def catalogue_chapters
@@ -100,6 +100,8 @@ module Book
     def generate_pagelist
       pagelist = ''
       baseurl = @app.config.build_dir + '/'
+
+      pagelist += baseurl + 'print-frontmatter.html '
 
       frontmatter_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }
       catalogue_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }

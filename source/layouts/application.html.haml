@@ -21,7 +21,7 @@
       = stylesheet_link_tag "print-basic"
     - else
       = stylesheet_link_tag "application"
-  %body
+  %body{ class: page_classes }
     %main#main
       - unless environment? :pdf
         = partial "partials/nav"
