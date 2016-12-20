@@ -1,42 +1,45 @@
 {
-  "name": "ancient-lamps",
+  "name": "middleman-es6",
   "version": "1.0.0",
-  "description": "Ancient Lamps",
-  "main": "index.js",
+  "description": "",
+  "main": "./source/assets/javascripts/application.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/gulp/bin/gulp.js",
-    "build": "./node_modules/gulp/bin/gulp.js build"
+    "test": "./bin/lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gettypubs/ancient-lamps.git"
+    "url": "git+https://github.com/Instrument/middleman-template-instrument.git"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "Instrument",
   "bugs": {
-    "url": "https://github.com/gettypubs/ancient-lamps/issues"
+    "url": "https://github.com/Instrument/middleman-template-instrument"
   },
-  "homepage": "https://github.com/gettypubs/ancient-lamps#readme",
+  "homepage": "https://github.com/Instrument/middleman-template-instrument#readme",
   "devDependencies": {
-    "del": "^2.2.2",
-    "eslint": "^3.9.1",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.3.1",
-    "eslint-plugin-standard": "^2.0.1",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-livereload": "^3.8.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
-    "run-sequence": "^1.2.2",
-    "webpack-stream": "^3.2.0"
+    "babel": "^6.1.18",
+    "babel-core": "^6.1.21",
+    "babel-eslint": "^4.1.5",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-polyfill": "^6.1.19",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
+    "babel-runtime": "^6.1.21",
+    "clean-webpack-plugin": "^0.1.3",
+    "eslint": "^1.0.0",
+    "eslint-config-airbnb": "2.1.1",
+    "exports-loader": "^0.6.2",
+    "fastclick": "^1.0.6",
+    "imports-loader": "^0.6.4",
+    "webpack": "^1.10.5"
   },
   "dependencies": {
+    "jquery": "^3.1.1",
     "leaflet": "^0.7.7",
-    "moment": "^2.15.2"
+    "lodash": "^4.17.2",
+    "lodash.debounce": "^4.0.8",
+    "lodash.includes": "^4.3.0",
+    "lunr": "^0.7.2",
+    "moment": "^2.17.0"
   }
 }

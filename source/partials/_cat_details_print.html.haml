@@ -1,0 +1,74 @@
+.cat-entry__details__print
+  - entry_data = entries.map { |e| catalogue_lookup(e) }
+  - entry_data.each do |entry|
+    - unless entry.nil?
+      .cat-entry__details__print__item
+        .cat-entry__details__print__text
+          .section.cat-number
+            %h2.cat-number= entry.cat_no
+          .section.cat-entry__details__print__image
+            = image_tag("thumbs/#{entry.cat_no}.jpg")
+          .section.inv-number
+            %p
+              %strong Inventory Number:
+              %span= entry.inv_no
+          .section.dimensions
+            %p
+              %strong Dimensions:
+              %span= entry.dimensions
+          .section.condition
+            - if entry.condition
+              %p
+                %strong Condition
+                %span= entry.condition
+            - else
+              %p
+                %strong Condition and Fabric:
+                %span= entry.condition_and_fabric
+          - unless entry.description.nil?
+            .section.description
+              %p
+                %strong Description:
+                = entry.description
+          - unless entry.stamp.nil?
+            .section.stamp
+              %p
+                %strong Stamp:
+                = image_tag("stamps/#{entry.stamp}")
+          - unless entry.discus_iconography.nil?
+            .section.iconography
+              %p
+                %strong Discus Iconography:
+                = entry.discus_iconography
+          .section.type
+            %p
+              %strong Type:
+              %span= entry.type
+          .section.date
+            %p
+              %strong Date:
+              %span= entry.date
+          .section.place
+            %p
+              %strong Place of Manufacture or Origin:
+              %span= entry.place
+          - unless entry.parallels.nil?
+            .section.parallels
+              %p
+                %strong Parallels:
+                = entry.parallels
+          - unless entry.provenance.nil?
+            .section.provenance
+              %p
+                %strong Provenance:
+                = entry.provenance
+          - unless entry.bibliography.nil?
+            .section.bibliography
+              %p
+                %strong Bibliography:
+                = entry.bibliography
+          - unless entry.discussion.nil?
+            .section.discussion
+              %p
+                %strong Discussion:
+                = entry.discussion

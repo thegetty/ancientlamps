@@ -1,0 +1,17 @@
+- typology = current_page.data.hierarchy.map {|i| i.values }.flatten.join(" / ")
+- code = current_page.data.hierarchy.map {|i| i.keys }.flatten.join(".")
+- title = current_page.data.hierarchy.last.values.join
+- cat = current_page.data.cat
+- entries = cat.respond_to?(:each) ? cat : Array(cat)
+- first = entries.first
+
+!!! XML
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xmlns:epub" => "http://www.idpf.org/2007/ops"}
+  %head
+    %title= "#{code} #{title}"
+    = tag :link, :href => "assets/stylesheets/epub.css", :rel => "stylesheet"
+  %body
+    %h2.chapter-title= "#{code} #{title}"
+    .chapter-body
+      = yield
+      = partial "partials/cat_details_print", :locals => { :entries => entries }
