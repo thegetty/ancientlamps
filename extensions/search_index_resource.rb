@@ -1,4 +1,4 @@
-require "sanitize"
+require 'sanitize'
 
 module Middleman
   module Sitemap
@@ -15,7 +15,7 @@ module Middleman
         path
       end
 
-      def render(opts = {}, locs = {})
+      def render(_opts = {}, _locs = {})
         page_index = build_page_index
         page_index.to_json
       end
@@ -24,26 +24,14 @@ module Middleman
         index = []
         pages = @app.sitemap.resources.find_all { |p| p.data.sort_order }
         pages.each_with_index do |resource, id|
-          next if resource.data["index"] == false
+          next if resource.data['index'] == false
           item = {
-            :id       => id,
-            :title    => resource.data.title.to_s,
-            :url      => resource.url,
-            :cat      => resource.data.cat.to_s,
-            :inv      => "",
-            :material => "",
-            :location => "",
-            :culture  => "",
-            :contents => Sanitize.fragment(resource.render(:layout => false))
+            id: id,
+            title: resource.data.title || resource.data.hierarchy.last.values.join,
+            url: @app.config.baseurl + resource.url,
+            cat: resource.data.cat || nil,
+            content: Sanitize.fragment(resource.render(layout: false))
           }
-          if resource.data.cat.is_a? Integer
-            entry = lookup_entry(resource.data.cat)
-            item[:title]    = entry.title
-            item[:inv]      = entry.inv
-            item[:material] = entry.material
-            item[:location] = entry.location
-            item[:culture]  = entry.culture
-          end
 
           index.push(item)
         end

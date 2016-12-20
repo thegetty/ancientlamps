@@ -1,0 +1,78 @@
+$breadcrumbs-bar-color: tint($medium-gray, 75%);
+
+// The full-width block containing the cover image and title bar. The title bar
+// is absolutely positioned to sit at the bottom of its parent element. The
+// entire header unit is given a height in vh units, in a greater proportion as
+// the size of the viewport increases.
+.cat-intro__header {
+  @include position(relative);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    height: 300px;
+  }
+
+  &__inner {
+    width: 100%;
+  }
+}
+
+// Title text. This element expects to be inside an @outer-container element and
+// its width is defined in terms of span-column widths.
+.cat-intro__title {
+  // color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8);
+    @include shift(2);
+    padding: 0;
+  }
+}
+
+// Full-width block that immediately follows the header unit, with a colored
+// background.
+.cat-intro__breadcrumbs-bar {
+  background-color: $breadcrumbs-bar-color;
+  box-shadow: inset 0 5px 5px -5px $medium-gray,
+              inset 0 -5px 5px -5px $medium-gray;
+  margin-top: $navbar-height;
+  padding: $small-spacing * 0.75;
+  text-align: center;
+
+  &__text {
+    font-size: modular-scale(0);
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+}
+
+.cat-intro__content {
+  @extend .body-copy;
+  @extend .container;
+  margin-bottom: $base-spacing * 2;
+
+  &__inner {
+    @include media($medium-screen-up) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+}

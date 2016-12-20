@@ -1,15 +1,16 @@
 .nav-sidebar-inner
   %header.nav-sidebar-header.nav-sidebar-toc-section
     %h2.nav-sidebar-title= data.book.title.main
-    %h3.nav-sidebar-author= author_name
+    %h3.nav-sidebar-author= byline
     %a.nav-sidebar-close{:href => "javascript:void(0);", :id => "nav-menu-close"}
       %i.ion-android-close
   .nav-sidebar-content
     .nav-sidebar-toc-section
       %ul.nav-sidebar-toc
         %li= link_to "Contents", "/contents.html"
+        %li= link_to "Introduction", "/introduction.html"
+        %li= link_to "Map", "/map.html"
         %li= link_to "Typological Classification", "/typological-classification.html"
-        %li= link_to "Catalogue", "/catalogue.html"
     .nav-sidebar-downloads
       = partial "partials/downloads_mini"
     .nav-sidebar-cite

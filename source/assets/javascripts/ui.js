@@ -1,326 +1,284 @@
-// =============================================================================
-// ui.js
-// -----------------------------------------------------------------------------
-// This file is responsible for various user interface functionality across the
-// application. This functionality is provided in the form of functions which
-// wrap up event handlers for various different interactions with the user.
-// jQuery is assumed as a dependency throughout ($ should be available
-// globally). Other dependencies should be explicitly required at the top of
-// this file.
-//
-// All functions which need to be called in other parts of the application
-// should be called inside of the module.exports function at the end of this
-// file.
-
-// Dependencies
-// -----------------------------------------------------------------------------
-var moment = require('moment')
-var L = require('leaflet')
+import _ from 'lodash/core'
+import debounce from 'lodash.debounce'
+import moment from 'moment'
+import L from 'leaflet'
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
+import Map from './map.js'
+import ImageViewer from './imageviewer.js'
+import Search from './search.js'
 
-// jq Helper function
-// -----------------------------------------------------------------------------
-// Use this to wrap selectors that contain : characters
-function jq(myid) { return myid.replace(/(:|\.|\[|]|,)/g, '\\$1') }
+class UI {
+  constructor() {
+    this.menuVisible = false
+    this.searchVisible = false
+    this.deepZoomVisible = false
+    this.zoomInstance = {}
+    this.searchInstance = window.search || new Search()
+    this.setup()
+  }
 
-// AnchorScroll
-// -----------------------------------------------------------------------------
-// Adjusts the distance that browser scrolls when visiting anchor links to
-// accommodate the height of the navigation bar.
-function anchorScroll(href) {
-  href = typeof (href) === 'string' ? href : $(this).attr('href')
-  var fromTop = 60
-  if (href.indexOf('#') === 0) {
-    var $target = $(href)
-    if ($target.length) {
-      $('html, body').animate({ scrollTop: $target.offset().top - fromTop })
-      if (window.history && 'pushState' in window.history) {
-        window.history.pushState({}, document.title, window.location.pathname + href)
-        return false
-      }
+  catNumCheck(cat) {
+    if (isNaN(Number(cat))) {
+      return cat
+    } else {
+      return Number(cat)
     }
+  }
+
+  setup() {
+    // Objects of interest
+    let $menuButton = $('#navbar-menu')
+    let $menuCloseButton = $('#nav-menu-close')
+    let $searchButton = $('#navbar-search')
+    let $searchCloseButton = $('#search-close')
+    let $searchInput = $('.search-field')
+    let $expanderContent = $('.expander-content')
+    let $triggers = $('.expander-trigger')
+    let $curtain = $('.sliding-panel-fade-screen')
+    let $thumbnails = $('.cat-entry__grid__item')
+    let $detailCloseButton = $('.cat-entry__details__close')
+    let $mapEl = $('#map')
+
+    // Run once on startup
+    this.citationDate()
+    $expanderContent.addClass('expander--hidden')
+
+    // Event Listeners: All pages
+    $curtain.click(() => { this.menuToggle() })
+    $menuButton.click(() => { this.menuToggle() })
+    $menuCloseButton.click(() => { this.menuToggle() })
+    $searchButton.click(() => { this.showSearch() })
+    $searchCloseButton.click(() => { this.hideSearch() })
+    $triggers.click(e => this.expandToggle(e))
+    $(document).keydown((e) => { this.keyboardControls(e) })
+
+    // This is crazy but trying a more conventional setup fails with debounce
+    let debouncedSearch = debounce(this.searchQuery, 50)
+    let boundDebounce = debouncedSearch.bind(this)
+
+    $searchInput.keydown(() => {
+      boundDebounce()
+    })
+
+    // Page-specific elements
+    if ($detailCloseButton.length) { $detailCloseButton.click(() => { this.hideDetails() }) }
+    if ($thumbnails.length) { $thumbnails.click( e => this.showDetails(e)) }
+    if ($mapEl.length) { new Map() }
+  }
+
+  citationDate() {
+    let today = moment().format('D MMM. YYYY')
+    let $currentDate = $('.cite-current-date')
+    $currentDate.empty();
+    $currentDate.text(today);
+  }
+
+  keyboardControls(e) {
+    let $prev = $('#prev-link')
+    let $next = $('#next-link')
+    switch (e.keyCode) {
+      case 27: // Escape key
+        if (this.menuVisible) { this.menuToggle() }
+        if (this.searchVisible) { this.hideSearch() }
+        if (this.deepZoomVisible) { this.hideDetails() }
+        e.preventDefault()
+        break
+      case 37: // Left Arrow
+        if (this.menuVisible) { this.menuToggle() }
+        if (this.searchVisible) { this.hideSearch() }
+        if (this.deepZoomVisible) { this.hideDetails() }
+        if ($prev.length) { $prev.click() }
+        e.preventDefault()
+        break
+      case 39: // Right Arrow
+        if (this.menuVisible) { this.menuToggle() }
+        if (this.searchVisible) { this.hideSearch() }
+        if (this.deepZoomVisible) { this.hideDetails() }
+        if ($next.length) { $next.click() }
+        e.preventDefault()
+        break
+    }
+  }
+
+  // TODO: Add CSS transitions to these elements to replace what JQ was doing
+  expandToggle(e) {
+    let el = e.currentTarget
+    let targetSection = el.parentNode.querySelector('.expander-content')
+    let hideClass = 'expander--hidden'
+
+    if (targetSection.classList.contains(hideClass)) {
+      targetSection.classList.remove(hideClass)
+    } else {
+      targetSection.classList.add(hideClass)
+    }
+  }
+
+  menuToggle() {
+    let sidebar = document.querySelector('.nav-sidebar')
+    let curtain = document.querySelector('.sliding-panel-fade-screen')
+
+    if (this.menuVisible) {
+      sidebar.classList.remove('is-visible')
+      curtain.classList.remove('is-visible')
+    } else {
+      sidebar.classList.add('is-visible')
+      curtain.classList.add('is-visible')
+    }
+
+    this.menuVisible = !(this.menuVisible)
+  }
+
+  // DetailsToggle
+  // -----------------------------------------------------------------------------
+  // Adds/removes classes for the display of the detail view of selected image.
+  //
+  showDetails(e) {
+    let cat = this.catNumCheck(e.target.dataset.cat)
+    let dataURL = 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
+    // let dataURL = '/catalogue.json'
+    let detailImage = document.querySelector('.cat-entry__details__image')
+    let detailData = document.querySelector('.cat-entry__details__data')
+    let detailCloseButton = document.querySelector('.cat-entry__details__close')
+
+    this.zoomInstance = new ImageViewer(cat)
+    this.zoomInstance.fetchData()
+
+    // toggle classes for display
+    detailImage.classList.add('is-visible')
+    detailData.classList.add('is-visible')
+    detailCloseButton.classList.add('is-visible')
+    document.querySelector('body').classList.add('noscroll')
+    this.deepZoomVisible = true
+
+    // TODO: move this code into an ObjectDetails class
+    // Fetch tombstone data and template
+    let template = document.getElementById('entry-template')
+    let container = document.getElementById('entry-template-container')
+    let clone = document.importNode(template.content, true)
+
+    $.get(dataURL).done((data) => {
+      let query = {'cat_no': cat}
+      let catData = _.find(data, query)
+      console.log(catData)
+
+      // populate template
+      clone.getElementById('entry-cat-number').innerHTML = catData.cat_no
+      clone.getElementById('entry-inv-number').innerHTML = catData.inv_no
+      clone.getElementById('entry-dimensions').innerHTML = catData.dimensions
+      clone.getElementById('entry-date').innerHTML = catData.date
+      clone.getElementById('entry-condition').innerHTML = catData.condition_and_fabric
+      clone.getElementById('entry-type').innerHTML = catData.type
+      clone.getElementById('entry-place').innerHTML = catData.place
+      clone.getElementById('entry-description').innerHTML = catData.description
+      clone.getElementById('entry-parallels').innerHTML = catData.parallels
+
+      // Some sections do not appear for all entries
+      if (catData.provenance) {
+        clone.querySelector('.section.provenance').classList.remove('is-hidden')
+        clone.getElementById('entry-provenance').innerHTML = catData.provenance
+      }
+
+      if (catData.iconography) {
+        clone.querySelector('.section.iconography').classList.remove('is-hidden')
+        clone.getElementById('entry-iconography').innerHTML = catData.iconography
+      }
+
+      if (catData.discussion) {
+        clone.querySelector('.section.discussion').classList.remove('is-hidden')
+        clone.getElementById('entry-discussion').innerHTML = catData.discussion
+      }
+
+      if (catData.bibliography) {
+        clone.querySelector('.section.bibliography').classList.remove('is-hidden')
+        clone.getElementById('entry-bibliography').innerHTML = catData.bibliography
+      }
+
+      if (catData.stamp) {
+        clone.querySelector('.section.stamp').classList.remove('is-hidden')
+        clone.getElementById('entry-stamp').src = `../../assets/images/stamps/${catData.stamp}`
+      }
+
+      if (catData.condition) {
+        clone.querySelector('.section.condition h2').textContent = 'Condition'
+        clone.getElementById('entry-condition').innerHTML = catData.condition
+      }
+      // Append the new template
+      container.appendChild(clone)
+    })
+  }
+
+  hideDetails() {
+    let detailImage = document.querySelector('.cat-entry__details__image')
+    let detailData = document.querySelector('.cat-entry__details__data')
+    let detailCloseButton = document.querySelector('.cat-entry__details__close')
+    let $container = $('#entry-template-container')
+
+    // toggle classes for display
+    detailImage.classList.remove('is-visible')
+    detailData.classList.remove('is-visible')
+    detailCloseButton.classList.remove('is-visible')
+    document.querySelector('body').classList.remove('noscroll')
+    this.deepZoomVisible = false
+
+    // Remove the old template
+    $container.empty()
+
+    // Remove the old map instance
+    this.zoomInstance.removeMap()
+  }
+
+  showSearch() {
+    if (!this.searchVisible) {
+      let navbar = document.querySelector('.navbar')
+      let searchResults = document.querySelector('.search-results')
+      navbar.classList.add('search-active')
+      searchResults.classList.add('search-active')
+      this.searchVisible = true
+    }
+  }
+
+  hideSearch() {
+    if (this.searchVisible) {
+      let navbar = document.querySelector('.navbar')
+      let searchResults = document.querySelector('.search-results')
+      navbar.classList.remove('search-active')
+      searchResults.classList.remove('search-active')
+      this.searchVisible = false
+    }
+  }
+
+  searchQuery() {
+    let searchInput = document.querySelector('.search-field')
+    let query = searchInput.value
+    let container = document.querySelector('.search-results-list')
+    let template = document.getElementById('search-results-template')
+
+    container.innerHTML = ''
+    let results = this.searchInstance.search(query)
+
+    results.forEach((result) => {
+      let clone = document.importNode(template.content, true)
+      let resultData = this.searchInstance.contentList[result.ref]
+      let resultTitle = clone.querySelector('.search-results-list-item-link')
+
+      if (Array.isArray(resultData.cat) && resultData.cat.length > 1) {
+        // Group of cat entries
+        let catNumbers = [resultData.cat[0], _.last(resultData.cat)].join('–')
+        resultTitle.textContent = `${catNumbers}: ${resultData.title}`
+        resultTitle.href = resultData.url
+      } else if (typeof resultData.cat === 'number') {
+        // Single cat entry
+        let catNumber = resultData.cat
+        resultTitle.textContent = `${catNumber}: ${resultData.title}`
+        resultTitle.href = resultData.url
+      } else {
+        // No cat entries
+        resultTitle.textContent = resultData.title
+        resultTitle.href = resultData.url
+      }
+      container.appendChild(clone)
+    })
   }
 }
 
-// CitationDate
-// -----------------------------------------------------------------------------
-// Get today's current date, using Moment JS
-function citationDate() {
-  var today = moment().format('D MMM. YYYY')
-  $('.cite-current-date').empty()
-  $('.cite-current-date').text(today)
-}
-
-// FootnoteScroll
-// -----------------------------------------------------------------------------
-// Adjusts the distance that browser scrolls when visiting footnote and reverse
-// footnote links to accommodate the height of the navigation bar.
-function footnoteScroll() {
-  $('.footnote, .reversefootnote, .section-link').click(function(event) {
-    var target = $(this).attr('href')
-    var distance = $(jq(target)).offset().top
-
-    $('html, body').animate({
-      scrollTop: distance - 60
-    }, 250)
-  })
-}
-
-// ExpanderSetup
-// -----------------------------------------------------------------------------
-// Toggles expanding drop-down elements in places like sidebar navigation.
-function expanderSetup() {
-  var $expanderContent = $('.expander-content')
-  var $expanderTriggers = $('.expander-trigger')
-
-  $($expanderContent).addClass('expander--hidden')
-
-  $expanderTriggers.on('click', function() {
-    var $target = $(this).parent().find('.expander-content')
-    $target.slideToggle('fast', function() {
-      $target.toggleClass('expander--hidden')
-    })
-  })
-}
-
-
-// KeyboardNav
-// -----------------------------------------------------------------------------
-// Allow navigation between pages with left and right arrow keys.
-function keyboardNav() {
-  $(document).keydown(function(event) {
-    var prev, next, photoswipeActive
-    prev = document.getElementById('prev-link')
-    next = document.getElementById('next-link')
-
-    // Make sure photoswipe is not active
-    photoswipeActive = $('.pswp').hasClass('pswp--visible')
-    if (!(photoswipeActive)) {
-      if (event.which === 37 && prev) { // 37 = left arrow
-        prev.click()
-        event.preventDefault()
-      } else if (event.which === 39 && next) { // 39 = right arrow
-        next.click()
-        event.preventDefault()
-      }
-    }
-  })
-}
-
-// OffCanvasNav
-// -----------------------------------------------------------------------------
-// Control the CSS classes that slide the navigation menu in our out from the
-// edge of the screen.
-function offCanvasNav() {
-  var $sidebar = $('.nav-sidebar')
-  var $menuButton = $('#navbar-menu')
-  var $closeButton = $('#nav-menu-close')
-  var $curtain = $('.sliding-panel-fade-screen')
-
-  $menuButton.on('click', function() {
-    $sidebar.toggleClass('is-visible')
-    $curtain.toggleClass('is-visible')
-    // Force css repaint to deal with webkit "losing" the menu contents
-    // on mobile devices
-    $('<style></style>').appendTo($(document.body)).remove()
-  })
-
-  $closeButton.on('click', function() {
-    $sidebar.removeClass('is-visible')
-    $curtain.removeClass('is-visible')
-  })
-
-  $curtain.on('click', function() {
-    $sidebar.removeClass('is-visible')
-    $curtain.removeClass('is-visible')
-  })
-
-  // bind escape key to menu close if menu is open
-  $(document).keydown(function(event) {
-    if (event.which === 27 && $sidebar.hasClass('is-visible')) {
-      $sidebar.removeClass('is-visible')
-      $curtain.removeClass('is-visible')
-    }
-  })
-}
-
-// SearchSetup
-// -----------------------------------------------------------------------------
-// Show/hide the search ui elements (results container and search bar). Note:
-// this function performs no search-related logic, it is only responsible for
-// adding and removing classes in response to events.
-function searchSetup() {
-  var $searchButton = $('#navbar-search')
-  var $searchCloseButton = $('#search-close')
-  var $navbar = $('.navbar')
-  var $results = $('.search-results')
-
-  $searchButton.on('click', function() {
-    $navbar.toggleClass('search-active')
-    $results.toggleClass('search-active')
-  })
-
-  $searchCloseButton.on('click touchstart', function() {
-    $navbar.removeClass('search-active')
-    $results.removeClass('search-active')
-  })
-
-  // bind escape key to search close if search is active
-  $(document).keydown(function(event) {
-    if (event.which === 27 && $navbar.hasClass('search-active')) {
-      $navbar.removeClass('search-active')
-      $results.removeClass('search-active')
-    }
-  })
-}
-
-// DetailsToggle
-// -----------------------------------------------------------------------------
-// Adds/removes classes for the display of the detail view of selected image.
-// Relies on tiles being available at an external URL which is hard-coded below
-// in the "path" variable: in the future this should be moved out into some kind
-// of config file.
-//
-// This function also handles the setup and teardown of Leaflet deep-zoom
-// instances, though in the future this functionality should probably be moved
-// elsewhere.
-function detailsToggle() {
-  var $detailImage = $('.cat-entry__details__image')
-  var $detailData = $('.cat-entry__details__data')
-  var $detailCloseButton = $('.cat-entry__details__close')
-  var map
-
-  // Set up the modal view
-  $('.cat-entry__grid__item').click(function() {
-    // Toggle classes for display
-    $detailImage.toggleClass('is-visible')
-    $detailData.toggleClass('is-visible')
-    $detailCloseButton.toggleClass('is-visible')
-
-    // Instantiate a new deepzoom viewer
-    // $(this) gives us the element that triggered the event
-    var cat = $(this).data('cat')
-    var path = 'http://localhost:8000/tiles/' + cat + '/top/'
-    map = L.map('js-deepzoom', {
-      maxZoom: 13,
-      minZoom: 9
-    }).setView([0, 0], 13)
-
-    L.tileLayer.deepzoom(path, {
-      width: 4662,
-      height: 5000,
-      tolerance: 0.8
-    }).addTo(map)
-  })
-
-  // Tear down the modal view
-  $detailCloseButton.click(function() {
-    $detailImage.removeClass('is-visible')
-    $detailData.removeClass('is-visible')
-    $detailCloseButton.removeClass('is-visible')
-    map.remove()
-  })
-
-  // Tear down the modal view on esc key
-  $(document).keydown(function(event) {
-    if (event.which === 27 && $detailImage.hasClass('is-visible')) {
-      $detailImage.removeClass('is-visible')
-      $detailData.removeClass('is-visible')
-      $detailCloseButton.removeClass('is-visible')
-      map.remove()
-    }
-  })
-}
-
-// function mapSetup() {
-//   if ($('#map').length) {
-//     // Get Catalogue data
-//     $.getJSON('<%= baseurl %>/catalogue.json', function(data) {
-//       // Stash catalogue json data for later use
-//       window.CATALOGUE = data
-//       // Instantiate map
-//       var centerPoint = $('#map').data('center')
-//       RegionMap = new GeoMap(centerPoint)
-//       if ($('#map').parent().hasClass('cover-map')) {
-//         RegionMap.map.setZoom(5)
-//       }
-//       if (window.location.hash.slice(1, 4) === 'loc') {
-//         RegionMap.zoomToHash()
-//       }
-//       window.onhashchange = RegionMap.zoomToHash;
-//     }).fail(function() {
-//       console.log('Failed to load catalogue json')
-//     })
-//   }
-// }
-
-// function plateSetup() {
-//   if ($("#plate").length) {
-//     // Get zoom data
-//     $.getJSON("<%= baseurl %>/plates.json", function(data){
-//       // stash plates json data for later use
-//       window.PLATES = data;
-//       // Instantiate deepZoom
-//       var catNum   = $("#plate").data("cat");
-//       var zoomData = _.find(window.PLATES, function(entry) {
-//         // If catNum is an array, just pass zoom data of first value
-//         return entry.id == parseInt(catNum);
-//       });
-//       var plate = new DeepZoom(catNum, zoomData);
-//     }).fail(function() {
-//       console.log("Failed to load plates json");
-//     });
-//   }
-// }
-
-// function lightBoxSetup() {
-//   if ($('.inline-figure')) {
-//     var $figures = $('.inline-figure img')
-//     $figures.on('click', function(e) {
-//       var figs = document.querySelectorAll('.inline-figure')
-//       var target = _.findIndex(figs, function(figure) {
-//         return figure.id == e.target.parentNode.id
-//       })
-//       console.log(target)
-//       lightBox(target)
-//     })
-//   }
-// }
-
-// Check to see if the text selection contains popup-content nodes, remove them if so
-// for reference see this: http://jsfiddle.net/m56af0je/8/
-// and http://stackoverflow.com/questions/2026335/how-to-add-extra-info-to-copied-web-text
-// and the Mozilla document.getSelection() docs
-// function cleanSelection() {
-//   var selection, popupDivs, popupText, newText;
-//   selection = document.getSelection();
-//   popupDivs = document.getElementsByClassName("popup-content");
-
-//   // Listen for copy event
-//   document.addEventListener('copy', function(event) {
-//     if (selection.toString().length > 0 && popupDivs.length > 0) {
-//       [].forEach.call(popupDivs, function(popup) {
-//         // Only modify selection if user's selection actually contains a popup
-//         if (selection.containsNode(popup)) {
-//           event.preventDefault();
-//           popupText = popup.innerText;
-//           newText   = selection.toString().replace(popupText, "");
-//           (event.clipboardData || window.clipboardData).setData("Text", newText);
-//         }
-//       });
-//     }
-//   });
-// }
-
-// Use this function as "export"
-// Calls all other functions defined here inside of this one
-module.exports = function() {
-  keyboardNav()
-  offCanvasNav()
-  expanderSetup()
-  searchSetup()
-  footnoteScroll()
-  anchorScroll(window.location.hash)
-  citationDate()
-  detailsToggle()
-}
+export default UI

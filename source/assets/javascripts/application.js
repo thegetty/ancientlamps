@@ -10,7 +10,15 @@
 
 // Dependencies
 // -----------------------------------------------------------------------------
-var ui = require('./ui.js')
+import $ from 'jquery'
+import UI from './ui.js'
+import './vendor/velocity.min.js'
+import './vendor/velocity.ui.min.js'
+import './vendor/jquery.smoothState.min.js'
+import Search from './search.js'
+
+let pageUI = {}
+window.search = {}
 
 // PrepareTransitions
 // -----------------------------------------------------------------------------
@@ -22,6 +30,7 @@ function prepareTransitions() {
     onStart: {
       duration: 400,
       render: function($container) {
+        if (pageUI.menuVisible) { pageUI.menuToggle() }
         $container.velocity('fadeOut', { duration: 200 })
       }
     },
@@ -33,7 +42,8 @@ function prepareTransitions() {
       }
     },
     onAfter: function($container, $newContent) {
-      ui()
+      // ui()
+      pageUI = new UI()
     }
   })
 }
@@ -42,6 +52,7 @@ function prepareTransitions() {
 // -----------------------------------------------------------------------------
 // Only call other functions inside of this.
 $(document).ready(function() {
-  ui()
+  window.search = new Search()
+  pageUI = new UI()
   prepareTransitions()
 })

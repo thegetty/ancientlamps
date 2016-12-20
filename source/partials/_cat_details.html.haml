@@ -1,5 +1,48 @@
 .cat-entry__details
   .cat-entry__details__image#js-deepzoom
-  .cat-entry__details__data
+  .cat-entry__details__data#entry-template-container
   .cat-entry__details__close
     %i.close-button
+  %template#entry-template.cat-entry__details__data__item
+    .cat-entry__details__text
+      .section.cat-number
+        %h2.cat-number#entry-cat-number
+      .section.inv-number
+        %h2 Inventory Number
+        %p#entry-inv-number
+      .section.dimensions
+        %h2 Dimensions
+        %p#entry-dimensions
+      .section.condition
+        %h2 Condition and Fabric
+        %p#entry-condition
+      .section.description
+        %h2 Description
+        %p#entry-description
+      .section.stamp.is-hidden
+        %h2 Stamp
+        %img#entry-stamp{src: ""}
+      .section.iconography.is-hidden
+        %h2 Discus Iconography
+        %p#entry-iconography
+      .section.type
+        %h2 Type
+        %p#entry-type
+      .section.date
+        %h2 Date
+        %p#entry-date
+      .section.place
+        %h2 Place of Manufacture or Origin
+        %p#entry-place
+      .section.parallels
+        %h2 Parallels
+        %p#entry-parallels
+      .section.provenance.is-hidden
+        %h2 Provenance
+        %p#entry-provenance
+      .section.bibliography.is-hidden
+        %h2 Bibliography
+        %p#entry-bibliography
+      .section.discussion.is-hidden
+        %h2 Discussion
+        %p#entry-discussion
