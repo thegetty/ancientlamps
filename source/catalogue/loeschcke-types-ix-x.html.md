@@ -6,7 +6,7 @@ hierarchy:
  - III: Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire
  - b: Augustan and Imperial Lamps
- - "15": Loeschcke types IX and X (*Firmalampen*)
+ - "15": Loeschcke types IX and X (<em>Firmalampen</em>)
 cat: 441-58
 ---
 
