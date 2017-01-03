@@ -16,7 +16,7 @@ html { min-height: 100vh; }
     + h3 { margin-top: $base-spacing; }
   }
 
-  p, ol, ul { font-size: modular-scale(1); }
+  p, ol, ul { font-size: 1.25rem; }
   ol { @extend %default-ol; }
 
   @include media($medium-screen-up) {
