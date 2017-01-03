@@ -15,7 +15,7 @@
         <%= link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"} %>
         <% unless current_page.data.sort_order == 0 %>
           <i class="navbar-breadcrumb"></i>
-          <% if current_page.data.cat.is_a? Array %>
+          <% if current_page.data.cat.respond_to?(:each) %>
             <span class="navbar-page-title">
               <%= "Cats. #{current_page.data.cat.first}&ndash;#{current_page.data.cat.last}" %>
             </span>
