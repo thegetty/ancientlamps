@@ -1,5 +1,3 @@
----
-
 - id: alaoui-i
   name: Alaoui I
   contents: >
@@ -103,7 +101,9 @@
 - id: ephesos-ix
   name: <em>Ephesos</em> IX
   contents: >
-    <em>Forschungen in Ephesos</em>. 2007. Vol. 9.2.3. <em>Die Basilika am Staatsmarkt in Ephesos</em>. Part 2. <em>Funde klassischer bis römischer Zeit<em>, ed. V. Mitsopoulos-Leon and C. Lang-Auinger. Vienna.
+    <em>Forschungen in Ephesos</em>. 2007. Vol. 9.2.3. <em>Die Basilika am
+    Staatsmarkt in Ephesos</em>. Part 2. <em>Funde klassischer bis römischer
+    Zeit</em>, ed. V. Mitsopoulos-Leon and C. Lang-Auinger. Vienna.
 
 - id: limc
   name: <em>LIMC</em>
@@ -121,7 +121,7 @@
     Pauly, A. F. von, and G. Wissowa. 1893–. <em>Real-Encyclopädie der klassischen Altertumswissenschaft</em>. Stuttgart.
 
 - id: repertoire
-  name: <em>Répertoire<em>
+  name: <em>Répertoire</em>
   contents: >
     Bussière, J., and J.-C. Rivel. 2015. <em>Répertoire de fleurons sur bandeaux de lampes africaines type Hayes II</em>. Oxford.
 
@@ -148,7 +148,10 @@
 - id: agustoni-2005
   name: Agustoni 2005
   contents: >
-    Agustoni, C. 2005. “Ex pavone lux.” In <em>Lychnological Acts 1. Actes du 1<sup>er/<sup> Congrès international d’études sur le luminaire antique (Nyon–Geneva, 29 September–4 October 2003)</em>, ed. L. Chrzanovski, pp. 15–17. Montagnac.
+    Agustoni, C. 2005. “Ex pavone lux.” In <em>Lychnological Acts 1. Actes du
+    1<sup>er</sup> Congrès international d’études sur le luminaire antique
+    (Nyon–Geneva, 29 September–4 October 2003)</em>, ed. L. Chrzanovski, pp.
+    15–17. Montagnac.
 
 - id: alicu-1994
   name: Alicu 1994
@@ -198,7 +201,12 @@
 - id: anselmino-1982
   name: Anselmino 1982
   contents: >
-    Anselmino, L. 1982. “Le lucerne rinvenute negli scavi della missione archeologica italiana a Cartagine: Problemi tipologici e cronologici.” In <em>Actes du colloque sur la céramique</em> <em>antique</em> (Carthage, 23–24 June 1980), pp. 157–66 (<em>Centre d’Études et de Documentation Archéologique de la Conservation de Carthage<em>, dossier no. 1). Carthage, Tunisia.
+    Anselmino, L. 1982. “Le lucerne rinvenute negli scavi della missione
+    archeologica italiana a Cartagine: Problemi tipologici e cronologici.” In
+    <em>Actes du colloque sur la céramique antique</em> (Carthage,
+    23–24 June 1980), pp. 157–66 (<em>Centre d’Études et de Documentation
+    Archéologique de la Conservation de Carthage</em>, dossier no. 1). Carthage,
+    Tunisia.
 
 - id: antichita-di-ercolano-1757-92
   name: <em>Antichità di Ercolano</em> 1757–92
@@ -208,42 +216,55 @@
 - id: antico-gallina-1985
   name: Antico Gallina 1985
   contents: >
-    Antico Gallina, M. V. 1985. “Le lucerne fittili del Museo C. Leone di Vercelli.” In <em>Rassegna di studi del Civico Museo Archeologico e del Civico Gabinetto Numismatico di Milano<em>, fasc. 35–37 41–94. Milan.
+    Antico Gallina, M. V. 1985. “Le lucerne fittili del Museo C. Leone di
+    Vercelli.” In <em>Rassegna di studi del Civico Museo Archeologico e del
+    Civico Gabinetto Numismatico di Milano</em>, fasc. 35–37 41–94. Milan.
 
 - id: antico-gallina-cordina-1990
   name: Antico Gallina and Cordina 1990
   contents: >
-    Antico Gallina, M. V., and F. Condina. 1990. “Le lucerne fittili del Museo Civico Villa Mirabello di Varese.” In <em>Rassegna di studi del Civico Museo Archeologico e del Civico Gabinetto Numismatico di Milano<em>, fasc. 45/46 59–92. Milan.
+    Antico Gallina, M. V., and F. Condina. 1990. “Le lucerne fittili del Museo
+    Civico Villa Mirabello di Varese.” In <em>Rassegna di studi del Civico Museo
+    Archeologico e del Civico Gabinetto Numismatico di Milano</em>, fasc. 45/46
+    59–92. Milan.
 
 - id: antiken-aus-rheinischem-privatbesitz-1973
   name: <em>Antiken aus Rheinischem Privatbesitz</em> 1973
   contents: >
-    <em>Antiken aus Rheinischem Privatbesitz</em>. Exh. cat., Rheinisches Landesmuseum, Bonn, 9 November 1973–13 January 1974. Bonn, 1973.
+    <em>Antiken aus Rheinischem Privatbesitz</em>. Exh. cat., Rheinisches
+    Landesmuseum, Bonn, 9 November 1973–13 January 1974. Bonn, 1973.
 
 - id: arslan-2001
   name: Arslan 2001
   contents: >
-    Arslan, E. A. 2001. <em>Le lucerne: Catalogo del Museo Civico di Biassono Carlo Verri</em>. Milan.
+    Arslan, E. A. 2001. <em>Le lucerne: Catalogo del Museo Civico di Biassono
+    Carlo Verri</em>. Milan.
 
 - id: atasoy-2005
   name: Atasoy 2005
   contents: >
-    Atasoy, S. 2005. <em>Bronze Lamps in the Istanbul Archaeological Museum: An Illustrated Catalogue</em>. BAR international series 1436. Oxford.
+    Atasoy, S. 2005. <em>Bronze Lamps in the Istanbul Archaeological Museum: An
+    Illustrated Catalogue</em>. BAR international series 1436. Oxford.
 
 - id: avigad-1976
   name: Avigad 1976
   contents: >
-    Avigad, N. 1976. “The Lamps.” In <em>Catacombs 12–23</em>. Vol. 3 of <em>Beth She’arim Report on the Excavations during 1953–1958<em>, pp. 183–94. New Brunswick, N.J.
+    Avigad, N. 1976. “The Lamps.” In <em>Catacombs 12–23</em>. Vol. 3 of
+    <em>Beth She’arim Report on the Excavations during 1953–1958</em>, pp.
+    183–94. New Brunswick, N.J.
 
 - id: ayala-1990
   name: Ayala 1990
   contents: >
-    Ayala, G. 1990. “Alba-la-Romaine (Ardèche): Les lampes en terre cuite.” <em>Revue Archéologique de Narbonnaise</em> 23 153<em>,</em> 212.
+    Ayala, G. 1990. “Alba-la-Romaine (Ardèche): Les lampes en terre cuite.”
+    <em>Revue Archéologique de Narbonnaise</em> 23 153, 212.
 
 - id: bachofen-Meuli-1958
   name: Bachofen and Meuli 1958
   contents: >
-    Bachofen, J. J., and K. Meuli. 1958. <em>Römische</em> <em>Grablampen</em>. Reprint of Bachofen, <em>Gesammelte Werke<em>, vol. 7 (1890, 1912), ed. K. Meuli. Basel.
+    Bachofen, J. J., and K. Meuli. 1958. <em>Römische Grablampen</em>.
+    Reprint of Bachofen, <em>Gesammelte Werke</em>, vol. 7 (1890, 1912), ed. K.
+    Meuli. Basel.
 
 - id: bagatti-1964
   name: Bagatti 1964
@@ -268,32 +289,45 @@
 - id: bailey-1971-72
   name: Bailey 1971–72
   contents: >
-    Bailey, D. M. 1971–72. “Some Recent Lamp Acquisitions in the Department of Greek and Roman Antiquities.” <em>British Museum Quarterly</em> 36.1–2 101–7.
+    Bailey, D. M. 1971–72. “Some Recent Lamp Acquisitions in the Department of
+    Greek and Roman Antiquities.” <em>British Museum Quarterly</em> 36.1–2
+    101–7.
 
 - id: bailey-1984
   name: Bailey 1984
   contents: >
-    Bailey, D. M. 1984. “Alexandria, Carthage and Ostia (not to Mention Naples).” In <em>Alessandria e il mondo ellenistico-romano: Studi in onore di Achille Adriani</em> 2, ed. N. Bonacasa and A. di Vita, pp. 265–72<em></em>. Rome.
+    Bailey, D. M. 1984. “Alexandria, Carthage and Ostia (not to Mention
+    Naples).” In <em>Alessandria e il mondo ellenistico-romano: Studi in onore
+    di Achille Adriani</em> 2, ed. N. Bonacasa and A. di Vita, pp.
+    265–72<em></em>. Rome.
 
 - id: bailey-1985
   name: Bailey 1985
   contents: >
-    Bailey, D. M. 1985. “The Lamps of Sidi Khrebish, Benghazi (Berenice): Imported and Local Products.” In <em>Cyrenaica in Antiquity,</em> ed. G. Barker, J. Lloyd, and J. M. Reynolds, pp. 195–204. BAR international series 236. Oxford.
+    Bailey, D. M. 1985. “The Lamps of Sidi Khrebish, Benghazi (Berenice):
+    Imported and Local Products.” In <em>Cyrenaica in Antiquity,</em> ed. G.
+    Barker, J. Lloyd, and J. M. Reynolds, pp. 195–204. BAR international series
+    236. Oxford.
 
 - id: bailey-1991
   name: Bailey 1991
   contents: >
-    Bailey, D. M. 1991. “Aspects of the Dating of Certain Egyptian Lamps.” <em>Bulletin de liaison du groupe international d’étude de la céramique égyptienne</em> 15 41–42.
+    Bailey, D. M. 1991. “Aspects of the Dating of Certain Egyptian Lamps.”
+    <em>Bulletin de liaison du groupe international d’étude de la céramique
+    égyptienne</em> 15 41–42.
 
 - id: bailey-1994
   name: Bailey 1994
   contents: >
-    Bailey, D. M.  1994. <em>The Finds</em>. Part 2.4, <em>The Lamps</em>. Vol. 2 of <em>Excavations at Sabratha, 1948–1951,</em> ed. M. Fulford and R. Tomber. London.
+    Bailey, D. M. 1994. <em>The Finds</em>. Part 2.4, <em>The Lamps</em>. Vol. 2
+    of <em>Excavations at Sabratha, 1948–1951,</em> ed. M. Fulford and R.
+    Tomber. London.
 
 - id: bailey-1997
   name: Bailey 1997
   contents: >
-    Bailey, D. M. 1997. <em>Ancient Oil-lamps from the Mediterranean: Nakayama and Orsetti Collections, Ancient Orient Museum, Tokyo</em>. Tokyo.
+    Bailey, D. M. 1997. <em>Ancient Oil-lamps from the Mediterranean: Nakayama
+    and Orsetti Collections, Ancient Orient Museum, Tokyo</em>. Tokyo.
 
 - id: balil-1962
   name: Balil 1962
@@ -333,7 +367,8 @@
 - id: barbieri-1994
   name: Barbieri 1994
   contents: >
-    Barbieri, G. 1994. “Ferento (Viterbo), gruppo di lucerne dall’abitato romano.” <em>Notizie degli Scavi<em>, series 9 (1990–91), 1–2 151–61.
+    Barbieri, G. 1994. “Ferento (Viterbo), gruppo di lucerne dall’abitato
+    romano.” <em>Notizie degli Scavi</em>, series 9 (1990–91), 1–2 151–61.
 
 - id: barnish-1992
   name: Barnish 1992
@@ -343,32 +378,41 @@
 - id: barr-sharrar-1994
   name: Barr-Sharrar 1994
   contents: >
-    Barr-Sharrar, B. 1994. “The Bronze Lamps.” In <em>Das Wrack: Die antike Schiffsfunde von Mahdia<em>, ed. G. Hellenkemper Salies, H.-H. von Prittwitz und Gaffron, and G. Bauchhenz, vol. 1, pp. 639–55. Cologne.
+    Barr-Sharrar, B. 1994. “The Bronze Lamps.” In <em>Das Wrack: Die antike
+    Schiffsfunde von Mahdia</em>, ed. G. Hellenkemper Salies, H.-H. von Prittwitz
+    und Gaffron, and G. Bauchhenz, vol. 1, pp. 639–55. Cologne.
 
 - id: bartoli-santi-bellori-1702
   name: Bartoli Santi and Bellori 1702
   contents: >
-    Bartoli Santi, P., and J. P. Bellori. 1702. <em>Lucernae veterum sepulchrales iconicae</em>. Coloniae Marchicae [Berlin].
+    Bartoli Santi, P., and J. P. Bellori. 1702. <em>Lucernae veterum
+    sepulchrales iconicae</em>. Coloniae Marchicae [Berlin].
 
 - id: bass-van-doorninck-1982
   name: Bass and Van Doorninck 1982
   contents: >
-    Bass, G. F., and F. H. Van Doorninck. 1982. “The Lamps.” In <em>A Seventh-Century Byzantine Shipwreck</em>. Vol. 1 of <em>Yassi Ada,</em> pp. 189–201. College Station, TX.
+    Bass, G. F., and F. H. Van Doorninck. 1982. “The Lamps.” In <em>A
+    Seventh-Century Byzantine Shipwreck</em>. Vol. 1 of <em>Yassi Ada,</em> pp.
+    189–201. College Station, TX.
 
 - id: baur-1947
   name: Baur 1947
   contents: >
-    Baur, P. V. C. 1947. <em>The Lamps</em>. Vol. 4.3 of <em>The Excavations at Dura-Europos: Final Report<em>, pp. 1–84. New Haven, CT.
+    Baur, P. V. C. 1947. <em>The Lamps</em>. Vol. 4.3 of <em>The Excavations at
+    Dura-Europos: Final Report</em>, pp. 1–84. New Haven, CT.
 
 - id: bayer-niemeier-1998
   name: Bayer-Niemeier 1998
   contents: >
-    Bayer-Niemeier, E. 1988. <em>Griechisch-RömischeTerrakotten</em>. Vol. 1 of <em>Bildwerke der Sammlung Kaufmann</em>. Liebieghaus-Museum alter Plastik, Frankfurt am Main. Melsungen.
+    Bayer-Niemeier, E. 1988. <em>Griechisch-RömischeTerrakotten</em>. Vol. 1 of
+    <em>Bildwerke der Sammlung Kaufmann</em>. Liebieghaus-Museum alter Plastik,
+    Frankfurt am Main. Melsungen.
 
 - id: beames-2004
   name: Beames 2004
   contents: >
-    Beames, H. 2004. “Ariadne, Omphale, or Hercules: A New Interpretation of an Ancient Lamp.” <em>Mediterranean Archaeology</em> 17 15–23.
+    Beames, H. 2004. “Ariadne, Omphale, or Hercules: A New Interpretation of an
+    Ancient Lamp.” <em>Mediterranean Archaeology</em> 17 15–23.
 
 - id: belchior-1969
   name: Belchior 1969
@@ -378,7 +422,9 @@
 - id: bemont-2002
   name: Bémont 2002
   contents: >
-    Bémont, C. 2002. <em>Les Lampes de Glanum</em>. <em>Revue Archéologique de Narbonnaise<em>, suppl. 34. Éditions de l’Association de la Revue Archéologique de Narbonnaise.
+    Bémont, C. 2002. <em>Les Lampes de Glanum</em>. <em>Revue Archéologique de
+    Narbonnaise</em>, suppl. 34. Éditions de l’Association de la Revue
+    Archéologique de Narbonnaise.
 
 - id: bemont-2005
   name: Bémont 2005
@@ -403,12 +449,15 @@
 - id: benoit-1961
   name: Benoît 1961
   contents: >
-    Benoît, F. 1961. <em>Fouilles sous-marines: L’Épave du Grand Congloué à Marseille</em>. <em>Gallia<em>, suppl. 14. Paris.
+    Benoît, F. 1961. <em>Fouilles sous-marines: L’Épave du Grand Congloué à
+    Marseille. Gallia</em>, suppl. 14. Paris.
 
 - id: berges-1989
   name: Bergès 1989
   contents: >
-    Bergès, G. 1989. <em>Les Lampes de Montans</em> (<em>Tarn<em>): <em>Une production céramique des i<sup>er</sup> et ii<sup>e</sup> s. ap. J.-C</em>. Paris.
+    Bergès, G. 1989. <em>Les Lampes de Montans</em> (<em>Tarn</em>): <em>Une
+    production céramique des i<sup>er</sup> et ii<sup>e</sup> s. ap. J.-C</em>.
+    Paris.
 
 - id: bernabo-brea-cavalier-1965
   name: Bernabò Brea and Cavalier 1965
@@ -423,12 +472,15 @@
 - id: bernhard-1956
   name: Bernhard 1956
   contents: >
-    Bernhard, M. L. 1956. “Topographie d'Alexandrie: Le tombeau d’Alexandre et le mausolée d’Auguste.” <em>Revue Archéologique</em> 47–48 129–56.
+    Bernhard, M. L. 1956. “Topographie d'Alexandrie: Le tombeau d’Alexandre et
+    le mausolée d’Auguste.” <em>Revue Archéologique</em> 47–48 129–56.
 
 - id: bernhard-1972
   name: Bernhard 1972
   contents: >
-    Bernhard, M. L. 1972. “Quelques remarques sur Alexandrie.” <em>Revue Archéologique</em> (<em>Études de céramique et de peintures antiques offertes à Pierre Devambez<em>) 23–24 317–20.
+    Bernhard, M. L. 1972. “Quelques remarques sur Alexandrie.” <em>Revue
+    Archéologique</em> (<em>Études de céramique et de peintures antiques
+    offertes à Pierre Devambez</em>) 23–24 317–20.
 
 - id: beschi-1962
   name: Beschi 1962
@@ -450,7 +502,7 @@
   contents: >
     Bet, Ph., R. Gangloff, and H. Vertet. 1987. <em>Les Productions céramiques antiques de Lezoux et de Gaule centrale à travers les collections du Musée Archéologique de Lezoux</em>. <em>Revue Archéologique Sites</em> 32. Avignon.
 
-- id: bieber:
+- id: bieber
   name: Bieber 1915
   contents: >
     Bieber, M. 1915. <em>Die antiken Skulpturen und Bronzen des Königl. Museum Fridericianum in Cassel</em>. Marburg.
@@ -458,17 +510,22 @@
 - id: bisi-ingrassia 1962
   name: Bisi Ingrassia 1962
   contents: >
-    Bisi Ingrassia, A. M. 1977. “Le lucerne fittili dei Nuovi Scavi di Ercolano.” In <em>L’instrumentum</em> <em>domesticum di Ercolano e Pompei nella prima età imperiale<em>, pp. 73–104.
+    Bisi Ingrassia, A. M. 1977. “Le lucerne fittili dei Nuovi Scavi di
+    Ercolano.” In <em>L’instrumentum domesticum di Ercolano e Pompei
+    nella prima età imperiale</em>, pp. 73–104.
 
 - id: bonghi-jovino-1977
   name: Bonghi Jovino 1977
   contents: >
-    Bonghi Jovino, M. 1977. “Lucerne.” In <em>Relazione delle campagne di scavo 1972–1973–1974</em>. Vol. 2 of <em>Scavi di Luni<em>, ed. A. Frova, pp. 557–67. Rome.
+    Bonghi Jovino, M. 1977. “Lucerne.” In <em>Relazione delle campagne di scavo
+    1972–1973–1974</em>. Vol. 2 of <em>Scavi di Luni</em>, ed. A. Frova, pp.
+    557–67. Rome.
 
 - id: bonghi-jovino-1984
   name: Bonghi Jovino 1984
   contents: >
-    Bonghi Jovino, M. 1984. <em>Richerche a Pompei: L’insula 5</em> <em>della Regio vi dalle origini al 79 d.C.: Campagna di scavo 1976–79</em>. Rome.
+    Bonghi Jovino, M. 1984. <em>Richerche a Pompei: L’insula 5</em> <em>della
+    Regio vi dalle origini al 79 d.C.: Campagna di scavo 1976–79</em>. Rome.
 
 - id: bonhams-2003
   name: Bonham’s 2003
@@ -482,12 +539,17 @@
 
 - id: bonifay-2004b
   name: Bonifay 2004b
-  contents: >Bonifay, M. 2004b. “Pupput, les lampes.” In Ben Abed Ben Khader and Griesheimer 2004, pp. 21–58.
+  contents: >
+    Bonifay, M. 2004b. “Pupput, les lampes.” In Ben Abed Ben Khader and Griesheimer 2004, pp. 21–58.
 
 - id: bonifay-2005
   name: Bonifay 2005
   contents: >
-    Bonifay, M. 2005. “Observations sur la typologie des lampes africaines (ii<sup>e</sup>–iv<sup>e</sup> siècles).” <em>Lychnological Acts</em> 1. <em>Actes du 1<sup>er</sup> Congrès International d'études sur le luminaire antique</em> (Nyon–Geneva, 29 September–4 October 2003), ed. L. Chrzanovski, pp. 31–39.
+    Bonifay, M. 2005. “Observations sur la typologie des lampes africaines
+    (ii<sup>e</sup>–iv<sup>e</sup> siècles).” <em>Lychnological Acts</em> 1.
+    <em>Actes du 1<sup>er</sup> Congrès International d'études sur le luminaire
+    antique</em> (Nyon–Geneva, 29 September–4 October 2003), ed. L. Chrzanovski,
+    pp. 31–39.
 
 - id: bonifay-et-al-2002-3
   name: Bonifay et al. 2002–3
@@ -552,7 +614,9 @@
 - id: brehm-2004
   name: Brehm 2004
   contents: >
-    Brehm, O. 2004. “Das Bildnis auf dem Spiegel: Anmerkungen zu den ‘Caesaren-Lampen.’” In <em>Bildergeschichte: Festschrift Klaus Stähler<em>, ed. J. Gebauer et al., pp. 77–91. Möhnesee.
+    Brehm, O. 2004. “Das Bildnis auf dem Spiegel: Anmerkungen zu den
+    ‘Caesaren-Lampen.’” In <em>Bildergeschichte: Festschrift Klaus Stähler</em>,
+    ed. J. Gebauer et al., pp. 77–91. Möhnesee.
 
 - id: brentchaloff-1972
   name: Brentchaloff 1972
@@ -667,32 +731,47 @@
 - id: carre-1984
   name: Carré 1984
   contents: >
-    Carré, F. 1984. “Lampes à huile en terre cuite des Musées Rolin d’Autun et d’Alésia (III<sup>e</sup> s. av. J.-C.–VI<sup>e</sup> s. ap. J.-C</em>.</em>)</em>.”</em> Mémoire de Maîtrise, Université Paris iv (unpublished ms.).
+    Carré, F. 1984. “Lampes à huile en terre cuite des Musées Rolin d’Autun et
+    d’Alésia (III<sup>e</sup> s. av. J.-C.–VI<sup>e</sup> s. ap.
+    J.-C.).” Mémoire de Maîtrise, Université Paris iv (unpublished ms.).
 
 - id: carre-1985
   name: Carré 1985
   contents: >
-    Carré, F. 1985. “Les Lampes en terre cuite d’Alésia (collections des Musées d’Alésia).” <em>Revue Archéologique de l’Est et</em> <em>du Centre-Est</em> 36.3–4 277–97.
+    Carré, F. 1985. “Les Lampes en terre cuite d’Alésia (collections des Musées
+    d’Alésia).” <em>Revue Archéologique de l’Est et</em> <em>du Centre-Est</em>
+    36.3–4 277–97.
 
 - id: carre-1995
   name: Carré 1995
   contents: >
-    Carré, M. B. 1995. “Les Lampes.” In M.-H. Santrot and J. Santrot, <em>La Citerne 5 et son mobilier: Production, importations et consommation, III<sup>e</sup> siècle–début I<sup>er</sup> siècle av. J.-C. et deuxième tiers du i<sup>er</sup> siècle ap. J.-C.,</em> pp. 145–59. Vol. 7 of <em>Fouilles de l'École française de Rome à Bolsena</em> (<em>Poggio Moscini<em>). Rome.
+    Carré, M. B. 1995. “Les Lampes.” In M.-H. Santrot and J. Santrot, <em>La
+    Citerne 5 et son mobilier: Production, importations et consommation,
+    III<sup>e</sup> siècle–début I<sup>er</sup> siècle av. J.-C. et deuxième
+    tiers du i<sup>er</sup> siècle ap. J.-C.,</em> pp. 145–59. Vol. 7 of
+    <em>Fouilles de l'École française de Rome à Bolsena</em> (<em>Poggio
+    Moscini</em>). Rome.
 
 - id: carreterovaquero-1991
   name: Carretero Vaquero 1991
   contents: >
-    Carretero Vaquero, S. 1991. “Lucernas romanas con paisaje de influencia alejandrina: Temas marítimos.” <em>Boletín del</em> <em>Seminario de Estudios de Arte y Arqueología</em> 57 193–215.
+    Carretero Vaquero, S. 1991. “Lucernas romanas con paisaje de influencia
+    alejandrina: Temas marítimos.” <em>Boletín del</em> <em>Seminario de
+    Estudios de Arte y Arqueología</em> 57 193–215.
 
 - id: casas-genover-soler-fuste-2006
   name: Casas Genover and Soler Fusté 2006
   contents: >
-    Casas Genover, J., and V. Soler Fusté. 2006. <em>Lucernas romanas en el extremo nordeste de la Peninsula Ibérica</em>. BAR international series 1567. Oxford.
+    Casas Genover, J., and V. Soler Fusté. 2006. <em>Lucernas romanas en el
+    extremo nordeste de la Peninsula Ibérica</em>. BAR international series
+    1567. Oxford.
 
 - id: castanyer-tremolada-1999
   name: Castanyer and Tremolada 1999
   contents: >
-    Castanyer, P., and J. Tremolada. 1999. <em>La villa romana de Vilauba: Un exemple de l’ocupació i explotació romana del territori a la comarca del Pla de l’Estany</em>. Girona.
+    Castanyer, P., and J. Tremolada. 1999. <em>La villa romana de Vilauba: Un
+    exemple de l’ocupació i explotació romana del territori a la comarca del Pla
+    de l’Estany</em>. Girona.
 
 - id: castro-nunes-guerra-fabiao-1990
   name: Castro Nunes, Guerra, and Fabião 1990
@@ -707,7 +786,9 @@
 - id: cerneva-tilkijan-2002
   name: Cerneva-Tilkijan 2002
   contents: >
-    Cerneva-Tilkijan, S. 2002. “Repliki na anticeski lampi ot 3–4 v., otkriti vav Filipopol.” In <em>The Roman and Late Roman</em> <em>City<em>, ed. Lyudmila Ruseva-Slokoska et al., pp. 429–32. Sofia.
+    Cerneva-Tilkijan, S. 2002. “Repliki na anticeski lampi ot 3–4 v., otkriti
+    vav Filipopol.” In <em>The Roman and Late Roman</em> <em>City</em>, ed.
+    Lyudmila Ruseva-Slokoska et al., pp. 429–32. Sofia.
 
 - id: Christies-1978
   name: Christie’s 1978
@@ -2020,7 +2101,7 @@
     Portulano, B. 1996. “La collezione di lucerne antiche del Civico Museo Archeologico di Bergamo.” <em>Notizie Archeologiche</em> <em>Bergomensi</em> 4 45–99.
 
 - id: potentia-quando-poi-scese-il-silenzio-2006
-  name: <em>Potentia: Quando poi scese il silenzio</em> 2006
+  name: "<em>Potentia: Quando poi scese il silenzio</em> 2006"
   contents: >
     <em>Potentia: Quando poi scese il silenzio . . . : Rito e società in una colonia romana del Piceno fra Repubblica e tardo Impero<em>, ed. E. Percossi Serenelli. 2001. Exh. cat. Milan.
 
@@ -2543,5 +2624,3 @@
   name: Zouhdi 1974
   contents: >
    Zouhdi, B. 1974. “Aspect des lampes antiques au Musée de Damas.” <em>Annales Archéologiques Arabes-Syriennes</em> 24 171–87.
-
- ---
