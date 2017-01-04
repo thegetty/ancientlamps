@@ -2,30 +2,30 @@
   %a{ :href => "javascript:void(0);", :class => "expander-trigger" }
     %h5 Cite this Page
   .expander-content.nav-cite
-    -# - if current_page.data.cat.is_a? Array
-      -# / Catalogue page with multiple entries
-      -# - cat_range = "#{current_page.data.cat.first}–#{current_page.data.cat.last}"
-      -# %h6 Chicago
-      -# %p= "#{citation_author}. “Cats. #{cat_range}: #{current_page.data.title}.”" + |
-          -# "#{book_info_chicago}"                                                    |
-      -# %h6 MLA
-      -# %p= "#{citation_author}. “Cats. #{cat_range}: #{current_page.data.title}.”" + |
-          -# "#{book_info_mla}"                                                        |
-    -# - elsif current_page.data.cat.is_a? Integer
-      -# / Catalogue page with single entry
-      -# - entry = lookup_entry(current_page.data.cat)
-      -# %h6 Chicago
-      -# %p= "#{citation_author}. “Cat. #{entry.cat}: #{entry.title}.”" + |
-          -# "#{book_info_chicago}"                                       |
-      -# %h6 MLA
-      -# %p= "#{citation_author}. “Cat. #{entry.cat}: #{entry.title}.”" + |
-          -# "#{book_info_mla}"                                           |
-    -# - else
-      -# / Page is not a catalogue page
-      -# %h6 Chicago
-      -# %p= "#{citation_author}. “#{current_page.data.title}.”" + |
-          -# "#{book_info_chicago}"                                |
-      -# %h6 MLA
-      -# %p= "#{citation_author}. “#{current_page.data.title}.”" + |
-          -# "#{book_info_mla}"                                    |
+    - if current_page.data.cat.respond_to?(:each)
+      / Catalogue page with multiple entries
+      - cat_range = "#{current_page.data.cat.first}–#{current_page.data.cat.last}"
+      %h6 Chicago
+      %p= "#{citation_author}. “Cats. #{cat_range}.”" + |
+          "#{book_info_chicago}"                        |
+      %h6 MLA
+      %p= "#{citation_author}. “Cats. #{cat_range}.”" + |
+          "#{book_info_mla}"                            |
+    - elsif current_page.data.cat.is_a? Integer
+      / Catalogue page with single entry
+      - entry = catalogue_lookup(current_page.data.cat)
+      %h6 Chicago
+      %p= "#{citation_author}. “Cat. #{entry.cat_no}.”" + |
+          "#{book_info_chicago}"                          |
+      %h6 MLA
+      %p= "#{citation_author}. “Cat. #{entry.cat_no}.”" + |
+          "#{book_info_mla}"                              |
+    - else
+      / Page is not a catalogue page
+      %h6 Chicago
+      %p= "#{citation_author}. “#{current_page.data.title}.”" + |
+          "#{book_info_chicago}"                                |
+      %h6 MLA
+      %p= "#{citation_author}. “#{current_page.data.title}.”" + |
+          "#{book_info_mla}"                                    |
     = link_to "Full Catalogue Citation", "/about.html"

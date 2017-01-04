@@ -12,6 +12,7 @@ gem 'middleman-deploy', '= 2.0.0.pre.alpha'
 gem 'middleman-livereload'
 
 gem 'sanitize'
+gem 'epzip'
 gem 'slugify'
 gem 'rubyzip'
 gem 'middleman-minify-html'

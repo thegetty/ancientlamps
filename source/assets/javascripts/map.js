@@ -196,7 +196,13 @@ class Map {
       return false
     } else {
       let loc = _.find(this.geojsonData.features, function(feature) {
-        return feature.properties.pid === window.location.hash.slice(5)
+        if (feature.properties.pid.length > 0) {
+          // If location has a Pleiades ID
+          return feature.properties.pid === window.location.hash.slice(5)
+        } else {
+          // If location has a TGN ID
+          return feature.properties.tgn === window.location.hash.slice(5)
+        }
       })
       let coords = [loc.geometry.coordinates[1], loc.geometry.coordinates[0]]
       L.geoJson(loc, {

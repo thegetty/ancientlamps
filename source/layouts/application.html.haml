@@ -21,11 +21,14 @@
       = stylesheet_link_tag "print-basic"
     - else
       = stylesheet_link_tag "application"
-  %body{ class: page_classes }
-    %main#main
-      - unless environment? :pdf
+  - if environment? :pdf
+    %body{class: page_classes}
+      %main#main
+        = yield
+  - else
+    %body
+      %main#main
         = partial "partials/nav"
-      = yield
-    - unless environment? :pdf
+        = yield
       .sliding-panel-fade-screen
       = javascript_include_tag "application"
