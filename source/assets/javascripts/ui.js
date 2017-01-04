@@ -178,9 +178,9 @@ class UI {
         clone.getElementById('entry-provenance').innerHTML = catData.provenance
       }
 
-      if (catData.iconography) {
+      if (catData.discus_iconography) {
         clone.querySelector('.section.iconography').classList.remove('is-hidden')
-        clone.getElementById('entry-iconography').innerHTML = catData.iconography
+        clone.getElementById('entry-iconography').innerHTML = catData.discus_iconography
       }
 
       if (catData.discussion) {
