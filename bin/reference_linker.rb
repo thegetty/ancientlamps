@@ -11,12 +11,13 @@ catalogue.each do |e|
   references.each do |r|
     ref_name = r['name']
     ref_id   = r['id']
+    regex    = /#{ref_name}(?!I)/
 
     keys.each do |k|
       # Check each desired key of each catalogue entry hash for a match to the
       # :name field among any of the reference # authors.
       next if e[k].nil?
-        m = e[k].match(/#{ref_name}/)
+        m = e[k].match(regex)
         next if m.nil?
 
         # If a match is found, wrap it in a link to the :id of the matched author.
