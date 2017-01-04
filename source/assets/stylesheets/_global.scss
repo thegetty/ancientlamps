@@ -16,7 +16,7 @@ html { min-height: 100vh; }
     + h3 { margin-top: $base-spacing; }
   }
 
-  p, ol, ul { font-size: modular-scale(1); }
+  p, ol, ul { font-size: 1.25rem; }
   ol { @extend %default-ol; }
 
   @include media($medium-screen-up) {
@@ -92,6 +92,7 @@ html { min-height: 100vh; }
 
 .footnotes {
   border-top: $base-border;
+  margin-bottom: $base-spacing;
   margin-top: $base-spacing;
   padding-top: $small-spacing;
   text-align: center;
@@ -99,15 +100,15 @@ html { min-height: 100vh; }
   &::before {
     content: "Notes";
     font-family: "Freight Text Pro SC";
-    font-size: modular-scale(2);
+    font-size: 1rem;
     letter-spacing: 2px;
     text-transform: lowercase;
   }
 
-  ol { margin-top: $small-spacing; }
+  ol { margin-top: $small-spacing; padding-left: $small-spacing; }
 
   p, ol, ul {
-    font-size: 1rem;
+    font-size: 0.875rem !important;
     text-align: left;
   }
 }
