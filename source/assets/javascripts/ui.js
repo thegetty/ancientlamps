@@ -62,7 +62,10 @@ class UI {
 
     // Page-specific elements
     if ($detailCloseButton.length) { $detailCloseButton.click(() => { this.hideDetails() }) }
-    if ($thumbnails.length) { $thumbnails.click( e => this.showDetails(e)) }
+    if ($thumbnails.length) {
+      $thumbnails.click( e => this.showDetails(e))
+      window.onhashchange = this.hideDetails
+    }
     if ($mapEl.length) { new Map() }
   }
 
@@ -71,6 +74,10 @@ class UI {
     let $currentDate = $('.cite-current-date')
     $currentDate.empty();
     $currentDate.text(today);
+  }
+
+  removeHash() {
+    window.history.pushState("", document.title, window.location.pathname + window.location.search)
   }
 
   keyboardControls(e) {
@@ -149,6 +156,7 @@ class UI {
     detailCloseButton.classList.add('is-visible')
     document.querySelector('body').classList.add('noscroll')
     this.deepZoomVisible = true
+    this.removeHash()
 
     // TODO: move this code into an ObjectDetails class
     // Fetch tombstone data and template
@@ -178,9 +186,9 @@ class UI {
         clone.getElementById('entry-provenance').innerHTML = catData.provenance
       }
 
-      if (catData.iconography) {
+      if (catData.discus_iconography) {
         clone.querySelector('.section.iconography').classList.remove('is-hidden')
-        clone.getElementById('entry-iconography').innerHTML = catData.iconography
+        clone.getElementById('entry-iconography').innerHTML = catData.discus_iconography
       }
 
       if (catData.discussion) {
