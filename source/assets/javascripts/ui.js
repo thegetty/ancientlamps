@@ -13,7 +13,7 @@ class UI {
     this.searchVisible = false
     this.deepZoomVisible = false
     this.zoomInstance = {}
-    this.searchInstance = window.search || new Search()
+    this.searchInstance = null
     this.setup()
   }
 
@@ -256,6 +256,7 @@ class UI {
   }
 
   searchQuery() {
+    if (!this.searchInstance) { this.searchInstance = new Search() }
     let searchInput = document.querySelector('.search-field')
     let query = searchInput.value
     let container = document.querySelector('.search-results-list')
