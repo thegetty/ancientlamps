@@ -8,7 +8,23 @@ sort_order: 204
     <tbody>
       <tr><th>Accession Number</th><th>Catalogue Number</th><th>Getty Collection Link</th></tr>
       <% data.catalogue.each do |entry| %>
-        <tr><td><%= entry.inv_no %></td><td><a href="<%= entry.cat_no %>"><%= entry.cat_no %></a></td><td><a href="http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>" target="_blank" title="Getty Collection Pages"><%= entry.dor_id %> <i class="ion-link"></i></a></td></tr>
+      <tr>
+        <td>
+          <%= entry.inv_no %></td>
+        <td>
+          <% entry_page = catalogue_page_lookup(entry.cat_no) %>
+          <% unless entry_page.nil? %>
+          <% entry_page_path = "../catalogue/#{entry_page.path}/" %>
+          <a href='<%= entry_page_path %>'><%= entry.cat_no %></a>
+          <% end %>
+        </td>
+        <td>
+          <a href="http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>" target="_blank" title="Getty Collection Pages">
+            <%= entry.dor_id %>
+            <i class="ion-link"></i>
+          </a>
+        </td>
+      </tr>
       <% end %>
     </tbody>
   <table>
