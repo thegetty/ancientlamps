@@ -3791,7 +3791,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "*Vertillum?",
-      "custom_name": "Verillum",
+      "custom_name": "Vertillum",
       "feature_type": "site",
       "pid": "177656",
       "tgn": "7023987",
