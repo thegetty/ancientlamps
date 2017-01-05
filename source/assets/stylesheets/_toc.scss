@@ -30,9 +30,8 @@
     margin-top: $small-spacing;
     margin-bottom: 0;
   }
-}
-
-.classification-page {
-  ol { font-size: 1.25rem; padding-left: $small-spacing; }
-  ol.classification { padding-left: $base-spacing; }
+  ul {
+    list-style-type: none;
+    padding-left: $base-spacing * 1.5;
+  }
 }
