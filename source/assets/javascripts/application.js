@@ -53,7 +53,7 @@ function prepareTransitions() {
 // -----------------------------------------------------------------------------
 // Only call other functions inside of this.
 $(document).ready(function() {
-  window.search = new Search()
+  // window.search = new Search()
   pageUI = new UI()
   // prepareTransitions()
 })
