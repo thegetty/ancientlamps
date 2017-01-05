@@ -49,8 +49,20 @@ module Book
       "http://www.getty.edu#{config.baseurl}/assets/images/og_cover.jpg"
     end
 
+    # Returns the entry data from catalogue.yml for a given cat number
     def catalogue_lookup(cat_num)
       data.catalogue.find { |c| c[:cat_no] == cat_num }
+    end
+
+    # Finds the page that a catalogue entry appears on
+    def catalogue_page_lookup(query)
+      data.lookup_table.find do |c|
+        if c.cat_no.respond_to? :each
+          c.cat_no.include? query
+        else
+          c.cat_no == query
+        end
+      end
     end
 
     # --------------------------------------------------------------------------
