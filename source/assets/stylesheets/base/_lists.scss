@@ -73,3 +73,28 @@ dl {
     text-indent: 0;
   }
 }
+
+.classification {
+  line-height: 1.5;
+  ol {
+    padding-left: $base-spacing;
+  }
+}
+.classification li {
+  clear: both;
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+.classification a,
+.classification .link-group {
+  float: right;
+  margin-left: $base-spacing * .5;
+}
+
+.classification a.footnote,
+.classification .link-group a {
+  float: none;
+  margin-left: 0;
+}
