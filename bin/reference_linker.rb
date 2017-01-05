@@ -2,9 +2,9 @@
 # frozen_string_literal: true
 
 require 'yaml'
-references = YAML.load_file('./data/references.yml')
 
 def add_catalogue_yaml_links
+  references = YAML.load_file('./data/references.yml')
   catalogue = YAML.load_file('./data/catalogue.yml')
   keys = ['bibliography', 'parallels']
 
@@ -27,6 +27,7 @@ def add_catalogue_yaml_links
 end
 
 def add_catalogue_essay_links
+  references = YAML.load_file('./data/references.yml')
   essays = Dir.glob(["source/catalogue/**/*.html.md", "source/catalogue/**/*.html.md.erb"])
   essays.each do |essay|
     essay_text = File.read(essay)
@@ -43,6 +44,7 @@ def add_catalogue_essay_links
 end
 
 def add_top_level_essay_links
+  references = YAML.load_file('./data/references.yml')
   essays = Dir.glob(["source/*.html.md", "source/*.html.md.erb"])
   essays.each do |essay|
     essay_text = File.read(essay)
@@ -59,6 +61,6 @@ def add_top_level_essay_links
 end
 
 # Uncomment methods if you want to use them
-# add_catalogue_yaml_links
-# add_catalogue_essay_links
-# add_top_level_essay_links
+add_catalogue_yaml_links
+add_catalogue_essay_links
+add_top_level_essay_links
