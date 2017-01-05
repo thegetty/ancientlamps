@@ -55,5 +55,5 @@ function prepareTransitions() {
 $(document).ready(function() {
   window.search = new Search()
   pageUI = new UI()
-  prepareTransitions()
+  // prepareTransitions()
 })
