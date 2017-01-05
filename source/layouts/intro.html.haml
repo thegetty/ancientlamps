@@ -1,5 +1,4 @@
 - typology = current_page.data.hierarchy.map {|i| i.values }.flatten.join(" / ")
-- code = current_page.data.hierarchy.map {|i| i.keys }.flatten.join(".")
 - title = current_page.data.hierarchy.last.values.join
 - cat = current_page.data.cat
 - entries = current_page.data.cat.respond_to?(:each) ? cat : Array(cat)
@@ -13,7 +12,6 @@
     .cat-intro__header
       .cat-intro__header__inner
         %h1.cat-intro__title= title
-        %h2.cat-intro__title= code
     %article.cat-intro__content
       .cat-intro__content__inner
         = yield
