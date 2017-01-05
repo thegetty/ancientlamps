@@ -61,6 +61,6 @@ def add_top_level_essay_links
 end
 
 # Uncomment methods if you want to use them
-add_catalogue_yaml_links
-add_catalogue_essay_links
-add_top_level_essay_links
+# add_catalogue_yaml_links
+# add_catalogue_essay_links
+# add_top_level_essay_links
