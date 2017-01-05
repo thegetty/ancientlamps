@@ -46,6 +46,7 @@ end
 def add_top_level_essay_links
   references = YAML.load_file('./data/references.yml')
   essays = Dir.glob(["source/*.html.md", "source/*.html.md.erb"])
+  essays.reject! {|essay| essay == "source/bibliography.html.md.erb" }
   essays.each do |essay|
     essay_text = File.read(essay)
     references.each do |r|
@@ -61,6 +62,6 @@ def add_top_level_essay_links
 end
 
 # Uncomment methods if you want to use them
-# add_catalogue_yaml_links
-# add_catalogue_essay_links
-# add_top_level_essay_links
+add_catalogue_yaml_links
+add_catalogue_essay_links
+add_top_level_essay_links
