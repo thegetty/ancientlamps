@@ -947,29 +947,20 @@
 - cat_no: 39
   inv_no: 83.AQ.377.346
   dor_id: 16994
-  dimensions: 'L: 10.8 cm; W: 5.6 cm; H: 2.5 cm'
-  condition_and_fabric: Ribbon handle broken off. Clay 7.5YR5/4 brown, unevenly applied
-    glaze 10YR4/2 dark grayish brown, and 10YR3/2 very dark grayish brown. Slight
-    mica.
-  description: Moldmade. Biconical body. Shoulder with a row of ovolos alternating
-    with spiral staffs. Wide flat discus, separated from the shoulder by two circular
-    ridges. Central filling-hole surrounded by a thin ring. Long round-tipped nozzle;
-    large near-circular plate surrounding the wick-hole; small S-shaped relief of
-    dolphin on the nozzle neck; the underside has a characteristic bulging form. Oval,
-    slightly raised base with mark in low relief, like an X with a long branch.
-  discus_iconography: Plain discus.
-  type: Broneer XIX; Howland 49; Bruneau VII <em>lampes dites d’Ephèse</em> group
-    V
-  place: Anatolia
-  parallels: "(Close) Kassab Tezgör and Sezer 1995, no. 296. For nozzle: Bruneau 1965,
-    no. 2761, pl. 15, and no. 2894, pl. 16. For dolphin-pattern: Bruneau 1965, p.
-    62, no. 2618."
-  provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
-    Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
-  bibliography: Unpublished.
-  date: Mid-second to early first century B.C.
-  date_numeric: "-150; -75"
-  discussion: 
+  dimensions: "L: 10.8 cm; W: 5.6 cm; H: 2.5 cm"
+  condition_and_fabric: "Ribbon handle broken off. Clay 7.5YR5/4 brown, unevenly applied glaze 10YR4/2 dark grayish brown, and 10YR3/2 very dark grayish brown. Slight mica."
+  description: "Moldmade. Biconical body. Shoulder with a row of ovolos alternating with spiral staffs. Wide flat discus, separated from the shoulder by two circular ridges. Central filling-hole surrounded by a thin ring. Long round-tipped nozzle; large near-circular plate surrounding the wick-hole; small S-shaped relief of dolphin on the nozzle neck; the underside has a characteristic bulging form. Oval, slightly raised base with mark in low relief, like an X with a long branch."
+  stamp: stamp_39.png
+  discus_iconography: "Plain discus."
+  type: "Broneer XIX; Howland 49; Bruneau VII <em>lampes dites d’Ephèse</em> group V"
+  place: "Anatolia"
+  parallels: "(Close) Kassab Tezgör and Sezer 1995, no. 296. For nozzle: Bruneau 1965, no. 2761, pl. 15, and no. 2894, pl. 16. For dolphin-pattern: Bruneau 1965, p. 62, no. 2618."
+  provenance: "Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983, Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983."
+  bibliography: "Unpublished."
+  date: "Mid-second to early first century B.C."
+  date_numeric: -150; -75
+  discussion:
+
 - cat_no: 40
   inv_no: 83.AQ.377.349
   dor_id: 17032
@@ -10366,24 +10357,14 @@
 - cat_no: 395
   inv_no: 83.AQ.391.5
   dor_id: 14611
-  dimensions: 'L: 11.1 cm; W: 8.1 cm; H: 3.2 cm'
-  condition_and_fabric: Intact, but underside deformed during production. Clay 5YR6/6
-    reddish yellow, mottled glaze mostly 2.5YR5/4 reddish brown.
-  description: 'Moldmade, from plaster mold. Ring handle with three grooves on upper
-    part. Deep basin, lesser depth toward nozzle. Shoulder: Loeschcke form VIII b,
-    with three rows of beads. Filling-hole slightly left of center. Air hole facing
-    nozzle. Heart-shaped nozzle, Bus. 10b; underneath, striated band between two curved
-    and twisted cords. Flat base-ring marked off by two circular grooves and decorated
-    with three blurred, evenly spaced ovo-motifs ; two additional thin inner circles;
-    a small dotted circle in center.'
-  stamp: stamp_.png
-  discus_iconography: Bust of Mars, body frontal, head to right, wearing a helmet
-    with vizor and a cuirass.
-  type: Loeschcke VIII; Bussière form D X 6
-  place: Unknown
-  parallels: "(Close) <a href='../../bibliography/#bussiere-2000'>Bussière 2000</a>,
-    p. 363, no. 3574, pl. 99 (different cuirass ), p. 157, decor I.a.9.(1) (with further
-    refs.); <a href='../394-95/'>cat. 394</a>."
+  dimensions: "L: 11.1 cm; W: 8.1 cm; H: 3.2 cm"
+  condition_and_fabric: "Intact, but underside deformed during production. Clay 5YR6/6 reddish yellow, mottled glaze mostly 2.5YR5/4 reddish brown."
+  description: "Moldmade, from plaster mold. Ring handle with three grooves on upper part. Deep basin, lesser depth toward nozzle. Shoulder: Loeschcke form VIII b, with three rows of beads. Filling-hole slightly left of center. Air hole facing nozzle. Heart-shaped nozzle, Bus. 10b; underneath, striated band between two curved and twisted cords. Flat base-ring marked off by two circular grooves and decorated with three blurred, evenly spaced ovo-motifs ; two additional thin inner circles; a small dotted circle in center."
+  stamp: stamp_various-cats.png
+  discus_iconography: "Bust of Mars, body frontal, head to right, wearing a helmet with vizor and a cuirass."
+  type: "Loeschcke VIII; Bussière form D X 6"
+  place: "Unknown"
+  parallels: "(Close) <a href='../../bibliography/#bussiere-2000'>Bussière 2000</a>, p. 363, no. 3574, pl. 99 (different cuirass ), p. 157, decor I.a.9.(1) (with further refs.); <a href='../394-95/'>cat. 394</a>."
   provenance: "– 1983, Robert L. Lawson, donated to the J. Paul Getty Museum, 1983."
   bibliography: Unpublished.
   date: Ca. A.D. 225–250
@@ -12075,11 +12056,8 @@
   bibliography: Unpublished.
   date: A.D. 175–230
   date_numeric: 175; 230
-  discussion: "<p>Some have seen in the stepped design on the nozzle top the lighthouse
-    at either Alexandria, Carthage, or Ostia (Reddé 1979, p. 862; Guarducci 1982;
-    Bailey 1984).</p><p>Previously considered a fake, this lamp is authentic, as corroborated
-    by the remains of corrosion from an iron wick-nail; see <a href='../463-71/#authenticity-of-cats-464-67-discussion'>Authenticity
-    of cats. 464–67 discussion</a>.</p>"
+  discussion: "<p>Some have seen in the stepped design on the nozzle top the lighthouse at either Alexandria, Carthage, or Ostia (Reddé 1979, p. 862; Guarducci 1982; Bailey 1984).</p><p>Previously considered a fake, this lamp is authentic, as corroborated by the remains of corrosion from an iron wick-nail; see <a href='../463-71/#authenticity-of-cats-46467-discussion'>Authenticity of cats. 464–67 discussion</a>.</p>"
+
 - cat_no: 465
   inv_no: 83.AQ.438.245
   dor_id: 26288
@@ -12114,12 +12092,8 @@
   bibliography: Unpublished.
   date: A.D. 175–230
   date_numeric: 175; 230
-  discussion: "<p>From its large semicircular portico, the port in the discus has
-    sometimes been identified with Ostia.</p><p>For a presumed connection of the potter’s
-    signature with <span class='inscription'>EXO/FICINA/PORC</span>, see Bussière
-    2000, p. 230, type E III,1.</p><p>Previously considered a fake, this lamp is authentic;
-    see <a href='../463-71/#authenticity-of-cats-464-67-discussion'>Authenticity of
-    cats. 464–67 discussion</a>.</p>"
+  discussion: "<p>From its large semicircular portico, the port in the discus has sometimes been identified with Ostia.</p><p>For a presumed connection of the potter’s signature with <span class='inscription'>EXO/FICINA/PORC</span>, see Bussière 2000, p. 230, type E III,1.</p><p>Previously considered a fake, this lamp is authentic; see <a href='../463-71/#authenticity-of-cats-46467-discussion'>Authenticity of cats. 464–67 discussion</a>.</p>"
+
 - cat_no: 466
   inv_no: 75.AQ.21
   dor_id: 7196
@@ -12166,16 +12140,8 @@
   bibliography: Unpublished.
   date: A.D. 175–230
   date_numeric: 175; 230
-  discussion: "<p>Bernhard interprets the three buildings in the upper register of
-    the discus as the Mausoleum of Alexander, the Temple of Alexander, and the tomb
-    of Cleopatra, all in Alexandria (Bernhard 1955; Bernhard 1956). This opinion is
-    shared by Amaré Tafalla and Liz Guiral 1994, p. 35; and by Rostovtzeff 1911, p.
-    153, fig. 66. For his part, Bailey claims that since most of the harbor-scene
-    lamps of Deneauve type X have been found in Tunisia, several bearing well-known
-    African potters’ signatures, the harbor must be Carthage rather than Alexandria
-    or Ostia (Bailey 1984, pp. 271–72).</p><p>Previously considered a fake, this lamp
-    is authentic; see <a href='../463-71/#authenticity-of-cats-464-67-discussion'>Authenticity
-    of cats. 464–67 discussion</a>.</p>"
+  discussion: "<p>Bernhard interprets the three buildings in the upper register of the discus as the Mausoleum of Alexander, the Temple of Alexander, and the tomb of Cleopatra, all in Alexandria (Bernhard 1955; Bernhard 1956). This opinion is shared by Amaré Tafalla and Liz Guiral 1994, p. 35; and by Rostovtzeff 1911, p. 153, fig. 66. For his part, Bailey claims that since most of the harbor-scene lamps of Deneauve type X have been found in Tunisia, several bearing well-known African potters’ signatures, the harbor must be Carthage rather than Alexandria or Ostia (Bailey 1984, pp. 271–72).</p><p>Previously considered a fake, this lamp is authentic; see <a href='../463-71/#authenticity-of-cats-46467-discussion'>Authenticity of cats. 464–67 discussion</a>.</p>"
+
 - cat_no: 467
   inv_no: 83.AQ.438.248
   dor_id: 26290
@@ -12217,8 +12183,8 @@
   bibliography: Unpublished.
   date: A.D. 175–230
   date_numeric: 175; 230
-  discussion: Previously considered a fake, this lamp is authentic; see <a href='../463-71/#authenticity-of-cats-464-67-discussion'>Authenticity
-    of cats. 464–67 discussion</a>.
+  discussion: "Previously considered a fake, this lamp is authentic; see <a href='../463-71/#authenticity-of-cats-46467-discussion'>Authenticity of cats. 464–67 discussion</a>."
+
 - cat_no: 468
   inv_no: 83.AQ.438.243
   dor_id: 26287
@@ -16760,7 +16726,7 @@
   bibliography: Unpublished.
   date: First century A.D.(?)
   date_numeric: 1; 100
-  discussion: 
+  discussion:
 - cat_no: TBD
   inv_no: 83.AK.438.408
   dor_id: 

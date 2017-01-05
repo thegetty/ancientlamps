@@ -19,7 +19,19 @@
   }
 }
 
-.classification-page {
-  ol { font-size: 1.25rem; padding-left: $small-spacing; }
-  ol.classification { padding-left: $base-spacing; }
+.contents-catalogue {
+  margin-top: $base-spacing * .7;
+  margin-bottom: $base-spacing * .7;
+  padding-top: $small-spacing;
+  padding-bottom: $small-spacing * .5;
+  border-top: $base-border;
+  border-bottom: $base-border;
+  ol {
+    margin-top: $small-spacing;
+    margin-bottom: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: $base-spacing * 1.5;
+  }
 }

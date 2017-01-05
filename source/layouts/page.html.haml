@@ -5,6 +5,8 @@
   %article.page
     %header.page__header
       %h1#page-title.page__header__title= current_page.data.title
+      - if current_page.data.secondary_title
+        %h1#page-title.page__header__title=current_page.data.secondary_title
       - if current_page.data.subtitle
         %h3.page__header__subtitle= current_page.data.subtitle
       - if current_page.data.author and current_page.data.author_byline == "top"
