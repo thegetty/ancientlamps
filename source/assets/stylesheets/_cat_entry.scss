@@ -221,6 +221,10 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       margin-bottom: $small-spacing;
       h2 { margin-bottom: 0; }
     }
+
+    #entry-stamp {
+      max-width: 6em;
+    }
   }
 
   &__close {
