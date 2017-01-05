@@ -2,63 +2,52 @@
 # frozen_string_literal: true
 
 require 'yaml'
+
 references = YAML.load_file('./data/references.yml')
+catalogue = YAML.load_file('./data/catalogue.yml')
+keys = ['bibliography', 'parallels']
 
-def add_catalogue_yaml_links
-  catalogue = YAML.load_file('./data/catalogue.yml')
-  keys = ['bibliography', 'parallels']
+# Wrap the Catalogue.yml bib references in links
+catalogue.each do |e|
+  references.each do |r|
+    ref_name = r['name']
+    ref_id   = r['id']
+    regex    = /#{ref_name}(?!I)/
 
-  catalogue.each do |e|
-    references.each do |r|
-      ref_name = r['name']
-      ref_id   = r['id']
-      regex    = /#{ref_name}(?!I)/
+    keys.each do |k|
+      # Check each desired key of each catalogue entry hash for a match to the
+      # :name field among any of the reference # authors.
+      next if e[k].nil?
+        m = e[k].match(regex)
+        next if m.nil?
 
-      keys.each do |k|
-        next if e[k].nil?
-          m = e[k].match(regex)
-          next if m.nil?
-          e[k].gsub!(m[0], "<a href='../../bibliography/##{ref_id}'>#{m[0]}</a>")
-      end
+        # If a match is found, wrap it in a link to the :id of the matched author.
+        e[k].gsub!(m[0], "<a href='../../bibliography/##{ref_id}'>#{m[0]}</a>")
     end
-  end
-
-  File.open('./data/catalogue.yml', 'w') { |f| f.puts catalogue.to_yaml }
-end
-
-def add_catalogue_essay_links
-  essays = Dir.glob(["source/catalogue/**/*.html.md", "source/catalogue/**/*.html.md.erb"])
-  essays.each do |essay|
-    essay_text = File.read(essay)
-    references.each do |r|
-      ref_name = r['name']
-      ref_id   = r['id']
-      regex    = /#{ref_name}(?!I)/
-      m = essay_text.match(regex)
-      next if m.nil?
-      essay_text.gsub!(m[0], "<a href='../../bibliography/##{ref_id}'>#{m[0]}</a>")
-    end
-    File.open(essay, 'w') { |f| f.puts essay_text }
   end
 end
 
-def add_top_level_essay_links
-  essays = Dir.glob(["source/*.html.md", "source/*.html.md.erb"])
-  essays.each do |essay|
-    essay_text = File.read(essay)
-    references.each do |r|
-      ref_name = r['name']
-      ref_id   = r['id']
-      regex    = /#{ref_name}(?!I)/
-      m = essay_text.match(regex)
-      next if m.nil?
-      essay_text.gsub!(m[0], "<a href='../bibliography/##{ref_id}'>#{m[0]}</a>")
-    end
-    File.open(essay, 'w') { |f| f.puts essay_text }
-  end
-end
+# Write the file (uncomment when using)
+# File.open('./data/catalogue.yml', 'w') { |f| f.puts catalogue.to_yaml }
 
-# Uncomment methods if you want to use them
-# add_catalogue_yaml_links
-# add_catalogue_essay_links
-# add_top_level_essay_links
+# Wrap the Essay references in links
+essays = Dir.glob(["source/**/*.html.md", "source/**/*.html.md.erb"])
+essays.each do |essay|
+  essay_text = File.read(essay)
+  references.each do |r|
+    ref_name = r['name']
+    ref_id   = r['id']
+    regex    = /#{ref_name}(?!I)/
+
+    # Check the text of each essay for a match to the :name field of the references
+    m = essay_text.match(regex)
+    next if m.nil?
+
+    # If a match is found, wrap it in a link to the :id of the matched author.
+    essay_text.gsub!(m[0], "<a href='../../bibliography/##{ref_id}'>#{m[0]}</a>")
+  end
+
+  # Write the file (uncomment when using)
+  # File.open(essay, 'w') { |f| f.puts essay_text }
+  puts essay_text
+end

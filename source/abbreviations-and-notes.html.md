@@ -8,7 +8,7 @@ All measurements are in centimeters.
 
 References to “cat./cats.” are cross-references to entries in the present catalogue. References to “cat. no./nos.” refer to other catalogues.
 
-An “ovo pattern” is a motif often found on the base of African second-century-a.d. lamps. It consists of two small circles linked by a V-shaped design. None of these parts is a letter. This motif is repeated three times evenly displayed between two circular lines. For slight variations, see <a href='../bibliography/#bussiere-2000'>Bussière 2000</a> (p. 235, nos. 76–78). The pattern may be specific to some workshops.
+An “ovo pattern” is a motif often found on the base of African second-century-a.d. lamps. It consists of two small circles linked by a V-shaped design. None of these parts is a letter. This motif is repeated three times evenly displayed between two circular lines. For slight variations, see Bussière 2000 (p. 235, nos. 76–78). The pattern may be specific to some workshops.
 
 **[Add an explanation of what “place of manufacture or origin” means]**
 
@@ -40,7 +40,7 @@ An “ovo pattern” is a motif often found on the base of African second-centur
 | L | length |
 | MAN | Musée d’Archéologie Nationale de Saint-Germain-en-Laye |
 | max. | maximum |
-| MNR | Museo Nazionale Romano/ <a href='../bibliography/#barbera-petriaggi-1993'>Barbera and Petriaggi 1993</a> |
+| MNR | Museo Nazionale Romano/ Barbera and Petriaggi 1993 |
 | n./nn. | note/-s |
 | no./nos. | number/-s |
 | p./pp. | page/-s |
