@@ -12,7 +12,7 @@ def add_catalogue_yaml_links
     references.each do |r|
       ref_name = r['name']
       ref_id   = r['id']
-      regex    = /#{ref_name}(?!I)/
+      regex    = /#{ref_name}(?![A-Z+])/
 
       keys.each do |k|
         next if e[k].nil?
@@ -34,7 +34,7 @@ def add_catalogue_essay_links
     references.each do |r|
       ref_name = r['name']
       ref_id   = r['id']
-      regex    = /#{ref_name}(?!I)/
+      regex    = /#{ref_name}(?![A-Z+])/
       m = essay_text.match(regex)
       next if m.nil?
       essay_text.gsub!(m[0], "<a href='../../bibliography/##{ref_id}'>#{m[0]}</a>")
@@ -51,7 +51,7 @@ def add_top_level_essay_links
     references.each do |r|
       ref_name = r['name']
       ref_id   = r['id']
-      regex    = /#{ref_name}(?!I)/
+      regex    = /#{ref_name}(?![A-Z+])/
       m = essay_text.match(regex)
       next if m.nil?
       essay_text.gsub!(m[0], "<a href='../bibliography/##{ref_id}'>#{m[0]}</a>")
