@@ -10,65 +10,65 @@
             = image_tag("thumbs/#{entry.cat_no}.jpg")
           .section.inv-number
             %p
-              %strong Inventory Number:
+              %strong.section-title Inventory Number
               %span= entry.inv_no
           .section.dimensions
             %p
-              %strong Dimensions:
+              %strong.section-title Dimensions
               %span= entry.dimensions
           .section.condition
             - if entry.condition
               %p
-                %strong Condition
+                %strong.section-title Condition
                 %span= entry.condition
             - else
               %p
-                %strong Condition and Fabric:
+                %strong.section-title Condition and Fabric
                 %span= entry.condition_and_fabric
           - unless entry.description.nil?
             .section.description
               %p
-                %strong Description:
+                %strong.section-title Description
                 = entry.description
           - unless entry.stamp.nil?
             .section.stamp
               %p
-                %strong Stamp:
-                = image_tag("stamps/#{entry.stamp}")
+                %strong.section-title Stamp
+                = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp")
           - unless entry.discus_iconography.nil?
             .section.iconography
               %p
-                %strong Discus Iconography:
+                %strong.section-title Discus Iconography
                 = entry.discus_iconography
           .section.type
             %p
-              %strong Type:
+              %strong.section-title Type
               %span= entry.type
           .section.date
             %p
-              %strong Date:
+              %strong.section-title Date
               %span= entry.date
           .section.place
             %p
-              %strong Place of Manufacture or Origin:
+              %strong.section-title Place of Manufacture or Origin
               %span= entry.place
           - unless entry.parallels.nil?
             .section.parallels
               %p
-                %strong Parallels:
+                %strong.section-title Parallels
                 = entry.parallels
           - unless entry.provenance.nil?
             .section.provenance
               %p
-                %strong Provenance:
+                %strong.section-title Provenance
                 = entry.provenance
           - unless entry.bibliography.nil?
             .section.bibliography
               %p
-                %strong Bibliography:
+                %strong.section-title Bibliography
                 = entry.bibliography
           - unless entry.discussion.nil?
             .section.discussion
               %p
-                %strong Discussion:
+                %strong.section-title Discussion
                 = entry.discussion
