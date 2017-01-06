@@ -56,21 +56,21 @@ editions:
     format: application/epub+zip
     isbn: 978-1-60606-514-3
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussière_Wohl.epub
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.epub
     additional_description:
   - name: MOBI/KINDLE
     type: Text
     format: application/mobi
     isbn: 978-1-60606-514-3
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussière_Wohl.mobi
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.mobi
     additional_description:
   - name: PDF
     type: Text
     format: application/pdf
     isbn: 978-1-60606-513-6
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussière_Wohl.pdf
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.pdf
     additional_description:
   - name: Paperback
     type: PhyiscalObject
@@ -85,11 +85,11 @@ other_resources:
   - name: CSV
     type: data
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/RomanMosaics_Belis_Data.csv
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl_Data.csv
   - name: JSON
     type: data
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussière_Wohl.json
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl_Data.json
 publisher: Getty Publications
 imprint: J. Paul Getty Museum
 publisher_short: Getty P
