@@ -1,6 +1,6 @@
 .expander
   %a{ :href => "javascript:void(0);", :class => "expander-trigger" }
-    %h5 Cite this Page
+    %h5 Cite this page
   .expander-content.nav-cite
     - if current_page.data.cat.respond_to?(:each)
       / Catalogue page with multiple entries
@@ -28,4 +28,4 @@
       %h6 MLA
       %p= "#{citation_author}. “#{current_page.data.title}.”" + |
           "#{book_info_mla}"                                    |
-    = link_to "Full Catalogue Citation", "/about.html"
+    = link_to "Full catalogue citation", "/about.html"
