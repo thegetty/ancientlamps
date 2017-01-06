@@ -196,11 +196,13 @@ class UI {
     $.get(dataURL).done((data) => {
       let query = {'cat_no': cat}
       let catData = _.find(data, query)
+      let collectionLink = `http://www.getty.edu/art/collection/objects/${catData.dor_id}`
       console.log(catData)
 
       // populate template
       clone.getElementById('entry-cat-number').innerHTML = catData.cat_no
       clone.getElementById('entry-inv-number').innerHTML = catData.inv_no
+      clone.getElementById('entry-inv-number').href = collectionLink
       clone.getElementById('entry-dimensions').innerHTML = catData.dimensions
       clone.getElementById('entry-date').innerHTML = catData.date
       clone.getElementById('entry-condition').innerHTML = catData.condition_and_fabric
