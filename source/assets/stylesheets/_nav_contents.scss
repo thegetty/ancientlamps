@@ -79,6 +79,7 @@ $sliding-panel-fade-screen-bg: #000;
 }
 
 .nav-sidebar-title {
+  color: lighten($sliding-panel-color, 8%);
   font-size: 1.25rem;
   margin-right: 3rem;
 
@@ -88,7 +89,7 @@ $sliding-panel-fade-screen-bg: #000;
 }
 
 .nav-sidebar-author {
-  color: darken($sliding-panel-color, 20%);
+  color: darken($sliding-panel-color, 8%);
   font-size: 1.125rem;
 
   @include media($medium-screen-up) {
@@ -127,10 +128,10 @@ $sliding-panel-fade-screen-bg: #000;
 
 .nav-logo {
   margin: 1rem auto;
-  width: 2.5rem;
+  width: 2rem;
 
   @include media($medium-screen-up) {
-    width: 4.5rem;
+    width: 3.5rem;
   }
 }
 
