@@ -4,9 +4,6 @@
   - :face: bottom
     :width: 4662
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3440
   - :face: profile
     :width: 5000
     :height: 2616
@@ -18,9 +15,6 @@
   - :face: bottom
     :width: 4725
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4415
   - :face: profile
     :width: 5000
     :height: 4093
@@ -32,9 +26,6 @@
   - :face: bottom
     :width: 4270
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4173
   - :face: profile
     :width: 5000
     :height: 3494
@@ -46,9 +37,6 @@
   - :face: bottom
     :width: 4230
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -60,9 +48,6 @@
   - :face: bottom
     :width: 3874
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3991
   - :face: profile
     :width: 5000
     :height: 2436
@@ -74,9 +59,6 @@
   - :face: bottom
     :width: 4108
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3087
@@ -88,9 +70,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3200
@@ -102,9 +81,6 @@
   - :face: bottom
     :width: 4245
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4039
   - :face: profile
     :width: 5000
     :height: 2772
@@ -116,9 +92,6 @@
   - :face: bottom
     :width: 4109
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3176
@@ -130,9 +103,6 @@
   - :face: bottom
     :width: 4108
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3677
   - :face: profile
     :width: 5000
     :height: 3216
@@ -144,9 +114,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3971
   - :face: profile
     :width: 5000
     :height: 3286
@@ -158,9 +125,6 @@
   - :face: bottom
     :width: 4108
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3708
   - :face: profile
     :width: 5000
     :height: 3286
@@ -172,9 +136,6 @@
   - :face: bottom
     :width: 4108
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -186,9 +147,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3681
   - :face: profile
     :width: 5000
     :height: 3212
@@ -200,9 +158,6 @@
   - :face: bottom
     :width: 4122
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3761
   - :face: profile
     :width: 5000
     :height: 3141
@@ -214,9 +169,6 @@
   - :face: bottom
     :width: 4109
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3716
   - :face: profile
     :width: 5000
     :height: 3203
@@ -228,9 +180,6 @@
   - :face: bottom
     :width: 3256
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4375
   - :face: profile
     :width: 5000
     :height: 3265
@@ -242,9 +191,6 @@
   - :face: bottom
     :width: 3624
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3286
@@ -253,15 +199,9 @@
     :height: 5000
 - :cat: 20
   :images:
-  - :face: alt
-    :width: 5000
-    :height: 4050
   - :face: bottom
     :width: 4108
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4050
   - :face: profile
     :width: 5000
     :height: 3285
@@ -273,9 +213,6 @@
   - :face: bottom
     :width: 3609
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4191
   - :face: profile
     :width: 5000
     :height: 3162
@@ -284,9 +221,6 @@
   - :face: bottom
     :width: 3306
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3984
   - :face: profile
     :width: 5000
     :height: 2941
@@ -298,9 +232,6 @@
   - :face: bottom
     :width: 3599
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4221
   - :face: profile
     :width: 5000
     :height: 3148
@@ -312,9 +243,6 @@
   - :face: bottom
     :width: 4001
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3986
   - :face: profile
     :width: 5000
     :height: 3285
@@ -326,9 +254,6 @@
   - :face: bottom
     :width: 3763
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3747
   - :face: profile
     :width: 5000
     :height: 3071
@@ -340,9 +265,6 @@
   - :face: bottom
     :width: 3650
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3735
   - :face: profile
     :width: 5000
     :height: 2885
@@ -354,9 +276,6 @@
   - :face: bottom
     :width: 3832
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3669
   - :face: profile
     :width: 5000
     :height: 3084
@@ -368,9 +287,6 @@
   - :face: bottom
     :width: 3796
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3752
   - :face: profile
     :width: 5000
     :height: 2934
@@ -382,9 +298,6 @@
   - :face: bottom
     :width: 3856
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3707
   - :face: profile
     :width: 5000
     :height: 2842
@@ -396,9 +309,6 @@
   - :face: bottom
     :width: 3818
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3801
   - :face: profile
     :width: 5000
     :height: 3012
@@ -410,9 +320,6 @@
   - :face: bottom
     :width: 3762
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3129
@@ -424,9 +331,6 @@
   - :face: bottom
     :width: 3820
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3776
   - :face: profile
     :width: 5000
     :height: 2999
@@ -438,9 +342,6 @@
   - :face: bottom
     :width: 3651
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3828
   - :face: profile
     :width: 5000
     :height: 3028
@@ -452,9 +353,6 @@
   - :face: bottom
     :width: 2909
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4146
   - :face: profile
     :width: 5000
     :height: 3131
@@ -466,9 +364,6 @@
   - :face: bottom
     :width: 4112
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3659
   - :face: profile
     :width: 5000
     :height: 3009
@@ -480,9 +375,6 @@
   - :face: bottom
     :width: 3795
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3282
@@ -494,9 +386,6 @@
   - :face: bottom
     :width: 3799
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3872
   - :face: profile
     :width: 5000
     :height: 2951
@@ -508,9 +397,6 @@
   - :face: bottom
     :width: 3514
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3701
   - :face: profile
     :width: 5000
     :height: 2565
@@ -522,9 +408,6 @@
   - :face: bottom
     :width: 3611
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3642
   - :face: profile
     :width: 5000
     :height: 2912
@@ -536,9 +419,6 @@
   - :face: bottom
     :width: 3603
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3623
   - :face: profile
     :width: 5000
     :height: 2766
@@ -550,9 +430,6 @@
   - :face: bottom
     :width: 3806
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3171
@@ -564,9 +441,6 @@
   - :face: bottom
     :width: 3658
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3684
   - :face: profile
     :width: 5000
     :height: 2829
@@ -578,9 +452,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3680
   - :face: profile
     :width: 5000
     :height: 2698
@@ -592,9 +463,6 @@
   - :face: bottom
     :width: 4254
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3694
   - :face: profile
     :width: 5000
     :height: 3007
@@ -606,9 +474,6 @@
   - :face: bottom
     :width: 4112
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3907
   - :face: profile
     :width: 5000
     :height: 3231
@@ -620,9 +485,6 @@
   - :face: bottom
     :width: 4112
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3283
@@ -634,9 +496,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3859
   - :face: profile
     :width: 5000
     :height: 3020
@@ -648,9 +507,6 @@
   - :face: bottom
     :width: 3952
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3825
   - :face: profile
     :width: 5000
     :height: 3247
@@ -662,9 +518,6 @@
   - :face: bottom
     :width: 4166
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3715
   - :face: profile
     :width: 5000
     :height: 2950
@@ -676,9 +529,6 @@
   - :face: bottom
     :width: 3964
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3848
   - :face: profile
     :width: 5000
     :height: 3161
@@ -690,9 +540,6 @@
   - :face: bottom
     :width: 4097
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3949
   - :face: profile
     :width: 5000
     :height: 2972
@@ -704,9 +551,6 @@
   - :face: bottom
     :width: 4086
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4091
   - :face: profile
     :width: 5000
     :height: 3285
@@ -718,9 +562,6 @@
   - :face: bottom
     :width: 4087
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3661
   - :face: profile
     :width: 5000
     :height: 3157
@@ -732,9 +573,6 @@
   - :face: bottom
     :width: 3987
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3693
   - :face: profile
     :width: 5000
     :height: 3286
@@ -746,9 +584,6 @@
   - :face: bottom
     :width: 4113
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -760,9 +595,6 @@
   - :face: bottom
     :width: 3732
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3238
@@ -774,9 +606,6 @@
   - :face: bottom
     :width: 3386
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4341
   - :face: profile
     :width: 5000
     :height: 3148
@@ -788,9 +617,6 @@
   - :face: bottom
     :width: 3815
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3140
@@ -799,15 +625,9 @@
     :height: 5000
 - :cat: 60
   :images:
-  - :face: alt
-    :width: 5000
-    :height: 3386
   - :face: bottom
     :width: 4112
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3386
   - :face: profile
     :width: 5000
     :height: 2888
@@ -819,9 +639,6 @@
   - :face: bottom
     :width: 3885
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3578
   - :face: profile
     :width: 5000
     :height: 2626
@@ -833,12 +650,6 @@
   - :face: bottom
     :width: 3849
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3708
-  - :face: main
-    :width: 5000
-    :height: 3708
   - :face: profile
     :width: 5000
     :height: 2966
@@ -850,9 +661,6 @@
   - :face: bottom
     :width: 3892
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3758
   - :face: profile
     :width: 5000
     :height: 2790
@@ -864,9 +672,6 @@
   - :face: bottom
     :width: 3814
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3795
   - :face: profile
     :width: 5000
     :height: 2969
@@ -878,9 +683,6 @@
   - :face: bottom
     :width: 3626
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3606
   - :face: profile
     :width: 5000
     :height: 2722
@@ -892,9 +694,6 @@
   - :face: bottom
     :width: 3752
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3740
   - :face: profile
     :width: 5000
     :height: 3015
@@ -906,9 +705,6 @@
   - :face: bottom
     :width: 3560
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 2845
@@ -920,9 +716,6 @@
   - :face: bottom
     :width: 3221
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 2881
@@ -934,9 +727,6 @@
   - :face: bottom
     :width: 3959
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3696
   - :face: profile
     :width: 5000
     :height: 2744
@@ -945,15 +735,9 @@
     :height: 5000
 - :cat: 70
   :images:
-  - :face: alt
-    :width: 5000
-    :height: 3645
   - :face: bottom
     :width: 4108
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3645
   - :face: profile
     :width: 5000
     :height: 2867
@@ -965,9 +749,6 @@
   - :face: bottom
     :width: 3683
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -979,9 +760,6 @@
   - :face: bottom
     :width: 3949
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3265
@@ -993,9 +771,6 @@
   - :face: bottom
     :width: 3762
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3709
   - :face: profile
     :width: 5000
     :height: 2815
@@ -1007,9 +782,6 @@
   - :face: bottom
     :width: 3787
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3871
   - :face: profile
     :width: 5000
     :height: 2941
@@ -1024,9 +796,6 @@
   - :face: top
     :width: 3924
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3974
   - :face: profile
     :width: 5000
     :height: 3292
@@ -1035,9 +804,6 @@
   - :face: bottom
     :width: 4520
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3515
   - :face: profile
     :width: 5000
     :height: 2799
@@ -1049,9 +815,6 @@
   - :face: bottom
     :width: 3966
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3460
   - :face: profile
     :width: 5000
     :height: 2746
@@ -1063,9 +826,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3844
   - :face: profile
     :width: 5000
     :height: 2750
@@ -1077,9 +837,6 @@
   - :face: bottom
     :width: 4031
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3295
   - :face: profile
     :width: 5000
     :height: 2648
@@ -1091,9 +848,6 @@
   - :face: bottom
     :width: 4275
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3450
   - :face: profile
     :width: 5000
     :height: 2994
@@ -1105,9 +859,6 @@
   - :face: bottom
     :width: 3655
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3694
   - :face: profile
     :width: 5000
     :height: 2974
@@ -1119,9 +870,6 @@
   - :face: bottom
     :width: 4055
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3825
   - :face: profile
     :width: 5000
     :height: 2879
@@ -1133,9 +881,6 @@
   - :face: bottom
     :width: 4007
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3266
   - :face: profile
     :width: 5000
     :height: 2846
@@ -1147,9 +892,6 @@
   - :face: bottom
     :width: 4305
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3379
   - :face: profile
     :width: 5000
     :height: 2797
@@ -1161,9 +903,6 @@
   - :face: bottom
     :width: 4184
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3302
   - :face: profile
     :width: 5000
     :height: 2833
@@ -1172,24 +911,12 @@
     :height: 5000
 - :cat: 86
   :images:
-  - :face: alt
-    :width: 5000
-    :height: 3620
   - :face: bottom
     :width: 4274
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 3620
-  - :face: profile__alt
-    :width: 5000
-    :height: 3620
-  - :face: special
-    :width: 3887
-    :height: 5000
   - :face: top
     :width: 4274
     :height: 5000
@@ -1198,9 +925,6 @@
   - :face: bottom
     :width: 4070
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3380
   - :face: profile
     :width: 5000
     :height: 2650
@@ -1212,9 +936,6 @@
   - :face: bottom
     :width: 4034
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3366
   - :face: profile
     :width: 5000
     :height: 2684
@@ -1226,9 +947,6 @@
   - :face: bottom
     :width: 4119
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3583
   - :face: profile
     :width: 5000
     :height: 2741
@@ -1240,9 +958,6 @@
   - :face: bottom
     :width: 3880
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3551
   - :face: profile
     :width: 5000
     :height: 2892
@@ -1254,9 +969,6 @@
   - :face: bottom
     :width: 3868
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3560
   - :face: profile
     :width: 5000
     :height: 2589
@@ -1268,9 +980,6 @@
   - :face: bottom
     :width: 4031
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3234
   - :face: profile
     :width: 5000
     :height: 2563
@@ -1282,9 +991,6 @@
   - :face: bottom
     :width: 4020
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3463
   - :face: profile
     :width: 5000
     :height: 2741
@@ -1296,9 +1002,6 @@
   - :face: bottom
     :width: 4210
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3467
   - :face: profile
     :width: 5000
     :height: 2676
@@ -1310,9 +1013,6 @@
   - :face: bottom
     :width: 4181
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3292
   - :face: profile
     :width: 5000
     :height: 2622
@@ -1324,9 +1024,6 @@
   - :face: bottom
     :width: 3928
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3327
   - :face: profile
     :width: 5000
     :height: 2576
@@ -1338,9 +1035,6 @@
   - :face: bottom
     :width: 3911
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3375
   - :face: profile
     :width: 5000
     :height: 2556
@@ -1352,9 +1046,6 @@
   - :face: bottom
     :width: 4110
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3467
   - :face: profile
     :width: 5000
     :height: 2744
@@ -1366,12 +1057,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 4042
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -1383,9 +1068,6 @@
   - :face: bottom
     :width: 4031
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3282
   - :face: profile
     :width: 5000
     :height: 2563
@@ -1397,12 +1079,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 3976
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -1414,9 +1090,6 @@
   - :face: bottom
     :width: 4177
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3541
   - :face: profile
     :width: 5000
     :height: 2744
@@ -1428,9 +1101,6 @@
   - :face: bottom
     :width: 4103
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3359
   - :face: profile
     :width: 5000
     :height: 2684
@@ -1442,9 +1112,6 @@
   - :face: bottom
     :width: 4088
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3440
   - :face: profile
     :width: 5000
     :height: 2810
@@ -1456,9 +1123,6 @@
   - :face: bottom
     :width: 3922
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3569
   - :face: profile
     :width: 5000
     :height: 2464
@@ -1470,9 +1134,6 @@
   - :face: bottom
     :width: 3936
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3311
   - :face: profile
     :width: 5000
     :height: 2635
@@ -1484,9 +1145,6 @@
   - :face: bottom
     :width: 4173
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3356
   - :face: profile
     :width: 5000
     :height: 2575
@@ -1498,9 +1156,6 @@
   - :face: bottom
     :width: 3941
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3532
   - :face: profile
     :width: 5000
     :height: 2554
@@ -1512,12 +1167,6 @@
   - :face: bottom
     :width: 4137
     :height: 5000
-  - :face: detail
-    :width: 3642
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3451
   - :face: profile
     :width: 5000
     :height: 2833
@@ -1529,12 +1178,6 @@
   - :face: bottom
     :width: 4229
     :height: 5000
-  - :face: detail
-    :width: 3814
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3593
   - :face: profile
     :width: 5000
     :height: 2790
@@ -1546,9 +1189,6 @@
   - :face: bottom
     :width: 4051
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3308
   - :face: profile
     :width: 5000
     :height: 2617
@@ -1560,9 +1200,6 @@
   - :face: bottom
     :width: 4007
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3391
   - :face: profile
     :width: 5000
     :height: 2726
@@ -1574,9 +1211,6 @@
   - :face: bottom
     :width: 3887
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3658
   - :face: profile
     :width: 5000
     :height: 3003
@@ -1588,9 +1222,6 @@
   - :face: bottom
     :width: 3950
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3669
   - :face: profile
     :width: 5000
     :height: 2495
@@ -1602,9 +1233,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3761
   - :face: profile
     :width: 5000
     :height: 2706
@@ -1616,9 +1244,6 @@
   - :face: bottom
     :width: 3887
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4258
   - :face: profile
     :width: 5000
     :height: 2706
@@ -1630,9 +1255,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -1644,9 +1266,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -1658,9 +1277,6 @@
   - :face: bottom
     :width: 3881
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3433
   - :face: profile
     :width: 5000
     :height: 2463
@@ -1672,9 +1288,6 @@
   - :face: bottom
     :width: 3799
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3523
   - :face: profile
     :width: 5000
     :height: 2588
@@ -1686,9 +1299,6 @@
   - :face: bottom
     :width: 4054
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3297
   - :face: profile
     :width: 5000
     :height: 2624
@@ -1700,9 +1310,6 @@
   - :face: bottom
     :width: 4025
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3356
   - :face: profile
     :width: 5000
     :height: 2668
@@ -1714,9 +1321,6 @@
   - :face: bottom
     :width: 4190
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3265
   - :face: profile
     :width: 5000
     :height: 2778
@@ -1728,9 +1332,6 @@
   - :face: bottom
     :width: 4013
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3466
   - :face: profile
     :width: 5000
     :height: 2576
@@ -1742,9 +1343,6 @@
   - :face: bottom
     :width: 3905
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3416
   - :face: profile
     :width: 5000
     :height: 2575
@@ -1756,9 +1354,6 @@
   - :face: bottom
     :width: 4102
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3533
   - :face: profile
     :width: 5000
     :height: 2626
@@ -1770,9 +1365,6 @@
   - :face: bottom
     :width: 3837
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3317
   - :face: profile
     :width: 5000
     :height: 2441
@@ -1784,9 +1376,6 @@
   - :face: bottom
     :width: 3800
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3661
   - :face: profile
     :width: 5000
     :height: 3048
@@ -1798,9 +1387,6 @@
   - :face: bottom
     :width: 4157
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3196
   - :face: profile
     :width: 5000
     :height: 2547
@@ -1812,9 +1398,6 @@
   - :face: bottom
     :width: 4169
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3324
   - :face: profile
     :width: 5000
     :height: 2683
@@ -1826,9 +1409,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -1840,9 +1420,6 @@
   - :face: bottom
     :width: 4100
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3320
   - :face: profile
     :width: 5000
     :height: 2681
@@ -1854,9 +1431,6 @@
   - :face: bottom
     :width: 3957
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3527
   - :face: profile
     :width: 5000
     :height: 2691
@@ -1868,9 +1442,6 @@
   - :face: bottom
     :width: 4126
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3403
   - :face: profile
     :width: 5000
     :height: 2668
@@ -1882,9 +1453,6 @@
   - :face: bottom
     :width: 4014
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3248
   - :face: profile
     :width: 5000
     :height: 2757
@@ -1896,9 +1464,6 @@
   - :face: bottom
     :width: 3880
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3445
   - :face: profile
     :width: 5000
     :height: 2540
@@ -1910,9 +1475,6 @@
   - :face: bottom
     :width: 3817
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3619
   - :face: profile
     :width: 5000
     :height: 2515
@@ -1924,9 +1486,6 @@
   - :face: bottom
     :width: 3940
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3310
   - :face: profile
     :width: 5000
     :height: 2442
@@ -1938,9 +1497,6 @@
   - :face: bottom
     :width: 3853
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3705
   - :face: profile
     :width: 5000
     :height: 2341
@@ -1952,9 +1508,6 @@
   - :face: bottom
     :width: 4163
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3749
   - :face: profile
     :width: 5000
     :height: 3598
@@ -1966,9 +1519,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3867
   - :face: profile
     :width: 5000
     :height: 3045
@@ -1980,9 +1530,6 @@
   - :face: bottom
     :width: 4616
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3807
   - :face: profile
     :width: 5000
     :height: 2906
@@ -1994,9 +1541,6 @@
   - :face: bottom
     :width: 4210
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4172
   - :face: profile
     :width: 5000
     :height: 2781
@@ -2008,9 +1552,6 @@
   - :face: bottom
     :width: 3443
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4510
   - :face: profile
     :width: 5000
     :height: 3487
@@ -2022,9 +1563,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4110
   - :face: profile
     :width: 5000
     :height: 3016
@@ -2036,9 +1574,6 @@
   - :face: bottom
     :width: 4156
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4579
   - :face: profile
     :width: 5000
     :height: 2896
@@ -2050,12 +1585,6 @@
   - :face: bottom
     :width: 3018
     :height: 5000
-  - :face: detail
-    :width: 3615
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3687
   - :face: profile
     :width: 5000
     :height: 2968
@@ -2067,12 +1596,6 @@
   - :face: bottom
     :width: 3202
     :height: 5000
-  - :face: detail
-    :width: 3615
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3767
   - :face: profile
     :width: 5000
     :height: 2969
@@ -2084,15 +1607,6 @@
   - :face: bottom
     :width: 4135
     :height: 5000
-  - :face: detail__back
-    :width: 5000
-    :height: 4087
-  - :face: detail__front
-    :width: 5000
-    :height: 4087
-  - :face: main
-    :width: 5000
-    :height: 4326
   - :face: profile
     :width: 5000
     :height: 4007
@@ -2104,9 +1618,6 @@
   - :face: bottom
     :width: 3227
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4122
   - :face: profile
     :width: 5000
     :height: 3219
@@ -2118,9 +1629,6 @@
   - :face: bottom
     :width: 3290
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4036
   - :face: profile
     :width: 5000
     :height: 3070
@@ -2132,9 +1640,6 @@
   - :face: bottom
     :width: 3783
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3912
   - :face: profile
     :width: 5000
     :height: 3048
@@ -2146,9 +1651,6 @@
   - :face: bottom
     :width: 3667
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3625
   - :face: profile
     :width: 5000
     :height: 2879
@@ -2160,9 +1662,6 @@
   - :face: bottom
     :width: 3936
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3579
   - :face: profile
     :width: 5000
     :height: 2751
@@ -2174,9 +1673,6 @@
   - :face: bottom
     :width: 4095
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3464
   - :face: profile
     :width: 5000
     :height: 2704
@@ -2188,9 +1684,6 @@
   - :face: bottom
     :width: 3618
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3660
   - :face: profile
     :width: 5000
     :height: 3069
@@ -2202,9 +1695,6 @@
   - :face: bottom
     :width: 3889
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 2817
@@ -2216,9 +1706,6 @@
   - :face: bottom
     :width: 3573
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3433
   - :face: profile
     :width: 5000
     :height: 2966
@@ -2230,9 +1717,6 @@
   - :face: bottom
     :width: 3709
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3575
   - :face: profile
     :width: 5000
     :height: 2615
@@ -2244,9 +1728,6 @@
   - :face: bottom
     :width: 3835
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3640
   - :face: profile
     :width: 5000
     :height: 2641
@@ -2258,9 +1739,6 @@
   - :face: bottom
     :width: 3879
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3703
   - :face: profile
     :width: 5000
     :height: 2760
@@ -2272,9 +1750,6 @@
   - :face: bottom
     :width: 4210
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3647
   - :face: profile
     :width: 5000
     :height: 2582
@@ -2286,9 +1761,6 @@
   - :face: bottom
     :width: 3981
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3518
   - :face: profile
     :width: 5000
     :height: 2555
@@ -2300,9 +1772,6 @@
   - :face: bottom
     :width: 3878
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3416
   - :face: profile
     :width: 5000
     :height: 2459
@@ -2314,9 +1783,6 @@
   - :face: bottom
     :width: 3930
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3456
   - :face: profile
     :width: 5000
     :height: 2452
@@ -2328,9 +1794,6 @@
   - :face: bottom
     :width: 3938
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3393
   - :face: profile
     :width: 5000
     :height: 2517
@@ -2342,9 +1805,6 @@
   - :face: bottom
     :width: 3955
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3482
   - :face: profile
     :width: 5000
     :height: 2540
@@ -2356,9 +1816,6 @@
   - :face: bottom
     :width: 3990
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3617
   - :face: profile
     :width: 5000
     :height: 2695
@@ -2370,9 +1827,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -2384,9 +1838,6 @@
   - :face: bottom
     :width: 3854
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3473
   - :face: profile
     :width: 5000
     :height: 2797
@@ -2398,9 +1849,6 @@
   - :face: bottom
     :width: 4107
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3582
   - :face: profile
     :width: 5000
     :height: 2462
@@ -2412,9 +1860,6 @@
   - :face: bottom
     :width: 4212
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4048
   - :face: profile
     :width: 5000
     :height: 2530
@@ -2426,12 +1871,6 @@
   - :face: bottom
     :width: 4213
     :height: 5000
-  - :face: detail
-    :width: 5000
-    :height: 4591
-  - :face: main
-    :width: 5000
-    :height: 3383
   - :face: profile
     :width: 5000
     :height: 2900
@@ -2443,9 +1882,6 @@
   - :face: bottom
     :width: 3968
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3535
   - :face: profile
     :width: 5000
     :height: 2407
@@ -2457,9 +1893,6 @@
   - :face: bottom
     :width: 4096
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3217
   - :face: profile
     :width: 5000
     :height: 2514
@@ -2471,9 +1904,6 @@
   - :face: bottom
     :width: 4130
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3501
   - :face: profile
     :width: 5000
     :height: 2290
@@ -2485,9 +1915,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3452
   - :face: profile
     :width: 5000
     :height: 2564
@@ -2499,12 +1926,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 3693
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -2516,9 +1937,6 @@
   - :face: bottom
     :width: 3948
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3196
   - :face: profile
     :width: 5000
     :height: 2438
@@ -2530,9 +1948,6 @@
   - :face: bottom
     :width: 3971
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3623
   - :face: profile
     :width: 5000
     :height: 2551
@@ -2544,9 +1959,6 @@
   - :face: bottom
     :width: 3954
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3560
   - :face: profile
     :width: 5000
     :height: 2533
@@ -2558,9 +1970,6 @@
   - :face: bottom
     :width: 3964
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3107
   - :face: profile
     :width: 5000
     :height: 2490
@@ -2572,9 +1981,6 @@
   - :face: bottom
     :width: 3930
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3173
   - :face: profile
     :width: 5000
     :height: 2390
@@ -2586,9 +1992,6 @@
   - :face: bottom
     :width: 3876
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3265
   - :face: profile
     :width: 5000
     :height: 2440
@@ -2600,9 +2003,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -2614,9 +2014,6 @@
   - :face: bottom
     :width: 4156
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3621
   - :face: profile
     :width: 5000
     :height: 2693
@@ -2628,9 +2025,6 @@
   - :face: bottom
     :width: 4148
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3639
   - :face: profile
     :width: 5000
     :height: 2271
@@ -2642,12 +2036,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 4201
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -2659,9 +2047,6 @@
   - :face: bottom
     :width: 3916
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3118
   - :face: profile
     :width: 5000
     :height: 2388
@@ -2673,9 +2058,6 @@
   - :face: bottom
     :width: 3826
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3570
   - :face: profile
     :width: 5000
     :height: 2346
@@ -2687,9 +2069,6 @@
   - :face: bottom
     :width: 4013
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3551
   - :face: profile
     :width: 5000
     :height: 2363
@@ -2701,9 +2080,6 @@
   - :face: bottom
     :width: 3935
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3166
   - :face: profile
     :width: 5000
     :height: 2601
@@ -2715,9 +2091,6 @@
   - :face: bottom
     :width: 3766
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3665
   - :face: profile
     :width: 5000
     :height: 2359
@@ -2729,9 +2102,6 @@
   - :face: bottom
     :width: 3920
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3464
   - :face: profile
     :width: 5000
     :height: 2559
@@ -2743,9 +2113,6 @@
   - :face: bottom
     :width: 3857
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3446
   - :face: profile
     :width: 5000
     :height: 2414
@@ -2757,9 +2124,6 @@
   - :face: bottom
     :width: 3910
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3399
   - :face: profile
     :width: 5000
     :height: 2443
@@ -2771,9 +2135,6 @@
   - :face: bottom
     :width: 4113
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3477
   - :face: profile
     :width: 5000
     :height: 2530
@@ -2785,9 +2146,6 @@
   - :face: bottom
     :width: 3976
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3471
   - :face: profile
     :width: 5000
     :height: 2612
@@ -2799,15 +2157,9 @@
   - :face: bottom
     :width: 4121
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3788
   - :face: profile
     :width: 5000
     :height: 2772
-  - :face: special
-    :width: 3740
-    :height: 5000
   - :face: top
     :width: 4105
     :height: 5000
@@ -2816,9 +2168,6 @@
   - :face: bottom
     :width: 3930
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3068
   - :face: profile
     :width: 5000
     :height: 2427
@@ -2830,9 +2179,6 @@
   - :face: bottom
     :width: 4013
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3545
   - :face: profile
     :width: 5000
     :height: 2447
@@ -2844,9 +2190,6 @@
   - :face: bottom
     :width: 3844
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3156
   - :face: profile
     :width: 5000
     :height: 2394
@@ -2858,9 +2201,6 @@
   - :face: bottom
     :width: 3939
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3307
   - :face: profile
     :width: 5000
     :height: 2503
@@ -2872,9 +2212,6 @@
   - :face: bottom
     :width: 4017
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3418
   - :face: profile
     :width: 5000
     :height: 2514
@@ -2886,9 +2223,6 @@
   - :face: bottom
     :width: 3836
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3592
   - :face: profile
     :width: 5000
     :height: 2344
@@ -2900,9 +2234,6 @@
   - :face: bottom
     :width: 3784
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3516
   - :face: profile
     :width: 5000
     :height: 2481
@@ -2914,9 +2245,6 @@
   - :face: bottom
     :width: 4088
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3467
   - :face: profile
     :width: 5000
     :height: 2821
@@ -2928,9 +2256,6 @@
   - :face: bottom
     :width: 4004
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3177
   - :face: profile
     :width: 5000
     :height: 2404
@@ -2942,9 +2267,6 @@
   - :face: bottom
     :width: 3985
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3656
   - :face: profile
     :width: 5000
     :height: 2603
@@ -2956,12 +2278,6 @@
   - :face: bottom
     :width: 4105
     :height: 5000
-  - :face: detail
-    :width: 3615
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3633
   - :face: profile
     :width: 5000
     :height: 2930
@@ -2973,9 +2289,6 @@
   - :face: bottom
     :width: 3996
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3630
   - :face: profile
     :width: 5000
     :height: 2473
@@ -2987,9 +2300,6 @@
   - :face: bottom
     :width: 4067
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3841
   - :face: profile
     :width: 5000
     :height: 2535
@@ -3001,9 +2311,6 @@
   - :face: bottom
     :width: 4320
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3404
   - :face: profile
     :width: 5000
     :height: 2614
@@ -3015,9 +2322,6 @@
   - :face: bottom
     :width: 3868
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3807
   - :face: profile
     :width: 5000
     :height: 2676
@@ -3029,9 +2333,6 @@
   - :face: bottom
     :width: 3951
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3217
   - :face: profile
     :width: 5000
     :height: 2531
@@ -3043,9 +2344,6 @@
   - :face: bottom
     :width: 3940
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3285
   - :face: profile
     :width: 5000
     :height: 2587
@@ -3057,9 +2355,6 @@
   - :face: bottom
     :width: 4024
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3458
   - :face: profile
     :width: 5000
     :height: 2978
@@ -3071,9 +2366,6 @@
   - :face: bottom
     :width: 3862
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3651
   - :face: profile
     :width: 5000
     :height: 2710
@@ -3085,9 +2377,6 @@
   - :face: bottom
     :width: 4060
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3356
   - :face: profile
     :width: 5000
     :height: 2515
@@ -3099,9 +2388,6 @@
   - :face: bottom
     :width: 4096
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3277
   - :face: profile
     :width: 5000
     :height: 2542
@@ -3113,9 +2399,6 @@
   - :face: bottom
     :width: 3928
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3104
   - :face: profile
     :width: 5000
     :height: 2581
@@ -3127,9 +2410,6 @@
   - :face: bottom
     :width: 4078
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3412
   - :face: profile
     :width: 5000
     :height: 2666
@@ -3141,9 +2421,6 @@
   - :face: bottom
     :width: 3921
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3488
   - :face: profile
     :width: 5000
     :height: 2638
@@ -3155,9 +2432,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3719
   - :face: profile
     :width: 5000
     :height: 2696
@@ -3169,9 +2443,6 @@
   - :face: bottom
     :width: 3892
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3183
   - :face: profile
     :width: 5000
     :height: 2581
@@ -3183,9 +2454,6 @@
   - :face: bottom
     :width: 4048
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3404
   - :face: profile
     :width: 5000
     :height: 2709
@@ -3197,9 +2465,6 @@
   - :face: bottom
     :width: 4094
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3632
   - :face: profile
     :width: 5000
     :height: 2672
@@ -3211,9 +2476,6 @@
   - :face: bottom
     :width: 3906
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4179
   - :face: profile
     :width: 5000
     :height: 3158
@@ -3225,9 +2487,6 @@
   - :face: bottom
     :width: 4114
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3703
   - :face: profile
     :width: 5000
     :height: 2856
@@ -3239,9 +2498,6 @@
   - :face: bottom
     :width: 3836
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3586
   - :face: profile
     :width: 5000
     :height: 2897
@@ -3253,9 +2509,6 @@
   - :face: bottom
     :width: 4143
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3691
   - :face: profile
     :width: 5000
     :height: 2937
@@ -3267,9 +2520,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3603
   - :face: profile
     :width: 5000
     :height: 2718
@@ -3281,9 +2531,6 @@
   - :face: bottom
     :width: 4149
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3477
   - :face: profile
     :width: 5000
     :height: 2483
@@ -3295,9 +2542,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3761
   - :face: profile
     :width: 5000
     :height: 2732
@@ -3309,9 +2553,6 @@
   - :face: bottom
     :width: 4121
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3188
   - :face: profile
     :width: 5000
     :height: 2552
@@ -3323,9 +2564,6 @@
   - :face: bottom
     :width: 4149
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3492
   - :face: profile
     :width: 5000
     :height: 2364
@@ -3337,9 +2575,6 @@
   - :face: bottom
     :width: 3573
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3836
   - :face: profile
     :width: 5000
     :height: 2881
@@ -3351,9 +2586,6 @@
   - :face: bottom
     :width: 3585
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3368
   - :face: profile
     :width: 5000
     :height: 2873
@@ -3365,9 +2597,6 @@
   - :face: bottom
     :width: 3651
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3647
   - :face: profile
     :width: 5000
     :height: 3029
@@ -3379,9 +2608,6 @@
   - :face: bottom
     :width: 3585
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3541
   - :face: profile
     :width: 5000
     :height: 2803
@@ -3393,9 +2619,6 @@
   - :face: bottom
     :width: 3475
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4174
   - :face: profile
     :width: 5000
     :height: 2815
@@ -3407,9 +2630,6 @@
   - :face: bottom
     :width: 3518
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3606
   - :face: profile
     :width: 5000
     :height: 2668
@@ -3421,9 +2641,6 @@
   - :face: bottom
     :width: 3766
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3482
   - :face: profile
     :width: 5000
     :height: 3077
@@ -3435,9 +2652,6 @@
   - :face: bottom
     :width: 3855
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3638
   - :face: profile
     :width: 5000
     :height: 2904
@@ -3449,9 +2663,6 @@
   - :face: bottom
     :width: 3522
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3363
   - :face: profile
     :width: 5000
     :height: 2701
@@ -3463,9 +2674,6 @@
   - :face: bottom
     :width: 3819
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4184
   - :face: profile
     :width: 5000
     :height: 2786
@@ -3477,9 +2685,6 @@
   - :face: bottom
     :width: 3891
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4002
   - :face: profile
     :width: 5000
     :height: 2600
@@ -3491,9 +2696,6 @@
   - :face: bottom
     :width: 3654
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4021
   - :face: profile
     :width: 5000
     :height: 2947
@@ -3505,9 +2707,6 @@
   - :face: bottom
     :width: 3683
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -3519,9 +2718,6 @@
   - :face: bottom
     :width: 4060
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3943
   - :face: profile
     :width: 5000
     :height: 3072
@@ -3533,9 +2729,6 @@
   - :face: bottom
     :width: 3796
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3423
   - :face: profile
     :width: 5000
     :height: 2740
@@ -3547,9 +2740,6 @@
   - :face: bottom
     :width: 3484
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3892
   - :face: profile
     :width: 5000
     :height: 3017
@@ -3561,9 +2751,6 @@
   - :face: bottom
     :width: 3333
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3764
   - :face: profile
     :width: 5000
     :height: 3164
@@ -3575,9 +2762,6 @@
   - :face: bottom
     :width: 4104
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3702
   - :face: profile
     :width: 5000
     :height: 3089
@@ -3589,9 +2773,6 @@
   - :face: bottom
     :width: 4622
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3520
   - :face: profile
     :width: 5000
     :height: 2683
@@ -3603,9 +2784,6 @@
   - :face: bottom
     :width: 3756
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 2913
@@ -3617,9 +2795,6 @@
   - :face: bottom
     :width: 4704
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3686
   - :face: profile
     :width: 5000
     :height: 3082
@@ -3631,9 +2806,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -3645,9 +2817,6 @@
   - :face: bottom
     :width: 4110
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3690
   - :face: profile
     :width: 5000
     :height: 3135
@@ -3659,12 +2828,6 @@
   - :face: bottom
     :width: 4131
     :height: 5000
-  - :face: detail
-    :width: 3784
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3593
   - :face: profile
     :width: 5000
     :height: 2927
@@ -3676,9 +2839,6 @@
   - :face: bottom
     :width: 3554
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4052
   - :face: profile
     :width: 5000
     :height: 3053
@@ -3690,9 +2850,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -3704,9 +2861,6 @@
   - :face: bottom
     :width: 4484
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3939
   - :face: profile
     :width: 5000
     :height: 3003
@@ -3718,9 +2872,6 @@
   - :face: bottom
     :width: 3307
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4571
   - :face: profile
     :width: 5000
     :height: 3410
@@ -3731,9 +2882,6 @@
   :images:
   - :face: bottom
     :width: 3921
-    :height: 5000
-  - :face: main
-    :width: 4826
     :height: 5000
   - :face: profile
     :width: 5000
@@ -3746,9 +2894,6 @@
   - :face: bottom
     :width: 4269
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3494
   - :face: profile
     :width: 5000
     :height: 2820
@@ -3760,9 +2905,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -3774,9 +2916,6 @@
   - :face: bottom
     :width: 3549
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3840
   - :face: profile
     :width: 5000
     :height: 3393
@@ -3788,9 +2927,6 @@
   - :face: bottom
     :width: 3647
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4156
   - :face: profile
     :width: 5000
     :height: 3404
@@ -3802,9 +2938,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -3816,9 +2949,6 @@
   - :face: bottom
     :width: 4055
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3438
   - :face: profile
     :width: 5000
     :height: 2796
@@ -3830,9 +2960,6 @@
   - :face: bottom
     :width: 4075
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4314
   - :face: profile
     :width: 5000
     :height: 3206
@@ -3844,9 +2971,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4239
   - :face: profile
     :width: 5000
     :height: 2958
@@ -3858,9 +2982,6 @@
   - :face: bottom
     :width: 3842
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4523
   - :face: profile
     :width: 5000
     :height: 2969
@@ -3872,9 +2993,6 @@
   - :face: bottom
     :width: 4006
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3563
   - :face: profile
     :width: 5000
     :height: 2948
@@ -3886,9 +3004,6 @@
   - :face: bottom
     :width: 3868
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4088
   - :face: profile
     :width: 5000
     :height: 3275
@@ -3900,9 +3015,6 @@
   - :face: bottom
     :width: 3888
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3412
   - :face: profile
     :width: 5000
     :height: 3080
@@ -3914,9 +3026,6 @@
   - :face: bottom
     :width: 4013
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3602
   - :face: profile
     :width: 5000
     :height: 3051
@@ -3928,9 +3037,6 @@
   - :face: bottom
     :width: 3845
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3583
   - :face: profile
     :width: 5000
     :height: 3111
@@ -3942,9 +3048,6 @@
   - :face: bottom
     :width: 3841
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3283
   - :face: profile
     :width: 5000
     :height: 2892
@@ -3956,9 +3059,6 @@
   - :face: bottom
     :width: 3945
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3700
   - :face: profile
     :width: 5000
     :height: 2939
@@ -3970,9 +3070,6 @@
   - :face: bottom
     :width: 4084
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3445
   - :face: profile
     :width: 5000
     :height: 2969
@@ -3984,9 +3081,6 @@
   - :face: bottom
     :width: 4091
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3806
   - :face: profile
     :width: 5000
     :height: 3154
@@ -3998,12 +3092,6 @@
   - :face: bottom
     :width: 3998
     :height: 5000
-  - :face: detail
-    :width: 4105
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -4011,23 +3099,14 @@
     :width: 3997
     :height: 5000
 - :cat: 297
-  :images:
-  - :face: main
-    :width: 5000
-    :height: 3720
+  :images: []
 - :cat: 298
-  :images:
-  - :face: main
-    :width: 5000
-    :height: 3602
+  :images: []
 - :cat: 299
   :images:
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -4039,9 +3118,6 @@
   - :face: bottom
     :width: 3969
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4461
   - :face: profile
     :width: 5000
     :height: 3287
@@ -4053,9 +3129,6 @@
   - :face: bottom
     :width: 3702
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4050
   - :face: profile
     :width: 5000
     :height: 2959
@@ -4067,9 +3140,6 @@
   - :face: bottom
     :width: 4084
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3756
   - :face: top
     :width: 4084
     :height: 5000
@@ -4078,9 +3148,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -4092,12 +3159,6 @@
   - :face: bottom
     :width: 4090
     :height: 5000
-  - :face: detail
-    :width: 3831
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3725
   - :face: profile
     :width: 5000
     :height: 3382
@@ -4109,9 +3170,6 @@
   - :face: bottom
     :width: 4001
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3605
   - :face: profile
     :width: 5000
     :height: 2789
@@ -4123,9 +3181,6 @@
   - :face: bottom
     :width: 3836
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3540
   - :face: profile
     :width: 5000
     :height: 2639
@@ -4137,9 +3192,6 @@
   - :face: bottom
     :width: 3933
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3403
   - :face: profile
     :width: 5000
     :height: 2653
@@ -4151,9 +3203,6 @@
   - :face: bottom
     :width: 3942
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3432
   - :face: profile
     :width: 5000
     :height: 2426
@@ -4165,9 +3214,6 @@
   - :face: bottom
     :width: 4035
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3505
   - :face: profile
     :width: 5000
     :height: 2580
@@ -4179,9 +3225,6 @@
   - :face: bottom
     :width: 3968
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3619
   - :face: profile
     :width: 5000
     :height: 2798
@@ -4193,9 +3236,6 @@
   - :face: bottom
     :width: 3881
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3408
   - :face: profile
     :width: 5000
     :height: 2701
@@ -4207,9 +3247,6 @@
   - :face: bottom
     :width: 3857
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3821
   - :face: profile
     :width: 5000
     :height: 2903
@@ -4221,9 +3258,6 @@
   - :face: bottom
     :width: 4039
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3939
   - :face: profile
     :width: 5000
     :height: 3238
@@ -4235,9 +3269,6 @@
   - :face: bottom
     :width: 3965
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3939
   - :face: profile
     :width: 5000
     :height: 3140
@@ -4249,9 +3280,6 @@
   - :face: bottom
     :width: 4153
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 2867
@@ -4263,9 +3291,6 @@
   - :face: bottom
     :width: 3975
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4035
   - :face: profile
     :width: 5000
     :height: 3023
@@ -4277,9 +3302,6 @@
   - :face: bottom
     :width: 4190
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3121
@@ -4291,9 +3313,6 @@
   - :face: bottom
     :width: 4047
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4296
   - :face: profile
     :width: 5000
     :height: 3086
@@ -4305,9 +3324,6 @@
   - :face: bottom
     :width: 4128
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3570
   - :face: profile
     :width: 5000
     :height: 2957
@@ -4319,9 +3335,6 @@
   - :face: bottom
     :width: 4138
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3760
   - :face: profile
     :width: 5000
     :height: 3064
@@ -4333,9 +3346,6 @@
   - :face: bottom
     :width: 4176
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3980
   - :face: profile
     :width: 5000
     :height: 2958
@@ -4347,9 +3357,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3305
   - :face: profile
     :width: 5000
     :height: 2654
@@ -4361,9 +3368,6 @@
   - :face: bottom
     :width: 4095
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3803
   - :face: profile
     :width: 5000
     :height: 2968
@@ -4375,9 +3379,6 @@
   - :face: bottom
     :width: 4096
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3654
   - :face: profile
     :width: 5000
     :height: 3127
@@ -4389,9 +3390,6 @@
   - :face: bottom
     :width: 4535
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3674
   - :face: profile
     :width: 5000
     :height: 2712
@@ -4403,9 +3401,6 @@
   - :face: bottom
     :width: 4860
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3907
   - :face: profile
     :width: 5000
     :height: 3285
@@ -4428,9 +3423,6 @@
   - :face: bottom
     :width: 4277
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3938
   - :face: profile
     :width: 5000
     :height: 3285
@@ -4442,9 +3434,6 @@
   - :face: bottom
     :width: 4006
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3741
   - :face: profile
     :width: 5000
     :height: 3233
@@ -4456,9 +3445,6 @@
   - :face: bottom
     :width: 4094
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3794
   - :face: profile
     :width: 5000
     :height: 3193
@@ -4470,9 +3456,6 @@
   - :face: bottom
     :width: 4088
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3764
   - :face: profile
     :width: 5000
     :height: 3229
@@ -4484,9 +3467,6 @@
   - :face: bottom
     :width: 4089
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3360
@@ -4498,9 +3478,6 @@
   - :face: bottom
     :width: 3894
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3855
   - :face: profile
     :width: 5000
     :height: 3288
@@ -4512,9 +3489,6 @@
   - :face: bottom
     :width: 3944
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4316
   - :face: profile
     :width: 5000
     :height: 3282
@@ -4526,9 +3500,6 @@
   - :face: bottom
     :width: 4081
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3780
   - :face: profile
     :width: 5000
     :height: 3360
@@ -4540,9 +3511,6 @@
   - :face: bottom
     :width: 4093
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3783
   - :face: profile
     :width: 5000
     :height: 3045
@@ -4554,9 +3522,6 @@
   - :face: bottom
     :width: 3960
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3860
   - :face: profile
     :width: 5000
     :height: 3524
@@ -4568,9 +3533,6 @@
   - :face: bottom
     :width: 4021
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4041
   - :face: profile
     :width: 5000
     :height: 3224
@@ -4582,9 +3544,6 @@
   - :face: bottom
     :width: 4017
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3874
   - :face: profile
     :width: 5000
     :height: 3214
@@ -4596,9 +3555,6 @@
   - :face: bottom
     :width: 3934
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3690
   - :face: profile
     :width: 5000
     :height: 2884
@@ -4610,9 +3566,6 @@
   - :face: bottom
     :width: 3861
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4215
   - :face: profile
     :width: 5000
     :height: 2902
@@ -4624,12 +3577,6 @@
   - :face: bottom
     :width: 4150
     :height: 5000
-  - :face: detail
-    :width: 5000
-    :height: 3896
-  - :face: main
-    :width: 5000
-    :height: 3894
   - :face: profile
     :width: 5000
     :height: 3222
@@ -4641,9 +3588,6 @@
   - :face: bottom
     :width: 3977
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3527
   - :face: profile
     :width: 5000
     :height: 2776
@@ -4655,12 +3599,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 4460
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -4672,9 +3610,6 @@
   - :face: bottom
     :width: 3924
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4564
   - :face: profile
     :width: 5000
     :height: 2911
@@ -4686,9 +3621,6 @@
   - :face: bottom
     :width: 4073
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4333
   - :face: profile
     :width: 5000
     :height: 2682
@@ -4700,9 +3632,6 @@
   - :face: bottom
     :width: 4186
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3811
   - :face: profile
     :width: 5000
     :height: 3352
@@ -4714,9 +3643,6 @@
   - :face: bottom
     :width: 4024
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4152
   - :face: profile
     :width: 5000
     :height: 3188
@@ -4728,9 +3654,6 @@
   - :face: bottom
     :width: 4183
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -4742,12 +3665,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 4317
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -4759,12 +3676,6 @@
   - :face: bottom
     :width: 4405
     :height: 5000
-  - :face: detail
-    :width: 4071
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3831
   - :face: profile
     :width: 5000
     :height: 3222
@@ -4776,9 +3687,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -4790,9 +3698,6 @@
   - :face: bottom
     :width: 4142
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4505
   - :face: profile
     :width: 5000
     :height: 3314
@@ -4804,9 +3709,6 @@
   - :face: bottom
     :width: 4275
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3982
   - :face: profile
     :width: 5000
     :height: 3226
@@ -4815,17 +3717,11 @@
     :height: 5000
 - :cat: 355
   :images:
-  - :face: main
-    :width: 5000
-    :height: 3640
   - :face: top
     :width: 5000
     :height: 3640
 - :cat: 356
   :images:
-  - :face: main
-    :width: 5000
-    :height: 4912
   - :face: top
     :width: 5000
     :height: 4912
@@ -4834,9 +3730,6 @@
   - :face: bottom
     :width: 3889
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3929
   - :face: profile
     :width: 5000
     :height: 2974
@@ -4848,9 +3741,6 @@
   - :face: bottom
     :width: 4174
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4002
   - :face: profile
     :width: 5000
     :height: 3041
@@ -4862,9 +3752,6 @@
   - :face: bottom
     :width: 3742
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4203
   - :face: profile
     :width: 5000
     :height: 3299
@@ -4876,9 +3763,6 @@
   - :face: bottom
     :width: 3937
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3919
   - :face: profile
     :width: 5000
     :height: 3084
@@ -4890,9 +3774,6 @@
   - :face: bottom
     :width: 4096
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4138
   - :face: profile
     :width: 5000
     :height: 3238
@@ -4904,9 +3785,6 @@
   - :face: bottom
     :width: 4088
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3721
   - :face: profile
     :width: 5000
     :height: 2824
@@ -4918,9 +3796,6 @@
   - :face: bottom
     :width: 4023
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3707
   - :face: profile
     :width: 5000
     :height: 3080
@@ -4932,9 +3807,6 @@
   - :face: bottom
     :width: 4086
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3293
@@ -4946,9 +3818,6 @@
   - :face: bottom
     :width: 3729
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3972
   - :face: profile
     :width: 5000
     :height: 3281
@@ -4960,9 +3829,6 @@
   - :face: bottom
     :width: 4086
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3858
   - :face: profile
     :width: 5000
     :height: 3184
@@ -4974,9 +3840,6 @@
   - :face: bottom
     :width: 4105
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3568
   - :face: profile
     :width: 5000
     :height: 3041
@@ -4988,9 +3851,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3906
   - :face: profile
     :width: 5000
     :height: 3284
@@ -5002,9 +3862,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3884
   - :face: profile
     :width: 5000
     :height: 3238
@@ -5016,9 +3873,6 @@
   - :face: bottom
     :width: 4245
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3594
   - :face: profile
     :width: 5000
     :height: 2925
@@ -5030,9 +3884,6 @@
   - :face: bottom
     :width: 4095
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3286
@@ -5044,9 +3895,6 @@
   - :face: bottom
     :width: 3865
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3583
   - :face: profile
     :width: 5000
     :height: 2557
@@ -5058,9 +3906,6 @@
   - :face: bottom
     :width: 4100
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3663
   - :face: profile
     :width: 5000
     :height: 2983
@@ -5072,9 +3917,6 @@
   - :face: bottom
     :width: 4231
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3673
   - :face: profile
     :width: 5000
     :height: 2939
@@ -5086,9 +3928,6 @@
   - :face: bottom
     :width: 4085
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3848
   - :face: profile
     :width: 5000
     :height: 3242
@@ -5100,9 +3939,6 @@
   - :face: bottom
     :width: 4088
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3629
   - :face: profile
     :width: 5000
     :height: 2904
@@ -5114,9 +3950,6 @@
   - :face: bottom
     :width: 4095
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3429
   - :face: profile
     :width: 5000
     :height: 2795
@@ -5128,9 +3961,6 @@
   - :face: bottom
     :width: 3981
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4161
   - :face: profile
     :width: 5000
     :height: 3043
@@ -5142,9 +3972,6 @@
   - :face: bottom
     :width: 4090
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3843
   - :face: profile
     :width: 5000
     :height: 3069
@@ -5156,9 +3983,6 @@
   - :face: bottom
     :width: 3916
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3556
   - :face: profile
     :width: 5000
     :height: 2702
@@ -5170,9 +3994,6 @@
   - :face: bottom
     :width: 4102
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3844
   - :face: profile
     :width: 5000
     :height: 3086
@@ -5184,9 +4005,6 @@
   - :face: bottom
     :width: 4007
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 3044
@@ -5198,9 +4016,6 @@
   - :face: bottom
     :width: 4095
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3824
   - :face: profile
     :width: 5000
     :height: 2963
@@ -5212,9 +4027,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3742
   - :face: profile
     :width: 5000
     :height: 3119
@@ -5226,9 +4038,6 @@
   - :face: bottom
     :width: 4092
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3552
   - :face: profile
     :width: 5000
     :height: 3118
@@ -5240,9 +4049,6 @@
   - :face: bottom
     :width: 3991
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3699
   - :face: profile
     :width: 5000
     :height: 3043
@@ -5254,9 +4060,6 @@
   - :face: bottom
     :width: 4085
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3802
   - :face: profile
     :width: 5000
     :height: 3218
@@ -5268,9 +4071,6 @@
   - :face: bottom
     :width: 4099
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3638
   - :face: profile
     :width: 5000
     :height: 2926
@@ -5282,9 +4082,6 @@
   - :face: bottom
     :width: 4016
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3600
   - :face: profile
     :width: 5000
     :height: 2787
@@ -5296,9 +4093,6 @@
   - :face: bottom
     :width: 4245
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3558
   - :face: profile
     :width: 5000
     :height: 2896
@@ -5310,9 +4104,6 @@
   - :face: bottom
     :width: 4057
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3583
   - :face: profile
     :width: 5000
     :height: 2972
@@ -5324,9 +4115,6 @@
   - :face: bottom
     :width: 4048
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4330
   - :face: profile
     :width: 5000
     :height: 3377
@@ -5338,9 +4126,6 @@
   - :face: bottom
     :width: 4016
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4015
   - :face: profile
     :width: 5000
     :height: 3411
@@ -5352,9 +4137,6 @@
   - :face: bottom
     :width: 4090
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3737
   - :face: profile
     :width: 5000
     :height: 3123
@@ -5366,12 +4148,6 @@
   - :face: bottom
     :width: 4105
     :height: 5000
-  - :face: detail
-    :width: 3640
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3693
   - :face: profile
     :width: 5000
     :height: 3191
@@ -5383,9 +4159,6 @@
   - :face: bottom
     :width: 4083
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3261
@@ -5397,9 +4170,6 @@
   - :face: bottom
     :width: 4084
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3737
   - :face: profile
     :width: 5000
     :height: 3203
@@ -5411,9 +4181,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3848
   - :face: profile
     :width: 5000
     :height: 3045
@@ -5425,9 +4192,6 @@
   - :face: bottom
     :width: 4018
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4100
   - :face: profile
     :width: 5000
     :height: 3281
@@ -5439,9 +4203,6 @@
   - :face: bottom
     :width: 3985
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4335
   - :face: profile
     :width: 5000
     :height: 3099
@@ -5453,9 +4214,6 @@
   - :face: bottom
     :width: 3924
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4204
   - :face: profile
     :width: 5000
     :height: 3295
@@ -5467,9 +4225,6 @@
   - :face: bottom
     :width: 4088
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3834
   - :face: profile
     :width: 5000
     :height: 3265
@@ -5481,9 +4236,6 @@
   - :face: bottom
     :width: 4109
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -5495,9 +4247,6 @@
   - :face: bottom
     :width: 4095
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3745
   - :face: profile
     :width: 5000
     :height: 3189
@@ -5509,12 +4258,6 @@
   - :face: bottom
     :width: 4105
     :height: 5000
-  - :face: detail
-    :width: 3765
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3726
   - :face: profile
     :width: 5000
     :height: 3222
@@ -5526,9 +4269,6 @@
   - :face: bottom
     :width: 4092
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3286
@@ -5540,12 +4280,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 4201
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -5557,12 +4291,6 @@
   - :face: bottom
     :width: 4150
     :height: 5000
-  - :face: detail
-    :width: 3843
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3743
   - :face: profile
     :width: 5000
     :height: 3222
@@ -5574,9 +4302,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3744
   - :face: profile
     :width: 5000
     :height: 3000
@@ -5588,12 +4313,6 @@
   - :face: bottom
     :width: 4105
     :height: 5000
-  - :face: detail
-    :width: 3640
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3690
   - :face: profile
     :width: 5000
     :height: 3191
@@ -5605,9 +4324,6 @@
   - :face: bottom
     :width: 4049
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3863
   - :face: profile
     :width: 5000
     :height: 3502
@@ -5619,9 +4335,6 @@
   - :face: bottom
     :width: 3930
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3690
   - :face: profile
     :width: 5000
     :height: 3247
@@ -5633,9 +4346,6 @@
   - :face: bottom
     :width: 4091
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3260
@@ -5647,12 +4357,6 @@
   - :face: bottom
     :width: 4213
     :height: 5000
-  - :face: detail
-    :width: 5000
-    :height: 4591
-  - :face: main
-    :width: 5000
-    :height: 3505
   - :face: profile
     :width: 5000
     :height: 2871
@@ -5664,9 +4368,6 @@
   - :face: bottom
     :width: 4096
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3797
   - :face: profile
     :width: 5000
     :height: 3368
@@ -5678,9 +4379,6 @@
   - :face: bottom
     :width: 4187
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3795
   - :face: profile
     :width: 5000
     :height: 3394
@@ -5692,9 +4390,6 @@
   - :face: bottom
     :width: 4021
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -5706,9 +4401,6 @@
   - :face: bottom
     :width: 4212
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3802
   - :face: profile
     :width: 5000
     :height: 3526
@@ -5720,9 +4412,6 @@
   - :face: bottom
     :width: 3914
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3705
   - :face: profile
     :width: 5000
     :height: 3573
@@ -5734,12 +4423,6 @@
   - :face: bottom
     :width: 4105
     :height: 5000
-  - :face: detail
-    :width: 3765
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3742
   - :face: profile
     :width: 5000
     :height: 3222
@@ -5751,9 +4434,6 @@
   - :face: bottom
     :width: 4080
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3853
   - :face: profile
     :width: 5000
     :height: 3240
@@ -5765,12 +4445,6 @@
   - :face: bottom
     :width: 4105
     :height: 5000
-  - :face: detail
-    :width: 4048
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3742
   - :face: profile
     :width: 5000
     :height: 3222
@@ -5782,9 +4456,6 @@
   - :face: bottom
     :width: 3970
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4497
   - :face: profile
     :width: 5000
     :height: 3136
@@ -5796,9 +4467,6 @@
   - :face: bottom
     :width: 3994
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4282
   - :face: profile
     :width: 5000
     :height: 3171
@@ -5810,9 +4478,6 @@
   - :face: bottom
     :width: 4003
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4353
   - :face: profile
     :width: 5000
     :height: 3102
@@ -5824,9 +4489,6 @@
   - :face: bottom
     :width: 3912
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4423
   - :face: profile
     :width: 5000
     :height: 2853
@@ -5838,12 +4500,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 4201
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -5855,9 +4511,6 @@
   - :face: bottom
     :width: 4091
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3934
   - :face: profile
     :width: 5000
     :height: 3278
@@ -5869,9 +4522,6 @@
   - :face: bottom
     :width: 3960
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3873
   - :face: profile
     :width: 5000
     :height: 3399
@@ -5883,9 +4533,6 @@
   - :face: bottom
     :width: 4085
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3843
   - :face: profile
     :width: 5000
     :height: 3327
@@ -5897,9 +4544,6 @@
   - :face: bottom
     :width: 4199
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4311
   - :face: profile
     :width: 5000
     :height: 3221
@@ -5911,9 +4555,6 @@
   - :face: bottom
     :width: 4042
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3768
   - :face: profile
     :width: 5000
     :height: 3354
@@ -5925,9 +4566,6 @@
   - :face: bottom
     :width: 4245
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4323
   - :face: profile
     :width: 5000
     :height: 3670
@@ -5939,9 +4577,6 @@
   - :face: bottom
     :width: 4814
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3145
@@ -5953,9 +4588,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -5967,9 +4599,6 @@
   - :face: bottom
     :width: 4328
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4364
   - :face: profile
     :width: 5000
     :height: 3328
@@ -5981,9 +4610,6 @@
   - :face: bottom
     :width: 4089
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3558
   - :face: profile
     :width: 5000
     :height: 2897
@@ -5995,9 +4621,6 @@
   - :face: bottom
     :width: 4030
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4226
   - :face: profile
     :width: 5000
     :height: 3388
@@ -6009,9 +4632,6 @@
   - :face: bottom
     :width: 3732
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3745
   - :face: profile
     :width: 5000
     :height: 2655
@@ -6023,9 +4643,6 @@
   - :face: bottom
     :width: 3241
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3953
   - :face: profile
     :width: 5000
     :height: 3137
@@ -6037,9 +4654,6 @@
   - :face: bottom
     :width: 3279
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3987
   - :face: profile
     :width: 5000
     :height: 3047
@@ -6051,9 +4665,6 @@
   - :face: bottom
     :width: 3284
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4370
   - :face: profile
     :width: 5000
     :height: 2989
@@ -6065,9 +4676,6 @@
   - :face: bottom
     :width: 3259
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3795
   - :face: profile
     :width: 5000
     :height: 2936
@@ -6079,9 +4687,6 @@
   - :face: bottom
     :width: 4062
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3868
   - :face: profile
     :width: 5000
     :height: 2749
@@ -6093,9 +4698,6 @@
   - :face: bottom
     :width: 3643
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4349
   - :face: profile
     :width: 5000
     :height: 3152
@@ -6107,9 +4709,6 @@
   - :face: bottom
     :width: 3799
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3730
   - :face: profile
     :width: 5000
     :height: 2726
@@ -6121,9 +4720,6 @@
   - :face: bottom
     :width: 3793
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3485
   - :face: profile
     :width: 5000
     :height: 2479
@@ -6135,9 +4731,6 @@
   - :face: bottom
     :width: 3585
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4660
   - :face: profile
     :width: 5000
     :height: 3530
@@ -6149,9 +4742,6 @@
   - :face: bottom
     :width: 3342
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4267
   - :face: profile
     :width: 5000
     :height: 3094
@@ -6163,9 +4753,6 @@
   - :face: bottom
     :width: 3418
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4641
   - :face: profile
     :width: 5000
     :height: 3407
@@ -6177,9 +4764,6 @@
   - :face: bottom
     :width: 3455
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4476
   - :face: profile
     :width: 5000
     :height: 3244
@@ -6191,12 +4775,6 @@
   - :face: bottom
     :width: 4045
     :height: 5000
-  - :face: detail
-    :width: 3659
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3620
   - :face: profile
     :width: 5000
     :height: 2977
@@ -6208,9 +4786,6 @@
   - :face: bottom
     :width: 4035
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4398
   - :face: profile
     :width: 5000
     :height: 3778
@@ -6222,9 +4797,6 @@
   - :face: bottom
     :width: 3678
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3492
   - :face: profile
     :width: 5000
     :height: 2209
@@ -6236,9 +4808,6 @@
   - :face: bottom
     :width: 3408
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3922
   - :face: profile
     :width: 5000
     :height: 2546
@@ -6250,9 +4819,6 @@
   - :face: bottom
     :width: 3273
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3667
   - :face: profile
     :width: 5000
     :height: 2769
@@ -6264,9 +4830,6 @@
   - :face: bottom
     :width: 4263
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4634
   - :face: profile
     :width: 5000
     :height: 3609
@@ -6278,9 +4841,6 @@
   - :face: bottom
     :width: 4826
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4794
   - :face: profile
     :width: 5000
     :height: 3914
@@ -6292,9 +4852,6 @@
   - :face: bottom
     :width: 4112
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6306,9 +4863,6 @@
   - :face: bottom
     :width: 4141
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6320,9 +4874,6 @@
   - :face: bottom
     :width: 4064
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3594
   - :face: profile
     :width: 5000
     :height: 2864
@@ -6334,9 +4885,6 @@
   - :face: bottom
     :width: 3749
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6348,9 +4896,6 @@
   - :face: bottom
     :width: 4113
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6362,9 +4907,6 @@
   - :face: bottom
     :width: 3504
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3180
   - :face: profile
     :width: 5000
     :height: 2744
@@ -6376,9 +4918,6 @@
   - :face: bottom
     :width: 4112
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6390,9 +4929,6 @@
   - :face: bottom
     :width: 4030
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4198
   - :face: profile
     :width: 5000
     :height: 2850
@@ -6404,9 +4940,6 @@
   - :face: bottom
     :width: 3407
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4306
   - :face: profile
     :width: 5000
     :height: 3606
@@ -6418,9 +4951,6 @@
   - :face: bottom
     :width: 3966
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3904
   - :face: profile
     :width: 5000
     :height: 3209
@@ -6432,9 +4962,6 @@
   - :face: bottom
     :width: 3870
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3999
   - :face: profile
     :width: 5000
     :height: 2993
@@ -6446,9 +4973,6 @@
   - :face: bottom
     :width: 3993
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3584
   - :face: profile
     :width: 5000
     :height: 3273
@@ -6460,9 +4984,6 @@
   - :face: bottom
     :width: 3941
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3924
   - :face: profile
     :width: 5000
     :height: 3206
@@ -6474,9 +4995,6 @@
   - :face: bottom
     :width: 3798
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4151
   - :face: profile
     :width: 5000
     :height: 2945
@@ -6488,9 +5006,6 @@
   - :face: bottom
     :width: 4097
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3941
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6502,9 +5017,6 @@
   - :face: bottom
     :width: 4152
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3551
   - :face: profile
     :width: 5000
     :height: 2883
@@ -6516,9 +5028,6 @@
   - :face: bottom
     :width: 3964
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3709
   - :face: profile
     :width: 5000
     :height: 3146
@@ -6530,9 +5039,6 @@
   - :face: bottom
     :width: 3814
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3980
   - :face: profile
     :width: 5000
     :height: 3080
@@ -6544,9 +5050,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6558,9 +5061,6 @@
   - :face: bottom
     :width: 3818
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3937
   - :face: profile
     :width: 5000
     :height: 2907
@@ -6572,9 +5072,6 @@
   - :face: bottom
     :width: 3958
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3848
   - :face: profile
     :width: 5000
     :height: 2934
@@ -6586,9 +5083,6 @@
   - :face: bottom
     :width: 4007
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3852
   - :face: profile
     :width: 5000
     :height: 3116
@@ -6600,12 +5094,6 @@
   - :face: bottom
     :width: 4049
     :height: 5000
-  - :face: detail
-    :width: 5000
-    :height: 2649
-  - :face: main
-    :width: 5000
-    :height: 3982
   - :face: profile
     :width: 5000
     :height: 3198
@@ -6614,9 +5102,6 @@
     :height: 5000
 - :cat: 487
   :images:
-  - :face: main
-    :width: 5000
-    :height: 3811
   - :face: profile
     :width: 5000
     :height: 3237
@@ -6628,9 +5113,6 @@
   - :face: bottom
     :width: 3943
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3798
   - :face: profile
     :width: 5000
     :height: 3095
@@ -6642,9 +5124,6 @@
   - :face: bottom
     :width: 3934
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3781
   - :face: profile
     :width: 5000
     :height: 3028
@@ -6656,9 +5135,6 @@
   - :face: bottom
     :width: 4111
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3819
   - :face: profile
     :width: 5000
     :height: 3042
@@ -6670,9 +5146,6 @@
   - :face: bottom
     :width: 3852
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4327
   - :face: profile
     :width: 5000
     :height: 2941
@@ -6684,9 +5157,6 @@
   - :face: bottom
     :width: 3317
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3602
   - :face: profile
     :width: 5000
     :height: 2837
@@ -6698,9 +5168,6 @@
   - :face: bottom
     :width: 3547
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4020
   - :face: profile
     :width: 5000
     :height: 2718
@@ -6712,9 +5179,6 @@
   - :face: bottom
     :width: 3520
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3679
   - :face: profile
     :width: 5000
     :height: 2959
@@ -6726,12 +5190,6 @@
   - :face: bottom
     :width: 3986
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 2957
-  - :face: main__alt
-    :width: 5000
-    :height: 2957
   - :face: profile
     :width: 5000
     :height: 2957
@@ -6743,9 +5201,6 @@
   - :face: bottom
     :width: 3479
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3473
   - :face: profile
     :width: 5000
     :height: 2868
@@ -6757,9 +5212,6 @@
   - :face: bottom
     :width: 3442
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3772
   - :face: profile
     :width: 5000
     :height: 2651
@@ -6771,9 +5223,6 @@
   - :face: bottom
     :width: 3427
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3806
   - :face: profile
     :width: 5000
     :height: 2846
@@ -6785,9 +5234,6 @@
   - :face: bottom
     :width: 3508
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4378
   - :face: profile
     :width: 5000
     :height: 2908
@@ -6799,9 +5245,6 @@
   - :face: bottom
     :width: 3396
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3973
   - :face: profile
     :width: 5000
     :height: 3410
@@ -6813,9 +5256,6 @@
   - :face: bottom
     :width: 4229
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4256
   - :face: profile
     :width: 5000
     :height: 3495
@@ -6827,9 +5267,6 @@
   - :face: bottom
     :width: 3677
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3627
   - :face: profile
     :width: 5000
     :height: 3163
@@ -6841,9 +5278,6 @@
   - :face: bottom
     :width: 3871
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3816
   - :face: profile
     :width: 5000
     :height: 2944
@@ -6855,9 +5289,6 @@
   - :face: bottom
     :width: 3774
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3717
   - :face: profile
     :width: 5000
     :height: 2784
@@ -6869,9 +5300,6 @@
   - :face: bottom
     :width: 5000
     :height: 4790
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3285
@@ -6883,9 +5311,6 @@
   - :face: bottom
     :width: 4416
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3949
   - :face: profile
     :width: 5000
     :height: 3286
@@ -6897,9 +5322,6 @@
   - :face: bottom
     :width: 4386
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3286
@@ -6911,9 +5333,6 @@
   - :face: bottom
     :width: 4417
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4251
   - :face: profile
     :width: 5000
     :height: 3778
@@ -6924,9 +5343,6 @@
   :images:
   - :face: bottom
     :width: 4780
-    :height: 5000
-  - :face: main
-    :width: 4073
     :height: 5000
   - :face: profile
     :width: 4422
@@ -6939,9 +5355,6 @@
   - :face: bottom
     :width: 3874
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 2992
   - :face: profile
     :width: 5000
     :height: 2822
@@ -6953,9 +5366,6 @@
   - :face: bottom
     :width: 3918
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3900
   - :face: profile
     :width: 5000
     :height: 3202
@@ -6967,9 +5377,6 @@
   - :face: bottom
     :width: 3717
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3953
   - :face: profile
     :width: 5000
     :height: 3180
@@ -6981,9 +5388,6 @@
   - :face: bottom
     :width: 3914
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3560
   - :face: profile
     :width: 5000
     :height: 2741
@@ -6995,9 +5399,6 @@
   - :face: bottom
     :width: 3734
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3699
   - :face: profile
     :width: 5000
     :height: 3094
@@ -7009,9 +5410,6 @@
   - :face: bottom
     :width: 3752
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3285
@@ -7023,9 +5421,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3848
   - :face: profile
     :width: 5000
     :height: 3436
@@ -7037,9 +5432,6 @@
   - :face: bottom
     :width: 3747
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3526
   - :face: profile
     :width: 5000
     :height: 2840
@@ -7051,9 +5443,6 @@
   - :face: bottom
     :width: 3783
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3778
   - :face: profile
     :width: 5000
     :height: 3379
@@ -7065,9 +5454,6 @@
   - :face: bottom
     :width: 4117
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3857
   - :face: profile
     :width: 5000
     :height: 3346
@@ -7079,12 +5465,6 @@
   - :face: bottom
     :width: 3918
     :height: 5000
-  - :face: detail
-    :width: 4607
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3750
   - :face: profile
     :width: 5000
     :height: 3236
@@ -7096,9 +5476,6 @@
   - :face: bottom
     :width: 4025
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4262
   - :face: profile
     :width: 5000
     :height: 3566
@@ -7110,9 +5487,6 @@
   - :face: bottom
     :width: 3835
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4099
   - :face: profile
     :width: 5000
     :height: 3299
@@ -7124,9 +5498,6 @@
   - :face: bottom
     :width: 3644
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4109
   - :face: profile
     :width: 5000
     :height: 3343
@@ -7138,12 +5509,6 @@
   - :face: bottom
     :width: 3997
     :height: 5000
-  - :face: detail
-    :width: 4803
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3751
   - :face: profile
     :width: 5000
     :height: 3024
@@ -7155,9 +5520,6 @@
   - :face: bottom
     :width: 3936
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3232
@@ -7169,9 +5531,6 @@
   - :face: bottom
     :width: 3792
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4387
   - :face: profile
     :width: 5000
     :height: 3608
@@ -7183,9 +5542,6 @@
   - :face: bottom
     :width: 4104
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4069
   - :face: profile
     :width: 5000
     :height: 3284
@@ -7194,9 +5550,6 @@
     :height: 5000
 - :cat: 530
   :images:
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3178
@@ -7208,9 +5561,6 @@
   - :face: bottom
     :width: 4003
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3849
   - :face: profile
     :width: 5000
     :height: 3054
@@ -7222,9 +5572,6 @@
   - :face: bottom
     :width: 3858
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3851
   - :face: profile
     :width: 5000
     :height: 3085
@@ -7236,9 +5583,6 @@
   - :face: bottom
     :width: 3928
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3960
   - :face: profile
     :width: 5000
     :height: 3286
@@ -7250,16 +5594,7 @@
   - :face: bottom
     :width: 4198
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3480
-  - :face: main__alt
-    :width: 5000
-    :height: 3480
   - :face: profile
-    :width: 5000
-    :height: 3336
-  - :face: profile__alt
     :width: 5000
     :height: 3336
   - :face: top
@@ -7270,9 +5605,6 @@
   - :face: bottom
     :width: 3876
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4103
   - :face: profile
     :width: 5000
     :height: 3382
@@ -7284,9 +5616,6 @@
   - :face: bottom
     :width: 3907
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3804
   - :face: profile
     :width: 5000
     :height: 2845
@@ -7298,9 +5627,6 @@
   - :face: bottom
     :width: 3788
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3847
   - :face: profile
     :width: 5000
     :height: 3238
@@ -7312,9 +5638,6 @@
   - :face: bottom
     :width: 3823
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4278
   - :face: profile
     :width: 5000
     :height: 3332
@@ -7326,9 +5649,6 @@
   - :face: bottom
     :width: 3972
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3884
   - :face: profile
     :width: 5000
     :height: 3180
@@ -7340,9 +5660,6 @@
   - :face: bottom
     :width: 3702
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3749
   - :face: profile
     :width: 5000
     :height: 3059
@@ -7354,9 +5671,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3971
   - :face: profile
     :width: 5000
     :height: 3286
@@ -7368,9 +5682,6 @@
   - :face: bottom
     :width: 3641
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4012
   - :face: profile
     :width: 5000
     :height: 3253
@@ -7382,9 +5693,6 @@
   - :face: bottom
     :width: 3861
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4150
   - :face: profile
     :width: 5000
     :height: 3285
@@ -7396,9 +5704,6 @@
   - :face: bottom
     :width: 3653
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3850
   - :face: profile
     :width: 5000
     :height: 3285
@@ -7410,9 +5715,6 @@
   - :face: bottom
     :width: 4272
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3859
   - :face: profile
     :width: 5000
     :height: 3285
@@ -7424,9 +5726,6 @@
   - :face: bottom
     :width: 4396
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4013
   - :face: profile
     :width: 5000
     :height: 3286
@@ -7438,9 +5737,6 @@
   - :face: bottom
     :width: 3748
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4008
   - :face: profile
     :width: 5000
     :height: 3191
@@ -7452,9 +5748,6 @@
   - :face: bottom
     :width: 4134
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3950
   - :face: profile
     :width: 5000
     :height: 3311
@@ -7466,9 +5759,6 @@
   - :face: bottom
     :width: 4268
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4306
   - :face: profile
     :width: 5000
     :height: 3115
@@ -7480,9 +5770,6 @@
   - :face: bottom
     :width: 3899
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3853
   - :face: profile
     :width: 5000
     :height: 3288
@@ -7494,9 +5781,6 @@
   - :face: bottom
     :width: 3876
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4304
   - :face: profile
     :width: 5000
     :height: 3682
@@ -7508,23 +5792,11 @@
   - :face: bottom
     :width: 3760
     :height: 5000
-  - :face: detail
-    :width: 5000
-    :height: 2326
-  - :face: detail__alt
-    :width: 5000
-    :height: 2326
-  - :face: main
-    :width: 5000
-    :height: 3922
   - :face: top
     :width: 3760
     :height: 5000
 - :cat: 558
   :images:
-  - :face: main
-    :width: 5000
-    :height: 3617
   - :face: top
     :width: 5000
     :height: 3343
@@ -7533,9 +5805,6 @@
   - :face: bottom
     :width: 4843
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3875
   - :face: profile
     :width: 5000
     :height: 2404
@@ -7547,9 +5816,6 @@
   - :face: bottom
     :width: 4723
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4178
   - :face: profile
     :width: 5000
     :height: 3423
@@ -7561,9 +5827,6 @@
   - :face: bottom
     :width: 3479
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3814
   - :face: profile
     :width: 5000
     :height: 2395
@@ -7575,9 +5838,6 @@
   - :face: bottom
     :width: 4098
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3977
   - :face: profile
     :width: 5000
     :height: 3103
@@ -7589,9 +5849,6 @@
   - :face: bottom
     :width: 3709
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4810
   - :face: profile
     :width: 5000
     :height: 3482
@@ -7603,9 +5860,6 @@
   - :face: bottom
     :width: 3959
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4981
   - :face: profile
     :width: 5000
     :height: 3842
@@ -7617,9 +5871,6 @@
   - :face: bottom
     :width: 4068
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3945
   - :face: profile
     :width: 5000
     :height: 3265
@@ -7631,9 +5882,6 @@
   - :face: bottom
     :width: 4079
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3324
   - :face: profile
     :width: 5000
     :height: 3519
@@ -7645,9 +5893,6 @@
   - :face: bottom
     :width: 3821
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4305
   - :face: profile
     :width: 5000
     :height: 4054
@@ -7659,9 +5904,6 @@
   - :face: bottom
     :width: 3354
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4699
   - :face: profile
     :width: 5000
     :height: 4152
@@ -7673,9 +5915,6 @@
   - :face: bottom
     :width: 2908
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3656
   - :face: profile
     :width: 5000
     :height: 3031
@@ -7687,9 +5926,6 @@
   - :face: bottom
     :width: 5000
     :height: 4951
-  - :face: main
-    :width: 5000
-    :height: 4079
   - :face: profile
     :width: 5000
     :height: 3654
@@ -7701,9 +5937,6 @@
   - :face: bottom
     :width: 5000
     :height: 4922
-  - :face: main
-    :width: 5000
-    :height: 4986
   - :face: profile
     :width: 5000
     :height: 3820
@@ -7715,9 +5948,6 @@
   - :face: bottom
     :width: 5000
     :height: 4739
-  - :face: main
-    :width: 5000
-    :height: 3084
   - :face: profile
     :width: 5000
     :height: 2191
@@ -7729,9 +5959,6 @@
   - :face: bottom
     :width: 5000
     :height: 4624
-  - :face: main
-    :width: 5000
-    :height: 2934
   - :face: profile
     :width: 5000
     :height: 2414
@@ -7739,29 +5966,17 @@
     :width: 5000
     :height: 4624
 - :cat: 579
-  :images:
-  - :face: main
-    :width: 5000
-    :height: 3822
+  :images: []
 - :cat: 580
-  :images:
-  - :face: main
-    :width: 5000
-    :height: 3822
+  :images: []
 - :cat: 581
   :images:
-  - :face: main
-    :width: 3334
-    :height: 5000
   - :face: top
     :width: 3334
     :height: 5000
 - :cat: 582
   :images:
   - :face: bottom
-    :width: 5000
-    :height: 4688
-  - :face: main
     :width: 5000
     :height: 4688
   - :face: profile
@@ -7775,9 +5990,6 @@
   - :face: bottom
     :width: 5000
     :height: 4425
-  - :face: main
-    :width: 5000
-    :height: 4425
   - :face: profile
     :width: 5000
     :height: 3912
@@ -7789,9 +6001,6 @@
   - :face: bottom
     :width: 5000
     :height: 4133
-  - :face: main
-    :width: 5000
-    :height: 4133
   - :face: profile
     :width: 5000
     :height: 3117
@@ -7800,19 +6009,7 @@
     :height: 4133
 - :cat: 586
   :images:
-  - :face: back
-    :width: 3224
-    :height: 5000
-  - :face: front
-    :width: 3224
-    :height: 5000
-  - :face: main
-    :width: 3224
-    :height: 5000
   - :face: profile
-    :width: 4357
-    :height: 5000
-  - :face: profile__alt
     :width: 4357
     :height: 5000
 - :cat: 587
@@ -7820,15 +6017,9 @@
   - :face: bottom
     :width: 3558
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4290
   - :face: profile
     :width: 5000
     :height: 3859
-  - :face: profile__alt
-    :width: 5000
-    :height: 3853
   - :face: top
     :width: 3558
     :height: 5000
@@ -7837,9 +6028,6 @@
   - :face: bottom
     :width: 2678
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4765
   - :face: profile
     :width: 5000
     :height: 3896
@@ -7848,15 +6036,6 @@
     :height: 5000
 - :cat: 589
   :images:
-  - :face: back
-    :width: 3928
-    :height: 5000
-  - :face: front
-    :width: 3928
-    :height: 5000
-  - :face: main
-    :width: 3928
-    :height: 5000
   - :face: profile
     :width: 3928
     :height: 5000
@@ -7865,16 +6044,7 @@
     :height: 5000
 - :cat: 590
   :images:
-  - :face: back
-    :width: 3047
-    :height: 5000
-  - :face: main
-    :width: 3047
-    :height: 5000
   - :face: profile
-    :width: 3047
-    :height: 5000
-  - :face: profile__alt
     :width: 3047
     :height: 5000
   - :face: top
@@ -7882,15 +6052,6 @@
     :height: 5000
 - :cat: 592
   :images:
-  - :face: back
-    :width: 5000
-    :height: 2945
-  - :face: front
-    :width: 5000
-    :height: 2945
-  - :face: main
-    :width: 5000
-    :height: 2945
   - :face: profile
     :width: 5000
     :height: 2945
@@ -7899,25 +6060,10 @@
     :height: 2945
 - :cat: 593
   :images:
-  - :face: back
-    :width: 4585
-    :height: 5000
   - :face: bottom
     :width: 4585
     :height: 5000
-  - :face: front
-    :width: 4585
-    :height: 5000
-  - :face: front__alt
-    :width: 4585
-    :height: 5000
-  - :face: main
-    :width: 4585
-    :height: 5000
   - :face: profile
-    :width: 4585
-    :height: 5000
-  - :face: profile__alt
     :width: 4585
     :height: 5000
   - :face: top
@@ -7928,9 +6074,6 @@
   - :face: bottom
     :width: 3007
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4397
   - :face: profile
     :width: 5000
     :height: 2970
@@ -7942,9 +6085,6 @@
   - :face: bottom
     :width: 4372
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4196
   - :face: profile
     :width: 5000
     :height: 3387
@@ -7956,9 +6096,6 @@
   - :face: bottom
     :width: 5000
     :height: 4871
-  - :face: main
-    :width: 5000
-    :height: 3471
   - :face: profile
     :width: 5000
     :height: 3771
@@ -7970,9 +6107,6 @@
   - :face: bottom
     :width: 5000
     :height: 4420
-  - :face: main
-    :width: 5000
-    :height: 3748
   - :face: profile
     :width: 5000
     :height: 2719
@@ -7984,9 +6118,6 @@
   - :face: bottom
     :width: 3347
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3848
   - :face: profile
     :width: 5000
     :height: 2696
@@ -7998,9 +6129,6 @@
   - :face: bottom
     :width: 2759
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4536
   - :face: profile
     :width: 5000
     :height: 3917
@@ -8012,9 +6140,6 @@
   - :face: bottom
     :width: 3655
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4625
   - :face: profile
     :width: 5000
     :height: 3358
@@ -8026,9 +6151,6 @@
   - :face: bottom
     :width: 3690
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4158
   - :face: profile
     :width: 5000
     :height: 3710
@@ -8040,9 +6162,6 @@
   - :face: bottom
     :width: 2822
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4199
   - :face: profile
     :width: 5000
     :height: 3339
@@ -8054,9 +6173,6 @@
   - :face: bottom
     :width: 3358
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4516
   - :face: profile
     :width: 5000
     :height: 3524
@@ -8068,9 +6184,6 @@
   - :face: bottom
     :width: 4021
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4445
   - :face: profile
     :width: 5000
     :height: 4249
@@ -8082,9 +6195,6 @@
   - :face: bottom
     :width: 3676
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4132
   - :face: profile
     :width: 5000
     :height: 3260
@@ -8096,9 +6206,6 @@
   - :face: bottom
     :width: 3412
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4197
   - :face: profile
     :width: 5000
     :height: 2959
@@ -8110,9 +6217,6 @@
   - :face: bottom
     :width: 3314
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4099
   - :face: profile
     :width: 5000
     :height: 3558
@@ -8124,9 +6228,6 @@
   - :face: bottom
     :width: 3401
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4167
   - :face: profile
     :width: 5000
     :height: 2591
@@ -8138,9 +6239,6 @@
   - :face: bottom
     :width: 3875
     :height: 5000
-  - :face: main
-    :width: 3659
-    :height: 5000
   - :face: profile
     :width: 3631
     :height: 5000
@@ -8149,41 +6247,14 @@
     :height: 5000
 - :cat: 612
   :images:
-  - :face: back
-    :width: 4327
-    :height: 5000
-  - :face: front
-    :width: 4327
-    :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4452
-  - :face: main__alt
-    :width: 5000
-    :height: 4452
   - :face: profile
     :width: 5000
     :height: 2851
-  - :face: profile__alt
-    :width: 5000
-    :height: 2851
-  - :face: profile__alt__special
-    :width: 5000
-    :height: 4000
-  - :face: profile__special
-    :width: 5000
-    :height: 4000
-  - :face: special
-    :width: 4000
-    :height: 5000
 - :cat: 613
   :images:
   - :face: bottom
     :width: 5000
     :height: 3850
-  - :face: main
-    :width: 3641
-    :height: 5000
   - :face: profile
     :width: 5000
     :height: 3284
@@ -8195,9 +6266,6 @@
   - :face: bottom
     :width: 3394
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4092
   - :face: profile
     :width: 5000
     :height: 2789
@@ -8209,9 +6277,6 @@
   - :face: bottom
     :width: 2750
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3878
   - :face: profile
     :width: 5000
     :height: 2603
@@ -8223,9 +6288,6 @@
   - :face: bottom
     :width: 3143
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4483
   - :face: profile
     :width: 5000
     :height: 3601
@@ -8237,9 +6299,6 @@
   - :face: bottom
     :width: 3691
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4400
   - :face: profile
     :width: 5000
     :height: 3765
@@ -8251,9 +6310,6 @@
   - :face: bottom
     :width: 3128
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4128
   - :face: profile
     :width: 5000
     :height: 3176
@@ -8265,9 +6321,6 @@
   - :face: bottom
     :width: 2979
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4398
   - :face: profile
     :width: 5000
     :height: 3049
@@ -8279,9 +6332,6 @@
   - :face: bottom
     :width: 2646
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4452
   - :face: profile
     :width: 5000
     :height: 2868
@@ -8293,9 +6343,6 @@
   - :face: bottom
     :width: 3396
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4707
   - :face: profile
     :width: 5000
     :height: 3808
@@ -8304,15 +6351,9 @@
     :height: 5000
 - :cat: 623
   :images:
-  - :face: back
-    :width: 3893
-    :height: 5000
   - :face: bottom
     :width: 5000
     :height: 3965
-  - :face: main
-    :width: 3534
-    :height: 5000
   - :face: profile
     :width: 3526
     :height: 5000
@@ -8321,21 +6362,9 @@
     :height: 4043
 - :cat: 624
   :images:
-  - :face: back
-    :width: 5000
-    :height: 2637
   - :face: bottom
     :width: 5000
     :height: 3454
-  - :face: front
-    :width: 5000
-    :height: 2637
-  - :face: main
-    :width: 5000
-    :height: 2637
-  - :face: main__alt
-    :width: 5000
-    :height: 2637
   - :face: profile
     :width: 5000
     :height: 2637
@@ -8347,9 +6376,6 @@
   - :face: bottom
     :width: 4272
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3536
   - :face: profile
     :width: 5000
     :height: 2566
@@ -8361,16 +6387,7 @@
   - :face: bottom
     :width: 5000
     :height: 2302
-  - :face: main
-    :width: 5000
-    :height: 2194
-  - :face: main__alt
-    :width: 5000
-    :height: 2194
   - :face: profile
-    :width: 5000
-    :height: 2194
-  - :face: profile__alt
     :width: 5000
     :height: 2194
   - :face: top
@@ -8381,9 +6398,6 @@
   - :face: bottom
     :width: 3127
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4555
   - :face: profile
     :width: 5000
     :height: 3774
@@ -8395,22 +6409,7 @@
   - :face: bottom
     :width: 4878
     :height: 5000
-  - :face: detail
-    :width: 5000
-    :height: 3846
-  - :face: detail__alt
-    :width: 5000
-    :height: 3754
-  - :face: detail__alt__special
-    :width: 5000
-    :height: 3754
-  - :face: main
-    :width: 5000
-    :height: 4008
   - :face: profile
-    :width: 5000
-    :height: 4008
-  - :face: profile__alt
     :width: 5000
     :height: 4008
   - :face: top
@@ -8421,9 +6420,6 @@
   - :face: bottom
     :width: 3377
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 4517
   - :face: profile
     :width: 5000
     :height: 4074
@@ -8435,9 +6431,6 @@
   - :face: bottom
     :width: 4067
     :height: 5000
-  - :face: main
-    :width: 5000
-    :height: 3927
   - :face: profile
     :width: 5000
     :height: 2840
