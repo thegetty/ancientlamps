@@ -103,6 +103,10 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       @include shift(2);
     }
   }
+  .see-also {
+    margin-top: 1em;
+    text-indent: 0;
+  }
 }
 
 // A grid unit that contains its own outer-container element (it is intended
