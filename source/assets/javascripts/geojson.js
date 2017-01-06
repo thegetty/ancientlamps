@@ -818,19 +818,19 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Ar Ramlah",
+      "basename": "",
       "custom_name": "Ramleh",
       "feature_type": "site",
       "pid": "",
-      "tgn": "7522434",
+      "tgn": "7001366",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        31.1576,
-        30.4402
+        34.8656,
+        31.9292
       ]
     }
   }, {
@@ -2948,19 +2948,19 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Petrai/Petra",
+      "basename": "",
       "custom_name": "Petra",
       "feature_type": "site",
-      "pid": "543834",
-      "tgn": "7225207",
+      "pid": "",
+      "tgn": "7002383",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        21.25,
-        38.75
+        35.4410,
+        30.3280
       ]
     }
   }, {
