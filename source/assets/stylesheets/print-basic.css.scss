@@ -190,12 +190,17 @@ $modular-scale-ratio: $minor-second;
   &__grid { display: none; }
   &__image { display: none; }
   &__title { font-size: 18pt; }
+  &__details__stamp {
+    display: block;
+    height: auto;
+    max-width: 1in;
+  }
 
   &__details__print {
     &__text {
       .section {
         font-size: 8pt;
-        margin-bottom: $print-base-spacing / 2;
+        margin-bottom: $print-base-spacing;
       }
 
       .section.cat-number {
@@ -206,6 +211,15 @@ $modular-scale-ratio: $minor-second;
           font-size: 12pt;
           margin-top: 3pt;
         }
+      }
+
+      .section-title {
+        // color: $medium-gray;
+        display: block;
+        font-family: "Freight Text Pro SC";
+        font-size: 9pt;
+        letter-spacing: 0.5pt;
+        text-transform: lowercase;
       }
     }
 
