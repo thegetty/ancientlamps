@@ -170,7 +170,7 @@ class Map {
         let link = this.linkLookup(entry)
 
         if (link && link.hasOwnProperty('path')) {
-          message += `<li><a href="../catalogue/${link.path}">Cat. ${entry}</a></li>`
+          message += `<li><a href="../catalogue/${link.path}/">Cat. ${entry}</a></li>`
         } else {
           message += `<li>Cat. ${entry}</li>`
         }
