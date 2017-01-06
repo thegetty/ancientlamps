@@ -41,6 +41,7 @@ class UI {
 
     // Run once on startup
     this.citationDate()
+    this.anchorScroll(window.location.hash)
     $expanderContent.addClass('expander--hidden')
 
     // Event Listeners: All pages
@@ -50,7 +51,17 @@ class UI {
     $searchButton.click(() => { this.showSearch() })
     $searchCloseButton.click(() => { this.hideSearch() })
     $triggers.click(e => this.expandToggle(e))
-    $(document).keydown((e) => { this.keyboardControls(e) })
+
+    window.onkeydown = (e) => {
+      this.keyboardControls(e)
+    }
+
+    window.onhashchange = () => {
+      if (this.deepZoomVisible) {
+        this.hideDetails()
+        window.scrollBy(0, -60)
+      }
+    }
 
     // This is crazy but trying a more conventional setup fails with debounce
     let debouncedSearch = debounce(this.searchQuery, 50)
@@ -62,47 +73,65 @@ class UI {
 
     // Page-specific elements
     if ($detailCloseButton.length) { $detailCloseButton.click(() => { this.hideDetails() }) }
-    if ($thumbnails.length) {
-      $thumbnails.click( e => this.showDetails(e))
-      window.onhashchange = this.hideDetails
-    }
+    if ($thumbnails.length) { $thumbnails.click(e => this.showDetails(e)) }
     if ($mapEl.length) { new Map() }
   }
 
   citationDate() {
     let today = moment().format('D MMM. YYYY')
     let $currentDate = $('.cite-current-date')
-    $currentDate.empty();
-    $currentDate.text(today);
+    $currentDate.empty()
+    $currentDate.text(today)
   }
 
   removeHash() {
-    window.history.pushState("", document.title, window.location.pathname + window.location.search)
+    if (window.location.hash.length > 0) {
+      window.history.pushState('', document.title, window.location.pathname + window.location.search)
+    }
+  }
+
+  anchorScroll(href) {
+    href = typeof (href) === 'string' ? href : $(this).attr('href')
+    var fromTop = 60
+
+    if (href.indexOf('#') === 0) {
+      var $target = $(href)
+
+      if ($target.length) {
+        $('html, body').animate({ scrollTop: $target.offset().top - fromTop })
+        // if (window.history && 'pushState' in window.history) {
+          // window.history.pushState({}, document.title, window.location.pathname + href)
+          // return false
+        // }
+      }
+    }
   }
 
   keyboardControls(e) {
-    let $prev = $('#prev-link')
-    let $next = $('#next-link')
-    switch (e.keyCode) {
+    let $prev = $('a#prev-link')
+    let $next = $('a#next-link')
+
+    switch (e.which) {
       case 27: // Escape key
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
-        e.preventDefault()
         break
       case 37: // Left Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
-        if ($prev.length) { $prev.click() }
-        e.preventDefault()
+        if ($prev.length) {
+          window.location = $prev.attr('href')
+        }
         break
       case 39: // Right Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
-        if ($next.length) { $next.click() }
-        e.preventDefault()
+        if ($next.length) {
+          window.location = $next.attr('href')
+        }
         break
     }
   }
