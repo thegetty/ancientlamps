@@ -105,7 +105,11 @@ module Book
 
       frontmatter_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }
       catalogue_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }
-      backmatter_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }
+
+      backmatter_chapters.each do |c|
+        next if c.path == "about.html"
+        pagelist += baseurl + c.destination_path + ' '
+      end
 
       pagelist
     end
