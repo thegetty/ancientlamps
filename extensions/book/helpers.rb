@@ -65,6 +65,17 @@ module Book
       end
     end
 
+    def sorted_concordance_entries
+      data.catalogue.sort_by { |e| normalized_catalogue_inv_no(e) }
+    end
+
+    def normalized_catalogue_inv_no(entry)
+      if entry.inv_no_lookup
+        entry.inv_no_lookup.to_s
+      else
+        entry.inv_no.to_s
+      end
+    end
     # --------------------------------------------------------------------------
     # Book info methods
     # Used to build up the complex strings used in the citation partial

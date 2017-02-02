@@ -15045,6 +15045,7 @@
   discussion: 
 - cat_no: 577
   inv_no: 'First series: 83.AE.436.470–82'
+  inv_no_lookup: 83.AE.436.470
   dor_id: 
   dimensions: 83.AE.436.470 = 6.8 cm × 4.0 cm (max. pres. dim. ); 83.AE.436.471 =
     9.6 cm × 8.5 cm (max. pres. dim.); 83.AE.436.472 = 3.7 cm × 6.6 cm (max. pres.
@@ -15078,6 +15079,7 @@
   discussion: 
 - cat_no: 578
   inv_no: 'Second series: 83.AE.436.6835-6845'
+  inv_no_lookup: 83.AE.436.6835
   dor_id: 
   dimensions: 83.AE.436.6835 = 5.5 cm × 4.7 cm (max. pres. dim.); 83.AE.436.6836 =
     3.2 cm × 1.7 cm (max. pres. dim.); 83.AE.436.6837 = 6.6 cm × 5.2 cm (max. pres.
@@ -15112,6 +15114,7 @@
   discussion: 
 - cat_no: 579
   inv_no: 83.AE.434.2308, .2310–.2312
+  inv_no_lookup: 83.AE.434.2308
   dor_id: 
   dimensions: 83.AE.434.2308 = 2.2 cm × 1.4 cm (max. pres. dim.); 83.AE.434.2310 =
     4.4 cm × 3.5 cm (max. pres. dim.); 83. AE.434.2311 = 5.0 cm × 3.4 cm (max. pres.
@@ -15130,6 +15133,7 @@
   discussion: 
 - cat_no: 580
   inv_no: 98.AE.143.3, 98.AE.143.5, 83.AE.434.2307, 83.AE.434.2309
+  inv_no_lookup: 83.AE.434.2307
   dor_id: 
   dimensions: 98.AE.143.3 = 3.5 cm × 3.8 cm (max. pres. dim.); 98.AE.143.5 = 3.3 cm
     × 2 cm (max. pres. dim.); 83.AE.434.2307 = 3.2 cm × 2.1 cm (max. pres. dim.);
@@ -16341,6 +16345,7 @@
   discussion: 
 - cat_no: 622
   inv_no: 80.AQ.140.1 (lamp) and .2 (stand)
+  inv_no_lookup: 80.AQ.140.1
   dor_id: 
   dimensions: '80.AQ.140.1 (lamp): L: 11.5 cm; W: (body) 4.8 cm, (with suspension
     hooks) 5.5 cm; H: (body) 2.3 cm, (to top of lid) 4.0 cm, (with hook to bottom)

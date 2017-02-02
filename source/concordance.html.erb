@@ -7,7 +7,7 @@ sort_order: 204
   <table>
     <tbody>
       <tr><th>Inventory Number</th><th>Catalogue Number</th><th>Getty Collection Link</th></tr>
-      <% data.catalogue.each do |entry| %>
+      <% sorted_concordance_entries.each do |entry| %>
       <tr>
         <td>
           <%= entry.inv_no %></td>
