@@ -1499,7 +1499,7 @@
 - id: joly-garraffo-mandruzzato-1992
   name: Joly, Garraffo, and Mandruzzato 1992
   contents: >
-    Joly, E. S. Garraffo, and A. Mandruzzato. 1992. “Le materiali minori dallo scavo del Teatro di Leptis Magna.” <em>Quaderni di Archeologia della Libya</em> 15:137–68.
+    Joly, E., S. Garraffo, and A. Mandruzzato. 1992. “Le materiali minori dallo scavo del Teatro di Leptis Magna.” <em>Quaderni di Archeologia della Libya</em> 15:137–68.
 
 - id: junkelmann-2000
   name: Junkelmann 2000
@@ -1516,8 +1516,8 @@
   contents: >
     Karivieri, A. 1996. <em>The Athenian Lamp Industry in Late Antiquity</em>. Helsinki.
 
-- id: kassab-tezgor-1995
-  name: Kassab Tezgör 1995
+- id: kassab-tezgor-sezer-1995
+  name: Kassab Tezgör and Sezer 1995
   contents: >
     Kassab Tezgör, D., and T. Sezer. 1995. <em>Epoques protohistorique, archaïque, classique et hellénistique</em>. Vol. 1 of <em>Catalogue des lampes en terre cuite du Musée d’Istanbul</em>. Istanbul.
 
@@ -1554,7 +1554,7 @@
 - id: kricheldorf-1962
   name: Kricheldorf 1962
   contents: >
-    Kricheldorf, H. H. 1962. Tonlampen der Antike aus Kleinasien, Griechenland, Italien, Nordafrika, griechisch und römischer Zeit, 5./4. Jahrhundert v. Chr. bis 3./4. Jahrhundert n. Chr. Auktion, 11 October 1962. Stuttgart.
+    Kricheldorf, H. H. 1962. <em>Tonlampen der Antike aus Kleinasien, Griechenland, Italien, Nordafrika, griechisch und römischer Zeit, 5./4. Jahrhundert v. Chr. bis 3./4. Jahrhundert n. Chr.</em> Auction, 11 October 1962. Stuttgart.
 
 - id: kunst-der-antike
   name: <em>Kunst der Antike</em>
@@ -1611,15 +1611,20 @@
   contents: >
     Libertini, G. 1930. “Lucerne fittili.” <em>Museo Biscari</em> 1.5:261–96. Milan/Rome.
 
-- id: liessen-1994
-  name: Liessen 1994
+- id: liesen-1994
+  name: Liesen 1994
   contents: >
-    Liessen, B. 1994. <em>Lampen aus Asberg</em>. Duisburg.
+    Liesen, B. 1994. <em>Lampen aus Asberg</em>. Duisburg.
 
 - id: lightfoot-2003
   name: Lightfoot 2003
   contents: >
     Lightfoot, C. S. 2003. <em>Amorium Reports</em> 2. <em>Research Papers and Technical Reports</em>. BAR international series 1170. Oxford.
+
+- id: lightfoot-2013
+  name: Lightfoot 2013
+  contents: >
+    Lightfoot, C. S. 2013. "Write or Light? Roman Glass Inkwells and Lamps." In <em>Studies in Honour of K. Levent Zoroǧlu</em>, ed. M. Tekocak, pp. 425–32. Istanbul.     
 
 - id: lilliu-1966
   name: Lilliu 1966
