@@ -1819,7 +1819,7 @@
 - id: mercando-1962
   name: Mercando 1962
   contents: >
-    Mercando, L. 1962. <em>Lucerne greche e romane dell’ Antiquarium Comunale</em>. Rome.
+    Mercando, L. 1962. <em>Lucerne greche e romane dell’Antiquarium Comunale</em>. Rome.
 
 - id: mercando-1973
   name: Mercando 1973
@@ -1869,10 +1869,20 @@
 - id: mlasowsky-2003
   name: Mlasowsky 2003
   contents: >
-    Mlasowsky, A. 2003. “Eine Lampe mit dem Bildnis des Domitian in Hannover.” <em>Nouveautés Lychnologiques</em>, ed. L. Chrzanovski, pp. 181–88. Hauterive, Switzerland.
+    Mlasowsky, A. 2003. “Eine Lampe mit dem Bildnis des Domitian in Hannover.” In Chrzanovski 2003, pp. 181–88.
+
+- id: mlynarczyk-1974
+  name: Młynarczyk 1974
+  contents: >
+    Młynarczyk, J. 1974. “Terrakotowe lampki oliwne ‘Tell Atrib.’” <em>Rocznik Muzeum Narodowego w Warszawie</em> 18:145–85.
+
+- id: mlynarczyk-1997
+  name: Młynarczyk 1997
+  contents: >
+    Młynarczyk, J. 1997. <em>Alexandrian and Alexandria-Influenced Mould-Made Lamps of the Hellenistic Period</em>. BAR international series 677. Oxford.
 
 - id: mnr
-  name: <em>MNR</em>
+  name: MNR
   contents: >
     Barbera, M., and R. Petriaggi. 1993. <em>Le lucerne tardo-antiche di produzione africana del Museo Nazionale Romano</em>. Rome.
 
@@ -1889,12 +1899,12 @@
 - id: morillo-cerdan-1992
   name: Morillo Cerdán 1992
   contents: >
-    Morillo Cerdán, A. 1992. <em>Ceramica romana de Herrera de Pisuerga (Palencia, Espana): Las lucernas</em>. Santiago de Chile.
+    Morillo Cerdán, A. 1992. <em>Ceramica romana de Herrera de Pisuerga (Palencia, España): Las lucernas</em>. Santiago de Chile.
 
 - id: morillo-cerdan-1996
   name: Morillo Cerdán 1996
   contents: >
-    Morillo Cerdán, A. 1996. “Las lucernas del tipo de ‘cabeza de ave’ (<em>Vogelkopflampen</em>) en la Península Ibérica.” <em>Mitteilungen des Deutschen Archäologischen Instituts, Madrider Abteilung</em> 37, pp. 103–20.
+    Morillo Cerdán, A. 1996. “Las lucernas del tipo de ‘cabeza de ave’ (<em>Vogelkopflampen</em>) en la Península Ibérica.” <em>Mitteilungen des Deutschen Archäologischen Instituts, Madrider Abteilung</em> 37: 103–20.
 
 - id: morillo-cerdan-1999
   name: Morillo Cerdán 1999
@@ -1909,7 +1919,7 @@
 - id: morillo-cerdan-2003b
   name: Morillo Cerdán 2003b
   contents: >
-    Morillo Cerdán, A. 2003b. “Las Lucernas.” <em>El depósito alto-imperial del Castrejón de Capote (Higuera la Real, Badajoz)</em>, ed. L. Berrocal-Rangel and C. Ruiz Triviño, pp. 69–100. Merida, Spain.
+    Morillo Cerdán, A. 2003b. “Las Lucernas.” <em>El depósito alto-imperial del Castrejón de Capote (Higuera la Real, Badajoz)</em>, ed. L. Berrocal-Rangel and C. Ruiz Triviño, pp. 69–100. Mérida, Spain.
 
 - id: moscara-2003
   name: Moscara 2003
@@ -1926,15 +1936,10 @@
   contents: >
     Moutinho Alarcão, A., and S. Da Ponte. 1976. “Les Lampes.” In J. Alarcão, <em>Céramiques diverses et verres</em>, pp. 93–114. Vol. 6 of <em>Fouilles de Conimbriga</em>. Paris.
 
-- id: mynarczyk-1974
-  name: Mynarczyk 1974
+- id: museum-acquisitions-1997-98
+  name: Museum Acquisitions 1997/98
   contents: >
-    Mynarczyk, J. 1974. “Terrakotowe lampki oliwne ‘Tell Atrib.’” <em>Rocznik Muzeum Narodowego w Warszawie</em> 18:145–85.
-
-- id: mynarczyk-1997
-  name: Mynarczyk 1997
-  contents: >
-    Mynarczyk, J. 1997. <em>Alexandrian and Alexandria-Influenced Mould-Made Lamps of the Hellenistic Period</em>. BAR international series 677. Oxford.
+    "Museum Acquisitions between July 1, 1996, and June 30, 1998." <em>The Report of the J. Paul Getty Trust (1997–98)</em>. 
 
 - id: neuru-1980
   name: Neuru 1980
