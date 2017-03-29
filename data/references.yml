@@ -867,7 +867,7 @@
 - id: de-caro-1974
   name: De Caro 1974
   contents: >
-    De Caro, S. 1974. “Le lucerne dell’officina lvc.” <em>Rendiconti della Accademia di archeologia, lettere e belle arti, Napoli</em> 49:107–34.
+    De Caro, S. 1974. “Le lucerne dell’officina LVC.” <em>Rendiconti della Accademia di archeologia, lettere e belle arti, Napoli</em> 49:107–34.
 
 - id: de-caro-1998
   name: De Caro 1998
@@ -877,7 +877,7 @@
 - id: defives-gernez-1971
   name: Defives and Gernez 1971
   contents: >
-    Defives, Ch., and A. Gernez. 1971. “Les Lampes antiques des musées du Nord.” <em>Mémoire de maîtrise, Université de Lille</em>. Unpublished ms.
+    Defives, Ch., and A. Gernez. 1971. “Les Lampes antiques des musées du Nord.” Mémoire de maîtrise, Université de Lille. Unpublished ms.
 
 - id: delattre-1889
   name: Delattre 1889
@@ -892,7 +892,7 @@
 - id: demirel-gokalp-2005
   name: Demirel Gökalp 2005
   contents: >
-    Demirel Gökalp, Z. 2005. “Some Examples of Byzantine Bronze Lamps in Turkish Museums.” In <em>Lychnological Acts</em> 1. <em>Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique (Nyon–Geneva, 29 September–4 October, 2003)</em>, ed. L. Chrzanovski, pp. 69–71. Montagnac.
+    Demirel Gökalp, Z. 2005. “Some Examples of Byzantine Bronze Lamps in Turkish Museums.” In Chrzanovski 2005, pp. 69–71.
 
 - id: deneauve-1969
   name: Deneauve 1969
@@ -909,6 +909,16 @@
   contents: >
     Deneauve, J. 1987. “Figurines et lampes africaines.” <em>Antiquités africaines</em> 23:197–251.
 
+- id: depalmas-2005
+  name: Depalmas 2005
+  contents: >
+    Depalmas, A. 2005. <em>Le navicelle di bronzo della Sardegna nuragica</em>. Cagliari.
+
+- id: depalmas-2012
+  name: Depalmas 2012
+  contents: >
+    Depalmas, A. 2012. “Le navicelle nuragiche: Significato, valore e diffusione tra Bronzo finale e primo Ferro.” In <em>I Nuragici, i Fenici e gli altri: Sardegna e Mediterraneo tra Bronzo Finale e Prima Età del Ferro,</em> ed. P. Bernardini and M. Perra, pp. 111–20. Sassari.
+
 - id: deringer-1965
   name: Deringer 1965
   contents: >
@@ -919,8 +929,8 @@
   contents: >
     Derksen, J. J. V. M. 1975. “Bemerkungen zu einigen nordafrikanischen Lampen.” <em>Bulletin antieke beschaving</em> 50.1:41–43.
 
-- id: di-filippo-balestrazzi-1998
-  name: Di Filippo Balestrazzi 1998
+- id: di-filippo-balestrazzi-1988
+  name: Di Filippo Balestrazzi 1988
   contents: >
     Di Filippo Balestrazzi, E. 1988. <em>Lucerne romane di età repubblicana ed imperiale</em>. Vol. 2.1–2 of <em>Lucerne del Museo di Aquileia</em>. Aquileia.
 
@@ -932,7 +942,7 @@
 - id: domergue-1966
   name: Domergue 1966
   contents: >
-    Domergue, C. 1966. “Un Envoi de lampes du potier caivs clodivs.” <em>Mélanges de la Casa de Velázquez</em> 2:5–50. Madrid.
+    Domergue, C. 1966. “Un Envoi de lampes du potier CAIVS CLODIVS.” <em>Mélanges de la Casa de Velázquez</em> 2:5–50. Madrid.
 
 - id: dressel-1899
   name: Dressel 1899
@@ -942,7 +952,7 @@
 - id: drougou-1992
   name: Drougou 1992
   contents: >
-    Drougou, S. 1992. <em>Anaskaph Pellas 1957–1964: hoi plinoi lychnoi</em>. [Excavations in Pella 1957–1964: The Clay Lamps.] Athens.
+    Drougou, S. 1992. <em>Anaskaphē Pellas 1957–1964: hoi pēlinoi lychnoi</em>. [Excavations in Pella 1957–1964: The Clay Lamps.] Athens.
 
 - id: du-mesnil-du-buisson-1966
   name: Du Mesnil du Buisson 1966
@@ -957,7 +967,7 @@
 - id: elaigne-1993
   name: Elaigne 1993
   contents: >
-    Elaigne, S. 1993. “Les Lampes à huile du Haut-Empire à Lyon: Production et consommation.” <em>Mémoire de Maîtrise</em>. Univ. Lumière, Lyon ii (unpublished ms.).
+    Elaigne, S. 1993. “Les Lampes à huile du Haut-Empire à Lyon: Production et consommation.” Mémoire de Maîtrise. Univ. Lumière, Lyon II (unpublished ms.).
 
 - id: elaigne-1996
   name: Elaigne 1996
@@ -967,12 +977,12 @@
 - id: empereur-nenna-2003
   name: Empereur and Nenna 2003
   contents: >
-    Empereur, J.-Y., and M.-D. Nenna. 2003. <em>Nécropolis</em> 2. Vol. 7 of <em>Études Alexandrines</em>. Cairo.
+    Empereur, J.-Y., and M.-D. Nenna, eds. 2003. <em>Nécropolis</em> 2. Vol. 7 of <em>Études Alexandrines</em>. Cairo.
 
 - id: ennabli-1976
   name: Ennabli 1976
   contents: >
-    Ennabli, A. 1976. <em>Lampes chrétiennes de Tunisie. Musée du Bardo et de Carthage</em>. Paris.
+    Ennabli, A. 1976. <em>Lampes chrétiennes de Tunisie</em>. Musée du Bardo et de Carthage. Paris.
 
 - id: ennabli-salomonson-mahjoubi-1973
   name: Ennabli, Salomonson, and Mahjoubi 1973
@@ -1031,10 +1041,10 @@
   contents: >
     Farka, C. 1977. <em>Die Römischen Lampen vom Magdalensberg</em>. Vol. 4 of <em>Archäologische Forschungen zu den Grabungen auf dem Magdalensberg</em>. Klagenfurt.
 
-- id: fellman-1975
-  name: Fellman 1975
+- id: fellmann-1975
+  name: Fellmann 1975
   contents: >
-    Fellman, R. 1975. “Les Lampes.” In <em>Kleinfunde</em>, P. Collart, J. Vicari. C. Dunant, and R. Fellmann, pp. 13–59. Vol. 6 of <em>Le Sanctuaire de Baalshamin à Palmyre</em>. Rome.
+    Fellmann, R. 1975. “Les Lampes.” In <em>Kleinfunde</em>, P. Collart, J. Vicari. C. Dunant, and R. Fellmann, pp. 13–59. Vol. 6 of <em>Le Sanctuaire de Baalshamin à Palmyre</em>. Rome.
 
 - id: fernandez-chicarro-1956
   name: Fernández Chicarro 1956
@@ -1054,7 +1064,7 @@
 - id: fitch-goldman-1994
   name: Fitch and Goldman 1994
   contents: >
-    Fitch, C., and N. Goldman. 1994. <em>Cosa: The Lamps. Memoirs of the American Academy in Rome</em> 39. Ann Arbor.
+    Fitch, C., and N. Goldman. 1994. <em>Cosa: The Lamps.</em> Memoirs of the American Academy in Rome 39. Ann Arbor.
 
 - id: flugel-1999
   name: Flügel 1999
@@ -1080,6 +1090,11 @@
   name: Fraiegari 2008
   contents: >
     Fraiegari, P. 2008. <em>Le lucerne tardoantiche e altomedievali siciliane, egizie e del vicino oriente nel Museo Nazionale Romano</em>. Rome.
+
+- id: frel-1981
+  name: Frel 1981
+  contents: >
+    Frel, J. 1981. “Imitations of Ancient Sculpture in Malibu.” <em>The J. Paul Getty Museum Journal</em> 9:69–82.
 
 - id: fremersdorf-1922
   name: Fremersdorf 1922
@@ -1126,6 +1141,11 @@
   contents: >
     García Pereira Maia, M. 1997. <em>Lucernas de Santa Bárbara</em>. Castro Verde, Portugal.
 
+- id: gauthier-1984
+  name: Gauthier 1984
+  contents: >
+    Gauthier, M. 1984. “Circonscription de Provence-Cote-d’Azur.” <em>Gallia</em> 42.2:405–34.
+
 - id: gechter-1979
   name: Gechter 1979
   contents: >
@@ -1149,27 +1169,27 @@
 - id: giuliani-2001
   name: Giuliani 2001
   contents: >
-    Giuliani, A. 2001. “Untersuchungen zu Ephesos-Lampen an Beispielen aus der Werkstatt des Asklepiades.” In <em>Studien zur hellenistischen Keramik in Ephesos</em> 2, ed. F. Krinzinger, pp. 43–50. <em>Ergänzungshefte zu den Jahresheften des Österreichischen Archäologischen Institutes</em>.
+    Giuliani, A. 2001. “Untersuchungen zu Ephesos-Lampen an Beispielen aus der Werkstatt des Asklepiades.” In <em>Studien zur hellenistischen Keramik in Ephesos</em> 2, ed. F. Krinzinger, pp. 43–50. Ergänzungshefte zu den Jahresheften des Österreichischen Archäologischen Institutes.
 
 - id: giuliani-2004
   name: Giuliani 2004
   contents: >
-    Giuliani, A. 2004. “namenssignaturen hellenistischer Lampenwerkstätten.” <em>Jahreshefte des Österreichischen Archäologischen Instituts</em> 73:137–57.
+    Giuliani, A. 2004. “Namenssignaturen hellenistischer Lampenwerkstätten.” <em>Jahreshefte des Österreichischen Archäologischen Institutes</em> 73:137–57.
 
 - id: giuliani-2005a
   name: Giuliani 2005a
   contents: >
-    Giuliani, A. 2005a. “Hellenistische Matrizenlampen aus Ephesos.” <em>Lychnological Acts 1. Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique</em> (Nyon–Geneva, 29 September–4 October 2003), ed. L. Chrzanovski, pp. 139–42. Montagnac.
+    Giuliani, A. 2005a. “Hellenistische Matrizenlampen aus Ephesos.” In Chrzanovski 2005, pp. 139–42.
 
 - id: giuliani-2005b
   name: Giuliani 2005b
   contents: >
-    Giuliani, A. 2005b. “Lampenmatrizen hellenistischer Zeit aus ephesischer Produktion im Rijksmuseum van Oudheden, Leiden.” <em>Jahreshefte des Österreichischen Archäologischen Instituts</em> 74, pp. 73–83.
+    Giuliani, A. 2005b. “Lampenmatrizen hellenistischer Zeit aus ephesischer Produktion im Rijksmuseum van Oudheden, Leiden.” <em>Jahreshefte des Österreichischen Archäologischen Institutes</em> 74, pp. 73–83.
 
 - id: giuliani-2006
   name: Giuliani 2006
   contents: >
-    Giuliani, A. 2006. “Attische Lampen und Matrizen im Benaki Museum.” <em>Mousei Benak</em> 5. Athens.
+    Giuliani, A. 2006. “Attische Lampen und Matrizen im Benaki Museum.” <em>Mouseio Benakē</em> 5. Athens.
 
 - id: giuliani-1994
   name: Giuliani  1994
@@ -1179,7 +1199,7 @@
 - id: goethert-1989
   name: Goethert 1989
   contents: >
-    Goethert, K. 1989. “Die achtförmigen Lampen aus Ton im Rheinischen Landesmuseum Trier Loeschcke Typus xi.” <em>Trierer Zeitschrift</em> 52:29–132.
+    Goethert, K. 1989. “Die achtförmigen Lampen aus Ton im Rheinischen Landesmuseum Trier Loeschcke Typus XI.” <em>Trierer Zeitschrift</em> 52:29–132.
 
 - id: goethert-1991
   name: Goethert 1991
@@ -1209,7 +1229,7 @@
 - id: goethert-polaschek-1988
   name: Goethert-Polaschek 1988
   contents: >
-    Goethert-Polaschek, K. 1988. “Die römischen Tüllenlampen (Loeschcke typus xiv) Kerzenhalter und Kerzenständer aus Ton im Rheinischen Landesmuseum Trier.” <em>Trierer Zeitschrift</em> 51:463–510.
+    Goethert-Polaschek, K. 1988. “Die römischen Tüllenlampen (Loeschcke typus XIV) Kerzenhalter und Kerzenständer aus Ton im Rheinischen Landesmuseum Trier.” <em>Trierer Zeitschrift</em> 51:463–510.
 
 - id: goldman-et-al-1950
   name: Goldman et al. 1950
@@ -1219,27 +1239,27 @@
 - id: gorny-mosch-2006
   name: Gorny and Mosch 2006
   contents: >
-    Gorny and Mosch. 2006. <em>Auction catalogue</em> no. 150, 11 July 2006. [Munich?]
+    Gorny and Mosch. Auction catalogue no. 150, 11 July 2006. [Munich?]
 
 - id: gorny-mosch-2007a
   name: Gorny and Mosch 2007a
   contents: >
-    Gorny and Mosch. 2007a. <em>Auction catalogue</em> no. 158, 22 June 2007. [Munich?]
+    Gorny and Mosch. Auction catalogue no. 158, 22 June 2007. [Munich?]
 
 - id: gorny-mosch-2007b
   name: Gorny and Mosch 2007b
   contents: >
-    Gorny and Mosch. 2007b. <em>Auction catalogue</em> no. 163, 14 December 2007. Munich.
+    Gorny and Mosch. Auction catalogue no. 163, 14 December 2007. Munich.
 
 - id: gorny-mosch-2010
   name: Gorny and Mosch 2010
   contents: >
-    Gorny and Mosch. 2010. <em>Auction catalogue</em> no. 189, 23 June 2010. Munich.
+    Gorny and Mosch. Auction catalogue no. 189, 23 June 2010. Munich.
 
 - id: gorny-mosch-2011
   name: Gorny and Mosch 2011
   contents: >
-    Gorny and Mosch. 2011. <em>Auction catalogue</em> no. 202, 14 December 2011. Munich.
+    Gorny and Mosch. Auction catalogue no. 202, 14 December 2011. Munich.
 
 - id: gottlicher-1978
   name: Göttlicher 1978
@@ -1271,10 +1291,10 @@
   contents: >
     Griepentrog, M. 1986. “Die antiken Lampen im Museum für Kunst und Kulturgeschichte der Stadt Dortmund.” <em>Boreas</em> 9:196–204.
 
-- id: grimal-2006
-  name: Grimal 2006
+- id: grimal-1981
+  name: Grimal 1981
   contents: >
-    Grimal, P. 2006. <em>La Vie à Rome dans l’antiquité</em>. Paris.
+    Grimal, P. 1981. <em>La Vie à Rome dans l’antiquité</em>. Paris.
 
 - id: groothand-1961
   name: Groothand 1961
@@ -1329,7 +1349,7 @@
 - id: gurler-2003
   name: Gürler 2003
   contents: >
-    Gürler, B. 2003. “Ephesos-Lampen im Museum von Tire.” <em>Jahreshefte des Österreichischen Archäologischen Instituts</em> 72:123–31.
+    Gürler, B. 2003. “Ephesos-Lampen im Museum von Tire.” <em>Jahreshefte des Österreichischen Archäologischen Institutes</em> 72:123–31.
 
 - id: gurler-2005
   name: Gürler 2005
@@ -1349,7 +1369,7 @@
 - id: hanotte-2005
   name: Hanotte 2005
   contents: >
-    Hanotte, A. 2005. “L’atelier de la Butte à Lyon: Un fournisseur en luminaires du limes rhénan.” In <em>Lychnological Acts 1. Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique</em> (Nyon–Geneva, 29 September–4 October 2003), ed. L. Chrzanovski, pp. 153–56. Montagnac.
+    Hanotte, A. 2005. “L’atelier de la Butte à Lyon: Un fournisseur en luminaires du limes rhénan.” In Chrzanovski 2005, pp. 153–56.
 
 - id: hayes-1972
   name: Hayes 1972
@@ -1359,7 +1379,7 @@
 - id: hayes-1976
   name: Hayes 1976
   contents: >
-    Hayes, J. W. 1976. “Lamps and Terracotta Figurines.” In <em>Excavations at Carthage, 1975, Conducted by the University of Michigan</em> 1, ed. J. H. Humphrey, pp. 120–23. Tunis.
+    Hayes, J. W. 1976. “Lamps and Terracotta Figurines.” In Carthage I, pp. 120–23.
 
 - id: hayes-1980
   name: Hayes 1980
@@ -1419,7 +1439,7 @@
 - id: heres-1969
   name: Heres 1969
   contents: >
-    Heres, G. 1969. <em>Die punischen and griechischen Tonlampen der Staatlichen Museen zu Berlin</em>. Berlin.
+    Heres, G. 1969. <em>Die punischen und griechischen Tonlampen der Staatlichen Museen zu Berlin</em>. Berlin.
 
 - id: heres-1972
   name: Heres 1972
@@ -1434,17 +1454,12 @@
 - id: herrmann-van-den-hoek-2003
   name: Herrmann and Van den Hoek 2003
   contents: >
-    Herrmann, J. J., and A. Van den Hoek. 2003. <em>Light from the Age of Augustine: Late Antique Ceramics from North Africa</em> (<em>Tunisia</em>). 2nd edn. Austin.
-
-- id: hoff-1986
-  name: Hoff 1986
-  contents: >
-    Hoff, V. 1986. <em>Catalogue des lampes en terre cuite grecques et chrétiennes. Musée du Louvre</em>. Ed. C. Metzger. Paris.
+    Herrmann, J. J., and A. Van den Hoek. 2003. <em>Light from the Age of Augustine: Late Antique Ceramics from North Africa</em> (<em>Tunisia</em>). 2nd edn. Austin, TX.
 
 - id: howland-1958
   name: Howland 1958
   contents: >
-    Howland, R. H. 1958. <em>Greek Lamps and Their Survivals</em>. Vol. 4 of <em>The Athenian Agora</em>. Princeton.
+    Howland, R. H. 1958. <em>Greek Lamps and Their Survivals</em>. Vol. 4 of <em>The Athenian Agora</em>. Princeton, NJ.
 
 - id: hubinger-1993
   name: Hübinger 1993
@@ -1459,10 +1474,10 @@
 - id: iconomu-1967
   name: Iconomu 1967
   contents: >
-    Iconomu, C. 1967. <em>Opaie greco-romane</em>. Muzeul regional de arheologie Dobrogea. Bucarest.
+    Iconomu, C. 1967. <em>Opaiţe greco-romane</em>. Muzeul regional de arheologie Dobrogea. Bucharest.
 
 - id: linstrumentum-domesticum-di-ercolano-e-Pompei-nella-prima-eta-imperiale-1977
-  name: L’Instrumentum domesticum di Ercolano e Pompei nella prima età imperiale 1977
+  name: <em>L’Instrumentum domesticum di Ercolano e Pompei nella prima età imperiale</em> 1977
   contents: >
     <em>L’Instrumentum domesticum di Ercolano e Pompei nella prima età imperiale</em>. 1977. M. Annecchino, ed. <em>Quaderni di cultura materiale</em> 1. Rome.
 
@@ -1480,6 +1495,11 @@
   name: Iványi 1935
   contents: >
     Iványi, D. 1935. <em>Die Pannonischen Lampen: Eine typologisch-chronologische Übersicht</em>. Dissertationes Pannonicae, series 2.2. Budapest.
+
+- id: jentoft-nilsen-1982
+  name: Jentoft-Nilsen 1982
+  contents: >
+    Jentoft-Nilsen, M. 1982. “Some Objects Relating to the Theatre.” <em>The J. Paul Getty Museum Journal</em> 10:159–64.
 
 - id: joffroy-1957
   name: Joffroy 1957
