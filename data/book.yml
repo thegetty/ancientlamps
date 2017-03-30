@@ -39,6 +39,8 @@ project_team:
     role: Designer and Developer
   - name: Greg Albers
     role: Project Manager
+  - name: Claire L. Lyons
+    role: Curatorial Liaison
 editions:
   - name: Online
     type: InteractiveResource
@@ -105,12 +107,12 @@ license:
     both:
       - "Map backgrounds are from the Ancient World Mapping Center. Licensed under a <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">Creative Commons Attribution-NonCommercial 3.0 License</a>."
 description_main:
-  "In the collection of the J. Paul Getty Museum are more than six hundred ancient lamps that span from the sixth century BC to the seventh century AD, most from the Roman Imperial period, and largely created in Asia Minor or North Africa. These lamps have much to reveal about life, religion, pottery, and trade in the ancient Graeco-Roman world. Most of the Museum’s lamps have never before been published, and this extensive typological catalogue will thus be an invaluable scholarly source for art historians, archaeologists, and those interested in the ancient world."
+  "Some 630 lamps in the J. Paul Getty Museum represent production centers that were active across the ancient Mediterranean world between 800 B.C. and A.D. 800. Notable for their marvelous variety—from simple clay saucers that held just oil and a wick to elaborate figural lighting fixtures in bronze and precious metals—the Getty lamps display a number of unprecedented shapes and decors. Most were made in Roman workshops, which met the ubiquitous need for portable illumination in residences, public spaces, religious sanctuaries, and the grave. The omnipresent oil lamp is a font of popular imagery, illustrating myths, nature, and the activities and entertainments of daily life. Presenting a largely unpublished collection, this extensive typological catalogue is an invaluable sourcebook for specialists in lychnology, art history, and archaeology alike."
 description_short:
 toc: |
   - Director’s Foreword
   - Acknowledgments
-  - Abbreviations and Notes
+  - Abbreviations and Notes to Readers
   - Introduction
   - Map
   - Catalogue
@@ -119,17 +121,18 @@ toc: |
     - II. Greek and Hellenistic Clay Lamps
     - III. Roman-Period Clay Lamps
     - IV. Metal Lamps
-  - Index of Discus Decors
+  - Index of Iconography
   - Index of Signatures and Inscriptions
   - Index of Donors and Vendors
+  - Index of Place Names
   - Concordance of Identification Numbers
   - Bibliography
   - About the Authors
   - About
 library_of_congress_cip_data:
-  - "Names: J. Paul Getty Museum, author, issuing body. | Bussière, J. (Jean),  author. | Wohl, Birgitta, 1934- author."
-  - "Title: Ancient lamps in the J. Paul Getty Museum / Jean Bussière, Birgitta  Lindros Wohl."
-  - "Description: First edition. | Los Angeles : J. Paul Getty Museum, 2017. |  Includes bibliographical references and index."
+  - "Names: J. Paul Getty Museum, author, issuing body. | Bussière, J. (Jean), author. | Wohl, Birgitta, 1934- author."
+  - "Title: Ancient lamps in the J. Paul Getty Museum / Jean Bussière, Birgitta Lindros Wohl."
+  - "Description: First edition. | Los Angeles : J. Paul Getty Museum, 2017. | Includes bibliographical references and index."
   - "Identifiers: LCCN 2016037209 (print) | LCCN 2016038887 (ebook) | ISBN  9781606065136 (pbk.) | ISBN 9781606065143 (epub) | ISBN 9781606065150  (online)"
   - "Subjects: LCSH: Lamps, Ancient—Mediterranean Region—Catalogs. | J. Paul  Getty Museum—Catalogs. | Mediterranean Region—Antiquities—Catalogs. |  Lamps—California—Los Angeles—Catalogs."
   - "Classification: LCC NK4680 .J2 2017 (print) | LCC NK4680 (ebook) | DDC  749/.63—dc23"
