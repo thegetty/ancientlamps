@@ -4,16 +4,15 @@ layout: page
 sort_order: 4
 ---
 
-All measurements are in centimeters.
-
 References to “cat./cats.” are cross-references to entries in the present catalogue. References to “cat. no./nos.” refer to other catalogues.
 
-An “ovo pattern” is a motif often found on the base of African second-century-A.D. lamps. It consists of two small circles linked by a V-shaped design. None of these parts is a letter. This motif is repeated three times evenly displayed between two circular lines. For slight variations, see <a href='../bibliography/#bussiere-2000'>Bussière 2000</a> (p. 235, nos. 76–78). The pattern may be specific to some workshops.
+An “ovo pattern” is a motif often found on the base of African second-century A.D. lamps. It consists of two small circles linked by a V-shaped design. None of these parts is a letter. This motif is repeated three times evenly displayed between two circular lines. For slight variations, see <a href='../bibliography/#bussiere-2000'>Bussière 2000</a> (p. 235, nos. 76–78). The pattern may be specific to some workshops.
 
-**[Add an explanation of what “place of manufacture or origin” means]**
+**[Head 3] Place of Manufacture or Origin**
+None of the lamps in this catalogue comes from a precisely documented archaeological excavation. Information on the place of manufacture or origin derives from the collectors from whom the Museum acquired the lamps and likely represents an attribution made by their art market sources. In the case of lamps formerly in the collection of Hans-Klaus Schüller, a noted specialist in the field, the locations cited often refer to a presumed production center or region, but they may also indicate the place where he obtained the lamp or believed it was found. Although his information is unverified, it has been retained in this catalogue. Where there is ambiguity or disagreement, we evaluate the attributed place of manufacture in the object entry and propose corrections based on form, fabric, signatures, workshop marks, or other pertinent evidence. For further discussion and an index of the given places of manufacture or origins, see the Introduction and the Index of Donors and Vendors.
+
 
 | acc. no. | accession number |
-| Afr. | African |
 | BM | The British Museum |
 | Bus. | Bussière, with reference to nozzle forms (e.g., Bus. 2a) |
 | ca. | circa |
@@ -26,17 +25,14 @@ An “ovo pattern” is a motif often found on the base of African second-centur
 | east. | eastern |
 | ed. | editor/edited by |
 | edn. | edition |
-| e.g. | for instance |
 | esp. | especially |
 | ex. | example/-s |
 | fasc. | fascicule/-s |
 | fig./figs. | figure/-s |
 | fr./frr. | fragment/-s |
 | H | height |
-| i.e. | for instance |
 | ILA | International Lychnological Association |
 | inv. no. | inventory number |
-| It. | Italian |
 | L | length |
 | MAN | Musée d’Archéologie Nationale de Saint-Germain-en-Laye |
 | max. | maximum |
