@@ -2579,12 +2579,12 @@
 - id: waage-1934
   name: Waagé 1934
   contents: >
-    Waagé, F. O. 1934. ”Lamps.” <em>The Excavations of 1932</em>, pp. 58–67. Vol. 1 of <em>Antioch-on-the-Orontes</em>, ed. G. W. Elderkin. Princeton.
+    Waagé, F. O. 1934. “Lamps.” In <em>The Excavations of 1932</em>, pp. 58–67. Vol. 1 of <em>Antioch-on-the-Orontes</em>, ed. G. W. Elderkin. Princeton, NJ.
 
 - id: waage-1941
   name: Waagé 1941
   contents: >
-    Waagé, F. O. 1941. “Lamps.” <em>The Excavations of 1937 to 1939</em>, pp. 55–82. Vol. 3 of <em>Antioch-on-the-Orontes</em>, ed. R. Stillwell. Princeton.
+    Waagé, F. O. 1941. “Lamps.” In <em>The Excavations of 1937 to 1939</em>, pp. 55–82. Vol. 3 of <em>Antioch-on-the-Orontes</em>, ed. R. Stillwell. Princeton, NJ.
 
 - id: waldhauer-1914
   name: Waldhauer 1914
@@ -2606,10 +2606,20 @@
   contents: >
     Weitzmann, K., ed. 1979. <em>The Age of Spirituality: Late Antique and Early Christian Art: Third to Seventh Century</em>. New York and Princeton.
 
-- id: wiegand-1904
-  name: Wiegand 1904
+- id: whitehouse-1988
+  name: Whitehouse 1988
+  contents: >
+    Whitehouse, D. 1988. “A Recently Discovered Cage Cup.” <em>Journal of Glass Studies</em> 30:28–33.
+
+- id: wiegand-et-al-1904
+  name: Wiegand et al. 1904
   contents: >
     Wiegand, Th., et al. 1904. <em>Priene</em>. Berlin.
+
+- id: wight-2011
+  name: Wight 2011
+  contents: >
+    Wight, K. 2011. <em>Molten Color: Glassmaking in Antiquity</em>. Los Angeles.
 
 - id: williams-zervos-1983
   name: Williams and Zervos 1983
@@ -2624,7 +2634,7 @@
 - id: wilmet-2003
   name: Wilmet 2003
   contents: >
-    Wilmet, L. 2003. “Lampes à volutes du Musée de Louvain-la-Neuve (Belgique).” <em>Nouveautés Lychnologiques</em>, ed. L. Chrzanovski, pp. 237–50. Hauterive, Switzerland.
+    Wilmet, L. 2003. “Lampes à volutes du Musée de Louvain-la-Neuve (Belgique).” In Chrzanovski 2003, pp. 237–50.
 
 - id: wilson-1966
   name: Wilson 1996
@@ -2649,12 +2659,12 @@
 - id: wulf-1909
   name: Wulf 1909
   contents: >
-    Wulf, O. 1909. “Tonlampen” (chap. 8.1). In <em>Altchristliche Bildwerke, Königliche Museen zu Berlin: Beschreibung der Bildwerke der christlichen Epochen</em>. 2nd edn. Vol. 2. <em>Altchristliche und mittelalterliche byzantinische und italienische Bildwerke</em>, part 1, pp. 243–63, and 1220–1347.
+    Wulf, O. 1909. “Tonlampen.” In <em>Altchristliche Bildwerke, Königliche Museen zu Berlin: Beschreibung der Bildwerke der christlichen Epochen</em>. 2nd edn. Vol. 2. <em>Altchristliche und mittelalterliche byzantinische und italienische Bildwerke</em>, part 1, pp. 243–63, and 1220–1347.
 
 - id: xanthopoulou-2005
   name: Xanthopoulou 2005
   contents: >
-    Xanthopoulou, M. 2005. “Lampes en métal, lampes en terre cuite: Vies parallèles.” In <em>Lychnological Acts</em> 1. <em>Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique (Nyon–Geneva, 29 September–4 October, 2003)</em>, ed. L. Chrzanovski, pp. 303–7. Montagnac.
+    Xanthopoulou, M. 2005. “Lampes en métal, lampes en terre cuite: Vies parallèles.” In Chrzanovski 2005, pp. 303–7.
 
 - id: xanthopoulou-2010
   name: Xanthopoulou 2010
@@ -2669,7 +2679,7 @@
 - id: zaccaria-ruggiu-1977
   name: Zaccaria Ruggiu 1977
   contents: >
-    Zaccaria Ruggiu, A. P. 1977. “Lucerne.” In A. Frova et al., <em>Relazione preliminare delle campagne di scavo 1972–1973–1974</em>, pp. 290–304. Vol. 2 of <em>Scavi di Luni</em>, Rome.
+    Zaccaria Ruggiu, A. P. 1977. “Lucerne.” In <em>Relazione preliminare delle campagne di scavo 1972–1973–1974</em>, pp. 290–304. Vol. 2 of <em>Scavi di Luni</em>, A. Frova et al. Rome.
 
 - id: zaccaria-ruggiu-1980
   name: Zaccaria Ruggiu 1980
@@ -2679,7 +2689,7 @@
 - id: zahn-1904
   name: Zahn 1904
   contents: >
-    Zahn, R. 1904. “Lampen.” In <em>Priene</em>, ed. Th. Wiegand and H. Schrader, pp. 449–59. Berlin.
+    Zahn, R. 1904. “Lampen.” In <em>Priene</em>, ed. Wiegand, et al., pp. 449–59. Berlin.
 
 - id: zanoni-et-al-1996
   name: Zanoni et al. 1996
