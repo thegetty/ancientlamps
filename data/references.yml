@@ -498,7 +498,7 @@
     Bonifay, M., et al. 2002–3. “Le Littoral de la Tunisie, étude géoarchéologique et historique (1987–93): La céramique.” <em>Antiquités africaines</em> 38–39:211–58.
 
 - id: bonnet-1988
-  name: <a href='../../bibliography/#bonnet-1988'>Bonnet 1988</a>
+  name: Bonnet 1988
   contents: >
     Bonnet, J. 1988. <em>Lampes céramiques signées: Définition</em> <em>critique d’ateliers du Haut Empire</em>. <em>Documents d’archéologie française</em> 13. Paris.
 
@@ -762,7 +762,7 @@
 - id: Christies-1978
   name: Christie’s 1978
   contents: >
-    Christie's auction, London, 20 March 1978. <em>Roman Oil Lamps and Antiquities from Egypt</em>.
+    Christie’s auction, London, 20 March 1978. <em>Roman Oil Lamps and Antiquities from Egypt</em>.
 
 - id: Christies-1998
   name: Christie’s 1998
@@ -1839,7 +1839,7 @@
 - id: mercando-1962
   name: Mercando 1962
   contents: >
-    Mercando, L. 1962. <em>Lucerne greche e romane dell’ Antiquarium Comunale</em>. Rome.
+    Mercando, L. 1962. <em>Lucerne greche e romane dell’Antiquarium Comunale</em>. Rome.
 
 - id: mercando-1973
   name: Mercando 1973
@@ -1889,10 +1889,20 @@
 - id: mlasowsky-2003
   name: Mlasowsky 2003
   contents: >
-    Mlasowsky, A. 2003. “Eine Lampe mit dem Bildnis des Domitian in Hannover.” <em>Nouveautés Lychnologiques</em>, ed. L. Chrzanovski, pp. 181–88. Hauterive, Switzerland.
+    Mlasowsky, A. 2003. “Eine Lampe mit dem Bildnis des Domitian in Hannover.” In Chrzanovski 2003, pp. 181–88.
+
+- id: mlynarczyk-1974
+  name: Młynarczyk 1974
+  contents: >
+    Młynarczyk, J. 1974. “Terrakotowe lampki oliwne ‘Tell Atrib.’” <em>Rocznik Muzeum Narodowego w Warszawie</em> 18:145–85.
+
+- id: mlynarczyk-1997
+  name: Młynarczyk 1997
+  contents: >
+    Młynarczyk, J. 1997. <em>Alexandrian and Alexandria-Influenced Mould-Made Lamps of the Hellenistic Period</em>. BAR international series 677. Oxford.
 
 - id: mnr
-  name: <em>MNR</em>
+  name: MNR
   contents: >
     Barbera, M., and R. Petriaggi. 1993. <em>Le lucerne tardo-antiche di produzione africana del Museo Nazionale Romano</em>. Rome.
 
@@ -1909,12 +1919,12 @@
 - id: morillo-cerdan-1992
   name: Morillo Cerdán 1992
   contents: >
-    Morillo Cerdán, A. 1992. <em>Ceramica romana de Herrera de Pisuerga (Palencia, Espana): Las lucernas</em>. Santiago de Chile.
+    Morillo Cerdán, A. 1992. <em>Ceramica romana de Herrera de Pisuerga (Palencia, España): Las lucernas</em>. Santiago de Chile.
 
 - id: morillo-cerdan-1996
   name: Morillo Cerdán 1996
   contents: >
-    Morillo Cerdán, A. 1996. “Las lucernas del tipo de ‘cabeza de ave’ (<em>Vogelkopflampen</em>) en la Península Ibérica.” <em>Mitteilungen des Deutschen Archäologischen Instituts, Madrider Abteilung</em> 37, pp. 103–20.
+    Morillo Cerdán, A. 1996. “Las lucernas del tipo de ‘cabeza de ave’ (<em>Vogelkopflampen</em>) en la Península Ibérica.” <em>Mitteilungen des Deutschen Archäologischen Instituts, Madrider Abteilung</em> 37: 103–20.
 
 - id: morillo-cerdan-1999
   name: Morillo Cerdán 1999
@@ -1929,7 +1939,7 @@
 - id: morillo-cerdan-2003b
   name: Morillo Cerdán 2003b
   contents: >
-    Morillo Cerdán, A. 2003b. “Las Lucernas.” <em>El depósito alto-imperial del Castrejón de Capote (Higuera la Real, Badajoz)</em>, ed. L. Berrocal-Rangel and C. Ruiz Triviño, pp. 69–100. Merida, Spain.
+    Morillo Cerdán, A. 2003b. “Las Lucernas.” <em>El depósito alto-imperial del Castrejón de Capote (Higuera la Real, Badajoz)</em>, ed. L. Berrocal-Rangel and C. Ruiz Triviño, pp. 69–100. Mérida, Spain.
 
 - id: moscara-2003
   name: Moscara 2003
@@ -1946,15 +1956,10 @@
   contents: >
     Moutinho Alarcão, A., and S. Da Ponte. 1976. “Les Lampes.” In J. Alarcão, <em>Céramiques diverses et verres</em>, pp. 93–114. Vol. 6 of <em>Fouilles de Conimbriga</em>. Paris.
 
-- id: mynarczyk-1974
-  name: Mynarczyk 1974
+- id: museum-acquisitions-1997-98
+  name: Museum Acquisitions 1997/98
   contents: >
-    Mynarczyk, J. 1974. “Terrakotowe lampki oliwne ‘Tell Atrib.’” <em>Rocznik Muzeum Narodowego w Warszawie</em> 18:145–85.
-
-- id: mynarczyk-1997
-  name: Mynarczyk 1997
-  contents: >
-    Mynarczyk, J. 1997. <em>Alexandrian and Alexandria-Influenced Mould-Made Lamps of the Hellenistic Period</em>. BAR international series 677. Oxford.
+    "Museum Acquisitions between July 1, 1996, and June 30, 1998." <em>The Report of the J. Paul Getty Trust (1997–98)</em>.
 
 - id: neuru-1980
   name: Neuru 1980
@@ -1976,30 +1981,35 @@
   contents: >
     Newton, C. T. 1862. <em>A History of Discoveries at Halicarnassus, Cnidus and Branchidae</em>. London.
 
-- id: newton-1865
-  name: Newton 1865
+- id: newton-1989
+  name: Newton 1989
   contents: >
-    Newton, C. T. 1865. <em>Travels and Discoveries in the Levant</em>. London.
+    Newton, C. T. 1989. <em>Travels and Discoveries in the Levant</em>. London.
 
-- id: olcina-regindard-sanchez-1990
-  name: Olcina, Regindard, and Sánchez 1990
+- id: notizie-degli-scavi-1894
+  name: Notizie degli Scavi 1894
   contents: >
-    Olcina, M., H. Reginard, and M. J. Sánchez. 1990. <em>Tossal de Manises (Albufuerta, Alicante): Fondos antiguos: Lucernas y sigillatas</em>. Alicante.
+    “Tombe di età romana scoperte nell'territorio del commune”. <em>Notizie degli Scavi</em>, 1894:3.    
+
+- id: olcina-reginard-sanchez-1990
+  name: Olcina, Reginard, and Sánchez 1990
+  contents: >
+    Olcina, M., H. Reginard, and M. J. Sánchez. 1990. <em>Tossal de Manises (Albufereta, Alicante): Fondos antiguos: Lucernas y sigillatas</em>. Alicante.
 
 - id: orssaud-sodini-1997
   name: Orssaud and Sodini 1997
   contents: >
     Orssaud, D., and J.-P. Sodini. 1997. “Les Lampes tournées de Qal’at Sem’an et leurs parallèles dans le bassin méditerranéen.” In <em>La céramique médiévale en Méditerranée. Actes du VI<sup>e</sup> Congrès de l’AIECM2, Aix-en-Provence (13–18 novembre 1995)</em>, pp. 63–72. Aix-en-Provence.
 
-- id: osborne-2006
-  name: Osborne 2006
+- id: osborne-1924
+  name: Osborne 1924
   contents: >
-    Osborne, A. 2006. <em>Lychnos et lucerna: Catalogue raisonné d’une collection de lampes en terre cuite trouvées en Egypte</em>. Alexandria.
+    Osborne, A. 1924. <em>Lychnos et lucerna: Catalogue raisonné d’une collection de lampes en terre cuite trouvées en Egypte</em>. Alexandria.
 
 - id: oziol-1977
   name: Oziol 1977
   contents: >
-    Oziol, Th. 1977. <em>Les Lampes du musée</em> <em>de Chypre</em>. Vol. 7 of <em>Salamine de Chypre</em>. Paris.
+    Oziol, Th. 1977. <em>Les Lampes du Musée</em> <em>de Chypre</em>. Vol. 7 of <em>Salamine de Chypre</em>. Paris.
 
 - id: oziol-1980
   name: Oziol 1980
@@ -2014,7 +2024,7 @@
 - id: oziol-pouilloux-1969
   name: Oziol and Pouilloux 1969
   contents: >
-    Oziol, Th. and J. Pouilloux. 1969. <em>Les Lampes</em>. Vol. 1 of <em>Salamine de Chypre</em>. Paris.
+    Oziol, Th., and J. Pouilloux. 1969. <em>Les Lampes</em>. Vol. 1 of <em>Salamine de Chypre</em>. Paris.
 
 - id: pace-2008
   name: Pace 2008
@@ -2034,7 +2044,7 @@
 - id: palol-1950
   name: Palol 1950
   contents: >
-    Palol, P. de. 1950. “La colección de lucernas romanas de cerámica procedente de Ampurias en el Museo Arqueológico de Gerona.” <em>Memorias de los Museos Arqueólogicos Provinciales</em> 9–10 (1948–49):233–65. Madrid.
+    Palol, P. de. 1950. “La colección de lucernas romanas de cerámica procedente de Ampurias en el Museo Arqueológico de Gerona.” <em>Memorias de los Museos Arqueológicos Provinciales</em> 9–10 (1948–49):233–65. Madrid.
 
 - id: panazza-1984
   name: Panazza 1984
@@ -2044,12 +2054,12 @@
 - id: papadopoulou-2005
   name: Papadopoulou 2005
   contents: >
-    Papadopoulou, B. 2005. “Bronze Lamps and Polycandela: The Averof Collection in the Baron Tositsas Foundation Museum.” <em>Lychnological Acts</em> 1. <em>Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique (Nyon–Geneva, 29 September–4 October 2003)</em>, ed. L. Chrzanovski, pp. 257–62.
+    Papadopoulou, B. 2005. “Bronze Lamps and Polycandela: The Averof Collection in the Baron Tositsas Foundation Museum.” In Chrzanovski 2005, pp. 257–62.
 
 - id: pasinli-gokyldrm-and-duzguner-1997
   name: Pasinli, Gökyıldırım, and Düzgüner 1997
   contents: >
-    Pasinli, A., T. Gökyıldırım, and F. Düzgüner. 1997. ” Çatalca-InceizKöyü Maltepe nekropolü 1995 yılı kurtarma kazısı.” <em>Müze kurtarma kazıları semineri</em> 7:77–88. Ankara.
+    Pasinli, A., T. Gökyıldırım, and F. Düzgüner. 1997. “Çatalca-Inceiz Köyü Maltepe nekropolü 1995 yılı kurtarma kazısı.” <em>Müze kurtarma kazıları semineri</em> 7:77–88. Ankara.
 
 - id: passion-for-antiquities
   name: <em>Passion for Antiquities</em>
@@ -2064,12 +2074,12 @@
 - id: pastutmaz-sevmen-2005
   name: Pastutmaz-Sevmen 2005
   contents: >
-    Pastutmaz-Sevmen, D. 2005. “Knidos Dionysos Teras Stoasinda Bulunan Bir Grup Kandil Isiginda Romanesis Atölyesi ve Özellikleri.” <em>Ramazan Özgan’a Armagan</em>, ed. R. Özgan, M. ahin, and H. Mert, pp. 283–89. Istanbul.
+    Pastutmaz-Sevmen, D. 2005. “Knidos Dionysos Teras Stoasinda Bulunan Bir Grup Kandil Isiginda Romanesis Atölyesi ve Özellikleri.” In <em>Ramazan Özgan’a Armagan</em>, ed. R. Özgan, M. Sahin, and H. Mert, pp. 283–89. Istanbul.
 
 - id: pavolini-1977
   name: Pavolini 1977
   contents: >
-    Pavolini, C. 1977. “Le lucerne fittili romane del Museo Nazionale di Napoli.” In <em>L’Instrumentum domesticum di Ercolano e Pompei</em>, pp. 33–51.
+    Pavolini, C. 1977. “Le lucerne fittili romane del Museo Nazionale di Napoli.” In <em>L’Instrumentum domesticum di Ercolano e Pompei nella prima età imperiale 1977</em>, pp. 33–51.
 
 - id: pavolini-1980
   name: Pavolini 1980
@@ -2079,7 +2089,7 @@
 - id: pavolini-1987
   name: Pavolini 1987
   contents: >
-    Pavolini, C. 1987. “Le lucerne romane fra il III sec. A.C. a il III sec. D.C.” <em>Céramiques hellénistiques et romaines</em> 2. <em>Annales littéraires de l’Université de Besançon</em> 331 139–65.
+    Pavolini, C. 1987. “Le lucerne romane fra il III sec. A.C. a il III sec. D.C.” <em>Céramiques hellénistiques et romaines</em> 2. <em>Annales littéraires de l’Université de Besançon</em> 331:139–65.
 
 - id: pavolini-1990
   name: Pavolini 1990
@@ -2087,7 +2097,7 @@
     Pavolini, C. 1990. “Les Lampes romaines en Gaule aux II<sup>e</sup> et I<sup>er</sup> siècles avant J.-C., Gaule interne et Gaule méditerranéenne aux II<sup>e</sup> et I<sup>er</sup> siècles avant J.-C.: Confrontations chronologiques, sous la direction de A. Duval, J. P. Morel et Y. Roman.” <em>Revue Archéologique de Narbonnaise</em>, suppl. 21:99–112.
 
 - id: peacock-bejaoui-ben-lazreg-1990
-  name: Peacock, Bejaoui, Ben Lazreg 1990
+  name: Peacock, Bejaoui, and Ben Lazreg 1990
   contents: >
     Peacock, D. P. S., F. Bejaoui, and N. Ben Lazreg. 1990. “Roman Pottery Production in Central Tunisia.” <em>Journal of Roman Archaeology</em> 3:59–84.
 
@@ -2099,7 +2109,7 @@
 - id: petrie-1905
   name: Petrie 1905
   contents: >
-    Petrie, W. M. F. 1905. <em>Naukratis</em>. Part 1. London [1886].
+    Petrie, W. M. F. 1905. <em>Naukratis</em>. 2 vols. London [1886–88].
 
 - id: pettinau-1990
   name: Pettinau 1990
@@ -2110,6 +2120,11 @@
   name: Pisani Sartorio 1969–70
   contents: >
     Pisani Sartorio, G. 1969–70. “<em>Vogelkopflampen</em> e lucerne da spedizione.” <em>Atti della Pontifica Accademia Romana di Archeologia. Rendiconti</em> 42:81–93.
+
+- id: platz-1978
+  name: Platz 1978
+  contents: >
+    Platz, G. 1978. “Grabbeigaben für ein junges Mädchen.” In <em>Römisches im Antikenmuseum</em>, K. Vierneisel, pp. 184–95.
 
 - id: pollak-1906
   name: Pollak 1906
