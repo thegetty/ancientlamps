@@ -25,21 +25,21 @@ contributors:
 author_as_it_appears:
   - "Jean Bussière and Birgitta Lindros Wohl"
 project_team:
-    name: Benedicte Gilman
+  - name: Benedicte Gilman
     role: Project Editor
-    name: Rachel Barth
+  - name: Rachel Barth
     role: Editorial Assistant
-    name: Elizabeth Chapin Kahn
+  - name: Elizabeth Chapin Kahn
     role: Production
-    name: Gail Acosta
+  - name: Gail Acosta
     role: Digital Assistant
-    name: Nick Geller
+  - name: Nick Geller
     role: Digital Assistant
-    name: Eric Gardner
+  - name: Eric Gardner
     role: Designer and Developer
-    name: Greg Albers
+  - name: Greg Albers
     role: Project Manager
-    name: Claire L. Lyons
+  - name: Claire L. Lyons
     role: Curatorial Liaison
 editions:
   - name: Online
@@ -130,13 +130,13 @@ toc: |
   - About the Authors
   - About
 library_of_congress_cip_data:
-    "Names: J. Paul Getty Museum, author, issuing body. | Bussière, J. (Jean), author. | Wohl, Birgitta, 1934- author."
-    "Title: Ancient lamps in the J. Paul Getty Museum / Jean Bussière, Birgitta Lindros Wohl."
-    "Description: First edition. | Los Angeles : J. Paul Getty Museum, 2017. | Includes bibliographical references and index."
-    "Identifiers: LCCN 2016037209 (print) | LCCN 2016038887 (ebook) | ISBN  9781606065136 (pbk.) | ISBN 9781606065143 (epub) | ISBN 9781606065150  (online)"
-    "Subjects: LCSH: Lamps, Ancient—Mediterranean Region—Catalogs. | J. Paul  Getty Museum—Catalogs. | Mediterranean Region—Antiquities—Catalogs. |  Lamps—California—Los Angeles—Catalogs."
-    "Classification: LCC NK4680 .J2 2017 (print) | LCC NK4680 (ebook) | DDC  749/.63—dc23"
-    "LC record available at <a href=\"http://lccn.loc.gov/2016037209\" target=\"_blank\">http://lccn.loc.gov/2016037209</a>"
+  - "Names: J. Paul Getty Museum, author, issuing body. | Bussière, J. (Jean), author. | Wohl, Birgitta, 1934- author."
+  - "Title: Ancient lamps in the J. Paul Getty Museum / Jean Bussière, Birgitta Lindros Wohl."
+  - "Description: First edition. | Los Angeles : J. Paul Getty Museum, 2017. | Includes bibliographical references and index."
+  - "Identifiers: LCCN 2016037209 (print) | LCCN 2016038887 (ebook) | ISBN  9781606065136 (pbk.) | ISBN 9781606065143 (epub) | ISBN 9781606065150  (online)"
+  - "Subjects: LCSH: Lamps, Ancient—Mediterranean Region—Catalogs. | J. Paul  Getty Museum—Catalogs. | Mediterranean Region—Antiquities—Catalogs. |  Lamps—California—Los Angeles—Catalogs."
+  - "Classification: LCC NK4680 .J2 2017 (print) | LCC NK4680 (ebook) | DDC  749/.63—dc23"
+  - "LC record available at <a href=\"http://lccn.loc.gov/2016037209\" target=\"_blank\">http://lccn.loc.gov/2016037209</a>"
 categories:
   - Antiquities
 coverage:
