@@ -73,8 +73,8 @@
   date_numeric: "-200; -100"
   discussion:
 - cat_no: 4
-  inv_no: 83.AQ.77.385
-  dor_id:
+  inv_no: 83.AQ.377.385
+  dor_id: 17068
   dimensions: 'Max. W: 4.9 cm; H: 4.0 cm'
   condition_and_fabric: Wheelmade. Intact. Clay 7.5YR7/4 pink, slip 5YR5/1 gray.
   description: Bowl with a highly raised flat circular base. Three sides of rim folded
@@ -7872,8 +7872,8 @@
     the rhyton to the altar and not to the situla. It may be a misrepresentation of
     an earlier model.
 - cat_no: 301
-  inv_no: 91.AQ.47
-  dor_id:
+  inv_no: 91.AK.47
+  dor_id: 13315
   dimensions: 'L: 8.8 cm; W: 6.1 cm; H: 2.3 cm'
   condition_and_fabric: Intact. Clay not visible, thick glaze near 2.5YR5/4 reddish
     brown.
@@ -9377,7 +9377,7 @@
   discussion:
 - cat_no: 358
   inv_no: 83.AK.438.418
-  dor_id:
+  dor_id: 26298
   dimensions: 'L: 13.0 cm; W: 9.6 cm; H: 3.5 cm'
   condition_and_fabric: Intact. Clay 10YR7/3 very pale brown, glaze 10YR6/4 light
     yellowish brown.
@@ -9423,8 +9423,8 @@
   date_numeric: 140; 160
   discussion:
 - cat_no: 360
-  inv_no: 81.AQ. 112.13
-  dor_id:
+  inv_no: 81.AQ.112.13
+  dor_id: 15307
   dimensions: 'L: 7.8 cm; W: 5.4 cm; H: 2.3 cm'
   condition_and_fabric: Part of discus broken and restored. Clay near 5YR7/6 reddish
     yellow, a few remains of glaze varying between 10R6/6 light red and 10R5/6 red.
@@ -11279,7 +11279,7 @@
   discussion:
 - cat_no: 435
   inv_no: 83.AQ.377.515.2
-  dor_id:
+  dor_id: 26246
   dimensions: 'L: 6.0 cm; W: 4.0 cm; H: 1.6 cm'
   condition_and_fabric: Intact. Burn marks on nozzle. Clay 5YR6/6 reddish yellow,
     thin worn glaze 10R5/6 red. Much powdery gold mica.
@@ -12432,8 +12432,8 @@
   date_numeric: 250; 300
   discussion:
 - cat_no: 479
-  inv_no: 79.AQ 28.6.
-  dor_id:
+  inv_no: 79.AQ.28.6.
+  dor_id: 15033
   dimensions: 'L: 10.8 cm; W: 8.6 cm; H: 3.0 cm'
   condition_and_fabric: Intact. Clay 7.5YR7/4 pink, uneven glaze 10R6/6 light red;
     right side burned.
@@ -14681,8 +14681,8 @@
   date_numeric: 50; 100
   discussion:
 - cat_no: 562
-  inv_no: 83.AQ 377.480
-  dor_id:
+  inv_no: 83.AQ.377.480
+  dor_id: 17162
   dimensions: 'L: 13.0 cm; W: (basin) 6.2 cm, (nozzles) 7.3 cm; H: 2.7 cm'
   condition_and_fabric: 'Intact. Clay 2.5YR6/8 light red, uneven glaze near 2.5YR6/4
     light reddish brown, with substantial dark areas: sediments.'
@@ -15984,7 +15984,7 @@
   discussion:
 - cat_no: 610
   inv_no: 83.AQ.377.515.1
-  dor_id:
+  dor_id: 17197
   dimensions: 'D: 8.9 (front to back of head); W: 8.3 (ear to ear); H: 13 cm; base
     6.2 cm × 4.7 cm'
   condition_and_fabric: Nose restored in plaster. Clay near 5YR6/6 reddish yellow,
@@ -16330,7 +16330,7 @@
   discussion:
 - cat_no: 622
   inv_no: 80.AQ.140.1 (lamp) and .2 (stand)
-  dor_id:
+  dor_id: 106992, 106991
   dimensions: '80.AQ.140.1 (lamp): L: 11.5 cm; W: (body) 4.8 cm, (with suspension
     hooks) 5.5 cm; H: (body) 2.3 cm, (to top of lid) 4.0 cm, (with hook to bottom)
     13.4 cm; Diam: (foot) 3.4 cm. 80.AQ.140.2. (stand): H: 26.0 cm; W: (at feet) 11.0
@@ -16473,7 +16473,7 @@
   discussion:
 - cat_no: 626a
   inv_no: 96.AQ.193.a
-  dor_id:
+  dor_id: 106572
   dimensions: 'L: 11.6 cm; W: 6.9 cm; H: 6.3 cm'
   condition: Ornament handle broken off (inventoried as .193b, here <a href='../614-30/'>cat.
     626b</a>); thin patina, mostly green malachite, well cleaned off; very little
@@ -16509,7 +16509,7 @@
   discussion:
 - cat_no: 626b
   inv_no: 96.AQ.193.b
-  dor_id:
+  dor_id: 106573
   dimensions: 'L: 5.9 cm; W: 3.6 cm; H: 8.2 cm'
   condition: Ornament handle, broken off from <a href='../614-30/'>cat. 626a</a>.
   description: Central bent stem ending in a leaf curving away from the lamp; stem
