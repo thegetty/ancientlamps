@@ -3571,11 +3571,11 @@
   description: Moldmade. Transverse pierced handle with groove. Flat shoulder, Loeschcke
     form II b, interrupted by a V-shaped channel between discus and nozzle. Central
     filling-hole. Small air hole facing nozzle. Splayed angle-tipped nozzle without
-    volutes, with beveled sides and flat top. Flat ovoid base marked off by two grooves.
+    volutes, with beveled sides and flat top. Flat teardrop-shaped base marked off by two grooves.
   discus_iconography: Plain discus.
   type: Pavolini subtype III L, related to Bailey M
   place: Asia Minor
-  parallels: Carandini et al. 1977, no. 2, pl. 20 (129 samples kept in the Museo Archeologico
+  parallels: <a href='../../bibliography/#caradini-et-al-1977'>Carandini et al. 1977</a>, no. 2, pl. 20 (129 examples kept in the Museo Archeologico
     Nazionale, Naples); <a href='../../bibliography/#pavolini-1980'>Pavolini 1980</a>,
     pl. 14, fig. 4n (with refs.); <a href='../../bibliography/#bailey-bm-ii'>Bailey
     BM II</a>, Q 1149, pl. 50 (with further refs.); <a href='../../bibliography/#bonghi-jovino-1984'>Bonghi
@@ -3585,9 +3585,9 @@
   bibliography: Unpublished.
   date: Third quarter of first century A.D.
   date_numeric: 50; 75
-  discussion: Transverse pierced handles are common on <em>Vogelkopflampen</em> (Pavolini
-    1980, type III; or Bailey type M) but appear only exceptionally on other types,
-    for instance, Bailey BM I, Q 965, pl. 22 (Loeschcke type V variant), and Dressel
+  discussion: Transverse pierced handles are common on <em>Vogelkopflampen</em> (<a href='../../bibliography/#pavolini-1980'>Pavolini
+    1980</a>, type III; or Bailey type M) but appear only exceptionally on other types,
+    for instance, <a href='../../bibliography/#bailey-bm-i'>Bailey BM I</a>, Q 965, pl. 22 (Loeschcke type V variant), and Dressel
     type 23 (<em>CIL</em> 15).
 - cat_no: 144
   inv_no: 83.AQ.377.77
@@ -3595,19 +3595,19 @@
   dimensions: 'L: 7.8 cm; W: 5.8 cm; H: 2.4 cm'
   condition_and_fabric: Intact. Clay 2.5YR6/6 light red, worn glaze near 10R5/6 red.
   description: 'Moldmade, from plaster mold. Deep body with sloping sides. Flat shoulder
-    with several rills. Deep, flat-bottomed discus with sloping wall; two rings around
+    with several rills. Deep flat-bottomed discus with sloping wall; two rings around
     central filling-hole, outer ring much broader than inner one. Unpierced air hole
     on flat top of nozzle. Angular-tipped nozzle flanked by shoulder-volutes without
     spines, as on Loeschcke type V. Base-ring marked off by two grooves. Potter’s
     signature: <span class=''inscription''>PHOETASPI</span>, workshop active in the
-    Flavian period (Bailey BM II, p. 100).'
+    Flavian period (<a href='../../bibliography/#bailey-bm-ii'>Bailey BM II</a>, p. 100).'
   discus_iconography: Rosette of twenty-four concave petals.
   type: Loeschcke I var.
   place: North Africa according to Schüller, but probably made in Egypt, as indicated
     by potter's signature
   parallels: "(Identical) <a href='../../bibliography/#waldhauer-1914'>Waldhauer 1914</a>,
     no. 176, pl. 16, from Egypt; <a href='../../bibliography/#szentleleky-1969'>Szentléleky
-    1969</a>, no. 90 (<span class='inscription'>PHOETASPI</span>); <a href='../../bibliography/#mynarczyk-1974'>Mynarczyk
+    1969</a>, no. 90 (<span class='inscription'>PHOETASPI</span>); <a href='../../bibliography/#mlynarczyk-1974'>Młynarczyk
     1974</a>, no. 9, figs. 11–12 (<span class='inscription'>PHOETASPI</span>), from
     <a href='../../map/#loc_727078'>Tell Atrib</a>, Egypt; <a href='../../bibliography/#bailey-bm-iii'>Bailey
     BM III</a>, Q 1899 and Q 2000, pl. 33, from Egypt (<span class='inscription'>PHOETASPI</span>,
@@ -3630,15 +3630,14 @@
   dor_id: 16736
   dimensions: 'L: 11.0 cm; W: 8.8 cm; H: 3.6 cm'
   condition_and_fabric: Hole on left side of shoulder showing very thin wall; cracks
-    on bottom. Clay 5YR6/6 reddish yellow, mottled glaze between 7.5YR5/4 brown and
+    on bottom; repairs and overpaint. Clay 5YR6/6 reddish yellow, mottled glaze between 7.5YR5/4 brown and
     2.5YR5/6 red.
-  description: Moldmade. Flat shoulder with close-set concentric rills; two volute
-    side-lugs. Deeply depressed flat-bottomed discus with Medusa head surrounded by
-    thin ridge; inward-sloping walls with rosette-pattern of multiple concave petals,
+  description: Moldmade. Flat shoulder with close-set concentric rills; two rectangular
+    side-lugs with volutes. Deeply depressed flat-bottomed discus; inward-sloping walls with rosette-pattern of multiple concave petals,
     similar to <a href='../143-46-bis/'>cat. 144</a>. Discus pierced by small filling-hole
     and two even smaller air holes. Angular-tipped nozzle flanked by shoulder-volutes
     without spines, as on Loeschcke type V. Raised base-ring.
-  discus_iconography: Medusa head in pronounced relief.
+  discus_iconography: Medusa head in pronounced relief surrounded by rosette with twenty-four petals.
   type: Loeschcke I var.
   place: Anatolia
   parallels: None found; see close comparanda given for <a href='../143-46-bis/'>cat.
@@ -3662,7 +3661,7 @@
   discus_iconography: Plain discus.
   type: Loeschcke I var.; Bussière C I 2
   place: North Africa
-  parallels: "(Identical), <a href='../../bibliography/#bussiere-2000'>Bussière 2000</a>,
+  parallels: "(Identical) <a href='../../bibliography/#bussiere-2000'>Bussière 2000</a>,
     no. 684, pl. 46."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
@@ -3682,7 +3681,7 @@
     as on Loeschcke type V. Base marked off by one circular groove.'
   discus_iconography: Outline of small lamp of Loeschcke type I with crescent-ornament
     handle; this decoration flanked by two symmetrical curved lines, each ending with
-    a globule.
+    a globule. See also <a href='../76-84/'>cat. 77</a>, <a href='../76-84/'>cat. 78</a>.
   type: Loeschcke I var.; Bussière C I 2
   place: Anatolia
   parallels: None found.
