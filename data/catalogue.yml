@@ -5320,8 +5320,8 @@
     marked off by two grooves. Plain <em>planta pedis</em>.'
   discus_iconography: Ulysses tied with ropes under a ram’s belly to escape from the
     cave of Polyphemus; the figure might be one of Ulysses' companions, for he is
-    not wearing the hero’s conical hat as on <a href='../208-23/'>cat. 213</a> and
-    <a href='../208-23/'>cat. 219</a>, but a round sailor’s hat as on <a href='../248-65/'>cat.
+    not wearing the hero’s conical hat, as on <a href='../208-23/'>cat. 213</a> and
+    <a href='../208-23/'>cat. 219</a>, but a round sailor’s hat, as on <a href='../248-65/'>cat.
     259</a>).
   type: Loeschcke IV; Bailey B group iii
   place: Southern Anatolia
@@ -5381,18 +5381,18 @@
     no. 216, pl. 21 (<span class='inscription'>ROMANESIS</span>); <a href='../../bibliography/#walters-1914'>Walters
     1914</a>, p. 209, no. 1386, fig. 326 (fr.); <a href='../../bibliography/#alvarez-ossorio-1942'>Álvarez-Ossorio
     1942</a>, p. 280, no. 4–13.506, figs. 2–4; <a href='../../bibliography/#kricheldorf-1962'>Kricheldorf
-    1962</a>, no. 60, pl. 7 (<span class='inscription'>C.OPPI.RES</span>); Bruneau
-    1965, no. 4604, pl. 30 (<a href='../../map/#loc_599588'>Delos</a>); <a href='../../bibliography/#bailey-bm-ii'>Bailey
+    1962</a>, no. 60, pl. 7 (<span class='inscription'>C.OPPI.RES</span>); <a href='../../bibliography/#bruneau-1965'>Bruneau
+    1965</a>, no. 4604, pl. 30 (<a href='../../map/#loc_599588'>Delos</a>); <a href='../../bibliography/#bailey-bm-ii'>Bailey
     BM II</a>, p. 226, Q 1073, pl. 37, fig. 47 = <a href='../../bibliography/#walters-1914'>Walters
     1914</a>, no. 1386; <a href='../../bibliography/#williams-1981'>Williams 1981</a>,
     no. 137, pl. 6 (<span class='inscription'>ROMANESIS</span>) (<a href='../../map/#loc_570347'>Kenchreai</a>);
-    <em>Kunst der Antike</em> 10, no. 232; <a href='../../bibliography/#hellmann-1985'>Hellmann
+    <a href='../../bibliography/#kunst-der-antike'><em>Kunst der Antike</em></a> 10, no. 232; <a href='../../bibliography/#hellmann-1985'>Hellmann
     1985</a>, pp. 13–14, no. 13 (<span class='inscription'>ROMANIIS</span>) (Cyprus);
-    Schäfer and Marczoch 1990, p. 41, no. 36 (Egypt); <a href='../../bibliography/#hubinger-1993'>Hübinger
+    <a href='../../bibliography/#schafer-marczoch-1990'>Schäfer and Marczoch 1990</a>, p. 41, no. 36 (Egypt); <a href='../../bibliography/#hubinger-1993'>Hübinger
     1993</a>, no. 124, pl. 15 (Rome); <a href='../../bibliography/#mlasowsky-2003'>Mlasowsky
     2003</a>, p. 184, figs. 1–3 (interpreted as Domitian and probably signed <span
-    class='inscription'>L.MADIEC</span>). (The same bust without scepter): Bruneau
-    1965, no. 4605, pl. 30 (<a href='../../map/#loc_599588'>Delos</a>); <a href='../../bibliography/#raselli-nydegger-2005'>Raselli-Nydegger
+    class='inscription'>L.MADIEC</span>). (The same bust without scepter): <a href='../../bibliography/#bruneau-1965'>Bruneau
+    1965</a>, no. 4605, pl. 30 (<a href='../../map/#loc_599588'>Delos</a>); <a href='../../bibliography/#raselli-nydegger-2005'>Raselli-Nydegger
     2005</a>, fig. 13; Bochum Museum, Schüller Collection, cat. no. S 1097, pict.
     2010–02–03."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
@@ -5400,19 +5400,19 @@
   bibliography: Unpublished.
   date: Hadrianic
   date_numeric: 117; 138
-  discussion: "<p>Bailey assigns the end of production of his type B = Loeschcke type
+  discussion: "Bailey assigns the end of production of his type B = Loeschcke type
     IV to the Trajanic period (BM II, p. 157). Logically, there would be a chronological
     incompatibility with a lamp of this type showing Hadrian’s portrait. But later,
     Bailey admits that the production of Cnidian lamps of his type B lasted until
     the beginning of Hadrian’s reign, as proved by several lamps of this type bearing
-    that emperor's portrait (Bailey BM III, p. 327).</p><p>Following the earlier chronology
+    that emperor's portrait (Bailey BM III, p. 327).<p>Following the earlier chronology
     of the type given in BM II, Mlasowsky is the only author to assume that the portrait
     is Domitian’s. However, the portraits of Domitian we have consulted—on sculptures
     and coins, in addition to the examples given by Mlasowsky (2003, figs. 4–6)—do
     not show the emperor with a beard, in contrast to the portraits of Hadrian. It
     is surprising that Mlasowsky does not mention any parallels to the Hanover lamp
     he publishes, nor does he refer to the commonly accepted interpretation of the
-    portrait as Hadrian (Mlasowsky 2003, p. 184, figs. 1–3).</p>"
+    portrait as Hadrian (<a href='../../bibliography/#mlasowsky-2003'>Mlasowsky 2003</a>, p. 184, figs. 1–3).</p>"
 - cat_no: 212
   inv_no: 83.AQ.377.51
   dor_id: 16707
@@ -5473,7 +5473,7 @@
   description: 'Moldmade. Shoulder: Loeschcke form VI b. Filling-hole lower left.
     Round-tipped volute-nozzle. Base marked off by one circular groove. Potter’s incuse
     signature: <span class=''inscription''>GABINIA</span>, workshop dated Late Flavian
-    to Early Antonine (Bailey BM II, p. 96). Relief mark under signature: maybe letter
+    to Early Antonine (<a href='../../bibliography/#bailey-bm-ii'>Bailey BM II</a>, p. 96). Relief mark under signature: maybe letter
     <span class=''inscription''>D</span>(?).'
   discus_iconography: Half-dressed winged Victory standing frontal, right hand holding
     a wreath, left a palm branch.
@@ -5505,7 +5505,7 @@
   place: North Africa
   parallels: "<a href='../../bibliography/#heres-1972'>Heres 1972</a>, no. 202, pl.
     32 (Loeschcke VIII); <a href='../../bibliography/#bussiere-2000'>Bussière 2000</a>,
-    no. 329, pl. 35 (with further refs.); <em>Kunst der Antike</em> 13, no. 154 (<span
+    no. 329, pl. 35 (with further refs.); <a href='../../bibliography/#kunst-der-antike'><em>Kunst der Antike</em></a> 13, no. 154 (<span
     class='inscription'>LMVNPHILE</span>) (Loeschcke VIII); Bochum Museum, Schüller
     Collection, cat. no. 161, S 809 (Loeschcke IV) (Tunisia); <a href='../166-207/'>cat.
     200</a>."
@@ -5523,20 +5523,20 @@
     brown.
   description: 'Moldmade, from plaster mold. Shoulder: Loeschcke form VI b. Filling-hole
     slightly below center. Round-tipped volute-nozzle. Base marked off by one circular
-    groove, with central dot.'
+    groove, with impressed central dot.'
   discus_iconography: Boar rushing to right.
   type: Loeschcke IV; Bailey B group iii
   place: Unknown
   parallels: "<a href='../../bibliography/#lyster-1970'>Lyster 1970</a>, no. 20, fig.
     7; <a href='../../bibliography/#farka-1977'>Farka 1977</a>, p. 136, motif 114;
-    <a href='../../bibliography/#boube-1977'>Boube 1977</a>, p. 464, pl. CCXVII ({{loc_295363:Bab
-    Zaer</a>, Morocco); <a href='../../bibliography/#olcina-reginard-sanchez-1990'>Olcina, Reginard,
+    <a href='../../bibliography/#boube-1977'>Boube 1977</a>, p. 464, pl. CCXVII (<a href='../../map/#loc_275696'>Bab
+    Zaër</a>, Morocco); <a href='../../bibliography/#olcina-reginard-sanchez-1990'>Olcina, Reginard,
     and Sánchez 1990</a>, p. 26, no. 12; <a href='../../bibliography/#bussiere-2000'>Bussière
     2000</a>, p. 197, no. 340, pl. 36, decor III.a.6.(1) (with further refs.); Bochum
     Museum, Schüller Collection, cat. no. 114, S 697 (Tunisia), and cat. no. 171,
     S 789 (Loeschcke VIII) (Tunisia)."
   provenance: Before 1982, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); by
-    1982 – 1983, Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty
+    1982–1983, Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty
     Museum, 1983.
   bibliography: "<a href='../../bibliography/#galerie-gunter-puhze-1982'>Galerie Günter
     Puhze 1982</a>, no. 252."
@@ -5554,7 +5554,7 @@
     groove. Blurred potter’s signature; of five or six letters only the first is legible:
     <span class=''inscription''>C</span>.'
   discus_iconography: Two helmeted gladiators in combat; the right one, lifting both
-    arms, has dropped his shield, holding a short sword in his left hand; the left
+    arms, has dropped his shield and holds a short sword in his left hand; the left
     one, who seems to be the winner, is raising a rectangular convex shield and holding
     a <em>sica</em>.
   type: Loeschcke IV; Bailey B group iii
@@ -5608,7 +5608,7 @@
   discus_iconography: Ulysses and Neoptolemus stealing the bow of Philoctetes; bird
     (crow[?]) perching on Philoctetes’ right foot; two wounded birds lying in the
     foreground.
-  type: Loeschcke IV. Bailey B group iii
+  type: Loeschcke IV; Bailey B group iii
   place: Southern Anatolia
   parallels: "<a href='../../bibliography/#bailey-bm-ii'>Bailey BM II</a>, p. 35,
     Q 1069, pl. 37, fig. 32, which is published in <a href='../../bibliography/#limc'><em>LIMC</em></a>
@@ -5619,7 +5619,7 @@
   bibliography: Unpublished.
   date: First century A.D.
   date_numeric: 1; 100
-  discussion: "<p>About a similar lamp in the BM, Bailey writes:</p><blockquote><p><em></em>EX<em></em>
+  discussion: "About an identical lamp in the BM, Bailey writes:</p><blockquote><p><em></em>
     The wounded Philoctetes reclines in a cave, supporting his head on his left hand;
     he is draped about the lower body and legs, and wears sandals. In his right hand
     he holds, as a fly-whisk, the wing of a bird. In front of the cave is a dead bird
@@ -5629,7 +5629,7 @@
     at that time in the possession of Philoctetes. Neoptolemus, who holds on to the
     edge of the cave with his left hand, has two very curious “wings” rising from
     his shoulders; he is, perhaps, conflated here with Cupid, who was given to playing
-    with Hercules’ weapons (BM II, p. 35, Q 1069, fig. 32).</p></blockquote>"
+    with Hercules’ weapons. (BM II, p. 35, Q 1069, fig. 32.)</p></blockquote>"
 - cat_no: 220
   inv_no: 83.AQ.377.401
   dor_id: 17084
@@ -5645,8 +5645,8 @@
     and lifting the woman’s leg.
   type: Loeschcke IV; Bailey B group iii
   place: North Africa
-  parallels: "(Identical) <a href='../../bibliography/#deneauve-1969'>Deneauve 1969</a>,
-    no. 481, pl. 50 (<span class='inscription'>CCLOSVC</span>), and no. 482, pl. 50
+  parallels: "(Identical) <a href='../../bibliography/#deneauve-1969'>Deneauve 1969</a>, p. 137,
+    no. 481, pl. 50 (<span class='inscription'>CCLOSVC</span>), and p. 137, no. 482, pl. 50
     (<span class='inscription'>LMVNSVC</span>); (close) <a href='../../bibliography/#heres-1972'>Heres
     1972</a>, no. 134, pl. 18; <a href='../../bibliography/#cahn-klaiber-1977'>Cahn-Klaiber
     1977</a>, no. 176, pl. 16; <a href='../../bibliography/#leibundgut-1977'>Leibundgut
@@ -5688,14 +5688,14 @@
   condition_and_fabric: Intact. Clay 7.5YR6/4 light brown, glaze between 2.5YR5/4
     and 2.5YR4/4 reddish brown, two shades.
   description: 'Moldmade. Shoulder: Loeschcke form VII a. Filling-hole below center.
-    Round-tipped volute-nozzle. Base marked off by one circular groove. Relief potter’s
+    Round-tipped volute-nozzle with burn marks. Base marked off by one circular groove. Relief potter’s
     mark: letter <span class=''inscription''>S</span> with two short parallel lines
     under it.'
   stamp: stamp_222.png
   discus_iconography: 'Circus scene with chariot race; quadriga rushing to right,
     charioteer energetically whipping horses; under the animals’ feet, at bottom right,
     probably a man’s corpse run over, possibly a charioteer lying among pieces of
-    his broken chariot(?); behind, different structures and buildings, from left to
+    his broken chariot(?); behind are different structures and buildings, from left to
     right: Egyptian obelisk, stand of lap-counting dolphins with spiral-fluted columns,
     column supporting statue of Victory, two-storey polygonal building with pointed
     roof and four statues or spectators(?), and, at the end, an unidentified design.
@@ -5727,9 +5727,9 @@
     between 5YR6/4 light reddish brown and 5YR5/4 reddish brown.
   description: 'Moldmade. Shoulder: Loeschcke form VII a, with external row of beads.
     Another row of similar beads encircles discus, with an additional half-circle
-    of beads at bottom of discus. Filling-hole in lower field. Round-tipped volute-nozzle.
+    of beads at bottom of discus. Filling-hole in lower field. Round-tipped volute-nozzle with burn marks.
     Blurred base-ring.'
-  discus_iconography: 'Victorious quadriga to left slowly parading beside <em>spina;</em>
+  discus_iconography: 'Circus scene with victorious quadriga to left slowly parading beside <em>spina;</em>
     charioteer holding reins in left hand, victory crown in his right; behind him
     the following items (left to right): stand of lap-counting dolphins supported
     by spiral-fluted column, three vertical rows of beads (spectators’ heads[?]),
@@ -5740,8 +5740,8 @@
     Q 920, pl. 16, fig. 58 (with more buildings and without the beaded motif); (slightly
     different) <a href='../../bibliography/#bessi-moncini-1980'>Bessi and Moncini
     1980</a>, nos. 2–3, pl. 3; <a href='../../bibliography/#rodriguez-martin-2002'>Rodríguez
-    Martín 2002</a>, no. 170, pl. 33; <a href='../../bibliography/#chrzanovski-et-al-2006'>Chrzanovski
-    et al. 2006</a>, p. 62, no. 46; <a href='../../bibliography/#bemont-chew-2007'>Bémont
+    Martín 2002</a>, no. 170, pl. 33; <a href='../../bibliography/#chrzanovski-et-al-2000'>Chrzanovski
+    et al. 2000</a>, p. 62, no. 46; <a href='../../bibliography/#bemont-chew-2007'>Bémont
     and Chew 2007</a>, pp. 264, 473, pl. 48, GA 151."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
