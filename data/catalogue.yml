@@ -964,7 +964,6 @@
   date: "Mid-second to early first century B.C."
   date_numeric: -150; -75
   discussion:
-
 - cat_no: 40
   inv_no: 83.AQ.377.349
   dor_id: 17032
@@ -4608,7 +4607,7 @@
   inv_no: 83.AQ.377.554
   dor_id: 17193
   dimensions: 'L: 10.5 cm; W: 7.6 cm; H: 2.6 cm'
-  condition_and_fabric: Intact. Clay 5YR6/4 light reddish brown, glaze originally(?)
+  condition_and_fabric: Intact except for minor chips. Clay 5YR6/4 light reddish brown, glaze originally(?)
     2.5YR4/4 reddish brown; heavily burned both on top and lower part.
   description: 'Moldmade. Shoulder: Loeschcke form III a. Filling-hole in lower field.
     Round-tipped volute-nozzle. Base marked off by one circular groove.'
@@ -4619,7 +4618,7 @@
   parallels: "<a href='../../bibliography/#loeschcke-1919'>Loeschcke 1919</a>, no.
     420, pl. 8; <a href='../../bibliography/#oziol-1977'>Oziol 1977</a>, nos. 391–94,
     pl. 21; (close) <a href='../../bibliography/#bailey-bm-ii'>Bailey BM II</a>, p.
-    69, Q804, Q806, and Q937, fig. 71 (with further refs.); <a href='../../bibliography/#rivet-2003'>Rivet
+    69, Q 804, Q 806, and Q 937, fig. 71 (with further refs.); <a href='../../bibliography/#rivet-2003'>Rivet
     2003</a>, p. 139, no. 138; Bochum Museum, Schüller Collection, cat. no. 232, S
     666 identical (Anatolia)."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
@@ -4637,9 +4636,8 @@
   description: 'Moldmade. Shoulder: Loeschcke form III a. Central filling-hole. Small
     air hole on nozzle top. Round-tipped volute-nozzle. Base marked off by one circular
     groove. Potter’s incuse signature: <span class=''inscription''>M.S.</span> (<em>CIL</em>
-    8, 22644, no. 196). Discus Iconography: Oak wreath tied at top, eight leaves and
-    two acorns.'
-  discus_iconography:
+    8, 22644, no. 196).'
+  discus_iconography: Oak wreath tied at top with ribbons, eight leaves and two acorns.
   type: Loeschcke IV; Bailey B group ii
   place: North Africa
   parallels: "<a href='../../bibliography/#joly-1974'>Joly 1974</a>, p. 130, nos.
@@ -4674,14 +4672,14 @@
     Cerdán 1999</a>, no. 11 (discus fr.); <a href='../../bibliography/#bussiere-2000'>Bussière
     2000</a>, no. 459, pl. 40 (Loeschcke V), decor I.a.8.(8); <a href='../../bibliography/#buzov-2006'>Buzov
     2006</a>, p. 178, no. 5, pl. 1 (Loeschcke I); <a href='../../bibliography/#casas-genover-soler-fuste-2006'>Casas
-    Genover and Soler Fusté 2006</a>, no. G 413, pl. 30; Gorny and Mosch [2006], p.
+    Genover and Soler Fusté 2006</a>, no. G 413, pl. 30; <a href='../../bibliography/#gorny-mosch-2006'>Gorny and Mosch 2006</a>, p.
     198, lot 576 (Loeschcke V)."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   bibliography: Unpublished.
   date: Tiberian to Early Trajanic
   date_numeric: 14; 110
-  discussion: "<em>LIMC</em> 2.2, p. 43, no. 452, s.v. Aphrodite, a bronze mirror
+  discussion: "<a href='../../bibliography/#limc'><em>LIMC</em></a> 2.2, p. 43, no. 452, s.v. Aphrodite, a bronze mirror
     in the Museum of Fine Arts, Boston, shows the same two figures, but behind the
     water basin one can see a small statue of Venus/Aphrodite standing on a pillar."
 - cat_no: 186
@@ -4691,7 +4689,7 @@
   condition_and_fabric: Intact. Clay 7.5YR6/4 light brown, mottled glaze varying between
     5YR5/4 and 5YR4/2 reddish brown and dark reddish gray.
   description: 'Moldmade. Shoulder: Loeschcke form III a. Filling-hole in lower right
-    field. Small air hole on nozzle. Round-tipped volute-nozzle. Base marked off by
+    field. Small air hole on nozzle. Round-tipped volute-nozzle; burn marks. Base marked off by
     one circular groove.'
   discus_iconography: Closely draped standing figure playing <em>kithara</em> (Muse?).
   type: Loeschcke IV; Bailey B group ii
@@ -4704,8 +4702,8 @@
     no. 114, pl. 11; <a href='../../bibliography/#bailey-bm-ii'>Bailey BM II</a>,
     Q 817 (with further refs.); <a href='../../bibliography/#bessi-moncini-1980'>Bessi
     and Moncini 1980</a>, no. 116, pl. 15; <a href='../../bibliography/#hellmann-1987'>Hellmann
-    1987</a>, no. 244, pl. 30 (Loeschcke VIII); <a href='../../bibliography/#bailey-bm-ii'>Bailey
-    BM II</a>I, Q 2376–Q 2377, pl. 63, and Q 2431, pl. 64; <a href='../../bibliography/#heimerl-2001'>Heimerl
+    1987</a>, no. 244, pl. 30 (Loeschcke VIII); <a href='../../bibliography/#bailey-bm-iii'>Bailey
+    BM III</a>, Q 2376–Q 2377, pl. 63, and Q 2431, pl. 64; <a href='../../bibliography/#heimerl-2001'>Heimerl
     2001</a>, motif M.1–2, 5; <a href='../../bibliography/#chrzanovski-2006'>Chrzanovski
     2006</a>, p. 63, no. 49; <a href='../../bibliography/#bemont-chew-2007'>Bémont
     and Chew 2007</a>, pp. 181, 441, pl. 16, IT 21."
@@ -4715,20 +4713,20 @@
   date: Tiberian to Early Trajanic
   date_numeric: 14; 110
   discussion: For the discus motif, Bailey hesitates between Apollo, a Muse, or Orpheus
-    (BM II, Q 817). The Getty lamp decor suggests a female silhouette—a Muse—an interpretation
-    shared by Hellmann (1987, no. 244) and by Bémont and Chew (2007, IT 21).
+    (<a href='../../bibliography/#bailey-bm-ii'>Bailey BM II</a>, Q 817). The Getty lamp decor suggests a female silhouette—a Muse—an interpretation
+    shared by <a href='../../bibliography/#hellmann-1987'>Hellmann 1987</a> (no. 244) and by <a href='../../bibliography/#bemont-chew-2007'>Bémont and Chew 2007</a> (IT 21).
 - cat_no: 187
   inv_no: 83.AQ.377.64
   dor_id: 16720
   dimensions: 'L: 11.1 cm; W: 7.6 cm; H: 2.6 cm'
-  condition_and_fabric: Intact. Clay 5YR6/6 reddish yellow, mottled glaze part 2.5YR6/6
-    light red, part 2.5YR5/6 red.
+  condition_and_fabric: Intact. Clay 5YR6/6 reddish yellow, mottled glaze varying between 2.5YR6/6
+    light red and 2.5YR5/6 red.
   description: 'Moldmade, from plaster mold. Shoulder: Loeschcke form III a. Filling-hole
-    in lower field. Unpierced air hole on nozzle. Round-tipped volute-nozzle. Base
+    in lower field. Unpierced air hole on nozzle with burn marks. Round-tipped volute-nozzle. Base
     marked off by one circular groove. Large plain <em>planta pedis</em>.'
   discus_iconography: Lion to right on top of stag, biting its throat.
   type: Loeschcke IV; Bailey B group ii
-  place: Unknown
+  place: Given by Schüller as being north African, but more likely from the eastern Mediterranean.
   parallels: None found for this presumably eastern Mediterranean lamp; on lamps from
     the western part of the Mediterranean one sees a popular decor with a lion killing
     a mule or a horse in a not very different position (see <a href='../166-207/'>cat.
@@ -4769,7 +4767,7 @@
     the lion’s tail is different; <a href='../../bibliography/#berges-1989'>Bergès
     1989</a>, no. 47, fig. 32; <a href='../../bibliography/#morillo-cerdan-1999'>Morillo
     Cerdán 1999</a>, nos. 226–28; <a href='../../bibliography/#bussiere-2000'>Bussière
-    2000</a>, decor III.a.1.(24) (with further refs.); <a href='../../bibliography/#chrzanovski-2005'>Chrzanovski 2005</a>, p. 51; <a
+    2000</a>, decor III.a.1.(24) (with further refs.); <a href='../../bibliography/#chrzanovski-2006'>Chrzanovski 2006</a>, p. 51; <a
     href='../../bibliography/#pace-2008'>Pace 2008</a>, p. 18 (fr.)."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
@@ -4781,11 +4779,9 @@
   inv_no: 83.AQ.377.137
   dor_id: 16794
   dimensions: 'L: 9.0 cm; W: 6.3 cm; H: 2.0 cm'
-  condition_and_fabric: Intact. Clay 7.5YR8/2 whitish pink, worn glaze 10R5/6 red.
-  description: 'Moldmade. Shoulder: Loeschcke form III a var. Round-tipped volute-nozzle.
-    Base marked off by one circular groove. Incuse potter’s signature: <span class=''inscription''>L.M.C.</span>
-    (Bailey BM II, p. 98, signature <span class=''inscription''>L.M.C.</span>, p.
-    171, Q 910, same type, with same mark, dated ca. A.D. 40–90).'
+  condition_and_fabric: Clay 7.5YR8/2 whitish pink, worn glaze 10R5/6 red.
+  description: 'Moldmade. Shoulder: Loeschcke form III a var. Round-tipped volute-nozzle with burn marks.
+    Base marked off by one circular groove. Filling-hole close to center of discus. Incuse potter’s signature: <span class=''inscription''>L.M.C.</span> (<a href='../../bibliography/#bailey-bm-ii'>Bailey BM II</a>, p. 98, signature <span class=''inscription''>L.M.C.</span>, p. 171, Q 910, same type, with same mark, dated ca. A.D. 40–90).'
   discus_iconography: Lion to left attacking crocodile from behind. Filling-hole close
     to center of discus.
   type: Loeschcke IV; Bailey B group ii
@@ -4812,7 +4808,7 @@
   inv_no: 83.AQ.377.546
   dor_id: 17090
   dimensions: 'L: 10.0 cm; W: 7.1 cm; H: 2.1 cm'
-  condition_and_fabric: Intact. Clay 7.5YR6/4 light brown, glaze 10R5/8 red; burned
+  condition_and_fabric: Minor chips. Clay 7.5YR6/4 light brown, glaze 10R5/8 red; burned
     on bottom of basin and nozzle.
   description: 'Moldmade, from plaster mold. Shoulder: Loeschcke form III a var. Filling-hole
     on right side of discus. Round-tipped volute-nozzle. Base marked off by one circular
@@ -4820,21 +4816,20 @@
   discus_iconography: Winged Cupid at left; at right, animal resembling a mastiff
     or a feline(?), both individually tied by ropes to the top of a swiveling post;
     each rope is fixed to a belt around their waists; they are turning or jumping
-    around with the movement of the contraption; the animal has seized Cupid‘s left
-    leg with its paw; this decor is a playful version of a cruel game in the amphitheater.
+    around with the movement of the contraption; the animal has seized Cupid’s left
+    leg with its paw; this decor is a playful version of a cruel game in the amphitheater. See also <a href='../166-207/'>cat. 191</a>.
   type: Loeschcke IV; Bailey B group ii
   place: Unknown
   parallels: Identical lamp in Chesneau’s collection (Loeschcke type VIII), inv. no.
     6239 in Saint-Omer Museum (<a href='../../bibliography/#defives-gernez-1971'>Defives
     and Gernez 1971</a>), shows a somewhat similar swiveling post; see also <a href='../../bibliography/#palol-1950'>Palol
-    1950</a>, no. 95, fig. 111; <em>Kunst der Antike</em> 11, no. 227; <a href='../../bibliography/#rodriguez-gonzalez-1989'>Rodríguez
-    González 1989</a>, fig. 1.8 (Santomé); <a href='../../bibliography/#casas-genover-soler-fuste-2006'>Casas
+    1950</a>, no. 95, fig. 111; <a href='../../bibliography/#kunst-der-antike'><em>Kunst der Antike</em></a> 11, no. 227; <a href='../../bibliography/#rodriguez-gonzalez-1989'>Rodríguez
+    González 1989</a>, fig. 1.8 (<a href='../../map/#loc_236509'>Santomé</a>); <a href='../../bibliography/#casas-genover-soler-fuste-2006'>Casas
     Genover and Soler Fusté 2006</a>, no. G 1223, pl. 82, for another swiveling contraption
     with a man and an animal, a scene those authors consider associated with the circus.
-    See also Cassiodorus, <em>Variae</em> 5.42 (ed. Barnish, 1992), esp. p. 92, n.
-    11.
+    See also Cassiodorus <em>Variae</em> 5.42 (ed. Barnish, 1992), esp. p. 92, n. 11.
   provenance: Before 1981, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); by
-    1981 – 1983, Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty
+    1981–1983, Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty
     Museum, 1983.
   bibliography: "<a href='../../bibliography/#galerie-gunter-puhze-1981'>Galerie Günter
     Puhze 1981</a>, no. 246; <a href='../../bibliography/#galerie-gunter-puhze-1982'>Galerie
@@ -4852,7 +4847,7 @@
   description: 'Moldmade. Shoulder: Loeschcke form III a var. Filling-hole on right
     side of discus. Round-tipped volute-nozzle. Base marked off by one circular groove.
     Workshop mark in relief: similar to letter <span class=''inscription''>V</span>,
-    upside down.'
+    upside down. See also <a href='../166-207/'>cat. 190</a>.'
   stamp: stamp_191.png
   discus_iconography: Winged Cupid at left, a mastiff or a feline(?) at right; both
     individually tied by a rope to the top of a swiveling post; each rope is fixed
@@ -4885,18 +4880,18 @@
     p. 159, Q 856, p. 225, Q 1066, and p. 34, fig. 31 (with further refs.). Same theme
     treated differently: <a href='../../bibliography/#rey-coquais-1964'>Rey-Coquais
     1964</a>, no. 17, pl. 3; <a href='../../bibliography/#mlasowsky-1993'>Mlasowsky
-    1993</a>, p. 113, no. 98; <em>Kunst der Antike</em> 11, no. 232."
+    1993</a>, p. 113, no. 98; <a href='../../bibliography/#kunst-der-antike'><em>Kunst der Antike</em></a> 11, no. 232."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   bibliography: Unpublished.
-  date: Late Tiberian to Early Trajanic.
+  date: Late Tiberian to Early Trajanic
   date_numeric: 30; 110
   discussion:
 - cat_no: 193
   inv_no: 83.AQ.377.59
   dor_id: 16715
   dimensions: 'L: 12.8 cm; W: 9.4 cm; H: 2.9 cm'
-  condition_and_fabric: A few thin cracks on base; some surface overpaint on top;
+  condition_and_fabric: A few thin cracks on base; some surface chips and overpaint on top;
     base incrustations. Clay 7.5YR7/4 pink, glaze varying from 10R5/6 red (top) to
     7.5YR4/4 dark brown (bottom).
   description: 'Moldmade. Shoulder: Loeschcke form III a var. Filling-hole in lower
@@ -4906,13 +4901,7 @@
     to left holding long spear and round shield.
   type: Loeschcke IV; Bailey B group ii
   place: Southern Anatolia
-  parallels: "(Identical) Schäfer and Marczoch 1990, p. 40, no. 34; (close) <a href='../../bibliography/#zaccaria-ruggiu-1980'>Zaccaria
-    Ruggiu 1980</a>, p. 95, no. 122; <a href='../../bibliography/#djuric-1995'>Djuric
-    1995</a>, p. 42, no. C 110; <a href='../../bibliography/#bussiere-2000'>Bussière
-    2000</a>, no. 265, pl. 31, decor I.a.7.(1) (with further refs.); <a href='../../bibliography/#rodriguez-martin-2002'>Rodríguez
-    Martín 2002</a>, nos. 32–33 and 35, pl. 10 (frr.); (close) Bochum Museum, Schüller
-    Collection, cat. no. 64, S 711, and cat. no. 252, S 831 (with vertical spear)
-    (Tunisia)."
+  parallels: "(Identical) <a href='../../bibliography/#schafer-marczoch-1990'><em>Schäfer and Marczoch 1990</a>, p. 40, no. 34; (close) <a href='../../bibliography/#zaccaria-ruggiu-1980'>Zaccaria Ruggiu 1980</a>, p. 95, no. 122; <a href='../../bibliography/#djuric-1995'>Djuric 1995</a>, p. 42, no. C 110; <a href='../../bibliography/#bussiere-2000'>Bussière 2000</a>, no. 265, pl. 31, decor I.a.7.(1) (with further refs.); <a href='../../bibliography/#rodriguez-martin-2002'>Rodríguez Martín 2002</a>, nos. 32–33 and 35, pl. 10 (frr.); (close) Bochum Museum, Schüller Collection, cat. no. 64, S 711, and cat. no. 252, S 831 (with vertical spear) (Tunisia)."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   bibliography: Unpublished.
@@ -4948,7 +4937,7 @@
     brown and 7YR4.2 dark brown.
   description: 'Moldmade. Shoulder: Loeschcke form III a var. Filling-hole in lower
     discus. Round-tipped volute-nozzle. Base marked off by one circular groove.'
-  discus_iconography: Wicker basket with two fish and two fowl.
+  discus_iconography: Wicker basket with two fish; two fowl next to it.
   type: Loeschcke IV; Bailey B group ii
   place: North Africa
   parallels: "<a href='../../bibliography/#loeschcke-1919'>Loeschcke 1919</a>, nos.
@@ -4976,7 +4965,7 @@
   description: 'Moldmade. Shoulder: Loeschcke form III a var. Filling-hole in lower
     field. Round-tipped volute-nozzle. Base marked off by one circular groove.'
   discus_iconography: Bearded bare-chested elderly man standing to left in front of
-    a lit altar, playing double-flute; two small trees flank the altar, two cymbals
+    a lit altar, playing double-flute (auloi); two small trees flank the altar, two cymbals
     hang above.
   type: Loeschcke IV; Bailey B group ii
   place: North Africa
@@ -4986,17 +4975,14 @@
   bibliography: Unpublished.
   date: Tiberian to Early Trajanic
   date_numeric: 1; 100
-  discussion: For cymbals similar to the ones on this discus, see Bisi Ingrassia 1977,
-    pl. 48, 10a, who associates them with a Phrygian flute, both instruments dedicated
-    to the cult of Cybele.
+  discussion: For cymbals similar to the ones on this discus, see <a href='../../bibliography/#bisi-ingrassia-1997'>Bisi Ingrassia 1977</a>, pl. 48, 10a, who associates them with a Phrygian flute, both instruments dedicated to the cult of Cybele.
 - cat_no: 197
   inv_no: 83.AQ.377.95
   dor_id: 16751
   dimensions: 'L: 12.5 cm; W: 8.8 cm; H: 2.9 cm'
-  condition_and_fabric: Intact. Clay 10YR7/3 very pale brown, uneven remains of glaze
-    mostly 2.5YR5/6 red.
+  condition_and_fabric: Many cracks on top and bottom; repaired and overpainted. Clay 10YR7/3 very pale brown, uneven remains of glaze mostly 2.5YR5/6 red.
   description: 'Moldmade. Shoulder: Loeschcke form III a var. Filling-hole in lower
-    field. Air hole on nozzle top. Round-tipped volute-nozzle. Raised base-ring.'
+    field. Air hole on nozzle top. Round-tipped volute-nozzle. Raised base-ring marked by two grooves.'
   discus_iconography: Triton, his legs covered with scales and ending in curled fishtails,
     blowing into long conch shell in his right hand; in his left, a rudder with voluted
     top end close to his ear.
@@ -5017,7 +5003,7 @@
     <a href='../../bibliography/#limc'><em>LIMC</em></a> 8.2, p. 50, no. 33, s.v.
     Tritones; and a marble statue in the Ny Carlsberg Glyptotek, Copenhagen, <a href='../../bibliography/#limc'><em>LIMC</em></a>
     8.2, p. 51, no. 45, s.v. Tritones, all show clearly that the Triton is blowing
-    a conch shell, much longer than the one on the Getty lamp."
+    a conch shell much longer than the one on the Getty lamp."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   bibliography: Unpublished.
@@ -5032,7 +5018,7 @@
     worn glaze 2.5YR5/6 red.
   description: 'Moldmade, from plaster mold. Ring handle with two grooves. Shoulder:
     Loeschcke form III a var. Filling-hole in lower left. Unpierced air hole on nozzle
-    top. Round-tipped volute-nozzle. Base marked off by one circular groove.'
+    top. Round-tipped volute-nozzle with burn marks. Base marked off by one circular groove.'
   discus_iconography: Cock to right.
   type: Loeschcke IV; Bailey B group ii
   place: Asia Minor
@@ -5055,7 +5041,7 @@
     5YR6/4 light reddish brown, glaze 2.5YR5/6 red.
   description: 'Moldmade. Shoulder: Loeschcke form III a var. Filling-hole slightly
     above center. Round-tipped volute-nozzle. Base marked off by one circular groove.
-    Potter’s mark: letter <span class=''inscription''>C</span> in relief.'
+    Potter’s mark: letter <span class=''inscription''>C</span> in relief. Curved groundline.'
   discus_iconography: 'Two gladiators (<em>essedarii</em>): victor standing at left,
     raising oval shield above his head and holding short curved sword in his right
     hand; his vanquished adversary is falling, one knee to the ground, oval shield
@@ -5079,7 +5065,7 @@
   inv_no: 83.AQ.377.104
   dor_id: 16760
   dimensions: 'L: 11.0 cm; W: 7.6 cm; H: 2.3 cm'
-  condition_and_fabric: Cracks on shoulder. Clay near 10YR6/2 light brownish gray,
+  condition_and_fabric: Cracks on shoulder and discus. Clay near 10YR6/2 light brownish gray,
     much-burned glaze between 10YR5/1 gray and 10YR4/1 dark gray.
   description: 'Moldmade. Shoulder: Loeschcke form III b. Filling-hole in lower left.
     Round-tipped volute-nozzle. Base marked off by one circular groove. Potter’s incuse
@@ -5095,8 +5081,7 @@
     de Almeida 1953</a>, no. 64, pl. 34; <a href='../../bibliography/#skinkel-taupin-1980'>Skinkel-Taupin
     1980</a>, no. 18a–b (Loeschcke VIII, signed <span class='inscription'>CLO.HELI</span>);
     <a href='../../bibliography/#bussiere-2000'>Bussière 2000</a>, no. 329, pl. 35,
-    decor I.b.1.(22) (with further refs.); <a href='../../bibliography/#chrzanovski-et-al-2000'>Chrzanovski et al. 2000</a>, p. 22, no. 1,
-    pl. 1; <a href='../../bibliography/#mlasowsky-1993'>Mlasowsky 1993</a>, p. 133,
+    decor I.b.1.(22) (with further refs.); <a href='../../bibliography/#chrzanovski-et-al-2000'>Chrzanovski et al. 2000</a>, p. 22, no. 1, pl. 1; <a href='../../bibliography/#mlasowsky-1993'>Mlasowsky 1993</a>, p. 133,
     no. 112 (Loeschcke VIII); Bochum Museum, Schüller Collection, cat. no. 68, S 695
     (Tunisia); <a href='../208-23/'>cat. 215</a>."
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
@@ -5109,7 +5094,7 @@
   inv_no: 83.AQ.377.93
   dor_id: 16749
   dimensions: 'L: 11.1 cm; W: 7.7 cm; H: 2.5 cm'
-  condition_and_fabric: Intact. Clay 10YR6/2 light brownish gray, glaze mostly 5YR5/2
+  condition_and_fabric: Intact except for slight chip on filling-hole. Clay 10YR6/2 light brownish gray, glaze mostly 5YR5/2
     reddish gray, bottom grayish, burned.
   description: 'Moldmade. Shoulder: Loeschcke form IV a. Filling-hole at left. Round-tipped
     volute-nozzle. Base marked off by one circular groove. Potter’s incuse signature:
@@ -5131,7 +5116,7 @@
   inv_no: 83.AQ.377.57
   dor_id: 16713
   dimensions: 'L: 10.9 cm; W: 7.8 cm; H: 2.5 cm'
-  condition_and_fabric: Thin crack on upper discus. Clay 10YR7/3 very pale brown,
+  condition_and_fabric: Thin crack on upper discus, several on bottom; restored and overpainted. Clay 10YR7/3 very pale brown,
     uneven glaze mostly 7.5YR5/4 brown.
   description: 'Moldmade. Shoulder: Loeschcke form IV a. Filling-hole close to center
     of discus. Unpierced air hole on top of nozzle. Round-tipped volute-nozzle. Base
