@@ -1244,7 +1244,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Sala",
-      "custom_name": "Bab Zaer",
+      "custom_name": "Bab Zaër",
       "feature_type": "site",
       "pid": "275696",
       "tgn": "",
