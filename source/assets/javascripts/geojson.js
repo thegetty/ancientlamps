@@ -1056,7 +1056,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Antiochia/Col. Caesarea",
-      "custom_name": "Antioch",
+      "custom_name": "Antioch-on-the-Orontes",
       "feature_type": "site",
       "pid": "609307",
       "tgn": "7002354",
@@ -1244,7 +1244,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Sala",
-      "custom_name": "Bab Zaer",
+      "custom_name": "Bab Zaër",
       "feature_type": "site",
       "pid": "275696",
       "tgn": "",
