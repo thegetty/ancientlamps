@@ -12,7 +12,8 @@ class ImageViewer {
 
     // config properties - change as needed
     this.path = `https://s3-us-west-1.amazonaws.com/gettypubs-lamps/${this.cat}`
-    this.platesURL = 'https://gettypubs.github.io/ancient-lamps/plates.json'
+    // this.platesURL = 'https://gettypubs.github.io/ancient-lamps/plates.json'
+    this.platesURL = '/plates.json'
     this.el = 'js-deepzoom'
     this.maxZoom = 13
     this.minZoom = 10
