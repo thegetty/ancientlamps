@@ -6420,15 +6420,18 @@
     :height: 3912
 - :cat: 584
   :images:
-  - :face: bottom
+  - :face: front
+    :width: 5000
+    :height: 4133
+  - :face: back
     :width: 5000
     :height: 4133
   - :face: profile
     :width: 5000
-    :height: 3117
+    :height: 4133
   - :face: top
     :width: 5000
-    :height: 4133
+    :height: 3117
 - :cat: 585
   :images:
   - :face: back
@@ -6463,8 +6466,17 @@
 - :cat: 587
   :images:
   - :face: main
-    :width: 8280
-    :height: 6208
+    :width: 5000
+    :height: 4290
+  - :face: profile
+    :width: 5000
+    :height: 3859
+  - :face: top
+    :width: 3858
+    :height: 5000
+  - :face: bottom
+    :width: 3858
+    :height: 5000
 - :cat: 588
   :images:
   - :face: bottom
