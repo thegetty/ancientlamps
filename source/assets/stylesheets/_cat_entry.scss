@@ -152,6 +152,13 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
         background-size: cover;
       }
     }
+
+    // specific rules for cat numbers that are not integers
+    &[data-cat="146 bis"] {
+      background-image: url("../images/thumbs/146 bis.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
   }
 }
 
