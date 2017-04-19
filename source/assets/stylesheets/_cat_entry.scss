@@ -159,6 +159,18 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       background-position: center center;
       background-size: cover;
     }
+
+    &[data-cat="626a"] {
+      background-image: url("../images/thumbs/626a.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &[data-cat="626b"] {
+      background-image: url("../images/thumbs/626b.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
   }
 }
 
