@@ -6479,6 +6479,9 @@
     :height: 5000
 - :cat: 588
   :images:
+  - :face: main
+    :width: 4685
+    :height: 5000
   - :face: bottom
     :width: 2678
     :height: 5000
@@ -6490,6 +6493,15 @@
     :height: 5000
 - :cat: 589
   :images:
+  - :face: back
+    :width: 3928
+    :height: 5000
+  - :face: front
+    :width: 3928
+    :height: 5000
+  - :face: main
+    :width: 3928
+    :height: 5000
   - :face: profile
     :width: 3928
     :height: 5000
@@ -6498,7 +6510,16 @@
     :height: 5000
 - :cat: 590
   :images:
+  - :face: back
+    :width: 3047
+    :height: 5000
+  - :face: main
+    :width: 3047
+    :height: 5000
   - :face: profile
+    :width: 3047
+    :height: 5000
+  - :face: profile__alt
     :width: 3047
     :height: 5000
   - :face: top
@@ -6520,6 +6541,15 @@
     :height: 6940
 - :cat: 592
   :images:
+  - :face: back
+    :width: 5000
+    :height: 2945
+  - :face: front
+    :width: 5000
+    :height: 2945
+  - :face: main
+    :width: 5000
+    :height: 2945
   - :face: profile
     :width: 5000
     :height: 2945
@@ -6528,6 +6558,18 @@
     :height: 2945
 - :cat: 593
   :images:
+  - :face: back
+    :width: 4585
+    :height: 5000
+  - :face: front
+    :width: 4585
+    :height: 5000
+  - :face: main
+    :width: 4585
+    :height: 5000
+  - :face: front__alt
+    :width: 4585
+    :height: 5000
   - :face: bottom
     :width: 4585
     :height: 5000
@@ -6738,7 +6780,7 @@
   - :face: profile
     :width: 3631
     :height: 5000
-  - :face: top
+  - :face: front
     :width: 3875
     :height: 5000
 - :cat: 612
@@ -6905,6 +6947,37 @@
   - :face: top
     :width: 4272
     :height: 5000
+- :cat: 626a
+  :images:
+  - :face: top
+    :width: 3057
+    :height: 3998
+  - :face: top__whole
+    :width: 3350
+    :height: 4117
+  - :face: main
+    :width: 4250
+    :height: 3277
+  - :face: bottom
+    :width: 3360
+    :height: 4130
+  - :face: left
+    :width: 4470
+    :height: 2794
+  - :face: right
+    :width: 4470
+    :height: 2794
+- :cat: 626b
+  :images:
+  - :face: main
+    :width: 3650
+    :height: 3797
+  - :face: back
+    :width: 3650
+    :height: 3797
+  - :face: top
+    :width: 3650
+    :height: 3797
 - :cat: 627
   :images:
   - :face: bottom
