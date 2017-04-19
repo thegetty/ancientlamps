@@ -45,7 +45,14 @@ class ImageViewer {
         })
 
         L.control.layers(layers).addTo(this.map).setPosition('bottomleft')
-        this.map.addLayer(layers['top view'])
+
+        if (layers['main view']) {
+          this.map.addLayer(layers['main view'])
+        } else if (layers['front view']) {
+          this.map.addLayer(layers['front view'])
+        } else {
+          this.map.addLayer(layers['top view'])
+        }
       }
     })
   }
