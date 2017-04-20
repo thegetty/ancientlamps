@@ -8372,9 +8372,6 @@
   - :face: back
     :width: 5000
     :height: 4688
-  - :face: main
-    :width: 5000
-    :height: 4688
   - :face: profile
     :width: 5000
     :height: 4688
@@ -8387,9 +8384,6 @@
     :width: 5000
     :height: 4425
   - :face: back
-    :width: 5000
-    :height: 4425
-  - :face: main
     :width: 5000
     :height: 4425
   - :face: profile
@@ -8406,9 +8400,6 @@
   - :face: back
     :width: 5000
     :height: 4133
-  - :face: main
-    :width: 5000
-    :height: 4133
   - :face: profile
     :width: 5000
     :height: 4133
@@ -8420,7 +8411,7 @@
   - :face: back
     :width: 6564
     :height: 4312
-  - :face: main
+  - :face: front
     :width: 6564
     :height: 4312
   - :face: profile
