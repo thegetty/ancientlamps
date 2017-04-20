@@ -257,7 +257,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Île Pomègues",
-      "custom_name": "La Luque shipwreck",
+      "custom_name": "La Luque",
       "feature_type": "site",
       "pid": "",
       "tgn": "7618164",
