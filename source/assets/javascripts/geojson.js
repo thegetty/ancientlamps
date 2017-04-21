@@ -2501,7 +2501,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Emerita Augusta",
-      "custom_name": "Merida",
+      "custom_name": "Mérida",
       "feature_type": "site",
       "pid": "256155",
       "tgn": "7007664",
