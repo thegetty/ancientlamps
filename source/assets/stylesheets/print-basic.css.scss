@@ -17,8 +17,8 @@ $bleed: 0.125in;
 $bleed-height: 11.25in;
 $bleed-width: 8.75in;
 
-$bottom-margin: 1in;
-$top-margin: 0.875in;
+$bottom-margin: 0.875in;
+$top-margin: 0.75in;
 $inner-margin: 1in;
 $outer-margin: 0.75in;
 
@@ -28,7 +28,7 @@ $inner-height: $page-height - ($top-margin + $bottom-margin);
 $print-base-font-size: 8pt;
 $print-base-spacing: 0.125in;
 $print-base-line-height: 1.25;
-$print-paragraph-indent: 0.25in;
+$print-paragraph-indent: 0.1875in;
 
 $print-background-color: #fff;
 $print-text-color: #000;
@@ -159,18 +159,25 @@ $modular-scale-ratio: $minor-second;
 }
 
 // General content styles
-
 .page,
 .cat-entry,
 .cat-intro {
   @extend %print-page-content;
 
   &__header {
-    margin-bottom: $print-base-spacing * 4;
+    margin-bottom: $print-base-spacing * 3;
     * { column-span: all; }
-    &__title {font-size: 18pt;}
+    &__title {font-size: 14pt;}
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $print-base-spacing;
+  }
+
+  ul, ol {
+    margin-left: $print-base-spacing;
+    padding-left: $print-base-spacing;
+  }
 }
 
 .cat-intro,
@@ -178,18 +185,19 @@ $modular-scale-ratio: $minor-second;
   h1 { prince-bookmark-level: 2; }
 
   &__breadcrumbs-bar {
-    color: $medium-gray;
-    font-size: $print-base-font-size;
-    margin-bottom: $print-base-spacing;
+    display: none;
+    // color: $medium-gray;
+    // font-size: $print-base-font-size;
+    // margin-bottom: $print-base-spacing;
 
-    * { column-span: all; }
+    // * { column-span: all; }
   }
 }
 
 .cat-entry {
   &__grid { display: none; }
   &__image { display: none; }
-  &__title { font-size: 18pt; }
+  &__title { font-size: 16pt; }
   &__details__stamp {
     display: block;
     height: auto;
@@ -214,19 +222,42 @@ $modular-scale-ratio: $minor-second;
       }
 
       .section-title {
+        font-weight: bold;
+
         // color: $medium-gray;
-        display: block;
-        font-family: "Freight Text Pro SC";
-        font-size: 9pt;
-        letter-spacing: 0.5pt;
-        text-transform: lowercase;
+        // display: block;
+        // font-family: "Freight Text Pro SC";
+        // font-size: 9pt;
+        // letter-spacing: 0.5pt;
+        // text-transform: lowercase;
       }
+
     }
 
     &__image {
       margin-top: $print-base-spacing;
       position: static;
       width: 100%;
+    }
+
+    table tr:last-child td {
+      border-bottom: none;
+    }
+  }
+}
+
+.cat-intro {
+  &__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5.5in;
+    width: 100%;
+
+    @for $i from 1 through 700 {
+      &[data-cat="#{$i}"] {
+        background-image: url("../images/main/#{$i}.jpg");
+      }
     }
   }
 }
