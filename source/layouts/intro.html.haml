@@ -9,9 +9,16 @@
     .cat-intro__breadcrumbs-bar
       .cat-intro__breadcrumbs-bar__inner
         %h4.cat-intro__breadcrumbs-bar__text= typology
-    .cat-intro__header
-      .cat-intro__header__inner
-        %h1.cat-intro__title= title
+    - if environment? :pdf
+      %header.cat-intro__header#page-title
+        .cat-intro__image{ :data => { :cat => current_page.data.cover || first }}
+        .cat-intro__header__titlebar
+          .cat-intro__header__titlebar__inner
+            %h1.cat-intro__title= "#{title}"
+    - else
+      .cat-intro__header
+        .cat-intro__header__inner
+          %h1.cat-intro__title= title
     %article.cat-intro__content
       .cat-intro__content__inner
         = yield
