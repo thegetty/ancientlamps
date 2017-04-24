@@ -257,7 +257,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Île Pomègues",
-      "custom_name": "La Luque shipwreck",
+      "custom_name": "La Luque",
       "feature_type": "site",
       "pid": "",
       "tgn": "7618164",
@@ -1058,7 +1058,7 @@ const geojsonData = {
       "basename": "Antiochia/Col. Caesarea",
       "custom_name": "Antioch-on-the-Orontes",
       "feature_type": "site",
-      "pid": "609307",
+      "pid": "658381",
       "tgn": "7002354",
       "catalogue": "",
       "description": ""
@@ -2501,7 +2501,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Emerita Augusta",
-      "custom_name": "Merida",
+      "custom_name": "Mérida",
       "feature_type": "site",
       "pid": "256155",
       "tgn": "7007664",
