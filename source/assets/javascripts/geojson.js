@@ -2466,7 +2466,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Mauretania Tingitana",
-      "custom_name": "Maurentania Tingitana",
+      "custom_name": "Mauretania Tingitana",
       "feature_type": "region",
       "pid": "981533",
       "tgn": "7030336",
