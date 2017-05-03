@@ -3,10 +3,13 @@
 <script type="text/x-template" id="cat-entry-template">
   <div class="cat-entry__details">
     <!-- Replace this with image component -->
-    <div class="cat-entry__details__image" id="js-deepzoom">
+    <div class="cat-entry__details__image"
+         :class="{ 'is-visible': visible }"
+         id="js-deepzoom">
     </div>
 
-    <div class="cat-entry__details__data">
+    <div class="cat-entry__details__data"
+         :class="{ 'is-visible': visible }" >
       <div v-if="entry" class="cat-entry__details__text">
         <div class="section cat-number">
           <h2 class="cat-number" id="entry-cat-number">{{ entry.cat_no }}</h2>
@@ -65,7 +68,8 @@
         </div>
       </div>
     </div>
-    <div class="cat-entry__details__close">
+    <div class="cat-entry__details__close"
+         :class="{'is-visible': visible }" >
       <i class="close-button"></i>
     </div>
   </div>

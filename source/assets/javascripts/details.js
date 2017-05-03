@@ -7,9 +7,10 @@ let Details = Vue.extend({
   data: function() {
     return {
       cat: '',
-      // dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
       dataURL: '/catalogue.json',
-      entry: 'Loading'
+      // dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
+      entry: 'Loading',
+      visible: false
     }
   },
   watch: {

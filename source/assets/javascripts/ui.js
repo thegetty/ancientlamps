@@ -132,6 +132,7 @@ class UI {
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if (this.deepZoomVisible) { this.hideDetails() }
+        if (this.catalogueInstance && this.catalogueInstance.visible) { this.hideDetails() }
         break
       case 37: // Left Arrow
         if (this.menuVisible) { this.menuToggle() }
@@ -180,44 +181,16 @@ class UI {
     this.menuVisible = !(this.menuVisible)
   }
 
-  // DetailsToggle
   showDetails(e) {
     let cat = this.catNumCheck(e.target.dataset.cat)
     this.catalogueInstance.cat = cat
-    // let detailImage = document.querySelector('.cat-entry__details__image')
-    // let detailData = document.querySelector('.cat-entry__details__data')
-    // let detailCloseButton = document.querySelector('.cat-entry__details__close')
-
-    // this.zoomInstance = new ImageViewer(cat)
-    // this.zoomInstance.fetchData()
-
-    // toggle classes for display
-    // detailImage.classList.add('is-visible')
-    // detailData.classList.add('is-visible')
-    // detailCloseButton.classList.add('is-visible')
-    // document.querySelector('body').classList.add('noscroll')
-    // this.deepZoomVisible = true
-    // this.removeHash()
+    this.catalogueInstance.visible = true
+    document.querySelector('body').classList.add('noscroll')
   }
 
   hideDetails() {
-    let detailImage = document.querySelector('.cat-entry__details__image')
-    let detailData = document.querySelector('.cat-entry__details__data')
-    let detailCloseButton = document.querySelector('.cat-entry__details__close')
-    let $container = $('#entry-template-container')
-
-    // toggle classes for display
-    detailImage.classList.remove('is-visible')
-    detailData.classList.remove('is-visible')
-    detailCloseButton.classList.remove('is-visible')
+    this.catalogueInstance.visible = false
     document.querySelector('body').classList.remove('noscroll')
-    this.deepZoomVisible = false
-
-    // Remove the old template
-    $container.empty()
-
-    // Remove the old map instance
-    this.zoomInstance.removeMap()
   }
 
   showSearch() {
