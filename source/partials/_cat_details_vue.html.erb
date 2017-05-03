@@ -22,47 +22,51 @@
           <h2>Dimensions</h2>
           <p id="entry-dimensions">{{ entry.dimensions }}</p>
         </div>
-        <div class="section condition">
+        <div class="section condition" v-if="entry.condition_and_fabric">
           <h2>Condition and Fabric</h2>
           <p id="entry-condition">{{ entry.condition_and_fabric }}</p>
         </div>
-        <div class="section description">
+        <div class="section condition" v-else-if="entry.condition">
+          <h2>Condition</h2>
+          <p id="entry-condition">{{ entry.condition }}</p>
+        </div>
+        <div class="section description" v-if="entry.description">
           <h2>Description</h2>
           <p id="entry-description">{{ entry.description }}</p>
         </div>
-        <div class="section stamp ">
+        <div class="section stamp" v-if="entry.stamp">
           <h2>Stamp</h2>
           <img id="entry-stamp" :src="stamp"/>
         </div>
-        <div class="section iconography ">
+        <div class="section iconography" v-if="entry.discus_iconography">
           <h2>Discus Iconography</h2>
           <p id="entry-iconography">{{ entry.discus_iconography }}</p>
         </div>
-        <div class="section type">
+        <div class="section type" v-if="entry.type">
           <h2>Type</h2>
           <p id="entry-type" v-html="entry.type"></p>
         </div>
-        <div class="section date">
+        <div class="section date" v-if="entry.date">
           <h2>Date</h2>
           <p id="entry-date">{{ entry.date }}</p>
         </div>
-        <div class="section place">
+        <div class="section place" v-if="entry.place">
           <h2>Place of Manufacture or Origin</h2>
           <p id="entry-place">{{ entry.place }}</p>
         </div>
-        <div class="section parallels">
+        <div class="section parallels" v-if="entry.parallels">
           <h2>Parallels</h2>
           <p id="entry-parallels" v-html="entry.parallels"></p>
         </div>
-        <div class="section provenance ">
+        <div class="section provenance" v-if="entry.provenance">
           <h2>Provenance</h2>
           <p id="entry-provenance" v-html="entry.provenance"></p>
         </div>
-        <div class="section bibliography ">
+        <div class="section bibliography" v-if="entry.bibliography">
           <h2>Bibliography</h2>
           <p id="entry-bibliography" v-html="entry.bibliography"></p>
         </div>
-        <div class="section discussion ">
+        <div class="section discussion" v-if="entry.discussion">
           <h2>Discussion</h2>
           <p id="entry-discussion" v-html="entry.discussion"></p>
         </div>
