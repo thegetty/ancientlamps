@@ -2,11 +2,11 @@
 </div>
 <script type="text/x-template" id="cat-entry-template">
   <div class="cat-entry__details">
-    <!-- Replace this with image component -->
-    <div class="cat-entry__details__image"
-         :class="{ 'is-visible': visible }"
-         id="js-deepzoom">
-    </div>
+    <deep-zoom
+        :cat="cat"
+        :active="visible"
+        :class="{ 'is-visible': visible }" >
+    </deep-zoom>
 
     <div class="cat-entry__details__data"
          :class="{ 'is-visible': visible }" >
@@ -32,7 +32,7 @@
         </div>
         <div class="section description" v-if="entry.description">
           <h2>Description</h2>
-          <p id="entry-description">{{ entry.description }}</p>
+          <p id="entry-description" v-html="entry.description"></p>
         </div>
         <div class="section stamp" v-if="entry.stamp">
           <h2>Stamp</h2>
@@ -40,7 +40,7 @@
         </div>
         <div class="section iconography" v-if="entry.discus_iconography">
           <h2>Discus Iconography</h2>
-          <p id="entry-iconography">{{ entry.discus_iconography }}</p>
+          <p id="entry-iconography" v-html="entry.discus_iconography"></p>
         </div>
         <div class="section type" v-if="entry.type">
           <h2>Type</h2>
