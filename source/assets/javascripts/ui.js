@@ -3,17 +3,22 @@ import debounce from 'lodash.debounce'
 import moment from 'moment'
 import L from 'leaflet'
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
-import Map from './map.js'
+// import Map from './map.js'
 import ImageViewer from './imageviewer.js'
 import Search from './search.js'
+import Details from './details.js'
 
 class UI {
   constructor() {
+    // Properties
     this.menuVisible = false
     this.searchVisible = false
     this.deepZoomVisible = false
     this.zoomInstance = {}
     this.searchInstance = null
+    this.catalogueInstance = null
+
+    // Init script
     this.setup()
   }
 
@@ -37,7 +42,8 @@ class UI {
     let $curtain = $('.sliding-panel-fade-screen')
     let $thumbnails = $('.cat-entry__grid__item')
     let $detailCloseButton = $('.cat-entry__details__close')
-    let $mapEl = $('#map')
+    let $catalogueEntry = $('#js-cat-entry')
+    // let $mapEl = $('#map')
 
     // Run once on startup
     this.citationDate()
@@ -72,9 +78,23 @@ class UI {
     })
 
     // Page-specific elements
-    if ($detailCloseButton.length) { $detailCloseButton.click(() => { this.hideDetails() }) }
-    if ($thumbnails.length) { $thumbnails.click(e => this.showDetails(e)) }
-    if ($mapEl.length) { new Map() }
+    if ($detailCloseButton.length) {
+      $detailCloseButton.click(() => { this.hideDetails() })
+    }
+    if ($thumbnails.length) {
+      $thumbnails.click(e => this.showDetails(e))
+    }
+
+    // if ($mapEl.length) { new Map() }
+
+    // If page is a catalogue entry, mount the Vue component
+    if ($catalogueEntry.length > 0) {
+      let entries = $catalogueEntry.data('entries')
+      this.catalogueInstance = new Details({
+        el: '#cat-details',
+        data: { cat: entries[0] }
+      })
+    }
   }
 
   citationDate() {
@@ -99,10 +119,6 @@ class UI {
 
       if ($target.length) {
         $('html, body').animate({ scrollTop: $target.offset().top - fromTop })
-        // if (window.history && 'pushState' in window.history) {
-          // window.history.pushState({}, document.title, window.location.pathname + href)
-          // return false
-        // }
       }
     }
   }
@@ -165,85 +181,23 @@ class UI {
   }
 
   // DetailsToggle
-  // -----------------------------------------------------------------------------
-  // Adds/removes classes for the display of the detail view of selected image.
-  //
   showDetails(e) {
     let cat = this.catNumCheck(e.target.dataset.cat)
-    // let dataURL = 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
-    let dataURL = '/catalogue.json'
-    let detailImage = document.querySelector('.cat-entry__details__image')
-    let detailData = document.querySelector('.cat-entry__details__data')
-    let detailCloseButton = document.querySelector('.cat-entry__details__close')
+    this.catalogueInstance.cat = cat
+    // let detailImage = document.querySelector('.cat-entry__details__image')
+    // let detailData = document.querySelector('.cat-entry__details__data')
+    // let detailCloseButton = document.querySelector('.cat-entry__details__close')
 
-    this.zoomInstance = new ImageViewer(cat)
-    this.zoomInstance.fetchData()
+    // this.zoomInstance = new ImageViewer(cat)
+    // this.zoomInstance.fetchData()
 
     // toggle classes for display
-    detailImage.classList.add('is-visible')
-    detailData.classList.add('is-visible')
-    detailCloseButton.classList.add('is-visible')
-    document.querySelector('body').classList.add('noscroll')
-    this.deepZoomVisible = true
-    this.removeHash()
-
-    // TODO: move this code into an ObjectDetails class
-    // Fetch tombstone data and template
-    let template = document.getElementById('entry-template')
-    let container = document.getElementById('entry-template-container')
-    let clone = document.importNode(template.content, true)
-
-    $.get(dataURL).done((data) => {
-      let query = {'cat_no': cat}
-      let catData = _.find(data, query)
-      let collectionLink = `http://www.getty.edu/art/collection/objects/${catData.dor_id}`
-      console.log(catData)
-
-      // populate template
-      clone.getElementById('entry-cat-number').innerHTML = catData.cat_no
-      clone.getElementById('entry-inv-number').innerHTML = catData.inv_no
-      clone.getElementById('entry-inv-number').href = collectionLink
-      clone.getElementById('entry-dimensions').innerHTML = catData.dimensions
-      clone.getElementById('entry-date').innerHTML = catData.date
-      clone.getElementById('entry-condition').innerHTML = catData.condition_and_fabric
-      clone.getElementById('entry-type').innerHTML = catData.type
-      clone.getElementById('entry-place').innerHTML = catData.place
-      clone.getElementById('entry-description').innerHTML = catData.description
-      clone.getElementById('entry-parallels').innerHTML = catData.parallels
-
-      // Some sections do not appear for all entries
-      if (catData.provenance) {
-        clone.querySelector('.section.provenance').classList.remove('is-hidden')
-        clone.getElementById('entry-provenance').innerHTML = catData.provenance
-      }
-
-      if (catData.discus_iconography) {
-        clone.querySelector('.section.iconography').classList.remove('is-hidden')
-        clone.getElementById('entry-iconography').innerHTML = catData.discus_iconography
-      }
-
-      if (catData.discussion) {
-        clone.querySelector('.section.discussion').classList.remove('is-hidden')
-        clone.getElementById('entry-discussion').innerHTML = catData.discussion
-      }
-
-      if (catData.bibliography) {
-        clone.querySelector('.section.bibliography').classList.remove('is-hidden')
-        clone.getElementById('entry-bibliography').innerHTML = catData.bibliography
-      }
-
-      if (catData.stamp) {
-        clone.querySelector('.section.stamp').classList.remove('is-hidden')
-        clone.getElementById('entry-stamp').src = `../../assets/images/stamps/${catData.stamp}`
-      }
-
-      if (catData.condition) {
-        clone.querySelector('.section.condition h2').textContent = 'Condition'
-        clone.getElementById('entry-condition').innerHTML = catData.condition
-      }
-      // Append the new template
-      container.appendChild(clone)
-    })
+    // detailImage.classList.add('is-visible')
+    // detailData.classList.add('is-visible')
+    // detailCloseButton.classList.add('is-visible')
+    // document.querySelector('body').classList.add('noscroll')
+    // this.deepZoomVisible = true
+    // this.removeHash()
   }
 
   hideDetails() {

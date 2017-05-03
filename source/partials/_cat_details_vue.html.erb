@@ -1,0 +1,72 @@
+<div id="cat-details" data-cat="<%= current_page.data.cat %>">
+</div>
+<script type="text/x-template" id="cat-entry-template">
+  <div class="cat-entry__details">
+    <!-- Replace this with image component -->
+    <div class="cat-entry__details__image" id="js-deepzoom">
+    </div>
+
+    <div class="cat-entry__details__data">
+      <div v-if="entry" class="cat-entry__details__text">
+        <div class="section cat-number">
+          <h2 class="cat-number" id="entry-cat-number">{{ entry.cat_no }}</h2>
+        </div>
+        <div class="section inv-number">
+          <h2>Inventory Number</h2>
+          <a id="entry-inv-number" :href="collectionLink">{{ entry.inv_no }}</a>
+        </div>
+        <div class="section dimensions">
+          <h2>Dimensions</h2>
+          <p id="entry-dimensions">{{ entry.dimensions }}</p>
+        </div>
+        <div class="section condition">
+          <h2>Condition and Fabric</h2>
+          <p id="entry-condition">{{ entry.condition_and_fabric }}</p>
+        </div>
+        <div class="section description">
+          <h2>Description</h2>
+          <p id="entry-description">{{ entry.description }}</p>
+        </div>
+        <div class="section stamp is-hidden">
+          <h2>Stamp</h2>
+          <img id="entry-stamp" :src="stamp"/>
+        </div>
+        <div class="section iconography is-hidden">
+          <h2>Discus Iconography</h2>
+          <p id="entry-iconography">{{ entry.discus_iconography }}</p>
+        </div>
+        <div class="section type">
+          <h2>Type</h2>
+          <p id="entry-type">{{ entry.type }}</p>
+        </div>
+        <div class="section date">
+          <h2>Date</h2>
+          <p id="entry-date">{{ entry.date }}</p>
+        </div>
+        <div class="section place">
+          <h2>Place of Manufacture or Origin</h2>
+          <p id="entry-place">{{ entry.place }}</p>
+        </div>
+        <div class="section parallels">
+          <h2>Parallels</h2>
+          <p id="entry-parallels">{{ entry.parallels }}</p>
+        </div>
+        <div class="section provenance is-hidden">
+          <h2>Provenance</h2>
+          <p id="entry-provenance">{{ entry.provenance }}</p>
+        </div>
+        <div class="section bibliography is-hidden">
+          <h2>Bibliography</h2>
+          <p id="entry-bibliography">{{ entry.bibliography }}</p>
+        </div>
+        <div class="section discussion is-hidden">
+          <h2>Discussion</h2>
+          <p id="entry-discussion">{{ entry.discussion }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="cat-entry__details__close">
+      <i class="close-button"></i>
+    </div>
+  </div>
+</script>
