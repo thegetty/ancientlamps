@@ -4,7 +4,7 @@ import _ from 'lodash/core'
 let Details = Vue.extend({
   name: 'Details',
   template: '#cat-entry-template',
-  data: function() {
+  data () {
     return {
       cat: '',
       dataURL: '/catalogue.json',
@@ -15,16 +15,16 @@ let Details = Vue.extend({
   },
   watch: {
     // Watch the cat number for changes
-    cat: function(newCat) {
+    cat (newCat) {
       this.entry = 'Loading'
       this.getData()
     }
   },
   computed: {
-    collectionLink: function() {
+    collectionLink () {
       return `http://www.getty.edu/art/collection/objects/${this.entry.dor_id}`
     },
-    stamp: function() {
+    stamp () {
       if (this.entry.stamp) {
         return `../../assets/images/stamps/${this.entry.stamp}`
       } else {
@@ -32,15 +32,21 @@ let Details = Vue.extend({
       }
     }
   },
-  mounted: function() {
+  mounted () {
     this.getData()
     console.log('Mounted!')
   },
   methods: {
-    getData: function() {
+    getData () {
       $.get(this.dataURL).done((data) => {
         this.entry = _.find(data, { 'cat_no': this.cat })
       })
+    },
+    hide () {
+      this.visible = false
+    },
+    show () {
+      this.visible = true
     }
   }
 })

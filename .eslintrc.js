@@ -7,12 +7,5 @@ module.exports = {
     ],
   "env": {
     "jquery": true
-  },
-  "rules": {
-    "space-before-function-paren": ["error", {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "ignore"
-    }]
   }
 };

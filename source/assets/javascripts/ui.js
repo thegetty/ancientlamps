@@ -9,7 +9,7 @@ import Search from './search.js'
 import Details from './details.js'
 
 class UI {
-  constructor() {
+  constructor () {
     // Properties
     this.menuVisible = false
     this.searchVisible = false
@@ -22,7 +22,7 @@ class UI {
     this.setup()
   }
 
-  catNumCheck(cat) {
+  catNumCheck (cat) {
     if (isNaN(Number(cat))) {
       return cat
     } else {
@@ -30,7 +30,7 @@ class UI {
     }
   }
 
-  setup() {
+  setup () {
     // Objects of interest
     let $menuButton = $('#navbar-menu')
     let $menuCloseButton = $('#nav-menu-close')
@@ -97,20 +97,20 @@ class UI {
     }
   }
 
-  citationDate() {
+  citationDate () {
     let today = moment().format('D MMM. YYYY')
     let $currentDate = $('.cite-current-date')
     $currentDate.empty()
     $currentDate.text(today)
   }
 
-  removeHash() {
+  removeHash () {
     if (window.location.hash.length > 0) {
       window.history.pushState('', document.title, window.location.pathname + window.location.search)
     }
   }
 
-  anchorScroll(href) {
+  anchorScroll (href) {
     href = typeof (href) === 'string' ? href : $(this).attr('href')
     var fromTop = 60
 
@@ -123,7 +123,7 @@ class UI {
     }
   }
 
-  keyboardControls(e) {
+  keyboardControls (e) {
     let $prev = $('a#prev-link')
     let $next = $('a#next-link')
 
@@ -154,7 +154,7 @@ class UI {
   }
 
   // TODO: Add CSS transitions to these elements to replace what JQ was doing
-  expandToggle(e) {
+  expandToggle (e) {
     let el = e.currentTarget
     let targetSection = el.parentNode.querySelector('.expander-content')
     let hideClass = 'expander--hidden'
@@ -166,7 +166,7 @@ class UI {
     }
   }
 
-  menuToggle() {
+  menuToggle () {
     let sidebar = document.querySelector('.nav-sidebar')
     let curtain = document.querySelector('.sliding-panel-fade-screen')
 
@@ -181,19 +181,19 @@ class UI {
     this.menuVisible = !(this.menuVisible)
   }
 
-  showDetails(e) {
+  showDetails (e) {
     let cat = this.catNumCheck(e.target.dataset.cat)
     this.catalogueInstance.cat = cat
-    this.catalogueInstance.visible = true
+    this.catalogueInstance.show()
     document.querySelector('body').classList.add('noscroll')
   }
 
-  hideDetails() {
-    this.catalogueInstance.visible = false
+  hideDetails () {
+    this.catalogueInstance.hide()
     document.querySelector('body').classList.remove('noscroll')
   }
 
-  showSearch() {
+  showSearch () {
     if (!this.searchVisible) {
       let navbar = document.querySelector('.navbar')
       let searchResults = document.querySelector('.search-results')
@@ -203,7 +203,7 @@ class UI {
     }
   }
 
-  hideSearch() {
+  hideSearch () {
     if (this.searchVisible) {
       let navbar = document.querySelector('.navbar')
       let searchResults = document.querySelector('.search-results')
@@ -213,7 +213,7 @@ class UI {
     }
   }
 
-  searchQuery() {
+  searchQuery () {
     if (!this.searchInstance) { this.searchInstance = new Search() }
     let searchInput = document.querySelector('.search-field')
     let query = searchInput.value
