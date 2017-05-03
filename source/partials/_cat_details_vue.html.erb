@@ -24,11 +24,11 @@
         </div>
         <div class="section condition" v-if="entry.condition_and_fabric">
           <h2>Condition and Fabric</h2>
-          <p id="entry-condition">{{ entry.condition_and_fabric }}</p>
+          <p id="entry-condition" v-html="entry.condition_and_fabric"></p>
         </div>
         <div class="section condition" v-else-if="entry.condition">
           <h2>Condition</h2>
-          <p id="entry-condition">{{ entry.condition }}</p>
+          <p id="entry-condition" v-html="entry.condition"></p>
         </div>
         <div class="section description" v-if="entry.description">
           <h2>Description</h2>
@@ -52,7 +52,7 @@
         </div>
         <div class="section place" v-if="entry.place">
           <h2>Place of Manufacture or Origin</h2>
-          <p id="entry-place">{{ entry.place }}</p>
+          <p id="entry-place" v-html="entry.place"></p>
         </div>
         <div class="section parallels" v-if="entry.parallels">
           <h2>Parallels</h2>
