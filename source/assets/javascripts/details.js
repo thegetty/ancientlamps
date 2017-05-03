@@ -44,6 +44,7 @@ let Details = Vue.extend({
     },
     hide () {
       this.visible = false
+      document.querySelector('body').classList.remove('noscroll')
     },
     show () {
       this.visible = true

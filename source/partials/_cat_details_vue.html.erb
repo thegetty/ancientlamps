@@ -30,17 +30,17 @@
           <h2>Description</h2>
           <p id="entry-description">{{ entry.description }}</p>
         </div>
-        <div class="section stamp is-hidden">
+        <div class="section stamp ">
           <h2>Stamp</h2>
           <img id="entry-stamp" :src="stamp"/>
         </div>
-        <div class="section iconography is-hidden">
+        <div class="section iconography ">
           <h2>Discus Iconography</h2>
           <p id="entry-iconography">{{ entry.discus_iconography }}</p>
         </div>
         <div class="section type">
           <h2>Type</h2>
-          <p id="entry-type">{{ entry.type }}</p>
+          <p id="entry-type" v-html="entry.type"></p>
         </div>
         <div class="section date">
           <h2>Date</h2>
@@ -52,19 +52,19 @@
         </div>
         <div class="section parallels">
           <h2>Parallels</h2>
-          <p id="entry-parallels">{{ entry.parallels }}</p>
+          <p id="entry-parallels" v-html="entry.parallels"></p>
         </div>
-        <div class="section provenance is-hidden">
+        <div class="section provenance ">
           <h2>Provenance</h2>
-          <p id="entry-provenance">{{ entry.provenance }}</p>
+          <p id="entry-provenance" v-html="entry.provenance"></p>
         </div>
-        <div class="section bibliography is-hidden">
+        <div class="section bibliography ">
           <h2>Bibliography</h2>
-          <p id="entry-bibliography">{{ entry.bibliography }}</p>
+          <p id="entry-bibliography" v-html="entry.bibliography"></p>
         </div>
-        <div class="section discussion is-hidden">
+        <div class="section discussion ">
           <h2>Discussion</h2>
-          <p id="entry-discussion">{{ entry.discussion }}</p>
+          <p id="entry-discussion" v-html="entry.discussion"></p>
         </div>
       </div>
     </div>
