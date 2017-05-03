@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import _ from 'lodash/core'
+import ImageViewer from './imageviewer.js'
 
 let Details = Vue.extend({
   name: 'Details',
   template: '#cat-entry-template',
+  components: {
+    'deep-zoom': ImageViewer
+  },
   data () {
     return {
       cat: '',
@@ -37,9 +41,16 @@ let Details = Vue.extend({
     console.log('Mounted!')
   },
   methods: {
+    catNumCheck (cat) {
+      if (isNaN(Number(cat))) {
+        return cat
+      } else {
+        return Number(cat)
+      }
+    },
     getData () {
       $.get(this.dataURL).done((data) => {
-        this.entry = _.find(data, { 'cat_no': this.cat })
+        this.entry = _.find(data, { 'cat_no': this.catNumCheck(this.cat) })
       })
     },
     hide () {
