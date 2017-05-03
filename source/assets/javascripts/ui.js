@@ -1,10 +1,6 @@
-import _ from 'lodash/core'
 import debounce from 'lodash.debounce'
 import moment from 'moment'
-import L from 'leaflet'
-L.tileLayer.deepzoom = require('./leaflet-deepzoom')
-// import Map from './map.js'
-import ImageViewer from './imageviewer.js'
+import Map from './map.js'
 import Search from './search.js'
 import Details from './details.js'
 
@@ -13,10 +9,9 @@ class UI {
     // Properties
     this.menuVisible = false
     this.searchVisible = false
-    this.deepZoomVisible = false
-    this.zoomInstance = {}
     this.searchInstance = null
     this.catalogueInstance = null
+    this.mapInstance = null
 
     // Init script
     this.setup()
@@ -31,7 +26,7 @@ class UI {
   }
 
   setup () {
-    // Objects of interest
+    // DOM Handles
     let $menuButton = $('#navbar-menu')
     let $menuCloseButton = $('#nav-menu-close')
     let $searchButton = $('#navbar-search')
@@ -41,59 +36,33 @@ class UI {
     let $triggers = $('.expander-trigger')
     let $curtain = $('.sliding-panel-fade-screen')
     let $thumbnails = $('.cat-entry__grid__item')
-    let $detailCloseButton = $('.cat-entry__details__close')
     let $catalogueEntry = $('#js-cat-entry')
-    // let $mapEl = $('#map')
 
-    // Run once on startup
+    // DOM Manipulation (run once on page load)
     this.citationDate()
     this.anchorScroll(window.location.hash)
     $expanderContent.addClass('expander--hidden')
+    this.searchInstance = new Search({ el: '#search-results-template' })
 
-    // Event Listeners: All pages
+    // Add event handlers common to all pages
     $curtain.click(() => { this.menuToggle() })
     $menuButton.click(() => { this.menuToggle() })
     $menuCloseButton.click(() => { this.menuToggle() })
     $searchButton.click(() => { this.showSearch() })
     $searchCloseButton.click(() => { this.hideSearch() })
     $triggers.click(e => this.expandToggle(e))
+    window.onkeydown = (e) => { this.keyboardControls(e) }
 
-    window.onkeydown = (e) => {
-      this.keyboardControls(e)
-    }
-
-    window.onhashchange = () => {
-      if (this.deepZoomVisible) {
-        this.hideDetails()
-        window.scrollBy(0, -60)
-      }
-    }
-
-    // This is crazy but trying a more conventional setup fails with debounce
-    let debouncedSearch = debounce(this.searchQuery, 50)
+    let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
+    $searchInput.keydown(() => { boundDebounce() })
 
-    $searchInput.keydown(() => {
-      boundDebounce()
-    })
-
-    // Page-specific elements
-    if ($detailCloseButton.length) {
-      $detailCloseButton.click(() => { this.hideDetails() })
-    }
-    if ($thumbnails.length) {
-      $thumbnails.click(e => this.showDetails(e))
-    }
-
-    // if ($mapEl.length) { new Map() }
-
-    // If page is a catalogue entry, mount the Vue component
+    // Add page-specific UI elements: Maps, catalogue details, etc.
+    if ($('#map').length) { this.mapInstance = new Map() }
     if ($catalogueEntry.length > 0) {
       let entries = $catalogueEntry.data('entries')
-      this.catalogueInstance = new Details({
-        el: '#cat-details',
-        data: { cat: entries[0] }
-      })
+      this.catalogueInstance = new Details({ el: '#cat-details', data: { cat: entries[0] } })
+      $thumbnails.click(e => this.showDetails(e))
     }
   }
 
@@ -131,13 +100,13 @@ class UI {
       case 27: // Escape key
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
-        if (this.deepZoomVisible) { this.hideDetails() }
+        // if (this.deepZoomVisible) { this.hideDetails() }
         if (this.catalogueInstance && this.catalogueInstance.visible) { this.hideDetails() }
         break
       case 37: // Left Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
-        if (this.deepZoomVisible) { this.hideDetails() }
+        // if (this.deepZoomVisible) { this.hideDetails() }
         if ($prev.length) {
           window.location = $prev.attr('href')
         }
@@ -145,7 +114,7 @@ class UI {
       case 39: // Right Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
-        if (this.deepZoomVisible) { this.hideDetails() }
+        // if (this.deepZoomVisible) { this.hideDetails() }
         if ($next.length) {
           window.location = $next.attr('href')
         }
@@ -214,37 +183,9 @@ class UI {
   }
 
   searchQuery () {
-    if (!this.searchInstance) { this.searchInstance = new Search() }
     let searchInput = document.querySelector('.search-field')
     let query = searchInput.value
-    let container = document.querySelector('.search-results-list')
-    let template = document.getElementById('search-results-template')
-
-    container.innerHTML = ''
-    let results = this.searchInstance.search(query)
-
-    results.forEach((result) => {
-      let clone = document.importNode(template.content, true)
-      let resultData = this.searchInstance.contentList[result.ref]
-      let resultTitle = clone.querySelector('.search-results-list-item-link')
-
-      if (Array.isArray(resultData.cat) && resultData.cat.length > 1) {
-        // Group of cat entries
-        let catNumbers = [resultData.cat[0], _.last(resultData.cat)].join('–')
-        resultTitle.textContent = `${catNumbers}: ${resultData.title}`
-        resultTitle.href = resultData.url
-      } else if (typeof resultData.cat === 'number') {
-        // Single cat entry
-        let catNumber = resultData.cat
-        resultTitle.textContent = `${catNumber}: ${resultData.title}`
-        resultTitle.href = resultData.url
-      } else {
-        // No cat entries
-        resultTitle.textContent = resultData.title
-        resultTitle.href = resultData.url
-      }
-      container.appendChild(clone)
-    })
+    this.searchInstance.search(query)
   }
 }
 

@@ -1,9 +1,9 @@
-<div class="search-results-inner">
-  <ul class="search-results-list">
-  </ul>
-</div>
-<template id="search-results-template">
-  <li class="search-results-list-item">
-    <a class="search-results-list-item-link" href=""></a>
-  </li>
-</template>
+<script type="text/x-template" id="search-results-template">
+  <div class="search-results-inner">
+    <ul>
+      <li v-for="result in results" class="search-results-list-item">
+        <a class="search-results-list-item-link" :href="result.url">{{ result.title }}</a>
+      </li>
+    </ul>
+  </div>
+</script>
