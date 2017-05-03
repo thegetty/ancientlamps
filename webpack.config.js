@@ -7,7 +7,10 @@ module.exports = {
   },
 
   resolve: {
-    root: __dirname + '/source/assets/javascripts'
+    root: __dirname + '/source/assets/javascripts',
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+    }
   },
 
   output: {
