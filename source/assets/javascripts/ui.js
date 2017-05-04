@@ -53,7 +53,7 @@ class UI {
     $triggers.click(e => this.expandToggle(e))
     window.onkeydown = (e) => { this.keyboardControls(e) }
 
-    let debouncedSearch = debounce(this.searchQuery, 250)
+    let debouncedSearch = debounce(this.searchQuery, 100)
     let boundDebounce = debouncedSearch.bind(this)
     $searchInput.keydown(() => { boundDebounce() })
 
@@ -61,7 +61,10 @@ class UI {
     if ($('#map').length) { this.mapInstance = new Map() }
     if ($catalogueEntry.length > 0) {
       let entries = $catalogueEntry.data('entries')
-      this.catalogueInstance = new Details({ el: '#cat-details', data: { cat: entries[0] } })
+      this.catalogueInstance = new Details({
+        el: '#cat-details',
+        data: { cat: entries[0] }
+      })
       $thumbnails.click(e => this.showDetails(e))
     }
   }
@@ -108,7 +111,8 @@ class UI {
         if (this.searchVisible) { this.hideSearch() }
         // if (this.deepZoomVisible) { this.hideDetails() }
         if ($prev.length) {
-          window.location = $prev.attr('href')
+          // window.location = $prev.attr('href')
+          $prev.click()
         }
         break
       case 39: // Right Arrow
@@ -116,7 +120,8 @@ class UI {
         if (this.searchVisible) { this.hideSearch() }
         // if (this.deepZoomVisible) { this.hideDetails() }
         if ($next.length) {
-          window.location = $next.attr('href')
+          // window.location = $next.attr('href')
+          $next.click()
         }
         break
     }
@@ -163,12 +168,19 @@ class UI {
   }
 
   showSearch () {
+    console.log('showSearch Fired')
+    // if (!this.searchInstance) {
+      // this.searchInstance = new Search({ el: '#search-results-template' })
+      // console.log('Done setting up Search instance')
+    // }
     if (!this.searchVisible) {
+      console.log('Manipulating DOM')
       let navbar = document.querySelector('.navbar')
       let searchResults = document.querySelector('.search-results')
       navbar.classList.add('search-active')
       searchResults.classList.add('search-active')
       this.searchVisible = true
+      console.log('Finished manipulating DOM')
     }
   }
 

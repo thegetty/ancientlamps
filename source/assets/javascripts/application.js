@@ -15,33 +15,32 @@ import UI from './ui.js'
 import './vendor/velocity.min.js'
 import './vendor/velocity.ui.min.js'
 import './vendor/jquery.smoothState.min.js'
-import Search from './search.js'
 
 let pageUI = {}
-window.search = {}
+// window.search = {}
 
 // PrepareTransitions
 // -----------------------------------------------------------------------------
 // This function choreographs the SmoothState and Velocity animations between
 // page transitions. Make sure to re-initialize things like event-handlers after
 // new content has been loaded.
-function prepareTransitions() {
+function prepareTransitions () {
   $('#main').smoothState({
     onStart: {
       duration: 400,
-      render: function($container) {
+      render ($container) {
         if (pageUI.menuVisible) { pageUI.menuToggle() }
         $container.velocity('fadeOut', { duration: 200 })
       }
     },
     onReady: {
       duration: 400,
-      render: function($container, $newContent) {
+      render ($container, $newContent) {
         $container.html($newContent)
         $container.velocity('fadeIn', { duration: 100 })
       }
     },
-    onAfter: function($container, $newContent) {
+    onAfter ($container, $newContent) {
       // ui()
       pageUI = new UI()
       document.querySelector('body').classList.remove('noscroll')
@@ -53,7 +52,6 @@ function prepareTransitions() {
 // -----------------------------------------------------------------------------
 // Only call other functions inside of this.
 $(document).ready(function() {
-  // window.search = new Search()
   pageUI = new UI()
-  // prepareTransitions()
+  prepareTransitions()
 })

@@ -7,10 +7,12 @@ let Search = Vue.extend({
   template: '#search-results-template',
   data () {
     return {
-      dataURL: '/search.json',
-      // dataURL: 'https://gettypubs.github.io/ancient-lamps/search.json'
+      // dataURL: '/search.json',
+      dataURL: 'https://gettypubs.github.io/ancient-lamps/search.json',
       index: this.buildIndex(),
       results: [],
+      contents: [],
+      ready: false,
       query: ''
     }
   },
@@ -18,12 +20,18 @@ let Search = Vue.extend({
     console.log('Search created!')
   },
   mounted () {
+    // this.getAjaxData()
     this.getData()
   },
   watch: {
     query (newQuery) {
       this.results = []
       this.results = this.search(newQuery)
+    },
+    ready (newStatus) {
+      if (newStatus === true && this.query === '') {
+        this.getQueryFromDOM()
+      }
     }
   },
   methods: {
@@ -39,7 +47,20 @@ let Search = Vue.extend({
     addItemToIndex (item) {
       this.index.add(item)
     },
+    getAjaxData () {
+      console.log('getAjaxData() called')
+      $.get(this.dataURL).done((data) => {
+        data.forEach((item) => { this.addItemToIndex(item) })
+        this.contents = data
+        this.ready = true
+        console.log('getAjaxData() finished')
+      })
+    },
+    getQueryFromDOM () {
+      this.query = document.querySelector('.search-field').value
+    },
     getData () {
+      console.log('getData() called')
       let storedContents = window.localStorage.getItem('contents')
       if (storedContents) {
         JSON.parse(storedContents).forEach((item) => { this.addItemToIndex(item) })
@@ -49,13 +70,22 @@ let Search = Vue.extend({
           window.localStorage.setItem('contents', JSON.stringify(data))
         })
       }
+      this.ready = true
+      console.log('getData() finished')
+      this.search(this.query)
     },
     search (query) {
+      console.log('search(query) called')
       this.query = query
-      let contents = JSON.parse(window.localStorage.getItem('contents'))
-      return _.map(this.index.search(query), (r) => {
-        return contents[r.ref]
-      })
+
+      if (this.ready) {
+        let contents = JSON.parse(window.localStorage.getItem('contents'))
+        return _.map(this.index.search(query), (r) => {
+          return contents[r.ref]
+        })
+      } else {
+        this.getAjaxData()
+      }
     }
   }
 })

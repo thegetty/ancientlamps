@@ -11,8 +11,8 @@ let Details = Vue.extend({
   data () {
     return {
       cat: '',
-      dataURL: '/catalogue.json',
-      // dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json'
+      //dataURL: '/catalogue.json',
+      dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json',
       entry: 'Loading',
       visible: false
     }
@@ -21,7 +21,7 @@ let Details = Vue.extend({
     // Watch the cat number for changes
     cat (newCat) {
       this.entry = 'Loading'
-      this.getData()
+      this.findEntry()
     }
   },
   computed: {
@@ -38,7 +38,7 @@ let Details = Vue.extend({
   },
   mounted () {
     this.getData()
-    console.log('Mounted!')
+    console.log('Details component Mounted!')
   },
   methods: {
     catNumCheck (cat) {
@@ -49,9 +49,18 @@ let Details = Vue.extend({
       }
     },
     getData () {
-      $.get(this.dataURL).done((data) => {
-        this.entry = _.find(data, { 'cat_no': this.catNumCheck(this.cat) })
-      })
+      let storedCatalogue = window.localStorage.getItem('catalogue')
+      if (storedCatalogue) {
+        // do nothing here?
+      } else {
+        $.get(this.dataURL).done((data) => {
+          window.localStorage.setItem('catalogue', JSON.stringify(data))
+        })
+      }
+    },
+    findEntry () {
+      let catalogueData = JSON.parse(window.localStorage.getItem('catalogue'))
+      this.entry = _.find(catalogueData, { 'cat_no': this.catNumCheck(this.cat) })
     },
     hide () {
       this.visible = false
