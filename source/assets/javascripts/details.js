@@ -11,9 +11,9 @@ let Details = Vue.extend({
   data () {
     return {
       cat: '',
-      //dataURL: '/catalogue.json',
+      // dataURL: '/catalogue.json',
       dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json',
-      entry: 'Loading',
+      entry: '',
       visible: false
     }
   },
@@ -38,6 +38,7 @@ let Details = Vue.extend({
   },
   mounted () {
     this.getData()
+    this.findEntry()
     console.log('Details component Mounted!')
   },
   methods: {
