@@ -33,7 +33,8 @@ window.globalSearchIndex = lunr(function () {
 
 function globalSearchSetup () {
   console.log('globalSearchSetup() called')
-  let searchDataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
+  let searchDataURL = '/search.json'
+  // let searchDataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
   let storedContents = window.localStorage.getItem('contents')
 
   if (storedContents) {
