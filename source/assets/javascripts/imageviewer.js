@@ -13,8 +13,8 @@ let ImageViewer = Vue.extend({
   props: ['cat', 'active'],
   data () {
     return {
-      platesURL: '/plates.json',
-      // platesURL: 'https://gettypubs.github.io/ancient-lamps/plates.json',
+      // platesURL: '/plates.json',
+      platesURL: 'https://gettypubs.github.io/ancient-lamps/plates.json',
       el: 'js-deepzoom',
       maxZoom: 13,
       minZoom: 10,
@@ -68,11 +68,19 @@ let ImageViewer = Vue.extend({
       }
     },
     getData () {
-      $.get(this.platesURL).done((data) => {
+      let storedPlates = window.localStorage.getItem('plates')
+      if (storedPlates) {
         let query = {cat: this.cat}
-        let imageData = _.find(data, query)
+        let imageData = _.find(JSON.parse(storedPlates), query)
         this.faces = imageData.images
-      })
+      } else {
+        $.get(this.platesURL).done((data) => {
+          window.localStorage.setItem('plates', JSON.stringify(data))
+          let query = {cat: this.cat}
+          let imageData = _.find(data, query)
+          this.faces = imageData.images
+        })
+      }
     },
     removeMap () {
       this.map.remove()

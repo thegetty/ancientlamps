@@ -42,6 +42,11 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
     }),
+    // new webpack.DefinePlugin({
+      // 'process.env': {
+        // NODE_ENV: '"production"'
+      // }
+    // }),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
   ]
 }
