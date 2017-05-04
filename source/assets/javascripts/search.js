@@ -1,91 +1,38 @@
 import Vue from 'vue'
 import _ from 'lodash/core'
-import lunr from 'lunr'
 
 let Search = Vue.extend({
   name: 'Search',
   template: '#search-results-template',
   data () {
     return {
-      // dataURL: '/search.json',
-      dataURL: 'https://gettypubs.github.io/ancient-lamps/search.json',
-      index: this.buildIndex(),
+      index: '',
       results: [],
       contents: [],
       ready: false,
       query: ''
     }
   },
-  created () {
-    console.log('Search created!')
-  },
   mounted () {
-    // this.getAjaxData()
-    this.getData()
+    // Using previously stashed global valuse for search data for now,
+    // since re-creating this after each page transition negatively impacts
+    // performance and the data itself will never change.
+    this.index = window.globalSearchIndex
+    this.contents = window.globalStoredContents
+    this.ready = true
   },
   watch: {
     query (newQuery) {
       this.results = []
       this.results = this.search(newQuery)
-    },
-    ready (newStatus) {
-      if (newStatus === true && this.query === '') {
-        this.getQueryFromDOM()
-      }
     }
   },
   methods: {
-    buildIndex () {
-      return lunr(function () {
-        this.field('cat', { boost: 1000 })
-        this.field('url')
-        this.field('title', { boost: 10 })
-        this.field('content')
-        this.ref('id')
-      })
-    },
-    addItemToIndex (item) {
-      this.index.add(item)
-    },
-    getAjaxData () {
-      console.log('getAjaxData() called')
-      $.get(this.dataURL).done((data) => {
-        data.forEach((item) => { this.addItemToIndex(item) })
-        this.contents = data
-        this.ready = true
-        console.log('getAjaxData() finished')
-      })
-    },
-    getQueryFromDOM () {
-      this.query = document.querySelector('.search-field').value
-    },
-    getData () {
-      console.log('getData() called')
-      let storedContents = window.localStorage.getItem('contents')
-      if (storedContents) {
-        JSON.parse(storedContents).forEach((item) => { this.addItemToIndex(item) })
-      } else {
-        $.get(this.dataURL).done((data) => {
-          data.forEach((item) => { this.addItemToIndex(item) })
-          window.localStorage.setItem('contents', JSON.stringify(data))
-        })
-      }
-      this.ready = true
-      console.log('getData() finished')
-      this.search(this.query)
-    },
     search (query) {
-      console.log('search(query) called')
       this.query = query
-
-      if (this.ready) {
-        let contents = JSON.parse(window.localStorage.getItem('contents'))
-        return _.map(this.index.search(query), (r) => {
-          return contents[r.ref]
-        })
-      } else {
-        this.getAjaxData()
-      }
+      return _.map(this.index.search(query), (r) => {
+        return window.globalStoredContents[r.ref]
+      })
     }
   }
 })
