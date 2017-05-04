@@ -20,8 +20,12 @@ let Details = Vue.extend({
   watch: {
     // Watch the cat number for changes
     cat (newCat) {
-      this.entry = 'Loading'
       this.findEntry()
+    },
+    visible (newStatus) {
+      if (!this.entry) {
+        this.findEntry()
+      }
     }
   },
   computed: {
