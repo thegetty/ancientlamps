@@ -1,3 +1,4 @@
+import _ from 'lodash/core'
 import debounce from 'lodash.debounce'
 import moment from 'moment'
 import Map from './map.js'
@@ -52,6 +53,7 @@ class UI {
     $searchCloseButton.click(() => { this.hideSearch() })
     $triggers.click(e => this.expandToggle(e))
     window.onkeydown = (e) => { this.keyboardControls(e) }
+    window.onhashchange = (e) => { console.log('Hash changed') }
 
     let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
@@ -66,6 +68,17 @@ class UI {
         data: { cat: entries[0] }
       })
       $thumbnails.click(e => this.showDetails(e))
+    }
+
+    if ($catalogueEntry.length > 0 && window.location.hash.length > 0) {
+      console.log($catalogueEntry.data('entries'))
+      let hash = window.location.hash.substring(1)
+
+      let e = _.find($catalogueEntry.data('entries'), function (entry) {
+        return entry === hash
+      })
+
+      console.log(e)
     }
   }
 
