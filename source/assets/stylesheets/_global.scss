@@ -180,6 +180,12 @@ html { min-height: 100vh; }
   // position: fixed;
 }
 
+.meta {
+  color: $medium-gray;
+  font-size: modular-scale(-1);
+  line-height: 1;
+}
+
 
 // Inline Figure Styles
 figcaption { margin-top: $small-spacing * 0.5; }
