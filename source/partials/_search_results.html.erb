@@ -1,14 +1,9 @@
 <script type="text/x-template" id="search-results-template">
   <div class="search-results-inner">
-    <ul v-if="ready">
+    <ul>
       <li v-for="result in results" class="search-results-list-item">
         <a class="search-results-list-item-link" :href="result.url">{{ result.title }}</a>
       </li>
     </ul>
-    <div v-else="">
-      <h2>
-        Loading Results...
-      </h2>
-    </div>
   </div>
 </script>
