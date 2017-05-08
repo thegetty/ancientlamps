@@ -47,7 +47,7 @@ module Middleman
           Array(p.cat_no).flatten.include? cat
         end
 
-        "/catalogue/#{page.path}"
+        "/catalogue/#{page.path}/"
       end
 
       def build_catalogue_index
