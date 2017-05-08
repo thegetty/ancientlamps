@@ -9,7 +9,6 @@ let Search = Vue.extend({
       index: '',
       results: [],
       contents: [],
-      ready: false,
       query: ''
     }
   },
@@ -19,7 +18,6 @@ let Search = Vue.extend({
     // performance and the data itself will never change.
     this.index = window.globalSearchIndex
     this.contents = window.globalStoredContents
-    this.ready = true
   },
   watch: {
     query (newQuery) {
