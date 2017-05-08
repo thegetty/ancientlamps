@@ -1,8 +1,11 @@
 <script type="text/x-template" id="search-results-template">
   <div class="search-results-inner">
-    <ul>
+    <ul class="search-results-list">
       <li v-for="result in results" class="search-results-list-item">
-        <a class="search-results-list-item-link" :href="result.url">{{ result.title }}</a>
+        <a class="search-results-list-item-link" :href="result.url">
+          <h3>{{ result.title }}</h3>
+          <p class="meta">{{ result.type }}</p>
+        </a>
       </li>
     </ul>
   </div>
