@@ -24,9 +24,8 @@ import lunr from 'lunr'
 window.pageUI = {}
 window.globalStoredContents = []
 window.globalSearchIndex = lunr(function () {
-  this.field('cat', { boost: 1000 })
-  this.field('url')
-  this.field('title', { boost: 10 })
+  this.field('title', { boost: 100 })
+  // this.field('url')
   this.field('content')
   this.ref('id')
 })

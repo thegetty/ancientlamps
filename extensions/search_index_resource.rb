@@ -30,8 +30,8 @@ module Middleman
             id: id,
             title: resource.data.title || resource.data.hierarchy.last.values.join,
             url: @app.config.baseurl + resource.url,
-            cat: resource.data.cat || nil,
-            content: Sanitize.fragment(resource.render(layout: false))
+            content: Sanitize.fragment(resource.render(layout: false)),
+            type: resource.data.cat ? "Catalogue Introduction" : "Section"
           }
 
           @index.push(item)
@@ -65,7 +65,8 @@ module Middleman
               entry.parallels,
               entry.place,
               entry.discussion
-            ].join(" ")
+            ].join(" "),
+            type: "Catalogue Entry"
           }
 
           @index.push(item)
