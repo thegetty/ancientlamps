@@ -53,7 +53,7 @@ class UI {
     $triggers.click(e => this.expandToggle(e))
     window.onkeydown = (e) => { this.keyboardControls(e) }
 
-    let debouncedSearch = debounce(this.searchQuery, 100)
+    let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
     $searchInput.keydown(() => { boundDebounce() })
 
@@ -179,6 +179,7 @@ class UI {
       let searchResults = document.querySelector('.search-results')
       navbar.classList.add('search-active')
       searchResults.classList.add('search-active')
+      document.querySelector('body').classList.add('noscroll')
       this.searchVisible = true
       console.log('Finished manipulating DOM')
     }
@@ -189,6 +190,7 @@ class UI {
       let navbar = document.querySelector('.navbar')
       let searchResults = document.querySelector('.search-results')
       navbar.classList.remove('search-active')
+      document.querySelector('body').classList.remove('noscroll')
       searchResults.classList.remove('search-active')
       this.searchVisible = false
     }
