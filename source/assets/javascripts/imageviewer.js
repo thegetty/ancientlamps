@@ -13,8 +13,8 @@ let ImageViewer = Vue.extend({
   props: ['cat', 'active'],
   data () {
     return {
-      platesURL: '/plates.json',
-      // platesURL: 'https://gettypubs.github.io/ancient-lamps/plates.json',
+      // platesURL: '/plates.json',
+      platesURL: 'https://gettypubs.github.io/ancient-lamps/plates.json',
       el: 'js-deepzoom',
       maxZoom: 13,
       minZoom: 10,
