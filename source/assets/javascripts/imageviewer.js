@@ -30,6 +30,7 @@ let ImageViewer = Vue.extend({
   watch: {
     active (newStatus) {
       if (newStatus === true) {
+        this.getData()
         this.renderMap()
       } else {
         this.removeMap()
