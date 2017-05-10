@@ -53,7 +53,7 @@ class UI {
     $searchCloseButton.click(() => { this.hideSearch() })
     $triggers.click(e => this.expandToggle(e))
     window.onkeydown = (e) => { this.keyboardControls(e) }
-    window.onhashchange = (e) => { console.log('Hash changed') }
+    window.onhashchange = () => { this.toggleDetailsOnHashChange() }
 
     let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
@@ -70,16 +70,7 @@ class UI {
       $thumbnails.click(e => this.showDetails(e))
     }
 
-    if ($catalogueEntry.length > 0 && window.location.hash.length > 0) {
-      console.log($catalogueEntry.data('entries'))
-      let hash = window.location.hash.substring(1)
-
-      let e = _.find($catalogueEntry.data('entries'), function (entry) {
-        return entry === hash
-      })
-
-      console.log(e)
-    }
+    this.toggleDetailsOnHashChange()
   }
 
   citationDate () {
@@ -89,19 +80,12 @@ class UI {
     $currentDate.text(today)
   }
 
-  removeHash () {
-    if (window.location.hash.length > 0) {
-      window.history.pushState('', document.title, window.location.pathname + window.location.search)
-    }
-  }
-
   anchorScroll (href) {
     href = typeof (href) === 'string' ? href : $(this).attr('href')
     var fromTop = 60
 
     if (href.indexOf('#') === 0) {
       var $target = $(href)
-
       if ($target.length) {
         $('html, body').animate({ scrollTop: $target.offset().top - fromTop })
       }
@@ -116,8 +100,9 @@ class UI {
       case 27: // Escape key
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
-        // if (this.deepZoomVisible) { this.hideDetails() }
-        if (this.catalogueInstance && this.catalogueInstance.visible) { this.hideDetails() }
+        if (this.catalogueInstance && this.catalogueInstance.visible) {
+          this.catalogueInstance.hide()
+        }
         break
       case 37: // Left Arrow
         if (this.menuVisible) { this.menuToggle() }
@@ -169,23 +154,34 @@ class UI {
   }
 
   showDetails (e) {
+    console.log('showDetails() fired')
     let cat = this.catNumCheck(e.target.dataset.cat)
     this.catalogueInstance.cat = cat
     this.catalogueInstance.show()
     document.querySelector('body').classList.add('noscroll')
+    window.history.pushState({}, document.title, `${window.location.origin}${window.location.pathname}#${cat}`)
   }
 
-  hideDetails () {
-    this.catalogueInstance.hide()
-    document.querySelector('body').classList.remove('noscroll')
+  toggleDetailsOnHashChange () {
+    let $catalogueEntry = $('#js-cat-entry')
+    if ($catalogueEntry.length > 0) {
+      if (window.location.hash.length > 0) {
+        let hash = window.location.hash.substring(1)
+        let $target = $(`.cat-entry__grid__item[data-cat='${hash}']`)
+        if ($target.length > 0) {
+          setTimeout(function () { $target.click() }, 200)
+        }
+      } else {
+        this.catalogueInstance.hide()
+      }
+    }
+
+    if ($catalogueEntry.length > 0 && window.location.hash.length > 0) {
+    }
   }
 
   showSearch () {
     console.log('showSearch Fired')
-    // if (!this.searchInstance) {
-      // this.searchInstance = new Search({ el: '#search-results-template' })
-      // console.log('Done setting up Search instance')
-    // }
     if (!this.searchVisible) {
       console.log('Manipulating DOM')
       let navbar = document.querySelector('.navbar')

@@ -68,8 +68,10 @@ let Details = Vue.extend({
       this.entry = _.find(catalogueData, { 'cat_no': this.catNumCheck(this.cat) })
     },
     hide () {
+      console.log('hide() fired')
       this.visible = false
       document.querySelector('body').classList.remove('noscroll')
+      window.history.pushState('', document.title, window.location.pathname)
     },
     show () {
       this.visible = true
