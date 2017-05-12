@@ -35,6 +35,11 @@ let ImageViewer = Vue.extend({
       } else {
         this.removeMap()
       }
+    },
+    cat (newCat) {
+      this.removeMap()
+      this.getData()
+      this.renderMap()
     }
   },
   mounted () {
