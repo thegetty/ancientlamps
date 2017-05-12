@@ -28,6 +28,11 @@ $breadcrumbs-bar-color: tint($medium-gray, 75%);
   // color: #fff;
   margin-bottom: 0;
   text-align: center;
+  line-height: 1.3em;
+
+  &__secondary {
+    color: $medium-gray;
+  }
 
   @include media($medium-screen-up) {
     @include span-columns(10);

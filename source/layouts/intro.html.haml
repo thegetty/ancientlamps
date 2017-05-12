@@ -14,11 +14,11 @@
         .cat-intro__image{ :data => { :cat => current_page.data.cover || first }}
         .cat-intro__header__titlebar
           .cat-intro__header__titlebar__inner
-            %h1.cat-intro__title= "#{title}"
+            %h1.cat-intro__title__intro= "Introduction<br /><span class='cat-intro__title__secondary'>#{title}</span>"
     - else
       .cat-intro__header
         .cat-intro__header__inner
-          %h1.cat-intro__title= title
+          %h1.cat-intro__title= "Introduction<br /><span class='cat-intro__title__secondary'>#{title}</span>"
     %article.cat-intro__content
       .cat-intro__content__inner
         = yield
