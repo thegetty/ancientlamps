@@ -278,6 +278,18 @@ $modular-scale-ratio: $minor-second;
   &__title__secondary {
     color: $medium-gray;
   }
+  &__content__inner {
+    figure {
+      margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
+    }
+    figure.figure-print-multicolumn {
+      column-span: all;
+    }
+    figure.figure-page-break {
+      page-break-before: always;
+    }
+  }
+
 }
 
 
