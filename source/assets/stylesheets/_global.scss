@@ -118,11 +118,16 @@ html { min-height: 100vh; }
   @include media($small-screen) { display: none; }
 }
 
-.entry-author {
+.page__content p.entry-author {
+  margin-bottom: $base-spacing;
   margin-top: $small-spacing;
   margin-right: $small-spacing;
-  display: block;
+  // display: block;
   text-align: right;
+  text-indent: 0;
+}
+
+p.entry-author + p {
   text-indent: 0;
 }
 

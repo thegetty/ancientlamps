@@ -9,7 +9,6 @@ author:
    last_name:  Wohl
    title:
    institution:
-author_byline: bottom
 layout: page
 sort_order: 3
 ---
@@ -28,6 +27,13 @@ Many others in the scholarly community on two continents gave of their time and 
 
 Finally, we wish to express our warm thanks to Marion True, former curator of Antiquities at the J. Paul Getty Museum. She initiated the catalogue project and supported it by giving us the possibility to work from an excellent set of black-and-white photographs, making it possible to start the study at a time when the lamps themselves were crated up and inaccessible. Without the additional help of Kelly Ramage (Los Angeles) the work would have been much further delayed. He rapidly and ably created the multiple color work photos necessary for the next stage. His constant readiness and generosity in sharing his considerable expertise, also in electronic communications, was a welcome support, which we greatly appreciate.
 
+<p class='entry-author' markdown="0">
+Jean Bussière<br />
+Birgitta Lindros Wohl
+</p>
+
 Jean Bussière died on 24 October 2016, before Ancient Lamps in the J. Paul Getty Museum was published. He was thus deprived of the pleasure of seeing the release of this groundbreaking work. However, he had finished all his work on it, except for correcting the proofs, so this catalogue is indeed a testimony to his wide knowledge of ancient lamps. His dedication to this topic spanned his entire professional career, as his extensive publications show. The loss of his expertise will be mourned among lychnologists. This publication is dedicated to his memory and work.
 
+<p class='entry-author' markdown="0">
 B.L.W.
+</p>
