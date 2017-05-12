@@ -204,6 +204,21 @@ $modular-scale-ratio: $minor-second;
     max-width: 1in;
   }
 
+  .entry-with-footnotes {
+    text-indent: 0;
+  }
+
+  .entry-with-footnotes + .footnotes {
+    ol {
+      margin-left: $print-base-spacing;
+    }
+  }
+
+  a.reversefootnote {
+    display: none;
+  }
+
+
   &__details__print {
     &__text {
       .section {
