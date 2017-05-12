@@ -393,6 +393,19 @@ h4.index-indent {
   }
 }
 
+.page__content p.entry-author {
+  margin-bottom: $base-spacing;
+  margin-top: $small-spacing;
+  margin-right: $small-spacing;
+  // display: block;
+  text-align: right;
+  text-indent: 0;
+}
+
+p.entry-author + p {
+  text-indent: 0;
+}
+
 .page__content .classification,
 .page__content .contents-page {
   a::after {
@@ -425,4 +438,3 @@ ul.contributor-bios {
 
   li { margin-bottom: $print-base-spacing; }
 }
-
