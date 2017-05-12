@@ -70,6 +70,11 @@ $breadcrumbs-bar-color: tint($medium-gray, 75%);
   margin-bottom: $base-spacing * 2;
 
   &__inner {
+
+    figure {
+      margin: ($base-spacing * 1.5) $base-spacing;
+    }
+
     @include media($medium-screen-up) {
       @include span-columns(10);
       @include shift(1);
