@@ -51,7 +51,7 @@ class UI {
     $menuCloseButton.click(() => { this.menuToggle() })
     $searchButton.click(() => { this.showSearch() })
     $searchCloseButton.click(() => { this.hideSearch() })
-    $triggers.click(e => this.expandToggle(e))
+    $triggers.click((e) => this.expandToggle(e))
     window.onkeydown = (e) => { this.keyboardControls(e) }
     window.onhashchange = () => { this.toggleDetailsOnHashChange() }
 
@@ -159,7 +159,7 @@ class UI {
     this.catalogueInstance.cat = cat
     this.catalogueInstance.show()
     document.querySelector('body').classList.add('noscroll')
-    window.history.pushState({}, document.title, `${window.location.origin}${window.location.pathname}#${cat}`)
+    window.location.hash = cat
   }
 
   toggleDetailsOnHashChange () {
@@ -169,7 +169,7 @@ class UI {
         let hash = window.location.hash.substring(1)
         let $target = $(`.cat-entry__grid__item[data-cat='${hash}']`)
         if ($target.length > 0) {
-          setTimeout(function () { $target.click() }, 200)
+          setTimeout(function () { $target.click() }, 50)
         }
       } else {
         this.catalogueInstance.hide()
