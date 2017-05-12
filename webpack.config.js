@@ -7,7 +7,10 @@ module.exports = {
   },
 
   resolve: {
-    root: __dirname + '/source/assets/javascripts'
+    root: __dirname + '/source/assets/javascripts',
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+    }
   },
 
   output: {
@@ -38,6 +41,11 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"production"'
+      }
     }),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
   ]

@@ -1,36 +1,38 @@
-import lunr from 'lunr'
+import Vue from 'vue'
+import _ from 'lodash/core'
 
-class Search {
-  constructor() {
-    this.index = this.buildIndex()
-    this.dataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
-    // this.dataURL = '/search.json'
-    this.getData()
-    this.contentList = []
-  }
-
-  buildIndex() {
-    return lunr(function() {
-      this.field('cat', { boost: 1000 })
-      this.field('url')
-      this.field('title', { boost: 10 })
-      this.field('content')
-      this.ref('id')
-    })
-  }
-
-  getData() {
-    $.get(this.dataURL, {cache: true}).done((data) => {
-      this.contentList = data
-      data.forEach((item) => {
-        this.index.add(item)
+let Search = Vue.extend({
+  name: 'Search',
+  template: '#search-results-template',
+  data () {
+    return {
+      index: '',
+      results: [],
+      contents: [],
+      query: ''
+    }
+  },
+  mounted () {
+    // Using previously stashed global valuse for search data for now,
+    // since re-creating this after each page transition negatively impacts
+    // performance and the data itself will never change.
+    this.index = window.globalSearchIndex
+    this.contents = window.globalStoredContents
+  },
+  watch: {
+    query (newQuery) {
+      this.results = []
+      this.results = this.search(newQuery)
+    }
+  },
+  methods: {
+    search (query) {
+      this.query = query
+      return _.map(this.index.search(query), (r) => {
+        return window.globalStoredContents[r.ref]
       })
-    })
+    }
   }
-
-  search(query) {
-    return this.index.search(query)
-  }
-}
+})
 
 export default Search
