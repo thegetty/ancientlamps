@@ -14,7 +14,7 @@
                 %td
                   %strong.section-title Inventory Number:
                   %span= entry.inv_no
-                - if entry.type
+                - unless entry.type.nil?
                   %tr
                     %td
                       %strong.section-title Type:
