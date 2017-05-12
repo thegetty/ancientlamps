@@ -5,7 +5,7 @@
 - first = entries.first
 
 = wrap_layout :application do
-  .cat-entry
+  .cat-entry#js-cat-entry{:data => {:entries => entries }}
     .cat-entry__breadcrumbs-bar
       .cat-entry__breadcrumbs-bar__inner
         %h4.cat-entry__breadcrumbs-bar__text= typology
@@ -24,4 +24,4 @@
       - if environment? :pdf
         = partial "partials/cat_details_print", :locals => { :entries => entries }
     - unless environment? :pdf
-      = partial "partials/cat_details"
+      = partial "partials/cat_details_vue"

@@ -15,45 +15,73 @@ import UI from './ui.js'
 import './vendor/velocity.min.js'
 import './vendor/velocity.ui.min.js'
 import './vendor/jquery.smoothState.min.js'
-import Search from './search.js'
+import lunr from 'lunr'
 
-let pageUI = {}
-window.search = {}
+// These values are assigned globally to avoid performance lags from making
+// multiple redundant $.get() or JSON.parse() calls; better to do once and
+// persist this data in memory between page transitions.
+//
+window.pageUI = {}
+window.globalStoredContents = []
+window.globalSearchIndex = lunr(function () {
+  this.field('title', { boost: 100 })
+  // this.field('url')
+  this.field('content')
+  this.ref('id')
+})
 
-// PrepareTransitions
-// -----------------------------------------------------------------------------
-// This function choreographs the SmoothState and Velocity animations between
-// page transitions. Make sure to re-initialize things like event-handlers after
-// new content has been loaded.
-function prepareTransitions() {
+function globalSearchSetup () {
+  console.log('globalSearchSetup() called')
+  // let searchDataURL = '/search.json'
+  let searchDataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
+  let storedContents = window.localStorage.getItem('contents')
+
+  if (storedContents) {
+    console.log('Reading contents from LocaStorage, parsing json...')
+    window.globalStoredContents = JSON.parse(storedContents)
+    console.log('Adding contents to global search index')
+    window.globalStoredContents.forEach((item) => { window.globalSearchIndex.add(item) })
+  } else {
+    console.log('Loading remote contents JSON via ajax')
+    $.get(searchDataURL).done((data) => {
+      console.log('Done loading contents')
+      window.globalStoredContents = data
+      console.log('Adding contents to index')
+      data.forEach((item) => { window.globalSearchIndex.add(item) })
+      console.log('Saving contents to local storage for future visits')
+      window.localStorage.setItem('contents', JSON.stringify(data))
+    })
+  }
+}
+
+function prepareTransitions () {
   $('#main').smoothState({
     onStart: {
       duration: 400,
-      render: function($container) {
-        if (pageUI.menuVisible) { pageUI.menuToggle() }
+      render ($container) {
+        if (window.pageUI.menuVisible) { window.pageUI.menuToggle() }
         $container.velocity('fadeOut', { duration: 200 })
       }
     },
     onReady: {
       duration: 400,
-      render: function($container, $newContent) {
+      render ($container, $newContent) {
         $container.html($newContent)
         $container.velocity('fadeIn', { duration: 100 })
       }
     },
-    onAfter: function($container, $newContent) {
+    onAfter ($container, $newContent) {
       // ui()
-      pageUI = new UI()
+      window.pageUI = new UI()
       document.querySelector('body').classList.remove('noscroll')
     }
   })
 }
 
-// Document Ready
-// -----------------------------------------------------------------------------
-// Only call other functions inside of this.
-$(document).ready(function() {
-  // window.search = new Search()
-  pageUI = new UI()
-  // prepareTransitions()
+// Start here
+
+globalSearchSetup()
+$(document).ready(() => {
+  window.pageUI = new UI()
+  prepareTransitions()
 })

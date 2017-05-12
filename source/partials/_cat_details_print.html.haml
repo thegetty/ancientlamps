@@ -8,67 +8,69 @@
             %h2.cat-number= entry.cat_no
           .section.cat-entry__details__print__image
             = image_tag("thumbs/#{entry.cat_no}.jpg")
-          .section.inv-number
-            %p
-              %strong.section-title Inventory Number
-              %span= entry.inv_no
-          .section.dimensions
-            %p
-              %strong.section-title Dimensions
-              %span= entry.dimensions
-          .section.condition
-            - if entry.condition
-              %p
-                %strong.section-title Condition
-                %span= entry.condition
-            - else
-              %p
-                %strong.section-title Condition and Fabric
-                %span= entry.condition_and_fabric
-          - unless entry.description.nil?
-            .section.description
-              %p
-                %strong.section-title Description
-                = entry.description
-          - unless entry.stamp.nil?
-            .section.stamp
-              %p
-                %strong.section-title Stamp
-                = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp")
-          - unless entry.discus_iconography.nil?
-            .section.iconography
-              %p
-                %strong.section-title Discus Iconography
-                = entry.discus_iconography
-          .section.type
-            %p
-              %strong.section-title Type
-              %span= entry.type
-          .section.date
-            %p
-              %strong.section-title Date
-              %span= entry.date
-          .section.place
-            %p
-              %strong.section-title Place of Manufacture or Origin
-              %span= entry.place
-          - unless entry.parallels.nil?
-            .section.parallels
-              %p
-                %strong.section-title Parallels
-                = entry.parallels
-          - unless entry.provenance.nil?
-            .section.provenance
-              %p
-                %strong.section-title Provenance
-                = entry.provenance
-          - unless entry.bibliography.nil?
-            .section.bibliography
-              %p
-                %strong.section-title Bibliography
-                = entry.bibliography
-          - unless entry.discussion.nil?
-            .section.discussion
-              %p
-                %strong.section-title Discussion
-                = entry.discussion
+          .section
+            %table
+              %tr
+                %td
+                  %strong.section-title Inventory Number:
+                  %span= entry.inv_no
+                - if entry.type
+                  %tr
+                    %td
+                      %strong.section-title Type:
+                      %span= entry.type
+                - if entry.date
+                  %tr
+                    %td
+                      %strong.section-title Date:
+                      %span= entry.date
+                - if entry.place
+                  %tr
+                    %td
+                      %strong.section-title Place of Manufacture or Origin:
+                      %span= entry.place
+                - if entry.condition
+                  %tr
+                    %td
+                      %strong.section-title Condition:
+                      %span= entry.condition
+                - else
+                  %tr
+                    %td
+                      %strong.section-title Condition and Fabric:
+                      %span= entry.condition_and_fabric
+              - unless entry.description.nil?
+                %tr
+                  %td
+                    %strong.section-title Description:
+                    = entry.description
+              - unless entry.stamp.nil?
+                %tr
+                  %td
+                    %strong.section-title Stamp:
+                    = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp")
+              - unless entry.discus_iconography.nil?
+                %tr
+                  %td
+                    %strong.section-title Discus Iconography:
+                    = entry.discus_iconography
+              - unless entry.parallels.nil?
+                %tr
+                  %td
+                    %strong.section-title Parallels:
+                    = entry.parallels
+              - unless entry.provenance.nil?
+                %tr
+                  %td
+                    %strong.section-title Provenance:
+                    = entry.provenance
+              - unless entry.bibliography.nil?
+                %tr
+                  %td
+                    %strong.section-title Bibliography:
+                    = entry.bibliography
+              - unless entry.discussion.nil?
+                %tr
+                  %td
+                    %strong.section-title Discussion:
+                    = entry.discussion
