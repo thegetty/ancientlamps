@@ -225,6 +225,14 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
   &__text {
     margin-bottom: $base-spacing * 2;
 
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      text-indent: $base-spacing;
+    }
+
     h2 {
       @extend .smcaps;
       color: lighten($base-font-color, 35%);
