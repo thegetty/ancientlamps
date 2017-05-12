@@ -11,8 +11,8 @@ let Details = Vue.extend({
   data () {
     return {
       cat: '',
-      // dataURL: '/catalogue.json',
-      dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json',
+      dataURL: '/catalogue.json',
+      // dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json',
       entry: '',
       visible: false
     }
