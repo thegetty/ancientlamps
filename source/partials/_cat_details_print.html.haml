@@ -48,7 +48,7 @@
                 %tr
                   %td
                     %strong.section-title Stamp:
-                    = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp")
+                    = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp", style: "width: #{entry.stamp_width}cm")
               - unless entry.discus_iconography.nil?
                 %tr
                   %td
