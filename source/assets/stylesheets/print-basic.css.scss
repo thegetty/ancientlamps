@@ -222,8 +222,7 @@ $modular-scale-ratio: $minor-second;
   &__title { font-size: 16pt; }
   &__details__stamp {
     display: block;
-    height: auto;
-    max-width: 1in;
+    margin: $print-base-spacing;
   }
 
   .entry-with-footnotes {

@@ -254,7 +254,8 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     }
 
     #entry-stamp {
-      max-width: 6em;
+      margin-top: $small-spacing * .5;
+      margin-left: $small-spacing * .5;
     }
   }
 

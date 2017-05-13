@@ -34,9 +34,13 @@
           <h2>Description</h2>
           <p id="entry-description" v-html="entry.description"></p>
         </div>
-        <div class="section stamp" v-if="entry.stamp">
+        <div class="section stamp" v-if="entry.stamp_width">
           <h2>Stamp</h2>
-          <img id="entry-stamp" :src="stamp"/>
+          <img id="entry-stamp" :style="{ width: entry.stamp_width + 'cm' }" alt="" :src="stamp"/>
+        </div>
+        <div class="section stamp" v-else="entry.stamp">
+          <h2>Stamp</h2>
+          <img id="entry-stamp" style="entry.discus_iconography" alt="" :src="stamp"/>
         </div>
         <div class="section iconography" v-if="entry.discus_iconography">
           <h2>Discus Iconography</h2>
