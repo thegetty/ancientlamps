@@ -180,6 +180,28 @@ $modular-scale-ratio: $minor-second;
   }
 }
 
+.footnotes {
+  border-top: $base-border;
+  margin-bottom: $print-base-spacing;
+  margin-top: ($print-base-spacing * 1.5);
+  padding-top: $print-base-spacing;
+  text-align: center;
+
+  &::before {
+    content: "Notes";
+    font-family: "Freight Text Pro SC";
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  ol { margin-top: $print-base-spacing; }
+
+  p, ol, ul {
+    text-align: left;
+  }
+}
+
 .cat-intro,
 .cat-entry {
   h1 { prince-bookmark-level: 2; }
@@ -209,7 +231,16 @@ $modular-scale-ratio: $minor-second;
   }
 
   .entry-with-footnotes + .footnotes {
+    border-top: 0;
+    margin-bottom: inherit;
+    margin-top: inherit;
+    padding-top: 0;
+    text-align: left;
+    &::before {
+      content: "";
+    }
     ol {
+      margin-top: $print-base-spacing;
       margin-left: $print-base-spacing;
     }
   }
@@ -278,20 +309,17 @@ $modular-scale-ratio: $minor-second;
   &__title__secondary {
     color: $medium-gray;
   }
-  &__content__inner {
-    figure {
-      margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
-    }
-    figure.figure-print-multicolumn {
-      column-span: all;
-    }
-    figure.figure-page-break {
-      page-break-before: always;
-    }
-  }
-
 }
 
+.cat-intro__content__inner,
+.cat-entry__content__inner {
+  figure {
+    margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
+  }
+  figure.figure-print-multicolumn {
+    column-span: all;
+  }
+}
 
 // Section-specific styles
 .print {
