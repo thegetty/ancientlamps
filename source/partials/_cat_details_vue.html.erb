@@ -38,9 +38,9 @@
           <h2>Stamp</h2>
           <img id="entry-stamp" :style="{ width: entry.stamp_width + 'cm' }" alt="" :src="stamp"/>
         </div>
-        <div class="section stamp" v-else="entry.stamp">
+        <div class="section stamp" v-else-if="entry.stamp">
           <h2>Stamp</h2>
-          <img id="entry-stamp" style="entry.discus_iconography" alt="" :src="stamp"/>
+          <img id="entry-stamp" :src="stamp"/>
         </div>
         <div class="section iconography" v-if="entry.discus_iconography">
           <h2>Discus Iconography</h2>
