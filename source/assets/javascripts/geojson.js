@@ -112,7 +112,7 @@ const geojsonData = {
     "properties": {
       "basename": "North Africa",
       "custom_name": "North Africa",
-      "feature_type": "country",
+      "feature_type": "region",
       "pid": "",
       "tgn": "7016886",
       "catalogue": [2, 3, 4, 77, 88, 94, 99, 100, 102, 103, 104, 106, 109, 111, 115,
@@ -200,11 +200,7 @@ const geojsonData = {
       "feature_type": "region",
       "pid": "",
       "tgn": "4005365",
-      "catalogue": [12, 15, 24, 35, 44, 47, 55, 68, 80, 92, 96, 105, 148, 151, 152,
-                    164, 168, 171, 186, 193, 199, 209, 210, 213, 219, 221, 223, 245, 247, 251,
-                    267, 331, 346, 406, 408, 409, 424, 429, 431, 437, 457, 518, 520, 521, 522,
-                    523, 526, 535, 556, 562, 596
-                   ],
+      "catalogue": [6, 7, 9, 20, 147],
       "description": ""
     },
     "geometry": {
