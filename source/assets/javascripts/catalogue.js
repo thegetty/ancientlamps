@@ -20,9 +20,14 @@ let Catalogue = Vue.extend({
           tooltip-dir="bottom"
           v-model="date">
         </vue-slider>
-        <ul>
-          <li v-for="item in results">{{ item }}</li>
-        </ul>
+        <div class="cat-entry__grid">
+          <div
+            v-for="item in results"
+            class="cat-entry__grid__item"
+            :data-cat="item.cat_no">
+              <h6 class="cat-entry__grid__item__number">{{ item.cat_no }}</h6>
+          </div>
+        </div>
       </div>
       <div v-else>
         Loading...
