@@ -112,7 +112,7 @@ const geojsonData = {
     "properties": {
       "basename": "North Africa",
       "custom_name": "North Africa",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "",
       "tgn": "7016886",
       "catalogue": [2, 3, 4, 77, 88, 94, 99, 100, 102, 103, 104, 106, 109, 111, 115,
@@ -132,13 +132,16 @@ const geojsonData = {
     },
     "geometry": {
       "type": "Point",
-      "coordinates": [0, 0]
+      "coordinates": [
+        11.452290,
+        29.618962
+      ]
     }
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "North Anatolia",
-      "custom_name": "North Anatolia",
+      "basename": "Northern Anatolia",
+      "custom_name": "Northern Anatolia",
       "feature_type": "region",
       "pid": "",
       "tgn": "",
@@ -147,7 +150,10 @@ const geojsonData = {
     },
     "geometry": {
       "type": "Point",
-      "coordinates": [0, 0]
+      "coordinates": [
+        34.201578,
+        40.824449
+      ]
     }
   }, {
     "type": "Feature",
@@ -167,8 +173,8 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "South Anatolia",
-      "custom_name": "South Anatolia",
+      "basename": "Southern Anatolia",
+      "custom_name": "Southern Anatolia",
       "feature_type": "region",
       "pid": "",
       "tgn": "",
@@ -181,7 +187,10 @@ const geojsonData = {
     },
     "geometry": {
       "type": "Point",
-      "coordinates": [0, 0]
+      "coordinates": [
+        33.972924,
+        37.605918
+      ]
     }
   }, {
     "type": "Feature",
@@ -200,7 +209,7 @@ const geojsonData = {
     },
     "geometry": {
       "type": "Point",
-      "coordinates": [15.567, 41.052]
+      "coordinates": [15.967, 40.852]
     }
   }, {
     "type": "Feature",
@@ -321,8 +330,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        15.90805347,
-        40.28576813
+        5.627806,
+        44.037889
       ]
     }
   }, {
@@ -331,16 +340,16 @@ const geojsonData = {
       "basename": "Vignanello",
       "custom_name": "Bolsena",
       "feature_type": "site",
-      "pid": "413383",
-      "tgn": "7006778",
+      "pid": "413389",
+      "tgn": "",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        12.27716,
-        42.383575
+        11.986114,
+        42.644852
       ]
     }
   }, {
@@ -457,7 +466,7 @@ const geojsonData = {
       "basename": "Ancient Villa at Homs, Libya",
       "custom_name": "Homs",
       "feature_type": "site",
-      "pid": "344409",
+      "pid": "668261",
       "tgn": "7000641",
       "catalogue": "",
       "description": ""
@@ -465,8 +474,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        14.264547,
-        32.650737
+        36.719319,
+        34.7376565
       ]
     }
   }, {
@@ -561,19 +570,73 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Untitled",
-      "custom_name": "Smyrna",
+      "basename": "Atuatuca",
+      "custom_name": "Tongeren",
       "feature_type": "site",
-      "pid": "551158",
-      "tgn": "7002543",
+      "pid": "108765",
+      "tgn": "",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        27.25,
-        38.25
+        5.464831,
+        50.780857
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Oskela?/Domodossola",
+      "custom_name": "Maserà",
+      "feature_type": "site",
+      "pid": "177599",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        8.29152,
+        46.114848
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Gadeira/Gades/Col. Augusta Gaditana",
+      "custom_name": "Cadiz",
+      "feature_type": "site",
+      "pid": "256177",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -6.29361434,
+        36.52898544
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Untitled",
+      "custom_name": "Smyrna",
+      "feature_type": "site",
+      "pid": "550771",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        27.14781,
+        38.440912
       ]
     }
   }, {
@@ -616,7 +679,7 @@ const geojsonData = {
     "properties": {
       "basename": "Algeria",
       "custom_name": "Algeria",
-      "feature_type": "site",
+      "feature_type": "country",
       "pid": "",
       "tgn": "7016752",
       "catalogue": "",
@@ -634,7 +697,7 @@ const geojsonData = {
     "properties": {
       "basename": "Asia Minor",
       "custom_name": "Anatolia",
-      "feature_type": "site",
+      "feature_type": "country",
       "pid": "",
       "tgn": "7002294",
       "catalogue": [1, 11, 13, 14, 34, 37, 39, 40, 48, 49, 50, 58, 60, 61, 65,
@@ -649,8 +712,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        35.0000,
-        39.0000
+        37.566244,
+        39.227078
       ]
     }
   }, {
@@ -694,7 +757,7 @@ const geojsonData = {
     "properties": {
       "basename": "Egypt",
       "custom_name": "Egypt",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "",
       "tgn": "7016833",
       "catalogue": [169, 180, 510, 593, 601],
@@ -710,9 +773,136 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
+      "basename": "Ionia (region)",
+      "custom_name": "Ionia",
+      "feature_type": "region",
+      "pid": "550597",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        27.3690145415,
+        38.2375173094
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Judea",
+      "feature_type": "region",
+      "pid": "",
+      "tgn": "7001407",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        35.065349,
+        31.827153
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Po Valley",
+      "feature_type": "region",
+      "pid": "",
+      "tgn": "7029302",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        10.40,
+        45.00
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Libya",
+      "feature_type": "country",
+      "pid": "",
+      "tgn": "1000172",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.00,
+        25.00
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Morocco",
+      "feature_type": "country",
+      "pid": "",
+      "tgn": "1000179",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -5.00,
+        32.00
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Po River",
+      "feature_type": "river",
+      "pid": "",
+      "tgn": "7010018",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        44.72,
+        12.04
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Danube River",
+      "feature_type": "river",
+      "pid": "",
+      "tgn": "7012913",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.26,
+        29.53
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
       "basename": "Germany",
       "custom_name": "Germany",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "",
       "tgn": "7000084",
       "catalogue": [179],
@@ -730,7 +920,7 @@ const geojsonData = {
     "properties": {
       "basename": "Le Grand Congloué",
       "custom_name": "Grand-Congloué",
-      "feature_type": "region",
+      "feature_type": "site",
       "pid": "",
       "tgn": "7635729",
       "catalogue": "",
@@ -892,7 +1082,7 @@ const geojsonData = {
     "properties": {
       "basename": "Tunisia",
       "custom_name": "Tunisia",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "",
       "tgn": "1000205",
       "catalogue": [110, 114, 120, 123, 127, 130, 131, 134, 217, 228, 233, 252, 254, 255, 257,
@@ -913,7 +1103,7 @@ const geojsonData = {
     "properties": {
       "basename": "Turkey",
       "custom_name": "Turkey",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "",
       "tgn": "1000144",
       "catalogue": [574],
@@ -931,7 +1121,7 @@ const geojsonData = {
     "properties": {
       "basename": "Yassıada",
       "custom_name": "Yassi Ada",
-      "feature_type": "region",
+      "feature_type": "site",
       "pid": "",
       "tgn": "7701088",
       "catalogue": "",
@@ -940,8 +1130,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        27.7637,
-        36.7531
+        27.11,
+        36.59
       ]
     }
   }, {
@@ -1146,8 +1336,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        33.5512455,
-        38.8460325
+        31.0332545347,
+        39.6401474914
       ]
     }
   }, {
@@ -1424,8 +1614,8 @@ const geojsonData = {
     "properties": {
       "basename": "Campania",
       "custom_name": "Campania",
-      "feature_type": "site",
-      "pid": "991350",
+      "feature_type": "region",
+      "pid": "432742",
       "tgn": "7003005",
       "catalogue": "",
       "description": ""
@@ -1433,8 +1623,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        12.5,
-        42.5
+        14.25,
+        41.25
       ]
     }
   }, {
@@ -1514,17 +1704,17 @@ const geojsonData = {
     "properties": {
       "basename": "Chersonesus",
       "custom_name": "Chersonesus",
-      "feature_type": "region",
-      "pid": "501386",
-      "tgn": "1012789",
+      "feature_type": "site",
+      "pid": "226778",
+      "tgn": "",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        26.5,
-        40.33333
+        33.5,
+        45.5
       ]
     }
   }, {
@@ -1603,7 +1793,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Salamis/Konstantia",
-      "custom_name": "Salamis/Constantia",
+      "custom_name": "Salamis/Konstantia",
       "feature_type": "site",
       "pid": "707617",
       "tgn": "7882185",
@@ -1659,7 +1849,7 @@ const geojsonData = {
       "basename": "Cosa",
       "custom_name": "Cosa",
       "feature_type": "site",
-      "pid": "246360",
+      "pid": "413107",
       "tgn": "1032454",
       "catalogue": "",
       "description": ""
@@ -1667,8 +1857,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        1.54443,
-        44.160628
+        11.2858448,
+        42.4105651
       ]
     }
   }, {
@@ -1692,10 +1882,10 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Taurike Chersonesos",
+      "basename": "Crimea",
       "custom_name": "Crimea",
-      "feature_type": "site",
-      "pid": "226778",
+      "feature_type": "region",
+      "pid": "",
       "tgn": "7010345",
       "catalogue": "",
       "description": ""
@@ -1703,8 +1893,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        33.5,
-        45.5
+        34.5,
+        45.4
       ]
     }
   }, {
@@ -1802,7 +1992,7 @@ const geojsonData = {
     "properties": {
       "basename": "Didyma",
       "custom_name": "Didyma",
-      "feature_type": "region",
+      "feature_type": "site",
       "pid": "599593",
       "tgn": "7233858",
       "catalogue": "",
@@ -1811,8 +2001,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        23.1733,
-        37.4623
+        27.256115,
+        37.384829
       ]
     }
   }, {
@@ -1963,7 +2153,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Col. Forum Iulii",
-      "custom_name": "Frejus",
+      "custom_name": "Fréjus",
       "feature_type": "site",
       "pid": "157836",
       "tgn": "7008791",
@@ -1993,24 +2183,6 @@ const geojsonData = {
       "coordinates": [
         31.230256,
         30.006136
-      ]
-    }
-  }, {
-    "type": "Feature",
-    "properties": {
-      "basename": "Gallia",
-      "custom_name": "Gaul",
-      "feature_type": "region",
-      "pid": "993",
-      "tgn": "4004256",
-      "catalogue": "",
-      "description": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        3.43181333333,
-        44.1542166667
       ]
     }
   }, {
@@ -2109,7 +2281,7 @@ const geojsonData = {
       "basename": "Herculaneum",
       "custom_name": "Herculaneum",
       "feature_type": "site",
-      "pid": "438748",
+      "pid": "432873",
       "tgn": "7031897",
       "catalogue": "",
       "description": ""
@@ -2117,8 +2289,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        12.7621,
-        41.7909
+        14.348058,
+        40.805843
       ]
     }
   }, {
@@ -2155,24 +2327,6 @@ const geojsonData = {
       "coordinates": [
         27.584578,
         37.279525
-      ]
-    }
-  }, {
-    "type": "Feature",
-    "properties": {
-      "basename": "Iberia",
-      "custom_name": "Iberia",
-      "feature_type": "region",
-      "pid": "863807",
-      "tgn": "7006653",
-      "catalogue": "",
-      "description": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        43.5,
-        42.5
       ]
     }
   }, {
@@ -2335,8 +2489,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        35.7834697636,
-        35.563788
+        29.1078183333,
+        37.8360176667
       ]
     }
   }, {
@@ -2520,16 +2674,16 @@ const geojsonData = {
       "basename": "Metropolis?",
       "custom_name": "Metropolis",
       "feature_type": "site",
-      "pid": "531000",
-      "tgn": "8697616",
+      "pid": "550741",
+      "tgn": "",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        21.25,
-        38.75
+        27.324524,
+        38.123992
       ]
     }
   }, {
@@ -2915,16 +3069,16 @@ const geojsonData = {
       "basename": "Pella/Berenice/Philippeia",
       "custom_name": "Pella",
       "feature_type": "site",
-      "pid": "678326",
-      "tgn": "6004605",
+      "pid": "491688",
+      "tgn": "",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        35.615827,
-        32.449525
+        22.75,
+        40.75
       ]
     }
   }, {
@@ -3068,24 +3222,6 @@ const geojsonData = {
       "coordinates": [
         27.2980995,
         37.6599361
-      ]
-    }
-  }, {
-    "type": "Feature",
-    "properties": {
-      "basename": "Tharros",
-      "custom_name": "Punic area ",
-      "feature_type": "region",
-      "pid": "472032",
-      "tgn": "7003518",
-      "catalogue": "",
-      "description": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        8.440249,
-        39.879432
       ]
     }
   }, {
@@ -3254,7 +3390,7 @@ const geojsonData = {
     "properties": {
       "basename": "Sardinia Ins.",
       "custom_name": "Sardinia",
-      "feature_type": "site",
+      "feature_type": "region",
       "pid": "472014",
       "tgn": "7040284",
       "catalogue": [23, 614],
@@ -3433,35 +3569,35 @@ const geojsonData = {
     "properties": {
       "basename": "Syria",
       "custom_name": "Syria",
-      "feature_type": "site",
-      "pid": "1306",
-      "tgn": "7594765",
+      "feature_type": "country",
+      "pid": "",
+      "tgn": "1000140",
       "catalogue": [509, 550, 551, 600],
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        37.5,
-        37.5
+        38.00,
+        35.00
       ]
     }
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Ionios Kolpos/Tarentinus Sinus",
+      "basename": "Taras/Tarentum/Neptunia",
       "custom_name": "Taranto",
-      "feature_type": "sea",
+      "feature_type": "site",
       "pid": "442621",
-      "tgn": "1003500",
+      "tgn": "",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        17.276944,
-        39.885
+        17.2371455,
+        40.4709405
       ]
     }
   }, {
@@ -3683,7 +3819,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Troas",
-      "custom_name": "The Troad",
+      "custom_name": "the Troad",
       "feature_type": "region",
       "pid": "550944",
       "tgn": "7002331",
@@ -3774,7 +3910,7 @@ const geojsonData = {
     "properties": {
       "basename": "Septem Maria (Po River Delta)",
       "custom_name": "Veneto",
-      "feature_type": "site",
+      "feature_type": "region",
       "pid": "393494",
       "tgn": "1043224",
       "catalogue": "",
@@ -3844,9 +3980,27 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Spain",
-      "custom_name": "Spain",
-      "feature_type": "region",
+      "basename": "Tomis",
+      "custom_name": "Constantina",
+      "feature_type": "site",
+      "pid": "217016",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        44.1728565,
+        28.6497375
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Spain (Iberia)",
+      "feature_type": "country",
       "pid": "",
       "tgn": "1000095",
       "catalogue": "",
@@ -3862,8 +4016,8 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "France",
-      "custom_name": "France",
-      "feature_type": "region",
+      "custom_name": "France (Gaul)",
+      "feature_type": "country",
       "pid": "",
       "tgn": "1000070",
       "catalogue": "",
@@ -3881,17 +4035,17 @@ const geojsonData = {
     "properties": {
       "basename": "Asine",
       "custom_name": "Koroni",
-      "feature_type": "cape",
-      "pid": "570125",
-      "tgn": "1042087",
+      "feature_type": "site",
+      "pid": "579990",
+      "tgn": "",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        21.962964,
-        36.792813
+        24.125,
+        37.875
       ]
     }
   }]
