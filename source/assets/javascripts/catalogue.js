@@ -10,7 +10,7 @@ let Catalogue = Vue.extend({
   template: `
     <div>
       <div v-if="ready">
-        <h1>Entries: {{results.length}}</h1>
+        <h2>Entries: {{results.length}}</h2>
         <vue-slider
           ref="slider"
           :min="slider.min"
