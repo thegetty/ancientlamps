@@ -21,12 +21,13 @@ let Catalogue = Vue.extend({
           v-model="date">
         </vue-slider>
         <div class="cat-entry__grid">
-          <div
+          <a
+            href="#"
             v-for="item in results"
             class="cat-entry__grid__item"
             :data-cat="item.cat_no">
               <h6 class="cat-entry__grid__item__number">{{ item.cat_no }}</h6>
-          </div>
+          </a>
         </div>
       </div>
       <div v-else>
