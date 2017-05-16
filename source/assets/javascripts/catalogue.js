@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import vueSlider from 'vue-slider-component'
 import _ from 'lodash/core'
+import geojsonData from './geojson.js'
 
 let Catalogue = Vue.extend({
   name: 'Catalogue',
@@ -20,6 +21,11 @@ let Catalogue = Vue.extend({
           tooltip-dir="bottom"
           v-model="date">
         </vue-slider>
+        <select>
+          <option v-for="item in locationsList" v-bind:value="item.entries">
+            {{ item.name }}
+          </option>
+        </select>
         <div class="cat-entry__grid">
           <a
             href="#"
@@ -41,6 +47,7 @@ let Catalogue = Vue.extend({
       date: [-1000, 1000],
       entries: [],
       ready: false,
+      locationsList: this.generateLocationsList(),
       slider: {
         min: -1000,
         max: 1000,
@@ -83,6 +90,24 @@ let Catalogue = Vue.extend({
         .filter((entry) => {
           return entry.date_numeric[1] <= this.date[1]
         }).value()
+    },
+    filterByLocation () {
+    },
+    generateLocationsList () {
+      return _
+        .chain(geojsonData.features)
+        .filter(function (f) {
+          return f.properties.catalogue.length > 0
+        })
+        .map(function (i) {
+          return {
+            name: i.properties.custom_name,
+            type: i.properties.feature_type,
+            entries: _.flatten(Array(i.properties.catalogue))
+          }
+        })
+        .sortBy('name')
+        .value()
     }
   }
 })
