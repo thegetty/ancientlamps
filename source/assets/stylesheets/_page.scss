@@ -82,6 +82,12 @@ table + .references {
 
   .catalogue-numbers td { border-bottom: 0; }
   .stamps img { max-height: 4rem; }
+  .group-end {
+    td {
+      border-width: 2px;
+      border-color: $medium-gray;
+    }
+  }
 }
 
 
