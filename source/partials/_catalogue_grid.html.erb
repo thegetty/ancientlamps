@@ -1,0 +1,36 @@
+<div id="js-catalogue">
+</div>
+<script type="text/x-template" id="catalogue-grid-template">
+  <div>
+    <div v-if="ready">
+      <h2>Entries: {{results.length}}</h2>
+      <vue-slider
+          ref="slider"
+          :min="slider.min"
+          :max="slider.max"
+          :interval="slider.interval"
+          :tooltip="slider.tooltip"
+          tooltip-dir="bottom"
+          v-model="date">
+      </vue-slider>
+      <select v-model="selection">
+        <option value="ALL">All Locations</option>
+        <option v-for="item in locationsList" v-bind:value="item.entries">
+          {{ item.name }}
+        </option>
+      </select>
+      <div class="cat-entry__grid">
+        <a
+            href="#"
+            v-for="item in results"
+            class="cat-entry__grid__item"
+            :data-cat="item.cat_no">
+          <h6 class="cat-entry__grid__item__number">{{ item.cat_no }}</h6>
+        </a>
+      </div>
+    </div>
+    <div v-else>
+      Loading...
+    </div>
+  </div>
+</script>
