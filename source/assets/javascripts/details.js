@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import _ from 'lodash/core'
 import ImageViewer from './imageviewer.js'
+import localforage from 'localforage'
 
 let Details = Vue.extend({
   name: 'Details',
@@ -11,8 +12,6 @@ let Details = Vue.extend({
   data () {
     return {
       cat: '',
-      dataURL: '/catalogue.json',
-      // dataURL: 'https://gettypubs.github.io/ancient-lamps/catalogue.json',
       entry: '',
       visible: false
     }
@@ -41,7 +40,6 @@ let Details = Vue.extend({
     }
   },
   mounted () {
-    this.getData()
     this.findEntry()
     console.log('Details component Mounted!')
   },
@@ -53,19 +51,12 @@ let Details = Vue.extend({
         return Number(cat)
       }
     },
-    getData () {
-      let storedCatalogue = window.localStorage.getItem('catalogue')
-      if (storedCatalogue) {
-        // do nothing here?
-      } else {
-        $.get(this.dataURL).done((data) => {
-          window.localStorage.setItem('catalogue', JSON.stringify(data))
-        })
-      }
-    },
     findEntry () {
-      let catalogueData = JSON.parse(window.localStorage.getItem('catalogue'))
-      this.entry = _.find(catalogueData, { 'cat_no': this.catNumCheck(this.cat) })
+      localforage.getItem('catalogue').then((data) => {
+        this.entry = _.find(data, { 'cat_no': this.catNumCheck(this.cat) })
+      }).catch(function (error) {
+        console.log(error)
+      })
     },
     hide () {
       console.log('hide() fired')

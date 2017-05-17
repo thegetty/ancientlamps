@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import _ from 'lodash/core'
+import localforage from 'localforage'
 
 let Search = Vue.extend({
   name: 'Search',
@@ -17,7 +18,9 @@ let Search = Vue.extend({
     // since re-creating this after each page transition negatively impacts
     // performance and the data itself will never change.
     this.index = window.globalSearchIndex
-    this.contents = window.globalStoredContents
+    localforage.getItem('contents').then((data) => {
+      this.contents = data
+    })
   },
   watch: {
     query (newQuery) {
@@ -29,7 +32,7 @@ let Search = Vue.extend({
     search (query) {
       this.query = query
       return _.map(this.index.search(query), (r) => {
-        return window.globalStoredContents[r.ref]
+        return this.contents[r.ref]
       })
     }
   }
