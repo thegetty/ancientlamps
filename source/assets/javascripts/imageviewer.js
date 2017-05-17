@@ -28,17 +28,10 @@ let ImageViewer = Vue.extend({
   },
   watch: {
     active (newStatus) {
-      if (newStatus === true) {
-        this.getData()
-        this.renderMap()
-      } else {
+      if (typeof this.map.remove === 'function') {
         this.removeMap()
       }
-    },
-    cat (newCat) {
-      this.removeMap()
       this.getData()
-      this.renderMap()
     }
   },
   mounted () {
@@ -77,6 +70,8 @@ let ImageViewer = Vue.extend({
         let query = {cat: this.cat}
         let imageData = _.find(data, query)
         this.faces = imageData.images
+
+        this.renderMap()
       })
     },
     removeMap () {
