@@ -4,6 +4,7 @@ import _ from 'lodash/core'
 import includes from 'lodash.includes'
 import geojsonData from './geojson.js'
 import localforage from 'localforage'
+import lookupData from './lookup.js'
 
 let Catalogue = Vue.extend({
   name: 'Catalogue',
@@ -14,14 +15,14 @@ let Catalogue = Vue.extend({
   data () {
     return {
       dataURL: '/catalogue.json',
-      date: [-1000, 1000],
+      date: [-800, 800],
       entries: [],
       locationsList: this.generateLocationsList(),
       ready: false,
       selection: 'ALL',
       slider: {
-        min: -1000,
-        max: 1000,
+        min: -800,
+        max: 800,
         interval: 50,
         tooltip: 'hover'
       }
@@ -36,6 +37,20 @@ let Catalogue = Vue.extend({
     this.getData()
   },
   methods: {
+    entryLink (catNumber) {
+      let match = _.find(lookupData, (i) => {
+        if (typeof i.cat_no === 'number' || typeof i.cat_no === 'string') {
+          return i.cat_no === catNumber
+        } else {
+          return includes(i.cat_no, catNumber)
+        }
+      })
+      if (match) {
+        return `${match.path}/#${catNumber}`
+      } else {
+        return undefined
+      }
+    },
     getData () {
       localforage.getItem('catalogue').then((data) => {
         this.entries = data
