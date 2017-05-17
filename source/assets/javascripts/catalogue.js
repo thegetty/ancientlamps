@@ -3,6 +3,7 @@ import vueSlider from 'vue-slider-component'
 import _ from 'lodash/core'
 import includes from 'lodash.includes'
 import geojsonData from './geojson.js'
+import localforage from 'localforage'
 
 let Catalogue = Vue.extend({
   name: 'Catalogue',
@@ -36,19 +37,13 @@ let Catalogue = Vue.extend({
   },
   methods: {
     getData () {
-      let storedCatalogue = window.localStorage.getItem('catalogue')
-      if (storedCatalogue) {
-        this.entries = JSON.parse(storedCatalogue)
+      localforage.getItem('catalogue').then((data) => {
+        this.entries = data
         this.results = this.entries
         this.ready = true
-      } else {
-        $.get(this.dataURL).done((data) => {
-          window.localStorage.setItem('catalogue', JSON.stringify(data))
-          this.entries = data
-          this.results = this.entries
-          this.ready = true
-        })
-      }
+      }).catch(function (error) {
+        console.log(error)
+      })
     },
     filterByDate () {
       return _
