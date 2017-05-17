@@ -28,16 +28,16 @@ window.globalSearchIndex = lunr(function () {
 })
 
 function setupStoredData () {
-  let urlPrefix = 'https://gettypubs.github.io/ancient-lamps'
+  // let urlPrefix = 'https://gettypubs.github.io/ancient-lamps'
 
-  // let searchDataURL = '/search.json'
-  let searchDataURL = `${urlPrefix}/search.json`
+  let searchDataURL = '/search.json'
+  // let searchDataURL = `${urlPrefix}/search.json`
 
-  // let catalogueDataURL = '/catalogue.json'
-  let catalogueDataURL = `${urlPrefix}/catalogue.json`
+  let catalogueDataURL = '/catalogue.json'
+  // let catalogueDataURL = `${urlPrefix}/catalogue.json`
 
-  // let platesDataURL = '/plates.json'
-  let platesDataURL = `${urlPrefix}/plates.json`
+  let platesDataURL = '/plates.json'
+  // let platesDataURL = `${urlPrefix}/plates.json`
 
   localforage.keys().then((keys) => {
     // store contents.json for client-side search
