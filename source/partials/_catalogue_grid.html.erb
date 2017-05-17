@@ -21,7 +21,7 @@
       </select>
       <div class="cat-entry__grid">
         <a
-            href="#"
+            :href="entryLink(item.cat_no)"
             v-for="item in results"
             class="cat-entry__grid__item"
             :data-cat="item.cat_no">
