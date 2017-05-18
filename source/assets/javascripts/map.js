@@ -33,7 +33,6 @@ class Map {
 
   setup () {
     this.map = L.map(this.el, {
-      // options
       maxZoom: this.maxZoom,
       minZoom: this.minZoom
     }).setView(this.ctr, this.defaultZoom)
@@ -41,7 +40,6 @@ class Map {
 
   addTiles () {
     L.tileLayer(this.tiles + this.token, {
-      // options
       attribution: this.attr
     }).addTo(this.map)
   }
@@ -49,7 +47,8 @@ class Map {
   addData () {
     let countryLabels = L.geoJson(this.geojsonData, {
       filter: function (feature, layer) {
-        return feature.properties.feature_type === 'country'
+        return feature.properties.feature_type === 'country' ||
+        feature.properties.feature_type === 'sea'
       },
       pointToLayer: this.addLabels,
       onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
@@ -59,7 +58,6 @@ class Map {
     let regionLabels = L.geoJson(this.geojsonData, {
       filter: function (feature, layer) {
         return feature.properties.feature_type === 'region' ||
-          feature.properties.feature_type === 'sea' ||
           feature.properties.feature_type === 'river'
       },
       pointToLayer: this.addLabels,
@@ -75,14 +73,13 @@ class Map {
       onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
 
-    let siteGroup = L.markerClusterGroup()
-    siteGroup.addLayer(siteLabels)
+    let regionGroup = L.markerClusterGroup()
+    regionGroup.addLayer(regionLabels)
 
     let overlays = {
-      // 'Catalogue Locations': catalogueLabels,
       'Countries': countryLabels,
-      'Regions': regionLabels,
-      'Points of Interest': siteGroup
+      'Regions': regionGroup,
+      'Points of Interest': siteLabels
     }
 
     let options = {
@@ -91,8 +88,7 @@ class Map {
     }
 
     this.map.addLayer(countryLabels)
-    this.map.addLayer(regionLabels)
-    // this.map.addLayer(siteGroup)
+    this.map.addLayer(regionGroup)
     L.control.layers(null, overlays, options).addTo(this.map)
   }
 
