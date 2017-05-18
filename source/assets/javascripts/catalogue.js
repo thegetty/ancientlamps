@@ -24,7 +24,10 @@ let Catalogue = Vue.extend({
         min: -800,
         max: 800,
         interval: 50,
-        tooltip: 'hover'
+        tooltip: 'hover',
+        processStyle: {
+          // backgroundColor: '#328474'
+        }
       }
     }
   },
