@@ -12,7 +12,10 @@
             %table
               %tr
                 %td
-                  %strong.section-title Inventory Number:
+                  - if entry.multiple_objects
+                    %strong.section-title Inventory Numbers:
+                  - else
+                    %strong.section-title Inventory Number:
                   %span= entry.inv_no
                 - unless entry.type.nil?
                   %tr
