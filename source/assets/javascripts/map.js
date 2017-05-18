@@ -8,7 +8,7 @@ import _ from 'lodash/core'
 import includes from 'lodash.includes'
 
 class Map {
-  constructor() {
+  constructor () {
     this.map = {}
     this.el = 'map'
     this.defaultZoom = 6
@@ -29,7 +29,7 @@ class Map {
     if (window.location.hash.slice(1, 4) === 'loc') { this.zoomToHash() }
   }
 
-  setup() {
+  setup () {
     this.map = L.map(this.el, {
       // options
       maxZoom: this.maxZoom,
@@ -37,24 +37,24 @@ class Map {
     }).setView(this.ctr, this.defaultZoom)
   }
 
-  addTiles() {
+  addTiles () {
     L.tileLayer(this.tiles + this.token, {
       // options
       attribution: this.attr
     }).addTo(this.map)
   }
 
-  addData() {
+  addData () {
     // Labels with catalogue entries, regardless of type
     let catalogueLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) { return feature.properties.catalogue.length > 0 },
+      filter: function (feature, layer) { return feature.properties.catalogue.length > 0 },
       pointToLayer: this.addLabels,
       onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
 
     // Region labels
     let regionLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) {
+      filter: function (feature, layer) {
         return feature.properties.feature_type === 'region' ||
           feature.properties.feature_type === 'sea' &&
           feature.properties.catalogue.length < 1
@@ -65,7 +65,7 @@ class Map {
 
     // Sites / points of interest
     let siteLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) {
+      filter: function (feature, layer) {
         return feature.properties.feature_type === 'site' &&
           feature.properties.catalogue.length < 1
       },
@@ -87,7 +87,7 @@ class Map {
     L.control.layers(null, overlays, options).addTo(this.map)
   }
 
-  addLabels(feature, latlng) {
+  addLabels (feature, latlng) {
     let catClass = ''
     switch (feature.properties.feature_type) {
       case 'country':
@@ -136,14 +136,14 @@ class Map {
     }
   }
 
-  addPopups(feature, layer) {
+  addPopups (feature, layer) {
     let options = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
     let message = this.buildPopupMessage(feature)
 
     layer.bindPopup(message, options)
   }
 
-  addOpenPopup(feature, layer) {
+  addOpenPopup (feature, layer) {
     let latlng = layer.getLatLng()
     let options = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
     let message = this.buildPopupMessage(feature)
@@ -152,7 +152,7 @@ class Map {
     layer.bindPopup(message, options)
   }
 
-  buildPopupMessage(feature) {
+  buildPopupMessage (feature) {
     let props = feature.properties
     let message = `<h4 class="feature-name">${props.custom_name}</h4>`
     let pleiadesUrl = `http://pleiades.stoa.org/places/${props.pid}`
@@ -181,8 +181,8 @@ class Map {
     return message
   }
 
-  linkLookup(catNumber) {
-    return _.find(lookupData, function(i) {
+  linkLookup (catNumber) {
+    return _.find(lookupData, function (i) {
       if (typeof i.cat_no === 'number' || typeof i.cat_no === 'string') {
         return i.cat_no === catNumber
       } else {
@@ -191,11 +191,11 @@ class Map {
     })
   }
 
-  zoomToHash() {
+  zoomToHash () {
     if (!window.location.hash) {
       return false
     } else {
-      let loc = _.find(this.geojsonData.features, function(feature) {
+      let loc = _.find(this.geojsonData.features, function (feature) {
         if (feature.properties.pid.length > 0) {
           // If location has a Pleiades ID
           return feature.properties.pid === window.location.hash.slice(5)
