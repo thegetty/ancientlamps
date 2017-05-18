@@ -870,8 +870,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        44.72,
-        12.04
+        9.25,
+        45.10
       ]
     }
   },
@@ -889,8 +889,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        45.26,
-        29.53
+        25.10,
+        43.69
       ]
     }
   }, {

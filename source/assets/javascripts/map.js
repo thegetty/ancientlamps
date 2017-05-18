@@ -7,6 +7,8 @@ import lookupData from './lookup.js'
 import _ from 'lodash/core'
 import includes from 'lodash.includes'
 
+require('leaflet.markercluster')
+
 class Map {
   constructor () {
     this.map = {}
@@ -45,9 +47,10 @@ class Map {
   }
 
   addData () {
-    // Labels with catalogue entries, regardless of type
-    let catalogueLabels = L.geoJson(this.geojsonData, {
-      filter: function (feature, layer) { return feature.properties.catalogue.length > 0 },
+    let countryLabels = L.geoJson(this.geojsonData, {
+      filter: function (feature, layer) {
+        return feature.properties.feature_type === 'country'
+      },
       pointToLayer: this.addLabels,
       onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
@@ -56,8 +59,8 @@ class Map {
     let regionLabels = L.geoJson(this.geojsonData, {
       filter: function (feature, layer) {
         return feature.properties.feature_type === 'region' ||
-          feature.properties.feature_type === 'sea' &&
-          feature.properties.catalogue.length < 1
+          feature.properties.feature_type === 'sea' ||
+          feature.properties.feature_type === 'river'
       },
       pointToLayer: this.addLabels,
       onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
@@ -66,16 +69,20 @@ class Map {
     // Sites / points of interest
     let siteLabels = L.geoJson(this.geojsonData, {
       filter: function (feature, layer) {
-        return feature.properties.feature_type === 'site' &&
-          feature.properties.catalogue.length < 1
+        return feature.properties.feature_type === 'site'
       },
-      pointToLayer: this.addLabels
+      pointToLayer: this.addLabels,
+      onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
 
+    let siteGroup = L.markerClusterGroup()
+    siteGroup.addLayer(siteLabels)
+
     let overlays = {
-      'Catalogue Locations': catalogueLabels,
+      // 'Catalogue Locations': catalogueLabels,
+      'Countries': countryLabels,
       'Regions': regionLabels,
-      'Points of Interest': siteLabels
+      'Points of Interest': siteGroup
     }
 
     let options = {
@@ -83,56 +90,57 @@ class Map {
       position: 'topright'
     }
 
-    this.map.addLayer(catalogueLabels)
+    this.map.addLayer(countryLabels)
+    this.map.addLayer(regionLabels)
+    // this.map.addLayer(siteGroup)
     L.control.layers(null, overlays, options).addTo(this.map)
   }
 
   addLabels (feature, latlng) {
-    let catClass = ''
     switch (feature.properties.feature_type) {
       case 'country':
-        if (feature.properties.catalogue.length > 0) { catClass = 'has-catalogue' }
         return L.marker(latlng, {
           icon: L.divIcon({
             html: `<p>${feature.properties.custom_name}</p>`,
-            className: `map__label__country ${catClass}`,
+            className: 'map__label__country',
             iconSize: 150
           })
         })
-      case 'region':
-      case 'sea':
-        if (feature.properties.catalogue.length > 0) { catClass = 'has-catalogue' }
+      case 'river':
         return L.marker(latlng, {
           icon: L.divIcon({
             html: `<p>${feature.properties.custom_name}</p>`,
-            className: `map__label__region ${catClass}`,
+            className: 'map__label__river',
+            iconSize: 80
+          })
+        })
+      case 'sea':
+        return L.marker(latlng, {
+          icon: L.divIcon({
+            html: `<p>${feature.properties.custom_name}</p>`,
+            className: 'map__label__sea',
+            iconSize: 80
+          })
+        })
+      case 'region':
+        return L.marker(latlng, {
+          icon: L.divIcon({
+            html: `<p>${feature.properties.custom_name}</p>`,
+            className: `map__label__region`,
             iconSize: 80
           })
         })
       default:
-        if (feature.properties.catalogue.length > 0) {
-          return L.circleMarker(latlng, {
-            radius: 5,
-            fillColor: '#328474',
-            color: '#fff',
-            weight: 1,
-            opacity: 1,
-            fillOpacity: 1
-          }).bindLabel(feature.properties.custom_name, {
-            className: 'map__label__site has-catalogue'
-          })
-        } else {
-          return L.circleMarker(latlng, {
-            radius: 5,
-            fillColor: '#333',
-            color: '#000',
-            weight: 0,
-            opacity: 1,
-            fillOpacity: 0.75
-          }).bindLabel(feature.properties.custom_name, {
-            className: 'map__label__site'
-          })
-        }
+        return L.circleMarker(latlng, {
+          radius: 5,
+          fillColor: '#333',
+          color: '#000',
+          weight: 0,
+          opacity: 1,
+          fillOpacity: 0.75
+        }).bindLabel(feature.properties.custom_name, {
+          className: 'map__label__site'
+        })
     }
   }
 

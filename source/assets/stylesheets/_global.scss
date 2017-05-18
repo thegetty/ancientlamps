@@ -256,6 +256,33 @@ figcaption { margin-top: $small-spacing * 0.5; }
   &__popup {z-index: $z-index-9;}
 
   &__label {
+    &__sea {
+      cursor: pointer;
+      z-index: 200 !important;
+
+      p {
+        color: #fff;
+        font-family: $heading-font-family;
+        font-size: 0.9rem;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+    &__river {
+      cursor: pointer;
+      z-index: 200 !important;
+
+      p {
+        color: #176ab7;
+        font-family: $heading-font-family;
+        font-size: 0.9rem;
+        font-weight: normal;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+
     &__region {
       cursor: pointer;
       z-index: 200 !important;
@@ -267,7 +294,7 @@ figcaption { margin-top: $small-spacing * 0.5; }
         font-weight: normal;
         line-height: 1;
         text-align: center;
-        text-transform: capitalize;
+        // text-transform: capitalize;
       }
     }
 
