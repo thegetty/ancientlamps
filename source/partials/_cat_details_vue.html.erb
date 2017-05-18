@@ -14,7 +14,11 @@
         <div class="section cat-number">
           <h2 class="cat-number" id="entry-cat-number">{{ entry.cat_no }}</h2>
         </div>
-        <div class="section inv-number">
+        <div class="section inv-number" v-if="entry.multiple_objects">
+          <h2>Inventory Numbers</h2>
+          <a id="entry-inv-number" :href="collectionLink" >{{ entry.inv_no }}</a>
+        </div>
+        <div class="section inv-number" v-else>
           <h2>Inventory Number</h2>
           <a id="entry-inv-number" :href="collectionLink">{{ entry.inv_no }}</a>
         </div>
