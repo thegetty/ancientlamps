@@ -407,25 +407,44 @@ body.introduction {
 }
 
 .classification,
-.concordance,
-.discus-index,
-.index-indent,
-.contents-page {
+// .concordance,
+// .discus-index,
+// .index-indent,
+.contents-page,
+.full-print-heading {
   column-span: all;
 }
 
-h4.index-indent {
+h4.full-print-heading,
+h3.full-print-heading {
+  margin-top: $print-base-spacing * 3;
+}
+
+h3.full-print-heading:first-of-type {
   margin-top: $print-base-spacing;
 }
 
-.index-indent {
-  ul { margin-left: 0; }
+#lamp-signatures,
+#stamps-table {
+  column-span: all;
+  margin-bottom: $print-base-spacing * 3;
 }
 
-.page__content ol.classification,
-.page__content ol.discus-index {
+#lamp-signatures,
+#lamp-signatures-heading {
   margin-left: $print-base-spacing;
-  padding-left: $print-base-spacing;
+}
+
+#stamps-table-heading {
+  page-break-before: always;
+}
+
+#stamps-table .catalogue-numbers td {
+    border-bottom: 0;
+}
+
+.stamps td img {
+  height: 1.1cm;
 }
 
 .page__content .classification,
