@@ -16,13 +16,10 @@ import './vendor/velocity.min.js'
 import './vendor/velocity.ui.min.js'
 import './vendor/jquery.smoothState.min.js'
 import lunr from 'lunr'
+import localforage from 'localforage'
+import includes from 'lodash.includes'
 
-// These values are assigned globally to avoid performance lags from making
-// multiple redundant $.get() or JSON.parse() calls; better to do once and
-// persist this data in memory between page transitions.
-//
 window.pageUI = {}
-window.globalStoredContents = []
 window.globalSearchIndex = lunr(function () {
   this.field('title', { boost: 100 })
   // this.field('url')
@@ -30,28 +27,52 @@ window.globalSearchIndex = lunr(function () {
   this.ref('id')
 })
 
-function globalSearchSetup () {
-  console.log('globalSearchSetup() called')
-  let searchDataURL = '/search.json'
-  // let searchDataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
-  let storedContents = window.localStorage.getItem('contents')
+function setupStoredData () {
+  // let urlPrefix = 'https://gettypubs.github.io/ancient-lamps'
 
-  if (storedContents) {
-    console.log('Reading contents from LocaStorage, parsing json...')
-    window.globalStoredContents = JSON.parse(storedContents)
-    console.log('Adding contents to global search index')
-    window.globalStoredContents.forEach((item) => { window.globalSearchIndex.add(item) })
-  } else {
-    console.log('Loading remote contents JSON via ajax')
-    $.get(searchDataURL).done((data) => {
-      console.log('Done loading contents')
-      window.globalStoredContents = data
-      console.log('Adding contents to index')
-      data.forEach((item) => { window.globalSearchIndex.add(item) })
-      console.log('Saving contents to local storage for future visits')
-      window.localStorage.setItem('contents', JSON.stringify(data))
-    })
-  }
+  let searchDataURL = '/search.json'
+  // let searchDataURL = `${urlPrefix}/search.json`
+
+  let catalogueDataURL = '/catalogue.json'
+  // let catalogueDataURL = `${urlPrefix}/catalogue.json`
+
+  let platesDataURL = '/plates.json'
+  // let platesDataURL = `${urlPrefix}/plates.json`
+
+  localforage.keys().then((keys) => {
+    // store contents.json for client-side search
+    if (includes(keys, 'contents')) {
+      localforage.getItem('contents').then((data) => {
+        data.forEach((item) => { window.globalSearchIndex.add(item) })
+      })
+      console.log('Contents data loaded.')
+    } else {
+      $.get(searchDataURL).done((data) => {
+        localforage.setItem('contents', data)
+        data.forEach((item) => { window.globalSearchIndex.add(item) })
+        console.log('Contents data loaded.')
+      })
+    }
+    // store catalogue.json for details and catalogue components
+    if (includes(keys, 'catalogue')) {
+      console.log('Catalogue data loaded.')
+    } else {
+      $.get(catalogueDataURL).done((data) => {
+        localforage.setItem('catalogue', data)
+        console.log('Catalogue data loaded.')
+      })
+    }
+
+    // store plates.json for deepzoom component
+    if (includes(keys, 'plates')) {
+      console.log('Plates data loaded.')
+    } else {
+      $.get(platesDataURL).done((data) => {
+        localforage.setItem('plates', data)
+        console.log('Plates data loaded.')
+      })
+    }
+  })
 }
 
 function prepareTransitions () {
@@ -79,8 +100,8 @@ function prepareTransitions () {
 }
 
 // Start here
+setupStoredData()
 
-globalSearchSetup()
 $(document).ready(() => {
   window.pageUI = new UI()
   prepareTransitions()
