@@ -1,7 +1,8 @@
 import L from 'leaflet'
-import $ from 'jquery'
 import _ from 'lodash/core'
 import Vue from 'vue'
+import localforage from 'localforage'
+
 L.tileLayer.deepzoom = require('./leaflet-deepzoom')
 
 let ImageViewer = Vue.extend({
@@ -13,8 +14,6 @@ let ImageViewer = Vue.extend({
   props: ['cat', 'active'],
   data () {
     return {
-      platesURL: '/plates.json',
-      // platesURL: 'https://gettypubs.github.io/ancient-lamps/plates.json',
       el: 'js-deepzoom',
       maxZoom: 13,
       minZoom: 10,
@@ -29,17 +28,10 @@ let ImageViewer = Vue.extend({
   },
   watch: {
     active (newStatus) {
-      if (newStatus === true) {
-        this.getData()
-        this.renderMap()
-      } else {
+      if (typeof this.map.remove === 'function') {
         this.removeMap()
       }
-    },
-    cat (newCat) {
-      this.removeMap()
       this.getData()
-      this.renderMap()
     }
   },
   mounted () {
@@ -74,19 +66,13 @@ let ImageViewer = Vue.extend({
       }
     },
     getData () {
-      let storedPlates = window.localStorage.getItem('plates')
-      if (storedPlates) {
+      localforage.getItem('plates').then((data) => {
         let query = {cat: this.cat}
-        let imageData = _.find(JSON.parse(storedPlates), query)
+        let imageData = _.find(data, query)
         this.faces = imageData.images
-      } else {
-        $.get(this.platesURL).done((data) => {
-          window.localStorage.setItem('plates', JSON.stringify(data))
-          let query = {cat: this.cat}
-          let imageData = _.find(data, query)
-          this.faces = imageData.images
-        })
-      }
+
+        this.renderMap()
+      })
     },
     removeMap () {
       this.map.remove()

@@ -4,6 +4,7 @@ import moment from 'moment'
 import Map from './map.js'
 import Search from './search.js'
 import Details from './details.js'
+import Catalogue from './catalogue.js'
 
 class UI {
   constructor () {
@@ -61,6 +62,7 @@ class UI {
 
     // Add page-specific UI elements: Maps, catalogue details, etc.
     if ($('#map').length) { this.mapInstance = new Map() }
+    if ($('#js-catalogue').length) { new Catalogue({ el: '#js-catalogue'})}
     if ($catalogueEntry.length > 0) {
       let entries = $catalogueEntry.data('entries')
       this.catalogueInstance = new Details({
