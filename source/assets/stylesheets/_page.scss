@@ -129,3 +129,12 @@ table + .references {
   letter-spacing: 2px;
   font-size: 0.8em;
 }
+
+.classification-page {
+  ol:first-of-type {
+    padding-left: 0;
+  }
+  .empty-level {
+    list-style-type: none;
+  }
+}
