@@ -524,3 +524,7 @@ ul.contributor-bios {
 
   li { margin-bottom: $print-base-spacing; }
 }
+
+.print-only {
+  display: inherit;
+}
