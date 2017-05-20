@@ -254,6 +254,9 @@ $modular-scale-ratio: $minor-second;
       .section {
         font-size: 8pt;
         margin-bottom: $print-base-spacing;
+        tr, td {
+          page-break-inside: avoid;
+        }
       }
 
       .section.cat-number {
