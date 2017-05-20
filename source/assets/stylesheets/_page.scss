@@ -131,8 +131,8 @@ table + .references {
 }
 
 .classification-page {
-  ol:first-of-type {
-    padding-left: 0;
+  .classification {
+    padding-left: 1em;
   }
   .empty-level {
     list-style-type: none;
