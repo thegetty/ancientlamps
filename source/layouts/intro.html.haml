@@ -1,4 +1,4 @@
-- typology = current_page.data.hierarchy.map {|i| i.values }.flatten.join(" / ")
+- typology = current_page.data.hierarchy.map {|i| i.values }.reverse.drop(1).reverse.flatten.join(" / ")
 - title = current_page.data.hierarchy.last.values.join
 - cat = current_page.data.cat
 - entries = current_page.data.cat.respond_to?(:each) ? cat : Array(cat)
