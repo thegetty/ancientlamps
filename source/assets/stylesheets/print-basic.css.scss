@@ -207,12 +207,12 @@ $modular-scale-ratio: $minor-second;
   h1 { prince-bookmark-level: 2; }
 
   &__breadcrumbs-bar {
-    display: none;
-    // color: $medium-gray;
-    // font-size: $print-base-font-size;
-    // margin-bottom: $print-base-spacing;
+    // display: none;
+    color: $medium-gray;
+    font-size: $print-base-font-size;
+    margin-bottom: $print-base-spacing;
 
-    // * { column-span: all; }
+    * { column-span: all; }
   }
 }
 
