@@ -465,6 +465,10 @@ h3.full-print-heading:first-of-type {
   }
 }
 
+.page__content .contents-page {
+  margin-left: 0;
+}
+
 .page__content p.entry-author {
   margin-bottom: $base-spacing;
   margin-top: $small-spacing;
@@ -481,6 +485,9 @@ p.entry-author + p {
 .page__content .contents-page {
   a::after {
     content: leader(dotted) " " target-counter(attr(href, url), page);
+  }
+  .frontmatter a::after {
+    content: leader(dotted) " " target-counter(attr(href, url), page, lower-roman);
   }
 }
 
