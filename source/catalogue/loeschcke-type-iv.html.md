@@ -3,7 +3,7 @@ layout: intro
 file: loeschcke-type-iv.md
 sort_order: 43
 hierarchy:
- - III: Roman-Period Clay Lamps
+ - III: III. Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire
  - b: Augustan and Imperial Lamps
  - "4": Loeschcke type IV = Bailey type B
