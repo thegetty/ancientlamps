@@ -50,6 +50,7 @@ $modular-scale-ratio: $minor-second;
 
 @page {
   size: $page-width $page-height;
+  prince-bleed: $bleed;
   bleed: $bleed;
   prince-trim: 0.25in;
   marks: crop;
@@ -84,6 +85,58 @@ $modular-scale-ratio: $minor-second;
 
 @page bleed {
   margin: 0;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page titlepage:left {
+  margin-left: -($bleed);
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/titlepage-background-l.jpg');
+  background-position: center right;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page titlepage:right {
+  margin-left: 0;
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: -($bleed);
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/titlepage-background-r.jpg');
+  background-position: center left;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page landing:left {
+  margin-left: -($bleed);
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/catalogue-background.jpg');
+  background-position: center right;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page landing:right {
+  margin-left: 0;
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: -($bleed);
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/catalogue-background.jpg');
+  background-position: center left;
   @bottom-left { content: none; }
   @bottom-right { content: none; }
 }
@@ -130,7 +183,7 @@ $modular-scale-ratio: $minor-second;
   height: $bleed-height;
   margin-left: -($bleed);
   margin-top: -($bleed);
-  page: bleed;
+  page: spread-bleed;
   page-break-after: always;
   width: $bleed-width;
 }
@@ -362,12 +415,47 @@ $modular-scale-ratio: $minor-second;
   }
 
   // Replace these with full-bleed images later
-  &__title__left {
-    @extend %full-page-image;
+  &__titlepage__left {
+    page: titlepage;
+    page-break-after: always;
+    margin-left: .75in;
+    margin-top: 9.75in;
+    font-family: 'Freight Text Pro';
+    font-weight: 400;
+    font-size: 18pt;
+    // @extend %full-page-image;
   }
 
-  &__title__right {
-    @extend %full-page-image;
+  &__titlepage__right {
+    page: titlepage;
+    page-break-after: always;
+    // @extend %full-page-image;
+    &__title {
+      font-family: 'Freight Text Pro SC';
+      font-size: 64pt;
+      font-weight: normal;
+      letter-spacing: 0;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 2.5in;
+      text-align: center;
+    }
+    &__subtitle {
+      font-family: 'Freight Text Pro SC';
+      font-size: 34pt;
+      font-weight: normal;
+      letter-spacing: 0;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+    &__author {
+      text-align: center;
+      font-size: 16pt;
+      line-height: 1.5;
+      margin-top: 12pt;
+    }
   }
 
   &__copyright {
@@ -407,6 +495,22 @@ body.abbreviations-and-notes {
 
 body.introduction {
   counter-reset: page 1;
+}
+
+body.catalogue.landing {
+  page: landing;
+  page-break-after: always;
+  .page__header {
+    text-align: right;
+    margin-top: 2.5in;
+    margin-right: 1.5in;
+    h1 {
+      font-size: 18pt;
+    }
+  }
+  .page__content {
+    display: none;
+  }
 }
 
 .classification,
@@ -536,7 +640,10 @@ ul.contributor-bios {
 }
 
 .print-only {
-  display: inherit;
+  display: inline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 .screen-only {
   display: none;

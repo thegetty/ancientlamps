@@ -22,9 +22,12 @@
     - else
       = stylesheet_link_tag "application"
   - if environment? :pdf
-    %body{class: page_classes}
-      %main#main
-        = yield
+    - if current_page.data.pdf_landing
+      %body{class: page_classes + " landing"}
+    - else
+      %body{class: page_classes}
+    %main#main
+      = yield
   - else
     %body
       %main#main
