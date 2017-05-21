@@ -691,9 +691,9 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Asia Minor",
+      "basename": "",
       "custom_name": "Anatolia",
-      "feature_type": "country",
+      "feature_type": "region",
       "pid": "",
       "tgn": "7002294",
       "catalogue": [1, 11, 13, 14, 34, 37, 39, 40, 48, 49, 50, 58, 60, 61, 65,
@@ -951,7 +951,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Lipari, Isola",
-      "custom_name": "Lipari",
+      "custom_name": "Lipari Islands",
       "feature_type": "region",
       "pid": "462283",
       "tgn": "1007865",
@@ -1024,7 +1024,7 @@ const geojsonData = {
     "properties": {
       "basename": "Romania",
       "custom_name": "Romania",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "",
       "tgn": "1000091",
       "catalogue": "",
@@ -1060,7 +1060,7 @@ const geojsonData = {
     "properties": {
       "basename": "Switzerland",
       "custom_name": "Switzerland",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "",
       "tgn": "7011731",
       "catalogue": "",
@@ -1315,7 +1315,7 @@ const geojsonData = {
     "properties": {
       "basename": "Asia Minor",
       "custom_name": "Asia Minor",
-      "feature_type": "region",
+      "feature_type": "country",
       "pid": "837",
       "tgn": "7002294",
       "catalogue": [8, 18, 26, 36, 42, 45, 46, 52, 53, 54, 56, 59, 62, 63, 113,
