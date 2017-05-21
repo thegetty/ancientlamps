@@ -308,13 +308,18 @@ $modular-scale-ratio: $minor-second;
         font-size: 8pt;
         margin-bottom: $print-base-spacing;
         tr, td {
-          page-break-inside: avoid;
+          // page-break-inside: avoid;
+        }
+        td {
+          padding-top: 3pt;
+          padding-bottom: 3pt;
+          border-bottom-width: 0px;
         }
       }
 
       .section.cat-number {
         border-top: solid 0.25pt $print-text-color;
-        margin-top: $print-base-spacing;
+        margin-top: $print-base-spacing * 2;
 
         h2.cat-number {
           font-size: 12pt;
