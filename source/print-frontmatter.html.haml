@@ -14,8 +14,15 @@ layout: false
     .print__halftitle
       %h1.print__halftitle__title= data.book.title.short
       %h2.print__halftitle__subtitle= data.book.title.subtitle
-    .print__title__left
-    .print__title__right
+    .print__titlepage__left
+      %p
+        #{data.book.imprint}
+        %br
+        #{data.book.publisher_location}
+    .print__titlepage__right
+      %h1.print__titlepage__right__title= data.book.title.short
+      %h2.print__titlepage__right__subtitle= data.book.title.subtitle
+      %h3.print__titlepage__right__author= data.book.author_as_it_appears[0]
     .print__copyright
       .description
         :markdown
