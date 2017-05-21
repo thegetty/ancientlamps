@@ -103,7 +103,13 @@ module Book
 
       pagelist += baseurl + 'print-frontmatter.html '
 
-      frontmatter_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }
+      # frontmatter_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }
+
+      frontmatter_chapters.each do |c|
+        next if c.path == "map.html"
+        pagelist += baseurl + c.destination_path + ' '
+      end
+
       catalogue_chapters.each { |c| pagelist += baseurl + c.destination_path + ' ' }
 
       backmatter_chapters.each do |c|
