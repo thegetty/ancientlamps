@@ -17,6 +17,36 @@
                   - else
                     %strong.section-title Inventory Number:
                   %span= entry.inv_no
+                - if entry.dimensions
+                  %tr
+                    %td
+                      %strong.section-title Dimensions:
+                      %span= entry.dimensions
+                - if entry.condition
+                  %tr
+                    %td
+                      %strong.section-title Condition:
+                      %span= entry.condition
+                - else
+                  %tr
+                    %td
+                      %strong.section-title Condition and Fabric:
+                      %span= entry.condition_and_fabric
+                - unless entry.description.nil?
+                  %tr
+                    %td
+                      %strong.section-title Description:
+                      = entry.description
+                - unless entry.stamp.nil?
+                  %tr
+                    %td
+                      %strong.section-title Stamp:
+                      = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp", style: "width: #{entry.stamp_width}cm")
+                - unless entry.discus_iconography.nil?
+                  %tr
+                    %td
+                      %strong.section-title Discus Iconography:
+                      = entry.discus_iconography
                 - unless entry.type.nil?
                   %tr
                     %td
@@ -32,31 +62,6 @@
                     %td
                       %strong.section-title Place of Manufacture or Origin:
                       %span= entry.place
-                - if entry.condition
-                  %tr
-                    %td
-                      %strong.section-title Condition:
-                      %span= entry.condition
-                - else
-                  %tr
-                    %td
-                      %strong.section-title Condition and Fabric:
-                      %span= entry.condition_and_fabric
-              - unless entry.description.nil?
-                %tr
-                  %td
-                    %strong.section-title Description:
-                    = entry.description
-              - unless entry.stamp.nil?
-                %tr
-                  %td
-                    %strong.section-title Stamp:
-                    = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp", style: "width: #{entry.stamp_width}cm")
-              - unless entry.discus_iconography.nil?
-                %tr
-                  %td
-                    %strong.section-title Discus Iconography:
-                    = entry.discus_iconography
               - unless entry.parallels.nil?
                 %tr
                   %td
