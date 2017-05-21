@@ -436,7 +436,7 @@ $modular-scale-ratio: $minor-second;
       font-weight: normal;
       letter-spacing: 0;
       line-height: 1;
-      margin-bottom: 0;
+      margin-bottom: -6pt;
       margin-top: 2.5in;
       text-align: center;
     }
@@ -454,7 +454,7 @@ $modular-scale-ratio: $minor-second;
       text-align: center;
       font-size: 16pt;
       line-height: 1.5;
-      margin-top: 12pt;
+      margin-top: 6pt;
     }
   }
 
@@ -464,22 +464,45 @@ $modular-scale-ratio: $minor-second;
     margin-right: 1in;
     page: no-footer;
     page-break-after: always;
-  }
 
-  .publisher { margin-bottom: $print-base-spacing; }
-  .distribution { margin-bottom: $print-base-spacing;}
-  .team { margin-top: $print-base-spacing;}
-
-  .loc-cip {
-    margin-bottom: $print-base-spacing;
-
-    p { margin-bottom: 0; }
-
-    li {
-      padding-left: $print-base-spacing;
-      text-indent: -$print-base-spacing;
+    .publisher {
+      margin-bottom: $print-base-spacing;
+      ul {
+        list-style-type: none;
+        margin-left: 0;
+      }
+      ul.team {
+        margin-top: $print-base-spacing;
+        list-style-type: none;
+        margin-left: 0;
+      }
     }
+
+    .distribution { margin-bottom: $print-base-spacing;}
+
+    .loc-cip {
+      margin-bottom: $print-base-spacing;
+      p {
+        margin-bottom: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin-top: 0;
+        margin-left: 0;
+      }
+      li {
+        padding-left: $print-base-spacing;
+        text-indent: -$print-base-spacing;
+      }
+    }
+
+    ul.illustration-credits {
+      list-style-type: none;
+      margin-left: 0;
+    }
+
   }
+
 }
 
 body.print-frontmatter {
