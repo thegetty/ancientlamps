@@ -521,6 +521,14 @@ body.abbreviations-and-notes {
   page: frontmatter;
 }
 
+.collection-link {
+  display: none;
+}
+
+#concordance-inv-no {
+  width: 60%;
+}
+
 body.introduction {
   counter-reset: page 1;
 }
@@ -598,6 +606,12 @@ h3.full-print-heading:first-of-type {
   .empty-level {
     list-style-type: none;
   }
+}
+
+.index ul {
+  padding-left: $print-base-spacing;
+  text-indent: -$print-base-spacing;
+  margin-left: 0;
 }
 
 .page__content .contents-page {
