@@ -6,17 +6,23 @@
         .cat-entry__details__print__text
           .section.cat-number
             %h2.cat-number= entry.cat_no
-          .section.cat-entry__details__print__image
-            = image_tag("thumbs/#{entry.cat_no}.jpg")
+          - if entry.no_entry
+          - else
+            .section.cat-entry__details__print__image
+              = image_tag("thumbs/#{entry.cat_no}.jpg")
           .section
             %table
               %tr
-                %td
-                  - if entry.multiple_objects
-                    %strong.section-title Inventory Numbers:
-                  - else
-                    %strong.section-title Inventory Number:
-                  %span= entry.inv_no
+                - if entry.no_entry
+                  %td
+                    %span No entry.
+                - if entry.inv_no
+                  %td
+                    - if entry.multiple_objects
+                      %strong.section-title Inventory Numbers:
+                    - else
+                      %strong.section-title Inventory Number:
+                    %span= entry.inv_no
                 - if entry.dimensions
                   %tr
                     %td
@@ -27,7 +33,7 @@
                     %td
                       %strong.section-title Condition:
                       %span= entry.condition
-                - else
+                - elsif entry.condition_and_fabric
                   %tr
                     %td
                       %strong.section-title Condition and Fabric:

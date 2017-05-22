@@ -14,15 +14,15 @@
         <div class="section cat-number">
           <h2 class="cat-number" id="entry-cat-number">{{ entry.cat_no }}</h2>
         </div>
-        <div class="section inv-number" v-if="entry.multiple_objects">
-          <h2>Inventory Numbers</h2>
+        <div class="section no-entry" v-if="entry.no_entry">
+          <p>No entry.</p>
+        </div>
+        <div class="section inv-number" v-if="entry.inv_no">
+          <h2 v-if="entry.multiple_objects">Inventory Numbers</h2>
+          <h2 v-else>Inventory Number</h2>
           <p id="entry-inv-number">{{ entry.inv_no }} <a class="collection-link" :href="collectionLink" target="_blank" title="View this item on the Getty's collection pages." ><i class="ion-link"></i></a></p>
         </div>
-        <div class="section inv-number" v-else>
-          <h2>Inventory Number</h2>
-          <p id="entry-inv-number">{{ entry.inv_no }} <a class="collection-link" :href="collectionLink" target="_blank" title="View this item on the Getty's collection pages." ><i class="ion-link"></i></a></p>
-        </div>
-        <div class="section dimensions">
+        <div class="section dimensions" v-if="entry.dimensions">
           <h2>Dimensions</h2>
           <p id="entry-dimensions">{{ entry.dimensions }}</p>
         </div>
