@@ -1240,6 +1240,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_45.png
+  stamp_width: 1.5
   type: Schäfer’s <em>Herzblätterlampen</em>
 - bibliography: Unpublished.
   cat_no: 46
@@ -1818,6 +1819,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_66.png
+  stamp_width: 1.5
   type: Goldman (1950) group IX
 - bibliography: Unpublished.
   cat_no: 67
@@ -1846,6 +1848,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_67.png
+  stamp_width: 1.5
   type: Goldman group IX
 - bibliography: Unpublished.
   cat_no: 68
@@ -1936,6 +1939,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_70.png
+  stamp_width: 1.5
   type: Dressel 2; Deneauve II
 - bibliography: "<a href='../../bibliography/#acquisitions-1992'>Acquisitions/1992</a>,
     p. 147, no. 31."
@@ -6426,6 +6430,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_222.png
+  stamp_width: 1.5
   type: Loeschcke IV; Bailey B group iii
 - bibliography: Unpublished.
   cat_no: 223
@@ -10648,6 +10653,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_370.png
+  stamp_width: 1.5
   type: Loeschcke VIII; Bussière form D X 1c
 - bibliography: Unpublished.
   cat_no: 371
@@ -10676,6 +10682,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_371.png
+  stamp_width: 1.5
   type: Loeschcke VIII; Bussière form D X 1c
 - bibliography: Unpublished.
   cat_no: 372
@@ -10850,6 +10857,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_377.png
+  stamp_width: 1.5
   type: Loeschcke VIII; Bussière form D X 4a
 - bibliography: Unpublished.
   cat_no: 378
@@ -11126,6 +11134,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_386.png
+  stamp_width: 1.5
   type: Loeschcke VIII; Bussière form D X 4b
 - bibliography: Unpublished.
   cat_no: 387
@@ -12541,6 +12550,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_439.png
+  stamp_width: 1.5
   type: Loeschcke VIII var.
 - bibliography: Unpublished.
   cat_no: 440
@@ -13638,6 +13648,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_476.png
+  stamp_width: 1.5
   type: Bussière form E I 4
 - bibliography: Unpublished.
   cat_no: 477
@@ -15034,6 +15045,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_523.png
+  stamp_width: 1.5
   type: Globule-and-volute lamp
 - bibliography: Unpublished.
   cat_no: 524
@@ -15919,6 +15931,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_551.png
+  stamp_width: 1.5
   type: Kennedy 23 group B
 - bibliography: Unpublished.
   cat_no: 552
@@ -16860,6 +16873,7 @@
   provenance: Before 1983, Hans-Klaus Schüller, 1921–2009 (Bergheim, Germany); 1983,
     Galerie Günter Puhze (Freiburg, Germany), sold to the J. Paul Getty Museum, 1983.
   stamp: stamp_584.png
+  stamp_width: 1.5
   type:
 - bibliography: "<a href='../../bibliography/#christies-1977'>Christie’s 1977</a>,
     London. Fine Antiquities. Sale 17 November 1977, lot 235; <a
