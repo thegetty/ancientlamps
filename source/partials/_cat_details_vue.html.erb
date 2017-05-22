@@ -16,11 +16,11 @@
         </div>
         <div class="section inv-number" v-if="entry.multiple_objects">
           <h2>Inventory Numbers</h2>
-          <a id="entry-inv-number" :href="collectionLink" >{{ entry.inv_no }}</a>
+          <p id="entry-inv-number">{{ entry.inv_no }} <a class="collection-link" :href="collectionLink" target="_blank" title="View this item on the Getty's collection pages." ><i class="ion-link"></i></a></p>
         </div>
         <div class="section inv-number" v-else>
           <h2>Inventory Number</h2>
-          <a id="entry-inv-number" :href="collectionLink">{{ entry.inv_no }}</a>
+          <p id="entry-inv-number">{{ entry.inv_no }} <a class="collection-link" :href="collectionLink" target="_blank" title="View this item on the Getty's collection pages." ><i class="ion-link"></i></a></p>
         </div>
         <div class="section dimensions">
           <h2>Dimensions</h2>
