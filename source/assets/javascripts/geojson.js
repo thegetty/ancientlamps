@@ -95,7 +95,7 @@ const geojsonData = {
     "properties": {
       "basename": "Central Anatolia",
       "custom_name": "Central Anatolia",
-      "feature_type": "region",
+      "feature_type": "catalogue",
       "pid": "",
       "tgn": "",
       "catalogue": [10, 25, 28, 29, 30, 31, 32, 33, 38, 41, 43, 51, 64, 90, 149,
@@ -708,8 +708,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        37.566244,
-        39.227078
+        33.967,
+        39.6
       ]
     }
   }, {
@@ -1789,7 +1789,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Salamis/Konstantia",
-      "custom_name": "Salamis/Konstantia",
+      "custom_name": "Salamis",
       "feature_type": "site",
       "pid": "707617",
       "tgn": "7882185",
@@ -2405,7 +2405,7 @@ const geojsonData = {
       "basename": "Hierichous",
       "custom_name": "Khirbat al-Mafjar",
       "feature_type": "site",
-      "pid": "687917",
+      "pid": "",
       "tgn": "4005666",
       "catalogue": "",
       "description": ""
@@ -2413,8 +2413,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        35.443876,
-        31.8700465
+        35.4590,
+        31.8820
       ]
     }
   }, {
@@ -3332,7 +3332,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Samaria/Sebaste",
-      "custom_name": "Samaria",
+      "custom_name": "Samaria/Sebaste",
       "feature_type": "site",
       "pid": "678370",
       "tgn": "7011724",
@@ -4024,6 +4024,78 @@ const geojsonData = {
       "coordinates": [
         2.0000,
         46.0000
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Emporiae",
+      "custom_name": "Ampurias",
+      "feature_type": "site",
+      "pid": "246382",
+      "tgn": "1100522",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        3.1178,
+        42.1395
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Hierichous",
+      "custom_name": "Jericho",
+      "feature_type": "site",
+      "pid": "687917",
+      "tgn": "7001385",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        35.443876,
+        31.8700465
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "",
+      "custom_name": "Lebanon",
+      "feature_type": "country",
+      "pid": "",
+      "tgn": "1000126",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        35.8333,
+        33.8333
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Scyrus Ins.",
+      "custom_name": "Scyrus",
+      "feature_type": "site",
+      "pid": "541093",
+      "tgn": "1009188",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        24.56,
+        38.85
       ]
     }
   }, {
