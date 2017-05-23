@@ -22,3 +22,15 @@ td,
 th {
   vertical-align: middle;
 }
+
+
+#lamp-signatures {
+  td, th {
+    border-left: $base-border;
+    padding-left: $small-spacing;
+  }
+  td:first-child, th:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
