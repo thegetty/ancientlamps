@@ -54,7 +54,7 @@ $search-text-color: $base-font-color;
   @include position(fixed);
   background-image: $search-bg;
   font-family: $heading-font-family;
-  line-height: 2.5;
+  // line-height: 2.5;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
   top: $navbar-height;
@@ -77,11 +77,22 @@ $search-text-color: $base-font-color;
   margin-bottom: $navbar-height;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
+  padding-left: 0;
 }
 
 .search-results-list-item {
-  @include padding(null $base-spacing);
+  @include padding(null $base-spacing * 2);
   border-bottom: $base-border;
   font-size: 1.25em;
-  line-height: 3;
+  // line-height: 3;
+}
+
+.search-results-list-item-link {
+  // display: block;
+  // line-height: 1.5;
+
+  h3 {
+    font-weight: normal;
+    margin-top: $small-spacing;
+  }
 }

@@ -99,6 +99,9 @@ $sliding-panel-fade-screen-bg: #000;
 
 .nav-sidebar-toc {
   margin: 0 0 $base-spacing;
+  list-style-type: none;
+  padding-left: $base-spacing;
+  font-size: $base-font-size * 1.1;
 
   li { margin-bottom: 0.5rem; }
 }
