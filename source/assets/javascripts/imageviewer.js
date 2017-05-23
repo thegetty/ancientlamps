@@ -36,11 +36,11 @@ let ImageViewer = Vue.extend({
   },
   mounted () {
     if (window.page.platesStatus) {
-      console.log('PlatesStatus is ' + window.page.platesStatus)
+      // console.log('PlatesStatus is ' + window.page.platesStatus)
       this.getData()
     } else {
       window.addEventListener('plates', (e) => {
-        console.log('Plates event detected')
+        // console.log('Plates event detected')
         this.getData()
       })
     }

@@ -15,7 +15,7 @@ let Search = Vue.extend({
     }
   },
   mounted () {
-    console.log('Search component mounted')
+    // console.log('Search component mounted')
     this.index = window.page.searchIndex
 
     if (window.page.searchStatus) {
@@ -47,7 +47,7 @@ let Search = Vue.extend({
           }
         })
         this.ready = true
-        console.log('Search component data loaded')
+        // console.log('Search component data loaded')
       })
     },
     search (query) {
