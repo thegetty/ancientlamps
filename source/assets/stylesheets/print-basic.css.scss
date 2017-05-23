@@ -115,7 +115,7 @@ $modular-scale-ratio: $minor-second;
   @bottom-right { content: none; }
 }
 
-@page landing:left {
+@page catalogue-landing:left {
   margin-left: -($bleed);
   margin-top: -($bleed);
   margin-bottom: -($bleed);
@@ -128,7 +128,7 @@ $modular-scale-ratio: $minor-second;
   @bottom-right { content: none; }
 }
 
-@page landing:right {
+@page catalogue-landing:right {
   margin-left: 0;
   margin-top: -($bleed);
   margin-bottom: -($bleed);
@@ -136,6 +136,32 @@ $modular-scale-ratio: $minor-second;
   background-repeat: no-repeat;
   background-size: 8.625in 11.25in;
   background-image: url('../images/catalogue-background.jpg');
+  background-position: center left;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page indices-landing:left {
+  margin-left: -($bleed);
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/indices-background.jpg');
+  background-position: center right;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page indices-landing:right {
+  margin-left: 0;
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: -($bleed);
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/indices-background.jpg');
   background-position: center left;
   @bottom-left { content: none; }
   @bottom-right { content: none; }
@@ -396,9 +422,10 @@ $modular-scale-ratio: $minor-second;
     text-transform: lowercase;
 
     &__title {
-      font-family: 'Freight Text Pro SC';
-      font-size: 28pt;
-      font-weight: normal;
+      font-family: 'Freight Text Pro';
+      font-size: 23pt;
+      font-weight: 400;
+      text-transform: uppercase;
       letter-spacing: 0;
       line-height: 1;
       margin-bottom: 0;
@@ -436,12 +463,13 @@ $modular-scale-ratio: $minor-second;
     page-break-after: always;
     // @extend %full-page-image;
     &__title {
-      font-family: 'Freight Text Pro SC';
-      font-size: 64pt;
-      font-weight: normal;
+      font-family: 'Freight Text Pro';
+      font-size: 53pt;
+      font-weight: 400;
       letter-spacing: 0;
+      text-transform: uppercase;
       line-height: 1;
-      margin-bottom: -6pt;
+      margin-bottom: 0;
       margin-top: 2.5in;
       text-align: center;
     }
@@ -534,7 +562,23 @@ body.introduction {
 }
 
 body.catalogue.landing {
-  page: landing;
+  page: catalogue-landing;
+  page-break-after: always;
+  .page__header {
+    text-align: right;
+    margin-top: 2.5in;
+    margin-right: 1.5in;
+    h1 {
+      font-size: 18pt;
+    }
+  }
+  .page__content {
+    display: none;
+  }
+}
+
+body.indices.landing {
+  page: indices-landing;
   page-break-after: always;
   .page__header {
     text-align: right;
@@ -634,6 +678,9 @@ p.entry-author + p {
 .page__content .contents-page {
   a::after {
     content: leader(dotted) " " target-counter(attr(href, url), page);
+  }
+  .contents-subhead a::after {
+    content: "";
   }
   .frontmatter a::after {
     content: leader(dotted) " " target-counter(attr(href, url), page, lower-roman);
