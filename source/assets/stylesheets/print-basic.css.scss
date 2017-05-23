@@ -17,8 +17,8 @@ $bleed: 0.125in;
 $bleed-height: 11.25in;
 $bleed-width: 8.75in;
 
-$bottom-margin: 1in;
-$top-margin: 0.875in;
+$bottom-margin: 0.875in;
+$top-margin: 0.75in;
 $inner-margin: 1in;
 $outer-margin: 0.75in;
 
@@ -28,7 +28,7 @@ $inner-height: $page-height - ($top-margin + $bottom-margin);
 $print-base-font-size: 8pt;
 $print-base-spacing: 0.125in;
 $print-base-line-height: 1.25;
-$print-paragraph-indent: 0.25in;
+$print-paragraph-indent: 0.1875in;
 
 $print-background-color: #fff;
 $print-text-color: #000;
@@ -50,6 +50,7 @@ $modular-scale-ratio: $minor-second;
 
 @page {
   size: $page-width $page-height;
+  prince-bleed: $bleed;
   bleed: $bleed;
   prince-trim: 0.25in;
   marks: crop;
@@ -84,6 +85,84 @@ $modular-scale-ratio: $minor-second;
 
 @page bleed {
   margin: 0;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page titlepage:left {
+  margin-left: -($bleed);
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/titlepage-background-l.jpg');
+  background-position: center right;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page titlepage:right {
+  margin-left: 0;
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: -($bleed);
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/titlepage-background-r.jpg');
+  background-position: center left;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page catalogue-landing:left {
+  margin-left: -($bleed);
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/catalogue-background.jpg');
+  background-position: center right;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page catalogue-landing:right {
+  margin-left: 0;
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: -($bleed);
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/catalogue-background.jpg');
+  background-position: center left;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page indices-landing:left {
+  margin-left: -($bleed);
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/indices-background.jpg');
+  background-position: center right;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page indices-landing:right {
+  margin-left: 0;
+  margin-top: -($bleed);
+  margin-bottom: -($bleed);
+  margin-right: -($bleed);
+  background-repeat: no-repeat;
+  background-size: 8.625in 11.25in;
+  background-image: url('../images/indices-background.jpg');
+  background-position: center left;
   @bottom-left { content: none; }
   @bottom-right { content: none; }
 }
@@ -130,7 +209,7 @@ $modular-scale-ratio: $minor-second;
   height: $bleed-height;
   margin-left: -($bleed);
   margin-top: -($bleed);
-  page: bleed;
+  page: spread-bleed;
   page-break-after: always;
   width: $bleed-width;
 }
@@ -159,18 +238,47 @@ $modular-scale-ratio: $minor-second;
 }
 
 // General content styles
-
 .page,
 .cat-entry,
 .cat-intro {
   @extend %print-page-content;
 
   &__header {
-    margin-bottom: $print-base-spacing * 4;
+    margin-bottom: $print-base-spacing * 3;
     * { column-span: all; }
-    &__title {font-size: 18pt;}
+    &__title {font-size: 14pt;}
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $print-base-spacing;
+  }
+
+  ul, ol {
+    margin-left: $print-base-spacing;
+    padding-left: $print-base-spacing;
+  }
+}
+
+.footnotes {
+  border-top: $base-border;
+  margin-bottom: $print-base-spacing;
+  margin-top: ($print-base-spacing * 1.5);
+  padding-top: $print-base-spacing;
+  text-align: center;
+
+  &::before {
+    content: "Notes";
+    font-family: "Freight Text Pro SC";
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  ol { margin-top: $print-base-spacing; }
+
+  p, ol, ul {
+    text-align: left;
+  }
 }
 
 .cat-intro,
@@ -178,6 +286,7 @@ $modular-scale-ratio: $minor-second;
   h1 { prince-bookmark-level: 2; }
 
   &__breadcrumbs-bar {
+    // display: none;
     color: $medium-gray;
     font-size: $print-base-font-size;
     margin-bottom: $print-base-spacing;
@@ -189,23 +298,54 @@ $modular-scale-ratio: $minor-second;
 .cat-entry {
   &__grid { display: none; }
   &__image { display: none; }
-  &__title { font-size: 18pt; }
+  &__title { font-size: 16pt; }
   &__details__stamp {
     display: block;
-    height: auto;
-    max-width: 1in;
+    margin: $print-base-spacing;
   }
+
+  .entry-with-footnotes {
+    text-indent: 0;
+  }
+
+  .entry-with-footnotes + .footnotes {
+    border-top: 0;
+    margin-bottom: inherit;
+    margin-top: inherit;
+    padding-top: 0;
+    text-align: left;
+    &::before {
+      content: "";
+    }
+    ol {
+      margin-top: $print-base-spacing;
+      margin-left: $print-base-spacing;
+    }
+  }
+
+  a.reversefootnote {
+    display: none;
+  }
+
 
   &__details__print {
     &__text {
       .section {
         font-size: 8pt;
         margin-bottom: $print-base-spacing;
+        tr, td {
+          // page-break-inside: avoid;
+        }
+        td {
+          padding-top: 3pt;
+          padding-bottom: 3pt;
+          border-bottom-width: 0px;
+        }
       }
 
       .section.cat-number {
         border-top: solid 0.25pt $print-text-color;
-        margin-top: $print-base-spacing;
+        margin-top: $print-base-spacing * 2;
 
         h2.cat-number {
           font-size: 12pt;
@@ -214,13 +354,16 @@ $modular-scale-ratio: $minor-second;
       }
 
       .section-title {
+        font-weight: bold;
+
         // color: $medium-gray;
-        display: block;
-        font-family: "Freight Text Pro SC";
-        font-size: 9pt;
-        letter-spacing: 0.5pt;
-        text-transform: lowercase;
+        // display: block;
+        // font-family: "Freight Text Pro SC";
+        // font-size: 9pt;
+        // letter-spacing: 0.5pt;
+        // text-transform: lowercase;
       }
+
     }
 
     &__image {
@@ -228,9 +371,41 @@ $modular-scale-ratio: $minor-second;
       position: static;
       width: 100%;
     }
+
+    table tr:last-child td {
+      border-bottom: none;
+    }
   }
 }
 
+.cat-intro {
+  &__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5.5in;
+    width: 100%;
+
+    @for $i from 1 through 700 {
+      &[data-cat="#{$i}"] {
+        background-image: url("../images/main/#{$i}.jpg");
+      }
+    }
+  }
+  &__title__secondary {
+    color: $medium-gray;
+  }
+}
+
+.cat-intro__content__inner,
+.cat-entry__content__inner {
+  figure {
+    margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
+  }
+  figure.figure-print-multicolumn {
+    column-span: all;
+  }
+}
 
 // Section-specific styles
 .print {
@@ -247,9 +422,10 @@ $modular-scale-ratio: $minor-second;
     text-transform: lowercase;
 
     &__title {
-      font-family: 'Freight Text Pro SC';
-      font-size: 28pt;
-      font-weight: normal;
+      font-family: 'Freight Text Pro';
+      font-size: 23pt;
+      font-weight: 400;
+      text-transform: uppercase;
       letter-spacing: 0;
       line-height: 1;
       margin-bottom: 0;
@@ -271,12 +447,48 @@ $modular-scale-ratio: $minor-second;
   }
 
   // Replace these with full-bleed images later
-  &__title__left {
-    @extend %full-page-image;
+  &__titlepage__left {
+    page: titlepage;
+    page-break-after: always;
+    margin-left: .75in;
+    margin-top: 9.75in;
+    font-family: 'Freight Text Pro';
+    font-weight: 400;
+    font-size: 18pt;
+    // @extend %full-page-image;
   }
 
-  &__title__right {
-    @extend %full-page-image;
+  &__titlepage__right {
+    page: titlepage;
+    page-break-after: always;
+    // @extend %full-page-image;
+    &__title {
+      font-family: 'Freight Text Pro';
+      font-size: 53pt;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 2.5in;
+      text-align: center;
+    }
+    &__subtitle {
+      font-family: 'Freight Text Pro SC';
+      font-size: 34pt;
+      font-weight: normal;
+      letter-spacing: 0;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+    &__author {
+      text-align: center;
+      font-size: 16pt;
+      line-height: 1.5;
+      margin-top: 6pt;
+    }
   }
 
   &__copyright {
@@ -285,22 +497,45 @@ $modular-scale-ratio: $minor-second;
     margin-right: 1in;
     page: no-footer;
     page-break-after: always;
-  }
 
-  .publisher { margin-bottom: $print-base-spacing; }
-  .distribution { margin-bottom: $print-base-spacing;}
-  .team { margin-top: $print-base-spacing;}
-
-  .loc-cip {
-    margin-bottom: $print-base-spacing;
-
-    p { margin-bottom: 0; }
-
-    li {
-      padding-left: $print-base-spacing;
-      text-indent: -$print-base-spacing;
+    .publisher {
+      margin-bottom: $print-base-spacing;
+      ul {
+        list-style-type: none;
+        margin-left: 0;
+      }
+      ul.team {
+        margin-top: $print-base-spacing;
+        list-style-type: none;
+        margin-left: 0;
+      }
     }
+
+    .distribution { margin-bottom: $print-base-spacing;}
+
+    .loc-cip {
+      margin-bottom: $print-base-spacing;
+      p {
+        margin-bottom: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin-top: 0;
+        margin-left: 0;
+      }
+      li {
+        padding-left: $print-base-spacing;
+        text-indent: -$print-base-spacing;
+      }
+    }
+
+    ul.illustration-credits {
+      list-style-type: none;
+      margin-left: 0;
+    }
+
   }
+
 }
 
 body.print-frontmatter {
@@ -314,30 +549,89 @@ body.abbreviations-and-notes {
   page: frontmatter;
 }
 
+.collection-link {
+  display: none;
+}
+
+#concordance-inv-no {
+  width: 60%;
+}
+
 body.introduction {
   counter-reset: page 1;
 }
 
+body.catalogue.landing {
+  page: catalogue-landing;
+  page-break-after: always;
+  .page__header {
+    text-align: right;
+    margin-top: 2.5in;
+    margin-right: 1.5in;
+    h1 {
+      font-size: 18pt;
+    }
+  }
+  .page__content {
+    display: none;
+  }
+}
+
+body.indices.landing {
+  page: indices-landing;
+  page-break-after: always;
+  .page__header {
+    text-align: right;
+    margin-top: 2.5in;
+    margin-right: 1.5in;
+    h1 {
+      font-size: 18pt;
+    }
+  }
+  .page__content {
+    display: none;
+  }
+}
+
 .classification,
-.concordance,
-.discus-index,
-.index-indent,
-.contents-page {
+// .concordance,
+// .discus-index,
+// .index-indent,
+.contents-page,
+.full-print-heading {
   column-span: all;
 }
 
-h4.index-indent {
+h4.full-print-heading,
+h3.full-print-heading {
+  margin-top: $print-base-spacing * 3;
+}
+
+h3.full-print-heading:first-of-type {
   margin-top: $print-base-spacing;
 }
 
-.index-indent {
-  ul { margin-left: 0; }
+#lamp-signatures,
+#stamps-table {
+  column-span: all;
+  margin-bottom: $print-base-spacing * 3;
 }
 
-.page__content ol.classification,
-.page__content ol.discus-index {
+#lamp-signatures,
+#lamp-signatures-heading {
   margin-left: $print-base-spacing;
-  padding-left: $print-base-spacing;
+}
+
+#stamps-table-heading {
+  page-break-before: always;
+}
+
+#stamps-table .catalogue-numbers td {
+    border-bottom: 0;
+}
+
+.stamps td img {
+  height: 1.2cm;
 }
 
 .page__content .classification,
@@ -346,27 +640,66 @@ h4.index-indent {
   ul, ol, li {
     font-size: 8pt;
     font-weight: normal;
-    margin: 0;
-    padding: 0;
     text-transform: none;
   }
-
   > li {
     font-size: 10pt;
     margin-bottom: $print-base-spacing;
     text-transform: uppercase;
   }
-
-  ol ol {
-    padding-left: $print-base-spacing;
+  .empty-level {
+    list-style-type: none;
   }
 }
 
-.page__content .classification,
+.index ul {
+  padding-left: $print-base-spacing;
+  text-indent: -$print-base-spacing;
+  margin-left: 0;
+}
+
+.page__content .contents-page {
+  margin-left: 0;
+}
+
+.page__content p.entry-author {
+  margin-bottom: $base-spacing;
+  margin-top: $small-spacing;
+  margin-right: $small-spacing;
+  // display: block;
+  text-align: right;
+  text-indent: 0;
+}
+
+p.entry-author + p {
+  text-indent: 0;
+}
+
 .page__content .contents-page {
   a::after {
     content: leader(dotted) " " target-counter(attr(href, url), page);
   }
+  .contents-subhead a::after {
+    content: "";
+  }
+  .frontmatter a::after {
+    content: leader(dotted) " " target-counter(attr(href, url), page, lower-roman);
+  }
+}
+
+.page__content .classification {
+  a::after {
+    content: " p. " target-counter(attr(href, url), page);
+  }
+  .small-text-link {
+    font-size: 8pt;
+    text-transform: none;
+  }
+}
+
+.classification + .footnotes {
+  page-break-inside: avoid;
+  column-span: all;
 }
 
 
@@ -395,3 +728,12 @@ ul.contributor-bios {
   li { margin-bottom: $print-base-spacing; }
 }
 
+.print-only {
+  display: inline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.screen-only {
+  display: none;
+}

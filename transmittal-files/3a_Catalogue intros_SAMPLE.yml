@@ -5,7 +5,7 @@
 layout: entry
 sort_order:
 hierarchy:
- - II: Greek and Hellenistic Clay Lamps
+ - II: II. Greek and Hellenistic Clay Lamps
  - A: Wheelmade Lamps
  - 11: Ricci type D
 cat: 20
@@ -17,7 +17,7 @@ cat: 20
 layout: entry
 sort_order:
 hierarchy:
- - II: Greek and Hellenistic Clay Lamps
+ - II: II. Greek and Hellenistic Clay Lamps
  - A: Wheelmade Lamps
  - 12: Undetermined Hellenistic types
 cat: [21, 22, 23, 24, 25, 26, 27]
@@ -30,7 +30,7 @@ layout: intro
 file: epheseus-lamps.md
 sort_order: 15
 hierarchy:
- - II: Greek and Hellenistic Clay Lamps
+ - II: II. Greek and Hellenistic Clay Lamps
  - B: Moldmade Lamps
  - 1: “Ephesus lamps”
 cat: 28–43
@@ -43,7 +43,7 @@ layout: intro
 file: loeschcke-type-viii-intro-11.md
 sort_order:
 hierarchy:
- - III: Roman-Period Clay Lamps
+ - III: III. Roman-Period Clay Lamps
  - A: Types from both Western and Eastern Provinces of the Roman Empire
  - b: Augustan and Imperial Lamps
  - 14: Loeschcke type viii

@@ -1,36 +1,62 @@
-import lunr from 'lunr'
+import Vue from 'vue'
+import _ from 'lodash/core'
+import localforage from 'localforage'
 
-class Search {
-  constructor() {
-    this.index = this.buildIndex()
-    this.dataURL = 'https://gettypubs.github.io/ancient-lamps/search.json'
-    // this.dataURL = '/search.json'
-    this.getData()
-    this.contentList = []
-  }
+let Search = Vue.extend({
+  name: 'Search',
+  template: '#search-results-template',
+  data () {
+    return {
+      index: '',
+      ready: false,
+      results: [],
+      contents: [],
+      query: ''
+    }
+  },
+  mounted () {
+    // console.log('Search component mounted')
+    this.index = window.page.searchIndex
 
-  buildIndex() {
-    return lunr(function() {
-      this.field('cat', { boost: 1000 })
-      this.field('url')
-      this.field('title', { boost: 10 })
-      this.field('content')
-      this.ref('id')
-    })
-  }
-
-  getData() {
-    $.get(this.dataURL, {cache: true}).done((data) => {
-      this.contentList = data
-      data.forEach((item) => {
-        this.index.add(item)
+    if (window.page.searchStatus) {
+      this.loadData()
+    } else {
+      window.addEventListener('search', (e) => {
+        this.loadData()
       })
-    })
+    }
+  },
+  watch: {
+    query (newQuery) {
+      this.results = []
+      this.results = this.search(newQuery)
+    }
+  },
+  methods: {
+    loadData () {
+      // TODO: This function is causing the UI to lag when it runs.
+      // Figure out how to mitigate this. The contents data is very
+      // large (1MB of JSON or more).
+      localforage.getItem('contents').then((data) => {
+        this.contents = data.map(function (item) {
+          return {
+            id: item.id,
+            title: item.title,
+            type: item.type,
+            url: item.url
+          }
+        })
+        this.ready = true
+        // console.log('Search component data loaded')
+      })
+    },
+    search (query) {
+      this.query = query
+      return _.map(this.index.search(query), (r) => {
+        return this.contents[r.ref]
+      })
+    }
   }
-
-  search(query) {
-    return this.index.search(query)
-  }
-}
+})
 
 export default Search

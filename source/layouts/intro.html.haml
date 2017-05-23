@@ -1,4 +1,4 @@
-- typology = current_page.data.hierarchy.map {|i| i.values }.flatten.join(" / ")
+- typology = current_page.data.hierarchy.map {|i| i.values }.reverse.drop(1).reverse.flatten.join(" / ")
 - title = current_page.data.hierarchy.last.values.join
 - cat = current_page.data.cat
 - entries = current_page.data.cat.respond_to?(:each) ? cat : Array(cat)
@@ -9,9 +9,16 @@
     .cat-intro__breadcrumbs-bar
       .cat-intro__breadcrumbs-bar__inner
         %h4.cat-intro__breadcrumbs-bar__text= typology
-    .cat-intro__header
-      .cat-intro__header__inner
-        %h1.cat-intro__title= title
+    - if environment? :pdf
+      %header.cat-intro__header#page-title
+        .cat-intro__image{ :data => { :cat => current_page.data.cover || first }}
+        .cat-intro__header__titlebar
+          .cat-intro__header__titlebar__inner
+            %h1.cat-intro__title__intro= "Introduction<br /><span class='cat-intro__title__secondary'>#{title}</span>"
+    - else
+      .cat-intro__header
+        .cat-intro__header__inner
+          %h1.cat-intro__title= "Introduction<br /><span class='cat-intro__title__secondary'>#{title}</span>"
     %article.cat-intro__content
       .cat-intro__content__inner
         = yield

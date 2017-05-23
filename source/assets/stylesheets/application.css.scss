@@ -1,6 +1,8 @@
 @import 'vendor/normalize';
 @import 'vendor/leaflet/leaflet.css';
 @import 'vendor/leaflet-label/leaflet.label.css';
+@import 'vendor/leaflet/MarkerCluster.css';
+@import 'vendor/leaflet/MarkerCluster.Default.css';
 @import 'vendor/photoswipe/photoswipe.css';
 @import 'vendor/photoswipe/default-skin/default-skin.css';
 
@@ -21,3 +23,4 @@
 @import 'toc';
 @import 'cat_entry';
 @import 'cat_intro';
+@import 'catalogue_grid';

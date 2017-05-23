@@ -1,0 +1,89 @@
+<div id="cat-details" data-cat="<%= current_page.data.cat %>">
+</div>
+<script type="text/x-template" id="cat-entry-template">
+  <div class="cat-entry__details">
+    <deep-zoom
+        :cat="cat"
+        :active="visible"
+        :class="{ 'is-visible': visible }" >
+    </deep-zoom>
+
+    <div class="cat-entry__details__data"
+         :class="{ 'is-visible': visible }" >
+      <div v-if="entry" class="cat-entry__details__text">
+        <div class="section cat-number">
+          <h2 class="cat-number" id="entry-cat-number">{{ entry.cat_no }}</h2>
+        </div>
+        <div class="section no-entry" v-if="entry.no_entry">
+          <p>No entry.</p>
+        </div>
+        <div class="section inv-number" v-if="entry.inv_no">
+          <h2 v-if="entry.multiple_objects">Inventory Numbers</h2>
+          <h2 v-else>Inventory Number</h2>
+          <p id="entry-inv-number">{{ entry.inv_no }} <a class="collection-link" :href="collectionLink" target="_blank" title="View this item on the Getty's collection pages." ><i class="ion-link"></i></a></p>
+        </div>
+        <div class="section dimensions" v-if="entry.dimensions">
+          <h2>Dimensions</h2>
+          <p id="entry-dimensions" v-html="entry.dimensions"></p>
+        </div>
+        <div class="section condition" v-if="entry.condition_and_fabric">
+          <h2>Condition and Fabric</h2>
+          <p id="entry-condition" v-html="entry.condition_and_fabric"></p>
+        </div>
+        <div class="section condition" v-else-if="entry.condition">
+          <h2>Condition</h2>
+          <p id="entry-condition" v-html="entry.condition"></p>
+        </div>
+        <div class="section description" v-if="entry.description">
+          <h2>Description</h2>
+          <p id="entry-description" v-html="entry.description"></p>
+        </div>
+        <div class="section stamp" v-if="entry.stamp_width">
+          <h2>Stamp</h2>
+          <img id="entry-stamp" :style="{ width: entry.stamp_width + 'cm' }" alt="" :src="stamp"/>
+        </div>
+        <div class="section stamp" v-else-if="entry.stamp">
+          <h2>Stamp</h2>
+          <img id="entry-stamp" :src="stamp"/>
+        </div>
+        <div class="section iconography" v-if="entry.discus_iconography">
+          <h2>Discus Iconography</h2>
+          <p id="entry-iconography" v-html="entry.discus_iconography"></p>
+        </div>
+        <div class="section type" v-if="entry.type">
+          <h2>Type</h2>
+          <p id="entry-type" v-html="entry.type"></p>
+        </div>
+        <div class="section date" v-if="entry.date">
+          <h2>Date</h2>
+          <p id="entry-date">{{ entry.date }}</p>
+        </div>
+        <div class="section place" v-if="entry.place">
+          <h2>Place of Manufacture or Origin</h2>
+          <p id="entry-place" v-html="entry.place"></p>
+        </div>
+        <div class="section parallels" v-if="entry.parallels">
+          <h2>Parallels</h2>
+          <p id="entry-parallels" v-html="entry.parallels"></p>
+        </div>
+        <div class="section provenance" v-if="entry.provenance">
+          <h2>Provenance</h2>
+          <p id="entry-provenance" v-html="entry.provenance"></p>
+        </div>
+        <div class="section bibliography" v-if="entry.bibliography">
+          <h2>Bibliography</h2>
+          <p id="entry-bibliography" v-html="entry.bibliography"></p>
+        </div>
+        <div class="section discussion" v-if="entry.discussion">
+          <h2>Discussion</h2>
+          <p id="entry-discussion" v-html="entry.discussion"></p>
+        </div>
+      </div>
+    </div>
+    <div class="cat-entry__details__close"
+         :class="{'is-visible': visible }"
+         @click="hide">
+      <i class="close-button"></i>
+    </div>
+  </div>
+</script>

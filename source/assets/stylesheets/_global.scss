@@ -4,7 +4,12 @@
 // Pass in the previous media query's omega() argument to reset it
 @mixin omega-reset($nth) {
   &:nth-child(#{$nth}) { margin-right: flex-gutter($grid-columns, $gutter); }
-  &:nth-child(#{$nth}+1) { clear: none }
+  &:nth-child(#{$nth}+1) { clear: none; }
+}
+
+@keyframes repaint {
+  from { height: 99.9%; }
+  to { height: 100%; }
 }
 
 html { min-height: 100vh; }
@@ -118,11 +123,16 @@ html { min-height: 100vh; }
   @include media($small-screen) { display: none; }
 }
 
-.entry-author {
+.page__content p.entry-author {
+  margin-bottom: $base-spacing;
   margin-top: $small-spacing;
   margin-right: $small-spacing;
-  display: block;
+  // display: block;
   text-align: right;
+  text-indent: 0;
+}
+
+p.entry-author + p {
   text-indent: 0;
 }
 
@@ -178,6 +188,12 @@ html { min-height: 100vh; }
 .noscroll {
   overflow: hidden;
   // position: fixed;
+}
+
+.meta {
+  color: $medium-gray;
+  font-size: modular-scale(-1);
+  line-height: 1;
 }
 
 
@@ -245,6 +261,33 @@ figcaption { margin-top: $small-spacing * 0.5; }
   &__popup {z-index: $z-index-9;}
 
   &__label {
+    &__sea {
+      cursor: pointer;
+      z-index: 200 !important;
+
+      p {
+        color: #fff;
+        font-family: $heading-font-family;
+        font-size: 0.9rem;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+    &__river {
+      cursor: pointer;
+      z-index: 200 !important;
+
+      p {
+        color: #176ab7;
+        font-family: $heading-font-family;
+        font-size: 0.9rem;
+        font-weight: normal;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+
     &__region {
       cursor: pointer;
       z-index: 200 !important;
@@ -256,7 +299,7 @@ figcaption { margin-top: $small-spacing * 0.5; }
         font-weight: normal;
         line-height: 1;
         text-align: center;
-        text-transform: capitalize;
+        // text-transform: capitalize;
       }
     }
 

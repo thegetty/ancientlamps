@@ -7,8 +7,10 @@ import lookupData from './lookup.js'
 import _ from 'lodash/core'
 import includes from 'lodash.includes'
 
+require('leaflet.markercluster')
+
 class Map {
-  constructor() {
+  constructor () {
     this.map = {}
     this.el = 'map'
     this.defaultZoom = 6
@@ -29,35 +31,34 @@ class Map {
     if (window.location.hash.slice(1, 4) === 'loc') { this.zoomToHash() }
   }
 
-  setup() {
+  setup () {
     this.map = L.map(this.el, {
-      // options
       maxZoom: this.maxZoom,
       minZoom: this.minZoom
     }).setView(this.ctr, this.defaultZoom)
   }
 
-  addTiles() {
+  addTiles () {
     L.tileLayer(this.tiles + this.token, {
-      // options
       attribution: this.attr
     }).addTo(this.map)
   }
 
-  addData() {
-    // Labels with catalogue entries, regardless of type
-    let catalogueLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) { return feature.properties.catalogue.length > 0 },
+  addData () {
+    let countryLabels = L.geoJson(this.geojsonData, {
+      filter: function (feature, layer) {
+        return feature.properties.feature_type === 'country' ||
+        feature.properties.feature_type === 'sea'
+      },
       pointToLayer: this.addLabels,
       onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
 
     // Region labels
     let regionLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) {
+      filter: function (feature, layer) {
         return feature.properties.feature_type === 'region' ||
-          feature.properties.feature_type === 'sea' &&
-          feature.properties.catalogue.length < 1
+          feature.properties.feature_type === 'river'
       },
       pointToLayer: this.addLabels,
       onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
@@ -65,16 +66,19 @@ class Map {
 
     // Sites / points of interest
     let siteLabels = L.geoJson(this.geojsonData, {
-      filter: function(feature, layer) {
-        return feature.properties.feature_type === 'site' &&
-          feature.properties.catalogue.length < 1
+      filter: function (feature, layer) {
+        return feature.properties.feature_type === 'site'
       },
-      pointToLayer: this.addLabels
+      pointToLayer: this.addLabels,
+      onEachFeature: (feature, layer) => { this.addPopups(feature, layer) }
     })
 
+    let regionGroup = L.markerClusterGroup()
+    regionGroup.addLayer(regionLabels)
+
     let overlays = {
-      'Catalogue Locations': catalogueLabels,
-      'Regions': regionLabels,
+      // 'Countries': countryLabels,
+      'Regions': regionGroup,
       'Points of Interest': siteLabels
     }
 
@@ -83,67 +87,67 @@ class Map {
       position: 'topright'
     }
 
-    this.map.addLayer(catalogueLabels)
+    this.map.addLayer(countryLabels)
+    this.map.addLayer(regionGroup)
     L.control.layers(null, overlays, options).addTo(this.map)
   }
 
-  addLabels(feature, latlng) {
-    let catClass = ''
+  addLabels (feature, latlng) {
     switch (feature.properties.feature_type) {
       case 'country':
-        if (feature.properties.catalogue.length > 0) { catClass = 'has-catalogue' }
         return L.marker(latlng, {
           icon: L.divIcon({
             html: `<p>${feature.properties.custom_name}</p>`,
-            className: `map__label__country ${catClass}`,
+            className: 'map__label__country',
             iconSize: 150
           })
         })
-      case 'region':
-      case 'sea':
-        if (feature.properties.catalogue.length > 0) { catClass = 'has-catalogue' }
+      case 'river':
         return L.marker(latlng, {
           icon: L.divIcon({
             html: `<p>${feature.properties.custom_name}</p>`,
-            className: `map__label__region ${catClass}`,
+            className: 'map__label__river',
+            iconSize: 80
+          })
+        })
+      case 'sea':
+        return L.marker(latlng, {
+          icon: L.divIcon({
+            html: `<p>${feature.properties.custom_name}</p>`,
+            className: 'map__label__sea',
+            iconSize: 80
+          })
+        })
+      case 'region':
+        return L.marker(latlng, {
+          icon: L.divIcon({
+            html: `<p>${feature.properties.custom_name}</p>`,
+            className: `map__label__region`,
             iconSize: 80
           })
         })
       default:
-        if (feature.properties.catalogue.length > 0) {
-          return L.circleMarker(latlng, {
-            radius: 5,
-            fillColor: '#328474',
-            color: '#fff',
-            weight: 1,
-            opacity: 1,
-            fillOpacity: 1
-          }).bindLabel(feature.properties.custom_name, {
-            className: 'map__label__site has-catalogue'
-          })
-        } else {
-          return L.circleMarker(latlng, {
-            radius: 5,
-            fillColor: '#333',
-            color: '#000',
-            weight: 0,
-            opacity: 1,
-            fillOpacity: 0.75
-          }).bindLabel(feature.properties.custom_name, {
-            className: 'map__label__site'
-          })
-        }
+        return L.circleMarker(latlng, {
+          radius: 5,
+          fillColor: '#333',
+          color: '#000',
+          weight: 0,
+          opacity: 1,
+          fillOpacity: 0.75
+        }).bindLabel(feature.properties.custom_name, {
+          className: 'map__label__site'
+        })
     }
   }
 
-  addPopups(feature, layer) {
+  addPopups (feature, layer) {
     let options = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
     let message = this.buildPopupMessage(feature)
 
     layer.bindPopup(message, options)
   }
 
-  addOpenPopup(feature, layer) {
+  addOpenPopup (feature, layer) {
     let latlng = layer.getLatLng()
     let options = {minWidth: 100, maxHeight: 250, className: 'map__popup'}
     let message = this.buildPopupMessage(feature)
@@ -152,7 +156,7 @@ class Map {
     layer.bindPopup(message, options)
   }
 
-  buildPopupMessage(feature) {
+  buildPopupMessage (feature) {
     let props = feature.properties
     let message = `<h4 class="feature-name">${props.custom_name}</h4>`
     let pleiadesUrl = `http://pleiades.stoa.org/places/${props.pid}`
@@ -170,7 +174,7 @@ class Map {
         let link = this.linkLookup(entry)
 
         if (link && link.hasOwnProperty('path')) {
-          message += `<li><a href="../catalogue/${link.path}/">Cat. ${entry}</a></li>`
+          message += `<li><a href="../catalogue/${link.path}/#${entry}">Cat. ${entry}</a></li>`
         } else {
           message += `<li>Cat. ${entry}</li>`
         }
@@ -181,8 +185,8 @@ class Map {
     return message
   }
 
-  linkLookup(catNumber) {
-    return _.find(lookupData, function(i) {
+  linkLookup (catNumber) {
+    return _.find(lookupData, function (i) {
       if (typeof i.cat_no === 'number' || typeof i.cat_no === 'string') {
         return i.cat_no === catNumber
       } else {
@@ -191,11 +195,11 @@ class Map {
     })
   }
 
-  zoomToHash() {
+  zoomToHash () {
     if (!window.location.hash) {
       return false
     } else {
-      let loc = _.find(this.geojsonData.features, function(feature) {
+      let loc = _.find(this.geojsonData.features, function (feature) {
         if (feature.properties.pid.length > 0) {
           // If location has a Pleiades ID
           return feature.properties.pid === window.location.hash.slice(5)

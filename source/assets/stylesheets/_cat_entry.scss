@@ -152,6 +152,31 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
         background-size: cover;
       }
     }
+
+    // specific rules for cat numbers that are not integers
+    &[data-cat="146 bis"] {
+      background-image: url("../images/thumbs/146 bis.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &[data-cat="252 bis"] {
+      background-image: url("../images/thumbs/252 bis.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &[data-cat="626a"] {
+      background-image: url("../images/thumbs/626a.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &[data-cat="626b"] {
+      background-image: url("../images/thumbs/626b.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
   }
 }
 
@@ -198,6 +223,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
 
     &.is-visible {
       @include transform(translateY(0));
+      animation: repaint 100ms;
       -webkit-overflow-scrolling: touch;
       overflow-y: auto;
     }
@@ -205,6 +231,14 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
 
   &__text {
     margin-bottom: $base-spacing * 2;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      text-indent: $base-spacing;
+    }
 
     h2 {
       @extend .smcaps;
@@ -227,7 +261,8 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     }
 
     #entry-stamp {
-      max-width: 6em;
+      margin-top: $small-spacing * .5;
+      margin-left: $small-spacing * .5;
     }
   }
 

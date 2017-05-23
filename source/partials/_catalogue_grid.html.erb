@@ -1,0 +1,59 @@
+<div id="js-catalogue">
+</div>
+<script type="text/x-template" id="catalogue-grid-template">
+  <div class="catalogue-grid">
+    <p>
+      Filter catalogue entries by date range and place of manufacture or origin.
+    </p>
+    <hr/>
+    <div v-if="ready">
+      <div class="catalogue-grid__header">
+        <div class="catalogue-grid__header__filter">
+          <span class="label">
+            Date Range (BC/AD)
+          </span>
+          <vue-slider
+              ref="slider"
+              :process-style="slider.processStyle"
+              :min="slider.min"
+              :max="slider.max"
+              :interval="slider.interval"
+              :tooltip="slider.tooltip"
+              tooltip-dir="bottom"
+              v-model="date">
+          </vue-slider>
+        </div>
+        <div class="catalogue-grid__header__filter">
+          <span class="label">
+            Place of Manufacture or Origin
+          </span>
+          <div class="select-container">
+            <select v-model="selection">
+              <option value="ALL">All Locations</option>
+              <option v-for="item in locationsList" v-bind:value="item.entries">
+                {{ item.name }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <h4>
+          Showing {{results.length}} results out of {{ entries.length }}
+          entries.
+        </h4>
+      </div>
+      <div class="cat-entry__grid">
+        <a
+            :href="entryLink(item.cat_no)"
+            v-for="item in results"
+            class="cat-entry__grid__item"
+            :data-cat="item.cat_no">
+          <h6 class="cat-entry__grid__item__number">{{ item.cat_no }}</h6>
+        </a>
+      </div>
+    </div>
+    <div v-else>
+      Loading...
+    </div>
+  </div>
+</script>
