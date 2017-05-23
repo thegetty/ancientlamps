@@ -18,7 +18,7 @@ let ImageViewer = Vue.extend({
       maxZoom: 13,
       minZoom: 10,
       faces: [],
-      map: ''
+      map: null
     }
   },
   computed: {
@@ -28,17 +28,29 @@ let ImageViewer = Vue.extend({
   },
   watch: {
     active (newStatus) {
-      if (typeof this.map.remove === 'function') {
-        this.removeMap()
-      }
+      this.renderMap()
+    },
+    cat (newCat) {
       this.getData()
     }
   },
   mounted () {
-    this.getData()
+    if (window.page.platesStatus) {
+      console.log('PlatesStatus is ' + window.page.platesStatus)
+      this.getData()
+    } else {
+      window.addEventListener('plates', (e) => {
+        console.log('Plates event detected')
+        this.getData()
+      })
+    }
   },
   methods: {
     renderMap () {
+      if (this.map) {
+        this.removeMap()
+      }
+
       this.map = L.map('js-deepzoom', {
         maxZoom: this.maxZoom,
         minZoom: this.minZoom
@@ -66,6 +78,7 @@ let ImageViewer = Vue.extend({
       }
     },
     getData () {
+      console.log('getData called. Current cat is: ' + this.cat)
       localforage.getItem('plates').then((data) => {
         let query = {cat: this.cat}
         let imageData = _.find(data, query)
@@ -75,7 +88,10 @@ let ImageViewer = Vue.extend({
       })
     },
     removeMap () {
-      this.map.remove()
+      if (typeof this.map === 'object' && this.map !== null) {
+        this.map.remove()
+        this.map = null
+      }
     }
   }
 })
