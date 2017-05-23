@@ -4,7 +4,12 @@
 // Pass in the previous media query's omega() argument to reset it
 @mixin omega-reset($nth) {
   &:nth-child(#{$nth}) { margin-right: flex-gutter($grid-columns, $gutter); }
-  &:nth-child(#{$nth}+1) { clear: none }
+  &:nth-child(#{$nth}+1) { clear: none; }
+}
+
+@keyframes repaint {
+  from { height: 99.9%; }
+  to { height: 100%; }
 }
 
 html { min-height: 100vh; }
