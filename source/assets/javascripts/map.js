@@ -77,7 +77,7 @@ class Map {
     regionGroup.addLayer(regionLabels)
 
     let overlays = {
-      'Countries': countryLabels,
+      // 'Countries': countryLabels,
       'Regions': regionGroup,
       'Points of Interest': siteLabels
     }
