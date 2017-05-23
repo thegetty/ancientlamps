@@ -76,10 +76,10 @@ window.page = {
   setupStoredData () {
     let searchDataURL, catalogueDataURL, platesDataURL
 
-    if (this.environment === 'PRODUCTION') {
-      searchDataURL = `${this.urls.prefix}/${this.urls.search}`
-      catalogueDataURL = `${this.urls.prefix}/${this.urls.catalogue}`
-      platesDataURL = `${this.urls.plates}/${this.urls.plates}`
+    if (this.env === 'PRODUCTION') {
+      searchDataURL = `${this.urls.prefix}${this.urls.search}`
+      catalogueDataURL = `${this.urls.prefix}${this.urls.catalogue}`
+      platesDataURL = `${this.urls.prefix}${this.urls.plates}`
     } else {
       searchDataURL = this.urls.search
       catalogueDataURL = this.urls.catalogue
