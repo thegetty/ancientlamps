@@ -1,12 +1,15 @@
 <script type="text/x-template" id="search-results-template">
-  <div class="search-results-inner">
-    <ul class="search-results-list">
-      <li v-for="result in results" class="search-results-list-item">
-        <a class="search-results-list-item-link" :href="result.url">
-          <h3 v-html="result.title"></h3>
-          <p class="meta">{{ result.type }}</p>
-        </a>
-      </li>
-    </ul>
+  <div v-if="ready">
+    <div class="search-results-inner">
+      <ul class="search-results-list">
+        <li v-for="result in results" class="search-results-list-item">
+          <a class="search-results-list-item-link" :href="result.url">
+            <h3 v-html="result.title"></h3>
+            <p class="meta">{{ result.type }}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
+  <div v-else><h1>Loading...</h1></div>
 </script>
