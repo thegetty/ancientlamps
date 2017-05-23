@@ -160,6 +160,12 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       background-size: cover;
     }
 
+    &[data-cat="252 bis"] {
+      background-image: url("../images/thumbs/252 bis.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+
     &[data-cat="626a"] {
       background-image: url("../images/thumbs/626a.jpg");
       background-position: center center;
