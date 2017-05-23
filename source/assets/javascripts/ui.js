@@ -192,7 +192,7 @@ class UI {
   toggleDetailsOnHashChange (e) {
     if (arguments.length > 0) {
       let hash = this.catNumCheck(e.newURL.split('#')[1])
-      console.log(hash)
+      // console.log(hash)
 
       let $catalogueEntry = $('#js-cat-entry')
       let entries = $catalogueEntry.data('entries')
