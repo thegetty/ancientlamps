@@ -480,16 +480,16 @@ const geojsonData = {
       "basename": "Nicosia",
       "custom_name": "Nicosia",
       "feature_type": "site",
-      "pid": "462392",
-      "tgn": "7003917",
+      "pid": "",
+      "tgn": "7002345",
       "catalogue": "",
       "description": ""
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        14.398131,
-        37.748613
+        33.3642,
+        35.1753
       ]
     }
   }, {
