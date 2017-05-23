@@ -40,8 +40,13 @@ let Details = Vue.extend({
     }
   },
   mounted () {
-    this.findEntry()
-    console.log('Details component Mounted!')
+    if (window.page.catalogueStatus) {
+      this.findEntry()
+    } else {
+      window.addEventListener('catalogue', (e) => {
+        this.findEntry()
+      })
+    }
   },
   methods: {
     catNumCheck (cat) {
@@ -59,7 +64,6 @@ let Details = Vue.extend({
       })
     },
     hide () {
-      console.log('hide() fired')
       let scrollPos = window.scrollY
       this.visible = false
       document.querySelector('body').classList.remove('noscroll')

@@ -8,19 +8,23 @@ let Search = Vue.extend({
   data () {
     return {
       index: '',
+      ready: false,
       results: [],
       contents: [],
       query: ''
     }
   },
   mounted () {
-    // Using previously stashed global valuse for search data for now,
-    // since re-creating this after each page transition negatively impacts
-    // performance and the data itself will never change.
-    this.index = window.globalSearchIndex
-    localforage.getItem('contents').then((data) => {
-      this.contents = data
-    })
+    console.log('Search component mounted')
+    this.index = window.page.searchIndex
+
+    if (window.page.searchStatus) {
+      this.loadData()
+    } else {
+      window.addEventListener('search', (e) => {
+        this.loadData()
+      })
+    }
   },
   watch: {
     query (newQuery) {
@@ -29,6 +33,23 @@ let Search = Vue.extend({
     }
   },
   methods: {
+    loadData () {
+      // TODO: This function is causing the UI to lag when it runs.
+      // Figure out how to mitigate this. The contents data is very
+      // large (1MB of JSON or more).
+      localforage.getItem('contents').then((data) => {
+        this.contents = data.map(function (item) {
+          return {
+            id: item.id,
+            title: item.title,
+            type: item.type,
+            url: item.url
+          }
+        })
+        this.ready = true
+        console.log('Search component data loaded')
+      })
+    },
     search (query) {
       this.query = query
       return _.map(this.index.search(query), (r) => {

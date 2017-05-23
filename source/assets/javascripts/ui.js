@@ -1,4 +1,4 @@
-import _ from 'lodash/core'
+// import _ from 'lodash/core'
 import debounce from 'lodash.debounce'
 import moment from 'moment'
 import Map from './map.js'
@@ -15,7 +15,6 @@ class UI {
     this.catalogueInstance = null
     this.mapInstance = null
 
-    // Init script
     this.setup()
   }
 
@@ -28,51 +27,73 @@ class UI {
   }
 
   setup () {
-    // DOM Handles
+    this.citationDate()
+    let $expanderContent = $('.expander-content')
+    $expanderContent.addClass('expander--hidden')
+
+    // this.anchorScroll(window.location.hash)
+
+    this.searchInstance = new Search({ el: '#search-results-template' })
+    this.setupCommonEventHandlers()
+    this.setupMapIfNecessary()
+    this.setupCatalogueGridIfNecessary()
+    this.setupDetailsIfNecessary()
+
+    if (window.location.hash.length > 0 && this.catalogueInstance !== null) {
+      this.toggleDetailsOnHashChange({newURL: window.location.hash})
+    }
+  }
+
+  setupCommonEventHandlers () {
     let $menuButton = $('#navbar-menu')
     let $menuCloseButton = $('#nav-menu-close')
     let $searchButton = $('#navbar-search')
     let $searchCloseButton = $('#search-close')
     let $searchInput = $('.search-field')
-    let $expanderContent = $('.expander-content')
     let $triggers = $('.expander-trigger')
     let $curtain = $('.sliding-panel-fade-screen')
-    let $thumbnails = $('.cat-entry__grid__item')
-    let $catalogueEntry = $('#js-cat-entry')
 
-    // DOM Manipulation (run once on page load)
-    this.citationDate()
-    this.anchorScroll(window.location.hash)
-    $expanderContent.addClass('expander--hidden')
-    this.searchInstance = new Search({ el: '#search-results-template' })
-
-    // Add event handlers common to all pages
     $curtain.click(() => { this.menuToggle() })
     $menuButton.click(() => { this.menuToggle() })
     $menuCloseButton.click(() => { this.menuToggle() })
     $searchButton.click(() => { this.showSearch() })
     $searchCloseButton.click(() => { this.hideSearch() })
-    $triggers.click((e) => this.expandToggle(e))
+    $triggers.click((e) => { this.expandToggle(e) })
+
     window.onkeydown = (e) => { this.keyboardControls(e) }
-    window.onhashchange = () => { this.toggleDetailsOnHashChange() }
+    window.onhashchange = (e) => { this.toggleDetailsOnHashChange(e) }
 
     let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
     $searchInput.keydown(() => { boundDebounce() })
+  }
 
-    // Add page-specific UI elements: Maps, catalogue details, etc.
-    if ($('#map').length) { this.mapInstance = new Map() }
-    if ($('#js-catalogue').length) { new Catalogue({ el: '#js-catalogue'})}
+  setupMapIfNecessary () {
+    let $map = $('#map')
+    if ($map.length > 0) { this.mapInstance = new Map() }
+  }
+
+  setupCatalogueGridIfNecessary () {
+    let $catalogue = $('#js-catalogue')
+    // eslint-disable-next-line no-new
+    if ($catalogue.length > 0) { new Catalogue({el: '#js-catalogue'}) }
+  }
+
+  setupDetailsIfNecessary () {
+    let $catalogueEntry = $('#js-cat-entry')
+
     if ($catalogueEntry.length > 0) {
+      let $thumbnails = $('.cat-entry__grid__item')
+      $thumbnails.click(e => this.showDetails(e))
       let entries = $catalogueEntry.data('entries')
+
+      // Avoid a possible race condition here if user goes directly to a
+      // details hash url?
       this.catalogueInstance = new Details({
         el: '#cat-details',
         data: { cat: entries[0] }
       })
-      $thumbnails.click(e => this.showDetails(e))
     }
-
-    this.toggleDetailsOnHashChange()
   }
 
   citationDate () {
@@ -109,7 +130,6 @@ class UI {
       case 37: // Left Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
-        // if (this.deepZoomVisible) { this.hideDetails() }
         if ($prev.length) {
           // window.location = $prev.attr('href')
           $prev.click()
@@ -118,7 +138,6 @@ class UI {
       case 39: // Right Arrow
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
-        // if (this.deepZoomVisible) { this.hideDetails() }
         if ($next.length) {
           // window.location = $next.attr('href')
           $next.click()
@@ -156,43 +175,56 @@ class UI {
   }
 
   showDetails (e) {
-    console.log('showDetails() fired')
     let cat = this.catNumCheck(e.target.dataset.cat)
-    this.catalogueInstance.cat = cat
+    if (!this.catalogueInstance) {
+      this.catalogueInstance = new Details({
+        el: '#cat-details',
+        data: { cat: cat }
+      })
+    } else {
+      this.catalogueInstance.cat = cat
+    }
     this.catalogueInstance.show()
     document.querySelector('body').classList.add('noscroll')
     window.location.hash = cat
   }
 
-  toggleDetailsOnHashChange () {
-    let $catalogueEntry = $('#js-cat-entry')
-    if ($catalogueEntry.length > 0) {
-      if (window.location.hash.length > 0) {
-        let hash = window.location.hash.substring(1)
-        let $target = $(`.cat-entry__grid__item[data-cat='${hash}']`)
-        if ($target.length > 0) {
-          setTimeout(function () { $target.click() }, 50)
-        }
-      } else {
+  toggleDetailsOnHashChange (e) {
+    if (arguments.length > 0) {
+      let hash = this.catNumCheck(e.newURL.split('#')[1])
+      console.log(hash)
+
+      let $catalogueEntry = $('#js-cat-entry')
+      let entries = $catalogueEntry.data('entries')
+
+      // if we are on a catalogue page and the hash exists as an entry on the current page
+      if ($catalogueEntry.length > 0 && entries.indexOf(hash) > -1) {
+        this.catalogueInstance.cat = hash
+        window.setTimeout(this.catalogueInstance.show, 100)
+
+      // If the user has hit "Back" to get out of a details view
+      } else if (this.catalogueInstance &&
+                 this.catalogueInstance.visible &&
+                 typeof hash === 'undefined') {
         this.catalogueInstance.hide()
       }
-    }
 
-    if ($catalogueEntry.length > 0 && window.location.hash.length > 0) {
+      // If the user hits the close button or hits escape, or manually removes the hash
+      if ($catalogueEntry.length > 0 && hash === 0) {
+        this.catalogueInstance.hide()
+      }
     }
   }
 
   showSearch () {
-    console.log('showSearch Fired')
     if (!this.searchVisible) {
-      console.log('Manipulating DOM')
+      // if (!this.searchInstance.ready) { this.searchInstance.loadData() }
       let navbar = document.querySelector('.navbar')
       let searchResults = document.querySelector('.search-results')
       navbar.classList.add('search-active')
       searchResults.classList.add('search-active')
       document.querySelector('body').classList.add('noscroll')
       this.searchVisible = true
-      console.log('Finished manipulating DOM')
     }
   }
 
