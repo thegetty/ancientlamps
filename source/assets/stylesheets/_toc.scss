@@ -35,3 +35,23 @@
     padding-left: $base-spacing * 1.5;
   }
 }
+
+.contents-indices {
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing * 1.5;
+  // padding-top: $small-spacing;
+  padding-bottom: $small-spacing * .5;
+  border-bottom: $base-border;
+  ol {
+    margin-top: $small-spacing;
+    margin-bottom: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: $base-spacing * 1.5;
+  }
+}
+
+.contents-indices + li {
+  margin-top: $base-spacing * .7;
+}
