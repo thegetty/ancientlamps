@@ -6,6 +6,9 @@
 @import 'vendor/ionicons/ionicons';
 @import 'base/base';
 
+// Source Serif Pro
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&subset=latin-ext');
+
 // scss-lint:disable PropertySpelling, QualifyingElement, SingleLinePerSelector, EmptyRule
 
 // Variables
@@ -677,20 +680,23 @@ p.entry-author + p {
 
 .page__content .contents-page {
   a::after {
-    content: leader(dotted) " " target-counter(attr(href, url), page);
+    content: leader(dotted) ' ' target-counter(attr(href, url), page);
   }
+
   .contents-subhead a::after {
-    content: "";
+    content: '';
   }
+
   .frontmatter a::after {
-    content: leader(dotted) " " target-counter(attr(href, url), page, lower-roman);
+    content: leader(dotted) ' ' target-counter(attr(href, url), page, lower-roman);
   }
 }
 
 .page__content .classification {
   a::after {
-    content: " p. " target-counter(attr(href, url), page);
+    content: ' p. ' target-counter(attr(href, url), page);
   }
+
   .small-text-link {
     font-size: 8pt;
     text-transform: none;
@@ -698,8 +704,8 @@ p.entry-author + p {
 }
 
 .classification + .footnotes {
-  page-break-inside: avoid;
   column-span: all;
+  page-break-inside: avoid;
 }
 
 
@@ -731,9 +737,17 @@ ul.contributor-bios {
 .print-only {
   display: inline;
   overflow-wrap: break-word;
-  word-wrap: break-word;
   word-break: break-word;
+  word-wrap: break-word;
 }
+
 .screen-only {
   display: none;
 }
+
+.inscription {
+  font-family: "Source Serif Pro", serif;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
