@@ -56,7 +56,7 @@
         </div>
         <div class="section date" v-if="entry.date">
           <h2>Date</h2>
-          <p id="entry-date">{{ entry.date }}</p>
+          <p id="entry-date" v-html="entry.date"></p>
         </div>
         <div class="section place" v-if="entry.place">
           <h2>Place of Manufacture or Origin</h2>
