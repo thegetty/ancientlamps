@@ -8,21 +8,21 @@
   id: abadie-reynal-sodini-1992
   name: "Abadie-Reynal and Sodini 1992"
 -
+  contents: "Accorona, F., E. di Maio, and F. Garcea. 1996. “Pozzuoli, Porto Giulio. Rinvenimento sottomarino di lucerne fittili.” <em>Rendiconti dell’Accademia di Archeologia, Lettere e Belle Arti</em> 64:469–533. Naples.\n"
+  id: accorona-di-maio-garcea-1996
+  name: "Accorona, di Maio, and Garcea 1996"
+-
   contents: "<em>The J. Paul Getty Museum Journal</em> 12. 1984.\n"
   id: acquisitions-1983
   name: "Acquisitions/1983"
 -
-  contents: "<em>The J. Paul Getty Museum Journal</em> 12. 1992.\n"
+  contents: "<em>The J. Paul Getty Museum Journal</em> 20. 1992.\n"
   id: acquisitions-1991
   name: "Acquisitions/1991"
 -
   contents: "“Museum Acquisitions between July 1, 1996, and June 30, 1998.” <em>The Report of the J. Paul Getty Trust (1997–98)</em>.\n"
   id: acquisitions-1997-98
   name: "Acquisitions/1997–98"
--
-  contents: "Accorona, F., E. di Maio, and F. Garcea. 1996. “Pozzuoli, Porto Giulio. Rinvenimento sottomarino di lucerne fittili.” <em>Rendiconti dell’Accademia di Archeologia, Lettere e Belle Arti</em> 64:469–533. Naples.\n"
-  id: accorona-di-maio-garcea-1996
-  name: "Accorona, di Maio, and Garcea 1996"
 -
   contents: "Adler, N. 2004. <em>A Comprehensive Catalog of Oil Lamps of the Holy Land from the Adler Collection</em>. Israel.\n"
   id: adler-2004
@@ -324,7 +324,7 @@
   id: bieber-1915
   name: "Bieber 1915"
 -
-  contents: "Bisi Ingrassia, A. M. 1977. “Le lucerne fittili dei Nuovi Scavi di Ercolano.” In <em>L’instrumentum domesticum di Ercolano e Pompei nella prima età imperiale 1977</em>, pp. 73–104.\n"
+  contents: "Bisi Ingrassia, A. M. 1977. “Le lucerne fittili dei Nuovi Scavi di Ercolano.” In <em>L’instrumentum domesticum di Ercolano e Pompei nella prima età imperiale</em> 1977, pp. 73–104.\n"
   id: bisi-ingrassia-1997
   name: "Bisi Ingrassia 1997"
 -
@@ -460,7 +460,7 @@
   id: bussiere-2000
   name: "Bussière 2000"
 -
-  contents: "Bussière, J. 2007. <em>Lampes tardives et lampes chrétiennes</em>. Vol. 2 of Lampes antiques d’Algérie. Monographies instrumentum 35. Montagnac.\n"
+  contents: "Bussière, J. 2007. <em>Lampes tardives et lampes chrétiennes</em>. Vol. 2 of <em>Lampes antiques d’Algérie</em>. Monographies instrumentum 35. Montagnac.\n"
   id: bussiere-2007
   name: "Bussière 2007"
 -
@@ -576,7 +576,7 @@
   id: chrzanovski-2004
   name: "Chrzanovski 2004"
 -
-  contents: "Chrzanovski, L., ed. 2005. <em>Lychnological Acts 1. Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique (Nyon–Genève, 29 septembre–4 octobre 2003)</em>. Montagnac.\n"
+  contents: "Chrzanovski, L., ed. 2005. <em>Lychnological Acts</em> 1. <em>Actes du 1<sup>er</sup> Congrès international d’études sur le luminaire antique (Nyon–Genève, 29 septembre–4 octobre 2003)</em>. Montagnac.\n"
   id: chrzanovski-2005
   name: "Chrzanovski 2005"
 -
@@ -604,9 +604,9 @@
   id: cintas-1950
   name: "Cintas 1950"
 -
-  contents: "Clairmont, C. W. 1966. <em>Die Bildnisse des Antinous: Ein Beitrag zur Porträtplastik unter Kaiser Hadrian</em>. <em>Bibliotheca Helvetica Romana</em> 6.\n"
-  id: clairmont-1996
-  name: "Clairmont 1996"
+  contents: "Clairmont, C. W. 1966. <em>Die Bildnisse des Antinous: Ein Beitrag zur Porträtplastik unter Kaiser Hadrian</em>. Bibliotheca Helvetica Romana 6.\n"
+  id: clairmont-1966
+  name: "Clairmont 1966"
 -
   contents: "Clarke, J. 1998. <em>Looking at Lovemaking: Constructions of Sexuality in Roman Art, 100 B.C.–A.D. 250</em>. Berkeley.\n"
   id: clarke-1998
@@ -632,7 +632,7 @@
   id: conticello-de-spagnolis-1987
   name: "Conticello de’ Spagnolis 1987"
 -
-  contents: "Conticello de’ Spagnolis, M., and E. De Carolis. 1986. <em>Le lucerne di bronzo</em>. <em>Musei della Biblioteca Apostolica Vaticana, inventari e Studi</em> 1. Vatican City.\n"
+  contents: "Conticello de’ Spagnolis, M., and E. De Carolis. 1986. <em>Le lucerne di bronzo</em>. <em>Musei della Biblioteca Apostolica Vaticana, Inventari e Studi</em> 1. Vatican City.\n"
   id: conticello-de-spagnolis-de-carolis-1986
   name: "Conticello de’ Spagnolis and De Carolis 1986"
 -
@@ -648,7 +648,7 @@
   id: cuomo-di-caprio-santoro-bianchi-1983
   name: "Cuomo di Caprio and Santoro Bianchi 1983"
 -
-  contents: "Ćurčić, S., and A. St. Clair, eds. 1986. <em>Byzantium at Princeton: Byzantine Art and Archaeology at Princeton University</em>. Exh. cat. Princeton.\n"
+  contents: "Ćurčić, S., and A. St. Clair, eds. 1986. <em>Byzantium at Princeton: Byzantine Art and Archaeology at Princeton University</em>. Exh. cat. Princeton, NJ.\n"
   id: curcic-st-clair-1986
   name: "Ćurčić and St. Clair 1986"
 -
@@ -723,6 +723,10 @@
   contents: "Djuric, S. 1995. <em>Ancient Lamps from the Mediterranean: The Anawati Collection</em>. Toronto.\n"
   id: djuric-1995
   name: "Djuric 1995"
+-
+  contents: "Dobbins 1977. <em>Terracotta Lamps of the Roman Province of Syria</em>. Ph.D. diss. University of Michigan, Ann Arbor.\n"
+  id: dobbins-1977
+  name: "Dobbins 1977"
 -
   contents: "Domergue, C. 1966. “Un Envoi de lampes du potier CAIVS CLODIVS.” <em>Mélanges de la Casa de Velázquez</em> 2:5–50. Madrid.\n"
   id: domergue-1966
@@ -1180,7 +1184,7 @@
   id: joly-1968
   name: "Joly 1968"
 -
-  contents: "Joly, E. 1974. <em>Lucerne del Museo di Sabratha</em>. <em>Monografie di Archeologia Libica</em> 11. Rome.\n"
+  contents: "Joly, E. 1974. <em>Lucerne del Museo di Sabratha</em>. Monografie di Archeologia Libica 11. Rome.\n"
   id: joly-1974
   name: "Joly 1974"
 -
@@ -1488,7 +1492,7 @@
   id: morillo-cerdan-1992
   name: "Morillo Cerdán 1992"
 -
-  contents: "Morillo Cerdán, A. 1996. “Las lucernas del tipo de ‘cabeza de ave’ (<em>Vogelkopflampen</em>) en la Península Ibérica.” <em>Mitteilungen des Deutschen Archäologischen Instituts, Madrider Abteilung</em> 37: 103–20.\n"
+  contents: "Morillo Cerdán, A. 1996. “Las lucernas del tipo de ‘cabeza de ave’ (<em>Vogelkopflampen</em>) en la Península Ibérica.” <em>Mitteilungen des Deutschen Archäologischen Instituts, Madrider Abteilung</em> 37:103–20.\n"
   id: morillo-cerdan-1996
   name: "Morillo Cerdán 1996"
 -
@@ -1536,7 +1540,7 @@
   id: newton-1989
   name: "Newton 1989"
 -
-  contents: "“Tombe di età romana scoperte nell'territorio del commune”. <em>Notizie degli Scavi</em>, 1894:3.\n"
+  contents: "“Tombe di età romana scoperte nell'territorio del commune.” <em>Notizie degli Scavi</em>, 1894:3.\n"
   id: notizie-degli-scavi-1894
   name: "<em>Notizie degli Scavi 1894</em>"
 -
@@ -1608,7 +1612,7 @@
   id: pastutmaz-sevmen-2005
   name: "Pastutmaz-Sevmen 2005"
 -
-  contents: "Pavolini, C. 1977. “Le lucerne fittili romane del Museo Nazionale di Napoli.” In <em>L’Instrumentum domesticum di Ercolano e Pompei nella prima età imperiale 1977</em>, pp. 33–51.\n"
+  contents: "Pavolini, C. 1977. “Le lucerne fittili romane del Museo Nazionale di Napoli.” In <em>L’Instrumentum domesticum di Ercolano e Pompei nella prima età imperiale</em> 1977, pp. 33–51.\n"
   id: pavolini-1977
   name: "Pavolini 1977"
 -
@@ -1884,6 +1888,14 @@
   id: sotgiu-1968
   name: "Sotgiu 1968"
 -
+  contents: "Sotheby Parke Bernet auction, London, 9 July 1984.\n"
+  id: sotheby-parke-bernet-1984
+  name: "Sotheby Parke Bernet 1984"
+-
+  contents: "Sotheby's auction, London, 10 December 1984.\n"
+  id: sothebys-1984
+  name: "Sotheby's 1984"
+-
   contents: "Spagnolo, G. 1980. “Lucerne del Museo di Novara.” In P. Barocelli, <em>Studi di archeologia: Dedicati a Pietro Barocelli</em>, pp. 195–217. Turin.\n"
   id: spagnolo-1980
   name: "Spagnolo 1980"
@@ -2096,7 +2108,7 @@
   id: zaccaria-ruggiu-1980
   name: "Zaccaria Ruggiu 1980"
 -
-  contents: "Zahn, R. 1904. “Lampen.” In <em>Priene</em>, ed. Wiegand, et al., pp. 449–59. Berlin.\n"
+  contents: "Zahn, R. 1904. “Lampen.” In <em>Priene</em>, ed. Wiegand et al., pp. 449–59. Berlin.\n"
   id: zahn-1904
   name: "Zahn 1904"
 -
