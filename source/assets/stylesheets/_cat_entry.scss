@@ -154,14 +154,14 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     }
 
     // specific rules for cat numbers that are not integers
-    &[data-cat="146 bis"] {
-      background-image: url("../images/thumbs/146 bis.jpg");
+    &[data-cat="146bis"] {
+      background-image: url("../images/thumbs/146bis.jpg");
       background-position: center center;
       background-size: cover;
     }
 
-    &[data-cat="252 bis"] {
-      background-image: url("../images/thumbs/252 bis.jpg");
+    &[data-cat="252bis"] {
+      background-image: url("../images/thumbs/252bis.jpg");
       background-position: center center;
       background-size: cover;
     }
