@@ -75,7 +75,7 @@ module Book
         In <em>#{book.title.main}</em>,
         by #{byline}.
         #{book.publisher_location}:
-        #{book.publisher},
+        #{book.imprint},
         #{book.pub_date.year}.
         <span class="force-wrap">#{permalink}/#{path}</span>.
       )
@@ -84,12 +84,12 @@ module Book
     def book_info_mla
       book = data.book
       path = current_path.gsub('index.html', '')
+      short_permalink = permalink.gsub('http://', '')
       %(
         <em>#{book.title.main}</em>. By #{byline}.
-        #{book.publisher_location}:
-        #{book.publisher_short}, #{book.pub_date.year}.
-        <span class="cite-current-date">DD Mon. YYYY</span>
-        <<span class="force-wrap">#{permalink}/#{path}</span>>.
+        #{book.imprint}, #{book.pub_date.year},
+        <span class="cite-current-date">DD MMMM YYYY</span>,
+        <span class="force-wrap">#{short_permalink}/#{path}</span>.
       )
     end
 
