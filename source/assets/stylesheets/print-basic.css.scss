@@ -307,7 +307,9 @@ $modular-scale-ratio: $minor-second;
     margin: $print-base-spacing;
   }
 
-  .entry-with-footnotes {
+  .entry-with-footnotes,
+  .print-inline-paragraph {
+    display: inline;
     text-indent: 0;
   }
 
@@ -694,12 +696,15 @@ p.entry-author + p {
 
 .page__content .classification {
   a::after {
-    content: ' p. ' target-counter(attr(href, url), page);
+    content: ' ...................... p. ' target-counter(attr(href, url), page);
   }
-
   .small-text-link {
+    margin-right: 0;
     font-size: 8pt;
     text-transform: none;
+  }
+  a.footnote::after {
+    content: '';
   }
 }
 
