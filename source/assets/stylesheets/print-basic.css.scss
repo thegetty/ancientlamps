@@ -301,6 +301,7 @@ $modular-scale-ratio: $minor-second;
 .cat-entry {
   &__grid { display: none; }
   &__image { display: none; }
+  &__image-credit  { display: none; }
   &__title { font-size: 16pt; }
   &__details__stamp {
     display: block;

@@ -109,6 +109,15 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
   }
 }
 
+.cat-entry__image-credit {
+  margin-top: $base-spacing * 2;
+  padding-top: $base-spacing;
+  color: $medium-gray;
+  border-top: $base-border;
+  width: 100%;
+  max-width: 30em;
+}
+
 // A grid unit that contains its own outer-container element (it is intended
 // to be nested inside another outer-container). Grid items are divs with a
 // fixed height and a width that is specified in span-columns (exact size
