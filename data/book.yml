@@ -29,16 +29,16 @@ project_team:
     role: Project Editor
   - name: Rachel Barth
     role: Editorial Assistant
-  - name: Elizabeth Chapin Kahn
-    role: Production
-  - name: Gail Acosta
-    role: Digital Assistant
-  - name: Nick Geller
-    role: Digital Assistant
-  - name: Eric Gardner
-    role: Designer and Developer
   - name: Greg Albers
     role: Project Manager
+  - name: Eric Gardner
+    role: Designer and Developer
+  - name: Elizabeth Chapin Kahn
+    role: Production
+  - name: Nick Geller
+    role: Digital Assistant
+  - name: Gail Acosta
+    role: Digital Assistant
   - name: Claire L. Lyons
     role: Curatorial Liaison
 editions:
@@ -107,7 +107,7 @@ license:
     both:
       - "Map backgrounds are from the Ancient World Mapping Center. Licensed under a <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">Creative Commons Attribution-NonCommercial 3.0 License</a>."
 description_main:
-  "Some 630 lamps in the J. Paul Getty Museum represent production centers that were active across the ancient Mediterranean world between 800 B.C. and A.D. 800. Notable for their marvelous variety—from simple clay saucers that held just oil and a wick to elaborate figural lighting fixtures in bronze and precious metals—the Getty lamps display a number of unprecedented shapes and decors. Most were made in Roman workshops, which met the ubiquitous need for portable illumination in residences, public spaces, religious sanctuaries, and the grave. The omnipresent oil lamp is a font of popular imagery, illustrating myths, nature, and the activities and entertainments of daily life. Presenting a largely unpublished collection, this extensive catalogue is an invaluable sourcebook for specialists in lychnology, art history, and archaeology alike."
+  "Some 630 lamps in the J. Paul Getty Museum represent production centers that were active across the ancient Mediterranean world between 800 B.C. and A.D. 800. Notable for their marvelous variety—from simple clay saucers that held just oil and a wick to elaborate figural lighting fixtures in bronze and precious metals—the Getty lamps display a number of unprecedented shapes and decors. Most were made in Roman workshops, which met the ubiquitous need for portable illumination in residences, public spaces, religious sanctuaries, and the grave. The omnipresent oil lamp is a font of popular imagery, illustrating myths, nature, and the activities and entertainments of daily life. Presenting a largely unpublished collection, this extensive catalogue is an invaluable resource for specialists in lychnology, art history, and archaeology alike."
 description_short:
 toc: |
   - Director’s Foreword
