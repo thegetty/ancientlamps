@@ -59,6 +59,9 @@ dl {
       margin-top: 0;
     }
   }
+  .index-subsection-paragraphs p:first-child {
+    text-indent: 0;
+  }
 }
 
 .sub-decimal {
