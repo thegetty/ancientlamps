@@ -22,6 +22,6 @@ We are deeply indebted to the authors, who each brought their profound knowledge
 
 <p class='entry-author' markdown="0">
 Timothy Potts<br />
-*Director*<br />
-*The J. Paul Getty Museum*
+<em>Director</em><br />
+<em>The J. Paul Getty Museum</em>
 </p>
