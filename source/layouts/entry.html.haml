@@ -21,6 +21,9 @@
             .cat-entry__grid__item{ :data => { :cat => entry }}
               %h6.cat-entry__grid__item__number= entry
         = yield
+        .cat-entry__image-credit
+          Banner image: Detail of
+          = link_to "cat. #{current_page.data.cover}", "##{current_page.data.cover}"
       - if environment? :pdf
         = partial "partials/cat_details_print", :locals => { :entries => entries }
     - unless environment? :pdf
