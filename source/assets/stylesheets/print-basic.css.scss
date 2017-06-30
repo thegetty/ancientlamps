@@ -694,14 +694,36 @@ p.entry-author + p {
   }
 }
 
+// Unsatisfying v1
+//
+// .page__content .classification {
+//   a::after {
+//     content: ' ...................... p. ' target-counter(attr(href, url), page);
+//   }
+//   a.footnote::after {
+//     content: '';
+//   }
+// }
+
+
+// v2, cat #s in parens to right,
+// instead of parens, could also be comma
+// I also tried a v3 with the leader between the typology and the cat/page #
+// but `content: leader(dotted)` doesn't seem to work with a ::before pseudo class
+//
 .page__content .classification {
-  a::after {
-    content: ' ...................... p. ' target-counter(attr(href, url), page);
+  a {
+    float: none;
+    margin-left: 0;
   }
-  .small-text-link {
-    margin-right: 0;
-    font-size: 8pt;
-    text-transform: none;
+  a::before {
+    content: '(';
+  }
+  a::after {
+    content: ')' leader(dotted) ' ' target-counter(attr(href, url), page);
+  }
+  a.footnote::before {
+    content: '';
   }
   a.footnote::after {
     content: '';

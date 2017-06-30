@@ -84,14 +84,12 @@ dl {
   }
 }
 
-.classification a,
-.classification .link-group {
+.classification a {
   float: right;
   margin-left: $base-spacing * .5;
 }
 
-.classification a.footnote,
-.classification .link-group a {
+.classification a.footnote {
   float: none;
   margin-left: 0;
 }
