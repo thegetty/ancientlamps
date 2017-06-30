@@ -11107,7 +11107,8 @@
   dimensions: 'L: 10.8 cm; W: 7.8 cm; H: 2.6 cm'
   discus_iconography: Four unconventionally represented Cupids with short squarish
     wings, active around an unidentified structure—portico or shop interior(?).
-  discussion: "<p>The structure represented in the discus has different levels marked
+  discussion: "<p class='print-inline-paragraph'>The structure represented in the
+    discus has different levels marked
     off by two (three[?]) horizontal lines, possibly representing what might be referred
     to as “shelves”; on top “shelf” are two more or less vertical, rectangular shapes
     with rounded top, one in the middle, the other at left: woven baskets(?); on them
@@ -13219,13 +13220,14 @@
     gate at left; a man crossing the bridge on a cart drawn by a donkey or mule, his
     extended right arm either whipping the animal or holding the reins. Two ducks
     swim in the water.'
-  discussion: Some have seen in the stepped design on the nozzle top the lighthouse
+  discussion: "<p class='print-inline-paragraph'>Some have seen in the stepped
+    design on the nozzle top the lighthouse
     at either Alexandria, Carthage, or Ostia (<a href='../../bibliography/#redde-1979'>Reddé
     1979</a>, p. 862; <a href='../../bibliography/#guarducci-1982'>Guarducci 1982</a>;
-    <a href='../../bibliography/#bailey-1984'>Bailey 1984</a>).<p>Previously considered
+    <a href='../../bibliography/#bailey-1984'>Bailey 1984</a>).</p><p>Previously considered
     a fake, this lamp is authentic, as corroborated by the remains of corrosion from
     an iron wick-nail; see <a href='../463-71/#authenticity-of-cats-46467-discussion'>Authenticity
-    of cats. 464–67 discussion</a>.</p>
+    of cats. 464–67 discussion</a>.</p>"
   dor_id: 26291
   inv_no: 83.AQ.438.249
   parallels: "(Identical) <a href='../../bibliography/#besnier-blanchet-1900'>Besnier
@@ -13315,7 +13317,8 @@
     fishermen in the foreground, the right one sitting in a boat, in contrast to parallels
     of this lamp not holding a fishing rod; the left one standing on shore, throwing
     a net; both wear hats; reefs or jetty made of big stone blocks behind him.'
-  discussion: Bernhard interprets the three buildings in the upper register of the
+  discussion: "<p class='print-inline-paragraph'>Bernhard interprets the three
+    buildings in the upper register of the
     discus as the Mausoleum of Alexander, the Temple of Alexander, and the tomb of
     Cleopatra, all in <a href='../../map/#loc_727070'>Alexandria</a> (<a href='../../bibliography/#bernhard-1955'>Bernhard
     1955</a>; <a href='../../bibliography/#bernhard-1956'>Bernhard 1956</a>). This
@@ -13325,9 +13328,9 @@
     harbor-scene lamps of Deneauve type X have been found in Tunisia, several bearing
     well-known African potters’ signatures, the harbor must be Carthage rather than
     Alexandria or <a href='../../map/#loc_422995'>Ostia</a> (<a href='../../bibliography/#bailey-1984'>Bailey
-    1984</a>, pp. 271–72).<p>Previously considered a fake, this lamp is authentic;
+    1984</a>, pp. 271–72).</p><p>Previously considered a fake, this lamp is authentic;
     see <a href='../463-71/#authenticity-of-cats-46467-discussion'>Authenticity of
-    cats. 464–67 discussion</a>.</p>
+    cats. 464–67 discussion</a>.</p>"
   dor_id: 7196
   inv_no: 75.AQ.21
   parallels: "(Discus decor similar except that the man in the boat is holding a fishing
@@ -15767,7 +15770,8 @@
     to the rim opposite the stump handle. Ridge surrounding a flat circular base.'
   dimensions: 'Diam: 8.3 cm; H: 3.7 cm'
   discus_iconography:
-  discussion: "<p>The full version of the Greek reads in translation: “Blessing of
+  discussion: "<p class='print-inline-paragraph'>The full version of the
+    Greek reads in translation: “Blessing of
     the Mother of God be with us,” followed by “Inscription of John” (whose identity
     remains unknown, <a href='../../bibliography/#kennedy-1963'>Kennedy 1963</a>,
     p. 94; less likely the potter, as suggested by <a href='../../bibliography/#bagatti-1964'>Bagatti
@@ -16741,7 +16745,8 @@
   date_numeric:
   - 50
   - 100
-  description: "<p>Moldmade. Both incense-burner and lighting device are in the shape
+  description: "<p class='print-inline-paragraph'>Moldmade. Both incense-burner
+    and lighting device are in the shape
     of a four-sided altar, its front divided into three parts of an architectural
     nature, resting on a three-stepped platform. Central arched niche with enthroned
     Jupiter, bare-chested with mantle over left shoulder; drapery fastened at waist,
@@ -16792,7 +16797,8 @@
   date_numeric:
   - 100
   - 250
-  description: "<p>Moldmade. Both censer and lighting device are in the form of a
+  description: "<p class='print-inline-paragraph'>Moldmade. Both censer and
+    lighting device are in the form of a
     figurine bust with circular hollow base; molding on front half only, consisting
     of two convex sections flanking a concave central band. Body more or less cylindrical
     with flaring semicylindrical top. Lamp attached on each shoulder. Body front in
@@ -16828,7 +16834,8 @@
   date_numeric:
   - 100
   - 200
-  description: "<p>Moldmade. Lampstand/incense-burner with a more or less cylindrical
+  description: "<p class='print-inline-paragraph'>Moldmade. Lampstand/incense-burner
+    with a more or less cylindrical
     hollow body, front representing a small temple with a statue. It is surmounted
     by a large bowl with a flaring scalloped rim; the sides are decorated with a leaf
     decor in high relief, above and under a notched median ribbon continuing to the
@@ -17558,7 +17565,8 @@
   discussion: The lamp may be a fake.
   dor_id: 26300
   inv_no: 83.AQ.438.437
-  parallels: "<p>(Identical) <a href='../../bibliography/#gottlicher-1978'>Göttlicher
+  parallels: "<p class='print-inline-paragraph'>(Identical)
+    <a href='../../bibliography/#gottlicher-1978'>Göttlicher
     1978</a>, p. 89, no. 536, pl. 42 (no signature); <a href='../../bibliography/#mohring-1989'>Möhring
     1989</a>, no. 84, fig. 101, with potter’s signature: letters <span class='inscription'>P</span>
     and <span class='inscription'>R</span> in relief, fig. 102 (fr.); (close) <a href='../../bibliography/#waldhauer-1914'>Waldhauer
