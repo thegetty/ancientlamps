@@ -28,17 +28,15 @@ project_team:
   - name: Benedicte Gilman
     role: Project Editor
   - name: Rachel Barth
-    role: Editorial Assistant
+    role: Assistant Editor
   - name: Greg Albers
     role: Project Manager
   - name: Eric Gardner
     role: Designer and Developer
   - name: Elizabeth Chapin Kahn
     role: Production
-  - name: Nick Geller
-    role: Digital Assistant
-  - name: Gail Acosta
-    role: Digital Assistant
+  - name: Gail Acosta and Nick Geller
+    role: Digital Assistants
   - name: Claire L. Lyons
     role: Curatorial Liaison
 editions:
