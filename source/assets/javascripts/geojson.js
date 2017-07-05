@@ -480,8 +480,8 @@ const geojsonData = {
       "basename": "Nicosia",
       "custom_name": "Nicosia",
       "feature_type": "site",
-      "pid": "",
-      "tgn": "7002345",
+      "pid": "462392",
+      "tgn": "7003917",
       "catalogue": "",
       "description": ""
     },
@@ -716,7 +716,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Kalymnos",
-      "custom_name": "Calymnos",
+      "custom_name": "Kalymnos",
       "feature_type": "site",
       "pid": "",
       "tgn": "7023834",
@@ -1241,7 +1241,7 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Antiochia/Col. Caesarea",
+      "basename": "Antiochia/Theoupolis",
       "custom_name": "Antioch-on-the-Orontes",
       "feature_type": "site",
       "pid": "658381",
@@ -1252,8 +1252,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        31.189167,
-        38.306111
+        36.161749,
+        36.20138
       ]
     }
   }, {
@@ -3826,7 +3826,7 @@ const geojsonData = {
       "type": "Point",
       "coordinates": [
         26.3276048,
-        39.9964584
+        39.9954584
       ]
     }
   }, {
@@ -3977,7 +3977,7 @@ const geojsonData = {
     "type": "Feature",
     "properties": {
       "basename": "Tomis",
-      "custom_name": "Constantina",
+      "custom_name": "Constanta",
       "feature_type": "site",
       "pid": "217016",
       "tgn": "",
@@ -3987,8 +3987,8 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        44.1728565,
-        28.6497375
+        28.6497375,
+        44.1728565
       ]
     }
   }, {
@@ -4101,10 +4101,10 @@ const geojsonData = {
   }, {
     "type": "Feature",
     "properties": {
-      "basename": "Asine",
-      "custom_name": "Koroni",
+      "basename": "Etruria/Tuscia",
+      "custom_name": "Etruria",
       "feature_type": "site",
-      "pid": "579990",
+      "pid": "413122",
       "tgn": "",
       "catalogue": "",
       "description": ""
@@ -4112,8 +4112,62 @@ const geojsonData = {
     "geometry": {
       "type": "Point",
       "coordinates": [
-        24.125,
-        37.875
+        11.7527441248,
+        42.4210287479
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Latium",
+      "custom_name": "Latium",
+      "feature_type": "site",
+      "pid": "432900",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        12.7621,
+        41.7909
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Calabria",
+      "custom_name": "Calabria",
+      "feature_type": "site",
+      "pid": "442518",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.75,
+        40.75
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "basename": "Asine",
+      "custom_name": "Koroni",
+      "feature_type": "site",
+      "pid": "579991",
+      "tgn": "",
+      "catalogue": "",
+      "description": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        24.03865,
+        37.870559
       ]
     }
   }]

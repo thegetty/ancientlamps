@@ -19,11 +19,11 @@ sort_order: 208
   <h2>Citation Information</h2>
     <blockquote>
       <h4>Chicago</h4>
-      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.publisher_location %>: <%= data.book.publisher %>, <%= data.book.pub_date.year %>. <span class="force-wrap"><%= permalink %></span>.</p>
+      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.publisher_location %>: <%= data.book.imprint %>, <%= data.book.pub_date.year %>. <span class="force-wrap"><%= permalink %></span>.</p>
     </blockquote>
     <blockquote>
       <h4>MLA</h4>
-      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.publisher_location %>: <%= data.book.publisher_short %>, <%= data.book.pub_date.year %>. <span class="cite-current-date">DD Mon. YYYY</span> <span class="force-wrap">&#60;<span class="force-wrap"><%= permalink %></span>&#62;</span></p>
+      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.imprint %>, <%= data.book.pub_date.year %>, <span class="cite-current-date">DD MMMM YYYY</span>, <span class="force-wrap"><%= permalink.gsub('http://', '') %></span></p>
     </blockquote>
   <h4>Permanent URL</h4>
   <span class="force-wrap"><%= permalink %></span>
@@ -37,5 +37,22 @@ sort_order: 208
   <%= partial "partials/publisher_team" %>
   <%= partial "partials/library_of_congress_data" %>
   <hr />
-  <div class="illustration-credits">Illustration Credits TK</div>
+  <div class="illustration-credits">
+    <ul>
+      <li><%= link_to "Cover", "../index.html" %>: Detail of <%= link_to "cat. 86", "catalogue/85-86.html#86" %></li>
+      <li><%= link_to "Typological Classification", "../typological-classification.html" %>: Detail of <%= link_to "cat. 120", "catalogue/119-29.html#120" %></li>
+      <li><%= link_to "Indices", "../indices.html" %>: Detail of <%= link_to "cat. 384", "catalogue/376-88.html#384" %></li>
+    </ul>
+  </div>
+  <div>
+    <p>Drawings by Jean-Claude Rivel: Figs. <%= link_to "1", "catalogue/augustan-and-imperial.html#fig_01" %>, <%= link_to "2", "catalogue/augustan-and-imperial.html#fig_02" %>; Stamps, by cat. no.: <%= link_to "39", "catalogue/38-43.html#39" %>, <%= link_to "70", "catalogue/70-71.html#70" %>, <%= link_to "94", "catalogue/87-117.html#94" %>, <%= link_to "104", "catalogue/87-117.html#104" %>, <%= link_to "137", "catalogue/130-42.html#137" %>, <%= link_to "166", "catalogue/166-207.html#166" %>, <%= link_to "175", "catalogue/166-207.html#175" %>, <%= link_to "176", "catalogue/166-207.html#176" %>, <%= link_to "188", "catalogue/166-207.html#188" %>, <%= link_to "191", "catalogue/166-207.html#191" %>, <%= link_to "200", "catalogue/166-207.html#200" %>, <%= link_to "219", "catalogue/208-23.html#219" %>, <%= link_to "228", "catalogue/224-38.html#228" %>, <%= link_to "231", "catalogue/224-38.html#231" %>, <%= link_to "236", "catalogue/224-38.html#236" %>, <%= link_to "243", "catalogue/243-47.html#243" %>, <%= link_to "254", "catalogue/248-65.html#254" %>, <%= link_to "258", "catalogue/248-65.html#258" %>, <%= link_to "283", "catalogue/283-302.html#283" %>, <%= link_to "286", "catalogue/283-302.html#286" %>, <%= link_to "289", "catalogue/283-302.html#289" %>, <%= link_to "291", "catalogue/283-302.html#291" %>, <%= link_to "294", "catalogue/283-302.html#294" %>, <%= link_to "297", "catalogue/283-302.html#297" %>, <%= link_to "315", "catalogue/315-16.html#315" %>, <%= link_to "342", "catalogue/339-43.html#342" %>, <%= link_to "364", "catalogue/360-74.html#364" %>, <%= link_to "365", "catalogue/360-74.html#365" %>, <%= link_to "367", "catalogue/360-74.html#367" %>, <%= link_to "369", "catalogue/360-74.html#369" %>, <%= link_to "372", "catalogue/360-74.html#372" %>, <%= link_to "373", "catalogue/360-74.html#373" %>, <%= link_to "374", "catalogue/360-74.html#374" %>, <%= link_to "377", "catalogue/376-88.html#377" %>, <%= link_to "378", "catalogue/376-88.html#378" %>, <%= link_to "387", "catalogue/376-88.html#387" %>, <%= link_to "389", "catalogue/389-93.html#389" %>, <%= link_to "391", "catalogue/389-93.html#391" %>, <%= link_to "392", "catalogue/389-93.html#392" %>, <%= link_to "394", "catalogue/394-95.html#394" %>, <%= link_to "395", "catalogue/394-95.html#395" %>, <%= link_to "398", "catalogue/396-401.html#398" %>, <%= link_to "421", "catalogue/418-27.html#421" %>, <%= link_to "440", "catalogue/435-40.html#440" %>, <%= link_to "500", "catalogue/492-500.html#500" %>, <%= link_to "501", "catalogue/501-2.html#501" %>, <%= link_to "517", "catalogue/515-17.html#517" %>, <%= link_to "535", "catalogue/524-41.html#535" %>, <%= link_to "543", "catalogue/543-47.html#543" %>, <%= link_to "545", "catalogue/543-47.html#545" %>, <%= link_to "549", "catalogue/548-49.html#549" %>, <%= link_to "551", "catalogue/550-51.html#551" %>, <%= link_to "572", "catalogue/569-72.html#572" %>, <%= link_to "600", "catalogue/586-609.html#600" %>
+
+  </div>
+  <div>
+    <p>Also from Getty Publications</p>
+    <ul>
+      <li><a href="http://www.getty.edu/publications/terracottas/"><em>Ancient Terracottas from South Italy and Sicily in the J. Paul Getty Museum</em></a>, Maria Lucia Ferruzza</li>
+      <li><a href="http://www.getty.edu/publications/romanmosaics/"><em>Roman Mosaics in the J. Paul Getty Museum</em>, </a>Alexis Belis</li>
+    </ul>
+  </div>
 </div>

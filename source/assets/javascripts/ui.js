@@ -97,7 +97,7 @@ class UI {
   }
 
   citationDate () {
-    let today = moment().format('D MMM. YYYY')
+    let today = moment().format('D MMMM YYYY')
     let $currentDate = $('.cite-current-date')
     $currentDate.empty()
     $currentDate.text(today)
