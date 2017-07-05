@@ -43,6 +43,10 @@ html { min-height: 100vh; }
     h2, h3, h4 { margin-top: 0; }
   }
 
+  figure {
+    + p { text-indent: $base-spacing; }
+  }
+
   // superscript map links get weird spacing without this override
   .location-link { text-indent: 0; }
 }
