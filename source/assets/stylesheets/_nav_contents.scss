@@ -40,6 +40,7 @@ $sliding-panel-fade-screen-bg: #000;
 
   &.is-visible {
     @include transform(translateX(0));
+    box-shadow: $base-box-shadow;
   }
 
   // link styles
@@ -100,7 +101,7 @@ $sliding-panel-fade-screen-bg: #000;
 .nav-sidebar-toc {
   margin: 0 0 $base-spacing;
   list-style-type: none;
-  padding-left: $base-spacing;
+  padding-left: 0;
   font-size: $base-font-size * 1.1;
 
   li { margin-bottom: 0.5rem; }
