@@ -42,7 +42,9 @@ let Catalogue = Vue.extend({
           backgroundColor: bgColor
         },
         style: {
-          marginTop: '36px'
+          marginTop: '36px',
+          paddingLeft: '24px',
+          paddingRight: '24px'
         }
       }
     }
@@ -132,6 +134,15 @@ let Catalogue = Vue.extend({
         })
         .sortBy('name')
         .value()
+    },
+    formatter (value) {
+      if (value === this.slider.max) {
+        return value + ' AD+'
+      } else if (value < 0) {
+        return Math.abs(value) + ' BC'
+      } else {
+        return value + ' AD'
+      }
     }
   }
 })
