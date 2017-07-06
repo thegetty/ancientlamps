@@ -24,7 +24,7 @@ let Catalogue = Vue.extend({
         min: -800,
         max: 800,
         interval: 50,
-        tooltip: 'hover',
+        tooltip: 'always',
         processStyle: {
           // backgroundColor: '#328474'
         }
@@ -68,10 +68,20 @@ let Catalogue = Vue.extend({
         .chain(this.entriesForLocation())
         .filter('date_numeric')
         .filter((entry) => {
-          return entry.date_numeric[0] >= this.date[0]
+          // min date
+          if (this.date[0] === this.slider.min) {
+            return entry
+          } else {
+            return entry.date_numeric[0] >= this.date[0] || entry.date_numeric[1] >= this.date[0]
+          }
         })
         .filter((entry) => {
-          return entry.date_numeric[1] <= this.date[1]
+          // max date
+          if (this.date[1] === this.slider.max) {
+            return entry
+          } else {
+            return entry.date_numeric[1] <= this.date[1] || entry.date_numeric[0] <= this.date[1]
+          }
         }).value()
     },
     entriesForLocation () {
