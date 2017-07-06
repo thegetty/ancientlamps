@@ -23,7 +23,7 @@
         = yield
         .cat-entry__image-credit
           Banner image: Detail of
-          = link_to "cat. #{current_page.data.cover}", "##{current_page.data.cover}"
+          = link_to "cat. #{current_page.data.cover || first}", "##{current_page.data.cover || first}"
       - if environment? :pdf
         = partial "partials/cat_details_print", :locals => { :entries => entries }
     - unless environment? :pdf
