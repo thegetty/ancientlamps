@@ -6,6 +6,8 @@ import geojsonData from './geojson.js'
 import localforage from 'localforage'
 import lookupData from './lookup.js'
 
+let bgColor = '#369a87'
+
 let Catalogue = Vue.extend({
   name: 'Catalogue',
   components: {
@@ -25,8 +27,22 @@ let Catalogue = Vue.extend({
         max: 800,
         interval: 50,
         tooltip: 'always',
+        tooltipDir: 'top',
+        tooltipStyle: [
+          {
+            backgroundColor: bgColor,
+            borderColor: bgColor
+          },
+          {
+            backgroundColor: bgColor,
+            borderColor: bgColor
+          }
+        ],
         processStyle: {
-          // backgroundColor: '#328474'
+          backgroundColor: bgColor
+        },
+        style: {
+          marginTop: '36px'
         }
       }
     }
@@ -68,6 +84,10 @@ let Catalogue = Vue.extend({
         .chain(this.entriesForLocation())
         .filter('date_numeric')
         .filter((entry) => {
+          // workaround for cat 456
+          if (entry.no_entry && this.date[0] !== this.slider.min) {
+            return null
+          }
           // min date
           if (this.date[0] === this.slider.min) {
             return entry
@@ -76,6 +96,10 @@ let Catalogue = Vue.extend({
           }
         })
         .filter((entry) => {
+          // workaround for cat 456
+          if (entry.no_entry && this.date[1] !== this.slider.max) {
+            return null
+          }
           // max date
           if (this.date[1] === this.slider.max) {
             return entry
