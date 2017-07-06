@@ -32,7 +32,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
 
 // The full-width cover image, which lives inside the header unit above. A
 // data-attribute on this element (data-cat: integer) determines which
-// background image is used; these background images live in assets/images/main.
+// background image is used; these background images live in assets/images/banners.
 .cat-entry__image {
   background-color: $cat-image-background;
   background-position: center top;
@@ -45,7 +45,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
 
   @for $i from 1 through 700 {
     &[data-cat="#{$i}"] {
-      background-image: url("../images/main/#{$i}.jpg");
+      background-image: url("../images/banners/#{$i}.jpg");
     }
   }
 }

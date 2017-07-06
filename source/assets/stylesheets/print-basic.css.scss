@@ -394,7 +394,7 @@ $modular-scale-ratio: $minor-second;
 
     @for $i from 1 through 700 {
       &[data-cat="#{$i}"] {
-        background-image: url("../images/main/#{$i}.jpg");
+        background-image: url("../images/banners/#{$i}.jpg");
       }
     }
   }
