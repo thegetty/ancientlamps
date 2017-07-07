@@ -103,6 +103,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       @include shift(2);
     }
   }
+
   .see-also {
     margin-top: 1em;
     text-indent: 0;
@@ -110,12 +111,12 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
 }
 
 .cat-entry__image-credit {
-  margin-top: $base-spacing * 2;
-  padding-top: $base-spacing;
-  color: $medium-gray;
   border-top: $base-border;
-  width: 100%;
+  color: $medium-gray;
+  margin-top: $base-spacing * 2;
   max-width: 30em;
+  padding-top: $base-spacing;
+  width: 100%;
 }
 
 // A grid unit that contains its own outer-container element (it is intended
@@ -163,26 +164,26 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     }
 
     // specific rules for cat numbers that are not integers
-    &[data-cat="146bis"] {
-      background-image: url("../images/thumbs/146bis.jpg");
+    &[data-cat="146-bis"] {
+      background-image: url('../images/thumbs/146-bis.jpg');
       background-position: center center;
       background-size: cover;
     }
 
-    &[data-cat="252bis"] {
-      background-image: url("../images/thumbs/252bis.jpg");
+    &[data-cat="252-bis"] {
+      background-image: url('../images/thumbs/252-bis.jpg');
       background-position: center center;
       background-size: cover;
     }
 
     &[data-cat="626a"] {
-      background-image: url("../images/thumbs/626a.jpg");
+      background-image: url('../images/thumbs/626a.jpg');
       background-position: center center;
       background-size: cover;
     }
 
     &[data-cat="626b"] {
-      background-image: url("../images/thumbs/626b.jpg");
+      background-image: url('../images/thumbs/626b.jpg');
       background-position: center center;
       background-size: cover;
     }
@@ -192,103 +193,99 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
 // Catalogue Entry details
 // Modal overlay which appears when a grid item is clicked. This view contains
 // detailed information (tombstone, alternate views) for the object in question.
-.cat-entry__details {
+.cat-entry__details__image {
+  @include size(100% 50%);
+  @include transform(translateY(-100%));
+  @include transition(all 0.2s ease);
+  background-color: $cat-image-background;
+  position: fixed;
+  top: 0;
+  z-index: $z-index-6;
 
-  &__image {
-    @include size(100% 50%);
-    @include transform(translateY(-100%));
-    @include transition(all 0.2s ease);
-    background-color: $cat-image-background;
-    position: fixed;
-    top: 0;
-    z-index: $z-index-6;
-
-    @include media($large-screen-up) {
-      @include size(65% 100%);
-      @include transform(translateX(-100%));
-      left: 0;
-      &.is-visible { @include transform(translateX(0)); }
-    }
-
-    &.is-visible { @include transform(translateY(0)); }
+  @include media($large-screen-up) {
+    @include size(65% 100%);
+    @include transform(translateX(-100%));
+    left: 0;
+    &.is-visible { @include transform(translateX(0)); }
   }
 
-  &__data {
-    @include size(100% 50%);
-    @include transform(translateY(200%));
-    @include transition(all 0.2s ease);
-    background-color: tint($light-gray, 75%);
-    bottom: 0;
-    padding: $base-spacing * 1.5;
-    position: fixed;
-    z-index: $z-index-6;
+  &.is-visible { @include transform(translateY(0)); }
+}
 
-    @include media($large-screen-up) {
-      @include size(35% 100%);
-      @include transform(translateX(200%));
-      right: 0;
-      &.is-visible { @include transform(translateX(0)); }
-    }
+.cat-entry__details__data {
+  @include size(100% 50%);
+  @include transform(translateY(200%));
+  @include transition(all 0.2s ease);
+  background-color: tint($light-gray, 75%);
+  bottom: 0;
+  padding: $base-spacing * 1.5;
+  position: fixed;
+  z-index: $z-index-6;
 
-    &.is-visible {
-      @include transform(translateY(0));
-      animation: repaint 100ms;
-      -webkit-overflow-scrolling: touch;
-      overflow-y: auto;
-    }
+  @include media($large-screen-up) {
+    @include size(35% 100%);
+    @include transform(translateX(200%));
+    right: 0;
+    &.is-visible { @include transform(translateX(0)); }
   }
 
-  &__text {
-    margin-bottom: $base-spacing * 2;
+  &.is-visible {
+    @include transform(translateY(0));
+    animation: repaint 100ms;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+  }
+}
 
-    p {
-      margin-bottom: 0;
-    }
+.cat-entry__details__text {
+  margin-bottom: $base-spacing * 2;
 
-    p + p {
-      text-indent: $base-spacing;
-    }
-
-    h2 {
-      @extend .smcaps;
-      color: lighten($base-font-color, 35%);
-      font-family: $base-font-family;
-      font-size: modular-scale(0);
-      font-weight: 400;
-    }
-
-    .cat-number {
-      color: $base-font-color;
-      font-size: modular-scale(3);
-      font-family: $heading-font-family;
-    }
-
-    .section {
-      font-size: modular-scale(1);
-      margin-bottom: $small-spacing;
-      h2 { margin-bottom: 0; }
-    }
-
-    #entry-stamp {
-      margin-top: $small-spacing * .5;
-      margin-left: $small-spacing * .5;
-    }
+  p {
+    margin-bottom: 0;
+    + p { text-indent: $base-spacing; }
   }
 
-  &__close {
-    color: $white;
-    cursor: pointer;
-    display: none;
-    font-size: 28px;
-    position: fixed;
-    right: 22px;
-    top: 12px;
-    z-index: $z-index-7;
+  h2 {
+    @extend .smcaps;
+    color: lighten($base-font-color, 35%);
+    font-family: $base-font-family;
+    font-size: modular-scale(0);
+    font-weight: 400;
+  }
 
-    &.is-visible { display: block; }
-    .close-button {
-      @extend .ion-close-circled;
-      color: $light-gray;
-    }
+  .cat-number {
+    color: $base-font-color;
+    font-family: $heading-font-family;
+    font-size: modular-scale(3);
+  }
+
+  .section {
+    font-size: modular-scale(1);
+    margin-bottom: $small-spacing;
+    h2 { margin-bottom: 0; }
+  }
+
+  // scss-lint:disable IdSelector
+  #entry-stamp {
+    margin-left: $small-spacing * 0.5;
+    margin-top: $small-spacing * 0.5;
+  }
+}
+// scss-lint:enable IdSelector
+
+.cat-entry__details__close {
+  color: $white;
+  cursor: pointer;
+  display: none;
+  font-size: 28px;
+  position: fixed;
+  right: 22px;
+  top: 12px;
+  z-index: $z-index-7;
+
+  &.is-visible { display: block; }
+  .close-button {
+    @extend .ion-close-circled;
+    color: $light-gray;
   }
 }

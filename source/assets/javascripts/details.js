@@ -73,6 +73,13 @@ let Details = Vue.extend({
     show () {
       this.visible = true
     }
+  },
+  filters: {
+    stringifyBis (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.replace('-', ' ')
+    }
   }
 })
 
