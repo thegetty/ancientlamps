@@ -5,7 +5,7 @@
       .cat-entry__details__print__item
         .cat-entry__details__print__text
           .section.cat-number
-            %h2.cat-number= entry.cat_no
+            %h2.cat-number= entry.cat_no.to_s.gsub("-", " ")
           - if entry.no_entry
           - else
             .section.cat-entry__details__print__image
