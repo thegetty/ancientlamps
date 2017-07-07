@@ -144,6 +144,13 @@ let Catalogue = Vue.extend({
         return value + ' AD'
       }
     }
+  },
+  filters: {
+    stringifyBis (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.replace('-', ' ')
+    }
   }
 })
 

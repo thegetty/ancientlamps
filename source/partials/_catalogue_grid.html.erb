@@ -51,7 +51,7 @@
             v-for="item in results"
             class="cat-entry__grid__item"
             :data-cat="item.cat_no">
-          <h6 class="cat-entry__grid__item__number">{{ item.cat_no }}</h6>
+          <h6 class="cat-entry__grid__item__number">{{ item.cat_no | stringifyBis }}</h6>
         </a>
       </div>
     </div>
