@@ -55,22 +55,22 @@ editions:
     type: Text
     format: application/epub+zip
     isbn: 978-1-60606-514-3
-    file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.epub
+    file_size_mb: 39.1
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl.epub
     additional_description:
   - name: MOBI/Kindle
     type: Text
     format: application/mobi
     isbn: 978-1-60606-514-3
-    file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.mobi
+    file_size_mb: 42
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl.mobi
     additional_description:
   - name: PDF
     type: Text
     format: application/pdf
     isbn: 978-1-60606-513-6
-    file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.pdf
+    file_size_mb: 19.7
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl.pdf
     additional_description:
   - name: Paperback
     type: PhyiscalObject
@@ -78,18 +78,22 @@ editions:
     isbn: 978-1-60606-513-6
     pages:
     illustrations:
-    link:
+    link: http://shop.getty.edu/products/ancient-lamps-in-the-j-paul-getty-museum-978-1606065136
     additional_description:
       "Reflecting the Getty’s commitment to open content, <em>Ancient Lamps in the J. Paul Getty Museum</em> is available online at www.getty.edu/publications/ancientlamps and may be downloaded free of charge in multiple formats. For readers who wish to have a bound reference copy, this paperback version has been made available for sale."
 other_resources:
   - name: CSV
     type: data
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl_Data.csv
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl_Data.csv
   - name: JSON
     type: data
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl_Data.json
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl_Data.json
+  - name: JPG
+    type: image
+    file_size_mb: 36.8
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl_Images.zip
 publisher: Getty Publications
 imprint: J. Paul Getty Museum
 publisher_short: Getty P

@@ -7,7 +7,18 @@
       - else
         %li= link_to "#{edition.name}", edition.link, :target => "blank", :class => "no-smoothState"
 :markdown
-  Each of these alternative formats includes the complete catalogue text, the top view image for each object, all the indices, and the map.
+  Each of these alternative formats includes the complete catalogue text, the main image for each object, and all the indices.
+%hr
+%h4 Catalogue Main Images
+%ul
+  - data.book.other_resources.each do |resource|
+    - if resource.type == "image"
+      - if resource.file_size_mb != nil
+        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link, :target => "blank", :class => "no-smoothState"
+      - else
+        %li= link_to "#{resource.name}", resource.link, :target => "blank", :class => "no-smoothState"
+:markdown
+  Download includes the main image (500px on the longest side) for each of the catalogue objects, free for unrestricted use. Alternate views and larger sizes are available through the Getty’s Open Content program at [www.getty.edu/art/collection](http://www.getty.edu/art/collection).
 %hr
 %h4 Object Data
 %ul
