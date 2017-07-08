@@ -67,6 +67,10 @@ html { min-height: 100vh; }
     + p { text-indent: 0; }
   }
 
+  .loc-cip p {
+    margin-bottom: 0;
+  }
+
   ul {
     list-style-type: none;
     margin-bottom: 1rem;

@@ -504,23 +504,31 @@ $modular-scale-ratio: $minor-second;
     page: no-footer;
     page-break-after: always;
 
-    .publisher {
+    p, ul {
       margin-bottom: $print-base-spacing;
+    }
+
+    .cc-logo {
+      width: .625in;
+    }
+
+    .publisher {
+      // margin-bottom: $print-base-spacing;
       ul {
         list-style-type: none;
         margin-left: 0;
       }
       ul.team {
-        margin-top: $print-base-spacing;
+        // margin-top: $print-base-spacing;
         list-style-type: none;
         margin-left: 0;
       }
     }
 
-    .distribution { margin-bottom: $print-base-spacing;}
+    // .distribution { margin-bottom: $print-base-spacing;}
 
     .loc-cip {
-      margin-bottom: $print-base-spacing;
+      // margin-bottom: $print-base-spacing;
       p {
         margin-bottom: 0;
       }
@@ -535,6 +543,16 @@ $modular-scale-ratio: $minor-second;
       }
     }
 
+    .related-titles {
+      p {
+        margin-bottom: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
     ul.illustration-credits {
       list-style-type: none;
       margin-left: 0;
