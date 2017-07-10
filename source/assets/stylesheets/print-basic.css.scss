@@ -470,9 +470,9 @@ $modular-scale-ratio: $minor-second;
     // @extend %full-page-image;
     &__title {
       font-family: 'Freight Text Pro';
-      font-size: 53pt;
+      font-size: 49pt;
       font-weight: 400;
-      letter-spacing: 0;
+      letter-spacing: 3pt;
       text-transform: uppercase;
       line-height: 1;
       margin-bottom: 0;
@@ -484,9 +484,8 @@ $modular-scale-ratio: $minor-second;
       font-size: 34pt;
       font-weight: normal;
       letter-spacing: 0;
-      line-height: 1;
       margin-bottom: 0;
-      margin-top: 0;
+      margin-top: -.1in;
       text-align: center;
     }
     &__author {
