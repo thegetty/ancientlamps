@@ -8388,6 +8388,9 @@
   - :face: back
     :width: 5000
     :height: 2945
+  - :face: bottom
+    :width: 4800
+    :height: 2827
   - :face: front
     :width: 5000
     :height: 2945
