@@ -41,7 +41,7 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
   height: 100%;
 
   @include media($large-screen-up) { background-position: center center; }
-  @include media($x-large-screen-up) { background-size: contain; }
+  @include media($x-large-screen-up) { background-position: center 60%; }
 
   @for $i from 1 through 700 {
     &[data-cat="#{$i}"] {
