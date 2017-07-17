@@ -52,6 +52,7 @@ class UI {
     let $searchInput = $('.search-field')
     let $triggers = $('.expander-trigger')
     let $curtain = $('.sliding-panel-fade-screen')
+    let $footnoteLinks = $('.footnote, .reversefootnote')
 
     $curtain.click(() => { this.menuToggle() })
     $menuButton.click(() => { this.menuToggle() })
@@ -59,6 +60,7 @@ class UI {
     $searchButton.click(() => { this.showSearch() })
     $searchCloseButton.click(() => { this.hideSearch() })
     $triggers.click((e) => { this.expandToggle(e) })
+    $footnoteLinks.click((e) => { this.footnoteScroll(e) })
 
     window.onkeydown = (e) => { this.keyboardControls(e) }
     window.onhashchange = (e) => { this.toggleDetailsOnHashChange(e) }
@@ -113,6 +115,15 @@ class UI {
         $('html, body').animate({ scrollTop: $target.offset().top - fromTop })
       }
     }
+  }
+
+  footnoteScroll (event) {
+    function formatID (id) { return id.replace(/(:|\.|\[|\]|,)/g, '\\$1') }
+
+    var fromTop = 60
+    var target = event.currentTarget.hash
+    var distance = $(formatID(target)).offset().top
+    $('html, body').animate({scrollTop: distance - fromTop}, 250)
   }
 
   keyboardControls (e) {
