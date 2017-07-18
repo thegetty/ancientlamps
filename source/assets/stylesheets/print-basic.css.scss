@@ -284,6 +284,10 @@ $modular-scale-ratio: $minor-second;
   }
 }
 
+a.reversefootnote {
+  display: none;
+}
+
 .cat-intro,
 .cat-entry {
   h1 { prince-bookmark-level: 2; }
@@ -328,11 +332,6 @@ $modular-scale-ratio: $minor-second;
       margin-left: $print-base-spacing;
     }
   }
-
-  a.reversefootnote {
-    display: none;
-  }
-
 
   &__details__print {
     &__text {
@@ -565,11 +564,14 @@ body.print-frontmatter {
   page: frontmatter;
 }
 
-body.contents,
 body.foreword,
 body.acknowledgments,
 body.abbreviations-and-notes {
   page: frontmatter;
+}
+
+body.contents {
+  page: no-footer;
 }
 
 .collection-link {
@@ -634,6 +636,11 @@ h3.full-print-heading:first-of-type {
   margin-top: $print-base-spacing;
 }
 
+.full-print-heading + p {
+  column-span: all;
+  margin-bottom: $print-base-spacing;
+}
+
 #lamp-signatures,
 #stamps-table {
   column-span: all;
@@ -657,6 +664,8 @@ h3.full-print-heading:first-of-type {
   height: 1.2cm;
 }
 
+
+
 .page__content .classification,
 .page__content .discus-index,
 .page__content .contents-page {
@@ -675,10 +684,15 @@ h3.full-print-heading:first-of-type {
   }
 }
 
-.index ul {
-  padding-left: $print-base-spacing;
-  text-indent: -$print-base-spacing;
-  margin-left: 0;
+.index ul, ol {
+  padding-left: 0;
+  // text-indent: -$print-base-spacing;
+  // margin-left: 0;
+}
+
+ul.index-places,
+ol.discus-index {
+  padding-left: 4pt;
 }
 
 .page__content .contents-page {
@@ -733,12 +747,16 @@ p.entry-author + p {
   a {
     float: none;
     margin-left: 0;
+    font-size: 8pt;
+    text-transform: lowercase;
   }
   a::before {
     content: '(';
+    font-size: 8pt;
   }
   a::after {
     content: ')' leader(dotted) ' ' target-counter(attr(href, url), page);
+    font-size: 8pt;
   }
   a.footnote::before {
     content: '';
@@ -767,6 +785,7 @@ p.entry-author + p {
   ul {
     list-style-type: none;
     margin: 0;
+    padding-left: 0;
   }
 
   li { margin-bottom: $print-base-spacing; }
@@ -775,6 +794,7 @@ p.entry-author + p {
 ul.contributor-bios {
   list-style-type: none;
   margin: 0;
+  padding-left: 0;
 
   li { margin-bottom: $print-base-spacing; }
 }
