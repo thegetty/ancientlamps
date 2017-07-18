@@ -143,6 +143,9 @@ let Catalogue = Vue.extend({
       } else {
         return value + ' AD'
       }
+    },
+    bgImageLink (cat) {
+      return `../assets/images/thumbs/${cat}.jpg`
     }
   },
   filters: {

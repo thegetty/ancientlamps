@@ -48,9 +48,9 @@
       <div class="cat-entry__grid">
         <a :href="entryLink(item.cat_no)"
            v-for="item in results"
-           class="cat-entry__grid__item"
+           class="cat-entry__grid__item lazyload"
            :data-cat="item.cat_no"
-           :data-bg="item.cat_no" >
+           :data-bg="bgImageLink(item.cat_no)" >
           <h6 class="cat-entry__grid__item__number">{{ item.cat_no | stringifyBis }}</h6>
         </a>
       </div>
