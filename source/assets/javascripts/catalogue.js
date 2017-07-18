@@ -73,13 +73,18 @@ let Catalogue = Vue.extend({
       }
     },
     getData () {
-      localforage.getItem('catalogue').then((data) => {
-        this.entries = data
-        this.results = this.entries
-        this.ready = true
-      }).catch(function (error) {
-        console.log(error)
-      })
+      if (window.page._catalogueStatus === false) {
+        console.log('catalogue not yet ready')
+      } else {
+        console.log('catalogue data ready')
+        localforage.getItem('catalogue').then((data) => {
+          this.entries = data
+          this.results = this.entries
+          this.ready = true
+        }).catch(function (error) {
+          console.log(error)
+        })
+      }
     },
     filterByDate () {
       return _

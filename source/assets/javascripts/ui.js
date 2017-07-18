@@ -14,6 +14,7 @@ class UI {
     this.searchInstance = null
     this.catalogueInstance = null
     this.mapInstance = null
+    this.gridInstance = null
 
     this.setup()
   }
@@ -64,6 +65,9 @@ class UI {
 
     window.onkeydown = (e) => { this.keyboardControls(e) }
     window.onhashchange = (e) => { this.toggleDetailsOnHashChange(e) }
+    window.addEventListener('catalogue', () => {
+      if (this.gridInstance) { this.gridInstance.getData() }
+    })
 
     let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
@@ -77,8 +81,9 @@ class UI {
 
   setupCatalogueGridIfNecessary () {
     let $catalogue = $('#js-catalogue')
-    // eslint-disable-next-line no-new
-    if ($catalogue.length > 0) { new Catalogue({el: '#js-catalogue'}) }
+    if ($catalogue.length > 0) {
+      this.gridInstance = new Catalogue({el: '#js-catalogue'})
+    }
   }
 
   setupDetailsIfNecessary () {
