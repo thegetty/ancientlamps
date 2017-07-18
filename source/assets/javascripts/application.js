@@ -156,8 +156,6 @@ function prepareTransitions () {
 
 // Start here
 window.page.setupStoredData()
-// window.lazySizesConfig = window.lazySizesConfig || {}
-// window.lazySizesConfig.init = false
 
 $(document).ready(() => {
   window.page.ui = new UI()
