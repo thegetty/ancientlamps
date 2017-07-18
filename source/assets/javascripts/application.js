@@ -10,6 +10,11 @@ import UI from './ui.js'
 import './vendor/velocity.min.js'
 import './vendor/velocity.ui.min.js'
 import './vendor/jquery.smoothState.min.js'
+
+require('lazysizes')
+import './vendor/ls.attrchange.js'
+import './vendor/ls.unveilhooks.js'
+
 import lunr from 'lunr'
 import localforage from 'localforage'
 import includes from 'lodash.includes'
@@ -151,6 +156,8 @@ function prepareTransitions () {
 
 // Start here
 window.page.setupStoredData()
+// window.lazySizesConfig = window.lazySizesConfig || {}
+// window.lazySizesConfig.init = false
 
 $(document).ready(() => {
   window.page.ui = new UI()

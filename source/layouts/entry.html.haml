@@ -18,7 +18,8 @@
       .cat-entry__content__inner
         .cat-entry__grid
           - entries.each do |entry|
-            .cat-entry__grid__item{ :data => { :cat => entry }}
+            .cat-entry__grid__item.lazyload{ :data => { :cat => entry,
+                                                        :bg => image_path("assets/images/thumbs/#{entry}.jpg") }}
               %h6.cat-entry__grid__item__number= entry.to_s.gsub("-", " ")
         = yield
         .cat-entry__image-credit
