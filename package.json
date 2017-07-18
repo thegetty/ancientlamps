@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "jquery": "^3.1.1",
+    "lazysizes": "^4.0.0-rc3",
     "leaflet": "^0.7.7",
     "leaflet.markercluster": "Leaflet/Leaflet.markercluster#leaflet-0.7",
     "localforage": "^1.5.0",
