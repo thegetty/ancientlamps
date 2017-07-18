@@ -137,6 +137,8 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     @include span-columns(6 of 12);
     @include omega(2n);
     background-color: $light-gray;
+    background-position: center center;
+    background-size: cover;
     box-shadow: 1px 1px 3px $medium-gray;
     cursor: pointer;
     height: 200px;
@@ -149,6 +151,17 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       height: 200px;
     }
 
+    &.lazyload,
+    &.lazyloading, {
+      background-image: url('../images/oval.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &.lazyloaded {
+      background-size: cover;
+    }
+
     &__number {
       color: $white;
       margin-left: $small-spacing;
@@ -158,8 +171,6 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
     @for $i from 1 through 700 {
       // &[data-cat="#{$i}"] {
         // background-image: url("../images/thumbs/#{$i}.jpg");
-        // background-position: center center;
-        // background-size: cover;
       // }
     }
 
