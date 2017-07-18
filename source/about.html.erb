@@ -23,7 +23,7 @@ sort_order: 208
     </blockquote>
     <blockquote>
       <h4>MLA</h4>
-      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.imprint %>, <%= data.book.pub_date.year %>, <span class="cite-current-date">DD MMMM YYYY</span>, <span class="force-wrap"><%= permalink.gsub('http://', '') %></span></p>
+      <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.imprint %>, <%= data.book.pub_date.year %>, <span class="cite-current-date">DD MMMM YYYY</span>, <span class="force-wrap"><%= permalink.gsub('http://', '') %></span>.</p>
     </blockquote>
   <h4>Permanent URL</h4>
   <span class="force-wrap"><%= permalink %></span>
