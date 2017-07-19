@@ -129,6 +129,7 @@ class UI {
     var target = event.currentTarget.hash
     var distance = $(formatID(target)).offset().top
     $('html, body').animate({scrollTop: distance - fromTop}, 250)
+    history.pushState({id: 'main'}, document.title, target)
   }
 
   keyboardControls (e) {
