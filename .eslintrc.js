@@ -6,6 +6,7 @@ module.exports = {
         "promise"
     ],
   "env": {
+    "browser": true,
     "jquery": true
   }
 };
