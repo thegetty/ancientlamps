@@ -32,7 +32,7 @@ class UI {
     let $expanderContent = $('.expander-content')
     $expanderContent.addClass('expander--hidden')
 
-    // this.anchorScroll(window.location.hash)
+    this.anchorScroll(window.location.hash)
 
     this.searchInstance = new Search({ el: '#search-results-template' })
     this.setupCommonEventHandlers()
@@ -147,7 +147,6 @@ class UI {
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if ($prev.length) {
-          // window.location = $prev.attr('href')
           $prev.click()
         }
         break
@@ -155,7 +154,6 @@ class UI {
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if ($next.length) {
-          // window.location = $next.attr('href')
           $next.click()
         }
         break
@@ -202,7 +200,7 @@ class UI {
     }
     this.catalogueInstance.show()
     document.querySelector('body').classList.add('noscroll')
-    window.location.hash = cat
+    history.pushState({id: 'main'}, `Cat. ${cat}`, `#${cat}`)
   }
 
   toggleDetailsOnHashChange (e) {
