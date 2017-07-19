@@ -7796,6 +7796,9 @@
   - :face: bottom
     :width: 4272
     :height: 5000
+  - :face: inscription
+    :width: 4211
+    :height: 4929
   - :face: main
     :width: 5000
     :height: 3859
