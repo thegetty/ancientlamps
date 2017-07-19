@@ -67,7 +67,7 @@ let Details = Vue.extend({
       let scrollPos = window.scrollY
       this.visible = false
       document.querySelector('body').classList.remove('noscroll')
-      window.location.hash = ''
+      history.pushState({id: 'main'}, document.title, window.location.href.split('#')[0])
       window.scrollTo(0, scrollPos)
     },
     show () {
