@@ -5069,18 +5069,18 @@
     :height: 5000
 - :cat: 355
   :images:
-  - :face: interior
+  - :face: inside
     :width: 5000
     :height: 3640
   - :face: top
-    :width: 3944
-    :height: 2871
+    :width: 4300
+    :height: 3130
 - :cat: 356
   :images:
-  - :face: back
+  - :face: inside
     :width: 5000
     :height: 4912
-  - :face: front
+  - :face: top
     :width: 5000
     :height: 4912
 - :cat: 357
