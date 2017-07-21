@@ -4,4 +4,10 @@
     %title= book.title
     %link{:href => "assets/stylesheets/epub.css", :rel => "stylesheet"}/
   %body.cover-page
-    %img.cover-image{:src => "assets/images/#{book.cover}"}
+    .cover-image
+      %img.cover-image{:src => "assets/images/#{book.cover}"}
+    .title-page
+      %h1.title= book.info.title.main
+      .authors= book.info.author_as_it_appears[0]
+      .publisher= "The #{book.info.imprint}, #{book.info.publisher_location}"
+      %img.logo{:src => "assets/images/getty_logo.png"}
