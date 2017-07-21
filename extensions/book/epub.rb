@@ -94,7 +94,7 @@ module Book
     def build_chapters
       Dir.chdir(File.join(working_dir, 'OEBPS')) do
         chapters.each_with_index do |c, index|
-          File.open("#{c.title.slugify}.xhtml", 'w') { |f| f.puts c.format_for_epub }
+          File.open("#{c.file_name}.xhtml", 'w') { |f| f.puts c.format_for_epub }
 
           item     = c.generate_item_tag
           navpoint = c.generate_navpoint

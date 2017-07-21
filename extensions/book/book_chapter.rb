@@ -12,6 +12,10 @@ module Book
       @book = book
     end
 
+    def file_name
+      File.basename(path, ".html")
+    end
+
     def title
       data.title || catalogue_entry_title
     end
@@ -42,12 +46,12 @@ module Book
 
     # Generate a navpoint tag for epub toc.ncx navmap
     def generate_navpoint
-      NavPoint.new(nil, nil, "#{title.slugify}.xhtml", title)
+      NavPoint.new(nil, nil, "#{file_name}.xhtml", title)
     end
 
     # Generate an item tag for epub manifest
     def generate_item_tag
-      ItemTag.new("c#{rank}", "#{title.slugify}.xhtml", 'application/xhtml+xml', nil)
+      ItemTag.new("c#{rank}", "#{file_name}.xhtml", 'application/xhtml+xml', nil)
     end
 
     # Generate an itemref tag for epub spine
