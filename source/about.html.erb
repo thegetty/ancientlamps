@@ -16,7 +16,7 @@ sort_order: 208
 <p><%= data.book.editions[0].additional_description %></p>
 <hr />
 <div class="smaller-text">
-  <h2>Citation Information</h2>
+  <h2 id="citation-information">Citation Information</h2>
     <blockquote>
       <h4>Chicago</h4>
       <p><%= data.book.creators[0].last_name %>, <%= data.book.creators[0].first_name %>, and <%= data.book.creators[1].first_name %> <%= data.book.creators[1].last_name %>. <em><%= data.book.title.main %></em>. <%= data.book.publisher_location %>: <%= data.book.imprint %>, <%= data.book.pub_date.year %>. <span class="force-wrap"><%= permalink %></span>.</p>
@@ -28,10 +28,10 @@ sort_order: 208
   <h4>Permanent URL</h4>
   <span class="force-wrap"><%= permalink %></span>
   <hr />
-  <h2>Revision History</h2>
+  <h2 id="revision-history">Revision History</h2>
   <%= partial "partials/revision_history" %>
   <hr />
-  <h2>Downloads</h2>
+  <h2 id="downloads">Downloads</h2>
   <%= partial "partials/downloads" %>
   <%= partial "partials/copyright_license" %>
   <%= partial "partials/publisher_team" %>
