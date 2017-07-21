@@ -47,9 +47,8 @@ let ImageViewer = Vue.extend({
   },
   methods: {
     renderMap () {
-      if (this.map) {
-        this.removeMap()
-      }
+      if (this.map) { this.removeMap() }
+      if (this.cat === 456) { return false }
 
       this.map = L.map('js-deepzoom', {
         maxZoom: this.maxZoom,
@@ -80,10 +79,11 @@ let ImageViewer = Vue.extend({
     getData () {
       console.log('getData called. Current cat is: ' + this.cat)
       localforage.getItem('plates').then((data) => {
+        if (this.cat === 456) { return false }
+
         let query = {cat: this.cat}
         let imageData = _.find(data, query)
         this.faces = imageData.images
-
         this.renderMap()
       })
     },

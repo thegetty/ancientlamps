@@ -168,6 +168,10 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
       margin-top: $small-spacing / 2;
     }
 
+    &[data-cat="456"] {
+      pointer-events: none;
+    }
+
     @for $i from 1 through 700 {
       // &[data-cat="#{$i}"] {
         // background-image: url("../images/thumbs/#{$i}.jpg");

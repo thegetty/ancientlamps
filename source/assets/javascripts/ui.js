@@ -94,6 +94,11 @@ class UI {
       $thumbnails.click(e => this.showDetails(e))
       let entries = $catalogueEntry.data('entries')
 
+      let $blankEntry = $('.cat-entry__grid__item[data-cat="456"]')
+      if ($blankEntry.length > 0) {
+        $blankEntry.off()
+      }
+
       // Avoid a possible race condition here if user goes directly to a
       // details hash url?
       this.catalogueInstance = new Details({
