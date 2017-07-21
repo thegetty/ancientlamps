@@ -43,10 +43,6 @@ $footnote-size: 7.5pt;
 $base-font-size: $print-base-font-size;
 $modular-scale-ratio: $minor-second;
 
-// $medium-gray: transparentize($print-text-color, 0.5);
-// $light-gray: transparentize($print-text-color, 0.5);
-
-
 // Default page setup
 // -----------------------------------------------------------------------------
 // @prince-pdf { prince-pdf-page-layout: two-column-right; }
@@ -66,7 +62,6 @@ $modular-scale-ratio: $minor-second;
   margin-top: $top-margin;
 
   @bottom-left {
-    //content: counter(page) "\2003" string(doctitle);
     content: counter(page);
     font-family: $base-font-family;
     font-size: $page-number-size;
@@ -270,8 +265,8 @@ $modular-scale-ratio: $minor-second;
   text-align: center;
 
   &::before {
-    content: "Notes";
-    font-family: "Freight Text Pro SC";
+    content: 'Notes';
+    font-family: 'Freight Text Pro SC';
     font-size: 1rem;
     letter-spacing: 2px;
     text-transform: lowercase;
@@ -293,7 +288,6 @@ a.reversefootnote {
   h1 { prince-bookmark-level: 2; }
 
   &__breadcrumbs-bar {
-    // display: none;
     color: $medium-gray;
     font-size: $print-base-font-size;
     margin-bottom: $print-base-spacing;
@@ -305,7 +299,7 @@ a.reversefootnote {
 .cat-entry {
   &__grid { display: none; }
   &__image { display: none; }
-  &__image-credit  { display: none; }
+  &__image-credit { display: none; }
   &__title { font-size: 16pt; }
   &__details__stamp {
     display: block;
@@ -324,51 +318,39 @@ a.reversefootnote {
     margin-top: inherit;
     padding-top: 0;
     text-align: left;
-    &::before {
-      content: "";
-    }
+
+    &::before { content: ''; }
+
     ol {
-      margin-top: $print-base-spacing;
       margin-left: $print-base-spacing;
+      margin-top: $print-base-spacing;
     }
   }
 
   &__details__print {
     &__text {
+      .section-title { font-weight: bold; }
       .section {
         font-size: 8pt;
         margin-bottom: $print-base-spacing;
-        tr, td {
-          // page-break-inside: avoid;
-        }
+        // scss-lint:disable NestingDepth
         td {
-          padding-top: 3pt;
+          border-bottom-width: 0;
           padding-bottom: 3pt;
-          border-bottom-width: 0px;
+          padding-top: 3pt;
         }
-      }
 
-      .section.cat-number {
-        border-top: solid 0.25pt $print-text-color;
-        margin-top: $print-base-spacing * 2;
+        .cat-number {
+          border-top: solid 0.25pt $print-text-color;
+          margin-top: $print-base-spacing * 2;
 
-        h2.cat-number {
-          font-size: 12pt;
-          margin-top: 3pt;
+          h2.cat-number {
+            font-size: 12pt;
+            margin-top: 3pt;
+          }
         }
+        // scss-lint:enable NestingDepth
       }
-
-      .section-title {
-        font-weight: bold;
-
-        // color: $medium-gray;
-        // display: block;
-        // font-family: "Freight Text Pro SC";
-        // font-size: 9pt;
-        // letter-spacing: 0.5pt;
-        // text-transform: lowercase;
-      }
-
     }
 
     &__image {
@@ -377,9 +359,7 @@ a.reversefootnote {
       width: 100%;
     }
 
-    table tr:last-child td {
-      border-bottom: none;
-    }
+    table tr:last-child td { border-bottom: 0; }
   }
 }
 
@@ -392,249 +372,186 @@ a.reversefootnote {
     width: 100%;
 
     @for $i from 1 through 700 {
-      &[data-cat="#{$i}"] {
-        background-image: url("../images/banners/#{$i}.jpg");
-      }
+      &[data-cat="#{$i}"] { background-image: url("../images/banners/#{$i}.jpg"); }
     }
   }
-  &__title__secondary {
-    color: $medium-gray;
-  }
+
+  &__title__secondary { color: $medium-gray; }
 }
 
 .cat-intro__content__inner,
 .cat-entry__content__inner {
   figure {
     margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
+    &.figure-print-multicolumn { column-span: all; }
   }
-  figure.figure-print-multicolumn {
-    column-span: all;
+
+}
+
+.print__cover { page: no-footer; }
+
+.print__halftitle {
+  counter-reset: page 1;
+  margin-right: 0;
+  margin-top: 4in;
+  page: no-footer;
+  page-break-before: right;
+  text-transform: lowercase;
+
+  &__title {
+    font-family: 'Freight Text Pro';
+    font-size: 23pt;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $medium-gray;
+    font-family: 'Freight Text Pro SC';
+    font-size: 15pt;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
   }
 }
 
-// Section-specific styles
-.print {
-  &__cover {
-    page: no-footer;
-  }
-
-  &__halftitle {
-    counter-reset: page 1;
-    margin-right: 0;
-    margin-top: 4in;
-    page: no-footer;
-    page-break-before: right;
-    text-transform: lowercase;
-
-    &__title {
-      font-family: 'Freight Text Pro';
-      font-size: 23pt;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0;
-      line-height: 1;
-      margin-bottom: 0;
-      margin-top: 0;
-      text-align: right;
-    }
-
-    &__subtitle {
-      color: $medium-gray;
-      font-family: 'Freight Text Pro SC';
-      font-size: 15pt;
-      font-weight: normal;
-      letter-spacing: 0;
-      line-height: 1;
-      margin-bottom: 0;
-      margin-top: 0;
-      text-align: right;
-    }
-  }
-
-  // Replace these with full-bleed images later
-  &__titlepage__left {
-    page: titlepage;
-    page-break-after: always;
-    margin-left: .75in;
-    margin-top: 9.75in;
+.print__titlepage {
+  &__left {
     font-family: 'Freight Text Pro';
-    font-weight: 400;
     font-size: 18pt;
-    // @extend %full-page-image;
-  }
-
-  &__titlepage__right {
+    font-weight: 400;
+    margin-left: 0.75in;
+    margin-top: 9.75in;
     page: titlepage;
     page-break-after: always;
-    // @extend %full-page-image;
+  }
+
+  &__right {
+    page: titlepage;
+    page-break-after: always;
+
     &__title {
       font-family: 'Freight Text Pro';
       font-size: 49pt;
       font-weight: 400;
       letter-spacing: 3pt;
-      text-transform: uppercase;
       line-height: 1;
       margin-bottom: 0;
       margin-top: 2.5in;
       text-align: center;
+      text-transform: uppercase;
     }
+
     &__subtitle {
       font-family: 'Freight Text Pro SC';
       font-size: 34pt;
       font-weight: normal;
       letter-spacing: 0;
       margin-bottom: 0;
-      margin-top: -.1in;
+      margin-top: -0.1in;
       text-align: center;
     }
+
     &__author {
-      text-align: center;
       font-size: 16pt;
       line-height: 1.5;
       margin-top: 6pt;
+      text-align: center;
     }
   }
+}
 
-  &__copyright {
-    font-family: $heading-font-family;
-    font-size: 8pt;
-    margin-right: 1in;
-    page: no-footer;
-    page-break-after: always;
+.print__copyright {
+  font-family: $heading-font-family;
+  font-size: 7.5pt;
+  margin-right: 1in;
+  page: no-footer;
+  page-break-after: always;
 
-    p, ul {
-      margin-bottom: $print-base-spacing;
-    }
-
-    .cc-logo {
-      width: .625in;
-    }
-
-    .publisher {
-      // margin-bottom: $print-base-spacing;
-      ul {
-        list-style-type: none;
-        margin-left: 0;
-      }
-      ul.team {
-        // margin-top: $print-base-spacing;
-        list-style-type: none;
-        margin-left: 0;
-      }
-    }
-
-    // .distribution { margin-bottom: $print-base-spacing;}
-
-    .loc-cip {
-      // margin-bottom: $print-base-spacing;
-      p {
-        margin-bottom: 0;
-      }
-      ul {
-        list-style-type: none;
-        margin-top: 0;
-        margin-left: 0;
-      }
-      li {
-        padding-left: $print-base-spacing;
-        text-indent: -$print-base-spacing;
-      }
-    }
-
-    .related-titles {
-      p {
-        margin-bottom: 0;
-      }
-      ul {
-        list-style-type: none;
-        margin-left: 0;
-        margin-top: 0;
-      }
-    }
-    ul.illustration-credits {
-      list-style-type: none;
-      margin-left: 0;
-    }
-
+  p, ul {
+    margin-bottom: $print-base-spacing;
   }
 
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .cc-logo { width: 0.625in; }
+
+  .loc-cip,
+  .related-titles {
+    p { margin-bottom: 0; }
+  }
+
+  .loc-cip {
+    li {
+      padding-left: $print-base-spacing;
+      text-indent: -$print-base-spacing;
+    }
+  }
 }
 
-body.print-frontmatter {
-  page: frontmatter;
-}
+
+body.print-frontmatter { page: frontmatter; }
 
 body.foreword,
 body.acknowledgments,
-body.abbreviations-and-notes {
-  page: frontmatter;
-}
+body.abbreviations-and-notes { page: frontmatter; }
 
-body.contents {
-  page: no-footer;
-}
+body.contents { page: no-footer; }
+body.introduction { counter-reset: page 1; }
+.collection-link { display: none; }
 
-.collection-link {
-  display: none;
-}
-
-#concordance-inv-no {
-  width: 60%;
-}
-
-body.introduction {
-  counter-reset: page 1;
-}
+#concordance-inv-no { width: 60%; }
 
 body.catalogue.landing {
   page: catalogue-landing;
   page-break-after: always;
+
   .page__header {
-    text-align: right;
-    margin-top: 2.5in;
     margin-right: 1.5in;
-    h1 {
-      font-size: 18pt;
-    }
+    margin-top: 2.5in;
+    text-align: right;
+
+    h1 { font-size: 18pt; }
   }
-  .page__content {
-    display: none;
-  }
+
+  .page__content { display: none; }
 }
 
 body.indices.landing {
   page: indices-landing;
   page-break-after: always;
+
   .page__header {
-    text-align: right;
-    margin-top: 2.5in;
     margin-right: 1.5in;
-    h1 {
-      font-size: 18pt;
-    }
+    margin-top: 2.5in;
+    text-align: right;
+
+    h1 { font-size: 18pt; }
   }
-  .page__content {
-    display: none;
-  }
+
+  .page__content { display: none; }
 }
 
 .classification,
-// .concordance,
-// .discus-index,
-// .index-indent,
 .contents-page,
-.full-print-heading {
-  column-span: all;
-}
+.full-print-heading { column-span: all; }
 
 h4.full-print-heading,
-h3.full-print-heading {
-  margin-top: $print-base-spacing * 3;
-}
+h3.full-print-heading { margin-top: $print-base-spacing * 3; }
 
-h3.full-print-heading:first-of-type {
-  margin-top: $print-base-spacing;
-}
+h3.full-print-heading:first-of-type { margin-top: $print-base-spacing; }
 
 .full-print-heading + p {
   column-span: all;
@@ -660,11 +577,7 @@ h3.full-print-heading:first-of-type {
     border-bottom: 0;
 }
 
-.stamps td img {
-  height: 1.2cm;
-}
-
-
+.stamps td img { height: 1.2cm; }
 
 .page__content .classification,
 .page__content .discus-index,
@@ -674,14 +587,14 @@ h3.full-print-heading:first-of-type {
     font-weight: normal;
     text-transform: none;
   }
+
   > li {
     font-size: 10pt;
     margin-bottom: $print-base-spacing;
     text-transform: uppercase;
   }
-  .empty-level {
-    list-style-type: none;
-  }
+
+  .empty-level { list-style-type: none; }
 }
 
 .index ul, ol {
@@ -693,10 +606,6 @@ h3.full-print-heading:first-of-type {
 ul.index-places,
 ol.discus-index {
   padding-left: 4pt;
-}
-
-.page__content .contents-page {
-  margin-left: 0;
 }
 
 .page__content p.entry-author {
@@ -713,6 +622,15 @@ p.entry-author + p {
 }
 
 .page__content .contents-page {
+  margin-left: 0;
+
+  ul {
+    line-height: 2;
+    list-style-type: none;
+  }
+
+  li { font-size: $print-base-font-size * 1.25; }
+
   a::after {
     content: leader(dotted) ' ' target-counter(attr(href, url), page);
   }
@@ -746,23 +664,24 @@ p.entry-author + p {
 .page__content .classification {
   a {
     float: none;
+    font-size: 8pt;
     margin-left: 0;
-    font-size: 8pt;
     text-transform: lowercase;
-  }
-  a::before {
-    content: '(';
-    font-size: 8pt;
-  }
-  a::after {
-    content: ')' leader(dotted) ' ' target-counter(attr(href, url), page);
-    font-size: 8pt;
-  }
-  a.footnote::before {
-    content: '';
-  }
-  a.footnote::after {
-    content: '';
+
+    &::before {
+      content: '(';
+      font-size: 8pt;
+    }
+
+    &::after {
+      content: ')' leader(dotted) ' ' target-counter(attr(href, url), page);
+      font-size: 8pt;
+    }
+
+    &.footnote {
+      &::before { content: ''; }
+      &::after { content: ''; }
+    }
   }
 }
 
@@ -771,15 +690,6 @@ p.entry-author + p {
   page-break-inside: avoid;
 }
 
-
-.page__content .contents-page {
-  ul {
-    line-height: 2;
-    list-style-type: none;
-  }
-
-  li { font-size: $print-base-font-size * 1.25; }
-}
 
 .page__content .references {
   ul {
@@ -806,13 +716,10 @@ ul.contributor-bios {
   word-wrap: break-word;
 }
 
-.screen-only {
-  display: none;
-}
+.screen-only { display: none; }
 
 .inscription {
   font-family: "Source Serif Pro", serif;
   font-size: 0.8em;
   letter-spacing: 2px;
 }
-
