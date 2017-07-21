@@ -5,11 +5,15 @@
           "unique-identifier" => "pub-id" }
   %metadata{"xmlns:dc" => "http://purl.org/dc/elements/1.1/"}
     %dc:title#title= book.info.title.main
+    %dc:language#language= "en"
     %meta{:property => "title-type", :refines => "#title"} main
-    %dc:creator#creator= book.info.creators.first.name
-    %meta{:property => "file-as", :refines => "#creator"}= book.info.creators.first.file_as
-    %meta{:property => "role", :refines => "#creator", :scheme => "marc:relators"} aut
-    %dc:identifier#pub-id= book.info.pub_id
+    - book.info.creators.each_with_index do |creator, index|
+      %dc:creator{:id => "creator_#{index}" }= "#{creator.first_name} #{creator.last_name}"
+      %meta{:property => "file-as", :refines => "#creator_#{index}"}= "#{creator.last_name}, #{creator.first_name}"
+      %meta{:property => "role", :refines => "#creator_#{index}", :scheme => "marc:relators"} aut
+    - book.info.editions.each do |edition|
+      - if edition.name == "EPUB"
+        %dc:identifier#pub-id= edition.isbn
     %dc:description= book.info.description_main
     %dc:publisher= book.info.publisher
     -# %dc:language= book.info.languages.first
