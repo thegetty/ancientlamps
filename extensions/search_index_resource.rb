@@ -54,6 +54,7 @@ module Middleman
         starting_id = @index.size
         @app.data.catalogue.each_with_index do |entry, id|
           next if entry.cat_no == "TBD"
+          next if entry.cat_no == 456
           item = {
             id: starting_id + id,
             title: "Cat. #{entry.cat_no}",
