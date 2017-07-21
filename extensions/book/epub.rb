@@ -22,6 +22,7 @@ module Book
     def build(sitemap)
       build_epub_dir
       copy_images(sitemap)
+      copy_stamps(sitemap)
       copy_fonts
       build_container
       build_cover_page
@@ -37,7 +38,7 @@ module Book
 
     def build_epub_dir
       clean_directory(working_dir)
-      oebps_subdirs = %w(assets assets/images assets/images/thumbs assets/stylesheets assets/fonts)
+      oebps_subdirs = %w(assets assets/images assets/images/thumbs assets/images/stamps assets/stylesheets assets/fonts)
       Dir.chdir(working_dir) do
         FileUtils.rm_rf('.')
         ['META-INF', 'OEBPS'].each { |dir| clean_directory(dir) }
@@ -54,6 +55,20 @@ module Book
 
       Dir.chdir(working_dir + '/OEBPS/assets/images/thumbs/') do
         images.each_with_index do |image, index|
+          add_image_to_manifest(image, index)
+          filename = image.file_descriptor.relative_path.basename
+          File.open(filename, 'w') { |f| f.puts image.render }
+        end
+      end
+    end
+
+    def copy_stamps(sitemap)
+      images = sitemap.resources.select { |r| r.path.match('assets/images/stamps/*') }
+      images.reject! { |r| r.path.to_s == 'assets/images/.keep' }
+
+      Dir.chdir(working_dir + '/OEBPS/assets/images/stamps/') do
+        images.each_with_index do |image, index|
+          index = "stamp_#{index}"
           add_image_to_manifest(image, index)
           filename = image.file_descriptor.relative_path.basename
           File.open(filename, 'w') { |f| f.puts image.render }
