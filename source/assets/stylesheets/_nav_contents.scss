@@ -145,7 +145,7 @@ $sliding-panel-fade-screen-bg: #000;
   background: $sliding-panel-fade-screen-bg;
   opacity: 0;
   visibility: hidden;
-  z-index: $sliding-panel-z-index;
+  z-index: $z-index-11;
 
   &.is-visible {
     opacity: 0.4;
