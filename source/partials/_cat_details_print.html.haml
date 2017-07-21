@@ -5,7 +5,8 @@
       .cat-entry__details__print__item
         .cat-entry__details__print__text
           .section.cat-number
-            %h2.cat-number= entry.cat_no.to_s.gsub("-", " ")
+            %h2.cat-number{:id => "cat-#{entry.cat_no}"}
+              = entry.cat_no.to_s.gsub("-", " ")
           - if entry.no_entry
           - else
             .section.cat-entry__details__print__image
@@ -23,51 +24,51 @@
                     - else
                       %strong.section-title Inventory Number:
                     %span= entry.inv_no
-                - if entry.dimensions
-                  %tr
-                    %td
-                      %strong.section-title Dimensions:
-                      %span= entry.dimensions
-                - if entry.condition
-                  %tr
-                    %td
-                      %strong.section-title Condition:
-                      %span= entry.condition
-                - elsif entry.condition_and_fabric
-                  %tr
-                    %td
-                      %strong.section-title Condition and Fabric:
-                      %span= entry.condition_and_fabric
-                - unless entry.description.nil?
-                  %tr
-                    %td
-                      %strong.section-title Description:
-                      = entry.description
-                - unless entry.stamp.nil?
-                  %tr
-                    %td
-                      %strong.section-title Stamp:
-                      = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp", style: "width: #{entry.stamp_width}cm")
-                - unless entry.discus_iconography.nil?
-                  %tr
-                    %td
-                      %strong.section-title Discus Iconography:
-                      = entry.discus_iconography
-                - unless entry.type.nil?
-                  %tr
-                    %td
-                      %strong.section-title Type:
-                      %span= entry.type
-                - if entry.date
-                  %tr
-                    %td
-                      %strong.section-title Date:
-                      %span= entry.date
-                - if entry.place
-                  %tr
-                    %td
-                      %strong.section-title Place of Manufacture or Origin:
-                      %span= entry.place
+              - if entry.dimensions
+                %tr
+                  %td
+                    %strong.section-title Dimensions:
+                    = entry.dimensions
+              - if entry.condition
+                %tr
+                  %td
+                    %strong.section-title Condition:
+                    = entry.condition
+              - elsif entry.condition_and_fabric
+                %tr
+                  %td
+                    %strong.section-title Condition and Fabric:
+                    %span= entry.condition_and_fabric
+              - unless entry.description.nil?
+                %tr
+                  %td
+                    %strong.section-title Description:
+                    = entry.description
+              - unless entry.stamp.nil?
+                %tr
+                  %td
+                    %strong.section-title Stamp:
+                    = image_tag("stamps/#{entry.stamp}", class: "cat-entry__details__stamp", style: "width: #{entry.stamp_width}cm")
+              - unless entry.discus_iconography.nil?
+                %tr
+                  %td
+                    %strong.section-title Discus Iconography:
+                    = entry.discus_iconography
+              - unless entry.type.nil?
+                %tr
+                  %td
+                    %strong.section-title Type:
+                    %span= entry.type
+              - if entry.date
+                %tr
+                  %td
+                    %strong.section-title Date:
+                    %span= entry.date
+              - if entry.place
+                %tr
+                  %td
+                    %strong.section-title Place of Manufacture or Origin:
+                    %span= entry.place
               - unless entry.parallels.nil?
                 %tr
                   %td
