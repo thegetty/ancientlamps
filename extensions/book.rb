@@ -10,7 +10,7 @@ require_relative 'plates_resource'
 module Book
   class BookExtension < Middleman::Extension
     helpers Book::Helpers
-    option :ebook_cover, false, 'Name of an optional cover image'
+    option :ebook_cover, 'cover.jpg', 'Name of an optional cover image'
     option :output_filename, 'book', 'Filename of resulting .pdf, .epub, etc'
     option :output_dir, 'dist', 'Directory to output PDF and EPUB files'
     option :pdf_output_path, 'dist/book.pdf', 'Where to write generated PDF'

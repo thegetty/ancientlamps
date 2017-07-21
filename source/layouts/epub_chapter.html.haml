@@ -1,7 +1,7 @@
 !!! XML
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xmlns:epub" => "http://www.idpf.org/2007/ops"}
   %head
-    %title= current_page.data.title
+    %title= current_page.data.title.gsub(/<\/?[^>]*>/, "")
     = tag :link, :href => "assets/stylesheets/epub.css", :rel => "stylesheet"
   %body
     %h2.chapter-title= current_page.data.title
