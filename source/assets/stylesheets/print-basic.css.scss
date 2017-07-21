@@ -199,7 +199,7 @@ $modular-scale-ratio: $minor-second;
   @bottom-right { content: none; }
 }
 
-// Print Styles
+// Print Placeholder Styles
 // -----------------------------------------------------------------------------
 %full-page-image {
   background-repeat: no-repeat;
@@ -235,160 +235,15 @@ $modular-scale-ratio: $minor-second;
   }
 }
 
-// General content styles
-.page,
-.cat-entry,
-.cat-intro {
-  @extend %print-page-content;
-
-  &__header {
-    margin-bottom: $print-base-spacing * 3;
-    * { column-span: all; }
-    &__title {font-size: 14pt;}
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: $print-base-spacing;
-  }
-
-  ul, ol {
-    margin-left: $print-base-spacing;
-    padding-left: $print-base-spacing;
-  }
+// Print-specific sections
+// -----------------------------------------------------------------------------
+.print-frontmatter {
+  page: frontmatter;
 }
 
-.footnotes {
-  border-top: $base-border;
-  margin-bottom: $print-base-spacing;
-  margin-top: ($print-base-spacing * 1.5);
-  padding-top: $print-base-spacing;
-  text-align: center;
-
-  &::before {
-    content: 'Notes';
-    font-family: 'Freight Text Pro SC';
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: lowercase;
-  }
-
-  ol { margin-top: $print-base-spacing; }
-
-  p, ol, ul {
-    text-align: left;
-  }
+.print__cover {
+  page: no-footer;
 }
-
-a.reversefootnote {
-  display: none;
-}
-
-.cat-intro,
-.cat-entry {
-  h1 { prince-bookmark-level: 2; }
-
-  &__breadcrumbs-bar {
-    color: $medium-gray;
-    font-size: $print-base-font-size;
-    margin-bottom: $print-base-spacing;
-
-    * { column-span: all; }
-  }
-}
-
-.cat-entry {
-  &__grid { display: none; }
-  &__image { display: none; }
-  &__image-credit { display: none; }
-  &__title { font-size: 16pt; }
-  &__details__stamp {
-    display: block;
-    margin: $print-base-spacing;
-  }
-
-  .entry-with-footnotes,
-  .print-inline-paragraph {
-    display: inline;
-    text-indent: 0;
-  }
-
-  .entry-with-footnotes + .footnotes {
-    border-top: 0;
-    margin-bottom: inherit;
-    margin-top: inherit;
-    padding-top: 0;
-    text-align: left;
-
-    &::before { content: ''; }
-
-    ol {
-      margin-left: $print-base-spacing;
-      margin-top: $print-base-spacing;
-    }
-  }
-
-  &__details__print {
-    &__text {
-      .section-title { font-weight: bold; }
-      .section {
-        font-size: 8pt;
-        margin-bottom: $print-base-spacing;
-        // scss-lint:disable NestingDepth
-        td {
-          border-bottom-width: 0;
-          padding-bottom: 3pt;
-          padding-top: 3pt;
-        }
-
-        .cat-number {
-          border-top: solid 0.25pt $print-text-color;
-          margin-top: $print-base-spacing * 2;
-
-          h2.cat-number {
-            font-size: 12pt;
-            margin-top: 3pt;
-          }
-        }
-        // scss-lint:enable NestingDepth
-      }
-    }
-
-    &__image {
-      margin-top: $print-base-spacing;
-      position: static;
-      width: 100%;
-    }
-
-    table tr:last-child td { border-bottom: 0; }
-  }
-}
-
-.cat-intro {
-  &__image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 5.5in;
-    width: 100%;
-
-    @for $i from 1 through 700 {
-      &[data-cat="#{$i}"] { background-image: url("../images/banners/#{$i}.jpg"); }
-    }
-  }
-
-  &__title__secondary { color: $medium-gray; }
-}
-
-.cat-intro__content__inner,
-.cat-entry__content__inner {
-  figure {
-    margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
-    &.figure-print-multicolumn { column-span: all; }
-  }
-
-}
-
-.print__cover { page: no-footer; }
 
 .print__halftitle {
   counter-reset: page 1;
@@ -501,126 +356,30 @@ a.reversefootnote {
   }
 }
 
+// Print rules for sections also present in web version
+// -----------------------------------------------------------------------------
 
-body.print-frontmatter { page: frontmatter; }
-
-body.foreword,
-body.acknowledgments,
-body.abbreviations-and-notes { page: frontmatter; }
-
-body.contents { page: no-footer; }
-body.introduction { counter-reset: page 1; }
-.collection-link { display: none; }
-
-#concordance-inv-no { width: 60%; }
-
-body.catalogue.landing {
-  page: catalogue-landing;
-  page-break-after: always;
-
-  .page__header {
-    margin-right: 1.5in;
-    margin-top: 2.5in;
-    text-align: right;
-
-    h1 { font-size: 18pt; }
-  }
-
-  .page__content { display: none; }
+// Frontmatter page rules
+.foreword,
+.acknowledgments,
+.abbreviations-and-notes {
+  page: frontmatter;
 }
 
-body.indices.landing {
-  page: indices-landing;
-  page-break-after: always;
+.contents {
+  page: no-footer;
+}
 
-  .page__header {
-    margin-right: 1.5in;
-    margin-top: 2.5in;
-    text-align: right;
-
-    h1 { font-size: 18pt; }
-  }
-
-  .page__content { display: none; }
+.introduction {
+  counter-reset: page 1;
 }
 
 .classification,
-.contents-page,
-.full-print-heading { column-span: all; }
-
-h4.full-print-heading,
-h3.full-print-heading { margin-top: $print-base-spacing * 3; }
-
-h3.full-print-heading:first-of-type { margin-top: $print-base-spacing; }
-
-.full-print-heading + p {
+.contents-page, {
   column-span: all;
-  margin-bottom: $print-base-spacing;
 }
 
-#lamp-signatures,
-#stamps-table {
-  column-span: all;
-  margin-bottom: $print-base-spacing * 3;
-}
-
-#lamp-signatures,
-#lamp-signatures-heading {
-  margin-left: $print-base-spacing;
-}
-
-#stamps-table-heading {
-  page-break-before: always;
-}
-
-#stamps-table .catalogue-numbers td {
-    border-bottom: 0;
-}
-
-.stamps td img { height: 1.2cm; }
-
-.page__content .classification,
-.page__content .discus-index,
-.page__content .contents-page {
-  ul, ol, li {
-    font-size: 8pt;
-    font-weight: normal;
-    text-transform: none;
-  }
-
-  > li {
-    font-size: 10pt;
-    margin-bottom: $print-base-spacing;
-    text-transform: uppercase;
-  }
-
-  .empty-level { list-style-type: none; }
-}
-
-.index ul, ol {
-  padding-left: 0;
-  // text-indent: -$print-base-spacing;
-  // margin-left: 0;
-}
-
-ul.index-places,
-ol.discus-index {
-  padding-left: 4pt;
-}
-
-.page__content p.entry-author {
-  margin-bottom: $base-spacing;
-  margin-top: $small-spacing;
-  margin-right: $small-spacing;
-  // display: block;
-  text-align: right;
-  text-indent: 0;
-}
-
-p.entry-author + p {
-  text-indent: 0;
-}
-
+// Table of Contents (overrides)
 .page__content .contents-page {
   margin-left: 0;
 
@@ -643,6 +402,8 @@ p.entry-author + p {
     content: leader(dotted) ' ' target-counter(attr(href, url), page, lower-roman);
   }
 }
+
+// Typological Classification (overrides)
 
 // Unsatisfying v1
 //
@@ -691,6 +452,8 @@ p.entry-author + p {
 }
 
 
+// References (overrides)
+
 .page__content .references {
   ul {
     list-style-type: none;
@@ -701,14 +464,169 @@ p.entry-author + p {
   li { margin-bottom: $print-base-spacing; }
 }
 
-ul.contributor-bios {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
+// Catalogue landing page rules
+body.catalogue.landing {
+  page: catalogue-landing;
+  page-break-after: always;
 
-  li { margin-bottom: $print-base-spacing; }
+  .page__header {
+    margin-right: 1.5in;
+    margin-top: 2.5in;
+    text-align: right;
+
+    h1 { font-size: 18pt; }
+  }
+
+  .page__content { display: none; }
 }
 
+// Indices page rules
+body.indices.landing {
+  page: indices-landing;
+  page-break-after: always;
+
+  .page__header {
+    margin-right: 1.5in;
+    margin-top: 2.5in;
+    text-align: right;
+
+    h1 { font-size: 18pt; }
+  }
+
+  .page__content { display: none; }
+}
+
+// General page styles
+.page,
+.cat-entry,
+.cat-intro {
+  @extend %print-page-content;
+
+  &__header {
+    margin-bottom: $print-base-spacing * 3;
+    * { column-span: all; }
+    &__title {font-size: 14pt;}
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $print-base-spacing;
+  }
+
+  ul, ol {
+    margin-left: $print-base-spacing;
+    padding-left: $print-base-spacing;
+  }
+}
+
+// Catalogue section rules for both intro and entry pages
+.cat-intro,
+.cat-entry {
+  h1 { prince-bookmark-level: 2; }
+
+  &__breadcrumbs-bar {
+    color: $medium-gray;
+    font-size: $print-base-font-size;
+    margin-bottom: $print-base-spacing;
+
+    * { column-span: all; }
+  }
+
+  &__content__inner {
+    figure {
+      margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
+      &.figure-print-multicolumn { column-span: all; }
+    }
+  }
+}
+
+// Catalogue intro rules
+.cat-intro {
+  &__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5.5in;
+    width: 100%;
+
+    @for $i from 1 through 700 {
+      &[data-cat="#{$i}"] { background-image: url("../images/banners/#{$i}.jpg"); }
+    }
+  }
+
+  &__title__secondary { color: $medium-gray; }
+}
+
+// Catalogue entry rules
+.cat-entry {
+  &__grid { display: none; }
+  &__image { display: none; }
+  &__image-credit { display: none; }
+  &__title { font-size: 16pt; }
+  &__details__stamp {
+    display: block;
+    margin: $print-base-spacing;
+  }
+
+  .entry-with-footnotes,
+  .print-inline-paragraph {
+    display: inline;
+    text-indent: 0;
+  }
+
+  .entry-with-footnotes + .footnotes {
+    border-top: 0;
+    margin-bottom: inherit;
+    margin-top: inherit;
+    padding-top: 0;
+    text-align: left;
+
+    &::before { content: ''; }
+
+    ol {
+      margin-left: $print-base-spacing;
+      margin-top: $print-base-spacing;
+    }
+  }
+
+  &__details__print {
+    &__text {
+      .section-title { font-weight: bold; }
+      .section {
+        font-size: 8pt;
+        margin-bottom: $print-base-spacing;
+        // scss-lint:disable NestingDepth
+        td {
+          border-bottom-width: 0;
+          padding-bottom: 3pt;
+          padding-top: 3pt;
+        }
+
+        .cat-number {
+          border-top: solid 0.25pt $print-text-color;
+          margin-top: $print-base-spacing * 2;
+
+          h2.cat-number {
+            font-size: 12pt;
+            margin-top: 3pt;
+          }
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+
+    &__image {
+      margin-top: $print-base-spacing;
+      position: static;
+      width: 100%;
+    }
+
+    table tr:last-child td { border-bottom: 0; }
+  }
+}
+
+
+// Rules for globally-occuring elements
+// -----------------------------------------------------------------------------
 .print-only {
   display: inline;
   overflow-wrap: break-word;
@@ -718,8 +636,123 @@ ul.contributor-bios {
 
 .screen-only { display: none; }
 
+// Footnotes and reverse footnotes
+.footnotes {
+  border-top: $base-border;
+  margin-bottom: $print-base-spacing;
+  margin-top: ($print-base-spacing * 1.5);
+  padding-top: $print-base-spacing;
+  text-align: center;
+
+  &::before {
+    content: 'Notes';
+    font-family: 'Freight Text Pro SC';
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  ol { margin-top: $print-base-spacing; }
+
+  p, ol, ul {
+    text-align: left;
+  }
+}
+
+.reversefootnote { display: none; }
+.collection-link { display: none; }
+
 .inscription {
   font-family: "Source Serif Pro", serif;
   font-size: 0.8em;
   letter-spacing: 2px;
 }
+
+// Full print heading styles
+.full-print-heading {
+  column-span: all;
+
+  // + p {
+  //   column-span: all;
+  //   margin-bottom: $print-base-spacing;
+  // }
+}
+
+h4.full-print-heading,
+h3.full-print-heading {
+  margin-top: $print-base-spacing * 3;
+}
+
+h3.full-print-heading:first-of-type {
+  margin-top: $print-base-spacing;
+}
+
+.stamps td img { height: 1.2cm; }
+
+.classification,
+.discus-index,
+.contents-page {
+  ul, ol, li {
+    font-size: 8pt;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  > li {
+    font-size: 10pt;
+    margin-bottom: $print-base-spacing;
+    text-transform: uppercase;
+  }
+
+  .empty-level { list-style-type: none; }
+}
+
+.index ul, ol {
+  padding-left: 0;
+  // text-indent: -$print-base-spacing;
+  // margin-left: 0;
+}
+
+ul.index-places,
+ol.discus-index {
+  padding-left: 4pt;
+}
+
+.page__content p.entry-author {
+  margin-bottom: $base-spacing;
+  margin-right: $small-spacing;
+  margin-top: $small-spacing;
+  text-align: right;
+  text-indent: 0;
+}
+
+p.entry-author + p {
+  text-indent: 0;
+}
+
+ul.contributor-bios {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+
+  li { margin-bottom: $print-base-spacing; }
+}
+
+// Rules for specific single elements
+
+// scss-lint:disable IdSelector
+#concordance-inv-no { width: 60%; }
+#stamps-table-heading { page-break-before: always; }
+#stamps-table .catalogue-numbers td { border-bottom: 0; }
+
+#lamp-signatures,
+#stamps-table {
+  column-span: all;
+  margin-bottom: $print-base-spacing * 3;
+}
+
+#lamp-signatures,
+#lamp-signatures-heading {
+  margin-left: $print-base-spacing;
+}
+// scss-lint:enable IdSelector
