@@ -30,7 +30,7 @@ window.page = {
   _catalogueStatus: false,
   _searchStatus: false,
   _platesStatus: false,
-  env: 'DEVELOPMENT', // change to PRODUCTION for deployment
+  env: 'PRODUCTION', // change to PRODUCTION for deployment
   searchIndex: lunr(function () {
     this.field('title', { boost: 100 })
     this.field('content')
