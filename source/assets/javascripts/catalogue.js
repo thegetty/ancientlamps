@@ -6,6 +6,8 @@ import geojsonData from './geojson.js'
 import localforage from 'localforage'
 import lookupData from './lookup.js'
 
+let bgColor = '#369a87'
+
 let Catalogue = Vue.extend({
   name: 'Catalogue',
   components: {
@@ -24,9 +26,25 @@ let Catalogue = Vue.extend({
         min: -800,
         max: 800,
         interval: 50,
-        tooltip: 'hover',
+        tooltip: 'always',
+        tooltipDir: 'top',
+        tooltipStyle: [
+          {
+            backgroundColor: bgColor,
+            borderColor: bgColor
+          },
+          {
+            backgroundColor: bgColor,
+            borderColor: bgColor
+          }
+        ],
         processStyle: {
-          // backgroundColor: '#328474'
+          backgroundColor: bgColor
+        },
+        style: {
+          marginTop: '36px',
+          paddingLeft: '24px',
+          paddingRight: '24px'
         }
       }
     }
@@ -55,23 +73,46 @@ let Catalogue = Vue.extend({
       }
     },
     getData () {
-      localforage.getItem('catalogue').then((data) => {
-        this.entries = data
-        this.results = this.entries
-        this.ready = true
-      }).catch(function (error) {
-        console.log(error)
-      })
+      if (window.page._catalogueStatus === false) {
+        console.log('catalogue not yet ready')
+      } else {
+        console.log('catalogue data ready')
+        localforage.getItem('catalogue').then((data) => {
+          this.entries = data
+          this.results = this.entries
+          this.ready = true
+        }).catch(function (error) {
+          console.log(error)
+        })
+      }
     },
     filterByDate () {
       return _
         .chain(this.entriesForLocation())
         .filter('date_numeric')
         .filter((entry) => {
-          return entry.date_numeric[0] >= this.date[0]
+          // workaround for cat 456
+          if (entry.no_entry && this.date[0] !== this.slider.min) {
+            return null
+          }
+          // min date
+          if (this.date[0] === this.slider.min) {
+            return entry
+          } else {
+            return entry.date_numeric[0] >= this.date[0] || entry.date_numeric[1] >= this.date[0]
+          }
         })
         .filter((entry) => {
-          return entry.date_numeric[1] <= this.date[1]
+          // workaround for cat 456
+          if (entry.no_entry && this.date[1] !== this.slider.max) {
+            return null
+          }
+          // max date
+          if (this.date[1] === this.slider.max) {
+            return entry
+          } else {
+            return entry.date_numeric[1] <= this.date[1] || entry.date_numeric[0] <= this.date[1]
+          }
         }).value()
     },
     entriesForLocation () {
@@ -98,6 +139,25 @@ let Catalogue = Vue.extend({
         })
         .sortBy('name')
         .value()
+    },
+    formatter (value) {
+      if (value === this.slider.max) {
+        return value + ' AD+'
+      } else if (value < 0) {
+        return Math.abs(value) + ' BC'
+      } else {
+        return value + ' AD'
+      }
+    },
+    bgImageLink (cat) {
+      return `../assets/images/thumbs/${cat}.jpg`
+    }
+  },
+  filters: {
+    stringifyBis (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.replace('-', ' ')
     }
   }
 })

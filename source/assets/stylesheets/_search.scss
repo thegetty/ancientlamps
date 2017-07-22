@@ -62,6 +62,7 @@ $search-text-color: $base-font-color;
 
   &.search-active {
     @include transform(translateY(0));
+    z-index: $z-index-max;
   }
 }
 

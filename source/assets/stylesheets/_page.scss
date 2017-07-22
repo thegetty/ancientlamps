@@ -92,7 +92,12 @@ table + .references {
 
 
 
-.license p:first-child { margin-bottom: 0; }
+.license {
+  img { width: 5em; }
+  p:first-child { margin-bottom: 0; }
+}
+
+
 
 .loc-cip {
   margin-bottom: $base-spacing;

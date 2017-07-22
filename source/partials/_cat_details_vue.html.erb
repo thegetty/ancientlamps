@@ -3,16 +3,16 @@
 <script type="text/x-template" id="cat-entry-template">
   <div class="cat-entry__details">
     <deep-zoom
-        :cat="cat"
-        :active="visible"
-        :class="{ 'is-visible': visible }" >
+      :cat="cat"
+      :active="visible"
+      :class="{ 'is-visible': visible }" >
     </deep-zoom>
 
     <div class="cat-entry__details__data"
          :class="{ 'is-visible': visible }" >
       <div v-if="entry" class="cat-entry__details__text">
         <div class="section cat-number">
-          <h2 class="cat-number" id="entry-cat-number">{{ entry.cat_no }}</h2>
+          <h2 class="cat-number" id="entry-cat-number">{{ entry.cat_no | stringifyBis }}</h2>
         </div>
         <div class="section no-entry" v-if="entry.no_entry">
           <p>No entry.</p>

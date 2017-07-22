@@ -16,5 +16,5 @@
           %a{:href => "toc.xhtml"} Contents
         - book.chapters.each do |chapter|
           %li
-            %a{:href => "#{chapter.title.slugify}.xhtml"}= chapter.title
+            %a{:href => "#{chapter.file_name}.xhtml"}= chapter.title
 

@@ -12,7 +12,7 @@ creators:
   - first_name: Jean
     last_name: Bussière
     role: aut
-    bio: "Jean Bussière was educated at the Universities of Lyon, Dijon, and Grenoble, receiving his MA (<em>licence de lettres</em>) and DES (<em>diplôme d'études supérieures</em>). He won a Canada Council scholarship in 1960 and studied for a year at Victoria College, University of Toronto. For several years he taught in Algeria, where he developed a passion for archaeology and lychnology. From 1989 to 2001 he was an associate researcher with UPR 217 CNRS, Antiquités africaines. From 2003 until his passing in 2016, he was associated with UMR 140-390 CNRS Lattes, University of Montpellier. In 1993 he was awarded le Prix de l’Académie d’Hippone in Aix-en-Provence. His publications include <em>Lampes antiques d'Algérie</em> and <em>Lampes antiques de Méditerranée: La collection Rivel</em>, in collaboration with Jean-Claude Rivel. He wrote several articles and participated in the congresses of the ILA (International Lychnological Association)."
+    bio: "Jean Bussière was educated at the Universities of Lyon, Dijon, and Grenoble, receiving his MA (<em>licence de lettres</em>) and DES (<em>diplôme d'études supérieures</em>). He won a Canada Council scholarship in 1960 and studied for a year at Victoria College, University of Toronto. For several years he taught in Algeria, where he developed a passion for archaeology and lychnology. From 1989 to 2001 he was an associate researcher with UPR 217 CNRS, Antiquités africaines. From 2003 until his passing in 2016, he was associated with UMR 140-390 CNRS Lattes, University of Montpellier. In 1993 he was awarded le Prix de l’Académie d’Hippone in Aix-en-Provence. His publications include <em>Lampes antiques d’Algérie</em> and <em>Lampes antiques de Méditerranée: La collection Rivel</em>, in collaboration with Jean-Claude Rivel. He wrote several articles and participated in the congresses of the ILA (International Lychnological Association)."
   - first_name: Birgitta Lindros
     last_name: Wohl
     role: aut
@@ -55,22 +55,22 @@ editions:
     type: Text
     format: application/epub+zip
     isbn: 978-1-60606-514-3
-    file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.epub
+    file_size_mb: 39.1
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl.epub
     additional_description:
   - name: MOBI/Kindle
     type: Text
     format: application/mobi
     isbn: 978-1-60606-514-3
-    file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.mobi
+    file_size_mb: 42
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl.mobi
     additional_description:
   - name: PDF
     type: Text
     format: application/pdf
     isbn: 978-1-60606-513-6
-    file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl.pdf
+    file_size_mb: 19.7
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl.pdf
     additional_description:
   - name: Paperback
     type: PhyiscalObject
@@ -78,18 +78,22 @@ editions:
     isbn: 978-1-60606-513-6
     pages:
     illustrations:
-    link:
+    link: http://shop.getty.edu/products/ancient-lamps-in-the-j-paul-getty-museum-978-1606065136
     additional_description:
       "Reflecting the Getty’s commitment to open content, <em>Ancient Lamps in the J. Paul Getty Museum</em> is available online at www.getty.edu/publications/ancientlamps and may be downloaded free of charge in multiple formats. For readers who wish to have a bound reference copy, this paperback version has been made available for sale."
 other_resources:
   - name: CSV
     type: data
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl_Data.csv
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl_Data.csv
   - name: JSON
     type: data
     file_size_mb:
-    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_Wohl_Data.json
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl_Data.json
+  - name: JPG
+    type: image
+    file_size_mb: 36.8
+    link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl_Images.zip
 publisher: Getty Publications
 imprint: J. Paul Getty Museum
 publisher_short: Getty P
@@ -101,9 +105,9 @@ license:
   logo: cc-by.png
   exceptions:
     online:
+      - "Map backgrounds are from the Ancient World Mapping Center. Licensed under a <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">Creative Commons Attribution-NonCommercial 3.0 License</a>."
     print:
     both:
-      - "Map backgrounds are from the Ancient World Mapping Center. Licensed under a <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">Creative Commons Attribution-NonCommercial 3.0 License</a>."
 description_main:
   "Some 630 lamps in the J. Paul Getty Museum represent production centers that were active across the ancient Mediterranean world between 800 B.C. and A.D. 800. Notable for their marvelous variety—from simple clay saucers that held just oil and a wick to elaborate figural lighting fixtures in bronze and precious metals—the Getty lamps display a number of unprecedented shapes and decors. Most were made in Roman workshops, which met the ubiquitous need for portable illumination in residences, public spaces, religious sanctuaries, and the grave. The omnipresent oil lamp is a font of popular imagery, illustrating myths, nature, and the activities and entertainments of daily life. Presenting a largely unpublished collection, this extensive catalogue is an invaluable resource for specialists in lychnology, art history, and archaeology alike."
 description_short:

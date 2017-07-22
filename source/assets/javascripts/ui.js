@@ -14,6 +14,7 @@ class UI {
     this.searchInstance = null
     this.catalogueInstance = null
     this.mapInstance = null
+    this.gridInstance = null
 
     this.setup()
   }
@@ -31,7 +32,7 @@ class UI {
     let $expanderContent = $('.expander-content')
     $expanderContent.addClass('expander--hidden')
 
-    // this.anchorScroll(window.location.hash)
+    this.anchorScroll(window.location.hash)
 
     this.searchInstance = new Search({ el: '#search-results-template' })
     this.setupCommonEventHandlers()
@@ -52,6 +53,7 @@ class UI {
     let $searchInput = $('.search-field')
     let $triggers = $('.expander-trigger')
     let $curtain = $('.sliding-panel-fade-screen')
+    let $footnoteLinks = $('.footnote, .reversefootnote')
 
     $curtain.click(() => { this.menuToggle() })
     $menuButton.click(() => { this.menuToggle() })
@@ -59,9 +61,13 @@ class UI {
     $searchButton.click(() => { this.showSearch() })
     $searchCloseButton.click(() => { this.hideSearch() })
     $triggers.click((e) => { this.expandToggle(e) })
+    $footnoteLinks.click((e) => { this.footnoteScroll(e) })
 
     window.onkeydown = (e) => { this.keyboardControls(e) }
     window.onhashchange = (e) => { this.toggleDetailsOnHashChange(e) }
+    window.addEventListener('catalogue', () => {
+      if (this.gridInstance) { this.gridInstance.getData() }
+    })
 
     let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
@@ -75,8 +81,9 @@ class UI {
 
   setupCatalogueGridIfNecessary () {
     let $catalogue = $('#js-catalogue')
-    // eslint-disable-next-line no-new
-    if ($catalogue.length > 0) { new Catalogue({el: '#js-catalogue'}) }
+    if ($catalogue.length > 0) {
+      this.gridInstance = new Catalogue({el: '#js-catalogue'})
+    }
   }
 
   setupDetailsIfNecessary () {
@@ -86,6 +93,11 @@ class UI {
       let $thumbnails = $('.cat-entry__grid__item')
       $thumbnails.click(e => this.showDetails(e))
       let entries = $catalogueEntry.data('entries')
+
+      let $blankEntry = $('.cat-entry__grid__item[data-cat="456"]')
+      if ($blankEntry.length > 0) {
+        $blankEntry.off()
+      }
 
       // Avoid a possible race condition here if user goes directly to a
       // details hash url?
@@ -115,6 +127,16 @@ class UI {
     }
   }
 
+  footnoteScroll (event) {
+    function formatID (id) { return id.replace(/(:|\.|\[|\]|,)/g, '\\$1') }
+
+    var fromTop = 60
+    var target = event.currentTarget.hash
+    var distance = $(formatID(target)).offset().top
+    $('html, body').animate({scrollTop: distance - fromTop}, 250)
+    history.pushState({id: 'main'}, document.title, target)
+  }
+
   keyboardControls (e) {
     let $prev = $('a#prev-link')
     let $next = $('a#next-link')
@@ -131,7 +153,6 @@ class UI {
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if ($prev.length) {
-          // window.location = $prev.attr('href')
           $prev.click()
         }
         break
@@ -139,7 +160,6 @@ class UI {
         if (this.menuVisible) { this.menuToggle() }
         if (this.searchVisible) { this.hideSearch() }
         if ($next.length) {
-          // window.location = $next.attr('href')
           $next.click()
         }
         break
@@ -186,7 +206,7 @@ class UI {
     }
     this.catalogueInstance.show()
     document.querySelector('body').classList.add('noscroll')
-    window.location.hash = cat
+    history.pushState({id: 'main'}, `Cat. ${cat}`, `#${cat}`)
   }
 
   toggleDetailsOnHashChange (e) {
