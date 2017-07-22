@@ -41,7 +41,7 @@ window.page = {
     search: '/search.json',
     catalogue: '/catalogue.json',
     plates: '/plates.json',
-    prefix: 'https://gettypubs.github.io/ancient-lamps'
+    prefix: 'https://review.getty.edu/publications/ancientlamps'
   },
 
   // Methods
