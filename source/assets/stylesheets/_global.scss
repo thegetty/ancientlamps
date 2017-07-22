@@ -58,20 +58,23 @@ html { min-height: 100vh; }
   @include media($large-screen-up) { padding: 0; }
 }
 
-.smaller-text {
-  h2 { font-size: modular-scale(2); }
-  h3 { font-size: modular-scale(1); }
-  h4 { font-size: modular-scale(1); }
-  p { font-size: modular-scale(0); margin-bottom: 1rem; }
-  ul li { font-size: modular-scale(-1); }
-  blockquote {font-size: modular-scale(0); text-indent: 0;}
+.page .smaller-text {
+  * { font-size: 1em; }
+  h2 { font-size: modular-scale(1); }
 
-  p + p { text-indent: 0; }
+  p {
+    margin-bottom: 1em;
+    + p { text-indent: 0; }
+  }
+
+  .loc-cip p {
+    margin-bottom: 0;
+  }
 
   ul {
     list-style-type: none;
-    padding: 0;
     margin-bottom: 1rem;
+    padding: 0;
   }
 }
 

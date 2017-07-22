@@ -28,6 +28,7 @@
     "clean-webpack-plugin": "^0.1.3",
     "eslint": "^1.0.0",
     "eslint-config-airbnb": "2.1.1",
+    "eslint-config-standard": "^10.2.1",
     "exports-loader": "^0.6.2",
     "fastclick": "^1.0.6",
     "imports-loader": "^0.6.4",
@@ -35,6 +36,7 @@
   },
   "dependencies": {
     "jquery": "^3.1.1",
+    "lazysizes": "^4.0.0-rc3",
     "leaflet": "^0.7.7",
     "leaflet.markercluster": "Leaflet/Leaflet.markercluster#leaflet-0.7",
     "localforage": "^1.5.0",

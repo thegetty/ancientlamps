@@ -19,7 +19,10 @@
               :max="slider.max"
               :interval="slider.interval"
               :tooltip="slider.tooltip"
-              tooltip-dir="bottom"
+              :tooltip-dir="slider.tooltipDir"
+              :tooltip-style="slider.tooltipStyle"
+              :style="slider.style"
+              :formatter="formatter"
               v-model="date">
           </vue-slider>
         </div>
@@ -43,12 +46,12 @@
         </h4>
       </div>
       <div class="cat-entry__grid">
-        <a
-            :href="entryLink(item.cat_no)"
-            v-for="item in results"
-            class="cat-entry__grid__item"
-            :data-cat="item.cat_no">
-          <h6 class="cat-entry__grid__item__number">{{ item.cat_no }}</h6>
+        <a :href="entryLink(item.cat_no)"
+           v-for="item in results"
+           class="cat-entry__grid__item lazyload"
+           :data-cat="item.cat_no"
+           :data-bg="bgImageLink(item.cat_no)" >
+          <h6 class="cat-entry__grid__item__number">{{ item.cat_no | stringifyBis }}</h6>
         </a>
       </div>
     </div>

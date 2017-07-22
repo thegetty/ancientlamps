@@ -18,12 +18,13 @@
       .cat-entry__content__inner
         .cat-entry__grid
           - entries.each do |entry|
-            .cat-entry__grid__item{ :data => { :cat => entry }}
-              %h6.cat-entry__grid__item__number= entry
+            .cat-entry__grid__item.lazyload{ :data => { :cat => entry,
+                                                        :bg => image_path("assets/images/thumbs/#{entry}.jpg") }}
+              %h6.cat-entry__grid__item__number= entry.to_s.gsub("-", " ")
         = yield
         .cat-entry__image-credit
           Banner image: Detail of
-          = link_to "cat. #{current_page.data.cover}", "##{current_page.data.cover}"
+          = link_to "cat. #{current_page.data.cover || first}", "##{current_page.data.cover || first}"
       - if environment? :pdf
         = partial "partials/cat_details_print", :locals => { :entries => entries }
     - unless environment? :pdf

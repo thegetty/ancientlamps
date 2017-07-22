@@ -43,10 +43,6 @@ $footnote-size: 7.5pt;
 $base-font-size: $print-base-font-size;
 $modular-scale-ratio: $minor-second;
 
-// $medium-gray: transparentize($print-text-color, 0.5);
-// $light-gray: transparentize($print-text-color, 0.5);
-
-
 // Default page setup
 // -----------------------------------------------------------------------------
 // @prince-pdf { prince-pdf-page-layout: two-column-right; }
@@ -66,7 +62,6 @@ $modular-scale-ratio: $minor-second;
   margin-top: $top-margin;
 
   @bottom-left {
-    //content: counter(page) "\2003" string(doctitle);
     content: counter(page);
     font-family: $base-font-family;
     font-size: $page-number-size;
@@ -204,7 +199,7 @@ $modular-scale-ratio: $minor-second;
   @bottom-right { content: none; }
 }
 
-// Print Styles
+// Print Placeholder Styles
 // -----------------------------------------------------------------------------
 %full-page-image {
   background-repeat: no-repeat;
@@ -240,448 +235,161 @@ $modular-scale-ratio: $minor-second;
   }
 }
 
-// General content styles
-.page,
-.cat-entry,
-.cat-intro {
-  @extend %print-page-content;
-
-  &__header {
-    margin-bottom: $print-base-spacing * 3;
-    * { column-span: all; }
-    &__title {font-size: 14pt;}
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: $print-base-spacing;
-  }
-
-  ul, ol {
-    margin-left: $print-base-spacing;
-    padding-left: $print-base-spacing;
-  }
+// Print-specific sections
+// -----------------------------------------------------------------------------
+.print-frontmatter {
+  page: frontmatter;
 }
 
-.footnotes {
-  border-top: $base-border;
-  margin-bottom: $print-base-spacing;
-  margin-top: ($print-base-spacing * 1.5);
-  padding-top: $print-base-spacing;
-  text-align: center;
-
-  &::before {
-    content: "Notes";
-    font-family: "Freight Text Pro SC";
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: lowercase;
-  }
-
-  ol { margin-top: $print-base-spacing; }
-
-  p, ol, ul {
-    text-align: left;
-  }
+.print__cover {
+  page: no-footer;
 }
 
-.cat-intro,
-.cat-entry {
-  h1 { prince-bookmark-level: 2; }
+.print__halftitle {
+  counter-reset: page 1;
+  margin-right: 0;
+  margin-top: 4in;
+  page: no-footer;
+  page-break-before: right;
+  text-transform: lowercase;
 
-  &__breadcrumbs-bar {
-    // display: none;
-    color: $medium-gray;
-    font-size: $print-base-font-size;
-    margin-bottom: $print-base-spacing;
-
-    * { column-span: all; }
-  }
-}
-
-.cat-entry {
-  &__grid { display: none; }
-  &__image { display: none; }
-  &__image-credit  { display: none; }
-  &__title { font-size: 16pt; }
-  &__details__stamp {
-    display: block;
-    margin: $print-base-spacing;
-  }
-
-  .entry-with-footnotes,
-  .print-inline-paragraph {
-    display: inline;
-    text-indent: 0;
-  }
-
-  .entry-with-footnotes + .footnotes {
-    border-top: 0;
-    margin-bottom: inherit;
-    margin-top: inherit;
-    padding-top: 0;
-    text-align: left;
-    &::before {
-      content: "";
-    }
-    ol {
-      margin-top: $print-base-spacing;
-      margin-left: $print-base-spacing;
-    }
-  }
-
-  a.reversefootnote {
-    display: none;
-  }
-
-
-  &__details__print {
-    &__text {
-      .section {
-        font-size: 8pt;
-        margin-bottom: $print-base-spacing;
-        tr, td {
-          // page-break-inside: avoid;
-        }
-        td {
-          padding-top: 3pt;
-          padding-bottom: 3pt;
-          border-bottom-width: 0px;
-        }
-      }
-
-      .section.cat-number {
-        border-top: solid 0.25pt $print-text-color;
-        margin-top: $print-base-spacing * 2;
-
-        h2.cat-number {
-          font-size: 12pt;
-          margin-top: 3pt;
-        }
-      }
-
-      .section-title {
-        font-weight: bold;
-
-        // color: $medium-gray;
-        // display: block;
-        // font-family: "Freight Text Pro SC";
-        // font-size: 9pt;
-        // letter-spacing: 0.5pt;
-        // text-transform: lowercase;
-      }
-
-    }
-
-    &__image {
-      margin-top: $print-base-spacing;
-      position: static;
-      width: 100%;
-    }
-
-    table tr:last-child td {
-      border-bottom: none;
-    }
-  }
-}
-
-.cat-intro {
-  &__image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 5.5in;
-    width: 100%;
-
-    @for $i from 1 through 700 {
-      &[data-cat="#{$i}"] {
-        background-image: url("../images/main/#{$i}.jpg");
-      }
-    }
-  }
-  &__title__secondary {
-    color: $medium-gray;
-  }
-}
-
-.cat-intro__content__inner,
-.cat-entry__content__inner {
-  figure {
-    margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
-  }
-  figure.figure-print-multicolumn {
-    column-span: all;
-  }
-}
-
-// Section-specific styles
-.print {
-  &__cover {
-    page: no-footer;
-  }
-
-  &__halftitle {
-    counter-reset: page 1;
-    margin-right: 0;
-    margin-top: 4in;
-    page: no-footer;
-    page-break-before: right;
-    text-transform: lowercase;
-
-    &__title {
-      font-family: 'Freight Text Pro';
-      font-size: 23pt;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0;
-      line-height: 1;
-      margin-bottom: 0;
-      margin-top: 0;
-      text-align: right;
-    }
-
-    &__subtitle {
-      color: $medium-gray;
-      font-family: 'Freight Text Pro SC';
-      font-size: 15pt;
-      font-weight: normal;
-      letter-spacing: 0;
-      line-height: 1;
-      margin-bottom: 0;
-      margin-top: 0;
-      text-align: right;
-    }
-  }
-
-  // Replace these with full-bleed images later
-  &__titlepage__left {
-    page: titlepage;
-    page-break-after: always;
-    margin-left: .75in;
-    margin-top: 9.75in;
+  &__title {
     font-family: 'Freight Text Pro';
+    font-size: 23pt;
     font-weight: 400;
-    font-size: 18pt;
-    // @extend %full-page-image;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+    text-transform: uppercase;
   }
 
-  &__titlepage__right {
+  &__subtitle {
+    color: $medium-gray;
+    font-family: 'Freight Text Pro SC';
+    font-size: 15pt;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+.print__titlepage {
+  &__left {
+    font-family: 'Freight Text Pro';
+    font-size: 18pt;
+    font-weight: 400;
+    margin-left: 0.75in;
+    margin-top: 9.75in;
     page: titlepage;
     page-break-after: always;
-    // @extend %full-page-image;
+  }
+
+  &__right {
+    page: titlepage;
+    page-break-after: always;
+
     &__title {
       font-family: 'Freight Text Pro';
-      font-size: 53pt;
+      font-size: 49pt;
       font-weight: 400;
-      letter-spacing: 0;
-      text-transform: uppercase;
+      letter-spacing: 3pt;
       line-height: 1;
       margin-bottom: 0;
       margin-top: 2.5in;
       text-align: center;
+      text-transform: uppercase;
     }
+
     &__subtitle {
       font-family: 'Freight Text Pro SC';
       font-size: 34pt;
       font-weight: normal;
       letter-spacing: 0;
-      line-height: 1;
       margin-bottom: 0;
-      margin-top: 0;
+      margin-top: -0.1in;
       text-align: center;
     }
+
     &__author {
-      text-align: center;
       font-size: 16pt;
       line-height: 1.5;
       margin-top: 6pt;
+      text-align: center;
     }
   }
-
-  &__copyright {
-    font-family: $heading-font-family;
-    font-size: 8pt;
-    margin-right: 1in;
-    page: no-footer;
-    page-break-after: always;
-
-    .publisher {
-      margin-bottom: $print-base-spacing;
-      ul {
-        list-style-type: none;
-        margin-left: 0;
-      }
-      ul.team {
-        margin-top: $print-base-spacing;
-        list-style-type: none;
-        margin-left: 0;
-      }
-    }
-
-    .distribution { margin-bottom: $print-base-spacing;}
-
-    .loc-cip {
-      margin-bottom: $print-base-spacing;
-      p {
-        margin-bottom: 0;
-      }
-      ul {
-        list-style-type: none;
-        margin-top: 0;
-        margin-left: 0;
-      }
-      li {
-        padding-left: $print-base-spacing;
-        text-indent: -$print-base-spacing;
-      }
-    }
-
-    ul.illustration-credits {
-      list-style-type: none;
-      margin-left: 0;
-    }
-
-  }
-
 }
 
-body.print-frontmatter {
+.print__copyright {
+  font-family: $heading-font-family;
+  font-size: 7.5pt;
+  margin-right: 1in;
+  page: no-footer;
+  page-break-after: always;
+
+  p, ul {
+    margin-bottom: $print-base-spacing;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .cc-logo { width: 0.625in; }
+
+  .loc-cip,
+  .related-titles {
+    p { margin-bottom: 0; }
+  }
+
+  .loc-cip {
+    li {
+      padding-left: $print-base-spacing;
+      text-indent: -$print-base-spacing;
+    }
+  }
+}
+
+// Print rules for sections also present in web version
+// -----------------------------------------------------------------------------
+
+// Frontmatter page rules
+.foreword,
+.acknowledgments,
+.abbreviations-and-notes {
   page: frontmatter;
 }
 
-body.contents,
-body.foreword,
-body.acknowledgments,
-body.abbreviations-and-notes {
-  page: frontmatter;
+.contents {
+  page: no-footer;
 }
 
-.collection-link {
-  display: none;
-}
-
-#concordance-inv-no {
-  width: 60%;
-}
-
-body.introduction {
+.introduction {
   counter-reset: page 1;
 }
 
-body.catalogue.landing {
-  page: catalogue-landing;
-  page-break-after: always;
-  .page__header {
-    text-align: right;
-    margin-top: 2.5in;
-    margin-right: 1.5in;
-    h1 {
-      font-size: 18pt;
-    }
-  }
-  .page__content {
-    display: none;
-  }
-}
-
-body.indices.landing {
-  page: indices-landing;
-  page-break-after: always;
-  .page__header {
-    text-align: right;
-    margin-top: 2.5in;
-    margin-right: 1.5in;
-    h1 {
-      font-size: 18pt;
-    }
-  }
-  .page__content {
-    display: none;
-  }
-}
-
 .classification,
-// .concordance,
-// .discus-index,
-// .index-indent,
-.contents-page,
-.full-print-heading {
+.contents-page, {
   column-span: all;
 }
 
-h4.full-print-heading,
-h3.full-print-heading {
-  margin-top: $print-base-spacing * 3;
-}
-
-h3.full-print-heading:first-of-type {
-  margin-top: $print-base-spacing;
-}
-
-#lamp-signatures,
-#stamps-table {
-  column-span: all;
-  margin-bottom: $print-base-spacing * 3;
-}
-
-#lamp-signatures,
-#lamp-signatures-heading {
-  margin-left: $print-base-spacing;
-}
-
-#stamps-table-heading {
-  page-break-before: always;
-}
-
-#stamps-table .catalogue-numbers td {
-    border-bottom: 0;
-}
-
-.stamps td img {
-  height: 1.2cm;
-}
-
-.page__content .classification,
-.page__content .discus-index,
+// Table of Contents (overrides)
 .page__content .contents-page {
-  ul, ol, li {
-    font-size: 8pt;
-    font-weight: normal;
-    text-transform: none;
-  }
-  > li {
-    font-size: 10pt;
-    margin-bottom: $print-base-spacing;
-    text-transform: uppercase;
-  }
-  .empty-level {
+  margin-left: 0;
+
+  ul {
+    line-height: 2;
     list-style-type: none;
   }
-}
 
-.index ul {
-  padding-left: $print-base-spacing;
-  text-indent: -$print-base-spacing;
-  margin-left: 0;
-}
+  li { font-size: $print-base-font-size * 1.25; }
 
-.page__content .contents-page {
-  margin-left: 0;
-}
-
-.page__content p.entry-author {
-  margin-bottom: $base-spacing;
-  margin-top: $small-spacing;
-  margin-right: $small-spacing;
-  // display: block;
-  text-align: right;
-  text-indent: 0;
-}
-
-p.entry-author + p {
-  text-indent: 0;
-}
-
-.page__content .contents-page {
   a::after {
     content: leader(dotted) ' ' target-counter(attr(href, url), page);
   }
@@ -694,6 +402,8 @@ p.entry-author + p {
     content: leader(dotted) ' ' target-counter(attr(href, url), page, lower-roman);
   }
 }
+
+// Typological Classification (overrides)
 
 // Unsatisfying v1
 //
@@ -715,19 +425,24 @@ p.entry-author + p {
 .page__content .classification {
   a {
     float: none;
+    font-size: 8pt;
     margin-left: 0;
-  }
-  a::before {
-    content: '(';
-  }
-  a::after {
-    content: ')' leader(dotted) ' ' target-counter(attr(href, url), page);
-  }
-  a.footnote::before {
-    content: '';
-  }
-  a.footnote::after {
-    content: '';
+    text-transform: lowercase;
+
+    &::before {
+      content: '(';
+      font-size: 8pt;
+    }
+
+    &::after {
+      content: ')' leader(dotted) ' ' target-counter(attr(href, url), page);
+      font-size: 8pt;
+    }
+
+    &.footnote {
+      &::before { content: ''; }
+      &::after { content: ''; }
+    }
   }
 }
 
@@ -737,31 +452,181 @@ p.entry-author + p {
 }
 
 
-.page__content .contents-page {
-  ul {
-    line-height: 2;
-    list-style-type: none;
-  }
-
-  li { font-size: $print-base-font-size * 1.25; }
-}
+// References (overrides)
 
 .page__content .references {
   ul {
     list-style-type: none;
     margin: 0;
+    padding-left: 0;
   }
 
   li { margin-bottom: $print-base-spacing; }
 }
 
-ul.contributor-bios {
-  list-style-type: none;
-  margin: 0;
+// Catalogue landing page rules
+body.catalogue.landing {
+  page: catalogue-landing;
+  page-break-after: always;
 
-  li { margin-bottom: $print-base-spacing; }
+  .page__header {
+    margin-right: 1.5in;
+    margin-top: 2.5in;
+    text-align: right;
+
+    h1 { font-size: 18pt; }
+  }
+
+  .page__content { display: none; }
 }
 
+// Indices page rules
+body.indices.landing {
+  page: indices-landing;
+  page-break-after: always;
+
+  .page__header {
+    margin-right: 1.5in;
+    margin-top: 2.5in;
+    text-align: right;
+
+    h1 { font-size: 18pt; }
+  }
+
+  .page__content { display: none; }
+}
+
+// General page styles
+.page,
+.cat-entry,
+.cat-intro {
+  @extend %print-page-content;
+
+  &__header {
+    margin-bottom: $print-base-spacing * 3;
+    * { column-span: all; }
+    &__title {font-size: 14pt;}
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $print-base-spacing;
+  }
+
+  ul, ol {
+    margin-left: $print-base-spacing;
+    padding-left: $print-base-spacing;
+  }
+}
+
+// Catalogue section rules for both intro and entry pages
+.cat-intro,
+.cat-entry {
+  h1 { prince-bookmark-level: 2; }
+
+  &__breadcrumbs-bar {
+    color: $medium-gray;
+    font-size: $print-base-font-size;
+    margin-bottom: $print-base-spacing;
+
+    * { column-span: all; }
+  }
+
+  &__content__inner {
+    figure {
+      margin: ($print-paragraph-indent * 1.5) $print-paragraph-indent;
+      &.figure-print-multicolumn { column-span: all; }
+    }
+  }
+}
+
+// Catalogue intro rules
+.cat-intro {
+  &__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5.5in;
+    width: 100%;
+
+    @for $i from 1 through 700 {
+      &[data-cat="#{$i}"] { background-image: url("../images/banners/#{$i}.jpg"); }
+    }
+  }
+
+  &__title__secondary { color: $medium-gray; }
+}
+
+// Catalogue entry rules
+.cat-entry {
+  &__grid { display: none; }
+  &__image { display: none; }
+  &__image-credit { display: none; }
+  &__title { font-size: 16pt; }
+  &__details__stamp {
+    display: block;
+    margin: $print-base-spacing;
+  }
+
+  .entry-with-footnotes,
+  .print-inline-paragraph {
+    display: inline;
+    text-indent: 0;
+  }
+
+  .entry-with-footnotes + .footnotes {
+    border-top: 0;
+    margin-bottom: inherit;
+    margin-top: inherit;
+    padding-top: 0;
+    text-align: left;
+
+    &::before { content: ''; }
+
+    ol {
+      margin-left: $print-base-spacing;
+      margin-top: $print-base-spacing;
+    }
+  }
+
+  &__details__print {
+    &__text {
+      .section-title { font-weight: bold; }
+      .section {
+        font-size: 8pt;
+        margin-bottom: $print-base-spacing;
+        // scss-lint:disable NestingDepth
+        td {
+          border-bottom-width: 0;
+          padding-bottom: 3pt;
+          padding-top: 3pt;
+        }
+
+        .cat-number {
+          border-top: solid 0.25pt $print-text-color;
+          margin-top: $print-base-spacing * 2;
+
+          h2.cat-number {
+            font-size: 12pt;
+            margin-top: 3pt;
+          }
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+
+    &__image {
+      margin-top: $print-base-spacing;
+      position: static;
+      width: 100%;
+    }
+
+    table tr:last-child td { border-bottom: 0; }
+  }
+}
+
+
+// Rules for globally-occuring elements
+// -----------------------------------------------------------------------------
 .print-only {
   display: inline;
   overflow-wrap: break-word;
@@ -769,9 +634,33 @@ ul.contributor-bios {
   word-wrap: break-word;
 }
 
-.screen-only {
-  display: none;
+.screen-only { display: none; }
+
+// Footnotes and reverse footnotes
+.footnotes {
+  border-top: $base-border;
+  margin-bottom: $print-base-spacing;
+  margin-top: ($print-base-spacing * 1.5);
+  padding-top: $print-base-spacing;
+  text-align: center;
+
+  &::before {
+    content: 'Notes';
+    font-family: 'Freight Text Pro SC';
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  ol { margin-top: $print-base-spacing; }
+
+  p, ol, ul {
+    text-align: left;
+  }
 }
+
+.reversefootnote { display: none; }
+.collection-link { display: none; }
 
 .inscription {
   font-family: "Source Serif Pro", serif;
@@ -779,3 +668,91 @@ ul.contributor-bios {
   letter-spacing: 2px;
 }
 
+// Full print heading styles
+.full-print-heading {
+  column-span: all;
+
+  // + p {
+  //   column-span: all;
+  //   margin-bottom: $print-base-spacing;
+  // }
+}
+
+h4.full-print-heading,
+h3.full-print-heading {
+  margin-top: $print-base-spacing * 3;
+}
+
+h3.full-print-heading:first-of-type {
+  margin-top: $print-base-spacing;
+}
+
+.stamps td img { height: 1.2cm; }
+
+.classification,
+.discus-index,
+.contents-page {
+  ul, ol, li {
+    font-size: 8pt;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  > li {
+    font-size: 10pt;
+    margin-bottom: $print-base-spacing;
+    text-transform: uppercase;
+  }
+
+  .empty-level { list-style-type: none; }
+}
+
+.index ul, ol {
+  padding-left: 0;
+  // text-indent: -$print-base-spacing;
+  // margin-left: 0;
+}
+
+ul.index-places,
+ol.discus-index {
+  padding-left: 4pt;
+}
+
+.page__content p.entry-author {
+  margin-bottom: $base-spacing;
+  margin-right: $small-spacing;
+  margin-top: $small-spacing;
+  text-align: right;
+  text-indent: 0;
+}
+
+p.entry-author + p {
+  text-indent: 0;
+}
+
+ul.contributor-bios {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+
+  li { margin-bottom: $print-base-spacing; }
+}
+
+// Rules for specific single elements
+
+// scss-lint:disable IdSelector
+#concordance-inv-no { width: 60%; }
+#stamps-table-heading { page-break-before: always; }
+#stamps-table .catalogue-numbers td { border-bottom: 0; }
+
+#lamp-signatures,
+#stamps-table {
+  column-span: all;
+  margin-bottom: $print-base-spacing * 3;
+}
+
+#lamp-signatures,
+#lamp-signatures-heading {
+  margin-left: $print-base-spacing;
+}
+// scss-lint:enable IdSelector

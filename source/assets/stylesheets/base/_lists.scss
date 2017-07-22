@@ -64,6 +64,13 @@ dl {
   }
 }
 
+ul.index-places {
+  li > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .sub-decimal {
   list-style-type: none;
   padding-left: $base-spacing;
