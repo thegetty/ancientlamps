@@ -69,6 +69,11 @@ class UI {
       if (this.gridInstance) { this.gridInstance.getData() }
     })
 
+    // Remove "stale" background images when catalogue grid refreshes its contents
+    window.addEventListener('lazyunveilread', (e) => {
+      e.target.removeAttribute('style')
+    })
+
     let debouncedSearch = debounce(this.searchQuery, 250)
     let boundDebounce = debouncedSearch.bind(this)
     $searchInput.keydown(() => { boundDebounce() })
