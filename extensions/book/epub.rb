@@ -27,7 +27,7 @@ module Book
       copy_fonts
       build_container
       build_cover_page
-      build_toc_nav
+      # build_toc_nav
       build_chapters
       build_epub_css
       build_toc_ncx
