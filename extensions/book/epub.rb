@@ -23,6 +23,7 @@ module Book
       build_epub_dir
       copy_images(sitemap)
       copy_stamps(sitemap)
+      copy_additional_image_assets(sitemap)
       copy_fonts
       build_container
       build_cover_page
@@ -69,6 +70,22 @@ module Book
       Dir.chdir(working_dir + '/OEBPS/assets/images/stamps/') do
         images.each_with_index do |image, index|
           index = "stamp_#{index}"
+          add_image_to_manifest(image, index)
+          filename = image.file_descriptor.relative_path.basename
+          File.open(filename, 'w') { |f| f.puts image.render }
+        end
+      end
+    end
+
+    def copy_additional_image_assets(sitemap)
+      additional_images = []
+      book.options.additional_epub_images.each do |path|
+        additional_images.push(sitemap.resources.find { |r| r.path.match(path) })
+      end
+
+      Dir.chdir(working_dir + '/OEBPS/assets/images/') do
+        additional_images.each_with_index do |image, index|
+          index = "img_#{index}"
           add_image_to_manifest(image, index)
           filename = image.file_descriptor.relative_path.basename
           File.open(filename, 'w') { |f| f.puts image.render }
