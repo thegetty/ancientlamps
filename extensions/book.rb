@@ -122,6 +122,8 @@ module Book
 
     def generate_chapters!(resources)
       resources.find_all { |p| p.data.sort_order }.each do |p|
+        next if p.data.epub_output == false
+
         source = p.source_file
         path = p.destination_path
         metadata = p.metadata
