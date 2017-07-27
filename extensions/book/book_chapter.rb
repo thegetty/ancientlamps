@@ -59,6 +59,42 @@ module Book
       "c#{rank}"
     end
 
+    def format_images_for_epub(images)
+      images.each do |image|
+        image['src'] = image['src'][6..-1] if image['src'].start_with? '../../'
+      end
+    end
+
+    def format_links_for_epub(links)
+      links.each do |link|
+        next if link['href'].nil?
+
+        if link['href'].include?('map/#loc_')
+          link.replace(link.inner_html)
+        end
+
+        if link['href'].include?('bibliography')
+          link['href'] = link['href'].gsub('bibliography/', 'bibliography.xhtml')
+        end
+
+        # TODO: For catalogue entries, find the part of the string ending in '/#...'
+        # and replace it with '.xhtml'
+        if link['href'].include?('../catalogue/')
+          link['href'] = link['href'].gsub('../catalogue/', '')
+        end
+
+        if link['href'].start_with?('../../')
+          link['href'] = link['href'][6..-1]
+        elsif link['href'].start_with?('../')
+          link['href'] = link['href'][3..-1]
+        end
+
+        if link['href'].end_with?('/')
+          link['href'] = link['href'].gsub('/', '.xhtml')
+        end
+      end
+    end
+
     def format_for_epub
       if data.cat
         doc = Nokogiri::XML((render :layout => 'epub_cat_entry'))
@@ -66,13 +102,8 @@ module Book
         doc = Nokogiri::XML((render :layout => 'epub_chapter'))
       end
 
-      # change absolute image src locations to relative
-      images = doc.css('img')
-      images.each do |image|
-        image['src'] = image['src'][1..-1] if image['src'].start_with? '/'
-        image['src'] = image['src'][3..-1] if image['src'].start_with? '../'
-      end
-
+      format_images_for_epub(doc.css('img'))
+      format_links_for_epub(doc.css('a'))
       doc.to_xml
     end
   end
