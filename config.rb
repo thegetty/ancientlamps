@@ -11,7 +11,8 @@ activate :book do |b|
     "assets/images/fig_03.jpg",
     "assets/images/fig_04.jpg",
     "assets/images/cc-by.png",
-    "assets/images/cover.jpg"
+    "assets/images/cover.jpg",
+    "assets/images/getty_logo.png"
   ]
 end
 
