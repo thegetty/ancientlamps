@@ -4,4 +4,8 @@ layout: page
 sort_order: 7
 pdf_landing: true
 ---
-<%= partial "partials/catalogue_grid" %>
+<% if environment? :epub %>
+  <!-- Blank placeholder for now -->
+<% else %>
+  <%= partial "partials/catalogue_grid" %>
+<% end %>

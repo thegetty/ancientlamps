@@ -104,8 +104,16 @@ module Book
       fonts = Dir.glob('extensions/book/fonts/*.otf')
       fonts.each do |font|
         path = Pathname.new(font)
-        FileUtils.cp(path.to_s, "#{working_dir}/OEBPS/assets/fonts/#{path.basename}")
-        @book.manifest << ItemTag.new(path.basename.to_s, "assets/fonts/#{path.basename}", 'application/x-font-otf')
+        FileUtils.cp(
+          path.to_s,
+          "#{working_dir}/OEBPS/assets/fonts/#{path.basename}"
+        )
+
+        @book.manifest << ItemTag.new(
+          path.basename.to_s,
+          "assets/fonts/#{path.basename}",
+          'application/x-font-otf'
+        )
       end
     end
 
@@ -131,7 +139,7 @@ module Book
           item     = c.generate_item_tag
           navpoint = c.generate_navpoint
 
-          navpoint.play_order = index + 2 # start after cover, toc
+          navpoint.play_order = index + 1 # start after cover
           navpoint.id = "np_#{index}"
 
           @book.navmap << navpoint

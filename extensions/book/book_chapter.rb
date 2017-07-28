@@ -60,37 +60,76 @@ module Book
     end
 
     def format_images_for_epub(images)
+      relative_link_regex = /^(\.\/?)+/
       images.each do |image|
-        image['src'] = image['src'][6..-1] if image['src'].start_with? '../../'
+        image['src'] = image['src'].gsub(relative_link_regex, '')
       end
     end
 
     def format_links_for_epub(links)
+      strip_map_links(links)
+      fix_relative_links(links)
+      fix_catalogue_entry_links(links)
+      fix_catalogue_section_links(links)
+      fix_internal_catalogue_links(links)
+      fix_biblio_links(links)
+      fix_footnote_links(links)
+    end
+
+    def fix_biblio_links(links)
+      biblio_regex = /^bibliography\/(#\S+$)/
+
+      links.each do |link|
+        link['href'] = link['href'].gsub(biblio_regex, 'bibliography.xhtml\1')
+      end
+    end
+
+    def fix_footnote_links(links)
+      footnote_regex = /^#fn:([0-9]+)/
+      links.each do |link|
+        link['href'] = link['href'].gsub(footnote_regex, '#fn-\1')
+      end
+    end
+
+    def fix_relative_links(links)
+      relative_link_regex = /^(\.+)(\/)(\.+\/)?/
       links.each do |link|
         next if link['href'].nil?
+        next if link['href'].match(/^http:|https:/)
+        link['href'] = link['href'].gsub(relative_link_regex, '')
+        link['href'] = link['href'].gsub(/\/$/, '.xhtml')
+      end
+    end
 
-        if link['href'].include?('map/#loc_')
-          link.replace(link.inner_html)
+    def strip_map_links(links)
+      links.each do |link|
+        link.replace(link.inner_html) if link['href'].nil?
+        link.replace(link.inner_html) if link['href'].include?('map/#loc_')
+      end
+    end
+
+    def fix_catalogue_section_links(links)
+      links.each do |link|
+        link['href'] = link['href'].gsub(/^catalogue\//, '')
+      end
+    end
+
+    def fix_catalogue_entry_links(links)
+      catalogue_regex = /^catalogue\/([0-9|a-z|-]+)\/#([0-9|a-z|-]+)/
+
+      links.each do |link|
+        link['href'] = link['href'].gsub(catalogue_regex) do |s|
+          "#{$1}.xhtml#cat-#{$2}"
         end
+      end
+    end
 
-        if link['href'].include?('bibliography')
-          link['href'] = link['href'].gsub('bibliography/', 'bibliography.xhtml')
-        end
+    def fix_internal_catalogue_links(links)
+      internal_catalogue_regex = /([0-9|-]+)\/#([0-9|a-z|-]+)/
 
-        # TODO: For catalogue entries, find the part of the string ending in '/#...'
-        # and replace it with '.xhtml'
-        if link['href'].include?('../catalogue/')
-          link['href'] = link['href'].gsub('../catalogue/', '')
-        end
-
-        if link['href'].start_with?('../../')
-          link['href'] = link['href'][6..-1]
-        elsif link['href'].start_with?('../')
-          link['href'] = link['href'][3..-1]
-        end
-
-        if link['href'].end_with?('/')
-          link['href'] = link['href'].gsub('/', '.xhtml')
+      links.each do |link|
+        link['href'] = link['href'].gsub(internal_catalogue_regex) do |s|
+          "#{$1}.xhtml#cat-#{$2}"
         end
       end
     end
