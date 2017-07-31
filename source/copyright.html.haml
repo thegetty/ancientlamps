@@ -1,0 +1,47 @@
+---
+title: Copyright
+layout: false
+sort_order: 209
+pdf_output: false
+---
+.description
+  :markdown
+    The free online edition of this catalogue, available at
+    [http://www.getty.edu/publications/ancientlamps](http://www.getty.edu/publications/ancientlamps),
+    includes zoomable high-resolution photography, multiple object views,
+    and an interactive map. Also available are free PDF, EPUB, and MOBI
+    downloads of the book, CSV and JSON downloads of the object data from
+    the catalogue, and JPG downloads of the main catalogue images. For readers who wish to have a bound reference copy, a paperback version has also been made available for sale.
+= partial "partials/copyright_license_print"
+.revision-history
+  - if data.book.revision_history.size > 1
+    %p
+      First edition, #{data.book.pub_date.year}
+      <br />
+      Last updated, #{data.book.revision_history.last.date}
+      <br />
+      =link_to "#{data.book.repository_url}", "#{data.book.repository_url}"
+  - else
+    %p
+      First edition, #{data.book.pub_date.year}
+      <br />
+      =link_to "#{data.book.repository_url}", "#{data.book.repository_url}"
+= partial "partials/publisher_team"
+= partial "partials/library_of_congress_data"
+%ul.illustration-credits
+  %li Cover: Detail of cat. 86
+%p
+  Drawing by D. M. Bailey, from Bailey BM III, fig. 162: fig. 4
+%p
+  Drawing by Jean Bussière, from Bussière 2000, figs. 44 and 44 bis, by
+  permission of Éditions Monique Mergoil: fig. 3
+%p
+  Drawings by Randy Miyake, Hespenheide Design, © J. Paul Getty Trust:
+  stamps for cats. 45, 66, 67, 192, 222, 255, 369, 370, 371, 386, 476,
+  502, 523
+%p
+  Drawings by Jean-Claude Rivel: stamps for cats. 39, 70, 94, 104, 137,
+  166, 175, 176, 188, 191, 200, 219, 228, 231, 236, 243, 254, 258, 283,
+  286, 289, 291, 294, 297, 315, 342, 364, 365, 367, 372, 373, 374, 377,
+  378, 387, 389, 391, 392, 394, 395, 398, 421, 440, 500, 501, 517, 535,
+  543, 545, 549, 551, 572, 600; figs. 1, 2
