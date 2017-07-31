@@ -73,7 +73,6 @@ module Book
       fix_catalogue_section_links(links)
       fix_internal_catalogue_links(links)
       fix_biblio_links(links)
-      fix_footnote_links(links)
     end
 
     def fix_biblio_links(links)
@@ -81,13 +80,6 @@ module Book
 
       links.each do |link|
         link['href'] = link['href'].gsub(biblio_regex, 'bibliography.xhtml\1')
-      end
-    end
-
-    def fix_footnote_links(links)
-      footnote_regex = /^#fn:([0-9]+)/
-      links.each do |link|
-        link['href'] = link['href'].gsub(footnote_regex, '#fn-\1')
       end
     end
 
