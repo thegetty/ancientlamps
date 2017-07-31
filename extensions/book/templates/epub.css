@@ -1,7 +1,6 @@
 body {
   font-family: serif;
-  font-size: 14px;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 p {
@@ -13,7 +12,7 @@ p {
 }
 
 p + p {
-	text-indent: 2em;
+	text-indent: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +29,19 @@ h2 {
 	font-size: 1.5em;
 }
 
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.15em;
+}
+
+h5 {
+  font-size: 1.15em;
+  font-weight: normal;
+}
+
 blockquote {
   font-style: italic;
 }
@@ -42,6 +54,22 @@ img {
 	max-width: 100%;
 }
 
+ol, ul {
+  padding-left: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+td {
+  padding-right: 1.5em;
+}
+
+td:last-child {
+  padding-right: 0;
+}
+
 .chapter-title {
   margin-bottom: 4em;
 }
@@ -51,14 +79,13 @@ img {
 }
 
 .title-page {
-  page-break-before: always;
   text-align: center;
   font-family: serif;
+  margin-top: 4em;
 }
 
 .title-page h1 {
   text-align: center;
-  margin-top: 4em;
 }
 
 .title-page .authors {
@@ -72,7 +99,39 @@ img {
 }
 
 .title-page .logo {
-  width: 30%;
-  max-width: 100px;
+  width: 4em;
   margin: 1em auto;
+}
+
+.contents-indices {
+  margin-bottom: 2em;
+}
+
+.contents-indices ul {
+  padding-left: 0;
+}
+
+.entry-author {
+  text-indent: 0;
+  margin: 1.5em;
+  text-align: right;
+}
+
+.cat-entry__details__print__item {
+  page-break-before: always;
+}
+
+.stamps img {
+  height: 4em;
+}
+
+th {
+  text-align: left;
+}
+
+#lamp-signatures th,
+#lamp-signatures td {
+  border-bottom: 1px solid #aaa;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
