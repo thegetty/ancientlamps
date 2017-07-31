@@ -18,11 +18,7 @@
   <% end %>
   <li class="contents-catalogue">
     <h3 class="contents-subhead">
-      <% if environment? :epub %>
-        Catalogue
-      <% else %>
         <%= link_to "Catalogue", "catalogue.html" %>
-      <% end %>
     </h3>
     <ul>
       <li><%= link_to "Typological Classification", "typological-classification.html" %></li>
@@ -48,5 +44,10 @@
 
   <li><%= link_to "Bibliography", "bibliography.html" %></li>
   <li><%= link_to "About the Authors", "authors.html" %></li>
-  <li class="screen-only"><%= link_to "About", "about.html" %></li>
+
+  <% if environment? :epub %>
+    <li><a href="copyright.xhtml">Copyright</a></li>
+  <% else %>
+    <li class="screen-only"><%= link_to "About", "about.html" %></li>
+  <% end %>
 </ul>
