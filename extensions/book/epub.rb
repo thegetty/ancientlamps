@@ -27,7 +27,7 @@ module Book
       copy_fonts
       build_container
       build_cover_page
-      # build_toc_nav
+      build_toc_nav
       build_chapters
       build_epub_css
       build_toc_ncx
@@ -165,7 +165,7 @@ module Book
     def build_toc_nav
       build_page_from_template('toc.xhtml')
       @book.manifest << ItemTag.new('toc', 'toc.xhtml', 'application/xhtml+xml', 'nav')
-      @book.navmap << NavPoint.new('toc', 1, 'toc.xhtml', 'Contents')
+      # @book.navmap << NavPoint.new('toc', 1, 'toc.xhtml', 'Contents')
     end
   end
 end
