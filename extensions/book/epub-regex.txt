@@ -12,9 +12,6 @@ $1.xhtml
 
 markdown="0"
 
-<li class="screen-only"><a href="about.xhtml">About</a></li>
-<li><a href="copyright.xhtml">Copyright</a></li>
-
 <a href="#288">
 <a href="#cat-288">
 

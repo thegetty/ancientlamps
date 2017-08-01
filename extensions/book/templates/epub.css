@@ -62,6 +62,10 @@ ul {
   list-style-type: none;
 }
 
+th {
+  text-align: left;
+}
+
 td {
   padding-right: 1.5em;
 }
@@ -121,12 +125,9 @@ td:last-child {
   page-break-before: always;
 }
 
-.stamps img {
-  height: 4em;
-}
-
-th {
-  text-align: left;
+#lamp-signatures {
+  font-size: .8em;
+  border-collapse: collapse;
 }
 
 #lamp-signatures th,
@@ -134,4 +135,63 @@ th {
   border-bottom: 1px solid #aaa;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.catalogue-numbers {
+  page-break-after: avoid;
+}
+
+.stamps img {
+  height: 4em;
+}
+
+#stamps-table td {
+  width: 20%;
+}
+
+.concordance table td {
+  width: 50%;
+}
+
+.references ul,
+.contributor-bios ul,
+.publisher ul,
+.illustration-credits ul {
+  padding-left: 0;
+}
+
+.references ul li {
+  margin-bottom: .75em;
+}
+
+.contributor-bios {
+  padding-left: 0;
+}
+
+.contributor-bios li {
+  margin-bottom: 1em;
+}
+
+.cc-logo {
+  height: 1.5em;
+}
+
+.description {
+  margin-bottom: 1em;
+}
+
+.revision-history {
+  margin-top: 1em;
+}
+
+.loc-cip ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.illustration-credits p {
+  text-indent: 0;
+  margin-bottom: 1em;
 }
