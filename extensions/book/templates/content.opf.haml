@@ -33,6 +33,5 @@
   %spine{:toc => "toc.ncx"}
     - if book.cover
       %itemref{:idref => "coverpage"}/
-    %itemref{:idref => "toc"}/
     - book.chapters.each do |chapter|
       %itemref{:idref => chapter.idref }/

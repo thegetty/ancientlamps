@@ -1,10 +1,25 @@
 <ul class="contents">
-  <li class="frontmatter"><%= link_to "Director’s Foreword", "foreword.html" %></li>
-  <li class="frontmatter"><%= link_to "Acknowledgments", "acknowledgments.html" %></li>
-  <li class="frontmatter"><%= link_to "Abbreviations and Notes to Readers", "abbreviations-and-notes.html" %></li>
-  <li><%= link_to "Introduction", "introduction.html" %></li>
-  <li class="screen-only"><%= link_to "Map", "map.html" %></li>
-  <li class="contents-catalogue"><h3 class="contents-subhead"><%= link_to "Catalogue", "catalogue.html" %></h3>
+  <li class="frontmatter">
+    <%= link_to "Director’s Foreword", "foreword.html" %>
+  </li>
+  <li class="frontmatter">
+    <%= link_to "Acknowledgments", "acknowledgments.html" %>
+  </li>
+  <li class="frontmatter">
+    <%= link_to "Abbreviations and Notes to Readers", "abbreviations-and-notes.html" %>
+  </li>
+  <li>
+    <%= link_to "Introduction", "introduction.html" %>
+  </li>
+  <% unless environment? :epub %>
+  <li class="screen-only">
+    <%= link_to "Map", "map.html" %>
+  </li>
+  <% end %>
+  <li class="contents-catalogue">
+    <h3 class="contents-subhead">
+        <%= link_to "Catalogue", "catalogue.html" %>
+    </h3>
     <ul>
       <li><%= link_to "Typological Classification", "typological-classification.html" %></li>
     </ul>
@@ -13,16 +28,26 @@
       <li><%= link_to "Greek and Hellenistic Clay Lamps", "catalogue/5.html" %></li>
       <li><%= link_to "Roman-Period Clay Lamps", "catalogue/70-71.html" %></li>
       <li><%= link_to "Metal Lamps", "catalogue/612.html" %></li>
-    </ol></li>
-  <li class="contents-indices"><h3 class="contents-subhead"><%= link_to "Indices", "indices.html" %></h3>
+    </ol>
+  </li>
+
+  <li class="contents-indices">
+    <h3 class="contents-subhead"><%= link_to "Indices", "indices.html" %></h3>
     <ul>
       <li><%= link_to "Index of Iconography", "iconography.html" %></li>
       <li><%= link_to "Index of Signatures and Inscriptions", "inscriptions.html" %></li>
       <li><%= link_to "Index of Donors and Vendors", "donors-and-vendors.html" %></li>
       <li><%= link_to "Index of Place Names", "place-names.html" %></li>
       <li><%= link_to "Concordance of Identification Numbers", "concordance.html" %></li>
-    </ul></li>
+    </ul>
+  </li>
+
   <li><%= link_to "Bibliography", "bibliography.html" %></li>
   <li><%= link_to "About the Authors", "authors.html" %></li>
-  <li class="screen-only"><%= link_to "About", "about.html" %></li>
+
+  <% if environment? :epub %>
+    <li><a href="copyright.xhtml">Copyright</a></li>
+  <% else %>
+    <li class="screen-only"><%= link_to "About", "about.html" %></li>
+  <% end %>
 </ul>

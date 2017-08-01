@@ -604,11 +604,8 @@ body.indices.landing {
         .cat-number {
           border-top: solid 0.25pt $print-text-color;
           margin-top: $print-base-spacing * 2;
+          padding-top: 3pt;
 
-          h2.cat-number {
-            font-size: 12pt;
-            margin-top: 3pt;
-          }
         }
         // scss-lint:enable NestingDepth
       }
@@ -622,6 +619,10 @@ body.indices.landing {
 
     table tr:last-child td { border-bottom: 0; }
   }
+}
+
+h2.cat-number {
+  font-size: 12pt;
 }
 
 
