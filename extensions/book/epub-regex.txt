@@ -1,83 +1,23 @@
 REGEX FOR ANCIENT LAMPS EPUB:
 (Numbers before find/replace pairings are the number of records that are returned)
 
-
-<a href="\.\./\.\./map/#loc_[0-9]*?">(.*?)</a>
-$1
-
-340
-<a href="\.\./catalogue/([0-9|a-z|-]*?)/">(.*?)</a>
-<a href="$1.xhtml">$2</a>
-
-3184
-<a href="\.\./catalogue/([0-9|a-z|-]*?)/#([0-9].*?)">(.*?)</a>
-<a href="$1.xhtml#cat-$2">$3</a>
-
-4
-<a href="\.\./catalogue/([0-9|a-z|-]*?)/#([a-z].*?)">(.*?)</a>
-<a href="$1.xhtml#$2">$3</a>
-
-1
-<a href="../catalogue/">
-<a href="catalogue.xhtml">
-
-102
-<a href="\.\./([0-9|a-z|-]*?)/">(.*?)</a>
-<a href="$1.xhtml">$2</a>
-
-429
-<a href="\.\./([0-9|a-z|-]*?)/#([0-9].*?)">(.*?)</a>
-<a href="$1.xhtml#cat-$2">$3</a>
-
-27
-<a href="\.\./([0-9|a-z|-]*?)/#([a-z].*?)">(.*?)</a>
-<a href="$1.xhtml#$2">$3</a>
-
-5525
-<a href="\.\./\.\./([a-z|-]*?)/
-<a href="$1.xhtml
-
-1
-<a href="../">Cover</a>
-<a href="index.xhtml">Cover</a>
-
-1
-<a href="./#([0-9].*?)
-<a href="#cat-$1
-
-2
-<a href="./#([a-z].*?)
-<a href="#$1
-
 fn:([0-9]*)
 fn-$1
 
 fnref:([0-9]*)
 fnref-$1
 
-<img src="../assets/
-<img src="assets/
-
-<hr>
-<hr />
-
-</hr>
-
-<nav class=
-<div class=
-
-</ul>\n</nav>
-</ul>\n</div>
+(<a href="([0-9|a-z|-]*?[a-z]))/
+$1.xhtml
 
 markdown="0"
 
+<a href="#288">
+<a href="#cat-288">
 
-ALSO:
+#144
+#cat-144
 
-- Add figures 1-4, cc-by and cover images
-- Delete catalogue grid, but leave page
-
-
-
-
+cat-authenticity-of-cats-46467-discussion
+authenticity-of-cats-46467-discussion
 

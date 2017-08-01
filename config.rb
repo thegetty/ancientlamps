@@ -2,8 +2,19 @@ require 'extensions/search'
 require 'extensions/book'
 
 activate :search
-activate :book
 activate :pry
+
+activate :book do |b|
+  b.additional_epub_images = [
+    "assets/images/fig_01.jpg",
+    "assets/images/fig_02.jpg",
+    "assets/images/fig_03.jpg",
+    "assets/images/fig_04.jpg",
+    "assets/images/cc-by.png",
+    "assets/images/cover.jpg",
+    "assets/images/getty_logo.png"
+  ]
+end
 
 # General settings
 # ------------------------------------------------

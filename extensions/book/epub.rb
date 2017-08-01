@@ -23,6 +23,7 @@ module Book
       build_epub_dir
       copy_images(sitemap)
       copy_stamps(sitemap)
+      copy_additional_image_assets(sitemap)
       copy_fonts
       build_container
       build_cover_page
@@ -76,6 +77,22 @@ module Book
       end
     end
 
+    def copy_additional_image_assets(sitemap)
+      additional_images = []
+      book.options.additional_epub_images.each do |path|
+        additional_images.push(sitemap.resources.find { |r| r.path.match(path) })
+      end
+
+      Dir.chdir(working_dir + '/OEBPS/assets/images/') do
+        additional_images.each_with_index do |image, index|
+          index = "img_#{index}"
+          add_image_to_manifest(image, index)
+          filename = image.file_descriptor.relative_path.basename
+          File.open(filename, 'w') { |f| f.puts image.render }
+        end
+      end
+    end
+
     def add_image_to_manifest(image, index)
       relative_path = image.file_descriptor.relative_path
       item = ItemTag.new("img_#{index}", relative_path, image.content_type)
@@ -87,8 +104,16 @@ module Book
       fonts = Dir.glob('extensions/book/fonts/*.otf')
       fonts.each do |font|
         path = Pathname.new(font)
-        FileUtils.cp(path.to_s, "#{working_dir}/OEBPS/assets/fonts/#{path.basename}")
-        @book.manifest << ItemTag.new(path.basename.to_s, "assets/fonts/#{path.basename}", 'application/x-font-otf')
+        FileUtils.cp(
+          path.to_s,
+          "#{working_dir}/OEBPS/assets/fonts/#{path.basename}"
+        )
+
+        @book.manifest << ItemTag.new(
+          path.basename.to_s,
+          "assets/fonts/#{path.basename}",
+          'application/x-font-otf'
+        )
       end
     end
 
@@ -114,7 +139,7 @@ module Book
           item     = c.generate_item_tag
           navpoint = c.generate_navpoint
 
-          navpoint.play_order = index + 2 # start after cover, toc
+          navpoint.play_order = index + 1 # start after cover
           navpoint.id = "np_#{index}"
 
           @book.navmap << navpoint
@@ -140,7 +165,7 @@ module Book
     def build_toc_nav
       build_page_from_template('toc.xhtml')
       @book.manifest << ItemTag.new('toc', 'toc.xhtml', 'application/xhtml+xml', 'nav')
-      @book.navmap << NavPoint.new('toc', 1, 'toc.xhtml', 'Contents')
+      # @book.navmap << NavPoint.new('toc', 1, 'toc.xhtml', 'Contents')
     end
   end
 end

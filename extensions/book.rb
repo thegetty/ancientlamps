@@ -16,7 +16,7 @@ module Book
     option :pdf_output_path, 'dist/book.pdf', 'Where to write generated PDF'
     option :epub_output_path, 'dist/epub/', 'Where to write generated EPUB files'
     option :prince_cli_flags, '--no-artificial-fonts', 'Flags for Prince cli'
-
+    option :additional_epub_images, [], 'Additional images to add to the EPUB version'
     option :catalogue_path, 'catalogue.json'
     option :plates_path, 'plates.json'
     option :max_frontmatter_sort_value, 10, 'Max sort_order value for frontmatter content'
@@ -114,6 +114,7 @@ module Book
 
       backmatter_chapters.each do |c|
         next if c.path == "about.html"
+        next if c.path == "copyright.html"
         pagelist += baseurl + c.destination_path + ' '
       end
 
@@ -122,6 +123,8 @@ module Book
 
     def generate_chapters!(resources)
       resources.find_all { |p| p.data.sort_order }.each do |p|
+        next if p.data.epub_output == false
+
         source = p.source_file
         path = p.destination_path
         metadata = p.metadata

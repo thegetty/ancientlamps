@@ -271,7 +271,9 @@ $breadcrumbs-bar-color: tint($dark-gray, 75%);
   .cat-number {
     color: $base-font-color;
     font-family: $heading-font-family;
-    font-size: modular-scale(3);
+    font-size: 1.4em;
+    @include font-feature-settings("kern");
+    font-variant: normal;
   }
 
   .section {
