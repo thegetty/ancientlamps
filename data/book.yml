@@ -55,7 +55,7 @@ editions:
     type: Text
     format: application/epub+zip
     isbn: 978-1-60606-514-3
-    file_size_mb: 39.1
+    file_size_mb: 41.4
     link: http://www.getty.edu/publications/ancientlamps/assets/downloads/AncientLamps_Bussiere_LindrosWohl.epub
     additional_description:
   - name: MOBI/Kindle
