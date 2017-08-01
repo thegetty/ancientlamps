@@ -114,6 +114,7 @@ module Book
 
       backmatter_chapters.each do |c|
         next if c.path == "about.html"
+        next if c.path == "copyright.html"
         pagelist += baseurl + c.destination_path + ' '
       end
 
