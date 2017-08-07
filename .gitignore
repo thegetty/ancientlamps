@@ -8,3 +8,4 @@ dist/*
 Gemfile.lock
 node_modules
 .tmp
+source/assets/fonts/freight-text-pro*
