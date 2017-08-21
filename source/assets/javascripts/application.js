@@ -17,7 +17,33 @@ import './vendor/ls.unveilhooks.js'
 
 import lunr from 'lunr'
 import localforage from 'localforage'
-import includes from 'lodash.includes'
+
+// Polyfill the CustomEvent API for Internet Explorer
+// -----------------------------------------------------------------------------
+// https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
+//
+// This application makes use of the Custom Event API to communicate across a
+// few mostly-separate parts when needed. A large amount of supporting JSON
+// data needs to be stored before the app can function fully. When this data
+// is ready for use by other components (details view, search tool, etc),
+// an event is broadcast announcing that the relevant data is ready.
+//
+// Internet Explorer does not implement this API the same as other browsers
+// so this polyfill is necessary there.
+//
+(function () {
+  if (typeof window.CustomEvent === 'function') return false
+
+  function CustomEvent (event, params) {
+    params = params || { bubbles: false, cancelable: false, detail: undefined }
+    var evt = document.createEvent('CustomEvent')
+    evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail)
+    return evt
+  }
+
+  CustomEvent.prototype = window.Event.prototype
+  window.CustomEvent = CustomEvent
+})()
 
 // Setup the Page object
 // -----------------------------------------------------------------------------
@@ -65,7 +91,7 @@ window.page = {
   broadcastStatus (status) {
     for (var prop in status) {
       if (status[prop] === true) {
-        let event = new window.Event(prop)
+        let event = new window.CustomEvent(prop)
         window.dispatchEvent(event)
       }
     }
@@ -91,42 +117,47 @@ window.page = {
       platesDataURL = this.urls.plates
     }
 
-    localforage.keys().then((keys) => {
-      // Search data
-      if (includes(keys, 'contents')) {
-        localforage.getItem('contents').then((data) => {
-          data.forEach((item) => { window.page.searchIndex.add(item) })
-          this.searchStatus = true
-        })
-      } else {
+    localforage.getItem('contents').then((data) => {
+      if (data === null) {
         $.get(searchDataURL).done((data) => {
           localforage.setItem('contents', data).then((data) => {
-            data.forEach((item) => { window.page.searchIndex.add(item) })
+            this.setupSearchIndex(data)
             this.searchStatus = true
           })
         })
-      }
-      // Catalogue data
-      if (includes(keys, 'catalogue')) {
-        this.catalogueStatus = true
       } else {
+        this.setupSearchIndex(data)
+        this.searchStatus = true
+      }
+    })
+
+    localforage.getItem('catalogue').then((data) => {
+      if (data === null) {
         $.get(catalogueDataURL).done((data) => {
           localforage.setItem('catalogue', data).then((data) => {
             this.catalogueStatus = true
           })
         })
-      }
-      // Plates data
-      if (includes(keys, 'plates')) {
-        this.platesStatus = true
       } else {
+        this.catalogueStatus = true
+      }
+    })
+
+    localforage.getItem('plates').then((data) => {
+      if (data === null) {
         $.get(platesDataURL).done((data) => {
           localforage.setItem('plates', data).then((data) => {
             this.platesStatus = true
           })
         })
+      } else {
+        this.platesStatus = true
       }
     })
+  },
+
+  setupSearchIndex (data) {
+    data.forEach((item) => { window.page.searchIndex.add(item) })
   }
 }
 
