@@ -34,7 +34,7 @@ page "/*.txt", layout: false
 # Development Environment
 # ------------------------------------------------
 configure :development do
-  # activate :livereload
+  activate :livereload
   set :baseurl, ""
 end
 
