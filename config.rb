@@ -41,7 +41,7 @@ end
 # Production Environment
 # ------------------------------------------------
 configure :build do
-  set :baseurl, "/publications/ancientlamps" 
+  set :baseurl, "/publications/ancientlamps"
   activate :relative_assets
   ignore { |path| path =~ /assets\/javascripts\/(.*)\.js$/ && $1 != 'application' }
 
