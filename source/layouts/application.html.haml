@@ -6,10 +6,10 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %meta{ name: "apple-mobile-web-app-capable", content: "yes" }
     %meta{ name: "apple-mobile-web-app-status-bar-style", content: "black" }
-    %link{ rel: "apple-touch-icon", sizes: "57x57", href: "apple-touch-icon-57x57.png" }
-    %link{ rel: "apple-touch-icon", sizes: "72x72", href: "apple-touch-icon-72x72.png" }
-    %link{ rel: "apple-touch-icon", sizes: "114x114", href: "apple-touch-icon-114x114.png" }
-    %link{ rel: "apple-touch-icon", sizes: "144x144", href: "apple-touch-icon-144x144.png" }
+    %link{ rel: "apple-touch-icon", sizes: "57x57", href: "#{config[:baseurl]}/apple-touch-icon-57x57.png" }
+    %link{ rel: "apple-touch-icon", sizes: "72x72", href: "#{config[:baseurl]}/apple-touch-icon-72x72.png" }
+    %link{ rel: "apple-touch-icon", sizes: "114x114", href: "#{config[:baseurl]}/apple-touch-icon-114x114.png" }
+    %link{ rel: "apple-touch-icon", sizes: "144x144", href: "#{config[:baseurl]}/apple-touch-icon-144x144.png" }
 
     / Open Graph
     %meta{ property: "og:title", content: data.book.title.main }
@@ -55,15 +55,6 @@
         ga('create', 'UA-8087223-1', 'auto');
         ga('require', 'linkid', 'linkid.js');
         ga('send', 'pageview');
-      / Google Analytics: to handle pdfs, docs, xls
-      :javascript
-        $(document).ready(function($) {
-          $("a[href$='pdf'],a[href$='rtf'],a[href$='doc'],a[href$='xls'],a[href*='bit.ly'],a[href$='csv'],a[href$='json'],a[href$='zip'],a[href$='ppt'],a[href*='epub'],a[href*='mobi']").each(function(index) {
-            pdfLabel = $(this).attr('href');
-              pdfOnClick = "ga('send', 'pageview','" + pdfLabel + "');";
-                $(this).attr("onClick", pdfOnClick);
-            });
-        });
       / Google Analytics: to handle outbound links
       :javascript
         var trackOutboundLink = function(url) {

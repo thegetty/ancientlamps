@@ -191,4 +191,13 @@ window.page.setupStoredData()
 $(document).ready(() => {
   window.page.ui = new UI()
   prepareTransitions()
+
+  // Google Analytics: to handle pdfs, docs, xls
+  let analyticsTargets = "a[href$='pdf'],a[href$='rtf'],a[href$='doc'],a[href$='xls'],a[href*='bit.ly'],a[href$='csv'],a[href$='json'],a[href$='zip'],a[href$='ppt'],a[href*='epub'],a[href*='mobi']"
+
+  $(analyticsTargets).each(function (index) {
+    let pdfLabel = $(this).attr('href')
+    let pdfOnClick = "ga('send', 'pageview','" + pdfLabel + "');"
+    $(this).attr('onClick', pdfOnClick)
+  })
 })
