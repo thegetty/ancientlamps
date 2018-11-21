@@ -461,7 +461,10 @@ $modular-scale-ratio: $minor-second;
     padding-left: 0;
   }
 
-  li { margin-bottom: $print-base-spacing; }
+  li {
+    page-break-inside: avoid;
+    margin-bottom: $print-base-spacing;
+  }
 }
 
 // Catalogue landing page rules
@@ -708,10 +711,10 @@ h3.full-print-heading:first-of-type {
   .empty-level { list-style-type: none; }
 }
 
-.index ul, ol {
+// lines lists up to headings
+.index ul, .index ol {
   padding-left: 0;
-  // text-indent: -$print-base-spacing;
-  // margin-left: 0;
+  text-indent: -1.2em;
 }
 
 ul.index-places,
