@@ -154,4 +154,8 @@ revision_history:
   - date: August 1, 2017
     summary:
       - First edition
+  - date: November 21, 2018
+    summary:
+      - Reference added to entry 592
+      - Minor text corrections and bug fixes
 repository_url: https://www.github.com/gettypubs/ancientlamps
