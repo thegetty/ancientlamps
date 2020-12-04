@@ -35,7 +35,7 @@
     "webpack": "^1.10.5"
   },
   "dependencies": {
-    "jquery": "^3.1.1",
+    "jquery": "^3.5.0",
     "lazysizes": "^4.0.0-rc3",
     "leaflet": "^0.7.7",
     "leaflet.markercluster": "Leaflet/Leaflet.markercluster#leaflet-0.7",
