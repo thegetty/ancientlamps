@@ -23,7 +23,7 @@ let ImageViewer = Vue.extend({
   },
   computed: {
     path () {
-      return `https://s3-us-west-1.amazonaws.com/gettypubs-lamps/${this.cat}`
+      return `https://www.getty.edu/publications/resources/gettypubs-lamps/${this.cat}`
     }
   },
   watch: {
