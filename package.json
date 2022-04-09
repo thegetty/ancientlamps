@@ -44,7 +44,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.includes": "^4.3.0",
     "lunr": "^0.7.2",
-    "moment": "^2.17.0",
+    "moment": "^2.29.2",
     "vue": "^2.3.2",
     "vue-slider-component": "^2.2.7"
   }
